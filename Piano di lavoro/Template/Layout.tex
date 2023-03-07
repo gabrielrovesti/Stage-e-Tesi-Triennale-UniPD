@@ -19,6 +19,8 @@
 \usepackage{lastpage}
 \usepackage{graphicx}
 \usepackage{tabularx}
+\usepackage{array}
+
 
 % Comando per le firme, per aggiungere dei campi Data, decommentare le due righe sotto
 \newcommand*{\SignatureAndDate}[1]{%
@@ -29,12 +31,12 @@
 \usepackage[
 a4paper,
 top=2.0cm,
-bottom=2.0cm,
+bottom=4.5cm,
 left=1.5cm,
 right=1.5cm,
 head=30pt,
 textheight=8in,
-footskip=12pt
+footskip=2pt
 ]{geometry}
 
 \usepackage[italian]{isodate}
@@ -63,50 +65,55 @@ footskip=12pt
 %----------------------------------------------------------------------------------------
 %	UNIPD STYLE
 % ---------------------------------------------------------------------------------------
-\newcommand{\stileUNIPD}{
-    
-    % header
-    \lhead{
-       \textline[t]{\includegraphics[width=1cm, keepaspectratio=true]{img/UniPd.png}}
-        {Piano di lavoro stage presso \\\ragioneSocAzienda}
-        {\nomeStudente \ \cognomeStudente\\ (\matricolaStudente)}
-    }
-
-    % footer
-    \rfoot{\thepage/\pageref{LastPage}} %per le prime pagine: mostra solo il numero romano
-    \cfoot{}
-
-}
+%\newcommand{\stileUNIPD}{
+%    
+%    % header
+%    \lhead{
+%       \textline[t]{\includegraphics[width=1cm, keepaspectratio=true]{img/UniPd.png}}
+%        {Piano di lavoro stage presso \\\ragioneSocAzienda}
+%        {\nomeStudente \ \cognomeStudente\\ (\matricolaStudente)}
+%    }
+%
+%    % footer
+%    \rfoot{\thepage/\pageref{LastPage}} %per le prime pagine: mostra solo il numero romano
+%    \cfoot{}
+%
+%}
 
 %----------------------------------------------------------------------------------------
 %	COMPANY STYLE
 % ---------------------------------------------------------------------------------------
 
 \newcommand{\stileAziendale}{
-    % Header
+% Header
     \lhead{
-        \textline[t]{\includegraphics[width=1cm, keepaspectratio=true]{img/logo_azienda.jpg}}
+        \textline[t]{\includegraphics[width=3cm, keepaspectratio=true]{img/logo_azienda.png}}
         {\textbf{\ragioneSocAzienda}}
-        {\sitoAzienda}
+        {\fontsize{8}{10}\selectfont \thepage/\pageref{LastPage}}
     }
 
 
-    %Footer
-    \lfoot{
-        {\fontsize{8}{10}\selectfont
-        \textbf{\ragioneSocAzienda}\\
-        \indirizzoAzienda\\
-        \sitoAzienda\\
-    }
-    }
+%Footer
 
-\cfoot{{\fontsize{8}{10}\selectfont \thepage/\pageref{LastPage}}} %per le prime pagine: mostra solo il numero romano
+\rfoot{
+    %Make the font inside footer small 
+    \fontsize{8}{10}\selectfont
+    %Make the text inside footer centered and black
+    \centering\includegraphics[width=\textwidth]{img/iso.png} % Replace iso.png with your image file name
+    \hrule
+    \begin{tabular}{@{}>{\raggedleft\arraybackslash}p{0.2\linewidth}@{}>{\raggedleft\arraybackslash}p{0.2\linewidth}@{}>{\raggedleft\arraybackslash}p{0.2\linewidth}@{}>{\raggedleft\arraybackslash}p{0.2\linewidth}@{}>{\raggedleft\arraybackslash}p{0.2\linewidth}@{}}
+        \textbf{Napoli (Sede Legale)} & \textbf{Roma} & \textbf{Milano} & \textbf{Padova} & \textbf{Verona}\\
+        Via G. Porzio CDN is B8 & Largo C. Salinari, 19 & Via G. Durando, 38 & Galleria Spagna, 28 & Via Albere, 19 \\
+        80143 - Tel. 081 787 50 30 & 00142 - Tel. 06 976 118 66 & 20158 - Tel. 02 365 690 26 & 35127 - Tel. 049 817 10 60 & 37138 - Tel. 045 464 77 70\\
+      \end{tabular}
 
-\rfoot{{\fontsize{8}{10}\selectfont Tel. \telTutorAziendale\\
-        email: \emailAzienda \\
-        \partitaIVAAzienda \\}}
+    \hrule
+    \smallskip
+    Sync Lab S.r.l. - Cap. soc. €100.000 i.v. - N.Reg. Imprese NA/CF/P.IVA:07952560634 – Cod. fattura elettronica: SUBM70N - synclab@pec.it - direzione@synclab.it - www.synclab.it
 }
 
+
+}
 %----------------------------------------------------------------------------------------
 % 	HEADING STILE
 %----------------------------------------------------------------------------------------
@@ -119,15 +126,15 @@ footskip=12pt
 
 % Header delle pagine UNIPD style, commentarle se si intende usare lo stile aziendale
 
-\stileUNIPD
+%\stileUNIPD
 
 % Header delle pagine stile aziendale, usaree, dopo aver chiesto il consenso all'azienda
 % per l'uso del logo e dei dati personali. Commentarle se si intende usare l'UNIPD style
 
-%\stileAziendale
+\stileAziendale
 
 % Line under the heading
-\renewcommand{\headrulewidth}{0.4pt}  
+\renewcommand{\headrulewidth}{0.3pt}  
 
 %-----------------------------------------------------------------------------------------
 %   FOOTER STYLE
@@ -139,4 +146,4 @@ footskip=12pt
 %\rfoot{\thepage/\pageref{LastPage}} %per le prime pagine: mostra solo il numero romano
 
     
-\renewcommand{\footrulewidth}{0.4pt}   %Linea sopra il piè di pagina
+\renewcommand{\footrulewidth}{0.3pt}   %Linea sopra il piè di pagina

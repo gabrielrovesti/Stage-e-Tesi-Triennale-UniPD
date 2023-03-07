@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.17)  6 MAR 2023 21:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.17)  7 MAR 2023 17:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -889,7 +889,7 @@ Package: amsthm 2020/05/29 v2.20.6
 ) (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 51.
+Package hyperref Info: Option `colorlinks' set `true' on input line 53.
 ) (./Dati.tex)
 LaTeX Font Info:    Trying to load font information for T1+phv on input line 4.
  (c:/texlive/2022/texmf-dist/tex/latex/psnfss/t1phv.fd
@@ -952,18 +952,18 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(42.67912pt, 512.14963pt, 42.67912pt)
-* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* v-part:(T,H,B)=(56.9055pt, 660.10394pt, 128.0374pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=512.14963pt
-* \textheight=731.23584pt
+* \textheight=660.10394pt
 * \oddsidemargin=-29.59087pt
 * \evensidemargin=-29.59087pt
 * \topmargin=-70.36449pt
 * \headheight=56.9055pt
 * \headsep=25.0pt
 * \topskip=11.0pt
-* \footskip=12.0pt
+* \footskip=2.0pt
 * \marginparwidth=50.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
@@ -1013,114 +1013,160 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./img/UniPd.png> <./img/MathDip.png>]) (./Template/Sezioni/Contatti.tex) (./Template/Sezioni/ScopoStage.tex
-File: img/UniPd.png Graphic file (type png)
-<use img/UniPd.png>
-Package pdftex.def Info: img/UniPd.png  used on input line 25.
-(pdftex.def)             Requested size: 28.45274pt x 28.63008pt.
+<img/logo_azienda.png, id=20, 164.86594pt x 47.42719pt>
+File: img/logo_azienda.png Graphic file (type png)
+<use img/logo_azienda.png>
+Package pdftex.def Info: img/logo_azienda.png  used on input line 25.
+(pdftex.def)             Requested size: 85.35826pt x 24.5559pt.
+<img/iso.png, id=22, 526.48695pt x 41.55525pt>
+File: img/iso.png Graphic file (type png)
+<use img/iso.png>
+Package pdftex.def Info: img/iso.png  used on input line 25.
+(pdftex.def)             Requested size: 512.14963pt x 40.4271pt.
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 25.
+ (c:/texlive/2022/texmf-dist/tex/latex/psnfss/ts1phv.fd
+File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
+)
 
-
-Package fancyhdr Warning: \footskip is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.99998pt, for example:
-(fancyhdr)                \setlength{\footskip}{13.99998pt}.
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 44.80713pt, for example:
+(fancyhdr)                \setlength{\footskip}{44.80713pt}.
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.25 \newpage
-              [1]) (./Template/Sezioni/InterazioneStudenteTutor.tex) (./Template/Sezioni/Prodotti.tex
-File: img/UniPd.png Graphic file (type png)
-<use img/UniPd.png>
-Package pdftex.def Info: img/UniPd.png  used on input line 27.
-(pdftex.def)             Requested size: 28.45274pt x 28.63008pt.
+              [1 <./img/logo_azienda.png> <./img/iso.png>]) (./Template/Sezioni/InterazioneStudenteTutor.tex) (./Template/Sezioni/Prodotti.tex
+File: img/logo_azienda.png Graphic file (type png)
+<use img/logo_azienda.png>
+Package pdftex.def Info: img/logo_azienda.png  used on input line 19.
+(pdftex.def)             Requested size: 85.35826pt x 24.5559pt.
+File: img/iso.png Graphic file (type png)
+<use img/iso.png>
+Package pdftex.def Info: img/iso.png  used on input line 19.
+(pdftex.def)             Requested size: 512.14963pt x 40.4271pt.
 
 
-Package fancyhdr Warning: \footskip is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.99998pt, for example:
-(fancyhdr)                \setlength{\footskip}{13.99998pt}.
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 44.80713pt, for example:
+(fancyhdr)                \setlength{\footskip}{44.80713pt}.
 
 [2]) (./Template/Sezioni/ContenutiFormativi.tex
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 6.
- (c:/texlive/2022/texmf-dist/tex/latex/psnfss/ts1phv.fd
-File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
-)
-File: img/UniPd.png Graphic file (type png)
-<use img/UniPd.png>
-Package pdftex.def Info: img/UniPd.png  used on input line 28.
-(pdftex.def)             Requested size: 28.45274pt x 28.63008pt.
+File: img/logo_azienda.png Graphic file (type png)
+<use img/logo_azienda.png>
+Package pdftex.def Info: img/logo_azienda.png  used on input line 16.
+(pdftex.def)             Requested size: 85.35826pt x 24.5559pt.
+File: img/iso.png Graphic file (type png)
+<use img/iso.png>
+Package pdftex.def Info: img/iso.png  used on input line 16.
+(pdftex.def)             Requested size: 512.14963pt x 40.4271pt.
 
 
-Package fancyhdr Warning: \footskip is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.99998pt, for example:
-(fancyhdr)                \setlength{\footskip}{13.99998pt}.
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 44.80713pt, for example:
+(fancyhdr)                \setlength{\footskip}{44.80713pt}.
 
 [3]) (./Template/Sezioni/PianificazioneLavoro.tex
-File: img/UniPd.png Graphic file (type png)
-<use img/UniPd.png>
-Package pdftex.def Info: img/UniPd.png  used on input line 10.
-(pdftex.def)             Requested size: 28.45274pt x 28.63008pt.
+File: img/logo_azienda.png Graphic file (type png)
+<use img/logo_azienda.png>
+Package pdftex.def Info: img/logo_azienda.png  used on input line 7.
+(pdftex.def)             Requested size: 85.35826pt x 24.5559pt.
+File: img/iso.png Graphic file (type png)
+<use img/iso.png>
+Package pdftex.def Info: img/iso.png  used on input line 7.
+(pdftex.def)             Requested size: 512.14963pt x 40.4271pt.
 
 
-Package fancyhdr Warning: \footskip is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.99998pt, for example:
-(fancyhdr)                \setlength{\footskip}{13.99998pt}.
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 44.80713pt, for example:
+(fancyhdr)                \setlength{\footskip}{44.80713pt}.
 
 [4] (./Template/Tabelle/tabellaRipartizioneOre.tex)
-File: img/UniPd.png Graphic file (type png)
-<use img/UniPd.png>
-Package pdftex.def Info: img/UniPd.png  used on input line 20.
-(pdftex.def)             Requested size: 28.45274pt x 28.63008pt.
+File: img/logo_azienda.png Graphic file (type png)
+<use img/logo_azienda.png>
+Package pdftex.def Info: img/logo_azienda.png  used on input line 18.
+(pdftex.def)             Requested size: 85.35826pt x 24.5559pt.
+File: img/iso.png Graphic file (type png)
+<use img/iso.png>
+Package pdftex.def Info: img/iso.png  used on input line 18.
+(pdftex.def)             Requested size: 512.14963pt x 40.4271pt.
 
 
-Package fancyhdr Warning: \footskip is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.99998pt, for example:
-(fancyhdr)                \setlength{\footskip}{13.99998pt}.
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 44.80713pt, for example:
+(fancyhdr)                \setlength{\footskip}{44.80713pt}.
 
 [5]) (./Template/Sezioni/Obiettivi.tex
-File: img/UniPd.png Graphic file (type png)
-<use img/UniPd.png>
-Package pdftex.def Info: img/UniPd.png  used on input line 36.
-(pdftex.def)             Requested size: 28.45274pt x 28.63008pt.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 8.
+File: img/logo_azienda.png Graphic file (type png)
+<use img/logo_azienda.png>
+Package pdftex.def Info: img/logo_azienda.png  used on input line 27.
+(pdftex.def)             Requested size: 85.35826pt x 24.5559pt.
+File: img/iso.png Graphic file (type png)
+<use img/iso.png>
+Package pdftex.def Info: img/iso.png  used on input line 27.
+(pdftex.def)             Requested size: 512.14963pt x 40.4271pt.
 
 
-Package fancyhdr Warning: \footskip is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.99998pt, for example:
-(fancyhdr)                \setlength{\footskip}{13.99998pt}.
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 44.80713pt, for example:
+(fancyhdr)                \setlength{\footskip}{44.80713pt}.
 
-[6]) (./Template/Sezioni/Diagramma.tex
-<img/gantt.png, id=66, 1310.8975pt x 349.305pt>
+[6]
+File: img/logo_azienda.png Graphic file (type png)
+<use img/logo_azienda.png>
+Package pdftex.def Info: img/logo_azienda.png  used on input line 36.
+(pdftex.def)             Requested size: 85.35826pt x 24.5559pt.
+File: img/iso.png Graphic file (type png)
+<use img/iso.png>
+Package pdftex.def Info: img/iso.png  used on input line 36.
+(pdftex.def)             Requested size: 512.14963pt x 40.4271pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 44.80713pt, for example:
+(fancyhdr)                \setlength{\footskip}{44.80713pt}.
+
+[7]) (./Template/Sezioni/Diagramma.tex
+<img/gantt.png, id=82, 1464.47125pt x 642.4pt>
 File: img/gantt.png Graphic file (type png)
 <use img/gantt.png>
 Package pdftex.def Info: img/gantt.png  used on input line 7.
-(pdftex.def)             Requested size: 512.1496pt x 136.46825pt.
+(pdftex.def)             Requested size: 512.1496pt x 224.65712pt.
 ) (./Template/Sezioni/Approvazione.tex) 
 AED: lastpage setting LastPage
-File: img/UniPd.png Graphic file (type png)
-<use img/UniPd.png>
-Package pdftex.def Info: img/UniPd.png  used on input line 17.
-(pdftex.def)             Requested size: 28.45274pt x 28.63008pt.
+File: img/logo_azienda.png Graphic file (type png)
+<use img/logo_azienda.png>
+Package pdftex.def Info: img/logo_azienda.png  used on input line 17.
+(pdftex.def)             Requested size: 85.35826pt x 24.5559pt.
+File: img/iso.png Graphic file (type png)
+<use img/iso.png>
+Package pdftex.def Info: img/iso.png  used on input line 17.
+(pdftex.def)             Requested size: 512.14963pt x 40.4271pt.
 
-Package fancyhdr Warning: \footskip is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.99998pt, for example:
-(fancyhdr)                \setlength{\footskip}{13.99998pt}.
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 44.80713pt, for example:
+(fancyhdr)                \setlength{\footskip}{44.80713pt}.
 
-[7 <./img/gantt.png>] (./PianoDiLavoro.aux)
+[8 <./img/gantt.png>] (./PianoDiLavoro.aux)
 Package rerunfilecheck Info: File `PianoDiLavoro.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 13389 strings out of 476029
- 210435 string characters out of 5794164
- 1861340 words of memory out of 5000000
- 33511 multiletter control sequences out of 15000+600000
- 567201 words of font info for 80 fonts, out of 8000000 for 9000
+ 13421 strings out of 476029
+ 210848 string characters out of 5794164
+ 1867340 words of memory out of 5000000
+ 33529 multiletter control sequences out of 15000+600000
+ 573779 words of font info for 88 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 80i,18n,79p,394b,590s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 80i,18n,79p,453b,588s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on PianoDiLavoro.pdf (8 pages, 300312 bytes).
+Output written on PianoDiLavoro.pdf (9 pages, 406873 bytes).
 PDF statistics:
- 97 PDF objects out of 1000 (max. 8388607)
- 74 compressed objects within 1 object stream
- 25 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 114 PDF objects out of 1000 (max. 8388607)
+ 86 compressed objects within 1 object stream
+ 33 named destinations out of 1000 (max. 500000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
