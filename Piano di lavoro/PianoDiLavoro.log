@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.17)  7 MAR 2023 17:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.17)  8 MAR 2023 08:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/roves/OneDrive/Desktop/Template-piano-di-lavoro-stage/PianoDiLavoro.tex
-(c:/Users/roves/OneDrive/Desktop/Template-piano-di-lavoro-stage/PianoDiLavoro.tex
+**"c:/Users/roves/OneDrive/Desktop/Piano di lavoro/PianoDiLavoro.tex"
+(c:/Users/roves/OneDrive/Desktop/Piano di lavoro/PianoDiLavoro.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-07> (./Template/Layout.tex (c:/texlive/2022/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
@@ -1156,14 +1156,14 @@ Package rerunfilecheck Info: File `PianoDiLavoro.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  13421 strings out of 476029
- 210848 string characters out of 5794164
+ 210805 string characters out of 5794164
  1867340 words of memory out of 5000000
  33529 multiletter control sequences out of 15000+600000
  573779 words of font info for 88 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 80i,18n,79p,453b,588s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 80i,18n,79p,440b,588s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on PianoDiLavoro.pdf (9 pages, 406873 bytes).
+Output written on PianoDiLavoro.pdf (9 pages, 406877 bytes).
 PDF statistics:
  114 PDF objects out of 1000 (max. 8388607)
  86 compressed objects within 1 object stream
