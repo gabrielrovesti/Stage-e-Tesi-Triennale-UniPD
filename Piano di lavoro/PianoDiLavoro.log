@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.17)  8 MAR 2023 08:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.17)  10 MAR 2023 15:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1016,14 +1016,14 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <img/logo_azienda.png, id=20, 164.86594pt x 47.42719pt>
 File: img/logo_azienda.png Graphic file (type png)
 <use img/logo_azienda.png>
-Package pdftex.def Info: img/logo_azienda.png  used on input line 25.
+Package pdftex.def Info: img/logo_azienda.png  used on input line 27.
 (pdftex.def)             Requested size: 85.35826pt x 24.5559pt.
 <img/iso.png, id=22, 526.48695pt x 41.55525pt>
 File: img/iso.png Graphic file (type png)
 <use img/iso.png>
-Package pdftex.def Info: img/iso.png  used on input line 25.
+Package pdftex.def Info: img/iso.png  used on input line 27.
 (pdftex.def)             Requested size: 512.14963pt x 40.4271pt.
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 25.
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 27.
  (c:/texlive/2022/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
@@ -1036,15 +1036,15 @@ Package fancyhdr Warning: \footskip is too small (2.0pt):
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.25 \newpage
+l.27 \newpage
               [1 <./img/logo_azienda.png> <./img/iso.png>]) (./Template/Sezioni/InterazioneStudenteTutor.tex) (./Template/Sezioni/Prodotti.tex
 File: img/logo_azienda.png Graphic file (type png)
 <use img/logo_azienda.png>
-Package pdftex.def Info: img/logo_azienda.png  used on input line 19.
+Package pdftex.def Info: img/logo_azienda.png  used on input line 14.
 (pdftex.def)             Requested size: 85.35826pt x 24.5559pt.
 File: img/iso.png Graphic file (type png)
 <use img/iso.png>
-Package pdftex.def Info: img/iso.png  used on input line 19.
+Package pdftex.def Info: img/iso.png  used on input line 14.
 (pdftex.def)             Requested size: 512.14963pt x 40.4271pt.
 
 
@@ -1055,11 +1055,11 @@ Package fancyhdr Warning: \footskip is too small (2.0pt):
 [2]) (./Template/Sezioni/ContenutiFormativi.tex
 File: img/logo_azienda.png Graphic file (type png)
 <use img/logo_azienda.png>
-Package pdftex.def Info: img/logo_azienda.png  used on input line 16.
+Package pdftex.def Info: img/logo_azienda.png  used on input line 11.
 (pdftex.def)             Requested size: 85.35826pt x 24.5559pt.
 File: img/iso.png Graphic file (type png)
 <use img/iso.png>
-Package pdftex.def Info: img/iso.png  used on input line 16.
+Package pdftex.def Info: img/iso.png  used on input line 11.
 (pdftex.def)             Requested size: 512.14963pt x 40.4271pt.
 
 
@@ -1067,7 +1067,22 @@ Package fancyhdr Warning: \footskip is too small (2.0pt):
 (fancyhdr)                Make it at least 44.80713pt, for example:
 (fancyhdr)                \setlength{\footskip}{44.80713pt}.
 
-[3]) (./Template/Sezioni/PianificazioneLavoro.tex
+[3]
+File: img/logo_azienda.png Graphic file (type png)
+<use img/logo_azienda.png>
+Package pdftex.def Info: img/logo_azienda.png  used on input line 41.
+(pdftex.def)             Requested size: 85.35826pt x 24.5559pt.
+File: img/iso.png Graphic file (type png)
+<use img/iso.png>
+Package pdftex.def Info: img/iso.png  used on input line 41.
+(pdftex.def)             Requested size: 512.14963pt x 40.4271pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 44.80713pt, for example:
+(fancyhdr)                \setlength{\footskip}{44.80713pt}.
+
+[4]) (./Template/Sezioni/PianificazioneLavoro.tex
 File: img/logo_azienda.png Graphic file (type png)
 <use img/logo_azienda.png>
 Package pdftex.def Info: img/logo_azienda.png  used on input line 7.
@@ -1082,31 +1097,14 @@ Package fancyhdr Warning: \footskip is too small (2.0pt):
 (fancyhdr)                Make it at least 44.80713pt, for example:
 (fancyhdr)                \setlength{\footskip}{44.80713pt}.
 
-[4] (./Template/Tabelle/tabellaRipartizioneOre.tex)
+[5]
 File: img/logo_azienda.png Graphic file (type png)
 <use img/logo_azienda.png>
-Package pdftex.def Info: img/logo_azienda.png  used on input line 18.
+Package pdftex.def Info: img/logo_azienda.png  used on input line 7.
 (pdftex.def)             Requested size: 85.35826pt x 24.5559pt.
 File: img/iso.png Graphic file (type png)
 <use img/iso.png>
-Package pdftex.def Info: img/iso.png  used on input line 18.
-(pdftex.def)             Requested size: 512.14963pt x 40.4271pt.
-
-
-Package fancyhdr Warning: \footskip is too small (2.0pt): 
-(fancyhdr)                Make it at least 44.80713pt, for example:
-(fancyhdr)                \setlength{\footskip}{44.80713pt}.
-
-[5]) (./Template/Sezioni/Obiettivi.tex
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 8.
-File: img/logo_azienda.png Graphic file (type png)
-<use img/logo_azienda.png>
-Package pdftex.def Info: img/logo_azienda.png  used on input line 27.
-(pdftex.def)             Requested size: 85.35826pt x 24.5559pt.
-File: img/iso.png Graphic file (type png)
-<use img/iso.png>
-Package pdftex.def Info: img/iso.png  used on input line 27.
+Package pdftex.def Info: img/iso.png  used on input line 7.
 (pdftex.def)             Requested size: 512.14963pt x 40.4271pt.
 
 
@@ -1117,11 +1115,11 @@ Package fancyhdr Warning: \footskip is too small (2.0pt):
 [6]
 File: img/logo_azienda.png Graphic file (type png)
 <use img/logo_azienda.png>
-Package pdftex.def Info: img/logo_azienda.png  used on input line 36.
+Package pdftex.def Info: img/logo_azienda.png  used on input line 7.
 (pdftex.def)             Requested size: 85.35826pt x 24.5559pt.
 File: img/iso.png Graphic file (type png)
 <use img/iso.png>
-Package pdftex.def Info: img/iso.png  used on input line 36.
+Package pdftex.def Info: img/iso.png  used on input line 7.
 (pdftex.def)             Requested size: 512.14963pt x 40.4271pt.
 
 
@@ -1129,12 +1127,87 @@ Package fancyhdr Warning: \footskip is too small (2.0pt):
 (fancyhdr)                Make it at least 44.80713pt, for example:
 (fancyhdr)                \setlength{\footskip}{44.80713pt}.
 
-[7]) (./Template/Sezioni/Diagramma.tex
-<img/gantt.png, id=82, 1464.47125pt x 642.4pt>
+[7]
+File: img/logo_azienda.png Graphic file (type png)
+<use img/logo_azienda.png>
+Package pdftex.def Info: img/logo_azienda.png  used on input line 7.
+(pdftex.def)             Requested size: 85.35826pt x 24.5559pt.
+File: img/iso.png Graphic file (type png)
+<use img/iso.png>
+Package pdftex.def Info: img/iso.png  used on input line 7.
+(pdftex.def)             Requested size: 512.14963pt x 40.4271pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 44.80713pt, for example:
+(fancyhdr)                \setlength{\footskip}{44.80713pt}.
+
+[8]
+File: img/logo_azienda.png Graphic file (type png)
+<use img/logo_azienda.png>
+Package pdftex.def Info: img/logo_azienda.png  used on input line 9.
+(pdftex.def)             Requested size: 85.35826pt x 24.5559pt.
+File: img/iso.png Graphic file (type png)
+<use img/iso.png>
+Package pdftex.def Info: img/iso.png  used on input line 9.
+(pdftex.def)             Requested size: 512.14963pt x 40.4271pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 44.80713pt, for example:
+(fancyhdr)                \setlength{\footskip}{44.80713pt}.
+
+[9] (./Template/Tabelle/tabellaRipartizioneOre.tex)
+File: img/logo_azienda.png Graphic file (type png)
+<use img/logo_azienda.png>
+Package pdftex.def Info: img/logo_azienda.png  used on input line 19.
+(pdftex.def)             Requested size: 85.35826pt x 24.5559pt.
+File: img/iso.png Graphic file (type png)
+<use img/iso.png>
+Package pdftex.def Info: img/iso.png  used on input line 19.
+(pdftex.def)             Requested size: 512.14963pt x 40.4271pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 44.80713pt, for example:
+(fancyhdr)                \setlength{\footskip}{44.80713pt}.
+
+[10]) (./Template/Sezioni/Obiettivi.tex
+File: img/logo_azienda.png Graphic file (type png)
+<use img/logo_azienda.png>
+Package pdftex.def Info: img/logo_azienda.png  used on input line 25.
+(pdftex.def)             Requested size: 85.35826pt x 24.5559pt.
+File: img/iso.png Graphic file (type png)
+<use img/iso.png>
+Package pdftex.def Info: img/iso.png  used on input line 25.
+(pdftex.def)             Requested size: 512.14963pt x 40.4271pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 44.80713pt, for example:
+(fancyhdr)                \setlength{\footskip}{44.80713pt}.
+
+[11]
+File: img/logo_azienda.png Graphic file (type png)
+<use img/logo_azienda.png>
+Package pdftex.def Info: img/logo_azienda.png  used on input line 38.
+(pdftex.def)             Requested size: 85.35826pt x 24.5559pt.
+File: img/iso.png Graphic file (type png)
+<use img/iso.png>
+Package pdftex.def Info: img/iso.png  used on input line 38.
+(pdftex.def)             Requested size: 512.14963pt x 40.4271pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 44.80713pt, for example:
+(fancyhdr)                \setlength{\footskip}{44.80713pt}.
+
+[12]) (./Template/Sezioni/Diagramma.tex
+<img/gantt.png, id=118, 729.927pt x 328.22626pt>
 File: img/gantt.png Graphic file (type png)
 <use img/gantt.png>
 Package pdftex.def Info: img/gantt.png  used on input line 7.
-(pdftex.def)             Requested size: 512.1496pt x 224.65712pt.
+(pdftex.def)             Requested size: 512.1496pt x 230.31273pt.
 ) (./Template/Sezioni/Approvazione.tex) 
 AED: lastpage setting LastPage
 File: img/logo_azienda.png Graphic file (type png)
@@ -1150,23 +1223,23 @@ Package fancyhdr Warning: \footskip is too small (2.0pt):
 (fancyhdr)                Make it at least 44.80713pt, for example:
 (fancyhdr)                \setlength{\footskip}{44.80713pt}.
 
-[8 <./img/gantt.png>] (./PianoDiLavoro.aux)
+[13 <./img/gantt.png>] (./PianoDiLavoro.aux)
 Package rerunfilecheck Info: File `PianoDiLavoro.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 13421 strings out of 476029
- 210805 string characters out of 5794164
- 1867340 words of memory out of 5000000
+ 13436 strings out of 476029
+ 210909 string characters out of 5794164
+ 1868340 words of memory out of 5000000
  33529 multiletter control sequences out of 15000+600000
  573779 words of font info for 88 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 80i,18n,79p,440b,588s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 80i,18n,79p,488b,610s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on PianoDiLavoro.pdf (9 pages, 406877 bytes).
+Output written on PianoDiLavoro.pdf (14 pages, 466343 bytes).
 PDF statistics:
- 114 PDF objects out of 1000 (max. 8388607)
- 86 compressed objects within 1 object stream
- 33 named destinations out of 1000 (max. 500000)
+ 155 PDF objects out of 1000 (max. 8388607)
+ 121 compressed objects within 2 object streams
+ 48 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

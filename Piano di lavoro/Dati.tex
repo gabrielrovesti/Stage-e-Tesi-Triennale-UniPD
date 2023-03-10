@@ -11,7 +11,7 @@
 % Data di approvazione del piano da parte del tutor interno; nel formato GG Mese AAAA
 % compilare inserendo al posto di GG 2 cifre per il giorno, e al posto di 
 % AAAA 4 cifre per l'anno
-\newcommand{\dataApprovazione}{2023-08-03}
+\newcommand{\dataApprovazione}{2023-10-03}
 
 % Dati dello Studente
 \newcommand{\nomeStudente}{Gabriel}
@@ -43,41 +43,174 @@
      % Personalizzare indicando in lista, i vari task settimana per settimana
      % sostituire a XX il totale ore della settimana
      \begin{enumerate}
-        \item \textbf{Settimana 1-2 (40 ore)} - Introduzione al progetto di stage e presentazione degli obiettivi da raggiungere. Formazione di base sulle tecnologie blockchain e self-sovereign identity. 
-        \item \textbf{Settimana 3-4 (40 ore)} - Blockchain: studio del funzionamento della blockchain, concetto di wallet e firma asimmetrica delle transazioni, validazione e mining dei blocchi, tipologie di consenso, Smart contract e linguaggio Solidity, limiti e scalabilità della tecnologia blockchain. Studio della creazione di token su blockchain.
-        \item \textbf{Settimana 5-6 (40 ore)} - Self-sovereign identity: studio del concetto di SSI, protocolli e tecnologie per la gestione delle identità digitali, analisi delle caratteristiche e delle criticità di ciascuna di esse. Studio delle vulnerabilità principali in Solidity.
-        \item \textbf{Settimana 7-8 (40 ore)} - Crittografia e protocolli utizzati nella blockchain: approfondimento delle tecniche utilizzate per garantire la sicurezza e la privacy delle informazioni personali nell'ambito della blockchain e della SSI, ruolo della crittografia nell'immutabilità della blockchain.  
-        \newpage
-        \item \textbf{Settimana 9-10 (40 ore)} - Casi d'uso reali di self-sovereign identity: individuazione di casi d'uso reali di SSI e presentazione di esempi di applicazioni attuali. Studio dei consorzi internazionali coinvolti e dei finanziamenti europei legati alla self-sovereign identity.
-        \item \textbf{Settimana 11-12 (40 ore)} - Zero Knowledge Proof: studio di cos'è e come potrebbe servire per la SSI, analisi delle applicazioni reali e delle sfide tecniche da affrontare.
-        \item \textbf{Settimana 13-14 (40 ore)} - Approfondimento degli aspetti di sicurezza della blockchain: studio delle vulnerabilità principali in Solidity, tecniche e strumenti per la sicurezza degli smart contract.
-        \item \textbf{Settimana 15-16 (40 ore)} - Possibili scenari futuri di applicazione della blockchain e della SSI: studio di un possibile scenario futuro di applicabilità, discutendo problemi e sfide correlati. 
-    \end{enumerate}
+        \item \textbf{Prima Settimana - Introduzione alle tecnologie blockchain (20 ore)}
+        \begin{itemize}
+            \item Introduzione alle tecnologie blockchain;
+            \item Studio del funzionamento della blockchain e dei concetti di base (wallet, firma asimmetrica, transazioni, etc.);
+            \item Studio dei principali tipi di blockchain e dei meccanismi di consenso;
+        \end{itemize}
 
+        \item \textbf{Seconda Settimana - Concetti avanzati di blockchain (20 ore)}
+        \begin{itemize}
+            \item Studio di concetti avanzati di blockchain come Smart contract, Solidity e tokenizzazione;
+            \item Analisi di vulnerabilità principali in Solidity (e.g. reentrancy, integer overflow/underflow, etc.);
+            \item Studio della scalabilità e dei limiti della tecnologia blockchain;
+        \end{itemize}
+        
+        \item \textbf{Terza Settimana - Token, scalabilità e immutabilità(20 ore)}
+        \begin{itemize}
+            \item Studio della tokenizzazione e della creazione di token su blockchain;
+            \item Studio della scalabilità e dei limiti della tecnologia blockchain;
+            \item Concetto di immutabilità nella blockchain e il ruolo della crittografia;
+        \end{itemize}
+        
+        \item \textbf{Quarta Settimana - Self-sovereign identity (SSI): protocolli, tecnologie e criticità (20 ore)}
+        \begin{itemize}
+            \item Studio del concetto di self-sovereign identity;
+            \item Descrizione di protocolli e tecnologie per la gestione delle identità digitali;
+            \item Analisi delle caratteristiche, delle potenzialità e delle criticità di ciascuna di esse;
+        \end{itemize}
+        
+        \newpage 
+
+        \item \textbf{Quinta Settimana - Zero Knowledge Proof (ZKP) e sua applicazione alla SSI (20 ore)}
+        \begin{itemize}
+            \item Studio del concetto di Zero Knowledge Proof;
+            \item Applicazione di Zero Knowledge Proof alla SSI;
+            \item Casi d'uso reali della SSI e della tecnologia Zero Knowledge Proof;
+            \item Primo studio consorzi internazionali coinvolti e finanziamenti europei;
+        \end{itemize}
+        
+        \item \textbf{Sesta Settimana - Studio delle librerie EthersJS/Web3JS (20 ore)}
+        \begin{itemize}
+            \item Studio delle principali librerie Javascript per interagire con la blockchain Ethereum (EthersJS, Web3JS, ecc.);
+            \item Analisi delle caratteristiche e delle funzionalità offerte dalle librerie;
+            \item Configurazione dell'ambiente di sviluppo per interagire con una blockchain Ethereum di test;
+        \end{itemize}
+        
+        \item \textbf{Settima e Ottava Settimana - Implementazione Proof of Concept con EthersJS/Web3JS (40 ore)}
+        \begin{itemize}
+            \item Definizione dei requisiti per il PoC da implementare;
+            \item Studio delle librerie EthersJS/Web3JS per interagire con la blockchain Ethereum;
+            \item Configurazione dell'ambiente di sviluppo per interagire con una blockchain Ethereum di test;
+            \item Studio dell'architettura di un'applicazione decentralizzata (dApp) su blockchain Ethereum e dei componenti principali (smart contract, frontend, backend);
+            \item Implementazione di un'interfaccia utente (UI) per la dApp utilizzando HTML, CSS e Javascript;
+            \item Interazione con la blockchain Ethereum tramite la libreria EthersJS/Web3JS per la lettura e la scrittura di dati sulla blockchain;
+            \item Implementazione di funzionalità di autenticazione utente utilizzando la SSI e i protocolli studiati in precedenza;
+            \item Testing e debugging del POC implementato;
+            \item Discussione di problemi e sfide relativi all'implementazione di applicazioni decentralizzate su blockchain Ethereum.
+        \end{itemize}
+
+        \newpage
+
+        \item \textbf{Nona Settimana - SSI: approfondimenti e implementazione nel PoC}
+        \begin{itemize}
+            \item Studio approfondito del concetto di self-sovereign identity (SSI);
+            \item Descrizione di protocolli e tecnologie per la gestione delle identità digitali;
+            \item Analisi delle caratteristiche, delle potenzialità e delle criticità di ciascuna di esse;
+            \item Approfondimento delle tecniche di crittografia utilizzate per garantire la sicurezza e la privacy delle informazioni personali nell'ambito della SSI;
+            \item Casi d'uso reali individuati;
+            \item Consorzi internazionali coinvolti e finanziamenti europei;
+            \item Studio di un possibile scenario futuro di applicabilità, discutendo problemi e sfide correlati;
+            \item Integrazione della SSI nel POC sviluppato in precedenza;
+            \item Testing e debugging delle funzionalità di autenticazione utente utilizzando la SSI;
+            \item Discussione di problemi e sfide relativi all'utilizzo della SSI in applicazioni decentralizzate su blockchain Ethereum.
+        \end{itemize}
+
+        \item \textbf{Decima Settimana - ZKP: approfondimenti e implementazione nel PoC}
+        \begin{itemize}
+            \item Studio di Zero Knowledge Proof (ZKP);
+            \item Approfondimento dell'utilizzo di ZKP per la SSI;
+            \item Implementazione di una funzionalità di ZKP nel POC sviluppato in precedenza;
+            \item Testing e debugging delle funzionalità di ZKP implementate;
+            \item Discussione di problemi e sfide relativi all'utilizzo di ZKP in applicazioni decentralizzate su blockchain Ethereum e nella SSI.
+        \end{itemize}   
+
+        \item \textbf{Undicesima Settimana - Scalabilità nella blockchain e analisi second layer (20 ore)}
+        \begin{itemize}
+            \item Studio della scalabilità della tecnologia blockchain;
+            \item Analisi dei limiti della blockchain Ethereum e delle possibili soluzioni;
+            \item Studio delle soluzioni di second layer per la scalabilità, come gli State Channels e i Sidechains;
+            \item Implementazione di una soluzione di second layer nel POC sviluppato in precedenza;
+            \item Testing e debugging della soluzione di second layer implementata;
+            \newpage 
+            \item Implicazioni e limitazioni dell'uso delle soluzioni di second layer in ambito blockchain.
+        \end{itemize}
+
+        \item \textbf{Dodicesima Settimana - Analisi di vulnerabilità e sicurezza (20 ore)}
+        \begin{itemize}
+            \item Studio delle vulnerabilità principali della blockchain Ethereum;
+            \item Analisi dei rischi di sicurezza per i contratti intelligenti su Ethereum;
+            \item Studio delle tecniche di hacking utilizzate per attaccare le blockchain;
+            \item Utilizzo di strumenti di sicurezza per analizzare e proteggere le reti blockchain;
+            \item Analisi delle vulnerabilità degli exchange di criptovalute e delle strategie per mitigare i rischi;
+            \item Valutazione della sicurezza delle criptovalute e dei portafogli digitali;
+        \end{itemize}
+        
+        \item \textbf{Tredicesima Settimana - Implementazione misure individuate nel PoC (20 ore)}
+        \begin{itemize}
+            \item Revisione e analisi dei risultati dell'analisi di vulnerabilità e sicurezza della blockchain Ethereum e dei contratti intelligenti;
+            \item Implementazione di contromisure per mitigare i rischi di sicurezza identificati durante l'analisi di vulnerabilità;
+            \item Studio delle best practices per la sicurezza delle applicazioni decentralizzate (dApp) su blockchain Ethereum;
+            \item Valutazione dell'efficacia delle contromisure implementate per mitigare i rischi di sicurezza;
+            \item Discussione di nuove minacce di sicurezza per la blockchain Ethereum e dei metodi per affrontarle.
+        \end{itemize}
+        
+        \item \textbf{Quattordicesima Settimana - Analisi di limiti e sfide nell'implementazione decentralizzata (20 ore)}
+        \begin{itemize}
+            \item Analisi delle principali implementazioni di blockchain (ad esempio, Bitcoin, Ethereum, Ripple, etc.);
+            \item Studio delle differenze tra le implementazioni di blockchain pubbliche e private;
+            \item Discussione dei limiti attuali della tecnologia blockchain e delle aree in cui è necessario migliorare;
+            \item Analisi delle potenziali applicazioni della blockchain in vari settori (ad esempio, finanza, supply chain, sanità, etc.);
+            \item Studio delle opportunità e dei rischi associati alla tokenizzazione di asset tradizionali tramite la blockchain;
+            \item Discussione delle implicazioni legali e regolamentari della blockchain e delle criptovalute.
+        \end{itemize}
+
+        \item \textbf{Quindicesima Settimana - Consorzi internazionali coinvolti e finanziamenti europei (20 ore)}
+        \begin{itemize}
+            \item Approfondimento sulle organizzazioni di standardizzazione, come ISO e IEEE, e sul loro ruolo nello sviluppo e nella definizione degli standard blockchain;
+            \item Studio delle partnership tra aziende e organizzazioni per lo sviluppo di progetti blockchain, come il consorzio R3;
+            \item Analisi dei finanziamenti disponibili per lo sviluppo di progetti blockchain a livello nazionale e internazionale, come il programma Horizon 2020 dell'Unione Europea;
+            \item Esplorazione delle implicazioni legali e regolatorie nell'ambito della partecipazione a progetti blockchain finanziati da enti pubblici o privati;
+            \item Discussione delle strategie di networking e di comunicazione per individuare e partecipare a progetti di ricerca e sviluppo sulla blockchain;
+            \item Approfondimento sui processi di selezione dei progetti finanziati, e su come aumentare le probabilità di successo nella partecipazione a bandi pubblici o privati.
+        \end{itemize} 
+
+        \item \textbf{Sedicesima Settimana - Discussione scenari di applicabilità e conclusione (20 ore)}
+        \begin{itemize}
+            \item Analisi dei casi d'uso più interessanti e promettenti per la blockchain e le criptovalute in ambiti specifici come la finanza, la logistica, la salute, la pubblica amministrazione, etc.;
+            \item Discussione dei vantaggi e delle limitazioni dell'utilizzo della blockchain e delle criptovalute rispetto alle tecnologie tradizionali;
+            \item Esplorazione di nuovi sviluppi tecnologici e di progetti di ricerca in corso che potrebbero influenzare l'evoluzione della blockchain e delle criptovalute;
+            \item Valutazione dei possibili impatti socio-economici e delle opportunità per l'innovazione che potrebbero derivare dall'adozione su larga scala della blockchain e delle criptovalute;
+            \item Discussione delle sfide e dei rischi che potrebbero sorgere con l'uso della blockchain e delle criptovalute, come la scalabilità, la privacy, la sicurezza e la regolamentazione.
+        \end{itemize} 
+
+    \end{enumerate}
 
 }
 
-% Indicare il totale complessivo (deve essere compreso tra le 300 e le 320 ore)
 \newcommand{\totaleOre}{320}
 
 \newcommand{\obiettiviObbligatori}{
-	 \item \underline{\textit{O01}}: Descrivere i concetti di base della blockchain, tra cui la sua architettura, i nodi della rete, la criptografia e il consenso distribuito;
-	 \item \underline{\textit{O02}}: Analizzare il concetto di Smart contract e il linguaggio Solidity, con particolare attenzione alle vulnerabilità principali e alle tecniche per evitare errori di programmazione;
-	 \item \underline{\textit{O03}}: Approfondire il funzionamento della firma asimmetrica delle transazioni su catena e la validazione dei blocchi, studiando le tipologie di consenso e le catene più conosciute;
-	 \item \underline{\textit{O04}}: Studiare le tecniche di crittografia utilizzate per garantire la sicurezza e la privacy delle informazioni personali nell'ambito della Self-Sovereign Identity (SSI) e dei protocolli per la gestione delle identità digitali;
-     \item \underline{\textit{O05}}: Individuare casi d'uso reali per la SSI, analizzando i consorzi internazionali coinvolti in ambito di ricerca e i finanziamenti europei;
-     \item \underline{\textit{O06}}: Discutere le sfide e i problemi legati alla SSI, studiando un possibile scenario futuro di applicabilità e basato su Zero Knowledge Proof (ZKP).
+    \item \underline{\textit{O01}}: Descrivere i concetti di base della blockchain, tra cui la sua architettura, i nodi della rete, la criptografia e il consenso distribuito;
+    \item \underline{\textit{O02}}: Analizzare il concetto di Smart contract e il linguaggio Solidity, con particolare attenzione alle vulnerabilità principali e alle tecniche per evitare errori di programmazione;
+    \item \underline{\textit{O03}}: Approfondire il funzionamento della firma asimmetrica delle transazioni su catena e la validazione dei blocchi, studiando le tipologie di consenso e le catene più conosciute;
+    \item \underline{\textit{O04}}: Studiare le tecniche di crittografia utilizzate per garantire la sicurezza e la privacy delle informazioni personali nell'ambito della Self-Sovereign Identity (SSI) e dei protocolli per la gestione delle identità digitali;
+    \item \underline{\textit{O05}}: Individuare casi d'uso reali per la SSI, analizzando i consorzi internazionali coinvolti in ambito di ricerca e i finanziamenti europei;
+    \item \underline{\textit{O06}}: Discutere le sfide e i problemi legati alla SSI, studiando un possibile scenario futuro di applicabilità e basato su Zero Knowledge Proof (ZKP).
 }
 
 \newcommand{\obiettiviDesiderabili}{
-	 \item \underline{\textit{D01}}: Analizzare la scalabilità e i limiti della tecnologia blockchain;
-	 \item \underline{\textit{D02}}: Analizzare le criticità e le sfide nella gestione dell'identità digitale, come la perdita o la violazione dei dati, la mancanza di standard e la scarsa adozione da parte degli utenti;
-	 \item \underline{\textit{D03}}: Esplorare le tecnologie di smart contract e di blockchain programmabile, per esempio Ethereum, e il loro possibile utilizzo in un sistema SSI;
-	 \item \underline{\textit{D04}}: Approfondimento delle tecniche di tokenizzazione e creazione di token su blockchain.
+	\item \underline{\textit{D01}}: Implementare una dApp tramite le librerie EthersJS/Web3JS, utilizzando un smart contract di esempio;
+    \item \underline{\textit{D02}}: Realizzare una UI (interfaccia utente) per la dApp utilizzando HTML, CSS e JavaScript;
+    \item \underline{\textit{D03}}: Utilizzare la SSI e i protocolli studiati per implementare funzionalità di autenticazione utente nella dApp;
+    \item \underline{\textit{D04}}: Testare e debuggare la dApp implementata;
+    \item \underline{\textit{D05}}: Discutere problemi e sfide relativi all'implementazione di applicazioni decentralizzate su blockchain Ethereum, con particolare attenzione alla scalabilità e alla sicurezza.
 }
 
 \newcommand{\obiettiviFacoltativi}{
-	 \item \underline{\textit{F01}}: Approfondire gli aspetti tecnici relativi alla blockchain, analizzando le vulnerabilità principali e le tecniche per mitigarle;
-	 \item \underline{\textit{F02}}: Analisi di progetti blockchain già esistenti, individuando criticità e punti di forza;
-	 \item \underline{\textit{F03}}: Studio di altre tecnologie emergenti nel campo della gestione delle identità digitali, come ad esempio la tecnologia DID (Decentralized Identifiers).
+	\item \underline{\textit{F01}}: Approfondire l'utilizzo di altri linguaggi di programmazione per gli smart contract, come Vyper;
+    \item \underline{\textit{F02}}: Analizzare l'utilizzo di altre tecnologie blockchain, come Polkadot o Cardano, per implementare la SSI;
+    \item \underline{\textit{F03}}: Esplorare altre funzionalità delle librerie EthersJS/Web3JS, come l'invio di transazioni;
+    \item \underline{\textit{F04}}: Investigare i limiti e le sfide legate all'utilizzo della tecnologia blockchain.
 }
