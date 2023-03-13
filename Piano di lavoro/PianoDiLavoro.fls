@@ -1013,14 +1013,6 @@ INPUT ./img/iso.png
 INPUT ./img/iso.png
 INPUT img/iso.png
 INPUT ./img/iso.png
-INPUT ./img/logo_azienda.png
-INPUT ./img/logo_azienda.png
-INPUT img/logo_azienda.png
-INPUT ./img/logo_azienda.png
-INPUT ./img/iso.png
-INPUT ./img/iso.png
-INPUT img/iso.png
-INPUT ./img/iso.png
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/adobe/helvetic/phvb8t.tfm
 INPUT ./Template/Tabelle/tabellaRipartizioneOre.tex
 INPUT Template/Tabelle/tabellaRipartizioneOre.tex
