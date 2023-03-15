@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.17)  13 MAR 2023 16:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.17)  13 MAR 2023 17:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1188,11 +1188,11 @@ Package fancyhdr Warning: \footskip is too small (2.0pt):
 (fancyhdr)                \setlength{\footskip}{46.69579pt}.
 
 [11]) (./Template/Sezioni/Diagramma.tex
-<img/gantt.png, id=108, 868.4445pt x 377.61075pt>
+<img/gantt.png, id=108, 938.3055pt x 426.393pt>
 File: img/gantt.png Graphic file (type png)
 <use img/gantt.png>
-Package pdftex.def Info: img/gantt.png  used on input line 11.
-(pdftex.def)             Requested size: 512.1496pt x 222.6847pt.
+Package pdftex.def Info: img/gantt.png  used on input line 10.
+(pdftex.def)             Requested size: 512.1496pt x 232.74718pt.
 ) (./Template/Sezioni/Approvazione.tex) 
 AED: lastpage setting LastPage
 File: img/logo_azienda.png Graphic file (type png)
@@ -1221,7 +1221,7 @@ Here is how much of TeX's memory you used:
  1144 hyphenation exceptions out of 8191
  80i,18n,79p,488b,612s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on PianoDiLavoro.pdf (13 pages, 436005 bytes).
+Output written on PianoDiLavoro.pdf (13 pages, 417416 bytes).
 PDF statistics:
  146 PDF objects out of 1000 (max. 8388607)
  113 compressed objects within 2 object streams
