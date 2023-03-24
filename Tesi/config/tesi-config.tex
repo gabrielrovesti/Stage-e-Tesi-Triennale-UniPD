@@ -1,0 +1,197 @@
+% Variables
+\newcommand{\myName}{Nome Cognome}
+\newcommand{\myTitle}{Titolo della tesi}
+\newcommand{\myDegree}{Tesi di laurea}
+\newcommand{\myUni}{Università degli Studi di Padova}
+\newcommand{\myFaculty}{Corso di Laurea in Informatica}
+\newcommand{\myDepartment}{Dipartimento di Matematica ``Tullio Levi-Civita''}
+\newcommand{\profTitle}{Prof.}
+\newcommand{\myProf}{Nome Cognome}
+\newcommand{\myLocation}{Padova}
+\newcommand{\myAA}{AAAA-AAAA}
+\newcommand{\myTime}{Mese AAAA}
+
+% PDF/A filecontents
+\RequirePackage{filecontents}
+\begin{filecontents*}{\jobname.xmpdata}
+  \Title{Document’s title}
+  \Author{Author’s name}
+  \Language{it-IT}
+  \Subject{The abstract, or short description.}
+  \Keywords{keyword1\sep keyword2\sep keyword3}
+\end{filecontents*}
+
+% Page format settings
+% see: http://wwwcdf.pd.infn.it/AppuntiLinux/a2547.htm
+\setlength{\parindent}{14pt}    % first row indentation
+\setlength{\parskip}{0pt}       % paragraphs spacing
+
+\input{appendice/definizioni-glossario}
+\makeglossaries
+
+\bibliography{appendice/bibliografia}
+
+\defbibheading{bibliography} {
+    \cleardoublepage
+    \phantomsection
+    \addcontentsline{toc}{chapter}{\bibname}
+    \chapter*{\bibname\markboth{\bibname}{\bibname}}
+}
+
+% Spacing between entries
+\setlength\bibitemsep{1.5\itemsep}
+
+\DeclareBibliographyCategory{opere}
+\DeclareBibliographyCategory{web}
+
+\addtocategory{opere}{womak:lean-thinking}
+\addtocategory{web}{site:agile-manifesto}
+
+\defbibheading{opere}{\section*{Riferimenti bibliografici}}
+\defbibheading{web}{\section*{Siti Web consultati}}
+
+
+\captionsetup{
+    tableposition=top,
+    figureposition=bottom,
+    font=small,
+    format=hang,
+    labelfont=bf
+}
+
+% Images path
+\graphicspath{{immagini/}}
+
+\hypersetup{
+    %hyperfootnotes=false,
+    %pdfpagelabels,
+    %draft,	% = elimina tutti i link (utile per stampe in bianco e nero)
+    colorlinks=true,
+    linktocpage=true,
+    pdfstartpage=1,
+    pdfstartview=,
+    % decommenta la riga seguente per avere link in nero (per esempio per la stampa in bianco e nero)
+    %colorlinks=false, linktocpage=false, pdfborder={0 0 0}, pdfstartpage=1, pdfstartview=FitV,
+    breaklinks=true,
+    pdfpagemode=UseNone,
+    pageanchor=true,
+    pdfpagemode=UseOutlines,
+    plainpages=false,
+    bookmarksnumbered,
+    bookmarksopen=true,
+    bookmarksopenlevel=1,
+    hypertexnames=true,
+    pdfhighlight=/O,
+    %nesting=true,
+    %frenchlinks,
+    urlcolor=webbrown,
+    linkcolor=RoyalBlue,
+    citecolor=webgreen
+    %pagecolor=RoyalBlue,
+    %urlcolor=Black, linkcolor=Black, citecolor=Black, %pagecolor=Black,
+}
+
+% Itemize symbols
+%\renewcommand{\labelitemi}{$\ast$}
+%\renewcommand{\labelitemi}{$\bullet$}
+%\renewcommand{\labelitemii}{$\cdot$}
+%\renewcommand{\labelitemiii}{$\diamond$}
+%\renewcommand{\labelitemiv}{$\ast$}
+
+% Listings setup
+\lstset{
+    language=[LaTeX]Tex,%C++,
+    keywordstyle=\color{RoyalBlue}, %\bfseries,
+    basicstyle=\small\ttfamily,
+    %identifierstyle=\color{NavyBlue},
+    commentstyle=\color{Green}\ttfamily,
+    stringstyle=\rmfamily,
+    numbers=none, %left,%
+    numberstyle=\scriptsize, %\tiny
+    stepnumber=5,
+    numbersep=8pt,
+    showstringspaces=false,
+    breaklines=true,
+    frameround=ftff,
+    frame=single
+}
+
+\definecolor{webgreen}{rgb}{0,.5,0}
+\definecolor{webbrown}{rgb}{.6,0,0}
+
+% \omiss produces '[...]'
+\newcommand{\omissis}{[\dots\negthinspace]}
+
+% Hyphenation rules
+\hyphenation {
+    ma-cro-istru-zio-ne
+    gi-ral-din
+}
+
+\newcommand{\sectionname}{sezione}
+\addto\captionsitalian{\renewcommand{\figurename}{Figura}
+                       \renewcommand{\tablename}{Tabella}}
+
+\newcommand{\glsfirstoccur}{\ap{{[g]}}}
+
+\newcommand{\intro}[1]{\emph{\textsf{#1}}}
+
+% Risks environment
+\newcounter{riskcounter}                % define a counter
+\setcounter{riskcounter}{0}             % set the counter to some initial value
+
+%%%% Parameters
+% #1: Title
+\newenvironment{risk}[1]{
+    \refstepcounter{riskcounter}        % increment counter
+    \par \noindent                      % start new paragraph
+    \textbf{\arabic{riskcounter}. #1}   % display the title before the content of the environment is displayed
+}{
+    \par\medskip
+}
+
+\newcommand{\riskname}{Rischio}
+
+\newcommand{\riskdescription}[1]{\textbf{\\Descrizione:} #1.}
+
+\newcommand{\risksolution}[1]{\textbf{\\Soluzione:} #1.}
+
+% Use case environment
+\newcounter{usecasecounter}             % define a counter
+\setcounter{usecasecounter}{0}          % set the counter to some initial value
+
+%%%% Parameters
+% #1: ID
+% #2: Nome
+\newenvironment{usecase}[2]{
+    \renewcommand{\theusecasecounter}{\usecasename #1}  % this is where the display of
+                                                        % the counter is overwritten/modified
+    \refstepcounter{usecasecounter}             % increment counter
+    \vspace{10pt}
+    \par \noindent                              % start new paragraph
+    {\large \textbf{\usecasename #1: #2}}       % display the title before the
+                                                % content of the environment is displayed
+    \medskip
+}{
+    \medskip
+}
+
+\newcommand{\usecasename}{UC}
+
+\newcommand{\usecaseactors}[1]{\textbf{\\Attori Principali:} #1. \vspace{4pt}}
+\newcommand{\usecasepre}[1]{\textbf{\\Precondizioni:} #1. \vspace{4pt}}
+\newcommand{\usecasedesc}[1]{\textbf{\\Descrizione:} #1. \vspace{4pt}}
+\newcommand{\usecasepost}[1]{\textbf{\\Postcondizioni:} #1. \vspace{4pt}}
+\newcommand{\usecasealt}[1]{\textbf{\\Scenario Alternativo:} #1. \vspace{4pt}}
+
+% Namespace description environment
+\newenvironment{namespacedesc}{
+    \vspace{10pt}
+    \par \noindent  % start new paragraph
+    \begin{description}
+}{
+    \end{description}
+    \medskip
+}
+
+\newcommand{\classdesc}[2]{\item[\textbf{#1:}] #2}
