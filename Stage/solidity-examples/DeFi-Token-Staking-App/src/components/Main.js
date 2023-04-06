@@ -3,7 +3,7 @@ import { UserContext } from "./App";
 import { weiToeth } from "./../hooks/web3utils";
 import { ethTowei } from "./../hooks/web3utils";
 
-const Main = ({getStakeTokens, getUnstakeTokens, unstakeTokens}) => {
+const Main = ({getStakeTokens, unstakeTokens}) => {
   const contractData = React.useContext(UserContext);
   const [amount, setAmount] = useState('')
   
@@ -14,8 +14,6 @@ const Main = ({getStakeTokens, getUnstakeTokens, unstakeTokens}) => {
   const rwdBal = rwdBalance ? rwdBalance : "";
 
   const tetherBal = tetherBalance ? tetherBalance : "";
-
-
 
   return (
     <>

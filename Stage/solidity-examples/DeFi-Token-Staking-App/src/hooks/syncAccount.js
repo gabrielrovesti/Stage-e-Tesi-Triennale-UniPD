@@ -1,8 +1,8 @@
 import React from "react";
 import { useLocalStorage } from './useLocalStorage';
 
-const syncAccount = () => {
-const [account, setaccount] = useLocalStorage("account", "0x0");
+const useSyncAccount = () => {
+  const [account, setaccount] = useLocalStorage("account", "0x0");
 
   React.useEffect(() => {
     if (!window.ethereum) {
@@ -41,10 +41,9 @@ const [account, setaccount] = useLocalStorage("account", "0x0");
       window.ethereum.on("connect", getAndSetAccount);
       window.ethereum.on("disconnect", clearAccount);
     };
-  }, [
-    account // re-render when this state changes
-  ]);
-  return account;
-}
+  }, [account, setaccount]);
 
-export default syncAccount
+  return account;
+};
+
+export default useSyncAccount;

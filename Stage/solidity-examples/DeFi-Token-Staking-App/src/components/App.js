@@ -75,8 +75,9 @@ const App = () => {
   React.useEffect(() => {
     loadWeb3();
     loadBlockchain();
-  }, [networkID, address, contract.stakingBalance]); // if empty it means run getNetId() once, re-run getNetId() when something changes inside[]
+  }, [networkID, address, contract.stakingBalance, loadBlockchain]); // if empty it means run getNetId() once, re-run getNetId() when something changes inside[]
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const loadBlockchain = async () => {
     const web3 = window.web3;
     //Load Tether
