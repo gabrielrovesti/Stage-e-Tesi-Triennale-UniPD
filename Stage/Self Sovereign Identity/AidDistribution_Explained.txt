@@ -1,0 +1,45 @@
+1 - First, individuals who are in need of aid would create a self-sovereign identity 
+using a platform such as uPort or Sovrin. This identity would contain all of their relevant 
+personal information, such as their name, address, and any other relevant details.
+
+2 - Once an individual has created their self-sovereign identity, they would then be able to access 
+the smart contract and request aid. They would provide their identity information as well as details 
+about their specific needs.
+
+3 - The smart contract would then verify the individual's identity using the self-sovereign identity 
+mechanism. This would ensure that only those who are truly in need of aid are able to access the resources.
+
+4 - Once the individual's identity has been verified, the smart contract would then distribute aid 
+to them based on their specific needs. This could be in the form of financial assistance, food, or other resources.
+
+5 - The smart contract would also record all transactions and distribute aid in a transparent manner, 
+allowing donors to see exactly where their money is going.
+
+6 - Finally, the smart contract would use the self-sovereign identity mechanism to ensure 
+that individuals are not able to exploit the system by creating multiple identities or accessing aid 
+that they are not entitled to.
+
+Here is how this smart contract works:
+
+1 - The Identity struct contains all the relevant personal information for an individual, 
+such as their name, address, and the amount of aid they have received. The isRegistered boolean 
+flag indicates whether the identity has been registered or not.
+
+2 - The identities mapping maps addresses to their corresponding Identity struct.
+
+3 - The registerIdentity function allows an individual to register their identity 
+by providing their name and address. This function creates a new Identity struct 
+and adds it to the identities mapping. The isRegistered flag is set to true, 
+and the address is added to the identityAddresses array.
+
+4 - The requestAid function allows an individual to request aid by specifying 
+the amount they need. This function first checks to ensure that the individual is registered, 
+and that the requested amount is greater than zero and less than or equal to the balance of the contract. 
+If these conditions are met, the aidReceived field of the individual's Identity struct 
+is incremented by the requested amount, and the requested amount is transferred to the individual's address.
+
+5 - The getIdentityAddresses function returns an array of all the registered 
+identity addresses. This function is only callable by the contract owner.
+
+6 - The getIdentity function returns the name, address, 
+and aidReceived field for a given identity address.
