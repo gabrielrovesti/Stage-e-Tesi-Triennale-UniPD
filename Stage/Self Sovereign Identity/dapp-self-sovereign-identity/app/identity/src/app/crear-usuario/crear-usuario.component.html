@@ -1,0 +1,35 @@
+<form name="IntelitixForm" method="post">
+<div class="container container_body">
+	<div class="row">
+		<div class="col-md-6 center-block">
+			<div class="card">
+				<div class="card-header">
+					<h3 class="panel-title">Crear Wallet</h3>
+				</div>
+				<div class="card-body">
+					<div class="form-group">
+						<label class="control-label" for="txtFullName">Nombre y Apellido</label>
+						<input class="form-control" name="txtFullName" id="txtFullName" type="text" [(ngModel)]  = "txtFullName" placeholder="Ricardo Pereira">
+					</div>
+					<hr>
+					<div class="form-group  bg-light">
+						<label class="control-label" for="txtEmailID">Email</label>
+						<input class="form-control" name="txtEmailID" id="txtEmailID" type="text" [(ngModel)]  = "txtEmailID" placeholder="ricardop@gmail.com">
+					</div>
+					<hr>
+					<div class="form-group">
+						<label class="control-label" for="txtMobileNo">Teléfono Móvil</label>
+						<input class="form-control" name="txtMobileNo" id="txtMobileNo" type="text" [(ngModel)]  = "txtMobileNo" placeholder="54915783922">
+					</div>
+				</div>
+				<div class="card-footer">
+					<div class="aligncenter">
+						<button type="button" class="btn btnsm btn-primary" (click)="addUser()">Crear Wallet</button>
+					</div>				
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</form>

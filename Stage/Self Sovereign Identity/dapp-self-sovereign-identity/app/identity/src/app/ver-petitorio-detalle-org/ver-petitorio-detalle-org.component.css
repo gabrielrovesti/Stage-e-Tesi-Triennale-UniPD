@@ -1,0 +1,9 @@
+.disabled{
+	pointer-events: none;
+	color: lightgray;
+}
+
+.rejected{
+	color: red;
+	text-decoration:line-through;
+}

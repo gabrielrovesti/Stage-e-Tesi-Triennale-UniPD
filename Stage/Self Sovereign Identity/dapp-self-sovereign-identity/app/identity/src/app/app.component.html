@@ -1,0 +1,32 @@
+<header [ngClass]="{'menu-1': appSelectorService.menuSelector==1, 'menu-2': appSelectorService.menuSelector==2}">
+   <div class="row" *ngIf="appSelectorService.menuSelector==1">
+   	<div class="col-md-2">
+   		<a routerLink="/" class="nav-link"><img src="assets/img/cnmv.png"></a>   		
+   	</div>	
+   	<div class="col-md-10" align="left">
+   		<h2 class="text-white">Licencia Digital de Inversor Cualificado</h2>	
+   	</div>	
+  </div>
+   <div class="row" *ngIf="appSelectorService.menuSelector==2">
+    <div class="col-md-2">
+      <a routerLink="/" class="nav-link"><img src="assets/img/financiera.png"></a>      
+    </div>  
+    <div class="col-md-10" align="left">
+      <h2 class="text-white">Plataforma Financiera TOR S.A.</h2> 
+    </div>  
+  </div>  
+  <app-menu></app-menu>
+</header>
+
+<br/>
+
+<router-outlet></router-outlet>
+
+ <footer class="footer fixed-bottom">
+  	<div class="card text-white" [ngClass]="{'menu-1': appSelectorService.menuSelector==1, 'menu-2': appSelectorService.menuSelector==2}">
+		<p class="card-text" align="center">
+			@Master Blockchain 2018-2019
+		</p>	
+  		<br/>
+	</div>
+</footer>

@@ -1,0 +1,33 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 center-block">
+			<div class="card">
+				<div class="card-header">
+					<h3 class="panel-title">Solicitudes de Acceso a los Datos de la licencia de Inversor Cualificado</h3>
+				</div>
+				<div class="card-body">
+					<table class="table table-bordered" id="requestlistparent">
+						<tr>
+							<!--
+							<td width="40%" align="center"><b>Institución</b></td>
+							-->
+							<td width="20%" align="center"><b>Dirección Eth Wallet</b></td>
+							<td width="30%" align="center"><b>Estado</b></td>
+							<td width="10%" align="center"><b>Acciones</b></td>
+						</tr>
+						<tr *ngFor="let item of listPetitorios">
+							<!--
+							<td>{{item.requestedBy}}</td>
+							-->
+							<td align="center" style="font-size: smaller;">{{userAddress}}</td>
+							<td align="center" [ngClass]="{'partial': item.requestOverAllStatus==='2', 'approved': item.requestOverAllStatus==='3', 'reject': item.requestOverAllStatus==='4'}">{{item.requestOverAllStatusString}}</td>
+							<td align="center">
+								<button *ngIf="item.requestOverAllStatus==='2' || item.requestOverAllStatus==='3'" type="button" class="btn btnsm btn-primary" (click)="moreInformation(item.index)">Ver Datos</button>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

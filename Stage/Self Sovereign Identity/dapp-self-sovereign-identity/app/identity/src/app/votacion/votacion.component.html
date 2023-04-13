@@ -1,0 +1,28 @@
+  <h1>Voting</h1>
+  <div class="table-responsive">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Option</th>
+          <th>Votes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>David</td>
+          <td>{{candidates.David}}</td>
+        </tr>
+        <tr>
+          <td>Ivan</td>
+          <td>{{candidates.Ivan}}</td>
+        </tr>
+        <tr>
+          <td>Marta</td>
+          <td>{{candidates.Marta}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <input type="text" id="candidate" [(ngModel)]="inputText" />
+  <a href="#" (click)="voteForCandidate()" class="btn btn-primary">Vote</a>

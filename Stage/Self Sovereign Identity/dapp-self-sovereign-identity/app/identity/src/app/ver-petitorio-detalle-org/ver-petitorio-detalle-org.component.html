@@ -1,0 +1,108 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-11 center-block">
+			<div class="card">
+				<div class="card-header">
+					<h3 class="card-title">Solicitud de Acceso a la Licencia de Inversor Cualificado</h3>
+				</div>
+				<div class="card-body">
+					<table class="table table-bordered" id="requestlistparent">
+						<tr>
+							<td width="40%"><b>Nombre de la Institución</b></td>
+							<td width="60%">{{model?.requestedBy}}</td>
+						</tr>
+						<tr>
+							<td width="40%" ><b>Dirección Eth Wallet</b></td>
+							<td width="60%">{{userAddress}}</td>
+						</tr>
+					</table>
+					
+					<table class="table table-bordered" id="requestlistchild">
+						<tr class="bg-light">
+							<td colspan="2" align="center"><b>Accesos Autorizados</b></td>
+							<td align="center"><b>Valores</b></td>
+						</tr>
+						<tr [ngClass]="{'disabled': model?.tcNo==='0', 'rejected': model?.tcNo==='3'}">
+							<td width="10%">
+								<input id="tcNo" type="checkbox" name="tcNo" [(ngModel)]="tcNo" disabled/>
+							</td>
+							<td width="40%">
+								Nro. de Licencia
+							</td>
+							<td width="60%">
+								{{tcNo ? modelVal?.tcNo : ""}}
+							</td>							
+						</tr>
+						<tr class="bg-light" [ngClass]="{'disabled': model?.tcFullNameAndId==='0', 'rejected': model?.tcFullNameAndId==='3'}">
+							<td width="10%">
+								<input id="tcFullNameAndId" type="checkbox" name="tcFullNameAndId" [(ngModel)]="tcFullNameAndId" disabled/>
+							</td>
+							<td width="40%">
+								Nombre y DNI del titular de la licencia
+							</td>
+							<td width="60%">
+								{{tcFullNameAndId ? modelVal?.tcFullNameAndId : ""}}
+							</td>							
+						</tr>
+						<tr [ngClass]="{'disabled': model?.tcBirthDate==='0', 'rejected': model?.tcBirthDate==='3'}">
+							<td width="10%">
+								<input id="tcBirthDate" type="checkbox" name="tcBirthDate" [(ngModel)]="tcBirthDate" disabled/>
+							</td>
+							<td width="40%">
+								Fecha de Nacimiento del titular de la licencia
+							</td>
+							<td width="60%">
+								{{tcBirthDate ? modelVal?.tcBirthDate : ""}}
+							</td>							
+						</tr>
+						<tr class="bg-light" [ngClass]="{'disabled': model?.tcAddress==='0', 'rejected': model?.tcAddress==='3'}">
+							<td width="10%">
+								<input id="tcAddress" type="checkbox" name="tcAddress" [(ngModel)]="tcAddress" disabled/>
+							</td>
+							<td width="40%">
+								Domicio del titular de la Licencia
+							</td>
+							<td width="60%">
+								{{tcAddress ? modelVal?.tcAddress : ""}}
+							</td>							
+						</tr>
+						<tr [ngClass]="{'disabled': model?.tcGreater500kHash==='0', 'rejected': model?.tcGreater500kHash==='3'}">
+							<td width="10%">
+								<input id="tcGreater500kHash" type="checkbox" name="tcGreater500kHash" [(ngModel)]="tcGreater500kHash" disabled/>
+							</td>
+							<td width="40%">
+								Ver el Documento que prueba una cartera de Inversor superior a 500.000 €.
+							</td>
+							<td width="60%">
+								<button *ngIf="tcGreater500kHash" type="button" class="btn btnsm btn-primary" (click)="moreInformation(modelVal?.tcGreater500kHash)">Ver Archivo</button>
+							</td>							
+						</tr>
+						<tr class="bg-light" [ngClass]="{'disabled': model?.tcAtLeast1YearHash==='0', 'rejected': model?.tcAtLeast1YearHash==='3'}">
+							<td width="10%">
+								<input id="tcAtLeast1YearHash" type="checkbox" name="tcAtLeast1YearHash" [(ngModel)]="tcAtLeast1YearHash" disabled/>
+							</td>
+							<td width="40%">
+								Ver el Documento que demuestre que ud. ha trabajado al menos un año en inversión de valores.
+							</td>
+							<td width="60%">
+								<button *ngIf="tcAtLeast1YearHash" type="button" class="btn btnsm btn-primary" (click)="moreInformation(modelVal?.tcAtLeast1YearHash)">Ver Archivo</button>
+							</td>							
+						</tr>
+						<tr [ngClass]="{'disabled': model?.tc10TransHash==='0', 'rejected': model?.tc10TransHash==='3'}">
+							<td width="10%">
+								<input id="tc10TransHash" type="checkbox" name="tc10TransHash" [(ngModel)]="tc10TransHash" disabled/>
+							</td>
+							<td width="40%">
+								Ver el Documento con las 10 transacciones mas importantes por trimestre en los últimos cuatro trimestres.
+							</td>
+							<td width="60%">
+								<button *ngIf="tc10TransHash" type="button" class="btn btnsm btn-primary" (click)="moreInformation(modelVal?.tc10TransHash)">Ver Archivo</button>
+							</td>							
+						</tr>						
+
+					</table>					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

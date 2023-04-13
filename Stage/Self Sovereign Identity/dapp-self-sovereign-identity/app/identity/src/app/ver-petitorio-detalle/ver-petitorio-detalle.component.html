@@ -1,0 +1,87 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-11 center-block">
+			<div class="card">
+				<div class="card-header">
+					<h3 class="card-title">Detalle de la Solicitud de Acceso a la Licencia de Inversor Cualificado</h3>
+				</div>
+				<div class="card-body">
+					<table class="table table-bordered" id="requestlistparent">
+						<tr>
+							<td width="40" align="center"><b>Nombre de la Institución</b></td>
+							<td width="40" align="center">{{model?.requestedBy}}</td>
+						</tr>
+					</table>
+					
+					<table class="table table-bordered" id="requestlistchild">
+						<tr class="bg-light">
+							<td colspan="2" align="center"><b>Autorizar Accesos Solicitados</b></td>
+						</tr>
+						<tr [ngClass]="{'disabled': model?.tcNo==='0'}">
+							<td width="90%">
+								Nro. de Licencia
+							</td>
+							<td width="10%">
+								<input id="tcNo" type="checkbox" name="tcNo" [(ngModel)]="tcNo"/>
+							</td>
+						</tr>
+						<tr class="bg-light" [ngClass]="{'disabled': model?.tcFullNameAndId==='0'}">
+							<td width="90%">
+								Nombre y DNI del titular de la licencia
+							</td>
+							<td width="10%">
+								<input id="tcFullNameAndId" type="checkbox" name="tcFullNameAndId" [(ngModel)]="tcFullNameAndId"/>
+							</td>
+						</tr>
+						<tr [ngClass]="{'disabled': model?.tcBirthDate==='0'}">
+							<td width="90%">
+								Fecha de Nacimiento del titular de la licencia
+							</td>
+							<td width="10%">
+								<input id="tcBirthDate" type="checkbox" name="tcBirthDate" [(ngModel)]="tcBirthDate"/>
+							</td>
+						</tr>
+						<tr class="bg-light" [ngClass]="{'disabled': model?.tcAddress==='0'}">
+							<td width="90%">
+								Domicio del titular de la Licencia
+							</td>
+							<td width="10%">
+								<input id="tcAddress" type="checkbox" name="tcAddress" [(ngModel)]="tcAddress"/>
+							</td>
+						</tr>
+						<tr [ngClass]="{'disabled': model?.tcGreater500kHash==='0'}">
+							<td width="90%">
+								Ver el Documento que prueba una cartera de Inversor superior a 500.000 €.
+							</td>
+							<td width="10%">
+								<input id="tcGreater500kHash" type="checkbox" name="tcGreater500kHash" [(ngModel)]="tcGreater500kHash"/>
+							</td>
+						</tr>
+						<tr class="bg-light" [ngClass]="{'disabled': model?.tcAtLeast1YearHash==='0'}">
+							<td width="90%">
+								Ver el Documento que demuestre que ud. ha trabajado al menos un año en inversión de valores.
+							</td>
+							<td width="10%">
+								<input id="tcAtLeast1YearHash" type="checkbox" name="tcAtLeast1YearHash" [(ngModel)]="tcAtLeast1YearHash"/>
+							</td>
+						</tr>
+						<tr [ngClass]="{'disabled': model?.tc10TransHash==='0'}">
+							<td width="90%">
+								Ver el Documento con las 10 transacciones mas importantes por trimestre en los últimos cuatro trimestres.
+							</td>
+							<td width="10%">
+								<input id="tc10TransHash" type="checkbox" name="tc10TransHash" [(ngModel)]="tc10TransHash"/>
+							</td>
+						</tr>						
+
+					</table>
+					
+					<div class="aligncenter">
+						<button type="button" class="btn btnsm btn-primary" (click)="updateRequestStatus()">Actualizar Accesos</button>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

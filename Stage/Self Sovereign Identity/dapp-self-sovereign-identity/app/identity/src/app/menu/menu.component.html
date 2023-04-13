@@ -1,0 +1,20 @@
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <ul *ngIf="appSelectorService.menuSelector==1"  class="navbar-nav">      
+      <li> <a routerLink="/crear-usuario" class="nav-link">Wallet</a></li>
+      <li ><a routerLink="/agregar-licencia-trader" class="nav-link">Licencia</a></li>
+      <li ><a routerLink="/ver-petitorios" class="nav-link">Autorizaciones</a></li>
+    </ul>
+
+    <ul *ngIf="appSelectorService.menuSelector==2"  class="navbar-nav">      
+      <li> <a routerLink="/crear-petitorio-licencia" class="nav-link">Solicitar</a></li>
+      <li ><a routerLink="/ver-petitorios-org" class="nav-link">Visualizar</a></li>
+    </ul>
+
+    <ul class="navbar-nav navbar-collapse justify-content-end">
+      <li ><a routerLink="/" class="nav-link">Inicio</a></li>
+    </ul>
+
+  </nav>
+
+</header>

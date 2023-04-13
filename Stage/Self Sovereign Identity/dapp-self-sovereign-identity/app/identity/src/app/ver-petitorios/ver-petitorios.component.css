@@ -1,0 +1,11 @@
+.approved{
+	color: green;
+}
+
+.partial{
+	color: #76db74;
+}
+
+.reject{
+	color: red;	
+}

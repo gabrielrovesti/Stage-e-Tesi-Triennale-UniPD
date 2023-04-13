@@ -1,0 +1,98 @@
+<form name="IntelitixForm" method="post" action="pubcert.asp">
+<div class="container">
+	<div class="row">
+		<div class="col-md-11 center-block">
+			<div class="card">
+				<div class="card-header">
+					<h3 class="panel-title">Solicitud de Acceso a la Licencia de Inversor Cualificado</h3>
+				</div>
+				<div class="card-body">
+
+					<div class="form-group">
+						<label class="control-label" for="txtInstituteName">Nombre de la Institución</label>
+						<input class="form-control" name="txtInstituteName" id="txtInstituteName" type="text" placeholder="Trading in Europe Inc." [(ngModel)]="txtInstituteName">
+					</div>
+				
+					<hr>
+
+					<div class="form-group bg-light">
+						<label class="control-label" for="txtUserAddress">Dirección Eth o DID del Inversor Cualificado</label>
+						<input class="form-control" name="txtUserAddress" id="txtUserAddress" type="text" placeholder="0x248c98eedc1381Bc8d45483030d490E9334cC767" [(ngModel)]="txtUserAddress">
+					</div>
+
+					<hr>
+				
+					<table class="table table-bordered" id="certlistparent">
+						<tr class="bg-light">
+							<td colspan="2" align="center">
+								<b>Seleccione el acceso a cada dato de la Licencia</b>
+							</td>
+						</tr>
+						<tr>
+							<td width="10%">
+								<input id="tcNo" type="checkbox" name="tcNo" [(ngModel)]="tcNo"/>
+							</td>
+							<td width="90%">
+								Nro. de Licencia
+							</td>
+						</tr>
+						<tr class="bg-light">
+							<td width="10%">
+								<input id="tcFullNameAndId" type="checkbox" name="tcFullNameAndId" [(ngModel)]="tcFullNameAndId"/>
+							</td>
+							<td width="90%">
+								Nombre y DNI del titular de la licencia
+							</td>
+						</tr>
+						<tr>
+							<td width="10%">
+								<input id="tcBirthDate" type="checkbox" name="tcBirthDate" [(ngModel)]="tcBirthDate"/>
+							</td>
+							<td width="90%">
+								Fecha de Nacimiento del titular de la licencia
+							</td>
+						</tr>
+						<tr class="bg-light">
+							<td width="10%">
+								<input id="tcAddress" type="checkbox" name="tcAddress" [(ngModel)]="tcAddress"/>
+							</td>
+							<td width="90%">
+								Domicio del titular de la Licencia
+							</td>
+						</tr>
+						<tr>
+							<td width="10%">
+								<input id="tcGreater500kHash" type="checkbox" name="tcGreater500kHash" [(ngModel)]="tcGreater500kHash"/>
+							</td>
+							<td width="90%">
+								Ver el Documento que prueba una cartera de Inversor superior a 500.000 €.
+							</td>
+						</tr>
+						<tr class="bg-light">
+							<td width="10%">
+								<input id="tcAtLeast1YearHash" type="checkbox" name="tcAtLeast1YearHash" [(ngModel)]="tcAtLeast1YearHash"/>
+							</td>
+							<td width="90%">
+								Ver el Documento que demuestre que ud. ha trabajado al menos un año en inversión de valores.
+							</td>
+						</tr>
+						<tr>
+							<td width="10%">
+								<input id="tc10TransHash" type="checkbox" name="tc10TransHash" [(ngModel)]="tc10TransHash"/>
+							</td>
+							<td width="90%">
+								Ver el Documento con las 10 transacciones mas importantes por trimestre en los últimos cuatro trimestres.
+							</td>
+						</tr>						
+					</table>										
+				</div>
+				<div class="card-footer">
+					<button type="button" class="btn btnsm btn-primary" (click)="addTradeCertRequest()">Enviar</button>
+				</div>
+			</div>
+		</div>
+		<br>
+	</div>
+
+</div>
+</form>
