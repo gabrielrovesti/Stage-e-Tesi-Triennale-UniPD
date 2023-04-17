@@ -1,21 +1,21 @@
 % Variables
-\newcommand{\myName}{Nome Cognome}
+\newcommand{\myName}{Gabriel Rovesti}
 \newcommand{\myTitle}{Titolo della tesi}
-\newcommand{\myDegree}{Tesi di laurea}
+\newcommand{\myDegree}{Tesi di Laurea Triennale}
 \newcommand{\myUni}{Università degli Studi di Padova}
 \newcommand{\myFaculty}{Corso di Laurea in Informatica}
 \newcommand{\myDepartment}{Dipartimento di Matematica ``Tullio Levi-Civita''}
-\newcommand{\profTitle}{Prof.}
-\newcommand{\myProf}{Nome Cognome}
+\newcommand{\profTitle}{Prof.ssa}
+\newcommand{\myProf}{Ombretta Gaggi}
 \newcommand{\myLocation}{Padova}
-\newcommand{\myAA}{AAAA-AAAA}
-\newcommand{\myTime}{Mese AAAA}
+\newcommand{\myAA}{2022-2023}
+\newcommand{\myTime}{Aprile 2023}
 
 % PDF/A filecontents
 \RequirePackage{filecontents}
 \begin{filecontents*}{\jobname.xmpdata}
-  \Title{Document’s title}
-  \Author{Author’s name}
+  \Title{Document's title}
+  \Author{Gabriel Rovesti}
   \Language{it-IT}
   \Subject{The abstract, or short description.}
   \Keywords{keyword1\sep keyword2\sep keyword3}
@@ -123,7 +123,7 @@
 \newcommand{\omissis}{[\dots\negthinspace]}
 
 % Hyphenation rules
-\hyphenation {
+\hyphenation{
     ma-cro-istru-zio-ne
     gi-ral-din
 }
@@ -164,12 +164,12 @@
 % #1: ID
 % #2: Nome
 \newenvironment{usecase}[2]{
-    \renewcommand{\theusecasecounter}{\usecasename #1}  % this is where the display of
+    \renewcommand{\theusecasecounter}{\usecasename#1}  % this is where the display of
                                                         % the counter is overwritten/modified
     \refstepcounter{usecasecounter}             % increment counter
     \vspace{10pt}
     \par \noindent                              % start new paragraph
-    {\large \textbf{\usecasename #1: #2}}       % display the title before the
+    {\large \textbf{\usecasename#1: #2}}       % display the title before the
                                                 % content of the environment is displayed
     \medskip
 }{
