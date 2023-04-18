@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.17)  17 APR 2023 19:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.17)  17 APR 2023 19:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1101,13 +1101,13 @@ Package pdftex.def Info: immagini//unipd-logo.png  used on input line 22.
 
 ]) (./introduzione/indice.tex [7] [8
 
-] (./tesi.toc)
+] (./tesi.toc [9
+
+])
 \tf@toc=\write8
 \openout8 = `tesi.toc'.
 
- [9
-
-] (./tesi.lof)
+ [10] (./tesi.lof)
 \tf@lof=\write9
 \openout9 = `tesi.lof'.
 
@@ -1115,7 +1115,9 @@ Package pdftex.def Info: immagini//unipd-logo.png  used on input line 22.
 \tf@lot=\write10
 \openout10 = `tesi.lot'.
 
- [10
+ [11
+
+] [12
 
 ]) (./capitoli/introduzione.tex
 Capitolo 1.
@@ -1127,13 +1129,22 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [1
 
+
+LaTeX Warning: Hyper reference `cap:processi-metodologie' on page 1 undefined on input line 37.
+
+[1
 
 
 
 ]) (./capitoli/processi.tex [2]
 Capitolo 2.
+) (./capitoli/kick-off.tex [3
+
+] [4
+
+]
+Capitolo 3.
 LaTeX Font Info:    Trying to load font information for T1+cmss on input line 3.
 (c:/texlive/2022/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2022/07/10 v2.5l Standard LaTeX font definitions
@@ -1142,12 +1153,6 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-) (./capitoli/kick-off.tex [3
-
-] [4
-
-]
-Capitolo 3.
 
 Underfull \hbox (badness 10000) in paragraph at lines 9--11
 
@@ -1157,60 +1162,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--11
 
 ]
 Capitolo 4.
-<immagini//usecase/scenario-principale.png, id=201, 463.13025pt x 236.082pt>
+<immagini//usecase/scenario-principale.png, id=233, 463.13025pt x 236.082pt>
 File: immagini//usecase/scenario-principale.png Graphic file (type png)
 <use immagini//usecase/scenario-principale.png>
 Package pdftex.def Info: immagini//usecase/scenario-principale.png  used on input line 14.
 (pdftex.def)             Requested size: 334.79773pt x 170.66333pt.
-[7 <./immagini//usecase/scenario-principale.png>] [8]) (./capitoli/product-prototype.tex [9] [10
-
-]
-Capitolo 5.
-) (./capitoli/product-design.tex [11] [12
-
-]
-Capitolo 6.
-) (./capitoli/conclusioni.tex [13] [14
-
-]
-Capitolo 7.
-) (./appendice/appendice-a.tex [15] [16
-
-]
-Appendice A.
-) [17] [18
-
-]
-No file tesi.acr.
-No file tesi.gls.
-(./appendice/bibliografia.tex [19] [20
-
-]) [21
-
-] (./tesi.aux)
-Package logreq Info: Writing requests to 'tesi.run.xml'.
-\openout1 = `tesi.run.xml'.
-
- ) ) 
-Here is how much of TeX's memory you used:
- 38075 strings out of 476029
- 672007 string characters out of 5794164
- 1863340 words of memory out of 5000000
- 57591 multiletter control sequences out of 15000+600000
- 542274 words of font info for 156 fonts, out of 8000000 for 9000
- 1143 hyphenation exceptions out of 8191
- 99i,10n,125p,2322b,2528s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{glo:uml} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{glo:api} has been referenced but does not exist, replaced by a fixed one
-
-{c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsi1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsl1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfti0800.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on tesi.pdf (31 pages, 549578 bytes).
-PDF statistics:
- 524 PDF objects out of 1000 (max. 8388607)
- 433 compressed objects within 5 object streams
- 101 named destinations out of 1000 (max. 500000)
- 68415 words of extra memory for PDF output out of 74296 (max. 10000000)
-
+[7 <./immagini//usecase/scenario-principale.png
+!pdfTeX error: pdflatex.exe (file ./immagini//usecase/scenario-principale.png): fflush() failed (Invalid argument)
+ ==> Fatal error occurred, no output PDF file produced!
