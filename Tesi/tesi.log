@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.17)  17 APR 2023 19:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.17)  19 APR 2023 12:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -869,7 +869,7 @@ Package biblatex Info: ... and expl3
 Package: xparse 2023-02-02 L3 Experimental document command parser
 )
 Package: blx-case-expl3 2022/07/12 v3.18b expl3 case changing code for biblatex
-))) (c:/texlive/2022/texmf-dist/tex/latex/layaureo/layaureo.sty
+)) (c:/texlive/2022/texmf-dist/tex/latex/layaureo/layaureo.sty
 Package: layaureo 2004/09/16 v0.2
  (c:/texlive/2022/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
@@ -894,6 +894,19 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \LA@AltezzaTesto=\skip107
 \LA@MargineSinistro=\skip108
 \LA@MargineSuperiore=\skip109
+) (c:/texlive/2022/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+)) (c:/texlive/2022/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2021/07/05 v2.14 Sectioning titles
+\ttl@box=\box66
+\beforetitleunit=\skip110
+\aftertitleunit=\skip111
+\ttl@plus=\dimen268
+\ttl@minus=\dimen269
+\ttl@toksa=\toks43
+\titlewidth=\dimen270
+\titlewidthlast=\dimen271
+\titlewidthfirst=\dimen272
 ) (./config/tesi-config.tex (c:/texlive/2022/texmf-dist/tex/latex/filecontents/filecontents.sty
 Package: filecontents 2019/09/20 v1.5 Create an external file from within a LaTeX document
 
@@ -907,24 +920,32 @@ Package filecontents Warning: This package is obsolete. Disabling it and
 LaTeX Info: File `tesi.xmpdata' already exists on the system.
             Not generating it from this source.
 
+
+Package geometry Warning: Over-specification in `h'-direction.
+    `width' (372.0pt) is ignored.
+
+
+Package geometry Warning: Over-specification in `v'-direction.
+    `height' (601.90594pt) is ignored.
+
 (./appendice/definizioni-glossario.tex)
 \glswrite=\write5
 \glo@main@file=\write6
 \openout6 = `tesi.glo'.
 
-Package glossaries Info: Writing glossary file tesi.glo on input line 30.
+Package glossaries Info: Writing glossary file tesi.glo on input line 38.
 \glo@acronym@file=\write7
 \openout7 = `tesi.acn'.
 
-Package glossaries Info: Writing glossary file tesi.acn on input line 30.
-Package hyperref Info: Option `colorlinks' set `true' on input line 92.
-Package hyperref Info: Option `linktocpage' set `true' on input line 92.
-Package hyperref Info: Option `breaklinks' set `true' on input line 92.
-Package hyperref Info: Option `pageanchor' set `true' on input line 92.
-Package hyperref Info: Option `plainpages' set `false' on input line 92.
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 92.
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 92.
-Package hyperref Info: Option `hypertexnames' set `true' on input line 92.
+Package glossaries Info: Writing glossary file tesi.acn on input line 38.
+Package hyperref Info: Option `colorlinks' set `true' on input line 104.
+Package hyperref Info: Option `linktocpage' set `true' on input line 104.
+Package hyperref Info: Option `breaklinks' set `true' on input line 104.
+Package hyperref Info: Option `pageanchor' set `true' on input line 104.
+Package hyperref Info: Option `plainpages' set `false' on input line 104.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 104.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 104.
+Package hyperref Info: Option `hypertexnames' set `true' on input line 104.
  (c:/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) (c:/texlive/2022/texmf-dist/tex/latex/listings/lstlang2.sty
@@ -977,16 +998,16 @@ LaTeX Font Info:    ... okay on input line 1.
  (c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count486
-\scratchdimen=\dimen268
-\scratchbox=\box66
+\scratchdimen=\dimen273
+\scratchbox=\box67
 \nofMPsegments=\count487
 \nofMParguments=\count488
-\everyMPshowfont=\toks43
+\everyMPshowfont=\toks44
 \MPscratchCnt=\count489
-\MPscratchDim=\dimen269
+\MPscratchDim=\dimen274
 \MPnumerator=\count490
 \makeMPintoPDFobject=\count491
-\everyMPtoPDFconversion=\toks44
+\everyMPtoPDFconversion=\toks45
 ) (c:/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -1010,7 +1031,10 @@ LaTeX Info: Redefining \microtypecontext on input line 1.
 Package microtype Info: Applying patch `item' on input line 1.
 Package microtype Info: Applying patch `toc' on input line 1.
 Package microtype Info: Applying patch `eqnum' on input line 1.
-Package microtype Info: Applying patch `footnote' on input line 1.
+
+
+Package microtype Warning: Unable to apply patch `footnote' on input line 1.
+
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1021,7 +1045,7 @@ LaTeX Info: Redefining \showhyphens on input line 1.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
- (c:/texlive/2022/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+(c:/texlive/2022/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
 Package biblatex Info: Trying to load language 'italian'...
@@ -1053,15 +1077,15 @@ Package biblatex Info: Reference segment=0 on input line 1.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: twoside 
-* h-part:(L,W,R)=(86.13797pt, 372.0pt, 139.3699pt)
-* v-part:(T,H,B)=(100.71263pt, 601.90594pt, 142.42827pt)
+* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=372.0pt
-* \textheight=601.90594pt
-* \oddsidemargin=13.86798pt
-* \evensidemargin=67.09991pt
-* \topmargin=-1.62485pt
+* \textwidth=483.69687pt
+* \textheight=731.23584pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-45.43198pt
 * \headheight=12.0pt
 * \headsep=18.06749pt
 * \topskip=10.0pt
@@ -1139,9 +1163,44 @@ LaTeX Warning: Hyper reference `cap:processi-metodologie' on page 1 undefined on
 
 ]) (./capitoli/processi.tex [2]
 Capitolo 2.
-) (./capitoli/kick-off.tex [3
 
-] [4
+Underfull \hbox (badness 10000) in paragraph at lines 11--15
+
+ []
+
+[3
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 72--75
+
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 84--87
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--97
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--125
+
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 139--143
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--154
+
+ []
+
+[6]) (./capitoli/kick-off.tex [7] [8
 
 ]
 Capitolo 3.
@@ -1158,15 +1217,70 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--11
 
  []
 
-) (./capitoli/concept.tex [5] [6
+) (./capitoli/concept.tex [9] [10
 
 ]
 Capitolo 4.
-<immagini//usecase/scenario-principale.png, id=233, 463.13025pt x 236.082pt>
+<immagini//usecase/scenario-principale.png, id=273, 463.13025pt x 236.082pt>
 File: immagini//usecase/scenario-principale.png Graphic file (type png)
 <use immagini//usecase/scenario-principale.png>
 Package pdftex.def Info: immagini//usecase/scenario-principale.png  used on input line 14.
-(pdftex.def)             Requested size: 334.79773pt x 170.66333pt.
-[7 <./immagini//usecase/scenario-principale.png
-!pdfTeX error: pdflatex.exe (file ./immagini//usecase/scenario-principale.png): fflush() failed (Invalid argument)
- ==> Fatal error occurred, no output PDF file produced!
+(pdftex.def)             Requested size: 435.32422pt x 221.90628pt.
+[11 <./immagini//usecase/scenario-principale.png>] [12]) (./capitoli/product-prototype.tex [13] [14
+
+]
+Capitolo 5.
+) (./capitoli/product-design.tex [15] [16
+
+]
+Capitolo 6.
+) (./capitoli/conclusioni.tex [17] [18
+
+]
+Capitolo 7.
+) (./appendice/appendice-a.tex [19] [20
+
+]
+Appendice A.
+) [21] [22
+
+]
+No file tesi.acr.
+No file tesi.gls.
+(./appendice/bibliografia.tex [23] [24
+
+]) [25
+
+] (./tesi.aux)
+
+LaTeX Warning: There were undefined references.
+
+Package logreq Info: Writing requests to 'tesi.run.xml'.
+\openout1 = `tesi.run.xml'.
+
+ ) ) 
+Here is how much of TeX's memory you used:
+ 38523 strings out of 476029
+ 678644 string characters out of 5794164
+ 1866340 words of memory out of 5000000
+ 57965 multiletter control sequences out of 15000+600000
+ 543111 words of font info for 174 fonts, out of 8000000 for 9000
+ 1143 hyphenation exceptions out of 8191
+ 99i,10n,125p,2322b,3112s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{glo:uml} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:api} has been referenced but does not exist, replaced by a fixed one
+
+{c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsi1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsl1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfti0800.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on tesi.pdf (37 pages, 575514 bytes).
+PDF statistics:
+ 650 PDF objects out of 1000 (max. 8388607)
+ 552 compressed objects within 6 object streams
+ 130 named destinations out of 1000 (max. 500000)
+ 66511 words of extra memory for PDF output out of 74296 (max. 10000000)
+

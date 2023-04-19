@@ -25,8 +25,16 @@
 % see: http://wwwcdf.pd.infn.it/AppuntiLinux/a2547.htm
 \setlength{\parindent}{14pt}    % first row indentation
 \setlength{\parskip}{0pt}       % paragraphs spacing
+\onehalfspacing                 % line spacing
 
-\input{appendice/definizioni-glossario}
+\geometry{
+    left=2cm,
+    right=2cm,
+    top=2cm,
+    bottom=2cm,
+}
+
+\input{appendice/definizioni-glossario} % Glossary definitions
 \makeglossaries
 
 \bibliography{appendice/bibliografia}
@@ -41,6 +49,11 @@
 % Spacing between entries
 \setlength\bibitemsep{1.5\itemsep}
 
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titlespacing{\chapter}
+  {0pt}{50pt}{20pt}
+
 \DeclareBibliographyCategory{opere}
 \DeclareBibliographyCategory{web}
 
@@ -49,7 +62,6 @@
 
 \defbibheading{opere}{\section*{Riferimenti bibliografici}}
 \defbibheading{web}{\section*{Siti Web consultati}}
-
 
 \captionsetup{
     tableposition=top,

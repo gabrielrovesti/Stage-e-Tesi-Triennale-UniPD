@@ -1,24 +1,162 @@
-\chapter{Tecnologie e principi}\label{cap:tecnologie-principi}
+\chapter{Tecnologie di interesse}\label{cap:tecnologie}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-laboris nisi ut aliquip ex ea commodo consequat. 
+In questa sezione viene presentata una panoramica di base delle tecnologie oggetto del mio tirocinio,
+al fine di descrivere in modo chiaro e conciso i concetti di base e le caratteristiche principali delle tecnologie
+utilizzate nel progetto di stage e oggetto di studio autonomo e autodidatta.
 
 \section{Blockchain: concetti base}\label{sec:tecnologie-blockchain}
 
 \subsection{Introduzione}\label{sec:tecnologie-blockchain-introduzione}
+
+La blockchain è una tecnologia che permette di memorizzare dati in maniera decentralizzata e distribuita.
+Essa è una struttura dati che si comporta come un registro distribuito, salvando le informazioni in modo sicuro ed immutabile.
+La struttura è stata introdotta nel 2008 da Satoshi Nakamoto, che ha pubblicato il suo white paper \textit{Bitcoin: A Peer-to-Peer Electronic Cash System}.
+Nel 2009 è stato pubblicato il primo software open source per la blockchain, Bitcoin, che ha permesso di creare una moneta digitale decentralizzata. \\
+
+A tal fine, non si devono confondere le cosiddette criptovalute con la blockchain. Di fatto, quest'ultima p solo la struttura che permette lo scambio di beni di qualsiasi tipo,
+in modo sicurom registrato ed immutabile. Una criptovaluta è invece una moneta digitale, che può essere scambiata con altre monete digitali o con beni fisici.
+Essendo lo standard blockchain \textit{open source}, è possibile crearne di nuove con moltà facilità.
+
+Normalmente, viene utilizzata per memorizzare transazioni finanziarie, ma può essere utilizzata per memorizzare qualsiasi tipo di informazione.
+Un altro suo nome è \textit{distributed ledger technology} (DLT), che indica che le sue informazioni sono registrate come su un libro mastro, in cui le singole componenti della rete,
+definite nodi, possono accedere e modificare i dati, stabilendo se questi sono validi o meno.
+
 \subsection{Blocco}\label{sec:tecnologie-blockchain-blocco}
+
+I dati delle blockchain sono strutturati in singoli blocchi, ciascuno contenente uno specifico set di informazioni.
+Ogni blocco è collegato al precedente tramite un hash, che ne garantisce l'immutabilità.
+I blocchi sono collegati in una catena, che viene aggiornata ogni volta che viene aggiunto un nuovo blocco.
+Nello specifico, possiamo dettagliare una struttura formata da:
+\begin{itemize}
+    \item blocchi di dati;
+    \item nonce, un numero generato casualmente alla creazione del blocco;
+    \item l'hash del blocco precedente;
+    \item il numero della transazione;
+    \item \textit{timestamp} di generazione del blocco (data e ora).
+\end{itemize} 
+
+Per verificare l'integrità dei dati memorizzati, vengono usate delle strutture dati chiamati \textit{Merkle trees}, in cui ogni foglia rappresenta l'hash della transazione.
+Le foglie vengono poi raggruppate in coppie, e l'hash di ogni coppia viene calcolato e memorizzato in un nodo superiore.
+Il processo si ripete, fino a raggiungere la radice dell'albero, che rappresenta l'hash di tutte le transazioni contenute nel blocco.
+
 \subsection{Transazione}\label{sec:tecnologie-blockchain-transazione}
+
+Una transazione all'interno di una blockchain comporta il trasferimento di beni digitali, che possono essere valute, token, o qualsiasi altro tipo di informazione.
+In questo senso, possiamo individuare vari componenti del processo di transazione:
+\begin{itemize}
+    \item{gli utenti}, che avviano le transazioni firmandole digitalmente con la propria chiave privata;
+    \item{i \textit{miners}}, che attraverso un processo specifico definito come \textit{mining}, verificano la validità delle transazioni e le includono nel blocco successivo. 
+    \item{i nodi}, che convalidano i blocchi di transazioni inviati dai miners prima che vengano aggiunti alle blockchain.
+\end{itemize}
+
+Nello specifico, possiamo descrivere una transazione in questo modo:
+\begin{enumerate}
+    \item l'utente avvia la transazione creando una firma digitale utilizzando la propria chiave privata. La firma dimostra che l'utente ha il diritto di inviare i beni;
+    \item la transazione viene trasmessa alla rete di nodi o computer che eseguono il software della blockchain. Ogni nodo riceve la transazione e la aggiunge a un pool di transazioni non confermate;
+    \item i nodi della rete convalidano la transazione per assicurarsi che il mittente abbia fondi sufficienti per completare la transazione e che questa sia conforme alle regole del protocollo blockchain;
+    \item una volta che un numero sufficiente di nodi ha convalidato la transazione, questa viene aggiunta a un nuovo blocco di transazioni, insieme ad altre transazioni convalidate di recente;
+    \item il blocco di transazioni viene aggiunto alla blockchain in un processo chiamato mining. L'estrazione comporta la risoluzione di complesse equazioni matematiche per creare un nuovo blocco, il che richiede una grande potenza di calcolo;
+    \item una volta aggiunto il nuovo blocco alla blockchain, la transazione viene considerata confermata e i beni vengono trasferiti dall'indirizzo del mittente a quello del destinatario. La transazione è ora registrata in modo permanente sul libro mastro della blockchain, che può essere visualizzato e verificato da chiunque abbia accesso alla rete;
+\end{enumerate}
+
 \subsection{Wallet}\label{sec:tecnologie-blockchain-wallet}
+
+Un \textit{wallet}, detto anche \textit{portafoglio}, è un software che permette di memorizzare e gestire le chiavi private e pubbliche, e di inviare e ricevere transazioni.
+In particolare, possiamo più propriamente definirli portachiavi, in quanto non contengono realmente i beni digitali, ma le chiavi utilizzate per accedervi.
+L'utente dispone in ogni momento di:
+\begin{itemize}
+    \item una chiave pubblica, usata per inviare messaggi e ricevere pagamenti. È un codice univoco che identifica l'utente;
+    \item una chiave private, usata per firmare i messaggi e per accedere ai propri beni digitali. È un codice segreto che deve essere conservato in modo sicuro.
+\end{itemize} 
+
+Ogni wallet dispone di una frase segreta, che contiene tutte le informazioni necessarie per recuperare ed accedere ai fondi del proprio portafoglio.
+Inoltre, dispone di un proprio indirizzo, matematicamente derivato dalla stessa chiave pubblica mediante l'operazione di \textit{hashing}, con una lunghezza di 160 bit.ù
+Ciascuno è \textit{pseudonimo}, in quanto non appartiene nello specifico ad una persona, ma non è completamente anonimo. \\
+
+Distinguiamo due tipi di wallet:
+\begin{itemize}
+    \item \textit{hot wallet}, che sono i portafogli online, dunque più vulnerabili al rischio di \textit{hacking};
+    \item \textit{cold wallet}, che sono i portafogli offline, quindi considerati più sicuri, in quanto si collegano ad Internet principalmente per effettuare le transazioni.
+\end{itemize}
+
 \subsection{Mining}\label{sec:tecnologie-blockchain-mining}
-\subsection{Tipi}\label{sec:tecnologie-blockchain-tipi}
+
+Il processo di mining consente di creare nuovi blocchi sulla catena, al fine di convalidare le transazioni e ottenere nuove criptovalute come ricompensa per il proprio "sforzo".
+Questo obiettivo viene raggiunto attraverso un processo chiamato consenso, che prevede la risoluzione di complessi puzzle matematici utilizzando la potenza di calcolo.
+Il miner che riesce a risolvere il puzzle prima degli altri, vince il diritto di aggiungere il blocco alla blockchain. \\
+
+Si considera composto da due fasi:
+\begin{itemize}
+    \item \textit{hashing}, che consiste nella risoluzione di un puzzle matematico, che consiste nel trovare un numero che, una volta applicata una funzione di hash, abbia un valore inferiore ad un valore prefissato. Il valore di questo numero viene chiamato \textit{nonce};
+    \item \textit{ricerca del consenso}, che consiste nella verifica della validità del blocco, che viene effettuata da tutti i nodi della rete. Se il blocco è valido, viene aggiunto alla blockchain.
+\end{itemize}
+
+I minatori (miners) utilizzano un software speciale per risolvere il problema matematico incredibilmente complesso 
+di trovare un nonce che generi un hash accettato. Poiché il nonce è di soli 32 bit e l'hash di 256, ci sono circa quattro miliardi 
+di possibili combinazioni nonce-hash che devono essere estratte prima di trovare quella giusta. \\
+
+Quando un blocco viene estratto con successo, la modifica viene accettata da tutti i nodi della rete e il miner viene ricompensato finanziariamente. 
+Il primo minatore che risolve il puzzle e aggiunge un nuovo blocco alla blockchain viene ricompensato con un blocco di criptovaluta di nuovo conio.
+Il processo richiede un software specializzato e una grande potenza di calcolo, che può essere ottenuta utilizzando un computer o un gruppo di computer con grosso dispendio di energia e risorse.
+
 \subsection{Algoritmi di consenso}\label{sec:tecnologie-blockchain-algoritmi}
+Il meccanismo di ricerca di consenso prevede numerose varianti, che differiscono per il modo in cui i nodi della rete si accordano per aggiungere un nuovo blocco alla blockchain.\\
+Possiamo principalmente distinguere:
+\begin{enumerate}
+    \item{Proof of Work (PoW)}
+    \item{Proof of Stake(PoS)}
+    \item{Bizantine Fault Tolerance (BFT)}
+\end{enumerate}
+
+\subsection{Tipi}\label{sec:tecnologie-blockchain-tipi}
 
 \section{Blockchain: concetti avanzati}\label{sec:tecnologie-blockchain-avanzate}
-\subsection{Token}\label{sec:tecnologie-blockchain-avanziate-token}
+\subsection{Token}\label{sec:tecnologie-blockchain-avanzate-token}
 \subsection{Tokenizzazione}\label{sec:tecnologie-blockchain-avanziate-tokenizzazione}
 \subsection{Smart contract}\label{sec:tecnologie-blockchain-avanziate-smart-contract}
+\subsection{Scalabilità}\label{sec:tecnologie-blockchain-avanzate-scalabilità}
 
 \section{Self-Sovereign Identity}\label{sec:self-sovereign-identity}
 
+La self-sovereign identity (SSI) è un approccio all'identità digitale che dà agli individui 
+il controllo sulle informazioni che usano per dimostrare chi sono a siti web, servizi e applicazioni in tutto il web. 
+Senza l'SSI, gli individui con account (identità) persistenti su Internet devono affidarsi a una serie di fornitori terzi, come Facebook, Google e altri,
+che hanno il controllo delle informazioni associate alla loro identità. \\
+
+Esistono molti modi per implementare l'SSI utilizzando le chiavi crittografiche e ne analizzeremo due.
+\begin{itemize}
+    \item l'utilizzo di firme digitali, attraverso un processo di \textit{firma digitale}, che permette di firmare un documento con una chiave privata, e di verificare la firma con la chiave pubblica;
+    \item \textit{Decentralized Identifier (DID)}, che è un identificatore univoco alfanumerico per un soggetto, che può essere utilizzato per identificare una persona, un'organizzazione, un dispositivo, un servizio, un documento, ecc.
+\end{itemize}  
+
+Le parti coinvolte in questo processo sono principalmente tre:
+\begin{enumerate}
+    \item {emittente, detto anche \textit{holder}}, ossia l'entità che emette una credenziale, ad esempio un documento d'identità governativo;
+    \item {titolare, detto anche \textit{issuer}}, ossia il proprietario della credenziale, cioè l'entità su cui l'emittente genera la credenziale;
+    \item {verificatore, detto anche \textit{verifier}}, cioè l'entità che controlla la validità e l'autenticità della credenziale presentata dal titolare.
+\end{enumerate}  
+
+Si consideri che lo scopo principale di questa tecnologia è consentire agli utenti un'esistenza indipendente da provider terzi, 
+permettendo loro di controllare la propria identità in modo sicuro e accedendovi senza dover affidarsi a terzi. \\
+Inoltre, i sistemi e gli algoritmi che la supportano devono essere trasparenti, mantenendo le informazioni in modo trasparente e permanente, rendendo però semplice 
+la portabilità e l'interoperabilità di queste all'interno delle varie piattaforme. \\
+
+La tecnologia blockchain, per mezzo della sua natura decentralizzata, permette di creare un sistema di identità digitale che soddisfi questi requisiti.
+In particolare:
+\begin{itemize}
+    \item il titolare della credenziale possiede il suo DID firmato dalla propria coppia di chiavi che certifica la sua identità;
+    \item l'emittente fornisce delle \textit{Verifiable Credentials (VC)}, che certificano in modo digitale e crittograficamente protetto la validità del proprio ruolo;
+    \item il verificatore controlla che, tramite ciascun blocco, sia stata rilasciata una VC valida e che il titolare sia il legittimo possessore di quella VC.
+\end{itemize}  
+
+L'obiettivo principale è quello di fornire un utilizzo delle tecnologie blockchain tali da permettere agli utenti di selezionare quali credenziali mostrare (\textit{selective disclosure o divulgazione selettiva}),
+secondo opportuni standard definiti gradualmente dall'organizzazione internazionale \textit{W3C}, tra cui il citato VC. \\
+
+\subsection{Protocolli}\label{sec:self-sovereign-identity-protocolli}
+\subsection{Casi d'uso reali}\label{sec:self-sovereign-identity-casiduso}
+
 \section{Zero Knowledge Proof}\label{sec:zero-knowledge-proof}
+
+\subsection{Tipi}\label{sec:zero-knowledge-proof-tipi}
+\subsection{Casi d'uso reali}\label{sec:zero-knowledge-proof-casiduso}
+
