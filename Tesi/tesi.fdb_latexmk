@@ -1,11 +1,11 @@
 # Fdb version 4
-["biber tesi"] 1681899786 "tesi.bcf" "tesi.bbl" "tesi" 1681899799 0
-  "tesi.bcf" 1681899799 107387 ca980d9efd330953110797932927a3ae "pdflatex"
+["biber tesi"] 1681998662 "tesi.bcf" "tesi.bbl" "tesi" 1682006348 0
+  "tesi.bcf" 1682006348 107387 ca980d9efd330953110797932927a3ae "pdflatex"
   (generated)
   "tesi.bbl"
   "tesi.blg"
   (rewritten before read)
-["pdflatex"] 1681899796 "c:/Users/roves/OneDrive/Documenti/GitHub/Stage-e-tesi-UniPD/Tesi/tesi.tex" "tesi.pdf" "tesi" 1681899799 0
+["pdflatex"] 1682006345 "c:/Users/roves/OneDrive/Documenti/GitHub/Stage-e-tesi-UniPD/Tesi/tesi.tex" "tesi.pdf" "tesi" 1682006348 0
   "appendice/appendice-a.tex" 1681310589 71 cc886028b00139710f2bd4cd8598fdff ""
   "appendice/bibliografia.tex" 1681310589 288 4f09ce5dc01eb90ac58e754e8fb7b096 ""
   "appendice/definizioni-glossario.tex" 1681310589 1524 d22848d90e2adc18a36162546c0dec11 ""
@@ -259,13 +259,13 @@
   "c:/texlive/2022/texmf.cnf" 1676634991 713 e69b156964470283e0530f5060668171 ""
   "capitoli/concept.tex" 1681751426 3332 6040210694cd3e2ae96fd65cb29fadb0 ""
   "capitoli/conclusioni.tex" 1681310589 192 debc658b1a4a758466a3b393a019d0df ""
-  "capitoli/introduzione.tex" 1681751329 2204 f597760e36f52fbbfabd974b74dfc814 ""
+  "capitoli/introduzione.tex" 1682001327 2194 b880dc11c24da527653fe4aa33a72450 ""
   "capitoli/kick-off.tex" 1681751352 844 e2bd2059b18ff6d1352139ddedd824a5 ""
-  "capitoli/processi.tex" 1681897414 13308 5273a94f2a9921fbbc55d6efe842fc81 ""
+  "capitoli/processi.tex" 1682006340 38001 73ec78b0d35459e6c38bd6baacdb650e ""
   "capitoli/product-design.tex" 1681310589 68 82238921fd19a26f91fdd55bb4d37185 ""
   "capitoli/product-prototype.tex" 1681751092 883 74faddc0865fb84cfc0c2bed7aba6a8f ""
   "config/packages.tex" 1681899782 2619 e8f21e51d3fb8f8a2f50deb3967ff046 ""
-  "config/tesi-config.tex" 1681899711 6230 9bc0f8293eaf1ad0cf73a8f543bc79d6 ""
+  "config/tesi-config.tex" 1682001426 6230 9bc0f8293eaf1ad0cf73a8f543bc79d6 ""
   "immagini//unipd-logo.png" 1681310589 67664 76ff6f1d0669338b4fe4b628fa33ae46 ""
   "immagini//usecase/scenario-principale.png" 1681310589 24377 0d3ace5372e7415be10a60ac03cbb5ac ""
   "introduzione/copyright.tex" 1681310589 148 da2e5586ad0fb8cd031a9497bea244e9 ""
@@ -274,17 +274,17 @@
   "introduzione/ringraziamenti.tex" 1681751329 954 4c49b14926f33f055d5c783ec7b6dbf5 ""
   "introduzione/sommario.tex" 1681310589 826 4f2b684531eecd27d68f9c4f466129b3 ""
   "introduzione/titolo.tex" 1681310589 1489 2a1581848d83d81a620d7bf4589702cb ""
-  "pdfa.xmpi" 1681899797 5558 5faf3c0018dea200e43480351c356d2b "pdflatex"
+  "pdfa.xmpi" 1682006346 5558 aab8c545a8af50650d75d4c719b8bc60 "pdflatex"
   "struttura.tex" 1681659356 825 deeaf95ea04641cb5d9c6938c41785cb ""
   "tesi.acr" 0 -1 0 ""
-  "tesi.aux" 1681899799 20206 e94fb77306482b873610dae85a8e181c "pdflatex"
-  "tesi.bbl" 1681899788 2134 1e68e30382bbc9bf9df328dcfbe735a4 "biber tesi"
+  "tesi.aux" 1682006348 20336 e2e36cbae6ec020892272c1c6038c566 "pdflatex"
+  "tesi.bbl" 1681998664 2134 1e68e30382bbc9bf9df328dcfbe735a4 "biber tesi"
   "tesi.gls" 0 -1 0 ""
-  "tesi.lof" 1681899799 364 1add48c45829f570c66e5e85e1dbcb76 "pdflatex"
-  "tesi.lot" 1681899799 648 28f46da551a360452181cd7ac12cde52 "pdflatex"
-  "tesi.run.xml" 1681899799 2393 6053da8701a0cdf0e112e4716af7b1ef "pdflatex"
+  "tesi.lof" 1682006348 364 fc99b2e988c38032f7924e65087a74db "pdflatex"
+  "tesi.lot" 1682006348 648 120c7922c3c3eb48eac5e1af13c6047a "pdflatex"
+  "tesi.run.xml" 1682006348 2393 6053da8701a0cdf0e112e4716af7b1ef "pdflatex"
   "tesi.tex" 1681899683 204 ade2dcf13ac220ce94f28c4b427dbe34 ""
-  "tesi.toc" 1681899799 4279 865cb42c06ba184eee5fa78c1e747317 "pdflatex"
+  "tesi.toc" 1682006348 4290 423bb5b369f1ffc2b7772e9988335edb "pdflatex"
   "tesi.xmpdata" 1681659301 171 bad06cbe3baddcbaa074f0bd682b4ebc ""
   (generated)
   "pdfa.xmpi"

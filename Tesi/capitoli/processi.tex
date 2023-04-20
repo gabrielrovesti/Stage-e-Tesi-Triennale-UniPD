@@ -14,7 +14,7 @@ La struttura è stata introdotta nel 2008 da Satoshi Nakamoto, che ha pubblicato
 Nel 2009 è stato pubblicato il primo software open source per la blockchain, Bitcoin, che ha permesso di creare una moneta digitale decentralizzata. \\
 
 A tal fine, non si devono confondere le cosiddette criptovalute con la blockchain. Di fatto, quest'ultima p solo la struttura che permette lo scambio di beni di qualsiasi tipo,
-in modo sicurom registrato ed immutabile. Una criptovaluta è invece una moneta digitale, che può essere scambiata con altre monete digitali o con beni fisici.
+in modo sicuro, registrato ed immutabile. Una criptovaluta è invece una moneta digitale, che può essere scambiata con altre monete digitali o con beni fisici.
 Essendo lo standard blockchain \textit{open source}, è possibile crearne di nuove con moltà facilità.
 
 Normalmente, viene utilizzata per memorizzare transazioni finanziarie, ma può essere utilizzata per memorizzare qualsiasi tipo di informazione.
@@ -81,7 +81,7 @@ Distinguiamo due tipi di wallet:
 
 \subsection{Mining}\label{sec:tecnologie-blockchain-mining}
 
-Il processo di mining consente di creare nuovi blocchi sulla catena, al fine di convalidare le transazioni e ottenere nuove criptovalute come ricompensa per il proprio "sforzo".
+Il processo di mining consente di creare nuovi blocchi sulla catena, al fine di convalidare le transazioni e ottenere nuove criptovalute come ricompensa per il proprio `sforzo'.
 Questo obiettivo viene raggiunto attraverso un processo chiamato consenso, che prevede la risoluzione di complessi puzzle matematici utilizzando la potenza di calcolo.
 Il miner che riesce a risolvere il puzzle prima degli altri, vince il diritto di aggiungere il blocco alla blockchain. \\
 
@@ -103,18 +103,181 @@ Il processo richiede un software specializzato e una grande potenza di calcolo, 
 Il meccanismo di ricerca di consenso prevede numerose varianti, che differiscono per il modo in cui i nodi della rete si accordano per aggiungere un nuovo blocco alla blockchain.\\
 Possiamo principalmente distinguere:
 \begin{enumerate}
-    \item{Proof of Work (PoW)}
-    \item{Proof of Stake(PoS)}
-    \item{Bizantine Fault Tolerance (BFT)}
+    \item\textit{{Proof of Work (PoW)}}, in cui i nodi della rete devono risolvere un puzzle matematico per aggiungere un nuovo blocco alla blockchain. 
+    Il problema consiste nella ricerca di un hash (una stringa di numeri e lettere) che soddisfa una determinata condizione, detta target. La condizione target richiede 
+    che l'hash del nuovo blocco sia inferiore a un determinato valore. Questo valore viene stabilito in base alla difficoltà della blockchain, che viene regolata automaticamente per mantenere 
+    il tempo medio di creazione di un nuovo blocco costante. \\ \\
+    
+    Questa è attualmente utilizzata in \textit{Bitcoin}, in cui il tempo medio della formazione di blocchi è di 10 minuti circa, oppure la piattaforma \textit{Ethereum}, altro importante esempio di blockchain.
+    Si consideri che ne esistono varie tipologie, in cui ciascuna cerca di ridurre il consumo energetico dando prova del lavoro svolto (\textit{Meaningful}) oppure assincurandosi che
+    i nodi abbiano calcolato correttamente dopo un certo tempo (\textit{Delayed}).
+    Il principale svantaggio del PoW è che richiede un elevato consumo energetico, che può essere risolto con l'utilizzo di algoritmi di consenso alternativi.
+
+    \item\textit{{Proof of Stake (PoS)}}, che si si basa sulla detenzione di una certa quantità di criptovaluta come garanzia per la validazione delle transazioni. 
+    In pratica, i nodi della rete bloccano una certa quantità di criptovaluta come `punteggio'
+    per dimostrare che hanno un interesse nella corretta validazione delle transazioni. 
+    Questo punteggio viene utilizzato come base per la selezione del nodo che convalida la transazione successiva. \\
+    
+    A differenza del PoW, non ci sono miner coinvolti nel processo. Al loro posto, i partecipanti alla rete che 
+    vogliono essere coinvolti nella verifica della validità delle transazioni e nella creazione di blocchi nella rete 
+    devono detenere una certa quota nella rete, per esempio mettendo una certa quantità di moneta della rete in un portafoglio collegato 
+    alla sua blockchain. Questo processo è noto come `placing a stake' o `staking', che può essere tradotto come il fatto di mettere i propri interessi in gioco. \\
+    
+    Pertanto, le reti PoS sono basate su algoritmi deterministici, il che significa che i validatori dei blocchi sono eletti a seconda della natura della posta in gioco. 
+    Pur risultando meno intensiva in termini di energia rispetto alla PoW, il sistema risulta essere sbilanciato a favore dei produttori di blocchi oppure a favore degli utenri ricchi, 
+    poiché i validatori con più moneta hanno più possibilità di essere eletti. 
+    Alcune varianti di questo algoritmo prevedono infatti di scegliere dei nodi delegati per convalidare le transazioni e avere più controllo (\textit{Delegated}), 
+    oppure di scegliere i validatori in base alla quantità di moneta che hanno investito (\textit{Proof of Burn}).
+
 \end{enumerate}
 
 \subsection{Tipi}\label{sec:tecnologie-blockchain-tipi}
+Una prima categorizzazione delle blockchain avviene distinguendole in base ai permessi. Nello specifico:
+\begin{itemize}
+    \item \textit{permissioned}, in cui i nodi della rete sono controllati da un ente centrale, che può essere un'azienda, un'organizzazione o un'istituzione.
+    Esse limitano l'accesso alla rete a determinati nodi e possono anche limitare i diritti di tali nodi su tale rete. Le identità degli utenti di una blockchain autorizzata sono note agli altri utenti della blockchain autorizzata.
+    \item \textit{permissionless}, che non richiedono alcun permesso per partecipare e permettono agli utenti di essere pseudoanonimi 
+    (usando uno pseudonimo non si rivela alcun dettaglio relativo all'identità personale) e non restringono i permessi dei nodi. Queste ultime tendono ad essere più sicure delle precedenti, avendo vari nodi che convalidano le singole transazioni.
+\end{itemize}
+
+Fatta tale premessa, possiamo distinguere:
+\begin{itemize}
+    \item \textit{public}, in cui chiunque abbia accesso alla rete può partecipare e diventare un nodo autorizzato nella blockchain. Di fatto sono sicure, ma non anonime e molto meno scalabili.
+    \item \textit{private}, in cui i singoli nodi sono controllati da un ente centrale, che opera in una rete chiusa e, come tali, restringono la natura di blockchain, dato che richiede controllo centralizzato dei singoli nodi per poter funzionare.
+    \item \textit{hybrid}, in cui alcuni nodi sono pubblici e altri sono privati, normalmente utilizzata per eseguire convalide delle transazioni presenti al suo interno.
+    \item \textit{consortium}, all'interno della quale i nodi sono controllati da un ente centrale, ma la rete è aperta a tutti i membri del consorzio, portando anche qui ad una privatizzazione e centralizzazione della rete.
+\end{itemize}
 
 \section{Blockchain: concetti avanzati}\label{sec:tecnologie-blockchain-avanzate}
+
 \subsection{Token}\label{sec:tecnologie-blockchain-avanzate-token}
+Possiamo definire i token come unità di valore accettate da una comunità e costruite su una blockchain pre-esistente (dunque, non possono essere minati).
+Possono essere usati per rappresentare asset fisici come l'oro o l'immobiliare, oppure per rappresentare beni digitali 
+come i dati o i diritti di accesso a servizi. Essendo registrati su una blockchain, sono immutabili e possono essere trasferiti in modo sicuro e trasparente da un proprietario all'altro. \\
+
+Per utilizzare i token, gli utenti devono prima avere un portafoglio digitale, ovvero un'interfaccia che consente loro 
+di accedere alla blockchain e interagire con essa. Una volta che un utente ha un portafoglio, 
+può ricevere e inviare token. Per ricevere i token, l'utente deve fornire il proprio indirizzo del portafoglio al mittente, 
+che poi invia i token all'indirizzo fornito. Per inviare i token, l'utente deve avere abbastanza token nel proprio portafoglio e deve conoscere l'indirizzo del destinatario a cui inviare i token. \\
+
+Ogni bene viene considerato \textit{asset}, in quanto non riproducibile e non falsificabile, esistente solo in forma digitale e quindi non fisica. 
+Un token può essere lanciato sul mercato tramite un \textit{initial coin offering} (ICO),
+che è un'offerta pubblica iniziale di token, al fine di finanziare nuovi progetti e comprenderne il nuovo valore.
+Come per le blockchain, non sono regolamentate da un organo centrale, pertanto è possibile raccogliere fondi senza nuovi intermediari e così creare
+nuovi progetti, adeguatamente documentati tramite un \textit{white paper} che descrive il progetto e il suo funzionamento. 
+Il loro processo di creazione dei token nelle blockchain viene definito come \textit{minting}, in cui un creatore mette a disposizione un certo numero di token,
+che possono essere acquistati dai partecipanti. \\
+
+Principalmente, i token possono essere classificati in base al loro scopo:
+\begin{itemize}
+    \item \textit{Utility token}, che consentono di acquistare un determinato bene o servizio e conferisce al titolare un diritto di opzione per l'acquisto o somministrazione di cose o per la fornitura di servizi (attuali o futuri). 
+    \item \textit{Security token}, che sono token che rappresentano un diritto di proprietà su un bene fisico o digitale.
+    \item \textit{Payment token}, più comunemente noti come `crypto'. Come si può intuire, questi token sono utilizzati per acquistare e vendere beni e pagare le commissioni delle transazioni basate sulla blockchain senza la necessità di un intermediario.
+\end{itemize}
+
+I token, principalmene, sono caratterizzati dal fatto di essere spendibili e scambiabili con altri beni dal valore equivalente, ossia `fungibili'.
+In questo senso, è possibile citare:
+\begin{itemize}
+    \item \textit{token fungibili (fungible tokens)}, che hanno la caratteristica di essere non uniche, divisibili e avere un chiaro valore di mercato, quindi scambiabili sempre con altri beni dello stesso valore;
+    \item \textit{token non fungibili (non fungible tokens  NFT)}, beni fisici o digitali unici ed irripetibili. Questi vengono definiti come tali in quanto non possono essere scambiati con altri beni dello stesso valore,
+    e per natura delle stesse blockchain, sono considerati immutabili. Infatti, l'utente, disponendo di un wallet, può creare in qualsiasi momento un bene considerabile come unico, pagando una commissione al momento dell'acquisto del bene.
+    Questo particolare tipo di token è molto utilizzato per la vendita di beni come opere d'arte, musica, videogiochi, per loro natura non contraffabile dato lo scambio tramite blockchain.
+\end{itemize}
+
+La loro creazione è vincolata da alcuni standard, stabilità della comunità della blockchain Ethereum, che ne vincola la creazione tramite \textit{smart contract},
+che sono dei contratti che vengono eseguiti sulla blockchain e che possono essere scritti in vari linguaggi di programmazione. \\
+Di seguito i principali standard di riferimento che stabiliscono precisamente i parametri della loro creazione:
+\begin{itemize}
+    \item \textit{ERC-20}, che è il più diffuso e utilizzato standard per i token, che consente di creare token che possono essere trasferiti tra gli utenti. 
+    Questo stabilisce che un contratto esponga un saldo, un'opzione di trasferimento, un'opzione di approvazione e un evento di trasferimento;
+    \item \textit{ERC-721}, che è uno standard per i token non divisibili (NFT), che rappresentano un bene unico non scambiabile in altri modi.
+    Di base utilizza gli stessi parametri del precedente, ma possiede un campo specifico che indica chi è il proprietario;
+    \item \textit{ERC-1155}, che è uno standard per i token divisibili e non divisibili e riunisce a livello di dati un supporto comune con funzione di trasferimento e di approvazione anche in blocco.
+\end{itemize} 
+
 \subsection{Tokenizzazione}\label{sec:tecnologie-blockchain-avanziate-tokenizzazione}
+La tokenizzazione è il processo di rappresentazione di un bene o di un'attività in forma digitale attraverso l'emissione di un token su una blockchain. 
+In altre parole, si tratta di convertire un bene fisico o immateriale in un asset digitale che può essere negoziato e scambiato in modo decentralizzato.
+La combinazione con la blockchain potrebbe aprire nuove prospettive per l'ottimizzazione dei processi aziendali, che includono più partner, e l'introduzione di nuovi modelli di business. 
+Poiché la tokenizzazione è un processo decentralizzato, non è necessario un intermediario per la creazione e la gestione di un token e questo facilita la creazione di nuovi beni,
+sapendo che la verifica viene effettuata da tutti i partecipanti della rete ed ogni bene è considerato unico. \\
+
+Esistono diversi tipi di asset da considerare, i quali saranno poi successivamente convertiti in token:
+\begin{itemize}
+    \item{\textit{Asset finanziari}}, che rappresentano un diritto di proprietà su un bene fisico o digitale. Il concetto della finanza decentralizzata sta emergendo come \textit{DeFi (Decentralized Finance)},
+    in cui i beni vengono spostati su blockchain a seconda della loro natura. Infatti, come per i token i beni acquistano una fungibilità e possono essere scambiati tra utenti;
+    \item{\textit{Asset immobiliari}}, che che rappresentano un bene fisico, come un immobile, che può essere tokenizzato e quindi diventare un bene digitale. 
+    Questi beni sono fungibili e come tali hanno un valore tendenzialmente fisso, che può essere soggetto a variazioni nel tempo;
+    \item{\textit{beni intangibili - intangibles}}, come diritti di proprietà intellettuale o i citati beni collezionabili,
+    e quindi acquisire grazie alla natura di blockchain un valore unico e verificato.
+\end{itemize} 
+
+Si può quindi quindi comprendere che la tokenizzazione può potenzialmente trasformare tutto in un bene con un valore, permettendo di avere dei prezzi equi stabiliti dalle vere esigenze del mercato,
+riducendo i costi di gestione essendo un sistema scalabile e sicuro che lo gestisce, permettendo l'aumento della liquidità, avendo sempre degli investitori pronti a scambiare i token, in modo trasparente
+e senza intermediari, riducendo notevolmente i tempi di scambio rispetto ai beni tradizionali.
+
 \subsection{Smart contract}\label{sec:tecnologie-blockchain-avanziate-smart-contract}
-\subsection{Scalabilità}\label{sec:tecnologie-blockchain-avanzate-scalabilità}
+Gli smart contract (o contratti intelligenti) sono programmi che automatizzano le azioni richieste in un accordo o contratto, considerate tracciate e irreversibili. 
+Essi sono programmi informatici auto-eseguibili che vengono eseguiti su una blockchain, che automatizzano ed eseguono le clausole contrattuali in modo sicuro, trasparente e immutabile, senza la necessità di intermediari.
+Il loro funzionamento è regolato dal libro mastro centrale di blockchain, in cui i partecipanti devono firmare crittograficamente la loro partecipazione, fornendo precisamente i loro indirizzi di riferimento 
+e codificando lo scambio delle informazioni secondo gli standard definiti nella sezione precedente. \\
+
+Gli smart contract sono stati sviluppati per risolvere i problemi di affidabilità e sicurezza dei contratti tradizionali, che sono soggetti a errori umani, mancanza di trasparenza e vulnerabilità.
+Il loro funzionamento segue generalmente questo schema:
+\begin{enumerate}
+    \item un utente avvia una transazione dal proprio portafoglio blockchain;
+    \item la transazione arriva al database distribuito, dove viene confermata l'identità del portafoglio dell'utente;
+    \item la transazione, che può essere un trasferimento di fondi e comprende il codice che definisce il tipo di transazione da eseguire, viene approvata;
+    \item questa viene eseguita come blocco all'interno della blockchain.
+\end{enumerate}
+
+Principalmente, questi vengono utilizzati nella piattaforma Ethereum, dove i contratti vengono scritti in linguaggio di programmazione Solidity, che è un linguaggio di programmazione orientato agli oggetti basato su C++,
+eseguiti sulla piattaforma Ethereum Virtual Machine (EVM), che ne consente l'esecuzione in modo scalabile regolata dagli standard precedenti.
+Ogniqualvolta venga eseguita una transazione, si ha un costo pagato in \textit{gas}, costo in termini di energia necessaria per eseguire la transazione, che viene calcolato in base al numero di operazioni eseguite
+e pone un limite al numero di transazioni che possono essere eseguite in un dato periodo di tempo. \\
+
+Possiamo citare alcuni esempi di applicazione di smart contract:
+\begin{itemize}
+    \item \textit{smart legal contracts}, legalmente applicabili e richiedono alle parti di soddisfare i loro obblighi contrattuali.
+    Per creare alcuni contratti legali intelligenti, le parti coinvolte lavorano sul codice del contratto intelligente - o lo fanno i loro sviluppatori di software - finché non si accordano sui termini e sulle condizioni dell'accordo;
+    \item \textit{decentralized autonomous organizations (DAO)}, che sono organizzazioni che funzionano in modo decentralizzato e autonomo, senza un leader centrale e open-source, ma regolate da un contratto intelligente.
+    All'interno delle blockchain vegono organizzate delle votazioni, che possono essere eseguite da tutti i partecipanti, che possono votare per o contro una proposta,
+    oppure garantire il corretto scambio dei beni digitali all'interno della piattaforma, prevenendo possibili vulnerabilità;
+    \item \textit{crowdfunding}, che è un metodo di finanziamento di progetti e aziende, in cui le persone possono contribuire con denaro o beni, in cambio di un premio o di un prodotto finale;
+    \item \textit{logical applicative contracts}, che sono contratti che possono essere utilizzati per eseguire operazioni logiche, come la verifica di un dato, la verifica di un dato e l'esecuzione di un'altra operazione,
+    oppure gestire un sistema di pagamento o beni di scambio, garantendo la tracciabilità e la trasparenza di ogni bene alla consegna.
+\end{itemize}
+
+I contratti rimangono aggiornati grazie all'uso di \textit{oracoli (oracles)}, che sono sistemi che permettono di ottenere informazioni esterne alla blockchain, come il valore di un bene o il valore di un'azione,
+attraverso l'uso di API o di altri sistemi di comunicazione. In questo modo, il contratto mantiene la sua funzionalità interagendo in maniera ibrida con il mondo esterno; questi vengono definiti come \textit{hybrid smart contracts}, 
+combinando un'infrastruttura \textit{on-chain} con un'infrastruttura \textit{off-chain}.
+Il loro utilizzo, per quanto utile, deve essere attentamente bilanciato, sia in termini di veridicità dei dati che di sicurezza, in quanto possono essere soggetti a compromissione o di scalabilità, per cui è necessario
+un'attenta valutazione dei rischi.
+
+\subsection{Scalabilità}\label{sec:tecnologie-blockchain-avanzate-scalabilita}
+Le blockchain sono preziose per il fatto di essere un sistema deterministico e con un grado di affidabilità molto elevato, generalmente neutro e verificabile da parte dell'utente finale.
+In questo contesto, è fondamentale parlare del cosiddetto \textit{blockchain trilemma}, che è un problema di scelta tra tre caratteristiche fondamentali di una blockchain: decentralizzazione, sicurezza e scalabilità.
+Infatti, decentralizzare significa mantenere un vasto numero di nodi sulla rete, senza però alcun controllo da parte di un ente centrale, 
+mantenendo allo stesso modo un alto numero di transazioni in modo scalabile e una robustezza ai possibili partecipanti della rete. \\
+
+In questo senso, si cerca di trovare un compromesso tra le tre caratteristiche, che è possibile ottenere l'aggiunta di ridondanza dei dati anche al di fuori della blockchain principale,
+cercando di bilanciare quanto possibile il consenso sui nodi distribuiti non intaccando il livello di libertà offerto ma anche aumentare il livello di dati trasmessi.
+Per questo, il nucleo scalabilità permette di introdurre numerose soluzioni al fine di migliorare le prestazioni della blockchain, dividendo però la blockchain in vari strati, definiti come \textit{layer}.
+\begin{itemize}
+    \item{\textit{Layer 0}}, che è la blockchain principale, che contiene i dati e le transazioni;
+    \item{\textit{Layer 1}}, che è il livello responsabile della sicurezza e della scalabilità, che contiene i nodi che eseguono le transazioni e che sono responsabili della validazione;
+    \item{\textit{Layer 2}}, noto anche come livello di esecuzione, in cui si hanno i contratti intelligenti e le applicazioni che vengono eseguite sulla blockchain;
+    \item{\textit{Layer 3}}, noto anche come livello applicativo, che contiene le applicazioni decentralizzate (dApps), eseguite sulle blockchain e che interagiscono con gli utenti.
+\end{itemize}
+
+Comunemente, le soluzioni di scalabilità cercano di intervenire in vari modi:
+\begin{itemize}
+    \item{\textit{Sharding}}, che è una tecnica di scalabilità che consente di dividere la blockchain in più parti, chiamate \textit{shards}, che possono essere gestite da nodi diversi e aumentando
+    la dimensione dei singoli blocchi e la loro frequenza di creazione. Questa si effettua comunemente per il Layer 1.
+    \item{\textit{Sidechains}}, che sono blockchain secondarie che vengono utilizzate per eseguire transazioni parallele, che vengono poi sincronizzate con la blockchain principale.
+    In questo ambito, soluzioni comuni includono i \textit{canali di stato (state channels)}, che sono dei contratti intelligenti che permettono di eseguire transazioni tra due parti, senza che queste siano visibili sulla blockchain principale,
+    e i \textit{canali di pagamento (payment channels)}, che migliorano la comunicazione bidirezionale delle transazioni eseguendole sulla blockchain secondaria e dandone traccia sulla principale.
+\end{itemize}
 
 \section{Self-Sovereign Identity}\label{sec:self-sovereign-identity}
 
@@ -136,7 +299,7 @@ Le parti coinvolte in questo processo sono principalmente tre:
     \item {verificatore, detto anche \textit{verifier}}, cioè l'entità che controlla la validità e l'autenticità della credenziale presentata dal titolare.
 \end{enumerate}  
 
-Si consideri che lo scopo principale di questa tecnologia è consentire agli utenti un'esistenza indipendente da provider terzi, 
+Lo scopo principale di questa tecnologia è consentire agli utenti un'esistenza indipendente da provider terzi, 
 permettendo loro di controllare la propria identità in modo sicuro e accedendovi senza dover affidarsi a terzi. \\
 Inoltre, i sistemi e gli algoritmi che la supportano devono essere trasparenti, mantenendo le informazioni in modo trasparente e permanente, rendendo però semplice 
 la portabilità e l'interoperabilità di queste all'interno delle varie piattaforme. \\
@@ -149,14 +312,57 @@ In particolare:
     \item il verificatore controlla che, tramite ciascun blocco, sia stata rilasciata una VC valida e che il titolare sia il legittimo possessore di quella VC.
 \end{itemize}  
 
-L'obiettivo principale è quello di fornire un utilizzo delle tecnologie blockchain tali da permettere agli utenti di selezionare quali credenziali mostrare (\textit{selective disclosure o divulgazione selettiva}),
+L'obiettivo principale è quello di fornire un utilizzo delle tecnologie blockchain tali da permettere agli utenti 
+di selezionare quali credenziali mostrare (\textit{selective disclosure o divulgazione selettiva}),
 secondo opportuni standard definiti gradualmente dall'organizzazione internazionale \textit{W3C}, tra cui il citato VC. \\
 
 \subsection{Protocolli}\label{sec:self-sovereign-identity-protocolli}
 \subsection{Casi d'uso reali}\label{sec:self-sovereign-identity-casiduso}
 
 \section{Zero Knowledge Proof}\label{sec:zero-knowledge-proof}
+Definita anche come prova a conoscenza zero, è una tecnologia che permette di dimostrare la conoscenza di una proprietà di un dato,
+senza rivelare alcun dettaglio relativo.
+Occorre definire le parti coinvolte:
+\begin{itemize}
+    \item \textit{Prover}, ossia l'entità che prova la conoscenza di alcune informazioni riservate. 
+    L'informazione segreta è il `testimone' (\textit{witness}) della prova e la presunta conoscenza del testimone da parte del prover stabilisce un insieme di domande a cui può rispondere solo chi conosce l'informazione. 
+    \item \textit{Verifier}, ossia l'entità che verifica la correttezza della prova. Lui si occupa di scegliere a caso la sfida (\textit{challenge}) e di verificare la risposta del prover.
+    La risposta del prover permette al verificatore di controllare se il primo ha davvero accesso al testimone. 
+    Per assicurarsi che il prover non stia indovinando alla cieca e non ottenga le risposte corrette per caso, il verificatore sceglie altre domande da porre
+\end{itemize}
+
+A livello di transazioni, la ZKP è utilizzata per garantire la sicurezza con certezza che le transazioni siano valide (\textit{validity proofs}), tramite la presenza del testimone tipicamente basato su calcoli polinomiali o
+prossimità ad un insieme di valori, come ad esempio la distanza di Hamming. Le transazioni possono essere invalidate in ogni momento tramite le \textit{fraud proofs}, che dimostrano che la transazione è stata effettuata in modo illegittimo.
+Queste ultime confrontano i Merkle trees delle transazioni e verificano che l'hash corrisponda a quella originale.
+
+Di fatto, ogni prova deve dimostrare di essere completa, pertanto è necessario che il verificatore sia in grado di verificare che la risposta del prover sia corretta,
+dimostrando questa affermazione con solidità, in modo da non lasciare spazio a dubbi e a falsi positivi, senza trasmettere alcun dato (a conoscenza zero).
+L'idea principale della ZKP è presupporre di non fidarsi di nessuno (\textit{zero trust}), al fine di garantire la sicurezza delle informazioni. 
+In questo modo, ciascun utente viene monitorato a livello di privilegi, accessi e dati, senza che nessuno possa accedere senza dimostrare di averne il permesso. \\
 
 \subsection{Tipi}\label{sec:zero-knowledge-proof-tipi}
-\subsection{Casi d'uso reali}\label{sec:zero-knowledge-proof-casiduso}
+Esistono diverse implementazioni di ZKP, ognuna delle quali presenta un proprio compromesso in termini di dimensione della prova, tempo del prover, tempo di verifica e altro ancora. 
+I principali tipi sono: 
+\begin{itemize}
+    \item{\textit{zk-SNARK}}, acronimo di \textit{Zero Knowledge Succinct Non-interactive Argument of Knowledge}, prova di dimensioni ridotte e facile da verificare. Essa è stata sviluppata dalle piattaforme \textit{Zcash} e \textit{Ethereum} 
+    utilizzando le curve ellittiche, che presuppongono che sia impossibile trovare il logaritmo discreto di un elemento casuale della curva ellittica a partire da un punto base pubblicamente noto. Il calcolo delle curve ellittiche è meno dispendioso dal punto di vista computazionale rispetto al calcolo delle funzioni di hashing.
+    \item{\textit{zk-STARK}}, acronimo di \textit{Zero Knowledge Succinct Transparent Argument of Knowledge}, tipo di prova crittografica che richiede un'interazione minima o nulla tra il prover e il verificatore. I vantaggi principali delle STARK rispetto alle SNARK sono che hanno tempi di prover rapidi e sono più facili da scalare in quanto offrono una maggiore potenza di calcolo.
+    Essa è stata sviluppata dalla piattaforma \textit{Horizen} utilizzando le \textit{curve ellittiche}, che presuppongono che sia impossibile trovare il logaritmo discreto di un elemento casuale della curva di Weierstrass a partire da un punto base pubblicamente noto. Il calcolo delle curve di Weierstrass è più dispendioso dal punto di vista computazionale rispetto al calcolo delle curve ellittiche.
+\end{itemize}
 
+All'interno delle blockchain, vengono utilizzati all'interno delle sidechain secondo il sistema delle \textit{zk-Rollup}, che permettono di eseguire transazioni su una blockchain laterale (sidechain) senza doverle scrivere su questa.
+In altre parole, con uno zk-rollup, le transazioni vengono `confezionate' in un'unica transazione che viene elaborata sulla blockchain, riducendo il carico di lavoro richiesto alla rete. 
+Inoltre, grazie all'utilizzo delle Zero Knowledge Proof, le transazioni vengono verificate in modo sicuro, senza rivelare alcuna informazione sulle transazioni stesse.
+
+\subsection{Casi d'uso reali}\label{sec:zero-knowledge-proof-casiduso}
+Principalmente, queste vengono utilizzate in sistemi di scalabilità layer-2, al fine di memorizzare solo il minimo numero previsto di transazioni (\textit{rollup}),
+oppure memorizzando solamente un hash sulla catena per proteggere i dati del libro mastro (validium), oppure scegliere come salvarli per ogni transazine (\textit{volition}).
+Alcuni casi d'uso possibili di applicazione di questa tecnologia possono essere:
+\begin{itemize}
+    \item{pagamenti anonimi}
+    \item{protezione dell'identità}
+    \item{autenticazione}
+    \item{archiviazione di dati sensibili}
+\end{itemize}
+
+L'utilizzo combinato con la Self-Sovereign Identity è particolarmente interessante perché consente di garantire la privacy e la sicurezza delle informazioni personali degli utenti.
