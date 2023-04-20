@@ -1,0 +1,5 @@
+import "stdlib.zok";
+
+def main(private field a, private field b) -> (field):
+    field c = a + b;
+    return c;
