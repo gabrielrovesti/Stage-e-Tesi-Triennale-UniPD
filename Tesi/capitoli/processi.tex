@@ -19,7 +19,7 @@ Essendo lo standard blockchain \textit{open source}, è possibile crearne di nuo
 
 Normalmente, viene utilizzata per memorizzare transazioni finanziarie, ma può essere utilizzata per memorizzare qualsiasi tipo di informazione.
 Un altro suo nome è \textit{distributed ledger technology} (DLT), che indica che le sue informazioni sono registrate come su un libro mastro, in cui le singole componenti della rete,
-definite nodi, possono accedere e modificare i dati, stabilendo se questi sono validi o meno.
+definite nodi, possono accedere e modificare i dati, stabilendo se questi sono validi o meno. 
 
 \subsection{Blocco}\label{sec:tecnologie-blockchain-blocco}
 
@@ -34,6 +34,12 @@ Nello specifico, possiamo dettagliare una struttura formata da:
     \item il numero della transazione;
     \item \textit{timestamp} di generazione del blocco (data e ora).
 \end{itemize} 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth, alt={Blocco all'interno di una blockchain}]{immagini/blocco.jpeg}
+    \caption{Blockchain vista come blocchi a catena}
+\end{figure}
 
 Per verificare l'integrità dei dati memorizzati, vengono usate delle strutture dati chiamati \textit{Merkle trees}, in cui ogni foglia rappresenta l'hash della transazione.
 Le foglie vengono poi raggruppate in coppie, e l'hash di ogni coppia viene calcolato e memorizzato in un nodo superiore.
@@ -66,13 +72,14 @@ In particolare, possiamo più propriamente definirli portachiavi, in quanto non 
 L'utente dispone in ogni momento di:
 \begin{itemize}
     \item una chiave pubblica, usata per inviare messaggi e ricevere pagamenti. È un codice univoco che identifica l'utente;
-    \item una chiave private, usata per firmare i messaggi e per accedere ai propri beni digitali. È un codice segreto che deve essere conservato in modo sicuro.
+    \item una chiave privata, usata per firmare i messaggi e per accedere ai propri beni digitali. È un codice segreto che deve essere conservato in modo sicuro.
 \end{itemize} 
 
 Ogni wallet dispone di una frase segreta, che contiene tutte le informazioni necessarie per recuperare ed accedere ai fondi del proprio portafoglio.
-Inoltre, dispone di un proprio indirizzo, matematicamente derivato dalla stessa chiave pubblica mediante l'operazione di \textit{hashing}, con una lunghezza di 160 bit.ù
-Ciascuno è \textit{pseudonimo}, in quanto non appartiene nello specifico ad una persona, ma non è completamente anonimo. \\
 
+Inoltre, dispone di un proprio indirizzo, matematicamente derivato dalla stessa chiave pubblica mediante l'operazione di \textit{hashing}, con una lunghezza di 160 bit.
+Ciascuno è \textit{pseudonimo}, in quanto non appartiene nello specifico ad una persona, ma non è completamente anonimo. \\
+È importante tenere la chiave privata in un luogo sicuro e non condividerla con nessuno, in quanto è l'unica cosa che garantisce l'accesso ai propri fondi.
 Distinguiamo due tipi di wallet:
 \begin{itemize}
     \item \textit{hot wallet}, che sono i portafogli online, dunque più vulnerabili al rischio di \textit{hacking};
@@ -81,8 +88,8 @@ Distinguiamo due tipi di wallet:
 
 \subsection{Mining}\label{sec:tecnologie-blockchain-mining}
 
-Il processo di mining consente di creare nuovi blocchi sulla catena, al fine di convalidare le transazioni e ottenere nuove criptovalute come ricompensa per il proprio `sforzo'.
-Questo obiettivo viene raggiunto attraverso un processo chiamato consenso, che prevede la risoluzione di complessi puzzle matematici utilizzando la potenza di calcolo.
+Il processo di \textit{mining} consente di creare nuovi blocchi sulla catena, al fine di convalidare le transazioni e ottenere nuove criptovalute come ricompensa per il proprio `sforzo'.
+Questo obiettivo viene raggiunto attraverso un processo chiamato \textit{consenso}, che prevede la risoluzione di complessi puzzle matematici utilizzando la potenza di calcolo.
 Il miner che riesce a risolvere il puzzle prima degli altri, vince il diritto di aggiungere il blocco alla blockchain. \\
 
 Si considera composto da due fasi:
@@ -106,22 +113,33 @@ Possiamo principalmente distinguere:
     \item\textit{{Proof of Work (PoW)}}, in cui i nodi della rete devono risolvere un puzzle matematico per aggiungere un nuovo blocco alla blockchain. 
     Il problema consiste nella ricerca di un hash (una stringa di numeri e lettere) che soddisfa una determinata condizione, detta target. La condizione target richiede 
     che l'hash del nuovo blocco sia inferiore a un determinato valore. Questo valore viene stabilito in base alla difficoltà della blockchain, che viene regolata automaticamente per mantenere 
-    il tempo medio di creazione di un nuovo blocco costante. \\ \\
+    il tempo medio di creazione di un nuovo blocco costante. 
+
+    I miner utilizzano la loro potenza di calcolo per cercare di risolvere per primi questi problemi matematici
+    e il primo miner a riuscirci viene ricompensato in criptovaluta per il lavoro svolto.
+    Questo meccanismo garantisce sicurezza nella rete, perché rende difficile ad un attaccante malintenzionato
+    compromettere la sicurezza della rete non avendo la stessa potenza di calcolo.
     
     Questa è attualmente utilizzata in \textit{Bitcoin}, in cui il tempo medio della formazione di blocchi è di 10 minuti circa, oppure la piattaforma \textit{Ethereum}, altro importante esempio di blockchain.
-    Si consideri che ne esistono varie tipologie, in cui ciascuna cerca di ridurre il consumo energetico dando prova del lavoro svolto (\textit{Meaningful}) oppure assincurandosi che
+    Si consideri che ne esistono varie tipologie, in cui ciascuna cerca di ridurre il consumo energetico dando prova del lavoro svolto (\textit{Meaningful}) oppure assicurandosi che
     i nodi abbiano calcolato correttamente dopo un certo tempo (\textit{Delayed}).
     Il principale svantaggio del PoW è che richiede un elevato consumo energetico, che può essere risolto con l'utilizzo di algoritmi di consenso alternativi.
 
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.6\textwidth, alt={Come avviene il processo di conferma in Proof of Work}]{immagini/proof-of-work.png}
+        \caption{Processo di conferma in Proof of Work}
+    \end{figure}
+
     \item\textit{{Proof of Stake (PoS)}}, che si si basa sulla detenzione di una certa quantità di criptovaluta come garanzia per la validazione delle transazioni. 
-    In pratica, i nodi della rete bloccano una certa quantità di criptovaluta come `punteggio'
+    L'alto consumo di energia dell'algoritmo precedente ha portato ad algoritmi come il \textit{Proof of Stake}, i nodi della rete bloccano una certa quantità di criptovaluta come `punteggio'
     per dimostrare che hanno un interesse nella corretta validazione delle transazioni. 
-    Questo punteggio viene utilizzato come base per la selezione del nodo che convalida la transazione successiva. \\
+    Questo punteggio viene utilizzato come base per la selezione del nodo che convalida la transazione successiva. 
     
     A differenza del PoW, non ci sono miner coinvolti nel processo. Al loro posto, i partecipanti alla rete che 
     vogliono essere coinvolti nella verifica della validità delle transazioni e nella creazione di blocchi nella rete 
     devono detenere una certa quota nella rete, per esempio mettendo una certa quantità di moneta della rete in un portafoglio collegato 
-    alla sua blockchain. Questo processo è noto come `placing a stake' o `staking', che può essere tradotto come il fatto di mettere i propri interessi in gioco. \\
+    alla sua blockchain. Questo processo è noto come `placing a stake' o `staking', che può essere tradotto come il fatto di mettere i propri interessi in gioco. 
     
     Pertanto, le reti PoS sono basate su algoritmi deterministici, il che significa che i validatori dei blocchi sono eletti a seconda della natura della posta in gioco. 
     Pur risultando meno intensiva in termini di energia rispetto alla PoW, il sistema risulta essere sbilanciato a favore dei produttori di blocchi oppure a favore degli utenri ricchi, 
@@ -136,16 +154,22 @@ Una prima categorizzazione delle blockchain avviene distinguendole in base ai pe
 \begin{itemize}
     \item \textit{permissioned}, in cui i nodi della rete sono controllati da un ente centrale, che può essere un'azienda, un'organizzazione o un'istituzione.
     Esse limitano l'accesso alla rete a determinati nodi e possono anche limitare i diritti di tali nodi su tale rete. Le identità degli utenti di una blockchain autorizzata sono note agli altri utenti della blockchain autorizzata.
+    Queste sono spesso utilizzate da aziende per la gestione di dati sensibili o convalida di transazioni;
     \item \textit{permissionless}, che non richiedono alcun permesso per partecipare e permettono agli utenti di essere pseudoanonimi 
     (usando uno pseudonimo non si rivela alcun dettaglio relativo all'identità personale) e non restringono i permessi dei nodi. Queste ultime tendono ad essere più sicure delle precedenti, avendo vari nodi che convalidano le singole transazioni.
+    Di fatto, sono usate dalle varie blockchain, come ad esempio quella di Bitcoin.
 \end{itemize}
 
 Fatta tale premessa, possiamo distinguere:
 \begin{itemize}
     \item \textit{public}, in cui chiunque abbia accesso alla rete può partecipare e diventare un nodo autorizzato nella blockchain. Di fatto sono sicure, ma non anonime e molto meno scalabili.
+    Una loro futura implementazione sarà all'interno dei sistemi di votazioni elettroniche.
     \item \textit{private}, in cui i singoli nodi sono controllati da un ente centrale, che opera in una rete chiusa e, come tali, restringono la natura di blockchain, dato che richiede controllo centralizzato dei singoli nodi per poter funzionare.
+    Queste sono utilizzate da parte di alcune banche per la gestione dei loro sistemi di pagamento.
     \item \textit{hybrid}, in cui alcuni nodi sono pubblici e altri sono privati, normalmente utilizzata per eseguire convalide delle transazioni presenti al suo interno.
+    Microsoft utilizza una blockchain di identità digitale basata sul meccanismo ibrido.
     \item \textit{consortium}, all'interno della quale i nodi sono controllati da un ente centrale, ma la rete è aperta a tutti i membri del consorzio, portando anche qui ad una privatizzazione e centralizzazione della rete.
+    IBM sta utilizzando una pitattaforma basata sulla gestione dei pagamenti per banche ed aziende partner.
 \end{itemize}
 
 \section{Blockchain: concetti avanzati}\label{sec:tecnologie-blockchain-avanzate}
@@ -163,6 +187,7 @@ che poi invia i token all'indirizzo fornito. Per inviare i token, l'utente deve 
 Ogni bene viene considerato \textit{asset}, in quanto non riproducibile e non falsificabile, esistente solo in forma digitale e quindi non fisica. 
 Un token può essere lanciato sul mercato tramite un \textit{initial coin offering} (ICO),
 che è un'offerta pubblica iniziale di token, al fine di finanziare nuovi progetti e comprenderne il nuovo valore.
+\\ 
 Come per le blockchain, non sono regolamentate da un organo centrale, pertanto è possibile raccogliere fondi senza nuovi intermediari e così creare
 nuovi progetti, adeguatamente documentati tramite un \textit{white paper} che descrive il progetto e il suo funzionamento. 
 Il loro processo di creazione dei token nelle blockchain viene definito come \textit{minting}, in cui un creatore mette a disposizione un certo numero di token,
@@ -175,7 +200,7 @@ Principalmente, i token possono essere classificati in base al loro scopo:
     \item \textit{Payment token}, più comunemente noti come `crypto'. Come si può intuire, questi token sono utilizzati per acquistare e vendere beni e pagare le commissioni delle transazioni basate sulla blockchain senza la necessità di un intermediario.
 \end{itemize}
 
-I token, principalmene, sono caratterizzati dal fatto di essere spendibili e scambiabili con altri beni dal valore equivalente, ossia `fungibili'.
+I token, principalmente, sono caratterizzati dal fatto di essere spendibili e scambiabili con altri beni dal valore equivalente, ossia `fungibili'.
 In questo senso, è possibile citare:
 \begin{itemize}
     \item \textit{token fungibili (fungible tokens)}, che hanno la caratteristica di essere non uniche, divisibili e avere un chiaro valore di mercato, quindi scambiabili sempre con altri beni dello stesso valore;
@@ -231,10 +256,19 @@ Il loro funzionamento segue generalmente questo schema:
     \item questa viene eseguita come blocco all'interno della blockchain.
 \end{enumerate}
 
-Principalmente, questi vengono utilizzati nella piattaforma Ethereum, dove i contratti vengono scritti in linguaggio di programmazione Solidity, che è un linguaggio di programmazione orientato agli oggetti basato su C++,
-eseguiti sulla piattaforma Ethereum Virtual Machine (EVM), che ne consente l'esecuzione in modo scalabile regolata dagli standard precedenti.
+Principalmente, questi vengono utilizzati nella piattaforma Ethereum, dove i contratti vengono scritti in linguaggio di programmazione \textit{Solidity}, 
+che è un linguaggio di programmazione orientato agli oggetti basato su C++,
+eseguiti sulla piattaforma \textit{Ethereum Virtual Machine (EVM)}, che ne consente l'esecuzione in modo scalabile regolata dagli standard precedenti.
 Ogniqualvolta venga eseguita una transazione, si ha un costo pagato in \textit{gas}, costo in termini di energia necessaria per eseguire la transazione, che viene calcolato in base al numero di operazioni eseguite
 e pone un limite al numero di transazioni che possono essere eseguite in un dato periodo di tempo. \\
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth, alt={Come funziona uno Smart Contract}]{immagini/smart-contract.png}
+    \caption{Funzionamento di uno Smart Contract}
+\end{figure}
+
+\newpage 
 
 Possiamo citare alcuni esempi di applicazione di smart contract:
 \begin{itemize}
@@ -281,7 +315,7 @@ Comunemente, le soluzioni di scalabilità cercano di intervenire in vari modi:
 
 \section{Self-Sovereign Identity}\label{sec:self-sovereign-identity}
 
-La self-sovereign identity (SSI) è un approccio all'identità digitale che dà agli individui 
+La \textit{self-sovereign identity (SSI)} è un approccio all'identità digitale che dà agli individui 
 il controllo sulle informazioni che usano per dimostrare chi sono a siti web, servizi e applicazioni in tutto il web. 
 Senza l'SSI, gli individui con account (identità) persistenti su Internet devono affidarsi a una serie di fornitori terzi, come Facebook, Google e altri,
 che hanno il controllo delle informazioni associate alla loro identità. \\
@@ -294,10 +328,16 @@ Esistono molti modi per implementare l'SSI utilizzando le chiavi crittografiche 
 
 Le parti coinvolte in questo processo sono principalmente tre:
 \begin{enumerate}
-    \item {emittente, detto anche \textit{holder}}, ossia l'entità che emette una credenziale, ad esempio un documento d'identità governativo;
-    \item {titolare, detto anche \textit{issuer}}, ossia il proprietario della credenziale, cioè l'entità su cui l'emittente genera la credenziale;
-    \item {verificatore, detto anche \textit{verifier}}, cioè l'entità che controlla la validità e l'autenticità della credenziale presentata dal titolare.
+    \item {\textit{emittente}, detto anche \textit{holder}}, ossia l'entità che emette una credenziale, ad esempio un documento d'identità governativo;
+    \item {\textit{titolare}, detto anche \textit{issuer}}, ossia il proprietario della credenziale, cioè l'entità su cui l'emittente genera la credenziale;
+    \item {\textit{verificatore}, detto anche \textit{verifier}}, cioè l'entità che controlla la validità e l'autenticità della credenziale presentata dal titolare.
 \end{enumerate}  
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth, alt={Come funziona il riconoscimento nella SSI}]{immagini/ssi.png}
+    \caption{Processo di riconoscimento di una credenziale SSI}
+\end{figure}
 
 Lo scopo principale di questa tecnologia è consentire agli utenti un'esistenza indipendente da provider terzi, 
 permettendo loro di controllare la propria identità in modo sicuro e accedendovi senza dover affidarsi a terzi. \\
@@ -314,10 +354,37 @@ In particolare:
 
 L'obiettivo principale è quello di fornire un utilizzo delle tecnologie blockchain tali da permettere agli utenti 
 di selezionare quali credenziali mostrare (\textit{selective disclosure o divulgazione selettiva}),
-secondo opportuni standard definiti gradualmente dall'organizzazione internazionale \textit{W3C}, tra cui il citato VC. \\
+secondo opportuni standard definiti gradualmente dall'organizzazione internazionale \textit{W3C}, tra cui il citato VC.
 
-\subsection{Protocolli}\label{sec:self-sovereign-identity-protocolli}
-\subsection{Casi d'uso reali}\label{sec:self-sovereign-identity-casiduso}
+\subsection{Tipi e applicazioni}\label{sec:self-sovereign-identity-tipi-applicazioni}
+
+Il concetto di SSI è stato introdotto nel 2015 da Sovrin Foundation, che ha sviluppato il protocollo Sovrin,
+organizzazione privata senza scopo di lucro che ha creato la prima rete di identità auto-sovrana, diventato poi standard W3C. 
+Esso si basa sul protocollo è \textit{Hyperledger Indy}, che è un framework open source per la creazione di SSI basato su blockchain
+che fornisce strumenti, librerie e componenti riutilizzabili per fornire identità digitali legate al mondo blockchain, 
+come ad esempio la firma digitale e la crittografia. \\
+
+Questo è il principale, ma possiamo definire un insieme di standard 
+utilizzati al fine di garantire agli utenti di possedere e controllare in modo indipendente la propria identità digitale, gestendo come vengono
+condivise le proprie informazioni. La particolarità di questi protocolli è di comunicare gli uni con gli altri attraverso messaggi crittografati:
+\begin{itemize}
+    \item \textit{DID (Decentralized Identifier)}, che consente di creare identificativi digitali decentralizzati come citato supportano
+    e permettono di identificare i soggetti in modo resistente alla falsificazione, autenticando le informazioni in modo sicuro;
+    \item \textit{VC (Verifiable Credentials)}, che consente di gestire attestazioni verificati, quindi insiemi di informaizoni cfhe un individuo
+    possiede o controlla, dimostrando che l'attestazione è stata rilasciata da un emittente autorizzato. Questo all'interno delle blockchain
+    garantisce che ciascun nodo e parte in gioco sia chi dice di essere senza ledere la decentralizzazione alla base;
+    \item \textit{ZKP (Zero Knowledge Proof)}, che consente di dimostrare la conoscenza di una proprietà di un dato, senza rivelare alcun dettaglio relativo.
+    Questa tecnologia è considerata a sé stante un'innovazione tecnologica, che permette attraverso l'individuazione di parti precise,
+    la certezza che solo chi conosce l'informazione può correttamente rispondere alle domande poste senza rivelare i propri dati.
+\end{itemize}
+
+Attualmente, la tecnologia SSI prevede una graduale implementazione in sistemi di autenticazione e
+in generale di accesso ai servizi pubblici, permettendo all'utente un ulteriore controllo
+sui dati trasmessi rivelandoli solo a parti autorizzate.
+Questo risulta particolarmente utile nel settore sanitario, legislativo (garantendo certezza di identità e di voto) e finanziario,
+permettendo di ridurre i costi di gestione e di mantenimento dei dati, oltre che di ridurre i tempi di accesso ai servizi.
+Il principale organo promotore è la \textit{Decentralized Identity Foundation (DIF)}, che ha come obiettivo quello di creare
+un ecosistema di identità digitali decentralizzate, promuovendo integrazioni, progetti e nuove idee in questo ambito. 
 
 \section{Zero Knowledge Proof}\label{sec:zero-knowledge-proof}
 Definita anche come prova a conoscenza zero, è una tecnologia che permette di dimostrare la conoscenza di una proprietà di un dato,
@@ -328,19 +395,25 @@ Occorre definire le parti coinvolte:
     L'informazione segreta è il `testimone' (\textit{witness}) della prova e la presunta conoscenza del testimone da parte del prover stabilisce un insieme di domande a cui può rispondere solo chi conosce l'informazione. 
     \item \textit{Verifier}, ossia l'entità che verifica la correttezza della prova. Lui si occupa di scegliere a caso la sfida (\textit{challenge}) e di verificare la risposta del prover.
     La risposta del prover permette al verificatore di controllare se il primo ha davvero accesso al testimone. 
-    Per assicurarsi che il prover non stia indovinando alla cieca e non ottenga le risposte corrette per caso, il verificatore sceglie altre domande da porre
+    Per assicurarsi che il prover non stia indovinando alla cieca e non ottenga le risposte corrette per caso, il verificatore sceglie altre domande da porre.
 \end{itemize}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth, alt={Come funziona la verifica nella ZKP}]{immagini/zkp.png}
+    \caption{Processo di verifica di una ZKP}
+\end{figure}
 
 A livello di transazioni, la ZKP è utilizzata per garantire la sicurezza con certezza che le transazioni siano valide (\textit{validity proofs}), tramite la presenza del testimone tipicamente basato su calcoli polinomiali o
 prossimità ad un insieme di valori, come ad esempio la distanza di Hamming. Le transazioni possono essere invalidate in ogni momento tramite le \textit{fraud proofs}, che dimostrano che la transazione è stata effettuata in modo illegittimo.
-Queste ultime confrontano i Merkle trees delle transazioni e verificano che l'hash corrisponda a quella originale.
+Queste ultime confrontano i Merkle trees delle transazioni e verificano che l'hash corrisponda a quella originale. \\
 
 Di fatto, ogni prova deve dimostrare di essere completa, pertanto è necessario che il verificatore sia in grado di verificare che la risposta del prover sia corretta,
 dimostrando questa affermazione con solidità, in modo da non lasciare spazio a dubbi e a falsi positivi, senza trasmettere alcun dato (a conoscenza zero).
 L'idea principale della ZKP è presupporre di non fidarsi di nessuno (\textit{zero trust}), al fine di garantire la sicurezza delle informazioni. 
 In questo modo, ciascun utente viene monitorato a livello di privilegi, accessi e dati, senza che nessuno possa accedere senza dimostrare di averne il permesso. \\
 
-\subsection{Tipi}\label{sec:zero-knowledge-proof-tipi}
+\subsection{Tipi e applicazioni}\label{sec:zero-knowledge-proof-tipi-applicazioni}
 Esistono diverse implementazioni di ZKP, ognuna delle quali presenta un proprio compromesso in termini di dimensione della prova, tempo del prover, tempo di verifica e altro ancora. 
 I principali tipi sono: 
 \begin{itemize}
@@ -354,7 +427,6 @@ All'interno delle blockchain, vengono utilizzati all'interno delle sidechain sec
 In altre parole, con uno zk-rollup, le transazioni vengono `confezionate' in un'unica transazione che viene elaborata sulla blockchain, riducendo il carico di lavoro richiesto alla rete. 
 Inoltre, grazie all'utilizzo delle Zero Knowledge Proof, le transazioni vengono verificate in modo sicuro, senza rivelare alcuna informazione sulle transazioni stesse.
 
-\subsection{Casi d'uso reali}\label{sec:zero-knowledge-proof-casiduso}
 Principalmente, queste vengono utilizzate in sistemi di scalabilità layer-2, al fine di memorizzare solo il minimo numero previsto di transazioni (\textit{rollup}),
 oppure memorizzando solamente un hash sulla catena per proteggere i dati del libro mastro (validium), oppure scegliere come salvarli per ogni transazine (\textit{volition}).
 Alcuni casi d'uso possibili di applicazione di questa tecnologia possono essere:
@@ -366,3 +438,6 @@ Alcuni casi d'uso possibili di applicazione di questa tecnologia possono essere:
 \end{itemize}
 
 L'utilizzo combinato con la Self-Sovereign Identity è particolarmente interessante perché consente di garantire la privacy e la sicurezza delle informazioni personali degli utenti.
+In particolare, è possibile garantire di conoscere le parti in gioco nella rete poiché verificate
+in modo sicuro e privato tramite credenziali certificate, scegliendo anzi quali informazioni rivelare e senza
+dover rivelare alcuno dei propri dati per dimostrare di possederli. 

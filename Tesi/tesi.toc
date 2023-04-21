@@ -10,47 +10,45 @@
 \contentsline {subsection}{\numberline {2.1.1}Introduzione}{3}{subsection.2.1.1}%
 \contentsline {subsection}{\numberline {2.1.2}Blocco}{3}{subsection.2.1.2}%
 \contentsline {subsection}{\numberline {2.1.3}Transazione}{4}{subsection.2.1.3}%
-\contentsline {subsection}{\numberline {2.1.4}Wallet}{4}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.4}Wallet}{5}{subsection.2.1.4}%
 \contentsline {subsection}{\numberline {2.1.5}Mining}{5}{subsection.2.1.5}%
-\contentsline {subsection}{\numberline {2.1.6}Algoritmi di consenso}{5}{subsection.2.1.6}%
-\contentsline {subsection}{\numberline {2.1.7}Tipi}{6}{subsection.2.1.7}%
+\contentsline {subsection}{\numberline {2.1.6}Algoritmi di consenso}{6}{subsection.2.1.6}%
+\contentsline {subsection}{\numberline {2.1.7}Tipi}{7}{subsection.2.1.7}%
 \contentsline {section}{\numberline {2.2}Blockchain: concetti avanzati}{7}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}Token}{7}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}Tokenizzazione}{8}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Smart contract}{8}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}Scalabilità}{9}{subsection.2.2.4}%
-\contentsline {section}{\numberline {2.3}Self-Sovereign Identity}{10}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Protocolli}{11}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Casi d'uso reali}{11}{subsection.2.3.2}%
-\contentsline {section}{\numberline {2.4}Zero Knowledge Proof}{11}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Tipi}{12}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Casi d'uso reali}{12}{subsection.2.4.2}%
-\contentsline {chapter}{\numberline {3}Descrizione dello stage}{13}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Introduzione al progetto}{13}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Analisi preventiva dei rischi}{13}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Requisiti e obiettivi}{13}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Pianificazione}{13}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Analisi dei requisiti}{15}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Casi d'uso}{15}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Tracciamento dei requisiti}{16}{section.4.2}%
-\contentsline {chapter}{\numberline {5}Progettazione e codifica}{19}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Tecnologie utilizzate}{19}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Codifica}{19}{subsection.5.1.1}%
-\contentsline {subsubsection}{Solidity}{19}{subsection.5.1.1}%
-\contentsline {subsubsection}{ethers.js}{19}{subsection.5.1.1}%
-\contentsline {subsubsection}{web3.js}{19}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Versionamento}{19}{subsection.5.1.2}%
-\contentsline {subsubsection}{GitHub}{19}{subsection.5.1.2}%
-\contentsline {section}{\numberline {5.2}Ciclo di vita del software}{19}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Progettazione}{19}{section.5.3}%
-\contentsline {subsubsection}{Namespace 1}{19}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Design Pattern Utilizzati}{19}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Codifica}{19}{section.5.5}%
-\contentsline {chapter}{\numberline {6}Verifica e validazione}{21}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Conclusioni}{23}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Consuntivo finale}{23}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Raggiungimento degli obiettivi}{23}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Conoscenze acquisite}{23}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Valutazione personale}{23}{section.7.4}%
-\contentsline {chapter}{\numberline {A}Appendice A}{25}{appendix.Alph1}%
-\contentsline {chapter}{Bibliografia}{29}{appendix*.17}%
+\contentsline {subsection}{\numberline {2.2.3}Smart contract}{9}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Scalabilità}{10}{subsection.2.2.4}%
+\contentsline {section}{\numberline {2.3}Self-Sovereign Identity}{11}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Tipi e applicazioni}{12}{subsection.2.3.1}%
+\contentsline {section}{\numberline {2.4}Zero Knowledge Proof}{13}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Tipi e applicazioni}{14}{subsection.2.4.1}%
+\contentsline {chapter}{\numberline {3}Descrizione dello stage}{15}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introduzione al progetto}{15}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Analisi preventiva dei rischi}{15}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Requisiti e obiettivi}{15}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Pianificazione}{15}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Analisi dei requisiti}{17}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Casi d'uso}{17}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Tracciamento dei requisiti}{18}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Progettazione e codifica}{21}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Tecnologie utilizzate}{21}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Codifica}{21}{subsection.5.1.1}%
+\contentsline {subsubsection}{Solidity}{21}{subsection.5.1.1}%
+\contentsline {subsubsection}{ethers.js}{21}{subsection.5.1.1}%
+\contentsline {subsubsection}{web3.js}{21}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Versionamento}{21}{subsection.5.1.2}%
+\contentsline {subsubsection}{GitHub}{21}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}Ciclo di vita del software}{21}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Progettazione}{21}{section.5.3}%
+\contentsline {subsubsection}{Namespace 1}{21}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Design Pattern Utilizzati}{21}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Codifica}{21}{section.5.5}%
+\contentsline {chapter}{\numberline {6}Verifica e validazione}{23}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Conclusioni}{25}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Consuntivo finale}{25}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Raggiungimento degli obiettivi}{25}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Conoscenze acquisite}{25}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Valutazione personale}{25}{section.7.4}%
+\contentsline {chapter}{\numberline {A}Appendice A}{27}{appendix.Alph1}%
+\contentsline {chapter}{Bibliografia}{31}{appendix*.22}%
