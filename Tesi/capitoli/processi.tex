@@ -13,7 +13,7 @@ Essa è una struttura dati che si comporta come un registro distribuito, salvand
 La struttura è stata introdotta nel 2008 da Satoshi Nakamoto, che ha pubblicato il suo white paper \textit{Bitcoin: A Peer-to-Peer Electronic Cash System}.
 Nel 2009 è stato pubblicato il primo software open source per la blockchain, Bitcoin, che ha permesso di creare una moneta digitale decentralizzata. \\
 
-A tal fine, non si devono confondere le cosiddette criptovalute con la blockchain. Di fatto, quest'ultima p solo la struttura che permette lo scambio di beni di qualsiasi tipo,
+A tal fine, non si devono confondere le cosiddette criptovalute con la blockchain. Di fatto, quest'ultima è solo la struttura che permette lo scambio di beni di qualsiasi tipo,
 in modo sicuro, registrato ed immutabile. Una criptovaluta è invece una moneta digitale, che può essere scambiata con altre monete digitali o con beni fisici.
 Essendo lo standard blockchain \textit{open source}, è possibile crearne di nuove con moltà facilità.
 
@@ -37,7 +37,7 @@ Nello specifico, possiamo dettagliare una struttura formata da:
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.6\textwidth, alt={Blocco all'interno di una blockchain}]{immagini/blocco.jpeg}
+    \includegraphics[width=0.6\textwidth, alt={Blocco all'interno di una blockchain}]{immagini/blocco.png}
     \caption{Blockchain vista come blocchi a catena}
 \end{figure}
 
@@ -75,7 +75,7 @@ L'utente dispone in ogni momento di:
     \item una chiave privata, usata per firmare i messaggi e per accedere ai propri beni digitali. È un codice segreto che deve essere conservato in modo sicuro.
 \end{itemize} 
 
-Ogni wallet dispone di una frase segreta, che contiene tutte le informazioni necessarie per recuperare ed accedere ai fondi del proprio portafoglio.
+Ogni wallet dispone di una frase segreta, che contiene tutte le informazioni necessarie per recuperare ed accedere ai fondi del proprio portachiavi.
 
 Inoltre, dispone di un proprio indirizzo, matematicamente derivato dalla stessa chiave pubblica mediante l'operazione di \textit{hashing}, con una lunghezza di 160 bit.
 Ciascuno è \textit{pseudonimo}, in quanto non appartiene nello specifico ad una persona, ma non è completamente anonimo. \\
@@ -92,7 +92,7 @@ Il processo di \textit{mining} consente di creare nuovi blocchi sulla catena, al
 Questo obiettivo viene raggiunto attraverso un processo chiamato \textit{consenso}, che prevede la risoluzione di complessi puzzle matematici utilizzando la potenza di calcolo.
 Il miner che riesce a risolvere il puzzle prima degli altri, vince il diritto di aggiungere il blocco alla blockchain. \\
 
-Si considera composto da due fasi:
+Questo processo è composto da due fasi:
 \begin{itemize}
     \item \textit{hashing}, che consiste nella risoluzione di un puzzle matematico, che consiste nel trovare un numero che, una volta applicata una funzione di hash, abbia un valore inferiore ad un valore prefissato. Il valore di questo numero viene chiamato \textit{nonce};
     \item \textit{ricerca del consenso}, che consiste nella verifica della validità del blocco, che viene effettuata da tutti i nodi della rete. Se il blocco è valido, viene aggiunto alla blockchain.
@@ -110,13 +110,11 @@ Il processo richiede un software specializzato e una grande potenza di calcolo, 
 Il meccanismo di ricerca di consenso prevede numerose varianti, che differiscono per il modo in cui i nodi della rete si accordano per aggiungere un nuovo blocco alla blockchain.\\
 Possiamo principalmente distinguere:
 \begin{enumerate}
-    \item\textit{{Proof of Work (PoW)}}, in cui i nodi della rete devono risolvere un puzzle matematico per aggiungere un nuovo blocco alla blockchain. 
-    Il problema consiste nella ricerca di un hash (una stringa di numeri e lettere) che soddisfa una determinata condizione, detta target. La condizione target richiede 
+    \item\textit{{Proof of Work (PoW)}}, basato nella ricerca di un hash (una stringa di numeri e lettere) che soddisfa una determinata condizione, detta target. La condizione target richiede 
     che l'hash del nuovo blocco sia inferiore a un determinato valore. Questo valore viene stabilito in base alla difficoltà della blockchain, che viene regolata automaticamente per mantenere 
     il tempo medio di creazione di un nuovo blocco costante. 
 
-    I miner utilizzano la loro potenza di calcolo per cercare di risolvere per primi questi problemi matematici
-    e il primo miner a riuscirci viene ricompensato in criptovaluta per il lavoro svolto.
+    Il primo miner che trova correttamente l'hash del blocco viene ricompensato in criptovaluta per il lavoro svolto.
     Questo meccanismo garantisce sicurezza nella rete, perché rende difficile ad un attaccante malintenzionato
     compromettere la sicurezza della rete non avendo la stessa potenza di calcolo.
     
@@ -188,7 +186,7 @@ Ogni bene viene considerato \textit{asset}, in quanto non riproducibile e non fa
 Un token può essere lanciato sul mercato tramite un \textit{initial coin offering} (ICO),
 che è un'offerta pubblica iniziale di token, al fine di finanziare nuovi progetti e comprenderne il nuovo valore.
 \\ 
-Come per le blockchain, non sono regolamentate da un organo centrale, pertanto è possibile raccogliere fondi senza nuovi intermediari e così creare
+Come per le blockchain, gli asset non sono regolamentati da un organo centrale, pertanto è possibile raccogliere fondi senza nuovi intermediari e così creare
 nuovi progetti, adeguatamente documentati tramite un \textit{white paper} che descrive il progetto e il suo funzionamento. 
 Il loro processo di creazione dei token nelle blockchain viene definito come \textit{minting}, in cui un creatore mette a disposizione un certo numero di token,
 che possono essere acquistati dai partecipanti. \\
@@ -231,13 +229,13 @@ Esistono diversi tipi di asset da considerare, i quali saranno poi successivamen
 \begin{itemize}
     \item{\textit{Asset finanziari}}, che rappresentano un diritto di proprietà su un bene fisico o digitale. Il concetto della finanza decentralizzata sta emergendo come \textit{DeFi (Decentralized Finance)},
     in cui i beni vengono spostati su blockchain a seconda della loro natura. Infatti, come per i token i beni acquistano una fungibilità e possono essere scambiati tra utenti;
-    \item{\textit{Asset immobiliari}}, che che rappresentano un bene fisico, come un immobile, che può essere tokenizzato e quindi diventare un bene digitale. 
+    \item{\textit{Asset immobiliari}}, che rappresentano un bene fisico, come un immobile, che può essere tokenizzato e quindi diventare un bene digitale. 
     Questi beni sono fungibili e come tali hanno un valore tendenzialmente fisso, che può essere soggetto a variazioni nel tempo;
     \item{\textit{beni intangibili - intangibles}}, come diritti di proprietà intellettuale o i citati beni collezionabili,
     e quindi acquisire grazie alla natura di blockchain un valore unico e verificato.
 \end{itemize} 
 
-Si può quindi quindi comprendere che la tokenizzazione può potenzialmente trasformare tutto in un bene con un valore, permettendo di avere dei prezzi equi stabiliti dalle vere esigenze del mercato,
+Si può quindi comprendere che la tokenizzazione può potenzialmente trasformare tutto in un bene con un valore, permettendo di avere dei prezzi equi stabiliti dalle vere esigenze del mercato,
 riducendo i costi di gestione essendo un sistema scalabile e sicuro che lo gestisce, permettendo l'aumento della liquidità, avendo sempre degli investitori pronti a scambiare i token, in modo trasparente
 e senza intermediari, riducendo notevolmente i tempi di scambio rispetto ai beni tradizionali.
 
@@ -268,8 +266,6 @@ e pone un limite al numero di transazioni che possono essere eseguite in un dato
     \caption{Funzionamento di uno Smart Contract}
 \end{figure}
 
-\newpage 
-
 Possiamo citare alcuni esempi di applicazione di smart contract:
 \begin{itemize}
     \item \textit{smart legal contracts}, legalmente applicabili e richiedono alle parti di soddisfare i loro obblighi contrattuali.
@@ -278,7 +274,7 @@ Possiamo citare alcuni esempi di applicazione di smart contract:
     All'interno delle blockchain vegono organizzate delle votazioni, che possono essere eseguite da tutti i partecipanti, che possono votare per o contro una proposta,
     oppure garantire il corretto scambio dei beni digitali all'interno della piattaforma, prevenendo possibili vulnerabilità;
     \item \textit{crowdfunding}, che è un metodo di finanziamento di progetti e aziende, in cui le persone possono contribuire con denaro o beni, in cambio di un premio o di un prodotto finale;
-    \item \textit{logical applicative contracts}, che sono contratti che possono essere utilizzati per eseguire operazioni logiche, come la verifica di un dato, la verifica di un dato e l'esecuzione di un'altra operazione,
+    \item \textit{logical applicative contracts}, che sono contratti che possono essere utilizzati per eseguire operazioni logiche, come la verifica di un dato e l'esecuzione di un'altra operazione,
     oppure gestire un sistema di pagamento o beni di scambio, garantendo la tracciabilità e la trasparenza di ogni bene alla consegna.
 \end{itemize}
 
@@ -312,6 +308,8 @@ Comunemente, le soluzioni di scalabilità cercano di intervenire in vari modi:
     In questo ambito, soluzioni comuni includono i \textit{canali di stato (state channels)}, che sono dei contratti intelligenti che permettono di eseguire transazioni tra due parti, senza che queste siano visibili sulla blockchain principale,
     e i \textit{canali di pagamento (payment channels)}, che migliorano la comunicazione bidirezionale delle transazioni eseguendole sulla blockchain secondaria e dandone traccia sulla principale.
 \end{itemize}
+
+\newpage
 
 \section{Self-Sovereign Identity}\label{sec:self-sovereign-identity}
 
@@ -370,7 +368,7 @@ condivise le proprie informazioni. La particolarità di questi protocolli è di 
 \begin{itemize}
     \item \textit{DID (Decentralized Identifier)}, che consente di creare identificativi digitali decentralizzati come citato supportano
     e permettono di identificare i soggetti in modo resistente alla falsificazione, autenticando le informazioni in modo sicuro;
-    \item \textit{VC (Verifiable Credentials)}, che consente di gestire attestazioni verificati, quindi insiemi di informaizoni cfhe un individuo
+    \item \textit{VC (Verifiable Credentials)}, che consente di gestire attestazioni verificati, quindi insiemi di informazioni cfhe un individuo
     possiede o controlla, dimostrando che l'attestazione è stata rilasciata da un emittente autorizzato. Questo all'interno delle blockchain
     garantisce che ciascun nodo e parte in gioco sia chi dice di essere senza ledere la decentralizzazione alla base;
     \item \textit{ZKP (Zero Knowledge Proof)}, che consente di dimostrare la conoscenza di una proprietà di un dato, senza rivelare alcun dettaglio relativo.

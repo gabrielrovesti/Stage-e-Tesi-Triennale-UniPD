@@ -11,30 +11,95 @@ Introduzione al contesto applicativo.
 \noindent Esempio di citazione nel pie' di pagina
 citazione\footcite{womak:lean-thinking}
 
-\section{L'azienda}
+\section{L'azienda e motivazioni della scelta}
 
-Sync Lab è un'azienda italiana che si occupa di sviluppo software nata nel 2002 con sede principale a Napoli,
-rapidamente affermata come System Integrator secondo un processo di ricerca e maturazione di competenze tecnologiche sempre diverse.\\
-L'azienda opera in diversi settori, tra cui quello del mobile, della cybersecutrity, del web e della videosorveglianza. \\
-L'azienda è in continua crescita e attualmente conta oltre 250 dipendenti, dislocati nelle altre sedi presenti: Roma, Milano, Padova e Verona.
+Sync Lab è una \textit{software house} italiana nata a Napoli nel 2002 che, grazie ad una progressiva
+maturazione delle sue competenze in ambito applicativo e tecnologico, è riuscita a diventare un
+punto di riferimento per le aziende che intendono innovare i propri processi di business,
+trasformandosi in un \textit{System Integrator}. L'azienda si è fatta notare sul mercato grazie alla proposta
+di vari prodotti software, sviluppati all'interno del suo laboratorio di ricerca e sviluppo, 
+conquistando importanti fette di mercato in ambito nazionale nei settori mobile, di sicurezza e videosorveglianza.
+Ad oggi, Sync Lab conta più di 150 clienti e oltre 200 dipendenti disolcati nelle proprie sedi.
+Queste sono situate a Napoli, Milano, Verona, Roma e Padova.
+L'obiettivo principale dell'azienda è quello di fornire soluzioni tecnologiche innovative e di qualità
+che possano soddisfare le esigenze dei propri clienti, garantendo un servizio di consulenza
+e assistenza continuo e di alto livello.\\
 
-\section{Introduzione al progetto}
+Il mio contatto con l'azienda è avvenuto autonomamente, tramite l'invio di una candidatura spontanea
+in base alle aziende presenti nella mappa di StageIt dell'anno 2022. Incuriosito dalle tematiche proposte e dai progetti presenti,
+ho incontrato subito la massima disponibilità del mio attuale tutor, l'ingegner Fabio Pallaro, che mi ha fornito da suito un supporto valido
+per la stesura del piano di lavoro e per la definizione degli obiettivi dello stage. Da parte sua e dell'azienda, vi è stata subito 
+massima disponibilità e flessibilità nell'organizzazione del mio studio teorico e per la realizzazione del progetto,
+dando una guida sulle possibili tecnologie e lasciandomi approfondire in autonomia le tematiche che più mi interessavano.
 
-Introduzione all'idea dello stage.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.4\textwidth, alt={Logo dell'azienda Sync Lab}]{immagini/synclab.png}
+    \caption{Logo azienda Sync Lab}\label{fig:logo-synclab}
+\end{figure}
 
-Riguardo la stesura del testo, relativamente al documento sono state adottate le seguenti convenzioni tipografiche:
-\begin{itemize}
-	\item gli acronimi, le abbreviazioni e i termini ambigui o di uso non comune menzionati vengono definiti nel glossario, situato alla fine del presente documento;
-	\item per la prima occorrenza dei termini riportati nel glossario viene utilizzata la seguente nomenclatura: \emph{parola}\glsfirstoccur;
-	\item i termini in lingua straniera o facenti parti del gergo tecnico sono evidenziati con il carattere \emph{corsivo}.
-\end{itemize}
+\newpage
+
+\section{Introduzione al progetto e idea dello stage}
+
+\textcolor{red}{Da scrivere}
 
 \section{Way of Working e strumenti}
+L'azienda Sync Lab adotta un modello di sviluppo \gls{agileg}, con l'obiettivo di monitorare e controllare lo sviluppo del progetto in modo flessibile e continuo, suddividendo le attività
+in piccoli incrementi e con una collaborazione asincrona e distribuita. In particolare, il modello di sviluppo adottato è \gls{scrumg}, che prevede la suddivisione del progetto in sprint,
+ovvero periodi di tempo di durata fissa, in cui vengono pianificate le attività da svolgere e i relativi obiettivi da raggiungere. Al termine di ogni sprint, viene effettuato su base settimanale
+un incontro interno approfondito con il tutor aziendale, per discutere lo stato di avanzamento del progetto e le attività da svolgere per il successivo sprint. 
+L'obiettivo del modello è dare maggiore importanza al ciclo di vita del \glslink{softwareg} e dei processi correlati, piuttosto che al prodotto finale, con l'obiettivo di migliorare la qualità del prodotto stesso.
+Inoltre, grazie alla collaborazione con altri stagisti con progetti basati sugli stessi concetti e in generale con il team di sviluppo, è stato possibile condividere conoscenze e competenze,
+discutere problemi e trovare soluzioni comuni, con un approccio incrementale e iterativo. \\
+
+Gli strumenti utilizzati per lo sviluppo del progetto sono stati i seguenti:
+\begin{itemize}
+    \item{\textit{\textbf{Trello}}}, per la gestione delle attività e dei task da svolgere, condiviso con il tutor aziendale e verificato dallo stesso ad ogni incremento.
+    All'interno di questo strumento è possibile monitorare le attività attraverso delle schede, simili a dei \textit{post-it}, differenziando le attività per specifiche colonne di avanzamento.
+    Le diciture riportate dalle colonne sono generalmente come segue:
+    \begin{itemize}
+        \item{\textbf{Backlog}}: che contiene attività in corso di svolgimento, comprendenti schede con obiettivi di massima dello stage e delle sue singole parti e periodi;
+        \item{\textbf{In corso}}, ossia attività in esecuzione e da realizzare entro la fine dello \textit{sprint};
+        \item{\textbf{In verifica}}, ossia attività in attesa di verifica e considerate concluse, in attesa di essere spostate nella colonna \textit{Terminati} a seguito della \textit{sprint review};
+        \item{\textbf{Terminati}}, cioè attività completate e verificate da parte del tutor aziendale.
+    \end{itemize} 
+    Un esempio di utilizzo di Trello è riportato in Figura \ref{fig:trello}.
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=1\textwidth, alt={Esempio di utilizzo di Trello}]{immagini/trello.png}
+        \caption{Esempio di utilizzo di Trello}\label{fig:trello}
+    \end{figure}
+
+    \item{\textit{\textbf{Google Calendar}}}, per la pianificazione delle attività e degli incontri con il tutor aziendale, condiviso con il tutor stesso e con gli altri stagisti 
+    e dipendenti di Sync Lab, capendo così e in anticipo le attività da svolgere e gli incontri da effettuare;
+    
+    \item{\textit{\textbf{Visual Studio Code}}}, \gls{ideg} utilizzato per la scrittura del codice sorgente e dei file di configurazione, con l'aggiunta di alcuni \textit{plugin} per la formattazione del codice e per la gestione dei file di configurazione 
+    del progetto. All'interno di questo, è stato realizzato lo studio di esempi di codice e la realizzazione dell'intero progetto, con l'aggiunta di un sistema di \textit{linting} per la formattazione del codice e di un sistema di \textit{debugging} per il controllo del flusso di esecuzione del codice.
+    Sempre tramite questo strumento, è stata scritto la tesi, attraverso l'utilizzo di un \textit{plugin} per la scrittura in \LaTeX;
+    
+    \item{\textit{\textbf{Diagrams.net}}}, per la realizzazione e la creazione delle immagini del documento, utilizzati per la documentazione e la strutturazione delle sezioni;
+    
+    \item{\textit{\textbf{StarUML}}}, per la realizzazione dei diagrammi \gls{uml} del documento, quindi per i diagrammi dei casi d'uso e dei diagrammi delle classi;
+
+    \item{\textit{\textbf{GitHub}}}, utilizzato internamente per la gestione del codice sorgente e dei file di configurazione, condiviso con il tutor aziendale e verificato dallo stesso ad ogni incremento.
+    In particolare, è stato utilizzato il sistema di controllo versione \gls{gitg}, che permette di tenere traccia delle modifiche effettuate ai file e di gestire le varie versioni del codice e degli appunti interni 
+    da me realizzati, per una migliore organizzazione e condivisione delle informazioni. Inoltre, è stato possibile condividere il codice sorgente con gli altri stagisti e dipendenti di Sync Lab,
+    per garantire il versionamento e la condivisione delle modifiche effettuate.
+    
+    \item{\textit{\textbf{Discord}}}, social network utilizzato per la comunicazione interna tra i dipendenti di Sync Lab, 
+    tramite la gestione di vari canali vocali e testuali divisi per argomento e per sedi interne aziendali. La suddivisione in gruppi e canali
+    ha permesso di comunicare in modo efficace e veloce, condividendo informazioni e risorse utili per lo svolgimento del progetto, sia a livello di risorse 
+    didattiche che per la risoluzione di eventuali dubbi e problemi. Inoltre, è stato possibile comunicare con gli altri stagisti in modo semplice e veloce,
+    condividendo conoscenze e competenze e discutendo problemi e soluzioni comuni.
+\end{itemize}
 
 \section{Organizzazione del testo}
 
+\subsection{Scrittura del documento}
+
 \begin{description}
-    \item[{\hyperref[cap:tecnologie]{Il secondo capitolo}}] descrive \ldots
+    \item[{\hyperref[cap:tecnologie]{Il secondo capitolo}}] descrive le tecnologie studiate e utilizzate per lo sviluppo del progetto.
     
     \item[{\hyperref[cap:descrizione-stage]{Il terzo capitolo}}] approfondisce \ldots
     
@@ -46,4 +111,12 @@ Riguardo la stesura del testo, relativamente al documento sono state adottate le
     
     \item[{\hyperref[cap:conclusioni]{Nel settimo capitolo}}] descrive \ldots
 \end{description}
+
+\subsection{Convenzioni tipografiche}
+Riguardo la stesura del testo, relativamente al documento sono state adottate le seguenti convenzioni tipografiche:
+\begin{itemize}
+	\item gli acronimi, le abbreviazioni e i termini ambigui o di uso non comune menzionati vengono definiti nel glossario, situato alla fine del presente documento;
+	\item per la prima occorrenza dei termini riportati nel glossario viene utilizzata la seguente nomenclatura: \emph{parola}\glsfirstoccur;
+	\item i termini in lingua straniera o facenti parti del gergo tecnico sono evidenziati con il carattere \emph{corsivo}.
+\end{itemize}
 

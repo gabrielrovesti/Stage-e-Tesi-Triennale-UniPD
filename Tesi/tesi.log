@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.17)  21 APR 2023 18:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.17)  1 MAY 2023 11:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1047,6 +1047,37 @@ Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
 (c:/texlive/2022/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
+) (./tesi.glsdefs
+
+Package glossaries Warning: entry `api' has already been defined in the preamble (if you have moved the definition there from the document environment, delete tesi.glsdefs) on input line 27.
+
+
+Package glossaries Warning: entry `uml' has already been defined in the preamble (if you have moved the definition there from the document environment, delete tesi.glsdefs) on input line 55.
+
+
+Package glossaries Warning: entry `scrum' has already been defined in the preamble (if you have moved the definition there from the document environment, delete tesi.glsdefs) on input line 83.
+
+
+Package glossaries Warning: entry `agile' has already been defined in the preamble (if you have moved the definition there from the document environment, delete tesi.glsdefs) on input line 111.
+
+
+Package glossaries Warning: entry `software' has already been defined in the preamble (if you have moved the definition there from the document environment, delete tesi.glsdefs) on input line 139.
+
+
+Package glossaries Warning: entry `apig' has already been defined in the preamble (if you have moved the definition there from the document environment, delete tesi.glsdefs) on input line 167.
+
+
+Package glossaries Warning: entry `agileg' has already been defined in the preamble (if you have moved the definition there from the document environment, delete tesi.glsdefs) on input line 195.
+
+
+Package glossaries Warning: entry `scrumg' has already been defined in the preamble (if you have moved the definition there from the document environment, delete tesi.glsdefs) on input line 223.
+
+
+Package glossaries Warning: entry `softwareg' has already been defined in the preamble (if you have moved the definition there from the document environment, delete tesi.glsdefs) on input line 251.
+
+
+Package glossaries Warning: entry `umlg' has already been defined in the preamble (if you have moved the definition there from the document environment, delete tesi.glsdefs) on input line 279.
+
 )
 Package biblatex Info: Trying to load language 'italian'...
 Package biblatex Info: ... file 'italian.lbx' found.
@@ -1121,7 +1152,12 @@ Package pdftex.def Info: immagini//unipd-logo.png  used on input line 22.
 
 ] [4
 
-]) (./introduzione/ringraziamenti.tex [5] [6
+]
+Underfull \hbox (badness 10000) in paragraph at lines 11--13
+
+ []
+
+) (./introduzione/ringraziamenti.tex [5] [6
 
 ]) (./introduzione/indice.tex [7] [8
 
@@ -1153,28 +1189,51 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [1
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--27
+
+ []
+
+<immagini/synclab.png, id=211, 154.77824pt x 59.0205pt>
+File: immagini/synclab.png Graphic file (type png)
+<use immagini/synclab.png>
+Package pdftex.def Info: immagini/synclab.png  used on input line 37.
+(pdftex.def)             Requested size: 193.47578pt x 73.78171pt.
+[1
 
 
 
-]) (./capitoli/processi.tex [2]
+ <./immagini/synclab.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 48--55
+
+ []
+
+<immagini/trello.png, id=236, 937.70325pt x 483.60675pt>
+File: immagini/trello.png Graphic file (type png)
+<use immagini/trello.png>
+Package pdftex.def Info: immagini/trello.png  used on input line 70.
+(pdftex.def)             Requested size: 483.69687pt x 249.46242pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[2] [3 <./immagini/trello.png>]) (./capitoli/processi.tex [4]
 Capitolo 2.
 
 Underfull \hbox (badness 10000) in paragraph at lines 11--15
 
  []
 
-<immagini/blocco.jpeg, id=231, 310.15875pt x 163.61125pt>
-File: immagini/blocco.jpeg Graphic file (type jpg)
-<use immagini/blocco.jpeg>
-Package pdftex.def Info: immagini/blocco.jpeg  used on input line 40.
-(pdftex.def)             Requested size: 290.22107pt x 153.09306pt.
+<immagini/blocco.png, id=267, 740.7675pt x 290.2845pt>
+File: immagini/blocco.png Graphic file (type png)
+<use immagini/blocco.png>
+Package pdftex.def Info: immagini/blocco.png  used on input line 40.
+(pdftex.def)             Requested size: 290.22107pt x 113.72873pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[3
+[5
 
-] [4 <./immagini/blocco.jpeg>]
+] [6 <./immagini/blocco.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 91--94
 
  []
@@ -1184,97 +1243,96 @@ Underfull \hbox (badness 10000) in paragraph at lines 101--104
 
  []
 
-[5]
-<immagini/proof-of-work.png, id=253, 473.97075pt x 173.448pt>
+[7]
+<immagini/proof-of-work.png, id=288, 464.33475pt x 347.49825pt>
 File: immagini/proof-of-work.png Graphic file (type png)
 <use immagini/proof-of-work.png>
-Package pdftex.def Info: immagini/proof-of-work.png  used on input line 130.
-(pdftex.def)             Requested size: 290.22107pt x 106.2054pt.
- [6 <./immagini/proof-of-work.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 178--181
+Package pdftex.def Info: immagini/proof-of-work.png  used on input line 128.
+(pdftex.def)             Requested size: 290.22107pt x 217.20175pt.
+ [8 <./immagini/proof-of-work.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 176--179
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 182--186
+Underfull \hbox (badness 10000) in paragraph at lines 180--184
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 187--195
+Underfull \hbox (badness 10000) in paragraph at lines 185--193
 
  []
-
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 224--229
-
- []
-
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 245--249
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 259--264
-
- []
-
-<immagini/smart-contract.png, id=271, 496.254pt x 339.06676pt>
-File: immagini/smart-contract.png Graphic file (type png)
-<use immagini/smart-contract.png>
-Package pdftex.def Info: immagini/smart-contract.png  used on input line 267.
-(pdftex.def)             Requested size: 290.22107pt x 198.29375pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 292--296
+Underfull \hbox (badness 10000) in paragraph at lines 222--227
 
  []
 
-[10 <./immagini/smart-contract.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 318--322
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 243--247
 
  []
 
-<immagini/ssi.png, id=284, 519.1395pt x 221.02576pt>
-File: immagini/ssi.png Graphic file (type png)
-<use immagini/ssi.png>
-Package pdftex.def Info: immagini/ssi.png  used on input line 338.
-(pdftex.def)             Requested size: 290.22107pt x 123.56447pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 257--262
+
+ []
+
+<immagini/smart-contract.png, id=304, 301.125pt x 286.06876pt>
+File: immagini/smart-contract.png Graphic file (type png)
+<use immagini/smart-contract.png>
+Package pdftex.def Info: immagini/smart-contract.png  used on input line 265.
+(pdftex.def)             Requested size: 290.22107pt x 275.73596pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 342--346
-
- []
-
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 361--366
+Underfull \hbox (badness 10000) in paragraph at lines 288--292
 
  []
 
-[12 <./immagini/ssi.png>]
-<immagini/zkp.png, id=297, 803.0pt x 356.33125pt>
+[12 <./immagini/smart-contract.png>] [13]
+Underfull \hbox (badness 10000) in paragraph at lines 316--320
+
+ []
+
+<immagini/ssi.png, id=324, 410.7345pt x 205.36725pt>
+File: immagini/ssi.png Graphic file (type png)
+<use immagini/ssi.png>
+Package pdftex.def Info: immagini/ssi.png  used on input line 336.
+(pdftex.def)             Requested size: 290.22107pt x 145.11296pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 340--344
+
+ []
+
+[14 <./immagini/ssi.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 359--364
+
+ []
+
+[15]
+<immagini/zkp.png, id=337, 519.1395pt x 211.992pt>
 File: immagini/zkp.png Graphic file (type png)
 <use immagini/zkp.png>
-Package pdftex.def Info: immagini/zkp.png  used on input line 403.
-(pdftex.def)             Requested size: 290.22107pt x 128.79024pt.
+Package pdftex.def Info: immagini/zkp.png  used on input line 401.
+(pdftex.def)             Requested size: 290.22107pt x 118.51414pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 407--410
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 411--415
+Underfull \hbox (badness 10000) in paragraph at lines 405--408
 
  []
 
-[13 <./immagini/zkp.png>]) (./capitoli/kick-off.tex [14]
+
+Underfull \hbox (badness 10000) in paragraph at lines 409--413
+
+ []
+
+[16 <./immagini/zkp.png>]) (./capitoli/kick-off.tex [17] [18
+
+]
 Capitolo 3.
-LaTeX Font Info:    Trying to load font information for T1+cmss on input line 3.
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 5.
 (c:/texlive/2022/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
@@ -1287,41 +1345,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--11
 
  []
 
-) (./capitoli/concept.tex [15
-
-] [16
-
-]
+[19]) (./capitoli/concept.tex [20]
 Capitolo 4.
-<immagini//usecase/scenario-principale.png, id=320, 463.13025pt x 236.082pt>
+<immagini//usecase/scenario-principale.png, id=363, 463.13025pt x 236.082pt>
 File: immagini//usecase/scenario-principale.png Graphic file (type png)
 <use immagini//usecase/scenario-principale.png>
 Package pdftex.def Info: immagini//usecase/scenario-principale.png  used on input line 14.
 (pdftex.def)             Requested size: 435.32422pt x 221.90628pt.
-[17 <./immagini//usecase/scenario-principale.png>] [18]) (./capitoli/product-prototype.tex [19] [20
+[21
+
+ <./immagini//usecase/scenario-principale.png>] [22]) (./capitoli/product-prototype.tex [23] [24
 
 ]
 Capitolo 5.
-) (./capitoli/product-design.tex [21] [22
+) (./capitoli/product-design.tex [25] [26
 
 ]
 Capitolo 6.
-) (./capitoli/conclusioni.tex [23] [24
+) (./capitoli/conclusioni.tex [27] [28
 
 ]
 Capitolo 7.
-) (./appendice/appendice-a.tex [25] [26
+) (./appendice/appendice-a.tex [29] [30
 
 ]
 Appendice A.
-) [27] [28
+) [31] [32
 
 ]
 No file tesi.acr.
 No file tesi.gls.
-(./appendice/bibliografia.tex [29] [30
+(./appendice/bibliografia.tex [33] [34
 
-]) [31
+]) [35
 
 ] (./tesi.aux)
 Package logreq Info: Writing requests to 'tesi.run.xml'.
@@ -1329,15 +1385,30 @@ Package logreq Info: Writing requests to 'tesi.run.xml'.
 
  ) ) 
 Here is how much of TeX's memory you used:
- 38630 strings out of 476029
- 680203 string characters out of 5794164
+ 38985 strings out of 476029
+ 685964 string characters out of 5794164
  1866340 words of memory out of 5000000
- 57996 multiletter control sequences out of 15000+600000
- 545891 words of font info for 203 fonts, out of 8000000 for 9000
+ 58317 multiletter control sequences out of 15000+600000
+ 547781 words of font info for 213 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  99i,10n,125p,2322b,3112s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
+pdfTeX warning (dest): name{glo:gitg} has been referenced but does not exist, replaced by a fixed one
+
+
 pdfTeX warning (dest): name{glo:uml} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:ideg} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:softwareg} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:scrumg} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:agileg} has been referenced but does not exist, replaced by a fixed one
 
 
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
@@ -1345,11 +1416,11 @@ pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist,
 
 pdfTeX warning (dest): name{glo:api} has been referenced but does not exist, replaced by a fixed one
 
-{c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsi1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsl1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfti0800.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on tesi.pdf (43 pages, 899008 bytes).
+{c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbi1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsi1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsl1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfti0800.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on tesi.pdf (47 pages, 2527315 bytes).
 PDF statistics:
- 689 PDF objects out of 1000 (max. 8388607)
- 577 compressed objects within 6 object streams
- 142 named destinations out of 1000 (max. 500000)
- 66520 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 741 PDF objects out of 1000 (max. 8388607)
+ 616 compressed objects within 7 object streams
+ 154 named destinations out of 1000 (max. 500000)
+ 68586 words of extra memory for PDF output out of 74296 (max. 10000000)
 
