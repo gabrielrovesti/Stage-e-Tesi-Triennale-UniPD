@@ -1,16 +1,5 @@
 \chapter{Introduzione}\label{cap:introduzione}
 
-Introduzione al contesto applicativo.
-
-\noindent Esempio di utilizzo di un termine nel glossario 
-\gls{api}. 
-
-\noindent Esempio di citazione in linea 
-\cite{site:agile-manifesto}. 
-
-\noindent Esempio di citazione nel pie' di pagina
-citazione\footcite{womak:lean-thinking}
-
 \section{L'azienda e motivazioni della scelta}
 
 Sync Lab è una \textit{software house} italiana nata a Napoli nel 2002 che, grazie ad una progressiva
@@ -42,7 +31,27 @@ dando una guida sulle possibili tecnologie e lasciandomi approfondire in autonom
 
 \section{Introduzione al progetto e idea dello stage}
 
-\textcolor{red}{Da scrivere}
+Oggi più che mai è importante garantire la sicurezza dei propri dati e delle proprie informazioni, permettendo uno scambio sicuro
+e protetto di dati sensibili tra due o più entità. Inoltre, è necessario garantire che le informazioni siano autentiche e non modificate,
+per evitare che un utente malintenzionato possa alterare i dati e compromettere la sicurezza del sistema.
+Sulla base di questa premessa, in accordo con l'azienda, si è deciso di sviluppare un progetto che permetta di esplorare 
+le possibili applicazioni della tecnologia \gls{blockchaing} all'interno di un contesto reale e possibilmente applicabile in ambito aziendale. \\
+
+In particolare, la piattaforma oggetto dello sviluppo durante il tirocinio ha come obiettivo principale il controllo dell'accesso ai contenuti
+riservati, nel contesto dei film vietati ai minori. Grazie all'utilizzo della tecnologia \gls{blockchaing} e dello standard \gls{w3cg} \gls{ssig},
+permettendo quindi di riconoscere i propri utenti evitando condivisione di informazioni, ma criptando i propri dati personali e verificando l'autenticità
+dei dati trasmessi. Il progetto si pone quindi di risolvere il problema della condivisione di contenuti riservati, tramite l'utilizzo di tecnologie innovative
+e la collaborazione con lo stagista ALessio De Biasi, utilizzando il codice di un progetto di un laureando magistrale presso Computer Science
+dell'Università Ca' Foscari richiamato come libreria e di altri stagisti di laurea triennale con progetti similari basati sull'applicazione di tecnologie immutabili e decentralizzate. \\
+
+Il suo utilizzo è molto simile ad altre piattaforme basate sulla condivisizione e fruizioni di contenuti multimediali:
+l'utente si registra presso la piattaforma, fornendo i propri dati personali e la propria età. In questa fase, si ha il riconoscimento dell'utente
+tramite l'utilizzo di un \gls{didg} e la creazione di un \gls{vcg} contenente i dati personali dell'utente, che verrà poi utilizzato per l'autenticazione
+e la verifica dei dati. Una volta effettuata la registrazione, l'utente può accedere alla piattaforma e visualizzare i contenuti disponibili, permettendo l'accesso
+anche a contenuti limitati qualora l'utente sia maggiorenne. Riconosciuta l'età dell'utente e verificata dalla piattaforma blockchain la sua autenticità,
+l'utente può visualizzare il contenuto selezionato dimostrando tramite \gls{zkpg} di essere maggiorenne, senza dover fornire ulteriori informazioni personali. \\
+
+Sulla base di queste premesse nasce il progetto \textbf{VerifiedMovies}.
 
 \section{Way of Working e strumenti}
 L'azienda Sync Lab adotta un modello di sviluppo \gls{agileg}, con l'obiettivo di monitorare e controllare lo sviluppo del progetto in modo flessibile e continuo, suddividendo le attività
@@ -80,7 +89,7 @@ Gli strumenti utilizzati per lo sviluppo del progetto sono stati i seguenti:
     
     \item{\textit{\textbf{Diagrams.net}}}, per la realizzazione e la creazione delle immagini del documento, utilizzati per la documentazione e la strutturazione delle sezioni;
     
-    \item{\textit{\textbf{StarUML}}}, per la realizzazione dei diagrammi \gls{uml} del documento, quindi per i diagrammi dei casi d'uso e dei diagrammi delle classi;
+    \item{\textit{\textbf{StarUML}}}, per la realizzazione dei diagrammi \gls{umlg} del documento, quindi per i diagrammi dei casi d'uso e dei diagrammi delle classi;
 
     \item{\textit{\textbf{GitHub}}}, utilizzato internamente per la gestione del codice sorgente e dei file di configurazione, condiviso con il tutor aziendale e verificato dallo stesso ad ogni incremento.
     In particolare, è stato utilizzato il sistema di controllo versione \gls{gitg}, che permette di tenere traccia delle modifiche effettuate ai file e di gestire le varie versioni del codice e degli appunti interni 
@@ -96,20 +105,21 @@ Gli strumenti utilizzati per lo sviluppo del progetto sono stati i seguenti:
 
 \section{Organizzazione del testo}
 
-\subsection{Scrittura del documento}
+\subsection{Struttura del documento}
 
 \begin{description}
     \item[{\hyperref[cap:tecnologie]{Il secondo capitolo}}] descrive le tecnologie studiate e utilizzate per lo sviluppo del progetto.
     
-    \item[{\hyperref[cap:descrizione-stage]{Il terzo capitolo}}] approfondisce \ldots
+    \item[{\hyperref[cap:descrizione-stage]{Il terzo capitolo}}] approfondisce il percorso di tirocinio formativo, descrivendo precisamente gli obiettivi e le attività svolte durante il percorso,
+    con relativa analisi dei rischi.
     
-    \item[{\hyperref[cap:analisi-requisiti]{Il quarto capitolo}}] approfondisce \ldots
-    
-    \item[{\hyperref[cap:progettazione-codifica]{Il quinto capitolo}}] approfondisce \ldots
-    
-    \item[{\hyperref[cap:verifica-validazione]{Il sesto capitolo}}] approfondisce \ldots
-    
-    \item[{\hyperref[cap:conclusioni]{Nel settimo capitolo}}] descrive \ldots
+    %\item[{\hyperref[cap:analisi-requisiti]{Il quarto capitolo}}] approfondisce \ldots
+    %
+    %\item[{\hyperref[cap:progettazione-codifica]{Il quinto capitolo}}] approfondisce \ldots
+    %
+    %\item[{\hyperref[cap:verifica-validazione]{Il sesto capitolo}}] approfondisce \ldots
+    %
+    %\item[{\hyperref[cap:conclusioni]{Nel settimo capitolo}}] descrive \ldots
 \end{description}
 
 \subsection{Convenzioni tipografiche}

@@ -1,0 +1,8 @@
+\noindent Esempio di utilizzo di un termine nel glossario 
+\gls{api}. 
+
+\noindent Esempio di citazione in linea 
+\cite{site:agile-manifesto}. 
+
+\noindent Esempio di citazione nel pie' di pagina
+citazione\footcite{womak:lean-thinking}

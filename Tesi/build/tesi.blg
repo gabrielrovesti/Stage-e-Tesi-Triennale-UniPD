@@ -1,15 +1,9 @@
 [0] Config.pm:306> INFO - This is Biber 2.18
 [0] Config.pm:309> INFO - Logfile is 'build/tesi.blg'
-[275] biber-MSWIN32:340> INFO - === 
-[336] Biber.pm:418> INFO - Reading 'build/tesi.bcf'
-[577] Biber.pm:975> INFO - Using all citekeys in bib section 0
-[615] Biber.pm:4401> INFO - Processing section 0
-[639] Biber.pm:4592> INFO - Looking for bibtex file 'appendice/bibliografia.bib' for section 0
-[737] bibtex.pm:1713> INFO - LaTeX decoding ...
-[763] bibtex.pm:1518> INFO - Found BibTeX data source 'appendice/bibliografia.bib'
-[834] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[835] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'variable = shifted' with 'variable = non-ignorable'
-[835] Biber.pm:4221> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'it-IT'
-[835] Biber.pm:4227> INFO - No sort tailoring available for locale 'it-IT'
-[846] bbl.pm:654> INFO - Writing 'build/tesi.bbl' with encoding 'UTF-8'
-[847] bbl.pm:757> INFO - Output to build/tesi.bbl
+[100] biber-MSWIN32:340> INFO - === 
+[137] Biber.pm:418> INFO - Reading 'build/tesi.bcf'
+[246] Biber.pm:978> INFO - Found 0 citekeys in bib section 0
+[261] bbl.pm:654> INFO - Writing 'build/tesi.bbl' with encoding 'UTF-8'
+[261] bbl.pm:757> INFO - Output to build/tesi.bbl
+[261] Biber.pm:130> WARN - The file 'build/tesi.bcf' does not contain any citations!
+[261] Biber.pm:132> INFO - WARNINGS: 1
