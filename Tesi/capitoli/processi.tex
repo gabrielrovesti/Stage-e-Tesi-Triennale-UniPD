@@ -1,14 +1,14 @@
 \chapter{Tecnologie di interesse}\label{cap:tecnologie}
 
-\intro{In questa sezione viene presentata una panoramica di base delle tecnologie oggetto del mio tirocinio,
-al fine di descrivere in modo chiaro e conciso i concetti di base e le caratteristiche principali delle tecnologie
-utilizzate nel progetto di stage e oggetto di studio autonomo e autodidatta.}
+\intro{In questa sezione viene presentata una panoramica di base delle tecnologie oggetto del mio tirocinio, al fine
+di descrivere in modo chiaro e conciso i concetti di base e le caratteristiche principali delle tecnologie utilizzate
+nel progetto di stage e oggetto di studio autonomo e autodidatta.}
 
 \section{Blockchain: concetti base}\label{sec:tecnologie-blockchain}
 
 \subsection{Introduzione}\label{sec:tecnologie-blockchain-introduzione}
 
-La blockchain è una tecnologia che permette di memorizzare dati in maniera decentralizzata e distribuita.
+La \glsfirstoccur{\gls{blockchaing}} è una tecnologia che permette di memorizzare dati in maniera decentralizzata e distribuita.
 Essa è una struttura dati che si comporta come un registro distribuito, salvando le informazioni in modo sicuro ed immutabile.
 La struttura è stata introdotta nel 2008 da Satoshi Nakamoto, che ha pubblicato il suo white paper \textit{Bitcoin: A Peer-to-Peer Electronic Cash System}.
 Nel 2009 è stato pubblicato il primo software open source per la blockchain, Bitcoin, che ha permesso di creare una moneta digitale decentralizzata. \\
@@ -26,7 +26,7 @@ definite nodi, possono accedere e modificare i dati, stabilendo se questi sono v
 I dati delle blockchain sono strutturati in singoli blocchi, ciascuno contenente uno specifico set di informazioni.
 Ogni blocco è collegato al precedente tramite un hash, che ne garantisce l'immutabilità.
 I blocchi sono collegati in una catena, che viene aggiornata ogni volta che viene aggiunto un nuovo blocco.
-Nello specifico, possiamo dettagliare una struttura formata da:
+Nello specifico, possiamo dettagliare una struttura formata dai seguenti (come descritto in figura \ref{fig:blocco}):
 \begin{itemize}
     \item blocchi di dati;
     \item nonce, un numero generato casualmente alla creazione del blocco;
@@ -38,7 +38,7 @@ Nello specifico, possiamo dettagliare una struttura formata da:
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.6\textwidth, alt={Blocco all'interno di una blockchain}]{immagini/blocco.png}
-    \caption{Blockchain vista come blocchi a catena}
+    \caption{Blockchain vista come blocchi a catena} \label{fig:blocco}
 \end{figure}
 
 Per verificare l'integrità dei dati memorizzati, vengono usate delle strutture dati chiamati \textit{Merkle trees}, in cui ogni foglia rappresenta l'hash della transazione.
@@ -112,7 +112,7 @@ Possiamo principalmente distinguere:
 \begin{enumerate}
     \item\textit{{Proof of Work (PoW)}}, basato nella ricerca di un hash (una stringa di numeri e lettere) che soddisfa una determinata condizione, detta target. La condizione target richiede 
     che l'hash del nuovo blocco sia inferiore a un determinato valore. Questo valore viene stabilito in base alla difficoltà della blockchain, che viene regolata automaticamente per mantenere 
-    il tempo medio di creazione di un nuovo blocco costante. 
+    il tempo medio di creazione di un nuovo blocco costante. Questo processo è descritto visivamente dalla figura \ref{fig:pow}.
 
     Il primo miner che trova correttamente l'hash del blocco viene ricompensato in criptovaluta per il lavoro svolto.
     Questo meccanismo garantisce sicurezza nella rete, perché rende difficile ad un attaccante malintenzionato
@@ -126,7 +126,7 @@ Possiamo principalmente distinguere:
     \begin{figure}[h]
         \centering
         \includegraphics[width=0.6\textwidth, alt={Come avviene il processo di conferma in Proof of Work}]{immagini/proof-of-work.png}
-        \caption{Processo di conferma in Proof of Work}
+        \caption{Processo di conferma in Proof of Work}\label{fig:pow}
     \end{figure}
 
     \item\textit{{Proof of Stake (PoS)}}, che si si basa sulla detenzione di una certa quantità di criptovaluta come garanzia per la validazione delle transazioni. 
@@ -140,7 +140,7 @@ Possiamo principalmente distinguere:
     alla sua blockchain. Questo processo è noto come `placing a stake' o `staking', che può essere tradotto come il fatto di mettere i propri interessi in gioco. 
     
     Pertanto, le reti PoS sono basate su algoritmi deterministici, il che significa che i validatori dei blocchi sono eletti a seconda della natura della posta in gioco. 
-    Pur risultando meno intensiva in termini di energia rispetto alla PoW, il sistema risulta essere sbilanciato a favore dei produttori di blocchi oppure a favore degli utenri ricchi, 
+    Pur risultando meno intensiva in termini di energia rispetto alla PoW, il sistema risulta essere sbilanciato a favore dei produttori di blocchi oppure a favore degli utenti ricchi, 
     poiché i validatori con più moneta hanno più possibilità di essere eletti. 
     Alcune varianti di questo algoritmo prevedono infatti di scegliere dei nodi delegati per convalidare le transazioni e avere più controllo (\textit{Delegated}), 
     oppure di scegliere i validatori in base alla quantità di moneta che hanno investito (\textit{Proof of Burn}).
@@ -231,7 +231,7 @@ Esistono diversi tipi di asset da considerare, i quali saranno poi successivamen
     in cui i beni vengono spostati su blockchain a seconda della loro natura. Infatti, come per i token i beni acquistano una fungibilità e possono essere scambiati tra utenti;
     \item{\textit{Asset immobiliari}}, che rappresentano un bene fisico, come un immobile, che può essere tokenizzato e quindi diventare un bene digitale. 
     Questi beni sono fungibili e come tali hanno un valore tendenzialmente fisso, che può essere soggetto a variazioni nel tempo;
-    \item{\textit{beni intangibili - intangibles}}, come diritti di proprietà intellettuale o i citati beni collezionabili,
+    \item{\textit{beni intangibili(intangibles)}}, come diritti di proprietà intellettuale o i citati beni collezionabili,
     e quindi acquisire grazie alla natura di blockchain un valore unico e verificato.
 \end{itemize} 
 
@@ -253,8 +253,9 @@ Il loro funzionamento segue generalmente questo schema:
     \item la transazione, che può essere un trasferimento di fondi e comprende il codice che definisce il tipo di transazione da eseguire, viene approvata;
     \item questa viene eseguita come blocco all'interno della blockchain.
 \end{enumerate}
+Nella figura \ref{fig:smart-contract} è possibile vedere un esempio di funzionamento. \\
 
-Principalmente, questi vengono utilizzati nella piattaforma Ethereum, dove i contratti vengono scritti in linguaggio di programmazione \textit{Solidity}, 
+Principalmente, questi vengono utilizzati nella piattaforma \glsfirstoccur{\gls{ethereumg}}, dove i contratti vengono scritti in linguaggio di programmazione \textit{Solidity}, 
 che è un linguaggio di programmazione orientato agli oggetti basato su C++,
 eseguiti sulla piattaforma \textit{Ethereum Virtual Machine (EVM)}, che ne consente l'esecuzione in modo scalabile regolata dagli standard precedenti.
 Ogniqualvolta venga eseguita una transazione, si ha un costo pagato in \textit{gas}, costo in termini di energia necessaria per eseguire la transazione, che viene calcolato in base al numero di operazioni eseguite
@@ -263,7 +264,7 @@ e pone un limite al numero di transazioni che possono essere eseguite in un dato
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.6\textwidth, alt={Come funziona uno Smart Contract}]{immagini/smart-contract.png}
-    \caption{Funzionamento di uno Smart Contract}
+    \caption{Funzionamento di uno Smart Contract} \label{fig:smart-contract}
 \end{figure}
 
 Possiamo citare alcuni esempi di applicazione di smart contract:
@@ -278,7 +279,7 @@ Possiamo citare alcuni esempi di applicazione di smart contract:
     oppure gestire un sistema di pagamento o beni di scambio, garantendo la tracciabilità e la trasparenza di ogni bene alla consegna.
 \end{itemize}
 
-I contratti rimangono aggiornati grazie all'uso di \textit{oracoli (oracles)}, che sono sistemi che permettono di ottenere informazioni esterne alla blockchain, come il valore di un bene o il valore di un'azione,
+I contratti rimangono aggiornati grazie all'uso di \textit{oracoli}, sistemi che permettono di ottenere informazioni esterne alla blockchain, come il valore di un bene o il valore di un'azione,
 attraverso l'uso di API o di altri sistemi di comunicazione. In questo modo, il contratto mantiene la sua funzionalità interagendo in maniera ibrida con il mondo esterno; questi vengono definiti come \textit{hybrid smart contracts}, 
 combinando un'infrastruttura \textit{on-chain} con un'infrastruttura \textit{off-chain}.
 Il loro utilizzo, per quanto utile, deve essere attentamente bilanciato, sia in termini di veridicità dei dati che di sicurezza, in quanto possono essere soggetti a compromissione o di scalabilità, per cui è necessario
@@ -313,7 +314,7 @@ Comunemente, le soluzioni di scalabilità cercano di intervenire in vari modi:
 
 \section{Self-Sovereign Identity}\label{sec:self-sovereign-identity}
 
-La \textit{self-sovereign identity (SSI)} è un approccio all'identità digitale che dà agli individui 
+La \glsfirstoccur{\gls{ssig}} è un approccio all'identità digitale che dà agli individui 
 il controllo sulle informazioni che usano per dimostrare chi sono a siti web, servizi e applicazioni in tutto il web. 
 Senza l'SSI, gli individui con account (identità) persistenti su Internet devono affidarsi a una serie di fornitori terzi, come Facebook, Google e altri,
 che hanno il controllo delle informazioni associate alla loro identità. \\
@@ -321,7 +322,7 @@ che hanno il controllo delle informazioni associate alla loro identità. \\
 Esistono molti modi per implementare l'SSI utilizzando le chiavi crittografiche e ne analizzeremo due.
 \begin{itemize}
     \item l'utilizzo di firme digitali, attraverso un processo di \textit{firma digitale}, che permette di firmare un documento con una chiave privata, e di verificare la firma con la chiave pubblica;
-    \item \textit{Decentralized Identifier (DID)}, che è un identificatore univoco alfanumerico per un soggetto, che può essere utilizzato per identificare una persona, un'organizzazione, un dispositivo, un servizio, un documento, ecc.
+    \item \glsfirstoccur{\gls{didg}}, che è un identificatore univoco alfanumerico per un soggetto, che può essere utilizzato per identificare una persona, un'organizzazione, un dispositivo, un servizio, un documento, ecc.
 \end{itemize}  
 
 Le parti coinvolte in questo processo sono principalmente tre:
@@ -331,10 +332,12 @@ Le parti coinvolte in questo processo sono principalmente tre:
     \item {\textit{verificatore}, detto anche \textit{verifier}}, cioè l'entità che controlla la validità e l'autenticità della credenziale presentata dal titolare.
 \end{enumerate}  
 
+Il processo di riconoscimento è descritto dalla figura \ref{fig:ssi}.
+
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.6\textwidth, alt={Come funziona il riconoscimento nella SSI}]{immagini/ssi.png}
-    \caption{Processo di riconoscimento di una credenziale SSI}
+    \caption{Processo di riconoscimento di una credenziale SSI} \label{fig:ssi}.
 \end{figure}
 
 Lo scopo principale di questa tecnologia è consentire agli utenti un'esistenza indipendente da provider terzi, 
@@ -346,7 +349,7 @@ La tecnologia blockchain, per mezzo della sua natura decentralizzata, permette d
 In particolare:
 \begin{itemize}
     \item il titolare della credenziale possiede il suo DID firmato dalla propria coppia di chiavi che certifica la sua identità;
-    \item l'emittente fornisce delle \textit{Verifiable Credentials (VC)}, che certificano in modo digitale e crittograficamente protetto la validità del proprio ruolo;
+    \item l'emittente fornisce delle \glsfirstoccur{\gls{vcg}}, che certificano in modo digitale e crittograficamente protetto la validità del proprio ruolo;
     \item il verificatore controlla che, tramite ciascun blocco, sia stata rilasciata una VC valida e che il titolare sia il legittimo possessore di quella VC.
 \end{itemize}  
 
@@ -371,7 +374,7 @@ condivise le proprie informazioni. La particolarità di questi protocolli è di 
     \item \textit{VC (Verifiable Credentials)}, che consente di gestire attestazioni verificati, quindi insiemi di informazioni cfhe un individuo
     possiede o controlla, dimostrando che l'attestazione è stata rilasciata da un emittente autorizzato. Questo all'interno delle blockchain
     garantisce che ciascun nodo e parte in gioco sia chi dice di essere senza ledere la decentralizzazione alla base;
-    \item \textit{ZKP (Zero Knowledge Proof)}, che consente di dimostrare la conoscenza di una proprietà di un dato, senza rivelare alcun dettaglio relativo.
+    \item \glsfirstoccur{\gls{zkpg}}, che consente di dimostrare la conoscenza di una proprietà di un dato, senza rivelare alcun dettaglio relativo.
     Questa tecnologia è considerata a sé stante un'innovazione tecnologica, che permette attraverso l'individuazione di parti precise,
     la certezza che solo chi conosce l'informazione può correttamente rispondere alle domande poste senza rivelare i propri dati.
 \end{itemize}
@@ -392,14 +395,14 @@ Occorre definire le parti coinvolte:
     \item \textit{Prover}, ossia l'entità che prova la conoscenza di alcune informazioni riservate. 
     L'informazione segreta è il `testimone' (\textit{witness}) della prova e la presunta conoscenza del testimone da parte del prover stabilisce un insieme di domande a cui può rispondere solo chi conosce l'informazione. 
     \item \textit{Verifier}, ossia l'entità che verifica la correttezza della prova. Lui si occupa di scegliere a caso la sfida (\textit{challenge}) e di verificare la risposta del prover.
-    La risposta del prover permette al verificatore di controllare se il primo ha davvero accesso al testimone. 
+    La risposta del prover permette al verificatore di controllare se il primo ha davvero accesso al testimone. La verifica segue visivamente dalla figura \ref{fig:zkp}. 
     Per assicurarsi che il prover non stia indovinando alla cieca e non ottenga le risposte corrette per caso, il verificatore sceglie altre domande da porre.
 \end{itemize}
 
-\begin{figure}[h]
+\begin{figure}[h] 
     \centering
     \includegraphics[width=0.6\textwidth, alt={Come funziona la verifica nella ZKP}]{immagini/zkp.png}
-    \caption{Processo di verifica di una ZKP}
+    \caption{Processo di verifica di una ZKP}\label{fig:zkp}
 \end{figure}
 
 A livello di transazioni, la ZKP è utilizzata per garantire la sicurezza con certezza che le transazioni siano valide (\textit{validity proofs}), tramite la presenza del testimone tipicamente basato su calcoli polinomiali o

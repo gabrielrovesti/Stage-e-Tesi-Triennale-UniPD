@@ -1,23 +1,52 @@
 \chapter{Descrizione dello stage}\label{cap:descrizione-stage}
 
-\intro{In questo capitolo viene descritto il contesto in 
-cui si è svolto lo stage, il progetto di stage e 
-gli obiettivi prefissati in base alla pianificazione iniziale.}
+\intro{In questa sezione viene presentata un'analisi del percorso di stage ad alto livello,
+individuando possibili rischii e problematiche che potrebbero presentarsi durante lo svolgimento dello stesso.
+Inoltre, viene fornita una panoramica degli obiettivi da raggiungere e della pianificazione delle ore di lavoro.}
 
 \section{Analisi preventiva dei rischi}
 
-Durante la fase di analisi iniziale sono stati individuati alcuni possibili rischi a cui si potrà andare incontro.
-Si è quindi proceduto a elaborare delle possibili soluzioni per far fronte a tali rischi.\\
+Durante la fase di analisi iniziale sono stati individuati alcuni possibili rischi 
+a cui si potrà andare incontro. Si è quindi proceduto a elaborare delle possibili soluzioni per far fronte a tali rischi.
 
-\textcolor{red}{Da scrivere, prendendo esempio da questo sotto}
-
-\begin{risk}{Performance del simulatore hardware}
-    \riskdescription{le performance del simulatore hardware e la comunicazione con questo potrebbero risultare lenti o non abbastanza buoni da causare il fallimento dei test}
-    \risksolution{coinvolgimento del responsabile a capo del progetto relativo il simulatore hardware}
-\label{risk:hardware-simulator} 
+\begin{risk}{Inesperienza tecnologica e metodologica} 
+    \riskdescription{il progetto prevede l'utilizzo di tecnologie e metodologie di cui non si ha piena esperienza e conoscenza, 
+    rendendo più difficoltosa la comprensione e l'applicazione delle stesse in fase di implementazione}
+    \risksolution{ è stato previsto un periodo di formazione iniziale per studiare le tecnologie e le metodologie da utilizzare
+    e l'aiuto/supporto del tutor aziendale e di altri stagisti nella risoluzione di problemi e nella discussione di possibili soluzioni}
+\label{risk:inesperienza-tecnologica} 
 \end{risk}
 
-\section{Obiettivi preposti}
+\begin{risk}{Difficoltà di integrazione con lo smart contract da usare come libreria}
+    \riskdescription{il sistema potrebbe incontrare difficoltà nell'integrazione con lo smart contract da richiamare per la gestione delle identità digitali,
+    a causa di errori di programmazione o di problemi di comunicazione tra le parti coinvolte}
+    \risksolution{è stato previsto un periodo di test e debug per verificare il corretto funzionamento del sistema e per risolvere eventuali problemi riscontrati,
+    approfondendo il dialogo con il tutor aziendale e con lo stagista che ha sviluppato lo smart contract che dovrà essere richiamato in fase di implementazione}
+    \label{risk:integrazione-smart-contract}
+\end{risk}
+
+\begin{risk}{Ritardi nello sviluppo}
+    \riskdescription{potrebbero verificarsi ritardi nello sviluppo del sistema a causa di problemi tecnici o imprevisti, come la mancanza di risorse necessarie o la complessità del progetto,
+    rimodulando adeguatamente attività e tempistiche}
+    \label{risk:ritardi-sviluppo}
+\end{risk}
+
+\begin{risk}{Problemi di sicurezza}
+    \riskdescription{il sistema potrebbe riscontrare problemi di sicurezza e vulnerabilità a attacchi informatici o la mancanza di protezione dei dati sensibili}
+    \risksolution{fin dall'inizio dell'attività di sviluppo, si cerca di garantire un'implementazione al passo con le \textit{best practices} previste dai linguaggi di programmazione utilizzate e lato web, 
+    come l'utilizzo di librerie e framework aggiornati e sicuri, la validazione dei dati in input e la protezione da attacchi di tipo \textit{SQL injection} e \textit{XSS}. Inoltre, è possibile prevedere un'attività di testing approfondito,
+    ad esempio utilizzando strumenti di analisi statica del codice e di penetration testing, per verificare la corretta implementazione delle misure di sicurezza e la presenza di eventuali vulnerabilità}
+    \label{risk:problemi-sicurezza}
+\end{risk}
+
+\begin{risk}{Cambiamenti dei requisiti durante lo sviluppo}
+    \riskdescription{i requisiti del sistema potrebbero cambiare durante l'attività di implementazione, ad esempio a causa di una modifica delle esigenze del progetto o di un errore di analisi iniziale}
+    \risksolution{è possibile prevedere un'attività di pianificazione flessibile, ad esempio utilizzando metodologie agili, come \glsfirstoccur{\gls{scrumg}}, che prevedono una pianificazione adattiva ai cambiamenti dei requisiti. 
+    Inoltre, potrebbe essere utile prevedere una comunicazione costante con il tutor aziendale e gli altri stagisti in fase di validazione dei requisiti aggiornati, procedendo con lo sviluppo in modo coerente ed organizzato}
+    \label{risk:cambiamenti-requisiti}
+\end{risk}
+
+\section{Obiettivi e requisiti}
 
 Il tirocinio prevede lo svolgimento dei seguenti obiettivi, riportando questa notazione, come dal documento \textit{Piano di Lavoro}:
 \begin{itemize}
@@ -58,6 +87,53 @@ Le sigle precedentemente indicate saranno seguite da una coppia sequenziale di n
     
 \end{itemize}
 
-
 \section{Pianificazione}
-\textcolor{red}{Da scrivere}
+Il tirocinio ha una durata di 11 settimane per la durata complessiva di 320 ore, con una suddivisione del tempo suddivisa 
+in part-time orizzontale per le prime 6 settimane (dal 20 Marzo al 30 Aprile) e full-time per le ultime 5 settimane (dal 2 Maggio al 7 Giugno).\\
+La ripartizione temporale delle attività è la seguente:
+\begin{itemize}
+    \item{Prima Settimana: \textbf{Introduzione alle tecnologie blockchain} (20 ore)}
+    \begin{itemize}
+        \item Studio dei concetti di base della blockchain, tra cui la sua architettura, i nodi della rete, la crittografia e il consenso distribuito;
+    \end{itemize}
+    \item{Seconda Settimana: \textbf{Concetti avanzati di blockchain} (20 ore)}
+    \begin{itemize}
+        \item Studio del concetto di Smart contract e del linguaggio Solidity, con particolare attenzione alle vulnerabilità principali e alle tecniche per evitare errori di programmazione;
+    \end{itemize}
+    \item{Terza Settimana: \textbf{Token, scalabilità e immutabilità} (20 ore)}
+    \begin{itemize}
+        \item Studio del funzionamento della firma asimmetrica delle transazioni su catena e della validazione dei blocchi, studiando le tipologie di consenso e le catene più conosciute;
+    \end{itemize}
+    \item{Quarta Settimana: \textbf{Introduzione alla Self-Sovereign Identity (SSI)} (20 ore)}
+    \begin{itemize}
+        \item Analisi delle tecniche di crittografia utilizzate per garantire la sicurezza e la privacy delle informazioni personali nell'ambito della Self-Sovereign Identity (SSI) e dei protocolli per la gestione delle identità digitali;
+    \end{itemize}
+    \item{Quinta Settimana: \textbf{Introduzione a Zero Knowledge Proof (ZKP)} (20 ore)}
+    \begin{itemize}
+        \item Studio delle tecniche di \glsfirstoccur{\gls{zkpg}} e delle loro applicazioni nell'ambito della \glsfirstoccur{\gls{ssig}};
+    \end{itemize}
+    \item{Sesta Settimana: \textbf{Studio delle librerie ethers.js-web3.js} (20 ore)}
+    \begin{itemize}
+        \item Implementazione esempi pratici con librerie \glsfirstoccur{\gls{ethersjsg}} e \glsfirstoccur{\gls{web3jsg}} per l'interazione con la blockchain Ethereum;
+    \end{itemize}
+    \item{Settima Settimana: \textbf{Implementazione Proof of Concept} (40 ore)}
+    \begin{itemize}
+        \item Analisi ed implementazione interfaccia utente e configuraizione base interazione con blockchain e smart contract;
+    \end{itemize}
+    \item{Ottava Settimana: \textbf{Implementazione soluzioni SSI e ZKP nel Proof of Concept} (40 ore)}
+    \begin{itemize}
+        \item Implementazione funzionalità di autenticazione utente e di gestione delle identità digitali;
+    \end{itemize}
+    \item{Nona Settimana: \textbf{Studio soluzioni second layer e prima analisi sicurezza} (40 ore)}
+    \begin{itemize}
+        \item Analisi soluzioni di scalabilità second layer e implementazione di una soluzione di autenticazione basata su ZKP;
+    \end{itemize}
+    \item{Decima Settimana: \textbf{Analisi di vulnerabilità e implementazione meccanismi di sicurezza} (40 ore)}
+    \begin{itemize}
+        \item Analisi vulnerabilità e implementazione meccanismi di sicurezza per la gestione delle identità digitali;
+    \end{itemize}
+    \item{Undicesima Settimana: \textbf{Finanziamenti/Consorzi coinvolti e discussione scenari di applicabilità} (40 ore)}
+    \begin{itemize}
+        \item Analisi dei finanziamenti e dei consorzi coinvolti nello sviluppo di soluzioni \glsfirstoccur{\gls{ssig}} e discussione scenari di applicabilità;
+    \end{itemize}
+\end{itemize}
