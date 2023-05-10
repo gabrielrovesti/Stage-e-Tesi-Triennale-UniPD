@@ -2,7 +2,7 @@
 \babel@toc {italian}{}\relax 
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Logo azienda Sync Lab\relax }}{1}{figure.caption.12}%
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Esempio di utilizzo di Trello\relax }}{3}{figure.caption.13}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Esempio di utilizzo di Trello\relax }}{2}{figure.caption.13}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Blockchain vista come blocchi a catena\relax }}{6}{figure.caption.14}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Processo di conferma in Proof of Work\relax }}{8}{figure.caption.15}%
@@ -10,4 +10,6 @@
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Processo di riconoscimento di una credenziale SSI\relax }}{14}{figure.caption.17}%
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Processo di verifica di una ZKP\relax }}{16}{figure.caption.18}%
 \addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Use Case - UC0: Scenario principale\relax }}{23}{figure.caption.19}%
 \addvspace {10\p@ }

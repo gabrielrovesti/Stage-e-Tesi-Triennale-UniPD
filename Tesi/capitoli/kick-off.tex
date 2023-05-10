@@ -1,8 +1,37 @@
 \chapter{Descrizione dello stage}\label{cap:descrizione-stage}
 
-\intro{In questa sezione viene presentata un'analisi del percorso di stage ad alto livello,
+\intro{In questa sezione viene presentata un'analisi del percorso di stage, una descrizione dell'idea e delle tecnologie,
 individuando possibili rischii e problematiche che potrebbero presentarsi durante lo svolgimento dello stesso.
 Inoltre, viene fornita una panoramica degli obiettivi da raggiungere e della pianificazione delle ore di lavoro.}
+
+\section{Introduzione al progetto e idea dello stage}
+
+Oggi più che mai è importante garantire la sicurezza dei propri dati e delle proprie informazioni, permettendo uno scambio sicuro
+e protetto di dati sensibili tra due o più entità. Inoltre, è necessario garantire che le informazioni siano autentiche e non modificate,
+per evitare che un utente malintenzionato possa alterare i dati e compromettere la sicurezza del sistema.
+Sulla base di questa premessa, in accordo con l'azienda, si è deciso di sviluppare un progetto che permetta di esplorare 
+le possibili applicazioni della tecnologia \glsfirstoccur{\gls{blockchaing}} all'interno di un contesto reale e possibilmente applicabile in ambito aziendale. \\
+
+In particolare, la piattaforma oggetto dello sviluppo durante il tirocinio ha come obiettivo principale il controllo dell'accesso ai contenuti
+riservati, nel contesto dei film vietati ai minori. Grazie all'utilizzo della tecnologia \glsfirstoccur{\gls{blockchaing}} e dello standard \glsfirstoccur{\gls{w3cg}} \glsfirstoccur{\gls{ssig}},
+permettendo quindi di riconoscere i propri utenti evitando condivisione di informazioni, ma criptando i propri dati personali e verificando l'autenticità
+dei dati trasmessi. Il progetto si pone quindi di risolvere il problema della condivisione di contenuti riservati, tramite l'utilizzo di tecnologie innovative
+e la collaborazione con lo stagista Alessio De Biasi, utilizzando il codice di un progetto di un laureando magistrale presso Computer Science
+dell'Università Ca' Foscari richiamato come libreria e di altri stagisti di laurea triennale con progetti similari basati sull'applicazione di tecnologie immutabili e decentralizzate. \\
+
+Il suo utilizzo è molto simile ad altre piattaforme basate sulla condivisizione e fruizioni di contenuti multimediali:
+l'utente si registra presso la piattaforma, fornendo i propri dati personali e la propria età. In questa fase, si ha il riconoscimento dell'utente
+tramite l'utilizzo di un \glsfirstoccur{\gls{didg}} e la creazione di un \glsfirstoccur{\gls{vcg}} contenente i dati personali dell'utente, che verrà poi utilizzato per l'autenticazione
+e la verifica dei dati. Una volta effettuata la registrazione, l'utente può accedere alla piattaforma e visualizzare i contenuti disponibili, permettendo l'accesso
+anche a contenuti limitati qualora l'utente sia maggiorenne. Riconosciuta l'età dell'utente e verificata dalla piattaforma blockchain la sua autenticità,
+l'utente può visualizzare il contenuto selezionato dimostrando tramite \glsfirstoccur{\gls{zkpg}} di essere maggiorenne, senza dover fornire ulteriori informazioni personali. \\
+
+Nello specifico, il progetto è sviluppato da autodidatta, chiedendo consigli e supporto allo stagista De Biasi per confronti e chiarimenti sull'implementazione degli standard in oggetto
+e per l'utilizzo del codice dello \textit{smart contract} da lui fornito, usato come libreria per l'implementazione della piattaforma in oggetto.
+Inoltre, consigli e supporto sono stati forniti anche in modo reciproco con lo stagista Raffaele Bussolotto, studente presso Ingegneria Informatica di Padova,
+con un percorso simile al mio a livello di argomenti, basato sempre sulle tecnologie in oggetto ma con diverso scopo. 
+Il loro supporto è stato puramente di confronto, in quanto l'implementazione dei rispettivi progetti è stata fatta in modo indipendente e senza collaborazione diretta. \\
+Sulla base di queste premesse nasce il progetto \textbf{VerifiedMovies}.
 
 \section{Analisi preventiva dei rischi}
 
@@ -46,6 +75,8 @@ a cui si potrà andare incontro. Si è quindi proceduto a elaborare delle possib
     \label{risk:cambiamenti-requisiti}
 \end{risk}
 
+\newpage
+
 \section{Obiettivi e requisiti}
 
 Il tirocinio prevede lo svolgimento dei seguenti obiettivi, riportando questa notazione, come dal documento \textit{Piano di Lavoro}:
@@ -85,55 +116,4 @@ Le sigle precedentemente indicate saranno seguite da una coppia sequenziale di n
             \item \underline{\textit{F04}}: Investigare i limiti e le sfide legate all'utilizzo della tecnologia blockchain.
         \end{itemize}
     
-\end{itemize}
-
-\section{Pianificazione}
-Il tirocinio ha una durata di 11 settimane per la durata complessiva di 320 ore, con una suddivisione del tempo suddivisa 
-in part-time orizzontale per le prime 6 settimane (dal 20 Marzo al 30 Aprile) e full-time per le ultime 5 settimane (dal 2 Maggio al 7 Giugno).\\
-La ripartizione temporale delle attività è la seguente:
-\begin{itemize}
-    \item{Prima Settimana: \textbf{Introduzione alle tecnologie blockchain} (20 ore)}
-    \begin{itemize}
-        \item Studio dei concetti di base della blockchain, tra cui la sua architettura, i nodi della rete, la crittografia e il consenso distribuito;
-    \end{itemize}
-    \item{Seconda Settimana: \textbf{Concetti avanzati di blockchain} (20 ore)}
-    \begin{itemize}
-        \item Studio del concetto di Smart contract e del linguaggio Solidity, con particolare attenzione alle vulnerabilità principali e alle tecniche per evitare errori di programmazione;
-    \end{itemize}
-    \item{Terza Settimana: \textbf{Token, scalabilità e immutabilità} (20 ore)}
-    \begin{itemize}
-        \item Studio del funzionamento della firma asimmetrica delle transazioni su catena e della validazione dei blocchi, studiando le tipologie di consenso e le catene più conosciute;
-    \end{itemize}
-    \item{Quarta Settimana: \textbf{Introduzione alla Self-Sovereign Identity (SSI)} (20 ore)}
-    \begin{itemize}
-        \item Analisi delle tecniche di crittografia utilizzate per garantire la sicurezza e la privacy delle informazioni personali nell'ambito della Self-Sovereign Identity (SSI) e dei protocolli per la gestione delle identità digitali;
-    \end{itemize}
-    \item{Quinta Settimana: \textbf{Introduzione a Zero Knowledge Proof (ZKP)} (20 ore)}
-    \begin{itemize}
-        \item Studio delle tecniche di \glsfirstoccur{\gls{zkpg}} e delle loro applicazioni nell'ambito della \glsfirstoccur{\gls{ssig}};
-    \end{itemize}
-    \item{Sesta Settimana: \textbf{Studio delle librerie ethers.js-web3.js} (20 ore)}
-    \begin{itemize}
-        \item Implementazione esempi pratici con librerie \glsfirstoccur{\gls{ethersjsg}} e \glsfirstoccur{\gls{web3jsg}} per l'interazione con la blockchain Ethereum;
-    \end{itemize}
-    \item{Settima Settimana: \textbf{Implementazione Proof of Concept} (40 ore)}
-    \begin{itemize}
-        \item Analisi ed implementazione interfaccia utente e configuraizione base interazione con blockchain e smart contract;
-    \end{itemize}
-    \item{Ottava Settimana: \textbf{Implementazione soluzioni SSI e ZKP nel Proof of Concept} (40 ore)}
-    \begin{itemize}
-        \item Implementazione funzionalità di autenticazione utente e di gestione delle identità digitali;
-    \end{itemize}
-    \item{Nona Settimana: \textbf{Studio soluzioni second layer e prima analisi sicurezza} (40 ore)}
-    \begin{itemize}
-        \item Analisi soluzioni di scalabilità second layer e implementazione di una soluzione di autenticazione basata su ZKP;
-    \end{itemize}
-    \item{Decima Settimana: \textbf{Analisi di vulnerabilità e implementazione meccanismi di sicurezza} (40 ore)}
-    \begin{itemize}
-        \item Analisi vulnerabilità e implementazione meccanismi di sicurezza per la gestione delle identità digitali;
-    \end{itemize}
-    \item{Undicesima Settimana: \textbf{Finanziamenti/Consorzi coinvolti e discussione scenari di applicabilità} (40 ore)}
-    \begin{itemize}
-        \item Analisi dei finanziamenti e dei consorzi coinvolti nello sviluppo di soluzioni \glsfirstoccur{\gls{ssig}} e discussione scenari di applicabilità;
-    \end{itemize}
 \end{itemize}
