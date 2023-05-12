@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.17)  12 MAY 2023 16:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.17)  12 MAY 2023 17:28
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1166,11 +1166,7 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'italian'.
 
-(build/tesi.aux
-
-LaTeX Warning: Label `sec:progettazione-requisiti' multiply defined.
-
-)
+(build/tesi.aux)
 \openout1 = `tesi.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 1.
@@ -1191,7 +1187,8 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 1.
 LaTeX Font Info:    ... okay on input line 1.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 1.
 LaTeX Font Info:    ... okay on input line 1.
- (c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+
+(c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count488
 \scratchdimen=\dimen274
@@ -1616,18 +1613,15 @@ Package biblatex Warning: Split bibliography detected.
 ) [35
 
 ] (build/tesi.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package logreq Info: Writing requests to 'tesi.run.xml'.
 \openout1 = `tesi.run.xml'.
 
  ) ) 
 Here is how much of TeX's memory you used:
- 39756 strings out of 476029
- 696937 string characters out of 5794164
- 2044340 words of memory out of 5000000
- 59049 multiletter control sequences out of 15000+600000
+ 39757 strings out of 476029
+ 696961 string characters out of 5794164
+ 2043340 words of memory out of 5000000
+ 59050 multiletter control sequences out of 15000+600000
  543764 words of font info for 202 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  99i,7n,125p,2257b,3112s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1654,7 +1648,7 @@ fonts/type1/public/cm-super/sfsl1000.pfb><c:/texlive/2022/texmf-dist/fonts/type
 m-super/sfti1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sf
 ti1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb
 ><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on build/tesi.pdf (45 pages, 2569339 bytes).
+Output written on build/tesi.pdf (45 pages, 2569347 bytes).
 PDF statistics:
  938 PDF objects out of 1000 (max. 8388607)
  815 compressed objects within 9 object streams
