@@ -1,11 +1,15 @@
 [0] Config.pm:306> INFO - This is Biber 2.18
-[1] Config.pm:309> INFO - Logfile is 'build/tesi.blg'
-[477] biber-MSWIN32:340> INFO - === 
-[558] Biber.pm:418> INFO - Reading 'build/tesi.bcf'
-[757] Biber.pm:975> INFO - Using all citekeys in bib section 0
-[780] Biber.pm:4401> INFO - Processing section 0
-[798] Biber.pm:4592> INFO - Looking for bibtex file 'appendice/bibliografia.bib' for section 0
-[872] bibtex.pm:1713> INFO - LaTeX decoding ...
-[883] bibtex.pm:1518> INFO - Found BibTeX data source 'appendice/bibliografia.bib'
-[893] Utils.pm:410> ERROR - BibTeX subsystem: C:\Users\roves\AppData\Local\Temp\biber_tmp_JzBG\499af1e6906591d6961f19d66c065a09_14132.utf8, line 32, syntax error: found "title", expected ","
-[893] Biber.pm:135> INFO - ERRORS: 1
+[0] Config.pm:309> INFO - Logfile is 'build/tesi.blg'
+[146] biber-MSWIN32:340> INFO - === 
+[208] Biber.pm:418> INFO - Reading 'build/tesi.bcf'
+[372] Biber.pm:975> INFO - Using all citekeys in bib section 0
+[399] Biber.pm:4401> INFO - Processing section 0
+[417] Biber.pm:4592> INFO - Looking for bibtex file 'appendice/bibliografia.bib' for section 0
+[500] bibtex.pm:1713> INFO - LaTeX decoding ...
+[518] bibtex.pm:1518> INFO - Found BibTeX data source 'appendice/bibliografia.bib'
+[570] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'variable = shifted' with 'variable = non-ignorable'
+[570] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[570] Biber.pm:4221> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'it-IT'
+[570] Biber.pm:4227> INFO - No sort tailoring available for locale 'it-IT'
+[584] bbl.pm:654> INFO - Writing 'build/tesi.bbl' with encoding 'UTF-8'
+[587] bbl.pm:757> INFO - Output to build/tesi.bbl

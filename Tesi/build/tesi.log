@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.17)  10 MAY 2023 20:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.17)  12 MAY 2023 16:56
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -864,7 +864,7 @@ Package biblatex Info: ... file 'blx-dm.def' found.
 File: blx-dm.def 2022/07/12 v3.18b biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
-Package biblatex Info: ... file 'verbose-ibid.dbx' not found.
+Package biblatex Info: ... file 'numeric.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@afterword=\count401
@@ -974,16 +974,11 @@ File: biblatex.def 2022/07/12 v3.18b biblatex compatibility (PK/MW)
 \biburllcskip=\muskip21
 \c@smartand=\count477
 )
-Package biblatex Info: Trying to load bibliography style 'verbose-ibid'...
-Package biblatex Info: ... file 'verbose-ibid.bbx' found.
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
 
-(c:/texlive/2022/texmf-dist/tex/latex/biblatex/bbx/verbose-ibid.bbx
-File: verbose-ibid.bbx 2022/07/12 v3.18b biblatex bibliography style (PK/MW)
-Package biblatex Info: Trying to load bibliography style 'authortitle'...
-Package biblatex Info: ... file 'authortitle.bbx' found.
-
-(c:/texlive/2022/texmf-dist/tex/latex/biblatex/bbx/authortitle.bbx
-File: authortitle.bbx 2022/07/12 v3.18b biblatex bibliography style (PK/MW)
+(c:/texlive/2022/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+File: numeric.bbx 2022/07/12 v3.18b biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
@@ -991,19 +986,23 @@ Package biblatex Info: ... file 'standard.bbx' found.
 File: standard.bbx 2022/07/12 v3.18b biblatex bibliography style (PK/MW)
 \c@bbx:relatedcount=\count478
 \c@bbx:relatedtotal=\count479
-)))
-Package biblatex Info: Trying to load citation style 'verbose-ibid'...
-Package biblatex Info: ... file 'verbose-ibid.cbx' found.
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
 
-(c:/texlive/2022/texmf-dist/tex/latex/biblatex/cbx/verbose-ibid.cbx
-File: verbose-ibid.cbx 2022/07/12 v3.18b biblatex citation style (PK/MW)
+(c:/texlive/2022/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
+File: numeric.cbx 2022/07/12 v3.18b biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
 Package biblatex Info: Redefining '\footcitetext'.
 Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
 Package biblatex Info: Redefining '\textcite'.
 Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
@@ -1064,7 +1063,7 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
 (c:/texlive/2022/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
-))
+)
 (c:/texlive/2022/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2021/07/05 v2.14 Sectioning titles
 \ttl@box=\box66
@@ -1077,6 +1076,15 @@ Package: titlesec 2021/07/05 v2.14 Sectioning titles
 \titlewidthlast=\dimen271
 \titlewidthfirst=\dimen272
 )
+(c:/texlive/2022/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip112
+\enit@outerparindent=\dimen273
+\enit@toks=\toks44
+\enit@inbox=\box67
+\enit@count@id=\count484
+\enitdp@description=\count485
+))
 (./config/tesi-config.tex
 (c:/texlive/2022/texmf-dist/tex/latex/filecontents/filecontents.sty
 Package: filecontents 2019/09/20 v1.5 Create an external file from within a LaT
@@ -1105,20 +1113,20 @@ Package geometry Warning: Over-specification in `v'-direction.
 \glo@main@file=\write6
 \openout6 = `tesi.glo'.
 
-Package glossaries Info: Writing glossary file tesi.glo on input line 38.
+Package glossaries Info: Writing glossary file tesi.glo on input line 41.
 \glo@acronym@file=\write7
 \openout7 = `tesi.acn'.
 
-Package glossaries Info: Writing glossary file tesi.acn on input line 38.
-Package hyperref Info: Option `colorlinks' set `true' on input line 104.
-Package hyperref Info: Option `linktocpage' set `true' on input line 104.
-Package hyperref Info: Option `breaklinks' set `true' on input line 104.
-Package hyperref Info: Option `pageanchor' set `true' on input line 104.
-Package hyperref Info: Option `plainpages' set `false' on input line 104.
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 104.
+Package glossaries Info: Writing glossary file tesi.acn on input line 41.
+Package hyperref Info: Option `colorlinks' set `true' on input line 107.
+Package hyperref Info: Option `linktocpage' set `true' on input line 107.
+Package hyperref Info: Option `breaklinks' set `true' on input line 107.
+Package hyperref Info: Option `pageanchor' set `true' on input line 107.
+Package hyperref Info: Option `plainpages' set `false' on input line 107.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 107.
 
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 104.
-Package hyperref Info: Option `hypertexnames' set `true' on input line 104.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 107.
+Package hyperref Info: Option `hypertexnames' set `true' on input line 107.
 
 (c:/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
@@ -1150,15 +1158,19 @@ File: lstlang3.sty 2020/03/24 1.8d listings language file
 (c:/texlive/2022/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 )
-\c@riskcounter=\count484
-\c@usecasecounter=\count485
+\c@riskcounter=\count486
+\c@usecasecounter=\count487
 ) (./struttura.tex
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'italian'.
 
-(build/tesi.aux)
+(build/tesi.aux
+
+LaTeX Warning: Label `sec:progettazione-requisiti' multiply defined.
+
+)
 \openout1 = `tesi.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 1.
@@ -1179,20 +1191,19 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 1.
 LaTeX Font Info:    ... okay on input line 1.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 1.
 LaTeX Font Info:    ... okay on input line 1.
-
-(c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count486
-\scratchdimen=\dimen273
-\scratchbox=\box67
-\nofMPsegments=\count487
-\nofMParguments=\count488
-\everyMPshowfont=\toks44
-\MPscratchCnt=\count489
-\MPscratchDim=\dimen274
-\MPnumerator=\count490
-\makeMPintoPDFobject=\count491
-\everyMPtoPDFconversion=\toks45
+\scratchcounter=\count488
+\scratchdimen=\dimen274
+\scratchbox=\box68
+\nofMPsegments=\count489
+\nofMParguments=\count490
+\everyMPshowfont=\toks45
+\MPscratchCnt=\count491
+\MPscratchDim=\dimen275
+\MPnumerator=\count492
+\makeMPintoPDFobject=\count493
+\everyMPtoPDFconversion=\toks46
 ) (c:/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1215,7 +1226,7 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: supertabular package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count492
+\c@lstlisting=\count494
 LaTeX Info: Redefining \microtypecontext on input line 1.
 Package microtype Info: Applying patch `item' on input line 1.
 Package microtype Info: Applying patch `toc' on input line 1.
@@ -1318,13 +1329,13 @@ Package pdftex.def Info: immagini//unipd-logo.png  used on input line 22.
 ]) (./introduzione/indice.tex [5]
 [6
 
-] (build/tesi.toc)
+] (build/tesi.toc [7
+
+])
 \tf@toc=\write8
 \openout8 = `tesi.toc'.
 
- [7
-
-] (build/tesi.lof)
+ [8] (build/tesi.lof)
 \tf@lof=\write9
 \openout9 = `tesi.lof'.
 
@@ -1332,7 +1343,9 @@ Package pdftex.def Info: immagini//unipd-logo.png  used on input line 22.
 \tf@lot=\write10
 \openout10 = `tesi.lot'.
 
- [8
+ [9
+
+] [10
 
 ])
 (./capitoli/introduzione.tex
@@ -1342,13 +1355,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--16
 
  []
 
-<immagini/synclab.png, id=160, 154.77824pt x 59.0205pt>
+<immagini/synclab.png, id=195, 154.77824pt x 59.0205pt>
 File: immagini/synclab.png Graphic file (type png)
 <use immagini/synclab.png>
 Package pdftex.def Info: immagini/synclab.png  used on input line 19.
 (pdftex.def)             Requested size: 193.47578pt x 73.78171pt.
 [1
-
 
 
 
@@ -1362,7 +1374,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--34
 
  []
 
-<immagini/trello.png, id=175, 937.70325pt x 483.60675pt>
+<immagini/trello.png, id=210, 937.70325pt x 483.60675pt>
 File: immagini/trello.png Graphic file (type png)
 <use immagini/trello.png>
 Package pdftex.def Info: immagini/trello.png  used on input line 48.
@@ -1385,7 +1397,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--15
 
  []
 
-<immagini/blocco.png, id=207, 740.7675pt x 290.2845pt>
+<immagini/blocco.png, id=242, 740.7675pt x 290.2845pt>
 File: immagini/blocco.png Graphic file (type png)
 <use immagini/blocco.png>
 Package pdftex.def Info: immagini/blocco.png  used on input line 40.
@@ -1404,7 +1416,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 101--104
  []
 
 [7]
-<immagini/proof-of-work.png, id=231, 464.33475pt x 347.49825pt>
+<immagini/proof-of-work.png, id=266, 464.33475pt x 347.49825pt>
 File: immagini/proof-of-work.png Graphic file (type png)
 <use immagini/proof-of-work.png>
 Package pdftex.def Info: immagini/proof-of-work.png  used on input line 128.
@@ -1444,13 +1456,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 258--263
 
  []
 
-[11]
-<immagini/smart-contract.png, id=259, 301.125pt x 286.06876pt>
+<immagini/smart-contract.png, id=284, 301.125pt x 286.06876pt>
 File: immagini/smart-contract.png Graphic file (type png)
 <use immagini/smart-contract.png>
 Package pdftex.def Info: immagini/smart-contract.png  used on input line 266.
 (pdftex.def)             Requested size: 290.22107pt x 275.73596pt.
 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[11]
 Underfull \hbox (badness 10000) in paragraph at lines 289--293
 
  []
@@ -1460,7 +1474,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 317--321
 
  []
 
-<immagini/ssi.png, id=272, 410.7345pt x 205.36725pt>
+<immagini/ssi.png, id=306, 410.7345pt x 205.36725pt>
 File: immagini/ssi.png Graphic file (type png)
 <use immagini/ssi.png>
 Package pdftex.def Info: immagini/ssi.png  used on input line 339.
@@ -1476,7 +1490,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 362--367
  []
 
 [15]
-<immagini/zkp.png, id=292, 519.1395pt x 211.992pt>
+<immagini/zkp.png, id=328, 519.1395pt x 211.992pt>
 File: immagini/zkp.png Graphic file (type png)
 <use immagini/zkp.png>
 Package pdftex.def Info: immagini/zkp.png  used on input line 404.
@@ -1514,75 +1528,136 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--28
 
 ]
 Capitolo 4.
-<immagini//usecase/scenario-principale.png, id=340, 463.13025pt x 236.082pt>
-File: immagini//usecase/scenario-principale.png Graphic file (type png)
-<use immagini//usecase/scenario-principale.png>
-Package pdftex.def Info: immagini//usecase/scenario-principale.png  used on inp
-ut line 15.
-(pdftex.def)             Requested size: 435.32422pt x 221.90628pt.
-[23 <./immagini//usecase/scenario-principale.png>] [24]) [25] [26
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--12
+
+ []
+
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
+1.
+(c:/texlive/2022/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [23]
+Underfull \hbox (badness 10000) in paragraph at lines 39--49
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--53
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--60
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--70
+
+ []
+
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 126--129
+
+ []
+
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 140--145
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--145
+
+ []
+
+) (./capitoli/product-prototype.tex [26]
+Capitolo 5.
+
+Underfull \vbox (badness 4518) has occurred while \output is active []
+
+ [27
 
 ]
-(build/tesi.gls [27
+[28]
+Underfull \hbox (badness 10000) in paragraph at lines 79--85
+
+ []
+
+) [29] [30
+
+] (build/tesi.gls [31
 
 
-] [28]) (./appendice/bibliografia.tex [29] [30
+] [32]) (./appendice/bibliografia.tex [33]
+[34
 
 ]
 
-Package biblatex Warning: Type 'online' not found on input line 7.
+Package biblatex Warning: Split bibliography detected.
+(biblatex)                Many simple split bibliography setups with
+(biblatex)                non-overlapping bibliographies benefit from
+(biblatex)                setting 'defernumbers=true'.
+(biblatex)                See the documentation for details.
+(biblatex)                This warning can be suppressed with
+(biblatex)                '\BiblatexSplitbibDefernumbersWarningOff'.
 
-
-LaTeX Warning: Empty bibliography on input line 7.
-
-) [31
+) [35
 
 ] (build/tesi.aux)
 
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                tesi
-(biblatex)                and rerun LaTeX afterwards.
+LaTeX Warning: There were multiply-defined labels.
 
 Package logreq Info: Writing requests to 'tesi.run.xml'.
 \openout1 = `tesi.run.xml'.
 
  ) ) 
 Here is how much of TeX's memory you used:
- 38736 strings out of 476029
- 681103 string characters out of 5794164
- 1864340 words of memory out of 5000000
- 58125 multiletter control sequences out of 15000+600000
- 542491 words of font info for 195 fonts, out of 8000000 for 9000
+ 39756 strings out of 476029
+ 696937 string characters out of 5794164
+ 2044340 words of memory out of 5000000
+ 59049 multiletter control sequences out of 15000+600000
+ 543764 words of font info for 202 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 99i,10n,125p,2257b,2528s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,7n,125p,2257b,3112s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/te
 xlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/202
-2/texmf-dist/fonts/type1/public/cm-super/sfbi1000.pfb><c:/texlive/2022/texmf-di
-st/fonts/type1/public/cm-super/sfbx0900.pfb><c:/texlive/2022/texmf-dist/fonts/t
-ype1/public/cm-super/sfbx1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/publi
-c/cm-super/sfbx1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super
-/sfbx1440.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1728.
-pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb><c:/te
-xlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><c:/texlive/2022
-/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb><c:/texlive/2022/texmf-dis
-t/fonts/type1/public/cm-super/sfcc1200.pfb><c:/texlive/2022/texmf-dist/fonts/ty
-pe1/public/cm-super/sfcc1440.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public
-/cm-super/sfrm0500.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/
-sfrm0700.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0900.p
-fb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/tex
-live/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2022/
-texmf-dist/fonts/type1/public/cm-super/sfsi1000.pfb><c:/texlive/2022/texmf-dist
-/fonts/type1/public/cm-super/sfsl1000.pfb><c:/texlive/2022/texmf-dist/fonts/typ
-e1/public/cm-super/sfsl1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/
-cm-super/sfti1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/s
-fti1200.pfb>
-Output written on build/tesi.pdf (39 pages, 2462245 bytes).
+2/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb><c:/texlive/2022
+/texmf-dist/fonts/type1/public/cm-super/sfbi1000.pfb><c:/texlive/2022/texmf-dis
+t/fonts/type1/public/cm-super/sfbx0900.pfb><c:/texlive/2022/texmf-dist/fonts/ty
+pe1/public/cm-super/sfbx1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public
+/cm-super/sfbx1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/
+sfbx1440.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1728.p
+fb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb><c:/tex
+live/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><c:/texlive/2022/
+texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb><c:/texlive/2022/texmf-dist
+/fonts/type1/public/cm-super/sfcc1200.pfb><c:/texlive/2022/texmf-dist/fonts/typ
+e1/public/cm-super/sfcc1440.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/
+cm-super/sfrm0500.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/s
+frm0700.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pf
+b><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texl
+ive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2022/t
+exmf-dist/fonts/type1/public/cm-super/sfsi1000.pfb><c:/texlive/2022/texmf-dist/
+fonts/type1/public/cm-super/sfsl1000.pfb><c:/texlive/2022/texmf-dist/fonts/type
+1/public/cm-super/sfsl1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/c
+m-super/sfti1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sf
+ti1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb
+><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on build/tesi.pdf (45 pages, 2569339 bytes).
 PDF statistics:
- 677 PDF objects out of 1000 (max. 8388607)
- 567 compressed objects within 6 object streams
- 137 named destinations out of 1000 (max. 500000)
- 57706 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 938 PDF objects out of 1000 (max. 8388607)
+ 815 compressed objects within 9 object streams
+ 217 named destinations out of 1000 (max. 500000)
+ 58861 words of extra memory for PDF output out of 61914 (max. 10000000)
 

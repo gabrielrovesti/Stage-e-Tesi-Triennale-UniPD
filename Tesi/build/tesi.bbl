@@ -1,0 +1,185 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{site:didw3c}{online}{}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labeltitlesource}{title}
+      \field{title}{Decentralized Identifiers (DIDs) v1.0}
+      \verb{urlraw}
+      \verb https://www.w3.org/TR/did-core/
+      \endverb
+      \verb{url}
+      \verb https://www.w3.org/TR/did-core/
+      \endverb
+    \endentry
+    \entry{site:ethereum}{online}{}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labeltitlesource}{title}
+      \field{title}{Ethereum}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.ethereum.org/
+      \endverb
+      \verb{url}
+      \verb https://www.ethereum.org/
+      \endverb
+    \endentry
+    \entry{site:ethers}{online}{}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labeltitlesource}{title}
+      \field{title}{Ethers.js}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://docs.ethers.io/ethers.js/html/
+      \endverb
+      \verb{url}
+      \verb https://docs.ethers.io/ethers.js/html/
+      \endverb
+    \endentry
+    \entry{site:github}{online}{}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labeltitlesource}{title}
+      \field{title}{GitHub}
+      \verb{urlraw}
+      \verb https://docs.github.com/en
+      \endverb
+      \verb{url}
+      \verb https://docs.github.com/en
+      \endverb
+    \endentry
+    \entry{site:hardhat}{online}{}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labeltitlesource}{title}
+      \field{title}{Hardhat}
+      \verb{urlraw}
+      \verb https://hardhat.org/
+      \endverb
+      \verb{url}
+      \verb https://hardhat.org/
+      \endverb
+    \endentry
+    \entry{site:node}{online}{}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labeltitlesource}{title}
+      \field{title}{Node.js}
+      \verb{urlraw}
+      \verb https://nodejs.org/en/
+      \endverb
+      \verb{url}
+      \verb https://nodejs.org/en/
+      \endverb
+    \endentry
+    \entry{site:react}{online}{}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labeltitlesource}{title}
+      \field{title}{React}
+      \verb{urlraw}
+      \verb https://reactjs.org/
+      \endverb
+      \verb{url}
+      \verb https://reactjs.org/
+      \endverb
+    \endentry
+    \entry{site:solidity}{online}{}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labeltitlesource}{title}
+      \field{title}{Solidity}
+      \verb{urlraw}
+      \verb https://solidity.readthedocs.io/en/v0.5.3/
+      \endverb
+      \verb{url}
+      \verb https://solidity.readthedocs.io/en/v0.5.3/
+      \endverb
+    \endentry
+    \entry{site:typescript}{online}{}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labeltitlesource}{title}
+      \field{title}{TypeScript}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.typescriptlang.org/
+      \endverb
+      \verb{url}
+      \verb https://www.typescriptlang.org/
+      \endverb
+    \endentry
+    \entry{site:vcw3c}{online}{}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labeltitlesource}{title}
+      \field{title}{Verifiable Credentials Data Model v1.1}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.w3.org/TR/vc-data-model/
+      \endverb
+      \verb{url}
+      \verb https://www.w3.org/TR/vc-data-model/
+      \endverb
+    \endentry
+    \entry{site:zkpw3c}{online}{}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labeltitlesource}{title}
+      \field{title}{Verifiable Credentials Data Model v1.1 - Sezione Zero-Knowledge Proofs}
+      \verb{urlraw}
+      \verb https://www.w3.org/TR/vc-data-model/#zero-knowledge-proofs
+      \endverb
+      \verb{url}
+      \verb https://www.w3.org/TR/vc-data-model/#zero-knowledge-proofs
+      \endverb
+    \endentry
+    \entry{site:vpw3c}{online}{}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labeltitlesource}{title}
+      \field{title}{Verifiable Credentials Data Model v1.1 - Verifiable Presentation}
+      \verb{urlraw}
+      \verb https://www.w3.org/TR/vc-data-model/#example-a-verifiable-presentation-that-supports-cl-signatures
+      \endverb
+      \verb{url}
+      \verb https://www.w3.org/TR/vc-data-model/#example-a-verifiable-presentation-that-supports-cl-signatures
+      \endverb
+    \endentry
+    \entry{site:web3}{online}{}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labeltitlesource}{title}
+      \field{title}{Web3.js}
+      \verb{urlraw}
+      \verb https://web3js.readthedocs.io/en/1.0/
+      \endverb
+      \verb{url}
+      \verb https://web3js.readthedocs.io/en/1.0/
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

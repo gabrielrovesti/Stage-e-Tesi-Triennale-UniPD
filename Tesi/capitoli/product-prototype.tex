@@ -1,46 +1,117 @@
-\chapter{Progettazione e codifica}\label{cap:progettazione-codifica}
+\chapter{Progettazione e codifica del progetto}\label{cap:progettazione-codifica}
 
-\intro{In questa sezione, saranno elencate le tecnologie principali utilizzate durante lo sviluppo del sistema oggetto del tirocinio.}
+\intro{In questa sezione, saranno elencate le tecnologie principali utilizzate durante lo sviluppo del sistema oggetto del tirocinio.
+Inoltre, verrà descritto il ciclo di vita del software, le fasi di progettazione e codifica e le scelte architetturali realizzate, 
+a livello di sistema e design pattern.}
+
+\section{Componenti principali del sistema}\label{sec:componenti-principali}
+Il sistema risulta essere composto da due parti principali: 
+\begin{itemize}
+    \item{\textbf{Front-end}}: è la parte visibile all'utente, che permette di interagire con il sistema. È stata sviluppata utilizzando il framework React e il linguaggio TypeScript. 
+    Questa comprende la parte grafica da me realizzata e la relativa interazione con il contratto fornito come libreria dallo studente Alessio De Biasi.
+    \item {\textbf{Back-end}}: è la parte che gestisce la logica dell'applicazione, che permette di interagire con la blockchain e di gestire le funzionalità del sistema. È stata sviluppata utilizzando il linguaggio Solidity.
+    Quest'ultima comprende il contratto sviluppato dallo studente magistrale Alessio De Biasi basato sugli standard \glsfirstoccur{\gls{w3cg}} \glsfirstoccur{\gls{ssig}} e \glsfirstoccur{\gls{didg}}.
+\end{itemize}
 
 \section{Tecnologie utilizzate}\label{sec:tecnologie-strumenti}
 
-\subsection{React}
+\subsection{Codifica front-end}
+
+\subsubsection{React}
 React è una libreria JavaScript utilizzata per la creazione di interfacce utente. È stata sviluppata da Facebook e rilasciata nel 2013. 
 Essa consente di creare dei componenti riutilizzabili che rappresentano parti dell'interfaccia e gestire lo stato dell'applicazione in modo efficiente e scalabile.
-QUesto lo rende adatto allo sviluppo di applicazioni complesse e dinamiche.
+Questo lo rende adatto allo sviluppo di applicazioni complesse e dinamiche (specifiche e riferimenti a \cite{site:react}).
+Nel mio caso, è utilizzato per la progettazione delle componenti e delle pagine.
 
-\subsection{TypeScript}
+\subsubsection{TypeScript}
 TypeScript è un linguaggio di programmazione open source sviluppato da Microsoft. È un super-set di JavaScript che aggiunge tipi statici opzionali al linguaggio,
-permettendo di scrivere codice più robusto e manutenibile, grazie alla possibilità di definire interfacce e classi.
+permettendo di scrivere codice più robusto e manutenibile, grazie alla possibilità di definire interfacce e classi (secondo \cite{site:react}).
+All'interno delle pagine realizzate, sono stati creati dei tipi appositi per poter gestire più facilmente le informazioni e le funzionalità del sistema.
 
-\subsection{Solidity}
+\subsection{Codifica back-end}
+
+\subsubsection{Solidity}
 Solidity è un linguaggio di programmazione orientato agli oggetti per la scrittura di smart contract. È stato sviluppato da Ethereum e permette di gestire
 lo stato di un contratto, definire funzioni e interagire con altri contratti all'interno delle blockchain,
-grazie alla gestione del sistema di transazioni basato sugli eventi e alla possibilità di definire interfacce.
+grazie alla gestione del sistema di transazioni basato sugli eventi e alla possibilità di definire interfacce (in base a quanto presente in \cite{site:solidity}).
+L'interazione con la blockchain e il contratto da richiamare come libreria è stato scritto in questo linguaggio.
 
-\subsection{Node.js}
+\subsection{Librerie di terze parti}
+
+\subsubsection{Node.js}
 Node.js è un ambiente di runtime open source per l'esecuzione di codice JavaScript lato server. È basato sul motore JavaScript V8 di Google Chrome e permette di gestire
 le dipendenze dell'applicazione, grazie al suo package manager \textit{npm}, differenziando le librerie dell'applicaizone e quelle di terze parti.
-Tramite semplici comandi, è possibile installare e rimuovere le dipendenze, aggiornarle e gestire le versioni.
+Tramite semplici comandi, è possibile installare e rimuovere le dipendenze, aggiornarle e gestire le versioni. 
+Lo strumento ha permesso una facile configurazione delle dipendenze e la gestione delle versioni (riferimenti in \cite{site:node}).
 
-\subssection{web3.js}
+\subsubsection{web3.js}
 web3.js è una collezione di librerie JavaScript per poter interagire facilmente con le blockchain, in particolare con Ethereum.
 Essa permette di connettersi ad un nodo della blockchain, inviare transazioni e interagire con gli smart contract, gestendo facilmente il collegamento
-e l'interazione tra la parte grafica e gli smart contract, definendo modularmente le funzionalità presenti.
+e l'interazione tra la parte grafica e gli smart contract, definendo modularmente le funzionalità presenti (secondo riferimenti in \cite{site:web3}).
+Grazie a questo, è stato possibile gestire facilmente l'interazione con la blockchain e gli smart contract, permettendo la chiamata al contratto
+e alle sue funzioni.
 
-\section{Ciclo di vita del software}\label{sec:ciclo-vita-software}
+\subsubsection{Hardhat}
+Hardhat è un ambiente di sviluppo per le blockchain che permette di testare e distribuire smart contract. Esso permette di distribuire facilmente
+in locale una blockchain, per poter testare le funzionalità degli smart contract, e di distribuire gli smart contract su una blockchain pubblica, come ad esempio
+Ethereum (in base alle definizioni e guide in \cite{site:hardhat}).
 
-\section{Progettazione}\label{sec:progettazione}
+\subsection{Versionamento}
 
-\subsubsection{Namespace 1} %**************************
-Descrizione namespace 1.
+\subsubsection{GitHub}
+GitHub è una piattaforma di hosting per progetti software. Essa permette di gestire il versionamento del codice tramite il sistema di controllo di versione Git.
+In particolare, consente lo sviluppo di codice mantenendo un \textit{repository} remoto, che permette di gestire le modifiche e le versioni del codice, mantenendo un registro
+delle modifiche effettuate e permettendo di tornare ad una versione precedente del codice (riferimenti di massima in \cite{site:github}). 
 
-\begin{namespacedesc}
-    \classdesc{Classe 1}{Descrizione classe 1}
-    \classdesc{Classe 2}{Descrizione classe 2}
-\end{namespacedesc}
+\subsection{Verifica}
 
+\subsubsection{ESLint}
+ESLint è uno strumento di analisi statica del codice per identificare i modelli problematici trovati nel codice JavaScript.
+È stato utilizzato per garantire la qualità del codice prodotto, tramite la definizione di regole e la segnalazione di eventuali errori.
 
-\section{Design Pattern Utilizzati}
+\subsubsection{Jest}
+Jest è un framework di test per JavaScript. È stato utilizzato per la definizione di test unitari e di integrazione, per verificare il corretto funzionamento
+delle funzionalità implementate. 
 
-\section{Codifica}
+\section{Configurazione ambiente di sviluppo}\label{sec:configurazione-ambiente}
+
+\subsection{Smart Contract}
+All'interno del mio progetto di stage, per realizzare l'implementazione degli smart contract, ho utilizzato un ambiente di sviluppo locale,
+basato su \textit{Hardhat}, un ambiente di sviluppo per Ethereum che permette di testare e distribuire smart contract.
+Tramite questo, è stato possibile permettere la creazione di un ambiente di test locale, tramite l'ausilio di alcuni \textit{script}, in
+grado di gestire la compilazione e la successiva esecuzione (\textit{deploy}) del contratto fornito sulla rete locale.
+Per poter effettuare le singole chiamate, lo strumento fornisce un insieme di account di test con un saldo iniziale di 10000 ETH (valute della rete Ethereum, riferimento dello strumento), 
+che possono essere utilizzati per effettuare le chiamate desiderate qualora siano presenti transazioni (normalmente in esecuzione sulla porta 8545 all'interno della rete locale). \\
+
+Nello specifico, la strutturazione prevede:
+\begin{itemize}
+    \item uno script di \textit{deploy}, scritto in TypeScript, che definisce il contratto che viene chiamato, il suo indirizzo sulla rete locale
+    e la generazione di un file \textit{json} chiamato \textit{ABI}, che contiene le informazioni in formato binario del contratto. Esso viene utilizzato nella parte frontend;
+    \item uno script di test, scritto in TypeScript, che permette di testare le funzionalità del contratto, tramite l'ausilio di \textit{web3.js};
+    \item uno script di configurazione, che definisce l'account utilizzato sulla rete locale e le librerie presenti.
+\end{itemize}
+
+\subsection{Frontend}
+Per lo sviluppo del front-end, ho utilizzato un ambiente di sviluppo locale, basato su \textit{Node.js}, un ambiente di runtime per JavaScript.
+Tramite questo, è stato possibile gestire le dipendenze del progetto, tramite il package manager \textit{npm}, e avviare un server locale per poter testare
+e scrivere le pagine presenti. In particolare, il server è stato avviato sulla porta 3000, per poter permettere l'interazione con il contratto tramite
+le funzionalità del front-end e le chiamate al contratto.
+Nello specifico, la strutturazione prevede:
+\begin{itemize}
+    \item una cartella \textit{src}, contenente i file \textit{.js} e \textit{.ts} che definiscono le funzionalità del front-end;
+    \item una cartella \textit{public}, contenente i file \textit{.html} e \textit{.css} che definiscono le pagine del front-end;
+    \item una cartella \textit{build}, contenente i file \textit{.js} e \textit{.ts} compilati, che vengono utilizzati per l'esecuzione del front-end;
+    \item una cartella \textit{node\_modules}, contenente le dipendenze del progetto.
+\end{itemize}
+
+\section{Progettazione}\label{sec:progettazione-requisiti}
+
+\subsection{Architettura front-end}
+
+\subsection{Architettura back-end}
+
+\section{Codifica}\label{sec:progettazione-requisiti}
+
+\subsection{Codifica front-end}
+
+\subsection{Codifica back-end}

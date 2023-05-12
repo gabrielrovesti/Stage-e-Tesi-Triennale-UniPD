@@ -34,6 +34,9 @@
     bottom=2cm,
 }
 
+
+\setlist[itemize]{itemsep=1.5pt,parsep=0pt}
+
 \input{appendice/definizioni-glossario} % Glossary definitions
 \makeglossaries
 
@@ -126,6 +129,49 @@
     breaklines=true,
     frameround=ftff,
     frame=single
+}
+
+% Define colors for JSON syntax highlighting
+\definecolor{jsonstring}{rgb}{0.6,0.1,0.1}
+\definecolor{jsonnumber}{rgb}{0.5,0.5,0.1}
+\definecolor{jsonkeyword}{rgb}{0.1,0.1,0.5}
+\definecolor{jsoncomment}{rgb}{0.3,0.3,0.3}
+
+% Define new language for JSON syntax highlighting
+\lstdefinelanguage{json}{
+    basicstyle=\ttfamily\small,
+    numbers=left,
+    numberstyle=\scriptsize,
+    stepnumber=1,
+    numbersep=8pt,
+    showstringspaces=false,
+    breaklines=true,
+    frame=single,
+    backgroundcolor=\color{white},
+    stringstyle=\color{jsonstring},
+    morestring=[b]",
+    stringstyle=\color{jsonstring},
+    literate=
+        *{0}{{{\color{jsonnumber}0}}}{1}
+         {1}{{{\color{jsonnumber}1}}}{1}
+         {2}{{{\color{jsonnumber}2}}}{1}
+         {3}{{{\color{jsonnumber}3}}}{1}
+         {4}{{{\color{jsonnumber}4}}}{1}
+         {5}{{{\color{jsonnumber}5}}}{1}
+         {6}{{{\color{jsonnumber}6}}}{1}
+         {7}{{{\color{jsonnumber}7}}}{1}
+         {8}{{{\color{jsonnumber}8}}}{1}
+         {9}{{{\color{jsonnumber}9}}}{1}
+         {:}{{{\color{jsonkeyword}{:}}}}{1}
+         {,}{{{\color{jsonkeyword}{,}}}}{1}
+         {\{}{{{\color{jsonkeyword}{\{}}}}{1}
+         {\}}{{{\color{jsonkeyword}{\}}}}}{1}
+         {[}{{{\color{jsonkeyword}{[}}}}{1}
+         {]}{{{\color{jsonkeyword}{]}}}}{1},
+    comment=[l]{//},
+    morecomment=[s]{/*}{*/},
+    commentstyle=\color{jsoncomment}\slshape,
+    keywordstyle=\color{jsonkeyword}\bfseries,
 }
 
 \definecolor{webgreen}{rgb}{0,.5,0}

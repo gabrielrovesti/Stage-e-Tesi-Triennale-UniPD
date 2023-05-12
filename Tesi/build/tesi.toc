@@ -14,12 +14,12 @@
 \contentsline {subsection}{\numberline {2.1.4}Wallet}{6}{subsection.2.1.4}%
 \contentsline {subsection}{\numberline {2.1.5}Mining}{7}{subsection.2.1.5}%
 \contentsline {subsection}{\numberline {2.1.6}Algoritmi di consenso}{7}{subsection.2.1.6}%
-\contentsline {subsection}{\numberline {2.1.7}Tipi}{9}{subsection.2.1.7}%
+\contentsline {subsection}{\numberline {2.1.7}Tipi}{8}{subsection.2.1.7}%
 \contentsline {section}{\numberline {2.2}Blockchain: concetti avanzati}{9}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}Token}{9}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}Tokenizzazione}{10}{subsection.2.2.2}%
 \contentsline {subsection}{\numberline {2.2.3}Smart contract}{11}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}Scalabilità}{13}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.4}Scalabilità}{12}{subsection.2.2.4}%
 \contentsline {section}{\numberline {2.3}Self-Sovereign Identity}{14}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Tipi e applicazioni}{15}{subsection.2.3.1}%
 \contentsline {section}{\numberline {2.4}Zero Knowledge Proof}{15}{section.2.4}%
@@ -29,7 +29,33 @@
 \contentsline {section}{\numberline {3.2}Analisi preventiva dei rischi}{20}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Obiettivi e requisiti}{21}{section.3.3}%
 \contentsline {chapter}{\numberline {4}Analisi dei requisiti}{23}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Casi d'uso}{23}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Tracciamento dei requisiti}{24}{section.4.2}%
-\contentsline {chapter}{Glossario}{27}{section*.23}%
-\contentsline {chapter}{Bibliografia}{31}{chapter*.25}%
+\contentsline {section}{\numberline {4.1}Descrizione ed analisi del sistema}{23}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Casi d'uso}{26}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Progettazione e codifica del progetto}{27}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Componenti principali del sistema}{27}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Tecnologie utilizzate}{27}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Codifica front-end}{27}{subsection.5.2.1}%
+\contentsline {subsubsection}{React}{27}{subsection.5.2.1}%
+\contentsline {subsubsection}{TypeScript}{27}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Codifica back-end}{28}{subsection.5.2.2}%
+\contentsline {subsubsection}{Solidity}{28}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Librerie di terze parti}{28}{subsection.5.2.3}%
+\contentsline {subsubsection}{Node.js}{28}{subsection.5.2.3}%
+\contentsline {subsubsection}{web3.js}{28}{subsection.5.2.3}%
+\contentsline {subsubsection}{Hardhat}{28}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Versionamento}{28}{subsection.5.2.4}%
+\contentsline {subsubsection}{GitHub}{28}{subsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.2.5}Verifica}{28}{subsection.5.2.5}%
+\contentsline {subsubsection}{ESLint}{28}{subsection.5.2.5}%
+\contentsline {subsubsection}{Jest}{29}{subsection.5.2.5}%
+\contentsline {section}{\numberline {5.3}Configurazione ambiente di sviluppo}{29}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Smart Contract}{29}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Frontend}{29}{subsection.5.3.2}%
+\contentsline {section}{\numberline {5.4}Progettazione}{29}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Architettura front-end}{29}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Architettura back-end}{29}{subsection.5.4.2}%
+\contentsline {section}{\numberline {5.5}Codifica}{29}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Codifica front-end}{29}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}Codifica back-end}{29}{subsection.5.5.2}%
+\contentsline {chapter}{Glossario}{31}{section*.19}%
+\contentsline {chapter}{Bibliografia}{35}{chapter*.21}%
