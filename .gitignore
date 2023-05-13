@@ -20,3 +20,23 @@ Stage/Full Examples/hardhat-smartcontract-lottery-fcc/node_modules/ganache-core/
 Stage/Full Examples/hardhat-smartcontract-lottery-fcc/node_modules/ganache-core/node_modules/eth-json-rpc-middleware/node_modules/ethereumjs-vm/node_modules/ethereumjs-block/node_modules/ethereumjs-util/dist/secp256k1-adapter.js
 Stage/Full Examples/hardhat-smartcontract-lottery-fcc/node_modules/ganache-core/node_modules/eth-json-rpc-middleware/node_modules/ethereumjs-vm/node_modules/ethereumjs-block/node_modules/ethereumjs-util/dist/index.js
 Stage/Full Examples/hardhat-smartcontract-lottery-fcc/node_modules/ganache-core/node_modules/eth-json-rpc-middleware/node_modules/ethereumjs-vm/node_modules/ethereumjs-block/node_modules/ethereumjs-util/dist/secp256k1-lib/der.js
+Tesi/build/pdfa.xmpi
+Tesi/build/tesi.aux
+Tesi/build/tesi.bcf
+Tesi/build/tesi.fdb_latexmk
+Tesi/build/tesi.fls
+Tesi/build/tesi.glo
+Tesi/build/tesi.ist
+Tesi/build/tesi.log
+Tesi/build/tesi.lot
+Tesi/build/tesi.toc
+Tesi/build/tesi.lof
+*.aux
+*.bcf
+*.fdb_latexmk
+*.fls
+*.glo
+*.toc
+Tesi/build/tesi.toc
+*.xmpi
+Tesi/pdfa.xmpi

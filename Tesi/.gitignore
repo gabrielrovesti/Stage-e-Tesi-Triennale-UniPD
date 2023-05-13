@@ -220,7 +220,7 @@ TSWLatexianTemp*
 *-tags.tex
 
 # compile script build directory
-build/
+*-build/
 
 # produced pdf
 *thesis.pdf
