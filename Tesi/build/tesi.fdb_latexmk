@@ -1,26 +1,26 @@
 # Fdb version 4
-["biber build/tesi"] 1684426735 "build/tesi.bcf" "build/tesi.bbl" "build/tesi" 1684442056 0
-  "build/tesi.bcf" 1684442056 107913 d09e751e1a235b41ee047316d73f7961 "pdflatex"
+["biber build/tesi"] 1684426735 "build/tesi.bcf" "build/tesi.bbl" "build/tesi" 1684442202 0
+  "build/tesi.bcf" 1684442201 107913 d09e751e1a235b41ee047316d73f7961 "pdflatex"
   (generated)
   "build/tesi.bbl"
   "build/tesi.blg"
   (rewritten before read)
-["cusdep glo gls build/tesi"] 1684441585 "build/tesi.glo" "build/tesi.gls" "build/tesi" 1684442056 0
-  "build/tesi.glo" 1684442056 4870 e1db8ea126664308799e2884f881d3f0 "pdflatex"
+["cusdep glo gls build/tesi"] 1684441585 "build/tesi.glo" "build/tesi.gls" "build/tesi" 1684442202 0
+  "build/tesi.glo" 1684442201 4870 e1db8ea126664308799e2884f881d3f0 "pdflatex"
   (generated)
   "build/tesi.gls"
   (rewritten before read)
-["pdflatex"] 1684442051 "tesi.tex" "tesi.pdf" "tesi" 1684442056 0
+["pdflatex"] 1684442197 "tesi.tex" "tesi.pdf" "tesi" 1684442202 0
   "appendice/bibliografia.tex" 1683881317 172 738be3b45ab1a8a004244a8c7b4a7c4d ""
   "appendice/definizioni-glossario.tex" 1683903920 13775 82a3320bdea5a08b220ed95b43eadb97 ""
-  "build/pdfa.xmpi" 1684442053 5558 8f044b0c2dcdf0caf665cd4f403b988f "pdflatex"
-  "build/tesi.aux" 1684442056 28703 bc3a12cc399239afb70c1abb4c6c3b44 "pdflatex"
+  "build/pdfa.xmpi" 1684442199 5558 58cb8b27002a68801ddb99d236381d8b "pdflatex"
+  "build/tesi.aux" 1684442201 28629 d488b953844e6a4887c794f8a7fd1837 "pdflatex"
   "build/tesi.bbl" 1684426763 5813 cbf620036d87e30c8db23c23d3930038 "biber build/tesi"
   "build/tesi.gls" 1684441586 4025 0a9a4900b2dea165c39b6dbdb5092274 "cusdep glo gls build/tesi"
-  "build/tesi.lof" 1684442056 1708 699a7e5fa55566f89fbe6b23002768e3 "pdflatex"
-  "build/tesi.lot" 1684442056 589 71a418e8a44238553a6a2a896b90e6f3 "pdflatex"
-  "build/tesi.run.xml" 1684442056 2348 42848e5d610413aeada870c37ab810b0 "pdflatex"
-  "build/tesi.toc" 1684442056 4856 74ad93f79cb4ff929842b18f61ef9b91 "pdflatex"
+  "build/tesi.lof" 1684442201 1708 699a7e5fa55566f89fbe6b23002768e3 "pdflatex"
+  "build/tesi.lot" 1684442201 589 71a418e8a44238553a6a2a896b90e6f3 "pdflatex"
+  "build/tesi.run.xml" 1684442201 2348 42848e5d610413aeada870c37ab810b0 "pdflatex"
+  "build/tesi.toc" 1684442201 4856 74ad93f79cb4ff929842b18f61ef9b91 "pdflatex"
   "build/tesi.xmpdata" 1681310589 176 bad06cbe3baddcbaa074f0bd682b4ebc ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1676627787 2971 def0b6c1f0b107b3b936def894055589 ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1676627787 2900 1537cc8184ad1792082cd229ecc269f4 ""
@@ -259,7 +259,7 @@
   "c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1676635013 4662804 131178ccc9b2f4741a821427ce79dce1 ""
   "c:/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1676635190 7879501 d12c60f433e2a6757ae03a62f38f290d ""
   "c:/texlive/2022/texmf.cnf" 1676634991 713 e69b156964470283e0530f5060668171 ""
-  "capitoli/concept.tex" 1684442050 31592 27680f8a79a664b1c87c7da8ef185030 ""
+  "capitoli/concept.tex" 1684442192 31109 97598faf5ff659b530f30a258ba5d6f4 ""
   "capitoli/introduzione.tex" 1684426726 8676 89c7baa9e4d771707151486db005187c ""
   "capitoli/kick-off.tex" 1683905080 11085 1907a0528ae5a152753a45fb4b9ede1b ""
   "capitoli/processi.tex" 1683905189 43633 2c9bf824137e36eb18bcaf2b0b6bd465 ""
@@ -274,7 +274,7 @@
   "immagini/synclab.png" 1682928601 6827 bed56c63c61b90a87dcff7109a88b5b8 ""
   "immagini/trello.png" 1682932772 1373228 40a9a56126356114fa93757e5a311870 ""
   "immagini/usecase/UC1.jpg" 1684441703 32432 dda811586a2c623e03749334d4658863 ""
-  "immagini/usecase/UC10.jpg" 1684441753 37476 8f3a093f4443fedf375d6b7770bf9c68 ""
+  "immagini/usecase/UC10.jpg" 1684442181 31822 d56bb84fb5b9e7215f33b5db8fe86594 ""
   "immagini/usecase/UC4.jpg" 1684437081 12630 9140778f903cca2cac69865eb392c458 ""
   "immagini/usecase/UC5.jpg" 1684437820 16312 018031f9a6582295798891f3cfb02433 ""
   "immagini/usecase/UC7.jpg" 1684440017 27057 caa64107af3fef9c51feccc61f384744 ""
