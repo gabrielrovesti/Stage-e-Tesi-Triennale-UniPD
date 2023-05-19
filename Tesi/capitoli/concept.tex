@@ -219,7 +219,7 @@ Di seguito, un diagramma complessivo (in figura \ref{fig:usecase-scenario-princi
   \usecasemain{}
   
   \begin{enumerate}
-    \item L'utente inserisce il proprio DID.
+    \item L'utente inserisce il proprio DID\@.
   \end{enumerate}
   
 \end{usecase}
@@ -277,7 +277,7 @@ Di seguito, un diagramma complessivo (in figura \ref{fig:usecase-scenario-princi
     \item Visualizzazione errore DID errato (UC5).
   \end{enumerate}
 
-  \usecasegen{Come da figura \ref{fig:uc:autenticazione}:}
+  \usecasegen{Come da figura~\ref{fig:uc:autenticazione}:}
   \begin{enumerate}
     \item Inserimento DID (UC4.1);
   \end{enumerate}
@@ -289,16 +289,17 @@ Di seguito, un diagramma complessivo (in figura \ref{fig:usecase-scenario-princi
   \caption{UC4: Login}\label{fig:uc:autenticazione}
 \end{figure}
 
+\newpage
+
 \begin{usecase}{4.1}{Inserimento DID}\label{uc:autenticazione-did}
   \usecaseactors{Utente non autenticato}
   \usecasepre{L'utente ha avviato l'applicazione web, non è già autenticato e ha aperto la pagina di autenticazione}
   \usecasedesc{L'utente deve inserire il proprio DID associato alle proprie credenziali per autenticarsi presso l'applicazione web}
   \usecasepost{L'utente ha inserito il proprio DID e può procedere con l'autenticazione}
-  \newpage
   \usecasemain{}
   
   \begin{enumerate}
-    \item L'utente inserisce il proprio DID.
+    \item L'utente inserisce il proprio DID.\@
   \end{enumerate}
 
 \end{usecase}
@@ -343,7 +344,6 @@ Di seguito, un diagramma complessivo (in figura \ref{fig:usecase-scenario-princi
   \usecasepre{L'utente è autenticato e ha aperto la pagina principale dell'applicazione web}
   \usecasedesc{L'utente vuole visualizzare un singolo film dalla lista dei film presenti nel sistema}
   \usecasepost{L'utente ha visualizzato un film tra la lista di quelli presenti nel sistema}
-  \newpage
   \usecasemain{}
   
   \begin{enumerate}
@@ -434,7 +434,6 @@ Di seguito, un diagramma complessivo (in figura \ref{fig:usecase-scenario-princi
 \end{enumerate}
 \end{usecase}
 
-
 \begin{usecase}{8.4}{Inserimento posti}\label{uc:inserimento-posti}
   \usecaseactors{Utente autenticato}
   \usecasepre{L'utente è autenticato, ha verificato la propria età e ha selezionato un film dalla lista dei film presenti nel sistema}
@@ -472,6 +471,8 @@ Di seguito, un diagramma complessivo (in figura \ref{fig:usecase-scenario-princi
   \includegraphics[width=0.9\columnwidth, alt={Caso d'uso relativo alla visualizzazione della lista di prenotazioni da parte dell'utente}]{immagini/usecase/UC9.jpg}
   \caption{UC9: Visualizzazione lista prenotazioni}\label{fig:uc:lista-prenotazioni}
 \end{figure}
+
+\newpage
 
 \begin{usecase}{9.1}{Visualizzazione singola prenotazione in lista}\label{uc:lista-prenotazioni-singola}
     \usecaseactors{Utente autenticato}

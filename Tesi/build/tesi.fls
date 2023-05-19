@@ -1891,6 +1891,11 @@ INPUT capitoli/product-prototype.tex
 INPUT ./capitoli/product-prototype.tex
 INPUT ./capitoli/product-prototype.tex
 INPUT capitoli/product-prototype.tex
+INPUT ./immagini/react.jpeg
+INPUT ./immagini/react.jpeg
+INPUT immagini/react.jpeg
+INPUT ./immagini/react.jpeg
+INPUT ./immagini/react.jpeg
 INPUT build/tesi.gls
 INPUT build/tesi.gls
 INPUT build/tesi.gls

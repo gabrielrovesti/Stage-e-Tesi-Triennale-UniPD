@@ -1,26 +1,26 @@
 # Fdb version 4
-["biber build/tesi"] 1684426735 "build/tesi.bcf" "build/tesi.bbl" "build/tesi" 1684508254 0
-  "build/tesi.bcf" 1684508253 107913 d09e751e1a235b41ee047316d73f7961 "pdflatex"
+["biber build/tesi"] 1684426735 "build/tesi.bcf" "build/tesi.bbl" "build/tesi" 1684528773 0
+  "build/tesi.bcf" 1684528772 107913 d09e751e1a235b41ee047316d73f7961 "pdflatex"
   (generated)
   "build/tesi.bbl"
   "build/tesi.blg"
   (rewritten before read)
-["cusdep glo gls build/tesi"] 0 "build/tesi.glo" "build/tesi.gls" "build/tesi" 1684508254 -1
-  "build/tesi.glo" 1684508253 4870 30ff34acd4839ce7c02123a6dd9da00f "pdflatex"
+["cusdep glo gls build/tesi"] 1684516196 "build/tesi.glo" "build/tesi.gls" "build/tesi" 1684528773 0
+  "build/tesi.glo" 1684528772 4870 74b9e82614399ba031abf6baec9fb35a "pdflatex"
   (generated)
   "build/tesi.gls"
   (rewritten before read)
-["pdflatex"] 1684508248 "tesi.tex" "tesi.pdf" "tesi" 1684508254 0
+["pdflatex"] 1684528768 "tesi.tex" "tesi.pdf" "tesi" 1684528773 0
   "appendice/bibliografia.tex" 1683881317 172 738be3b45ab1a8a004244a8c7b4a7c4d ""
   "appendice/definizioni-glossario.tex" 1683903920 13775 82a3320bdea5a08b220ed95b43eadb97 ""
-  "build/pdfa.xmpi" 1684508250 5558 79d9b47566c89e9936e88840c98599e2 "pdflatex"
-  "build/tesi.aux" 1684508253 30131 f7a2bb69e7c71a7f4b12593f7d554ae5 "pdflatex"
+  "build/pdfa.xmpi" 1684528769 5558 9a802241e207707200497e3054608727 "pdflatex"
+  "build/tesi.aux" 1684528772 30443 ea520305326ec1f17427eb4ff5ad208d "pdflatex"
   "build/tesi.bbl" 1684426763 5813 cbf620036d87e30c8db23c23d3930038 "biber build/tesi"
-  "build/tesi.gls" 1684503988 4025 956114a61649c1c19180f9164429fe66 "cusdep glo gls build/tesi"
-  "build/tesi.lof" 1684508253 1977 401923227418ee4b76beb6d5e10bf2e4 "pdflatex"
-  "build/tesi.lot" 1684508253 568 432f638f451a630fcb52ea0d233c95b7 "pdflatex"
-  "build/tesi.run.xml" 1684508253 2348 42848e5d610413aeada870c37ab810b0 "pdflatex"
-  "build/tesi.toc" 1684508253 4856 de3308ee5f114c3b9396f965f1594673 "pdflatex"
+  "build/tesi.gls" 1684516197 4025 d21d863a48acc49a1d1c0673f25ad933 "cusdep glo gls build/tesi"
+  "build/tesi.lof" 1684528772 2098 3c893c711e1467e1ac39ed934a5f0593 "pdflatex"
+  "build/tesi.lot" 1684528772 568 432f638f451a630fcb52ea0d233c95b7 "pdflatex"
+  "build/tesi.run.xml" 1684528772 2348 42848e5d610413aeada870c37ab810b0 "pdflatex"
+  "build/tesi.toc" 1684528772 4856 259204184705e81aeffdba1577cdbe73 "pdflatex"
   "build/tesi.xmpdata" 1681310589 176 bad06cbe3baddcbaa074f0bd682b4ebc ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1676627787 2971 def0b6c1f0b107b3b936def894055589 ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1676627787 2900 1537cc8184ad1792082cd229ecc269f4 ""
@@ -259,16 +259,17 @@
   "c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1676635013 4662804 131178ccc9b2f4741a821427ce79dce1 ""
   "c:/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1676635190 7879501 d12c60f433e2a6757ae03a62f38f290d ""
   "c:/texlive/2022/texmf.cnf" 1676634991 713 e69b156964470283e0530f5060668171 ""
-  "capitoli/concept.tex" 1684508248 44636 397ae4eec7264f82a2bcae614b88718f ""
+  "capitoli/concept.tex" 1684512117 44638 10782992e34ec3c9c9cc4486accd0b44 ""
   "capitoli/introduzione.tex" 1684426726 8676 89c7baa9e4d771707151486db005187c ""
   "capitoli/kick-off.tex" 1683905080 11085 1907a0528ae5a152753a45fb4b9ede1b ""
   "capitoli/processi.tex" 1684503981 43635 a2da52148123eeae56fa05661b8736d5 ""
-  "capitoli/product-prototype.tex" 1683905274 8888 753dae231e734641b079b334c4338f2e ""
+  "capitoli/product-prototype.tex" 1684528761 13762 42fe9b12daa30915f47c64e0e163b274 ""
   "config/packages.tex" 1684505242 2899 c63ddf4d11315fb1176c3ac72c5ef951 ""
-  "config/tesi-config.tex" 1684505342 8074 d90b57fd55e36c2af5399a2a7f807366 ""
+  "config/tesi-config.tex" 1684511977 8074 d90b57fd55e36c2af5399a2a7f807366 ""
   "immagini//unipd-logo.png" 1681310589 67664 76ff6f1d0669338b4fe4b628fa33ae46 ""
   "immagini/blocco.png" 1682927878 40325 560944e95ab460ba5d8bbe465e9ad254 ""
   "immagini/proof-of-work.png" 1682925783 42707 5ceb1dbee6a940255ac75a5ee4cb857b ""
+  "immagini/react.jpeg" 1684516003 45812 9ed7de068362cf5ebac67631020ad39d ""
   "immagini/smart-contract.png" 1682926491 45898 d1626444435c5ec01e6e7d58f15519c5 ""
   "immagini/ssi.png" 1682926777 23584 262353692459c7b379e6ff84b359c26e ""
   "immagini/synclab.png" 1682928601 6827 bed56c63c61b90a87dcff7109a88b5b8 ""
@@ -287,7 +288,7 @@
   "introduzione/ringraziamenti.tex" 1682934318 1089 d580f10f9a75a65fa4e6109aaab09a1e ""
   "introduzione/sommario.tex" 1683196331 1823 69c737b6806ea8b24e47077d0bf023ad ""
   "introduzione/titolo.tex" 1683281491 1490 ec2b76be7bcec0e050a28ab0ee11bf17 ""
-  "struttura.tex" 1684504500 724 460f5b38b9409c316a018084b3ad35b2 ""
+  "struttura.tex" 1684511570 700 bacc818640f0c2875c0a7ec4989f5d27 ""
   "tesi.tex" 1681899683 204 ade2dcf13ac220ce94f28c4b427dbe34 ""
   (generated)
   "build/pdfa.xmpi"

@@ -104,9 +104,58 @@ Nello specifico, la strutturazione prevede:
     \item una cartella \textit{node\_modules}, contenente le dipendenze del progetto.
 \end{itemize}
 
+\newpage
 \section{Progettazione}\label{sec:progettazione-requisiti}
 
 \subsection{Architettura front-end}
+
+L'utilizzo di React ha permesso di definire una struttura modulare per il front-end, in modo da poter definire facilmente le pagine e le funzionalità.
+Esso è formato da un insieme di componenti, che definiscono un insieme di funzioni riutilizzabili, ognuna delle quali definisce un suo comportamento. 
+La logica dell'applicazione permette di gestire singolarmente le funzionalità del codice, definendo le pagine come funzioni che vengono
+esportate e utilizzate come entità indipendenti. In questo modo, si incrementa la modularità del codice e la sua manutenibilità, in quanto ogni componente
+o pagina può essere riutilizzato in modo semplice e può essere modificato senza influenzare il resto del codice. \\
+
+La struttura della pagina HTML è stata definita tramite \textit{TSX}, un'estensione di \textit{React} che permette di definire la struttura della pagina 
+in collaborazione con \textit{HTML} e \textit{CSS} e il linguaggio di programmazione \textit{TypeScript}.
+Tramite l'utilizzo dei cosiddetti \textit{hook}, è stato possibile definire le funzionalità del front-end, in modo da poter gestire le chiamate tra le componenti della 
+pagina in base all'attivazione di specifici eventi in modo dinamico, grazie all'uso degli \textit{state}.
+In questo modo, i singoli componenti e le pagine, definite come viste, riescono ad avere singola responsabilità e a poter essere riutilizzate in modo semplice. \\
+
+La logica viene mantenuta separata dalla presentazione, utilizzando la strutturazione a componenti in grado di comunicare nativamente con il 
+DOM (Document Object Model), permettendo di definire la struttura della pagina in modo dinamico e di poter gestire le interazioni con l'utente
+solo tramite le componenti e le pagine stesse, separando la presentazione offerta tramite \textit{HTML} e \textit{CSS} dalla logica del front-end strutturata
+a funzionalità. \\
+
+Dato che React è una libreria grafica, non viene forzato alcun preciso pattern architetturale, ma viene lasciata libertà di scelta allo sviluppatore.
+In questo caso, il pattern utilizzato è il \textit{Flux Pattern}, che permette di definire un flusso unidirezionale dei dati, in modo da poter gestire
+le interazioni dell'utente con la pagina e le chiamate al contratto in modo semplice e senza dover gestire la sincronizzazione dei dati tra le varie componenti.
+Ciò permette all'applicazione di essere gestita da funzionalità precise a cascata, andando ad interagire con l'esterno con semplici aggiunte di moduli o dipendenze.
+Come visibile dalla figura \ref{fig:react}, la logica si compone di un componente radice che descrive l'applicazione,
+a sua volta costituita eventualmente da uno o più componenti, innestati a vari livelli secondo la relazione di composizione,
+includendo anche eventuali componenti di terze parti per permettere la gestione e l'interazione all'esterno, esportando la funzionalità utile.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth, alt={Descrizione dello schema logico di un'applicazione React}]{immagini/react.jpeg}
+    \caption{Schema logico applicazione React} \label{fig:react}
+\end{figure}
+
+\newpage
+
+Secondo le \textit{best practices} di React, è stato utilizzato il pattern \textit{Functional Component}, che permette di definire proprietà specifiche (definite come \textit{props})
+ed uno stato interno in grado interagire con eventi asincroni da parte dell'utente. La strutturazione si compone di un insieme di funzioni e stati definiti
+al caricamento della pagina (utilizzando l'\textit{Hook Pattern}, attraverso gli \textit{hooks} \textit{useEffect} e \textit{useState}), in grado di caricare e gestire dinamicamente le informazioni
+al suo interno, esportando poi il componente funzionale o la stessa pagina, secondo un insieme di funzionalità definite dallo specifico contesto. \\
+
+Nello specifico, l'applicazione definisce per ogni pagina una cartella comprensiva del componente funzionale
+esportato e del suo stile, e un file di test per verificare le principali funzionalità previste.
+Inoltre, è presente una cartella \textit{components}, contenente i componenti utilizzati da tutte le pagine comrpensive dei dati del sito e dell'autenticazione, e
+una cartella \textit{utils}, contenente le funzionalità definite all'avvio dell'applicazione.
+L'autenticazione viene gestita tramite un contesto, definito dal design pattern \textit{Provider Pattern} di React, che permette di definire un contesto globale
+in cui tutta l'applicazione può accedere, in modo da poter gestire le informazioni dell'utente e le sue credenziali in modo sicuro e globale. 
+Le singole opzioni visibili tra utente autenticato e non, sono invece gestite secondo il pattern \textit{Conditional Rendering}, in grado di differenziare le opzioni
+visibili in base al suo stato. 
+
 
 \subsection{Architettura back-end}
 
