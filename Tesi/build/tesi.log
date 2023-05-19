@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.17)  18 MAY 2023 22:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.17)  19 MAY 2023 16:57
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1113,20 +1113,20 @@ Package geometry Warning: Over-specification in `v'-direction.
 \glo@main@file=\write6
 \openout6 = `tesi.glo'.
 
-Package glossaries Info: Writing glossary file tesi.glo on input line 41.
+Package glossaries Info: Writing glossary file tesi.glo on input line 44.
 \glo@acronym@file=\write7
 \openout7 = `tesi.acn'.
 
-Package glossaries Info: Writing glossary file tesi.acn on input line 41.
-Package hyperref Info: Option `colorlinks' set `true' on input line 107.
-Package hyperref Info: Option `linktocpage' set `true' on input line 107.
-Package hyperref Info: Option `breaklinks' set `true' on input line 107.
-Package hyperref Info: Option `pageanchor' set `true' on input line 107.
-Package hyperref Info: Option `plainpages' set `false' on input line 107.
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 107.
+Package glossaries Info: Writing glossary file tesi.acn on input line 44.
+Package hyperref Info: Option `colorlinks' set `true' on input line 110.
+Package hyperref Info: Option `linktocpage' set `true' on input line 110.
+Package hyperref Info: Option `breaklinks' set `true' on input line 110.
+Package hyperref Info: Option `pageanchor' set `true' on input line 110.
+Package hyperref Info: Option `plainpages' set `false' on input line 110.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 110.
 
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 107.
-Package hyperref Info: Option `hypertexnames' set `true' on input line 107.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 110.
+Package hyperref Info: Option `hypertexnames' set `true' on input line 110.
 
 (c:/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
@@ -1166,11 +1166,7 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'italian'.
 
-(build/tesi.aux
-
-LaTeX Warning: Label `fig:uc:prenotazione-film' multiply defined.
-
-)
+(build/tesi.aux)
 \openout1 = `tesi.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 1.
@@ -1191,7 +1187,8 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 1.
 LaTeX Font Info:    ... okay on input line 1.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 1.
 LaTeX Font Info:    ... okay on input line 1.
- (c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+
+(c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count488
 \scratchdimen=\dimen274
@@ -1355,7 +1352,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--16
 
  []
 
-<immagini/synclab.png, id=215, 154.77824pt x 59.0205pt>
+<immagini/synclab.png, id=219, 154.77824pt x 59.0205pt>
 File: immagini/synclab.png Graphic file (type png)
 <use immagini/synclab.png>
 Package pdftex.def Info: immagini/synclab.png  used on input line 19.
@@ -1374,7 +1371,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--34
 
  []
 
-<immagini/trello.png, id=230, 937.70325pt x 483.60675pt>
+<immagini/trello.png, id=234, 937.70325pt x 483.60675pt>
 File: immagini/trello.png Graphic file (type png)
 <use immagini/trello.png>
 Package pdftex.def Info: immagini/trello.png  used on input line 48.
@@ -1397,7 +1394,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--15
 
  []
 
-<immagini/blocco.png, id=264, 740.7675pt x 290.2845pt>
+<immagini/blocco.png, id=268, 740.7675pt x 290.2845pt>
 File: immagini/blocco.png Graphic file (type png)
 <use immagini/blocco.png>
 Package pdftex.def Info: immagini/blocco.png  used on input line 40.
@@ -1416,7 +1413,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 101--104
  []
 
 [7]
-<immagini/proof-of-work.png, id=288, 464.33475pt x 347.49825pt>
+<immagini/proof-of-work.png, id=292, 464.33475pt x 347.49825pt>
 File: immagini/proof-of-work.png Graphic file (type png)
 <use immagini/proof-of-work.png>
 Package pdftex.def Info: immagini/proof-of-work.png  used on input line 128.
@@ -1456,7 +1453,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 258--263
 
  []
 
-<immagini/smart-contract.png, id=306, 301.125pt x 286.06876pt>
+<immagini/smart-contract.png, id=310, 301.125pt x 286.06876pt>
 File: immagini/smart-contract.png Graphic file (type png)
 <use immagini/smart-contract.png>
 Package pdftex.def Info: immagini/smart-contract.png  used on input line 266.
@@ -1465,11 +1462,11 @@ Package pdftex.def Info: immagini/smart-contract.png  used on input line 266.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 289--293
+Underfull \hbox (badness 10000) in paragraph at lines 291--295
 
  []
 
-[12 <./immagini/smart-contract.png>] [13]
+[12 <./immagini/smart-contract.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 317--321
 
  []
@@ -1479,35 +1476,33 @@ File: immagini/ssi.png Graphic file (type png)
 <use immagini/ssi.png>
 Package pdftex.def Info: immagini/ssi.png  used on input line 339.
 (pdftex.def)             Requested size: 290.22107pt x 145.11296pt.
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 344--348
 
-Underfull \hbox (badness 10000) in paragraph at lines 343--347
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 363--368
 
  []
 
 [14 <./immagini/ssi.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 362--367
-
- []
-
-[15]
-<immagini/zkp.png, id=350, 519.1395pt x 211.992pt>
+<immagini/zkp.png, id=348, 519.1395pt x 211.992pt>
 File: immagini/zkp.png Graphic file (type png)
 <use immagini/zkp.png>
-Package pdftex.def Info: immagini/zkp.png  used on input line 404.
+Package pdftex.def Info: immagini/zkp.png  used on input line 405.
 (pdftex.def)             Requested size: 290.22107pt x 118.51414pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 408--411
+Underfull \hbox (badness 10000) in paragraph at lines 409--412
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 412--416
+Underfull \hbox (badness 10000) in paragraph at lines 413--417
 
  []
 
-[16 <./immagini/zkp.png>]) (./capitoli/kick-off.tex [17] [18
-
-]
+[15 <./immagini/zkp.png>]) (./capitoli/kick-off.tex [16]
 Capitolo 3.
 
 Underfull \hbox (badness 10000) in paragraph at lines 9--14
@@ -1524,7 +1519,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--28
 
  []
 
-[19] [20]) (./capitoli/concept.tex [21] [22
+[17
+
+] [18]) (./capitoli/concept.tex [19] [20
 
 ]
 Capitolo 4.
@@ -1542,7 +1539,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [23]
+ [21]
 Underfull \hbox (badness 10000) in paragraph at lines 39--49
 
  []
@@ -1567,74 +1564,104 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--70
 
  []
 
-[24]
+[22]
 Underfull \hbox (badness 10000) in paragraph at lines 126--129
 
  []
 
-[25]
+[23]
 Underfull \hbox (badness 10000) in paragraph at lines 140--144
 
  []
 
-<immagini/usecase/scenario-principale.jpg, id=483, 1005.7575pt x 933.4875pt>
+<immagini/usecase/scenario-principale.jpg, id=479, 1005.7575pt x 933.4875pt>
 File: immagini/usecase/scenario-principale.jpg Graphic file (type jpg)
 <use immagini/usecase/scenario-principale.jpg>
 Package pdftex.def Info: immagini/usecase/scenario-principale.jpg  used on inpu
 t line 149.
 (pdftex.def)             Requested size: 435.32422pt x 404.04117pt.
-[26 <./immagini/usecase/scenario-principale.jpg>]
-<immagini/usecase/UC1.jpg, id=490, 892.33376pt x 474.77374pt>
+[24 <./immagini/usecase/scenario-principale.jpg>]
+<immagini/usecase/UC1.jpg, id=487, 892.33376pt x 474.77374pt>
 File: immagini/usecase/UC1.jpg Graphic file (type jpg)
 <use immagini/usecase/UC1.jpg>
-Package pdftex.def Info: immagini/usecase/UC1.jpg  used on input line 176.
+Package pdftex.def Info: immagini/usecase/UC1.jpg  used on input line 184.
 (pdftex.def)             Requested size: 435.32422pt x 231.6197pt.
- [27 <./immagini/usecase/UC1.jpg>] [28]
+ [25 <./immagini/usecase/UC1.jpg>] [26]
 <immagini/usecase/UC4.jpg, id=517, 852.18375pt x 241.90375pt>
 File: immagini/usecase/UC4.jpg Graphic file (type jpg)
 <use immagini/usecase/UC4.jpg>
-Package pdftex.def Info: immagini/usecase/UC4.jpg  used on input line 275.
+Package pdftex.def Info: immagini/usecase/UC4.jpg  used on input line 288.
 (pdftex.def)             Requested size: 435.32422pt x 123.57597pt.
- [29 <./immagini/usecase/UC4.jpg>]
-<immagini/usecase/UC5.jpg, id=529, 853.1875pt x 242.9075pt>
-File: immagini/usecase/UC5.jpg Graphic file (type jpg)
-<use immagini/usecase/UC5.jpg>
-Package pdftex.def Info: immagini/usecase/UC5.jpg  used on input line 306.
+ [27 <./immagini/usecase/UC4.jpg>]
+<immagini/usecase/UC6.jpg, id=531, 853.1875pt x 242.9075pt>
+File: immagini/usecase/UC6.jpg Graphic file (type jpg)
+<use immagini/usecase/UC6.jpg>
+Package pdftex.def Info: immagini/usecase/UC6.jpg  used on input line 337.
 (pdftex.def)             Requested size: 435.32422pt x 123.94048pt.
- [30 <./immagini/usecase/UC5.jpg>]
-<immagini/usecase/UC7.jpg, id=546, 869.2475pt x 363.3575pt>
-File: immagini/usecase/UC7.jpg Graphic file (type jpg)
-<use immagini/usecase/UC7.jpg>
-Package pdftex.def Info: immagini/usecase/UC7.jpg  used on input line 356.
-(pdftex.def)             Requested size: 435.32422pt x 181.97214pt.
-
-[31 <./immagini/usecase/UC7.jpg>] [32]
-<immagini/usecase/UC10.jpg, id=572, 829.0975pt x 491.8375pt>
-File: immagini/usecase/UC10.jpg Graphic file (type jpg)
-<use immagini/usecase/UC10.jpg>
-Package pdftex.def Info: immagini/usecase/UC10.jpg  used on input line 449.
+ [28 <./immagini/usecase/UC6.jpg>]
+[29]
+<immagini/usecase/UC8.jpg, id=562, 869.2475pt x 395.4775pt>
+File: immagini/usecase/UC8.jpg Graphic file (type jpg)
+<use immagini/usecase/UC8.jpg>
+Package pdftex.def Info: immagini/usecase/UC8.jpg  used on input line 397.
+(pdftex.def)             Requested size: 435.32422pt x 198.05809pt.
+ [30 <./immagini/usecase/UC8.jpg>]
+<immagini/usecase/UC9.jpg, id=576, 820.06375pt x 307.1475pt>
+File: immagini/usecase/UC9.jpg Graphic file (type jpg)
+<use immagini/usecase/UC9.jpg>
+Package pdftex.def Info: immagini/usecase/UC9.jpg  used on input line 472.
+(pdftex.def)             Requested size: 435.32422pt x 163.04985pt.
+ [31]
+<immagini/usecase/UC9.1.jpg, id=592, 933.4875pt x 572.1375pt>
+File: immagini/usecase/UC9.1.jpg Graphic file (type jpg)
+<use immagini/usecase/UC9.1.jpg>
+Package pdftex.def Info: immagini/usecase/UC9.1.jpg  used on input line 502.
+(pdftex.def)             Requested size: 435.32422pt x 266.80943pt.
+ [32 <./immagini/usecase/UC9.jpg>]
+[33 <./immagini/usecase/UC9.1.jpg>] [34]
+<immagini/usecase/UC12.jpg, id=632, 829.0975pt x 491.8375pt>
+File: immagini/usecase/UC12.jpg Graphic file (type jpg)
+<use immagini/usecase/UC12.jpg>
+Package pdftex.def Info: immagini/usecase/UC12.jpg  used on input line 628.
 (pdftex.def)             Requested size: 435.32422pt x 258.24106pt.
- [33 <./immagini/usecase/UC10.jpg>]
-[34] [35]) (./capitoli/product-prototype.tex [36]
-Capitolo 5.
+ [35] [36 <./immagini/usecase/UC12.jpg>]
 
-Underfull \vbox (badness 4144) has occurred while \output is active []
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 726.
+See the caption package documentation for explanation.
 
- [37
+[37]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 804.
+See the caption package documentation for explanation.
+
+[38]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 824.
+See the caption package documentation for explanation.
+
+) (./capitoli/product-prototype.tex [39] [40
 
 ]
-[38]
+Capitolo 5.
+
+Underfull \vbox (badness 4518) has occurred while \output is active []
+
+ [41]
+[42]
 Underfull \hbox (badness 10000) in paragraph at lines 79--85
 
  []
 
-) [39] [40
+) [43] [44
 
-] (build/tesi.gls [41
+] (build/tesi.gls [45
 
 
-] [42]) (./appendice/bibliografia.tex [43]
-[44
+] [46]) (./appendice/bibliografia.tex [47]
+[48
 
 ]
 
@@ -1646,24 +1673,21 @@ Package biblatex Warning: Split bibliography detected.
 (biblatex)                This warning can be suppressed with
 (biblatex)                '\BiblatexSplitbibDefernumbersWarningOff'.
 
-) [45
+) [49
 
 ] (build/tesi.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package logreq Info: Writing requests to 'tesi.run.xml'.
 \openout1 = `tesi.run.xml'.
 
  ) ) 
 Here is how much of TeX's memory you used:
- 39953 strings out of 476029
- 700320 string characters out of 5794164
+ 40038 strings out of 476029
+ 701672 string characters out of 5794164
  2044340 words of memory out of 5000000
- 59139 multiletter control sequences out of 15000+600000
- 543835 words of font info for 203 fonts, out of 8000000 for 9000
+ 59170 multiletter control sequences out of 15000+600000
+ 543977 words of font info for 205 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 99i,10n,125p,2257b,3112s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,8n,125p,2257b,3112s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/te
 xlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/202
 2/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb><c:/texlive/2022
@@ -1687,10 +1711,10 @@ fonts/type1/public/cm-super/sfsl1000.pfb><c:/texlive/2022/texmf-dist/fonts/type
 m-super/sfti1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sf
 ti1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb
 ><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on build/tesi.pdf (55 pages, 2802430 bytes).
+Output written on build/tesi.pdf (59 pages, 2894670 bytes).
 PDF statistics:
- 1111 PDF objects out of 1200 (max. 8388607)
- 971 compressed objects within 10 object streams
- 314 named destinations out of 1000 (max. 500000)
- 58899 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 1193 PDF objects out of 1200 (max. 8388607)
+ 1046 compressed objects within 11 object streams
+ 362 named destinations out of 1000 (max. 500000)
+ 58909 words of extra memory for PDF output out of 61914 (max. 10000000)
 

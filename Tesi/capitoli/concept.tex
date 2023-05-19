@@ -144,7 +144,7 @@ dai casi d'uso definiti in questa sezione, in base all'analisi prevista. \\
 
 Di seguito, un diagramma complessivo (in figura \ref{fig:usecase-scenario-principale}) dei casi d'uso individuati, che verranno descritti nel dettaglio successivamente:
 
-\begin{figure}[!h] 
+\begin{figure}[!ht] 
     \centering 
     \includegraphics[width=0.9\columnwidth, alt={Scenario principale dei vari casi d'uso individuati}]{immagini/usecase/scenario-principale.jpg}
     \caption{Scenario principale}\label{fig:usecase-scenario-principale}
@@ -169,9 +169,17 @@ Di seguito, un diagramma complessivo (in figura \ref{fig:usecase-scenario-princi
   \item Visualizzazione errore email già esistente (UC2);
   \item Visualizzazione errore DID già esistente (UC3).
 \end{enumerate}
+
+\usecasegen{Come da figura \ref{fig:uc:registrazione}:}
+\begin{enumerate}
+  \item Inserimento username (UC1.1);
+  \item Inserimento email (UC1.2);
+  \item Inserimento DID (UC1.3);
+  \item Inserimento data di nascita (UC1.4);
+\end{enumerate}
 \end{usecase}
 
-\begin{figure}[!h] 
+\begin{figure}[!ht] 
   \centering 
   \includegraphics[width=0.9\columnwidth, alt={Caso d'uso relativo alla registrazione}]{immagini/usecase/UC1.jpg}
   \caption{UC1: Registrazione}\label{fig:uc:registrazione}
@@ -268,9 +276,14 @@ Di seguito, un diagramma complessivo (in figura \ref{fig:usecase-scenario-princi
   \begin{enumerate}
     \item Visualizzazione errore DID errato (UC5).
   \end{enumerate}
+
+  \usecasegen{Come da figura \ref{fig:uc:autenticazione}:}
+  \begin{enumerate}
+    \item Inserimento DID (UC4.1);
+  \end{enumerate}
 \end{usecase}
 
-\begin{figure}[!h] 
+\begin{figure}[!ht] 
   \centering 
   \includegraphics[width=0.9\columnwidth, alt={Caso d'uso relativo all'autenticazione dell'utente}]{immagini/usecase/UC4.jpg}
   \caption{UC4: Login}\label{fig:uc:autenticazione}
@@ -281,6 +294,7 @@ Di seguito, un diagramma complessivo (in figura \ref{fig:usecase-scenario-princi
   \usecasepre{L'utente ha avviato l'applicazione web, non è già autenticato e ha aperto la pagina di autenticazione}
   \usecasedesc{L'utente deve inserire il proprio DID associato alle proprie credenziali per autenticarsi presso l'applicazione web}
   \usecasepost{L'utente ha inserito il proprio DID e può procedere con l'autenticazione}
+  \newpage
   \usecasemain{}
   
   \begin{enumerate}
@@ -289,7 +303,19 @@ Di seguito, un diagramma complessivo (in figura \ref{fig:usecase-scenario-princi
 
 \end{usecase}
 
-\begin{usecase}{5}{Visualizzazione lista film}\label{uc:visualizzazione-lista-film}
+\begin{usecase}{5}{Visualizzazione errore DID errato}\label{uc:autenticazione-did-errato}
+  \usecaseactors{Utente non autenticato}
+  \usecasepre{L'utente ha inserito un DID errato}
+  \usecasedesc{L'utente deve inserire un DID corretto per autenticarsi presso l'applicazione web}
+  \usecasepost{L'utente ha inserito un DID non esistente e può procedere con l'autenticazione}
+  \usecasemain{}
+  
+  \begin{enumerate}
+    \item L'utente visualizza un messaggio di errore che lo informa che il DID inserito non è corretto.
+  \end{enumerate}
+\end{usecase}
+
+\begin{usecase}{6}{Visualizzazione lista film}\label{uc:visualizzazione-lista-film}
   \usecaseactors{Utente autenticato}
   \usecasepre{L'utente è autenticato e ha aperto la pagina principale dell'applicazione web}
   \usecasedesc{L'utente vuole visualizzare la lista dei film presenti nel sistema}
@@ -299,19 +325,25 @@ Di seguito, un diagramma complessivo (in figura \ref{fig:usecase-scenario-princi
   \begin{enumerate}
     \item L'utente visualizza la lista dei film presenti nel sistema.
   \end{enumerate}
+
+  \usecasegen{Come da figura \ref{fig:uc:visualizzazione-lista-film}:}
+  \begin{enumerate}
+    \item Visualizzazione singolo film in lista (UC6.1);
+  \end{enumerate}
 \end{usecase}
 
-\begin{figure}[!h] 
+\begin{figure}[!ht] 
   \centering 
-  \includegraphics[width=0.9\columnwidth, alt={Caso d'uso relativo alla visualizzazione della lista dei film dell'utente}]{immagini/usecase/UC5.jpg}
-  \caption{UC5: Visualizzazione lista film}\label{fig:uc:visualizzazione-lista-film}
+  \includegraphics[width=0.9\columnwidth, alt={Caso d'uso relativo alla visualizzazione della lista dei film dell'utente}]{immagini/usecase/UC6.jpg}
+  \caption{UC6: Visualizzazione lista film}\label{fig:uc:visualizzazione-lista-film}
 \end{figure}
 
-\begin{usecase}{5.1}{Visualizzazione singolo film in lista}\label{uc:visualizzazione-singolo-lista-film}
+\begin{usecase}{6.1}{Visualizzazione singolo film in lista}\label{uc:visualizzazione-singolo-lista-film}
   \usecaseactors{Utente autenticato}
   \usecasepre{L'utente è autenticato e ha aperto la pagina principale dell'applicazione web}
   \usecasedesc{L'utente vuole visualizzare un singolo film dalla lista dei film presenti nel sistema}
   \usecasepost{L'utente ha visualizzato un film tra la lista di quelli presenti nel sistema}
+  \newpage
   \usecasemain{}
   
   \begin{enumerate}
@@ -319,7 +351,7 @@ Di seguito, un diagramma complessivo (in figura \ref{fig:usecase-scenario-princi
   \end{enumerate}
 \end{usecase}
 
-\begin{usecase}{6}{Verifica dell'età}\label{uc:verifica-eta}
+\begin{usecase}{7}{Verifica dell'età}\label{uc:verifica-eta}
   \usecaseactors{Utente autenticato}
   \usecasepre{L'utente è autenticato, possiede una Verifiable Credential che attesta la sua età e intende visualizzare un film per prenotarlo} 
   \usecasedesc{L'utente vuole visualizzare un singolo film dalla lista dei film presenti nel sistema}
@@ -336,7 +368,7 @@ Di seguito, un diagramma complessivo (in figura \ref{fig:usecase-scenario-princi
   \end{enumerate}
 \end{usecase}
 
-\begin{usecase}{7}{Prenotazione film}\label{uc:prenotazione-film}
+\begin{usecase}{8}{Prenotazione film}\label{uc:prenotazione-film}
   \usecaseactors{Utente autenticato}
   \usecasepre{L'utente è autenticato, ha verificato la propria età e ha selezionato un film dalla lista dei film presenti nel sistema}
   \usecasedesc{L'utente vuole prenotare il film che ha selezionato dalla lista dei film presenti nel sistema}
@@ -346,18 +378,27 @@ Di seguito, un diagramma complessivo (in figura \ref{fig:usecase-scenario-princi
   \begin{enumerate}
     \item L'utente seleziona un film dalla lista dei film presenti nel sistema;
     \item Il sistema richiede all'utente di fornire i dettagli della prenotazione; 
-    \item L'utente inserisce la data di prenotazione (UC7.1), l'orario di prenotazione (UC7.2) e il numero di posti da prenotare (UC7.3);
+    \item L'utente inserisce la data di prenotazione (UC8.1), l'orario di prenotazione (UC8.2) e il numero di posti da prenotare (UC8.3);
     \item Il sistema verifica la disponibilità del film per la data e l'orario selezionati e registra l'avvenuta prenotazione, fornendo un riepilogo all'utente.
+  \end{enumerate}
+
+  \newpage
+  \usecasegen{Come da figura \ref{fig:uc:prenotazione-film}:}
+  \begin{enumerate}
+    \item Inserimento data prenotazione (UC8.1);
+    \item Inserimento orario prenotazione (UC8.2);
+    \item Inserimento quantità biglietti (UC8.3);
+    \item Inserimento posti (UC8.4).
   \end{enumerate}
 \end{usecase}
 
-\begin{figure}[!h] 
+\begin{figure}[!ht] 
   \centering 
-  \includegraphics[width=0.9\columnwidth, alt={Caso d'uso relativo alla prenotazione di un film dell'utente}]{immagini/usecase/UC7.jpg}
-  \caption{UC7: Prenotazione film}\label{fig:uc:prenotazione-film}
+  \includegraphics[width=0.9\columnwidth, alt={Caso d'uso relativo alla prenotazione di un film dell'utente}]{immagini/usecase/UC8.jpg}
+  \caption{UC8: Prenotazione film}\label{fig:uc:prenotazione-film}
 \end{figure}
 
-\begin{usecase}{7.1}{Inserimento data prenotazione}\label{uc:inserimento-data-prenotazione}
+\begin{usecase}{8.1}{Inserimento data prenotazione}\label{uc:inserimento-data-prenotazione}
   \usecaseactors{Utente autenticato}
   \usecasepre{L'utente è autenticato, ha verificato la propria età e ha selezionato un film dalla lista dei film presenti nel sistema}
   \usecasedesc{L'utente vuole inserire la data di prenotazione del film che ha selezionato dalla lista dei film presenti nel sistema}
@@ -369,7 +410,7 @@ Di seguito, un diagramma complessivo (in figura \ref{fig:usecase-scenario-princi
   \end{enumerate}
 \end{usecase}
 
-\begin{usecase}{7.2}{Inserimento orario prenotazione}\label{uc:inserimento-orario-prenotazione}
+\begin{usecase}{8.2}{Inserimento orario prenotazione}\label{uc:inserimento-orario-prenotazione}
   \usecaseactors{Utente autenticato}
   \usecasepre{L'utente è autenticato, ha verificato la propria età e ha selezionato un film dalla lista dei film presenti nel sistema}
   \usecasedesc{L'utente vuole inserire l'orario di prenotazione del film che ha selezionato dalla lista dei film presenti nel sistema}
@@ -381,21 +422,152 @@ Di seguito, un diagramma complessivo (in figura \ref{fig:usecase-scenario-princi
   \end{enumerate}
 \end{usecase}
 
-\begin{usecase}{7.3}{Inserimento numero posti}\label{uc:inserimento-numero-posti}
+\begin{usecase}{8.3}{Inserimento quantità biglietti}\label{uc:inserimento-numero-posti}
   \usecaseactors{Utente autenticato}
   \usecasepre{L'utente è autenticato, ha verificato la propria età e ha selezionato un film dalla lista dei film presenti nel sistema}
-  \usecasedesc{L'utente vuole inserire il numero di posti da prenotare per il film che ha selezionato dalla lista dei film presenti nel sistema}
-  \usecasepost{L'utente ha inserito il numero di posti da prenotare}
+  \usecasedesc{L'utente vuole inserire il numero di biglietti da prenotare per il film che ha selezionato dalla lista dei film presenti nel sistema}
+  \usecasepost{L'utente ha inserito il numero di biglietti che intende prenotare}
   \usecasemain{}
   
   \begin{enumerate}
-    \item L'utente inserisce il numero di posti da prenotare per il film che intende prenotare.
+    \item L'utente inserisce il numero di biglietti da prenotare per il film che intende prenotare.
 \end{enumerate}
 \end{usecase}
 
-\begin{usecase}{8}{Ricerca film}\label{uc:ricerca-film}
+
+\begin{usecase}{8.4}{Inserimento posti}\label{uc:inserimento-posti}
   \usecaseactors{Utente autenticato}
-  \usecasepre{L'utente è autenticato}
+  \usecasepre{L'utente è autenticato, ha verificato la propria età e ha selezionato un film dalla lista dei film presenti nel sistema}
+  \usecasedesc{L'utente vuole inserire il numero posti che intende prenotare per il film che ha selezionato dalla lista dei film presenti nel sistema}
+  \usecasepost{L'utente ha inserito il numero di posti che intende prenotare}
+  \usecasemain{}
+  
+  \begin{enumerate}
+    \item L'utente inserisce il posto o il numero di posti che intende prenotare per il film che ha selezionato.
+  \end{enumerate}
+\end{usecase}
+
+\begin{usecase}{9}{Visualizzazione lista prenotazioni}\label{uc:lista-prenotazioni}
+
+  \usecaseactors{Utente autenticato}
+  \usecasepre{L'utente è autenticato e ha effettuato almeno una prenotazione}
+  \usecasedesc{L'utente vuole visualizzare la lista delle prenotazioni effettuate}
+  \usecasepost{L'utente ha visualizzato la lista delle prenotazioni effettuate}
+  \usecasemain{}
+  
+  \begin{enumerate}
+    \item L'utente accede al proprio profilo e clicca sulla sezione di lista delle prenotazioni;
+    \item L'utente visualizza una finestra contenente la lista delle prenotazioni effettuate;
+    \item Il sistema restituisce la lista delle prenotazioni effettuate dall'utente.
+  \end{enumerate}
+
+  \usecasegen{Come da figura \ref{fig:uc:lista-prenotazioni}:}
+  \begin{enumerate}
+    \item Visualizzazione singola prenotazione in lista (UC9.1).
+  \end{enumerate}
+\end{usecase}
+
+\begin{figure}[!ht] 
+  \centering 
+  \includegraphics[width=0.9\columnwidth, alt={Caso d'uso relativo alla visualizzazione della lista di prenotazioni da parte dell'utente}]{immagini/usecase/UC9.jpg}
+  \caption{UC9: Visualizzazione lista prenotazioni}\label{fig:uc:lista-prenotazioni}
+\end{figure}
+
+\begin{usecase}{9.1}{Visualizzazione singola prenotazione in lista}\label{uc:lista-prenotazioni-singola}
+    \usecaseactors{Utente autenticato}
+    \usecasepre{L'utente è autenticato e ha effettuato almeno una prenotazione}
+    \usecasedesc{L'utente vuole visualizzare i dettagli di una prenotazione effettuata}
+    \usecasepost{L'utente ha visualizzato i dettagli di una prenotazione effettuata}
+    \usecasemain{}
+    
+    \begin{enumerate}
+      \item L'utente accede al proprio profilo e clicca sulla sezione di lista delle prenotazioni;
+      \item L'utente visualizza una finestra contenente la lista delle prenotazioni effettuate;
+      \item L'utente clicca su una prenotazione;
+      \item Il sistema restituisce i dettagli della prenotazione selezionata dall'utente.
+    \end{enumerate}
+
+    \usecasegen{Come da figura \ref{fig:uc:lista-prenotazioni-singola}:}
+    \begin{enumerate}
+      \item Visualizzazione dettagli film prenotato (UC9.1.1);
+      \item Visualizzazione data prenotazione (UC9.1.2);
+      \item Visualizzazione orario prenotazione (UC9.1.3);
+      \item Visualizzazione quantità biglietti prenotazione (UC9.1.4);
+      \item Visualizzazione numero posti prenotati (UC9.1.5).
+    \end{enumerate}
+\end{usecase}
+
+\begin{figure}[!ht] 
+  \centering 
+  \includegraphics[width=0.9\columnwidth, alt={Caso d'uso relativo alla visualizzazione della singola prenotazione nella lista dell'utente}]{immagini/usecase/UC9.1.jpg}
+  \caption{UC9.1: Visualizzazione singola prenotazione in lista}\label{fig:uc:lista-prenotazioni-singola}
+\end{figure}
+
+\newpage
+
+\begin{usecase}{9.1.1}{Visualizzazione dettagli film prenotato}\label{uc:lista-prenotazioni-singola-dettagli-film}
+  \usecaseactors{Utente autenticato}
+  \usecasepre{L'utente è autenticato e ha effettuato almeno una prenotazione}
+  \usecasedesc{L'utente vuole visualizzare i dettagli del film prenotato}
+  \usecasepost{L'utente ha visualizzato i dettagli del film prenotato}
+  \usecasemain{}
+
+  \begin{enumerate}
+    \item L'utente accede alla propria lista delle prenotazioni e visualizza i dettagli del film per quella prenotazione.
+  \end{enumerate}
+\end{usecase}
+
+\begin{usecase}{9.1.2}{Visualizzazione data prenotazione}\label{uc:lista-prenotazioni-singola-data}
+  \usecaseactors{Utente autenticato}
+  \usecasepre{L'utente è autenticato e ha effettuato almeno una prenotazione}
+  \usecasedesc{L'utente vuole visualizzare la data della singola prenotazione}
+  \usecasepost{L'utente ha visualizzato la data della specifica prenotazione}
+  \usecasemain{}
+
+  \begin{enumerate}
+    \item L'utente accede alla propria lista delle prenotazioni e visualizza la data della prenotazione.
+  \end{enumerate}
+\end{usecase}
+
+\begin{usecase}{9.1.3}{Visualizzazione orario prenotazione}\label{uc:lista-prenotazioni-singola-orario}
+  \usecaseactors{Utente autenticato}
+  \usecasepre{L'utente è autenticato e ha effettuato almeno una prenotazione}
+  \usecasedesc{L'utente vuole visualizzare l'orario della singola prenotazione}
+  \usecasepost{L'utente ha visualizzato l'orario della specifica prenotazione}
+  \usecasemain{}
+
+  \begin{enumerate}
+    \item L'utente accede alla propria lista delle prenotazioni e visualizza l'orario della prenotazione.
+  \end{enumerate}
+\end{usecase}
+
+\begin{usecase}{9.1.4}{Visualizzazione quantità biglietti prenotazione}\label{uc:lista-prenotazioni-singola-quantita}
+  \usecaseactors{Utente autenticato}
+  \usecasepre{L'utente è autenticato e ha effettuato almeno una prenotazione}
+  \usecasedesc{L'utente vuole visualizzare la quantità di biglietti della singola prenotazione}
+  \usecasepost{L'utente ha visualizzato la quantità di biglietti della specifica prenotazione}
+  \usecasemain{}
+
+  \begin{enumerate}
+    \item L'utente accede alla propria lista delle prenotazioni e visualizza la quantità di biglietti della prenotazione.
+  \end{enumerate}
+\end{usecase}
+
+\begin{usecase}{9.1.5}{Visualizzazione numero posti prenotati}\label{uc:lista-prenotazioni-singola-posti}
+  \usecaseactors{Utente autenticato}
+  \usecasepre{L'utente è autenticato e ha effettuato almeno una prenotazione}
+  \usecasedesc{L'utente vuole visualizzare il numero di posti prenotati per la singola prenotazione}
+  \usecasepost{L'utente ha visualizzato il numero di posti prenotati per la specifica prenotazione}
+  \usecasemain{}
+
+  \begin{enumerate}
+    \item L'utente accede alla propria lista delle prenotazioni e visualizza il numero di posti prenotati per la prenotazione.
+  \end{enumerate}
+\end{usecase}
+
+\begin{usecase}{10}{Ricerca film per titolo}\label{uc:ricerca-film}
+  \usecaseactors{Utente autenticato}
+  \usecasepre{L'utente è autenticato e intende ricercare un film presente nel sistema}
   \usecasedesc{L'utente vuole cercare un film presente nel sistema e nel sistema sono presenti dei film}
   \usecasepost{L'utente ha cercato un film presente nel sistema e il sistema ha restituito i risultati della ricerca, permettendo all'utente di interagire con essi}
   \usecasemain{}
@@ -407,9 +579,9 @@ Di seguito, un diagramma complessivo (in figura \ref{fig:usecase-scenario-princi
   \end{enumerate}
 \end{usecase}
 
-\begin{usecase}{9}{Recensione film}\label{uc:recensione-film}
+\begin{usecase}{11}{Recensione film}\label{uc:recensione-film}
   \usecaseactors{Utente autenticato}
-  \usecasepre{L'utente è autenticato e visualizza la lista dei film prenotati}
+  \usecasepre{L'utente è autenticato e intende recensire un film presente nel sistema}
   \usecasedesc{L'utente vuole recensire un film presente nel sistema}
   \usecasepost{L'utente ha recensito correttamente un film tra quelli presenti, anche senza prenotazione}
   \usecasemain{}
@@ -422,19 +594,19 @@ Di seguito, un diagramma complessivo (in figura \ref{fig:usecase-scenario-princi
   \end{enumerate}
 \end{usecase}
 
-\begin{usecase}{10}{Modifica informazioni profilo}\label{uc:modifica-informazioni-account}
+\begin{usecase}{12}{Modifica informazioni profilo}\label{uc:modifica-informazioni-profilo}
   \usecaseactors{Utente autenticato}
-  \usecasepre{L'utente è autenticato}
-  \usecasedesc{L'utente vuole modificare le proprie informazioni personali}
+  \usecasepre{L'utente è autenticato e intende modificare le proprie informazioni personali all'interno del proprio profilo}
+  \usecasedesc{L'utente modifica correttamente le proprie informazioni personali in base alle proprie esigenze}
   \usecasepost{L'utente ha modificato le proprie informazioni personali di proprio interesse}
   \usecasemain{}
   
   \begin{enumerate}
     \item L'utente accede alla pagina principale contenente le proprie informazioni personali;
-    \item L'utente modifica il proprio username (UC10.1);
-    \item L'utente modifica la propria email (UC10.2);
-    \item L'utente modifica il proprio DID (UC10.3);
-    \item L'utente modifica la propria data di nascita (UC10.4);
+    \item L'utente modifica il proprio username (UC12.1);
+    \item L'utente modifica la propria email (UC12.2);
+    \item L'utente modifica il proprio DID (UC12.3);
+    \item L'utente modifica la propria data di nascita (UC12.4);
   \end{enumerate}
 
   \usecaseext{}
@@ -442,15 +614,24 @@ Di seguito, un diagramma complessivo (in figura \ref{fig:usecase-scenario-princi
     \item Visualizzazione errore email già esistente (UC2);
     \item Visualizzazione errore DID già esistente (UC3).
   \end{enumerate}
+
+  \usecasegen{Come da figura \ref{fig:uc:modifica-informazioni-profilo}:}
+  \begin{enumerate}
+    \item Inserimento nuovo username (UC12.1);
+    \item Inserimento nuova email (UC12.2);
+    \item Inserimento nuova data di nascita (UC12.3).
+  \end{enumerate}
 \end{usecase}
 
-\begin{figure}[!h] 
+\begin{figure}[!ht] 
   \centering 
-  \includegraphics[width=0.9\columnwidth, alt={Caso d'uso relativo alla modifica delle informazioni del profilo}]{immagini/usecase/UC10.jpg}
-  \caption{UC10: Modifica informazioni profilo}\label{fig:uc:prenotazione-film}
+  \includegraphics[width=0.9\columnwidth, alt={Caso d'uso relativo alla modifica delle informazioni del profilo}]{immagini/usecase/UC12.jpg}
+  \caption{UC12: Modifica informazioni profilo}\label{fig:uc:modifica-informazioni-profilo}
 \end{figure}
 
-\begin{usecase}{10.1}{Inserimento nuovo username}\label{uc:modifica-username}
+\newpage
+
+\begin{usecase}{12.1}{Inserimento nuovo username}\label{uc:modifica-username}
   \usecaseactors{Utente autenticato}
   \usecasepre{L'utente è autenticato e intende modificare il proprio username}
   \usecasedesc{L'utente vuole modificare lo username associato al proprio account}
@@ -463,7 +644,7 @@ Di seguito, un diagramma complessivo (in figura \ref{fig:usecase-scenario-princi
   
 \end{usecase}
 
-\begin{usecase}{10.2}{Inserimento nuova email}\label{uc:modifica-email}
+\begin{usecase}{12.2}{Inserimento nuova email}\label{uc:modifica-email}
   \usecaseactors{Utente autenticato}
   \usecasepre{L'utente è autenticato e intende modificare la propria email}
   \usecasedesc{L'utente vuole modificare la mail associata al proprio account}
@@ -476,7 +657,7 @@ Di seguito, un diagramma complessivo (in figura \ref{fig:usecase-scenario-princi
   
 \end{usecase}
 
-\begin{usecase}{10.3}{Inserimento nuova data di nascita}\label{uc:modifica-data-nascita}
+\begin{usecase}{12.3}{Inserimento nuova data di nascita}\label{uc:modifica-data-nascita}
   \usecaseactors{Utente autenticato}
   \usecasepre{L'utente è autenticato e intende modificare la propria data di nascita}
   \usecasedesc{L'utente vuole modificare la data di nascita associata al proprio account}
@@ -489,7 +670,7 @@ Di seguito, un diagramma complessivo (in figura \ref{fig:usecase-scenario-princi
   
 \end{usecase}
 
-\begin{usecase}{11}{Eliminazione account}\label{uc:eliminazione-account}
+\begin{usecase}{13}{Eliminazione account}\label{uc:eliminazione-account}
   \usecaseactors{Utente autenticato}
   \usecasepre{L'utente è autenticato e intende eliminare il proprio account}
   \usecasedesc{L'utente vuole eliminare il proprio account dal sistema}
@@ -503,7 +684,7 @@ Di seguito, un diagramma complessivo (in figura \ref{fig:usecase-scenario-princi
   \end{enumerate}
 \end{usecase}
 
-\begin{usecase}{12}{Logout}\label{uc:logout}
+\begin{usecase}{14}{Logout}\label{uc:logout}
   \usecaseactors{Utente autenticato}
   \usecasepre{L'utente è autenticato e intende uscire dalla propria sessione}
   \usecasedesc{L'utente vuole effettuare il logout dal sistema}
@@ -519,61 +700,142 @@ Di seguito, un diagramma complessivo (in figura \ref{fig:usecase-scenario-princi
 
 \section{Tracciamento dei requisiti}
 
-Da un'attenta analisi dei requisiti e degli use case effettuata sul progetto è stata stilata la tabella che traccia i requisiti in rapporto agli use case.\\
-Sono stati individuati diversi tipi di requisiti e si è quindi fatto utilizzo di un codice identificativo per distinguerli.\\
-Il codice dei requisiti è così strutturato R(F/Q/V)(N/D/O) dove:
-\begin{enumerate}
-	\item[R =] requisito
-    \item[F =] funzionale
-    \item[Q =] qualitativo
-    \item[V =] di vincolo
-    \item[N =] obbligatorio (necessario)
-    \item[D =] desiderabile
-    \item[Z =] opzionale
-\end{enumerate}
-
+In questa sezione sono individuate le corrispondenze tra i requisiti individuati e i casi d'uso, stilando una serie di tabelle di tracciamento 
+(requisiti funzionali a \ref{tab:requisiti-funzionali}, di vincolo a \ref{tab:requisiti-vincolo} e qualitativi a \ref{tab:requisiti-qualitativi}) tra i casi d'uso e le loro fonti, e viceversa.
+Ciascun requisito ha come struttura la seguente:
+\begin{center}
+  \textbf{R[Importanza][Tipo][Codice]}
+\end{center}
+avendo come legenda:
+\begin{itemize}
+\item \textbf{Importanza} comprendente \textbf{O} per obbligatorio e \textbf{D} per desiderabile;
+\item \textbf{Tipo} comprendente \textbf{F} per funzionale, \textbf{Q} per qualitativo e \textbf{V} per di vincolo;
+\item \textbf{Codice} come codice identificativo univoco del requisito.
+\end{itemize}
 Le fonti dei requisiti sono:
 \begin{itemize}
-  \item \textbf{UC} = use case
-  \item \textbf{Interno} = requisito individuato dall'insieme di stagisti e tutor aziendali
+  \item \textbf{UC} = use case;
+  \item \textbf{Interno} = requisito individuato dall'insieme di stagisti e tutor aziendali.
 \end{itemize}
 
-Nelle tabelle \ref{tab:requisiti-funzionali}, \ref{tab:requisiti-qualitativi} e \ref{tab:requisiti-vincolo} sono riassunti i requisiti e il loro tracciamento con gli use case delineati in fase di analisi.
+% Eliminate space between this text and the following table
 
-\newpage
+\renewcommand{\arraystretch}{1.1} % Adjust the spacing inside the cells
 
-\begin{table}%
-\caption{Tabella del tracciamento dei requisiti funzionali}
+\begin{center}
+\captionof{table}{Tabella del tracciamento dei requisiti funzionali}
 \label{tab:requisiti-funzionali}
-\begin{tabularx}{\textwidth}{lXl}
-\hline\hline
-\textbf{Requisito} & \textbf{Descrizione} & \textbf{Use Case}\\
+\begin{tabularx}{\textwidth}{|>{\hsize=0.4\hsize\centering\arraybackslash}X|>{\hsize=2.2\hsize\centering}X|>{\hsize=0.4\hsize\centering\arraybackslash}X|}
 \hline
-RFN-1     & L'interfaccia permette di configurare il tipo di sonde del test & UC1 \\
+\textbf{Requisito} & \textbf{Descrizione} & \textbf{Fonte}\\
+\hline
+RFO-1     & Il sistema permette la registrazione di un nuovo utente & UC1 \\
+\hline
+RFO-1.1   & L'utente deve inserire il proprio username & UC1.1 \\
+\hline
+RFO-1.2   & L'utente deve inserire la propria email & UC1.2 \\
+\hline
+RFO-1.3   & L'utente deve inserire il proprio DID & UC1.3 \\
+\hline
+RFO-1.4   & L'utente deve inserire la propria data di nascita & UC1.4 \\
+\hline
+RFO-2   & Il sistema deve visualizzare un errore se l'email inserita è già esistente & UC2 \\
+\hline
+RFO-3   & Il sistema deve visualizzare un errore se il DID inserito è già esistente & UC3 \\
+\hline
+RFO-4   & Il sistema deve permettere l'autenticazione ad un utente che abbia già effettuato la registrazione & UC4 \\
+\hline
+RFO-4.1   & L'utente deve inserire il proprio DID in fase di autenticazione & UC4.1 \\
+\hline
+RFO-5   & Il sistema deve visualizzare un errore se il DID inserito non è associato ad alcun utente & UC5 \\
+\hline
+RFO-6 & Il sistema deve poter visualizzare la lista dei film presenti nel sistema & UC6 \\
+\hline
+RFO-6.1 & Il sistema deve poter permettere la visualizzazione delle informazioni di un singolo film nella lista & UC6.1 \\
+\hline
+RFO-7 & Il sistema deve poter verificare l'età dell'utente, permettendo allo stesso di essere identificato senza rivelare proprie informazioni non necessarie & UC7 \\
+\hline
+RFO-8 & Il sistema deve poter permettere la prenotazione di un film selezionato dall'utente & UC8 \\
+\hline
+RFO-8.1 & Il sistema deve poter permettere la selezione di una data per la prenotazione & UC8.1 \\
+\hline
+RFO-8.2 & Il sistema deve poter permettere la selezione di un orario per la prenotazione & UC8.2 \\
+\hline
+RFO-8.3 & Il sistema deve poter permettere la selezione di un numero di biglietti per la prenotazione & UC8.3 \\
+\hline
+RFO-8.4 & Il sistema deve poter permettere la selezione di un posto per la prenotazione & UC8.4 \\
+\hline
+RFO-9 & L'utente deve poter visualizzare la lista delle prenotazioni effettuate & UC9 \\
+\hline
+RFO-9.1 & L'utente deve poter visualizzare i dettagli di una singola prenotazione & UC9.1 \\
+\hline
+RFO-9.1.1 & L'utente deve poter visualizzare i dettagli del film della singola prenotazione & UC9.1.1 \\
+\hline
+RFO-9.1.2 & L'utente deve poter visualizzare la data della singola prenotazione & UC9.1.2 \\
+\hline
+RFO-9.1.3 & L'utente deve poter visualizzare l'orario della singola prenotazione & UC9.1.3 \\
+\hline
+RFO-9.1.4 & L'utente deve poter visualizzare la quantità di biglietti della singola prenotazione & UC9.1.4 \\
+\hline
+RFO-9.1.5 & L'utente deve poter visualizzare il numero di posti compresi nella singola prenotazione & UC9.1.5 \\
+\hline
+RFO-10 & Il sistema deve poter permettere la ricerca di un film presente per titolo & UC10 \\
+\hline
+RFO-11 & Il sistema deve poter permettere la recensione dei film presenti & UC11 \\
+\hline
+RFD-12 & Il sistema deve poter permettere la modifica del profilo utente & UC12 \\
+\hline
+RFD-12.1 & L'utente deve poter modificare il proprio username & UC12.1 \\
+\hline
+RFD-12.2 & L'utente deve poter modificare la propria email & UC12.2 \\
+\hline
+RFD-12.3 & L'utente deve poter modificare la propria data di nascita & UC12.3 \\
+\hline
+RFO-13 & Il sistema deve poter permettere l'eliminazione dell'account utente & UC13 \\
+\hline
+RFO-14 & Il sistema deve poter permettere all'utente di uscire dalla propria sessione & UC14 \\
 \hline
 \end{tabularx}
-\end{table}%
+\end{center}
 
-\begin{table}%
-\caption{Tabella del tracciamento dei requisiti qualitativi}
-\label{tab:requisiti-qualitativi}
-\begin{tabularx}{\textwidth}{lXl}
-\hline\hline
-\textbf{Requisito} & \textbf{Descrizione} & \textbf{Use Case}\\
-\hline
-RQD-1    & Le prestazioni del simulatore hardware deve garantire la giusta esecuzione dei test e non la generazione di falsi negativi & - \\
-\hline
-\end{tabularx}
-\end{table}%
+% Remove space between tables
 
-\begin{table}%
-\caption{Tabella del tracciamento dei requisiti di vincolo}
+\begin{center}
+\captionof{table}{Tabella del tracciamento dei requisiti di vincolo}
 \label{tab:requisiti-vincolo}
-\begin{tabularx}{\textwidth}{lXl}
-\hline\hline
-\textbf{Requisito} & \textbf{Descrizione} & \textbf{Use Case}\\
+\begin{tabularx}{\textwidth}{|>{\hsize=0.4\hsize\centering\arraybackslash}X|>{\hsize=2.2\hsize\centering}X|>{\hsize=0.4\hsize\centering\arraybackslash}X|}
 \hline
-RVO-1    & La libreria per l'esecuzione dei test automatici deve essere riutilizzabile & - \\
+\textbf{Requisito} & \textbf{Descrizione} & \textbf{Fonte}\\
+\hline
+RVO-1 & Il frontend deve essere sviluppato utilizzando il linguaggio di programmazione TypeScript e con la libreria React & Interno \\
+\hline
+RVO-2 & Il sistema deve comunicare con lo smart contract di Alessio De Biasi usandolo come libreria per la verifica dell'identità & Interno \\
+\hline
+RVO-3 & Il sistema deve utilizzare un'implementazione di Self Sovereign Identity, utilizzando Decentralized Identifiers, Verifiable Credentials, Verifiable Presentation e Zero Knowledge Proof & Interno \\
+\hline
+RVO-4 & Il sistema deve rispettare le leggi sulla privacy e la protezione dei dati personali, permettendo all'utente di non divulgare alcun dato personale nel riconoscimento della propria identità ed età & Interno \\
+\hline
+RVD-5 & Il sistema deve poter integrare un meccanismo interno di challenge-response in fase di registrazione ed autenticazione, senza dipendere da applicazioni esterne quali Metamask & Interno \\
 \hline
 \end{tabularx}
-\end{table}%
+\end{center}
+  
+\begin{center}
+\captionof{table}{Tabella del tracciamento dei requisiti qualitativi}
+\label{tab:requisiti-qualitativi}
+\begin{tabularx}{\textwidth}{|>{\hsize=0.4\hsize\centering\arraybackslash}X|>{\hsize=2.2\hsize\centering}X|>{\hsize=0.4\hsize\centering\arraybackslash}X|}
+\hline
+\textbf{Requisito} & \textbf{Descrizione} & \textbf{Fonte} \\
+\hline
+RQO-1    & Deve essere redatto un documento che descriva il percorso di studio e una descrizione di massima dell'applicazione realizzata & Interno \\
+\hline
+RQO-2    & Il codice frontend deve essere coperto da test di unità & Interno \\
+\hline
+RQO-3    & Il codice dello smart contract deve essere coperto da test di unità & Interno \\
+\hline
+RQD-4    & L'applicazione web deve essere responsive e visibile da dispositivi mobili & Interno \\
+\hline
+RQD-5    & L'applicazione web deve essere accessibile da tutti i principali browser & Interno \\
+\hline
+\end{tabularx}
+\end{center}

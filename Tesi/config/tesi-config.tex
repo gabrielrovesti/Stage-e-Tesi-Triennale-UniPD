@@ -34,6 +34,9 @@
     bottom=2cm,
 }
 
+\definecolor{oddrowcolor}{RGB}{240, 240, 240}
+\definecolor{evenrowcolor}{RGB}{255, 255, 255}
+
 
 \setlist[itemize]{itemsep=1.5pt,parsep=0pt}
 
@@ -241,8 +244,9 @@
 \newcommand{\usecasedesc}[1]{\textbf{\\Descrizione:} #1. \vspace{4pt}}
 \newcommand{\usecasepost}[1]{\textbf{\\Postcondizioni:} #1. \vspace{4pt}}
 \newcommand{\usecasealt}[1]{\textbf{\\Scenario Alternativo:} #1. \vspace{4pt}}
-\newcommand{\usecasemain}[1]{\textbf{\\Scenario Principale:} #1 \vspace{4pt}}
-\newcommand{\usecaseext}[1]{\textbf{\\Estensioni:} #1 \vspace{4pt}}
+\newcommand{\usecasemain}[1]{\textbf{\\Scenario Principale:} #1 }
+\newcommand{\usecaseext}[1]{\textbf{\\Estensioni:} #1 }
+\newcommand{\usecasegen}[1]{\textbf{\\Generalizzazioni:} #1 }
 
 % Namespace description environment
 \newenvironment{namespacedesc}{
