@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.17)  19 MAY 2023 22:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.17)  20 MAY 2023 09:39
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1540,7 +1540,12 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
  [21]
-Underfull \hbox (badness 10000) in paragraph at lines 39--49
+Underfull \hbox (badness 10000) in paragraph at lines 39--43
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--49
 
  []
 
@@ -1560,86 +1565,93 @@ Underfull \hbox (badness 10000) in paragraph at lines 61--65
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--70
+Underfull \hbox (badness 10000) in paragraph at lines 66--73
 
  []
 
-[22]
-Underfull \hbox (badness 10000) in paragraph at lines 126--129
+
+Underfull \vbox (badness 1789) has occurred while \output is active []
+
+ [22]
+Underfull \hbox (badness 10000) in paragraph at lines 129--134
 
  []
 
 [23]
-Underfull \hbox (badness 10000) in paragraph at lines 140--144
+Underfull \hbox (badness 10000) in paragraph at lines 135--143
 
  []
 
-<immagini/usecase/scenario-principale.jpg, id=481, 1005.7575pt x 933.4875pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--152
+
+ []
+
+<immagini/usecase/scenario-principale.jpg, id=482, 1005.7575pt x 933.4875pt>
 File: immagini/usecase/scenario-principale.jpg Graphic file (type jpg)
 <use immagini/usecase/scenario-principale.jpg>
 Package pdftex.def Info: immagini/usecase/scenario-principale.jpg  used on inpu
-t line 149.
+t line 157.
 (pdftex.def)             Requested size: 435.32422pt x 404.04117pt.
-[24 <./immagini/usecase/scenario-principale.jpg>]
-<immagini/usecase/UC1.jpg, id=489, 892.33376pt x 474.77374pt>
+[24]
+<immagini/usecase/UC1.jpg, id=497, 892.33376pt x 474.77374pt>
 File: immagini/usecase/UC1.jpg Graphic file (type jpg)
 <use immagini/usecase/UC1.jpg>
-Package pdftex.def Info: immagini/usecase/UC1.jpg  used on input line 184.
+Package pdftex.def Info: immagini/usecase/UC1.jpg  used on input line 192.
 (pdftex.def)             Requested size: 435.32422pt x 231.6197pt.
- [25 <./immagini/usecase/UC1.jpg>] [26]
+ [25 <./immagini/usecase/scenario-principale.jpg>] [26 <./immagini/usecase/UC1.
+jpg>]
 <immagini/usecase/UC4.jpg, id=519, 852.18375pt x 241.90375pt>
 File: immagini/usecase/UC4.jpg Graphic file (type jpg)
 <use immagini/usecase/UC4.jpg>
-Package pdftex.def Info: immagini/usecase/UC4.jpg  used on input line 288.
+Package pdftex.def Info: immagini/usecase/UC4.jpg  used on input line 296.
 (pdftex.def)             Requested size: 435.32422pt x 123.57597pt.
- [27 <./immagini/usecase/UC4.jpg>]
-<immagini/usecase/UC6.jpg, id=532, 853.1875pt x 242.9075pt>
+ [27]
+<immagini/usecase/UC6.jpg, id=533, 853.1875pt x 242.9075pt>
 File: immagini/usecase/UC6.jpg Graphic file (type jpg)
 <use immagini/usecase/UC6.jpg>
-Package pdftex.def Info: immagini/usecase/UC6.jpg  used on input line 338.
+Package pdftex.def Info: immagini/usecase/UC6.jpg  used on input line 346.
 (pdftex.def)             Requested size: 435.32422pt x 123.94048pt.
- [28 <./immagini/usecase/UC6.jpg>]
-[29]
-<immagini/usecase/UC8.jpg, id=564, 869.2475pt x 395.4775pt>
+ [28 <./immagini/usecase/UC4.jpg>] [29 <./immagini/usecase/UC6.jpg>]
+<immagini/usecase/UC8.jpg, id=561, 869.2475pt x 395.4775pt>
 File: immagini/usecase/UC8.jpg Graphic file (type jpg)
 <use immagini/usecase/UC8.jpg>
-Package pdftex.def Info: immagini/usecase/UC8.jpg  used on input line 397.
+Package pdftex.def Info: immagini/usecase/UC8.jpg  used on input line 404.
 (pdftex.def)             Requested size: 435.32422pt x 198.05809pt.
- [30 <./immagini/usecase/UC8.jpg>]
-<immagini/usecase/UC9.jpg, id=578, 820.06375pt x 307.1475pt>
+ [30 <./immagini/usecase/UC8.jpg>] [31]
+<immagini/usecase/UC9.jpg, id=588, 820.06375pt x 307.1475pt>
 File: immagini/usecase/UC9.jpg Graphic file (type jpg)
 <use immagini/usecase/UC9.jpg>
-Package pdftex.def Info: immagini/usecase/UC9.jpg  used on input line 471.
+Package pdftex.def Info: immagini/usecase/UC9.jpg  used on input line 478.
 (pdftex.def)             Requested size: 435.32422pt x 163.04985pt.
- [31]
-<immagini/usecase/UC9.1.jpg, id=593, 933.4875pt x 572.1375pt>
+<immagini/usecase/UC9.1.jpg, id=590, 933.4875pt x 572.1375pt>
 File: immagini/usecase/UC9.1.jpg Graphic file (type jpg)
 <use immagini/usecase/UC9.1.jpg>
-Package pdftex.def Info: immagini/usecase/UC9.1.jpg  used on input line 503.
+Package pdftex.def Info: immagini/usecase/UC9.1.jpg  used on input line 508.
 (pdftex.def)             Requested size: 435.32422pt x 266.80943pt.
  [32 <./immagini/usecase/UC9.jpg>]
 [33 <./immagini/usecase/UC9.1.jpg>] [34]
-<immagini/usecase/UC12.jpg, id=634, 829.0975pt x 491.8375pt>
+<immagini/usecase/UC12.jpg, id=635, 829.0975pt x 491.8375pt>
 File: immagini/usecase/UC12.jpg Graphic file (type jpg)
 <use immagini/usecase/UC12.jpg>
-Package pdftex.def Info: immagini/usecase/UC12.jpg  used on input line 629.
+Package pdftex.def Info: immagini/usecase/UC12.jpg  used on input line 634.
 (pdftex.def)             Requested size: 435.32422pt x 258.24106pt.
  [35] [36 <./immagini/usecase/UC12.jpg>]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 727.
+(caption)                particular \caption on input line 732.
 See the caption package documentation for explanation.
 
 [37]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 805.
+(caption)                particular \caption on input line 810.
 See the caption package documentation for explanation.
 
 [38]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 825.
+(caption)                particular \caption on input line 830.
 See the caption package documentation for explanation.
 
 ) (./capitoli/product-prototype.tex [39] [40
@@ -1666,11 +1678,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 118--123
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--128
+Underfull \hbox (badness 10000) in paragraph at lines 124--127
 
  []
 
-<immagini/react.jpeg, id=721, 626.34pt x 613.29124pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--136
+
+ []
+
+<immagini/react.jpeg, id=723, 626.34pt x 613.29124pt>
 File: immagini/react.jpeg Graphic file (type jpg)
 <use immagini/react.jpeg>
 Package pdftex.def Info: immagini/react.jpeg  used on input line 139.
@@ -1678,12 +1695,17 @@ Package pdftex.def Info: immagini/react.jpeg  used on input line 139.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[44]
-Underfull \hbox (badness 10000) in paragraph at lines 145--149
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--152
 
  []
 
-) [45 <./immagini/react.jpeg>] [46
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--152
+
+ []
+
+[44]) [45 <./immagini/react.jpeg>] [46
 
 ] (build/tesi.gls [47
 
@@ -1709,11 +1731,11 @@ Package logreq Info: Writing requests to 'tesi.run.xml'.
 
  ) ) 
 Here is how much of TeX's memory you used:
- 40056 strings out of 476029
- 701943 string characters out of 5794164
+ 40054 strings out of 476029
+ 701923 string characters out of 5794164
  2044340 words of memory out of 5000000
  59179 multiletter control sequences out of 15000+600000
- 544215 words of font info for 207 fonts, out of 8000000 for 9000
+ 544096 words of font info for 206 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  99i,8n,125p,2257b,3112s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/te
@@ -1739,10 +1761,10 @@ fonts/type1/public/cm-super/sfsl1000.pfb><c:/texlive/2022/texmf-dist/fonts/type
 m-super/sfti1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sf
 ti1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb
 ><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on build/tesi.pdf (61 pages, 2946169 bytes).
+Output written on build/tesi.pdf (61 pages, 2947505 bytes).
 PDF statistics:
- 1206 PDF objects out of 1440 (max. 8388607)
- 1056 compressed objects within 11 object streams
+ 1209 PDF objects out of 1440 (max. 8388607)
+ 1059 compressed objects within 11 object streams
  365 named destinations out of 1000 (max. 500000)
  58914 words of extra memory for PDF output out of 61914 (max. 10000000)
 

@@ -37,10 +37,10 @@ Il formato del \textit{DID Document} è come il seguente (codice proveniente da 
 \newpage
 
 Nel codice che dovrà essere utilizzato come libreria,
-ogni documento è caratterizzato da una \textit{capability delegation}, che permette di delegare l'accesso crittografico di un elemento ad un altro utente,
-un servizio, specificando l'identificativo e l'indirizzo di un'entità autorizzata, un metodo di autenticazione, in cui viene stabilito
-il modo in cui implementare il meccanismo di riconoscimento da parte dell'utente (dimostrando di fatto che sia chi dice di essere) e un 
-genitore, composto da un identificativo ed una firma digitale.
+ogni documento è caratterizzato da una \textit{capability delegation}, che permette di stabilire un'entità autorizzata come \textit{issuer} del dato trasmesso ed 
+un metodo di autenticazione, in cui viene stabilito il modo in cui implementare il meccanismo di riconoscimento da parte dell'utente (dimostrando di fatto che sia chi dice di essere) e un 
+genitore, composto da un identificativo ed una firma digitale. \\
+
 L'idea del codice è di creare una cosiddetta `catena di fiducia', la cui idea è associare ad un utente un \glsfirstoccur{\gls{didg}} e dimostrare,
 attraverso un meccanismo di autenticazione definito a priori nel documento tramite firme digitali, la risoluzione dei dati trasmessi, il riconoscimento univoco della sua identità
 e l'accesso ad un determinato contenuto. Infatti, l'utente viene riconosciuto perché i suoi dati sono stati certificati da un ente 
@@ -63,10 +63,13 @@ e la chiamata al contratto in grado di risalire precisamente all'account blockch
 Tale meccanismo viene implementato in fase di registrazione, in cui l'utente possiede un proprio \glsfirstoccur{\gls{didg}} e registra i propri dati anagrafici
 e in fase di accesso, quando l'utente inserita esclusivamente come unico dato per effettuare il login il proprio identificatore, firmato digitalmente nella fase precedente e appartenente in modo univoco a lui. \\
 
-In questa sezione, l'utente viene presentato ad un insieme di film e può scegliere di visualizzarne uno. Alla visualizzazione di un certo
-contenuto oggetto a limiti di età, l'utente viene presentato ad una schermata di verifica, in cui deve dimostrare la sua età.
-Questo passaggio avviene attraverso la creazione di una \glsfirstoccur{\gls{vpg}}, contenente molteplici \glsfirstoccur{\gls{vcg}}, 
-con una associata all'utente (definito \textit{holder} delle credenziali) e le altre associate agli enti verificatori (definiti \textit{issuer}, che sono gli enti che hanno rilasciato le credenziali). \\
+In questa sezione, l'utente viene presentato ad un insieme di film e può scegliere di prenotarne uno. Ciascun film possiede una sua valutazione;
+per potervi accedere e prenotarlo, l'utente dovrà ogni volta certificare la propria età;
+questo passaggio avviene attraverso la creazione di una \glsfirstoccur{\gls{vpg}}, contenente molteplici \glsfirstoccur{\gls{vcg}}, 
+con una associata all'utente (definito \textit{holder} delle credenziali) e le altre associate agli enti verificatori (definiti \textit{issuer}, che sono gli enti che hanno rilasciato le credenziali).
+Questo viene realizzato tramite l'utilizzo del \glsfirstoccur{\gls{didg}} utilizzato in fase di registrazione assieme ad altri dati personali 
+di massima (username, email, data di nascita) e successivo login (utilizzando il solo \glsfirstoccur{\gls{didg}}), verificando che 
+i suoi dati siano corretti ed innescando il meccanismo di verifica correttamente. \\
 
 Normalmente, una \textit{Verifiable Presentation} è infatti composta da:
 \begin{itemize}
@@ -125,7 +128,9 @@ Il seguente è un esempio di una \textit{Verifiable Presentation} con al suo int
 
 Al suo interno, come si vede, sono presenti un insieme di credenziali, contenente un campo di dimostrazione di appartenenza ad uno schema comune,
 a cui sarà associata la catena di fiducia, e degli insiemi di metodi di firma digitale, che dimostrano la validità delle credenziali presenti,
-avendo ciascuna un insieme di \textit{issuer} riconosciuti. \\
+avendo ciascuna un insieme di \textit{issuer} riconosciuti. Ciò dipende dall'utilizzo del campo \textit{proof}, che permette di stabilire precisamente
+l'appartenenza della credenziale ad uno stesso schema fidato, in quanto firmato digitalmente da un ente autorizzato, perché fa parte della stessa prova di firma 
+comune. \\
 
 Il meccanismo è in grado di integrarsi con \glsfirstoccur{\gls{zkpg}}, in cui la prova di appartenenza ad uno schema comune è dimostrata
 senza rivelare informazioni sensibili di alcun tipo, combinando un insieme di \textit{Verifiable Credentials}, verificate tramite 
@@ -133,13 +138,16 @@ un insieme di \textit{issuer} riconosciuti dal sistema della catena di fiducia g
 e la definizione di uno schema comune a cui fare riferimento, che certifica il riconoscimento in quanto firmato a catena da un insieme di \textit{issuer}
 (secondo le specifiche dettagliate in \cite{site:zkpw3c}). \\
 Questo permette all'utente di definire precisamente quali informazioni vuole rivelare e, attraverso l'utilizzo del contratto libreria, 
-dimostrare la propria identità, verificato con questo meccanismo e accedendo al proprio contenuto di interesse. 
+dimostrare la propria identità, verificato con questo meccanismo e accedendo al proprio contenuto di interesse, concludendo la prenotazione 
+presso il sito cinema senza rivelare informazioni sensibili. \\ 
+
+
 
 \section{Casi d'uso}
 
-In questa sezione, saranno presenti un insieme di diagrammi dei casi d'uso, definiti secondo il linguaggio standard \glsfirstoccur{\gls{umlg}},
+In questa sezione, sono presentati i diagrammi dei casi d'uso, definiti secondo il linguaggio standard \glsfirstoccur{\gls{umlg}},
 che descrivono le interazioni tra gli attori, definiti convenzionalmente come utenti del sistema e il sistema stesso. 
-Seguirà una tabella di tracciamento dei requisiti, che mostrerà come i requisiti individuati nella sezione precedente siano soddisfatti
+Segue una tabella di tracciamento dei requisiti, che dettaglia come i requisiti individuati nella sezione precedente siano soddisfatti
 dai casi d'uso definiti in questa sezione, in base all'analisi prevista. \\
 
 Di seguito, un diagramma complessivo (in figura \ref{fig:usecase-scenario-principale}) dei casi d'uso individuati, che verranno descritti nel dettaglio successivamente:
@@ -382,7 +390,6 @@ Di seguito, un diagramma complessivo (in figura \ref{fig:usecase-scenario-princi
     \item Il sistema verifica la disponibilità del film per la data e l'orario selezionati e registra l'avvenuta prenotazione, fornendo un riepilogo all'utente.
   \end{enumerate}
 
-  \newpage
   \usecasegen{Come da figura \ref{fig:uc:prenotazione-film}:}
   \begin{enumerate}
     \item Inserimento data prenotazione (UC8.1);
@@ -471,8 +478,6 @@ Di seguito, un diagramma complessivo (in figura \ref{fig:usecase-scenario-princi
   \includegraphics[width=0.9\columnwidth, alt={Caso d'uso relativo alla visualizzazione della lista di prenotazioni da parte dell'utente}]{immagini/usecase/UC9.jpg}
   \caption{UC9: Visualizzazione lista prenotazioni}\label{fig:uc:lista-prenotazioni}
 \end{figure}
-
-\newpage
 
 \begin{usecase}{9.1}{Visualizzazione singola prenotazione in lista}\label{uc:lista-prenotazioni-singola}
     \usecaseactors{Utente autenticato}
