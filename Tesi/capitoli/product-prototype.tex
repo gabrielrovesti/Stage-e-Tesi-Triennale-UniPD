@@ -53,7 +53,7 @@ e alle sue funzioni.
 
 \subsubsection{Hardhat}
 Hardhat è un ambiente di sviluppo per le blockchain che permette di testare e distribuire smart contract. Esso permette di distribuire facilmente
-in locale una blockchain, per poter testare le funzionalità degli smart contract, e di distribuire gli smart contract su una blockchain pubblica, come ad esempio
+in locale per poter testare le funzionalità degli smart contract, e di distribuirli su una blockchain pubblica, come ad esempio
 Ethereum (in base alle definizioni e guide in \cite{site:hardhat}).
 
 \subsection{Versionamento}
@@ -66,12 +66,12 @@ delle modifiche effettuate e permettendo di tornare ad una versione precedente d
 \subsection{Verifica}
 
 \subsubsection{ESLint}
-ESLint è uno strumento di analisi statica del codice per identificare i modelli problematici trovati nel codice JavaScript.
+ESLint è uno strumento di analisi statica del codice per identificare i modelli problematici trovati nel codice \textit{JavaScript} e \textit{TypeScript}.
 È stato utilizzato per garantire la qualità del codice prodotto, tramite la definizione di regole e la segnalazione di eventuali errori.
 
 \subsubsection{Jest}
-Jest è un framework di test per JavaScript. È stato utilizzato per la definizione di test unitari e di integrazione, per verificare il corretto funzionamento
-delle funzionalità implementate. 
+Jest è un framework di test per \textit{JavaScript} e \textit{TypeScript}. È stato utilizzato per la definizione di test unitari e di integrazione, per verificare il corretto funzionamento
+delle funzionalità implementate tra le pagine ed i componenti.
 
 \section{Configurazione ambiente di sviluppo}\label{sec:configurazione-ambiente}
 
@@ -107,7 +107,7 @@ Nello specifico, la strutturazione prevede:
 \newpage
 \section{Progettazione}\label{sec:progettazione-requisiti}
 
-\subsection{Architettura e design pattern front-end}
+\subsection{Architettura e pattern front-end}
 
 L'utilizzo di React ha permesso di definire una struttura modulare per il front-end, in modo da poter definire facilmente le pagine e le funzionalità.
 Esso è formato da un insieme di componenti, che definiscono un insieme di funzioni riutilizzabili, ognuna delle quali definisce un suo comportamento. 
@@ -115,7 +115,7 @@ La logica dell'applicazione permette di gestire singolarmente le funzionalità d
 esportate e utilizzate come entità indipendenti. In questo modo, si incrementa la modularità del codice e la sua manutenibilità, in quanto ogni componente
 o pagina può essere riutilizzato in modo semplice e può essere modificato senza influenzare il resto del codice. \\
 
-La struttura della pagine pagine è stata definita tramite \textit{.tsx}, un'estensione di \textit{React} che permette di definire la struttura della pagina 
+La struttura della pagine è stata definita tramite \textit{.tsx}, un'estensione di \textit{React} che permette di definire la struttura della pagina 
 sfruttando elementi strutturali \textit{HTML}, la presentazione con \textit{CSS} e il linguaggio di programmazione \textit{TypeScript} per la gestione della logica, dei tipi e delle variabili.
 Tramite l'utilizzo dei cosiddetti \textit{hook}, è stato possibile definire le funzionalità del front-end, in modo da poter gestire le chiamate tra le componenti della 
 pagina in base all'attivazione di specifici eventi in modo dinamico, grazie all'uso degli \textit{state}.
@@ -161,7 +161,7 @@ in cui tutta l'applicazione e le sue componenti vengono racchiuse per poter acce
 Le singole opzioni visibili tra utente autenticato e non autenticato sono invece gestite secondo il pattern \textit{Conditional Rendering}, in grado di differenziare le opzioni
 visibili in base al suo stato.
 
-\subsection{Architettura e design pattern back-end}
+\subsection{Architettura e pattern back-end}
 
 \section{Codifica}\label{sec:codifica-requisiti}
 
