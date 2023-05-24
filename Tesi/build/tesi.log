@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.17)  22 MAY 2023 14:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.17)  24 MAY 2023 14:34
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1352,7 +1352,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--16
 
  []
 
-<immagini/synclab.png, id=221, 154.77824pt x 59.0205pt>
+<immagini/synclab.png, id=289, 154.77824pt x 59.0205pt>
 File: immagini/synclab.png Graphic file (type png)
 <use immagini/synclab.png>
 Package pdftex.def Info: immagini/synclab.png  used on input line 19.
@@ -1371,14 +1371,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--34
 
  []
 
-<immagini/trello.png, id=236, 937.70325pt x 483.60675pt>
+<immagini/trello.png, id=304, 937.70325pt x 483.60675pt>
 File: immagini/trello.png Graphic file (type png)
 <use immagini/trello.png>
 Package pdftex.def Info: immagini/trello.png  used on input line 48.
 (pdftex.def)             Requested size: 483.69687pt x 249.46242pt.
-[2 <./immagini/trello.png>]) (./capitoli/processi.tex [3] [4
-
-]
+[2 <./immagini/trello.png>] [3]) (./capitoli/processi.tex [4]
 Capitolo 2.
 LaTeX Font Info:    Trying to load font information for T1+cmss on input line 5
 .
@@ -1394,7 +1392,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--15
 
  []
 
-<immagini/blocco.png, id=270, 740.7675pt x 290.2845pt>
+<immagini/blocco.png, id=339, 740.7675pt x 290.2845pt>
 File: immagini/blocco.png Graphic file (type png)
 <use immagini/blocco.png>
 Package pdftex.def Info: immagini/blocco.png  used on input line 40.
@@ -1402,7 +1400,9 @@ Package pdftex.def Info: immagini/blocco.png  used on input line 40.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[5] [6 <./immagini/blocco.png>]
+[5
+
+] [6 <./immagini/blocco.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 91--94
 
  []
@@ -1413,7 +1413,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 101--104
  []
 
 [7]
-<immagini/proof-of-work.png, id=294, 464.33475pt x 347.49825pt>
+<immagini/proof-of-work.png, id=364, 464.33475pt x 347.49825pt>
 File: immagini/proof-of-work.png Graphic file (type png)
 <use immagini/proof-of-work.png>
 Package pdftex.def Info: immagini/proof-of-work.png  used on input line 128.
@@ -1453,7 +1453,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 258--263
 
  []
 
-<immagini/smart-contract.png, id=312, 301.125pt x 286.06876pt>
+<immagini/smart-contract.png, id=382, 301.125pt x 286.06876pt>
 File: immagini/smart-contract.png Graphic file (type png)
 <use immagini/smart-contract.png>
 Package pdftex.def Info: immagini/smart-contract.png  used on input line 266.
@@ -1471,7 +1471,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 317--321
 
  []
 
-<immagini/ssi.png, id=331, 410.7345pt x 205.36725pt>
+<immagini/ssi.png, id=400, 410.7345pt x 205.36725pt>
 File: immagini/ssi.png Graphic file (type png)
 <use immagini/ssi.png>
 Package pdftex.def Info: immagini/ssi.png  used on input line 339.
@@ -1487,7 +1487,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 363--368
  []
 
 [14 <./immagini/ssi.png>]
-<immagini/zkp.png, id=350, 519.1395pt x 211.992pt>
+<immagini/zkp.png, id=419, 519.1395pt x 211.992pt>
 File: immagini/zkp.png Graphic file (type png)
 <use immagini/zkp.png>
 Package pdftex.def Info: immagini/zkp.png  used on input line 405.
@@ -1582,13 +1582,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 146--151
 
  []
 
-<immagini/usecase/scenario-principale.jpg, id=482, 1005.7575pt x 933.4875pt>
+<immagini/usecase/scenario-principale.jpg, id=551, 1005.7575pt x 933.4875pt>
 File: immagini/usecase/scenario-principale.jpg Graphic file (type jpg)
 <use immagini/usecase/scenario-principale.jpg>
 Package pdftex.def Info: immagini/usecase/scenario-principale.jpg  used on inpu
 t line 154.
 (pdftex.def)             Requested size: 435.32422pt x 404.04117pt.
-<immagini/usecase/UC1.jpg, id=484, 892.33376pt x 474.77374pt>
+<immagini/usecase/UC1.jpg, id=553, 892.33376pt x 474.77374pt>
 File: immagini/usecase/UC1.jpg Graphic file (type jpg)
 <use immagini/usecase/UC1.jpg>
 Package pdftex.def Info: immagini/usecase/UC1.jpg  used on input line 189.
@@ -1600,7 +1600,197 @@ LaTeX Warning: Text page 25 contains only floats.
 
 Underfull \vbox (badness 2418) has occurred while \output is active []
 
- [25 <./immagini/usecase/scenario-principale.jpg
-!pdfTeX error: pdflatex.exe (file ./immagini/usecase/scenario-principale.jpg): 
-fflush() failed (Invalid argument)
- ==> Fatal error occurred, no output PDF file produced!
+ [25 <./immagini/usecase/scenario-principale.jpg> <./immagini/usecase/UC1.jpg>]
+ [26]
+<immagini/usecase/UC4.jpg, id=589, 852.18375pt x 241.90375pt>
+File: immagini/usecase/UC4.jpg Graphic file (type jpg)
+<use immagini/usecase/UC4.jpg>
+Package pdftex.def Info: immagini/usecase/UC4.jpg  used on input line 293.
+(pdftex.def)             Requested size: 435.32422pt x 123.57597pt.
+
+[27 <./immagini/usecase/UC4.jpg>]
+<immagini/usecase/UC6.jpg, id=603, 853.1875pt x 242.9075pt>
+File: immagini/usecase/UC6.jpg Graphic file (type jpg)
+<use immagini/usecase/UC6.jpg>
+Package pdftex.def Info: immagini/usecase/UC6.jpg  used on input line 343.
+(pdftex.def)             Requested size: 435.32422pt x 123.94048pt.
+ [28 <./immagini/usecase/UC6.jpg>] [29]
+<immagini/usecase/UC8.jpg, id=633, 869.2475pt x 395.4775pt>
+File: immagini/usecase/UC8.jpg Graphic file (type jpg)
+<use immagini/usecase/UC8.jpg>
+Package pdftex.def Info: immagini/usecase/UC8.jpg  used on input line 401.
+(pdftex.def)             Requested size: 435.32422pt x 198.05809pt.
+
+[30 <./immagini/usecase/UC8.jpg>]
+<immagini/usecase/UC9.jpg, id=647, 820.06375pt x 307.1475pt>
+File: immagini/usecase/UC9.jpg Graphic file (type jpg)
+<use immagini/usecase/UC9.jpg>
+Package pdftex.def Info: immagini/usecase/UC9.jpg  used on input line 475.
+(pdftex.def)             Requested size: 435.32422pt x 163.04985pt.
+ [31]
+<immagini/usecase/UC9.1.jpg, id=664, 933.4875pt x 572.1375pt>
+File: immagini/usecase/UC9.1.jpg Graphic file (type jpg)
+<use immagini/usecase/UC9.1.jpg>
+Package pdftex.def Info: immagini/usecase/UC9.1.jpg  used on input line 505.
+(pdftex.def)             Requested size: 435.32422pt x 266.80943pt.
+ [32 <./immagini/usecase/UC9.jpg>]
+[33 <./immagini/usecase/UC9.1.jpg>] [34]
+<immagini/usecase/UC12.jpg, id=705, 829.0975pt x 491.8375pt>
+File: immagini/usecase/UC12.jpg Graphic file (type jpg)
+<use immagini/usecase/UC12.jpg>
+Package pdftex.def Info: immagini/usecase/UC12.jpg  used on input line 631.
+(pdftex.def)             Requested size: 435.32422pt x 258.24106pt.
+ [35] [36 <./immagini/usecase/UC12.jpg>]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 729.
+See the caption package documentation for explanation.
+
+[37]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 807.
+See the caption package documentation for explanation.
+
+[38]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 827.
+See the caption package documentation for explanation.
+
+) (./capitoli/product-prototype.tex [39] [40
+
+]
+Capitolo 5.
+
+Underfull \vbox (badness 4518) has occurred while \output is active []
+
+ [41]
+[42]
+Underfull \hbox (badness 10000) in paragraph at lines 79--85
+
+ []
+
+[43]
+Underfull \hbox (badness 10000) in paragraph at lines 112--117
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--123
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--127
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--136
+
+ []
+
+<immagini/react.jpeg, id=793, 626.34pt x 613.29124pt>
+File: immagini/react.jpeg Graphic file (type jpg)
+<use immagini/react.jpeg>
+Package pdftex.def Info: immagini/react.jpeg  used on input line 139.
+(pdftex.def)             Requested size: 290.22107pt x 284.18552pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--152
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--152
+
+ []
+
+[44]
+Underfull \hbox (badness 10000) in paragraph at lines 165--171
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--178
+
+ []
+
+[45 <./immagini/react.jpeg>]
+Underfull \hbox (badness 10000) in paragraph at lines 179--183
+
+ []
+
+<immagini/ethereum-architecture.png, id=805, 773.89125pt x 472.76625pt>
+File: immagini/ethereum-architecture.png Graphic file (type png)
+<use immagini/ethereum-architecture.png>
+Package pdftex.def Info: immagini/ethereum-architecture.png  used on input line
+ 198.
+(pdftex.def)             Requested size: 290.22107pt x 177.29411pt.
+[46 <./immagini/ethereum-architecture.png>]
+<immagini/architettura.png, id=814, 555.07375pt x 472.76625pt>
+File: immagini/architettura.png Graphic file (type png)
+<use immagini/architettura.png>
+Package pdftex.def Info: immagini/architettura.png  used on input line 207.
+(pdftex.def)             Requested size: 290.22107pt x 247.18884pt.
+ [47 <./immagini/architettura.png>]
+[48]) (./capitoli/product-design.tex [49] [50
+
+]
+Capitolo 6.
+) [51] [52
+
+] (build/tesi.gls [53
+
+
+] [54]) (./appendice/bibliografia.tex [55]
+[56
+
+]) [57
+
+] (build/tesi.aux)
+Package logreq Info: Writing requests to 'tesi.run.xml'.
+\openout1 = `tesi.run.xml'.
+
+ ) ) 
+Here is how much of TeX's memory you used:
+ 40208 strings out of 476029
+ 705287 string characters out of 5794164
+ 2044340 words of memory out of 5000000
+ 59279 multiletter control sequences out of 15000+600000
+ 544380 words of font info for 210 fonts, out of 8000000 for 9000
+ 1143 hyphenation exceptions out of 8191
+ 99i,8n,125p,2257b,3112s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/te
+xlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/202
+2/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb><c:/texlive/2022
+/texmf-dist/fonts/type1/public/cm-super/sfbi1000.pfb><c:/texlive/2022/texmf-dis
+t/fonts/type1/public/cm-super/sfbx0900.pfb><c:/texlive/2022/texmf-dist/fonts/ty
+pe1/public/cm-super/sfbx1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public
+/cm-super/sfbx1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/
+sfbx1440.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1728.p
+fb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb><c:/tex
+live/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><c:/texlive/2022/
+texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb><c:/texlive/2022/texmf-dist
+/fonts/type1/public/cm-super/sfcc1200.pfb><c:/texlive/2022/texmf-dist/fonts/typ
+e1/public/cm-super/sfcc1440.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/
+cm-super/sfrm0500.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/s
+frm0700.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pf
+b><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texl
+ive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2022/t
+exmf-dist/fonts/type1/public/cm-super/sfsi1000.pfb><c:/texlive/2022/texmf-dist/
+fonts/type1/public/cm-super/sfsl1000.pfb><c:/texlive/2022/texmf-dist/fonts/type
+1/public/cm-super/sfsl1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/c
+m-super/sfti1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sf
+ti1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb
+><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on build/tesi.pdf (67 pages, 3004420 bytes).
+PDF statistics:
+ 1427 PDF objects out of 1440 (max. 8388607)
+ 1265 compressed objects within 13 object streams
+ 406 named destinations out of 1000 (max. 500000)
+ 59180 words of extra memory for PDF output out of 61914 (max. 10000000)
+

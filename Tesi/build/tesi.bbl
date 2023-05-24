@@ -44,6 +44,18 @@
       \verb https://www.ethereum.org/
       \endverb
     \endentry
+    \entry{site:etharchitecture}{online}{}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labeltitlesource}{title}
+      \field{title}{Ethereum Architecture}
+      \verb{urlraw}
+      \verb https://www.zastrin.com/courses/ethereum-primer/lessons/1-5
+      \endverb
+      \verb{url}
+      \verb https://www.zastrin.com/courses/ethereum-primer/lessons/1-5
+      \endverb
+    \endentry
     \entry{site:ethers}{online}{}
       \field{sortinit}{E}
       \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}

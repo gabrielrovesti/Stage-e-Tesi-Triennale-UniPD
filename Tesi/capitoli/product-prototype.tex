@@ -162,9 +162,122 @@ Le singole opzioni visibili tra utente autenticato e non autenticato sono invece
 visibili in base al suo stato.
 
 \subsection{Architettura e pattern back-end}
+Lo \textit{smart contract} da me utilizzato come libreria per la gestione delle funzionalità di base è stato realizzato in \textit{Solidity}, un linguaggio di programmazione
+orientato agli oggetti per la definizione di \textit{smart contract} per la piattaforma \textit{Ethereum}. 
+Il contratto è stato creato secondo il pattern \textit{Factory}, che permette di definire un contratto principale, in grado di creare e gestire altri contratti secondari,
+ciascuno responsabile della creazione di un'istanza dei documenti di identità con \glsfirstoccur{\gls{didg}} con relativi attributi ed operazioni associate.
+Inoltre, per permettere ai singoli componenti di interagire con il contratto, è stato utilizzato il pattern \textit{Singleton}, che assicura la creazione dell'unica istanza
+del contratto, in grado di essere utilizzata da tutte le componenti dell'applicazione. \\
+
+L'interazione tra il contratto e la parte frontend si basa sull'interazione nativa e la gestione delle chiamate generate dallo \textit{smart contract} tramite l'utilizzo
+della libreria \textit{Node.js}, in grado di gestire le chiamate asincrone e la comunicazione con il contratto stesso tramite ascolto da parte dei componenti e delle pagine
+presenti nel front-end dell'applicazione, secondo il pattern \textit{Observer}. 
+In questo modo, secondo l'architettura a componenti definita come flusso, è possibile separare completamente la logica di interazione con il contratto dalla logica di visualizzazione,
+utilizzando le funzionalità definite con la creazione di una sola riga di codice ed effettuando le chiamate alle funzionalità previste nella parte di codifica 
+solamente quando necessario, permettendo la relativa sincronizzazione dei componenti che, ascoltando, aggiornano i propri stati secondo le chiamate effettuate. \\
+
+\textit{Hardhat}, in grado di creare una locale di test, agisce quindi da \textit{middleware} tra la parte front-end e la blockchain, permettendo di simulare le chiamate al contratto
+ed ugualmente all'utente di interagire con l'applicazione, senza dover effettivamente effettuare le transazioni sulla rete principale.
+Per semplicità di implementazione, le chiamate sono effettuate sulla rete locale con l'utilizzo di profili di test già esistenti, in grado di effettuare le transazioni (ad ogni chiamata
+corrisponde una spesa in termini di valuta, coperta completamente dai profili di test). \\
+
+Si consideri che l'applicazione simula il funzionamento della blockchain \textit{Ethereum}, per la quale la descrizione di un'architettura viene
+descritta secondo il modello \textit{client-server}, in cui il client è rappresentato dal nodo che effettua la richiesta e il server dal nodo che la riceve e la processa.
+Il modello definito come \textit{Dapp architecture}, descrive complessivamente l'interazione adottata nel progetto, come visibile da figura \ref{fig:eth-architecture}.
+\begin{itemize}
+\item l'utilizzo di una base di dati locale nel quale vengono salvati i dati relativi all'utente, in grado di essere utilizzati per l'autenticazione e per la creazione dei documenti di identità.
+Nel caso del progetto, ogni dato viene salvato in locale all'interno di \textit{localStorage}, successivamente cifrata localmente secondo quanto sarà descritto in sezioni di codifica e 
+poi effettuando le chiamate al contratto per la creazione dei documenti di identità tramite le chiamate del server presente;
+\item l'utilizzo del codice per memorizzare le transazioni, che permette di considerare uno smart contract, compilarlo e inserire il suo \textit{bytecode} in formato binario
+e così poterlo eseguire sulla blockchain. Ogni operazione effettuata presso il contratto comporta l'operazione di \textit{mining} di un blocco e conseguente spesa di valuta.
+Questo viene reso possibile grazie alla \textit{Ethereum Virtual Machine (EVM)}, che fornisce un codice univoco ed immutabile, poi usato dai nodi della rete.
+\end{itemize}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth, alt={Descrizione dell'architettura di Ethereum}]{immagini/ethereum-architecture.png}
+    \caption{Architettura Ethereum} Fonte dell'immagine: \cite{site:etharchitecture}\label{fig:eth-architecture}
+\end{figure}
+
+\newpage
+Complessivamente, l'applicazione avrà graficamente l'architettura visibile in figura \ref{fig:architettura}, dove viene descritta la composizione del contratto 
+e la sua interazione con la parte front-end dell'applicazione, interagendo con la blockchain di test tramite Hardhat.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth, alt={Descrizione dell'architettura dell'applicazione}]{immagini/architettura.png}
+    \caption{Architettura applicazione} \label{fig:architettura}
+\end{figure}
 
 \section{Codifica}\label{sec:codifica-requisiti}
 
-\subsection{Codifica front-end}
+In questa sezione la descrizione della codifica è suddivisa in due parti, una per la parte back-end e una per la parte front-end.
+Si è scelta questa suddivisione per permettere di comprendere subito il contratto libreria utilizzato e le sue funzionalità,
+al fine di poter avere una comprensione più chiara della parte front-end, che si basa su di esso per poter implementare quanto previsto in precedenza.
 
 \subsection{Codifica back-end}
+Il contratto che viene utilizzato come libreria è parte di un'implementazione della tecnologia \glsfirstoccur{\gls{ssig}} descritta opportunamente nella
+sezione \ref{sec:self-sovereign-identity}. Esso offre funzionalità avanzate che consentono la creazione e la gestione di documenti di identità
+unici per ciascun utente, associando a ciascuno un \glsfirstoccur{\gls{didg}} considerato univoco.
+Globalmente, il contratto definisce le seguenti strutture dati:
+\begin{itemize}
+    \item \textbf{Parent}, che rappresenta il collegamento gerarchico tra i documenti di identità rilasciato, associando un identificativo al genitore,
+    un campo di conferma validità ed una firma;
+    \item \textbf{VerificationMethod}, che rappresenta il metodo di verifica associato al documento di identità, comprensivo di un indice, un identificativo,
+    un metodo di verifica di firma digitale, un controllore, un identificativo della blockchain associata e un indirizzo dell'account associato a blockchain da verificare;
+    \item \textbf{Service}, che rappresenta il servizio associato al documento di identità, comprensivo di un identificativo, un tipo di servizio e il suo indirizzo \textit{URL};
+    \item \textbf{DidDocumentData}, che rappresenta i metadati associati ad uno specifico documento di identità, con un suo identificativo, la sua prova di validità, tre mappe per i tipi di autenticazione, deleghe di capacità
+    e servizi dei documenti ad essi associati e un e un \textit{Parent}e. Ciò risulta utile nella verifica della catena di fiducia implementata successivamente;
+    \item \textbf{DidDocument}, che rappresenta il documento di identità associato all'utente e comprende un identificativo, un metodo di verifica, una delegazione di capacità, un servizio e un \textit{Parent};
+    \item \textbf{ResolutionResult}, che rappresenta il risultato della risoluzione del documento di identità, comprendente un identificativo il documento di tipo \textit{DidDocument} associato;
+    \item \textbf{ChainResolutionResult}, un vettore di stringhe che racchiude i risultati della risoluzione dei vari documenti di identità associati.
+\end{itemize}
+
+Il contratto prevede una serie di metodi, ciascuno con un suo scopo, da me successivamente utilizzati nella parte front-end dell'applicazione.
+Ogni metodo descritto è stato utilizzato all'interno di una pagina o componente a seconda dello scopo voluto; globalmente, possiamo specificare:
+\begin{itemize}
+    \item \textbf{createDid}, che permette la creazione di un documento di identità, associando un \textit{DID} univoco all'utente che ha effettuato la transazione e ritorna il \textit{DID} del nuovo utente aggiunto;
+    \item \textbf{createChildTrustedDid}, in grado di creare un nuovo \textit{DID Document} che afferma la delegazione di fiducia dall'utente certificatore (cosiddetto \textit{certification autority}) all'utente con il \textit{DID} specificato.
+    Questo permette di creare la catena degli \textit{issuer} fidati, partendo dalla detta \textit{certification autority} e arrivando fino all'utente che ha effettuato la transazione, verificando i suoi dati in modo sicuro.
+    Esso prende come parametri l'indirizzo dell'utente a cui delegare la fiducia e la firma della \textit{certification autority};
+    \item \textbf{initializeDidDocument}, richiamato dal metodo \textit{createDid}, che inizializza il documento di identità associato all'utente, prendendo come parametri il \textit{DID} dell'utente e il suo indirizzo;
+    \item \textbf{addCapabilityDelegation}, che permette di aggiungere una delega di capacità al documento di identità, prendendo come parametro l'indirizzo dell'utente che autenticherà la transazione;
+    \item \textbf{addService}, che permette di aggiungere un servizio al documento di identità, prendendo come parametri, l'identificativo, il tipo di servizio e il suo indirizzo \textit{URL};
+    \item \textbf{deactivate}, il quale disattiva il \textit{DID Document} associato all'utente che ha effettuato la transazione;
+    \item \textbf{resolve}, che ritorna il \textit{DID Document} associato all'utente secondo un determinato \textit{DID} passato come parametro;
+    \item \textbf{resolveChain}, che ritorna la catena di fiducia percorsa avendo come ultimo nodo l'utente con il \textit{DID} specificato e ritorna la lista di utenti certificatori a cui si è passati per arrivare all'utente finale;
+    \item \textbf{getAuthentication}, per ottenere il metodo di autenticazione associato al documento di identità e provare per certo l'utente abbia acceduto secondo il metodo corretto.
+\end{itemize}
+
+\subsection{Codifica front-end}
+
+\subsubsection{Pagine realizzate}
+
+\paragraph{Home Page}
+
+\paragraph{Registrazione}
+
+\paragraph{Login}
+
+\paragraph{Film}
+
+\paragraph{Prenotazione del film}
+
+\paragraph{Lista delle prenotazioni}
+
+\paragraph{Profilo}
+
+\paragraph{Accesso negato}
+
+\paragraph{Errore 404}
+
+\subsubsection{Componenti realizzati}
+
+\paragraph{Footer}
+
+\paragraph{NavBar}
+
+\paragraph{PrivateRoute}
+
+\paragraph{ScreenReaderHelp}
+
+\paragraph{SearchBox}
