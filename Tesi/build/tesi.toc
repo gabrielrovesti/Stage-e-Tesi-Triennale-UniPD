@@ -57,29 +57,29 @@
 \contentsline {subsection}{\numberline {5.4.2}Architettura e pattern back-end}{45}{subsection.5.4.2}%
 \contentsline {section}{\numberline {5.5}Codifica}{47}{section.5.5}%
 \contentsline {subsection}{\numberline {5.5.1}Codifica back-end}{47}{subsection.5.5.1}%
-\contentsline {subsection}{\numberline {5.5.2}Codifica front-end}{48}{subsection.5.5.2}%
-\contentsline {subsubsection}{\numberline {5.5.2.1}Pagine realizzate}{48}{subsubsection.5.5.2.1}%
-\contentsline {paragraph}{\numberline {5.5.2.1.1}Home Page}{48}{paragraph.5.5.2.1.1}%
-\contentsline {paragraph}{\numberline {5.5.2.1.2}Registrazione}{48}{paragraph.5.5.2.1.2}%
-\contentsline {paragraph}{\numberline {5.5.2.1.3}Login}{48}{paragraph.5.5.2.1.3}%
-\contentsline {paragraph}{\numberline {5.5.2.1.4}Film}{48}{paragraph.5.5.2.1.4}%
-\contentsline {paragraph}{\numberline {5.5.2.1.5}Prenotazione del film}{48}{paragraph.5.5.2.1.5}%
-\contentsline {paragraph}{\numberline {5.5.2.1.6}Lista delle prenotazioni}{48}{paragraph.5.5.2.1.6}%
-\contentsline {paragraph}{\numberline {5.5.2.1.7}Profilo}{48}{paragraph.5.5.2.1.7}%
-\contentsline {paragraph}{\numberline {5.5.2.1.8}Accesso negato}{49}{paragraph.5.5.2.1.8}%
-\contentsline {paragraph}{\numberline {5.5.2.1.9}Errore 404}{49}{paragraph.5.5.2.1.9}%
-\contentsline {subsubsection}{\numberline {5.5.2.2}Componenti realizzati}{49}{subsubsection.5.5.2.2}%
-\contentsline {paragraph}{\numberline {5.5.2.2.1}Footer}{49}{paragraph.5.5.2.2.1}%
-\contentsline {paragraph}{\numberline {5.5.2.2.2}NavBar}{49}{paragraph.5.5.2.2.2}%
-\contentsline {paragraph}{\numberline {5.5.2.2.3}PrivateRoute}{49}{paragraph.5.5.2.2.3}%
-\contentsline {paragraph}{\numberline {5.5.2.2.4}ScreenReaderHelp}{49}{paragraph.5.5.2.2.4}%
-\contentsline {paragraph}{\numberline {5.5.2.2.5}SearchBox}{49}{paragraph.5.5.2.2.5}%
-\contentsline {chapter}{\numberline {6}Verifica e validazione}{51}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Accessibilità}{51}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Test di unità}{51}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Test di integrazione}{51}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Test di sistema}{51}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Test di accettazione}{51}{section.6.5}%
-\contentsline {section}{\numberline {6.6}Test di regressione}{51}{section.6.6}%
-\contentsline {chapter}{Glossario}{53}{section*.30}%
-\contentsline {chapter}{Bibliografia}{57}{chapter*.32}%
+\contentsline {subsection}{\numberline {5.5.2}Codifica front-end}{49}{subsection.5.5.2}%
+\contentsline {subsubsection}{\numberline {5.5.2.1}Pagine realizzate}{49}{subsubsection.5.5.2.1}%
+\contentsline {paragraph}{\numberline {5.5.2.1.1}Home Page}{49}{paragraph.5.5.2.1.1}%
+\contentsline {paragraph}{\numberline {5.5.2.1.2}Registrazione}{50}{paragraph.5.5.2.1.2}%
+\contentsline {paragraph}{\numberline {5.5.2.1.3}Login}{51}{paragraph.5.5.2.1.3}%
+\contentsline {paragraph}{\numberline {5.5.2.1.4}Film}{51}{paragraph.5.5.2.1.4}%
+\contentsline {paragraph}{\numberline {5.5.2.1.5}Prenotazione del film}{54}{paragraph.5.5.2.1.5}%
+\contentsline {paragraph}{\numberline {5.5.2.1.6}Lista delle prenotazioni}{55}{paragraph.5.5.2.1.6}%
+\contentsline {paragraph}{\numberline {5.5.2.1.7}Profilo}{56}{paragraph.5.5.2.1.7}%
+\contentsline {paragraph}{\numberline {5.5.2.1.8}Errore 404}{56}{paragraph.5.5.2.1.8}%
+\contentsline {subsubsection}{\numberline {5.5.2.2}Componenti realizzati}{56}{subsubsection.5.5.2.2}%
+\contentsline {paragraph}{\numberline {5.5.2.2.1}AuthContext}{56}{paragraph.5.5.2.2.1}%
+\contentsline {paragraph}{\numberline {5.5.2.2.2}Footer}{56}{paragraph.5.5.2.2.2}%
+\contentsline {paragraph}{\numberline {5.5.2.2.3}NavBar}{57}{paragraph.5.5.2.2.3}%
+\contentsline {paragraph}{\numberline {5.5.2.2.4}PrivateRoute}{57}{paragraph.5.5.2.2.4}%
+\contentsline {paragraph}{\numberline {5.5.2.2.5}ScreenReaderHelp}{57}{paragraph.5.5.2.2.5}%
+\contentsline {paragraph}{\numberline {5.5.2.2.6}SearchBox}{57}{paragraph.5.5.2.2.6}%
+\contentsline {chapter}{\numberline {6}Verifica e validazione}{59}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Accessibilità}{59}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Test di unità}{59}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Test di integrazione}{59}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Test di sistema}{59}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Test di accettazione}{59}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Test di regressione}{59}{section.6.6}%
+\contentsline {chapter}{Glossario}{61}{section*.45}%
+\contentsline {chapter}{Bibliografia}{65}{chapter*.47}%

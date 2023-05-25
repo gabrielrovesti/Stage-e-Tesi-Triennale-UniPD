@@ -19,6 +19,30 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{site:clsignature2}{online}{}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labeltitlesource}{title}
+      \field{title}{Cl Signature 2019 - Implementazione}
+      \verb{urlraw}
+      \verb https://blog.goodaudience.com/cl-signatures-for-anonymous-credentials-93980f720d99
+      \endverb
+      \verb{url}
+      \verb https://blog.goodaudience.com/cl-signatures-for-anonymous-credentials-93980f720d99
+      \endverb
+    \endentry
+    \entry{site:clsignature}{online}{}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labeltitlesource}{title}
+      \field{title}{Cl Signature 2019 - Riferimenti (pagina 23-30)}
+      \verb{urlraw}
+      \verb https://arxiv.org/pdf/2208.04692.pdf
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/pdf/2208.04692.pdf
+      \endverb
+    \endentry
     \entry{site:didw3c}{online}{}
       \field{sortinit}{D}
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}

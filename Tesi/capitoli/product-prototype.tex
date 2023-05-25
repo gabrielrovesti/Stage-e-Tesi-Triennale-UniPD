@@ -248,36 +248,304 @@ Ogni metodo descritto è stato utilizzato all'interno di una pagina o componente
     \item \textbf{getAuthentication}, per ottenere il metodo di autenticazione associato al documento di identità e provare per certo l'utente abbia acceduto secondo il metodo corretto.
 \end{itemize}
 
+\newpage
 \subsection{Codifica front-end}
 
 \subsubsection{Pagine realizzate}
 
 \paragraph{Home Page}
 
+La pagina definita in codice come \textit{HomePage} è la prima schermata visibile collegandosi al sito, come visibile in figura \ref{fig:pagina-principale}. Essa permette di accedere alle funzionalità principali dell'applicazione.
+In particolare, è possibile accedere alla pagina di registrazione e alla pagina di login attraverso l'utilizzo degli appositi componenti.
+Essa utilizza i componenti principali di navigazione (nello specifico \textit{Footer} e \textit{NavBar} per gestire le opzioni 
+previste per gli utenti a seconda che siano o meno autenticati). L'intera applicazione è infatti racchiusa nel componente \textit{AuthContext}, che permette di gestire lo stato di autenticazione dell'utente.
+Per questa, come le altre pagine, ove non diversamente specificato, è prevista l'esportazione di default come funzione TypeScript, includendo i componenti utili ove previsto e 
+separando la struttura impostata in HTML e la presentazione impostata in CSS da file omonimo.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth, alt={Pagina principale dell'applicazione}]{immagini/frontend/home.png}
+    \caption{Pagina principale}\label{fig:pagina-principale}
+\end{figure}
+
+Si noti l'utilizzo di un'immagine di sfondo senza diritti d'autore, proveniente dal sito \textit{Pexels}, che permette di rendere la pagina più accattivante e di presentare l'idea di un'identità digitale.
+Tutto il sito è stato anche sviluppato per consentire una piena navigazione da mobile, come visibile in figura \ref{fig:pagina-principale-mobile}.
+Presenta infatti un layout responsive, che si adatta alle dimensioni dello schermo del dispositivo utilizzato, avendo come punto di rottura una dimensione 
+di 768 pixel.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.3\textwidth, alt={Pagina principale dell'applicazione vista da cellulare}]{immagini/frontend/home-mobile.png}
+    \caption{Pagina principale vista da cellulare}\label{fig:pagina-principale-mobile}
+\end{figure}
+
+In questa pagina, viene creato il \textit{DID} associato all'utente e la catena di \textit{issuer} di test che permette di verificare la validità del meccanismo di catena di fiducia,
+poi spiegato in dettaglio nella pagina dei film dove viene attivato tale meccanismo. 
+
 \paragraph{Registrazione}
 
+Nella pagina in oggetto, definita in codice come \textit{RegisterView}, l'utente è portato a registrarsi all'applicazione, inserendo i dati richiesti, come visibile in figura \ref{fig:pagina-registrazione}.
+Come descritto dai casi d'uso, vi è un controllo sulla validità dei dati inseriti, verificando se \textit{DID} o la email inserita siano già esistenti.
+Questa è la prima che utilizza lo smart contract libreria direttamente; viene infatti implementato un meccanismo di \textit{challenge-response}
+per verificare che l'utente sia in possesso del \textit{DID} inserito. Tale meccanismo è stato implementato per non dipendere da piattaforme esterne legate a blockchain
+come la nota estensione \textit{MetaMask}, al fine di realizzare un sistema interno che permetta di confermare la validità dei dati dell'utente, sempre usando blockchain,
+sia per il meccanismo di login che registrazione, come richiesto dal proponente. 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth, alt={Pagina principale dell'applicazione}]{immagini/frontend/register.png}
+    \caption{Pagina principale} \label{fig:pagina-registrazione}
+\end{figure}
+
+Si prevede, come visibile in figura \ref{fig:sfida}, che l'utente cifri con la propria chiave privata un numero presentato a schermo;
+in questa fase viene generata una prova di autenticazione in formato \textit{JSON}, che dimostra che l'utente vuole autenticarsi con il suo \textit{DID} avendo firmato il numero
+e chiamando il metodo \textit{getAuthentication} dello smart contract.
+Se la firma digitale corrisponde e il \textit{DID} corrisponde a quello creato inizialmente, allora la verifica passa e la registrazione è confermata con successo, 
+avvisando l'utente con un messaggio apposito. 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.3\textwidth, alt={Meccanismo di sfida per conferma dell'identità dell'utente}]{immagini/frontend/challenge-response.png}
+    \caption{Meccanismo di conferma identità dell'utente} \label{fig:sfida}
+\end{figure}
+
+\newpage
 \paragraph{Login}
+Nella pagina, definita in codice come \textit{LoginView}, è presente un modulo di inserimento dei dati di accesso, come visibile in figura \ref{fig:pagina-login}.
+Al fine di minimizzare i dati raccolti, l'utente dovrà inserire solo il suo \textit{DID}, come previsto dai casi d'uso, 
+in quanto i dati inseriti nella fase di registrazione sono inseriti ed associati all'interno del documento presentato per l'accesso.
+Anche in questo caso, come per la registrazione, è previsto un controllo sulla validità dei dati inseriti, verificando se il \textit{DID} inserito sia già esistente.
+In base alle specifiche dette, è previsto lo stesso meccanismo di \textit{challenge-response} dettagliato nel paragrafo precedente da figura \ref{fig:sfida}
+per verificare la validità dei dati inseriti.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth, alt={Pagina di accesso all'applicazione}]{immagini/frontend/login.png}
+    \caption{Pagina di login}\label{fig:pagina-login}
+\end{figure}
 
 \paragraph{Film}
 
+In questa pagina, definita in codice come \textit{MoviesView} sono presenti i film disponibili all'interno del sistema, come visibile in figura \ref{fig:pagina-film}.
+Come visibile, in questo caso, le opzioni di navigazione previste per l'utente cambiano, mostrando la pagina in oggetto, al link \textit{/Film},
+e le successive pagine di questa sezione, comprendente la pagina di gestione del profilo, di visualizzazione delle prenotazioni presenti e il link per effettuare il logout.
+Per ogni film è presente un'immagine, il titolo, la descrizione, una categoria e una valutazione in termini di età.
+É inoltre presente il componente \textit{SearchBox} che permette di filtrare i film in base al titolo.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth, alt={Pagina contenente i film dell'applicazione}]{immagini/frontend/movies.png}
+    \caption{Pagina dei film dell'applicazione}\label{fig:pagina-film}
+\end{figure}
+
+Ogni film permette la sua prenotazione cliccando sopra l'elemento grafico visualizzato; ogni film soggetto a limite d'età rispetto all'età
+calcolata dalla data di nascita dell'utente, innesca il meccanismo di verifica dell'età su cui si basa l'intera applicazione, visibile graficamente
+in figura \ref{fig:verifica-eta}.
+Come per la pagina home, le immagini presenti sono state prese dal noto portale di film \textit{IMDB}, utilizzate per fini puramente dimostrativi e non commerciali.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth, alt={Finestra visualizzata di verifica dell'età}]{immagini/frontend/age-verification.png}
+    \caption{Finestra di verifica dell'età}\label{fig:verifica-eta}
+\end{figure}
+
+Il meccanismo prevede l'utilizzo di specifici tipi \textit{TypeScript} che permettono di definire il tipo di \textit{Verifiable Credential} e \textit{Verifiable Presentation}
+utilizzati, secondo la definizione presente in sezione \ref{sec:analisi-sistema} coerente agli standard.
+L'implementazione realizzata prevede come primo passaggio una funzione di creazione della \textit{Verifiable Credential} che genera una firma digitale secondo lo standard \textit{CLSignature2019}, con le specifiche seguenti:
+\begin{itemize}
+    \item l'utilizzo della chiave privata dell'\textit{issuer}, usato per firmare la credenziale;
+    \item l'utilizzo della chiave pubblica, usata per verificare la firma;
+    \item la generazione di un numero casuale, usato per creare la prova di correttezza della firma;
+    \item la generazione di un valore di firma, usato per creare la prova di correttezza della firma;
+    \item la generazione di una prova di correttezza della firma, usato per verificare la validità della firma.
+\end{itemize}
+Le specifiche del flusso logico seguito fanno riferimento a in \cite{site:clsignature2}.
+
+La credenziale creata internamente ha il seguente aspetto:
+\begin{lstlisting}[language=json]
+    const vc: VCDIVerifiableCredential = {
+        '@context': ['https://www.w3.org/2018/credentials/v1'],
+        id: 'http://localhost:3000/ageCredentialSchema',
+        type: ['VerifiableCredential'],
+        credentialSchema: { 
+            id: userDid ? userDid : "",
+            type: "VerifiableCredential"
+        },        
+        issuer: {
+          id: issuerDid,
+          publicKey: publicKeyHex 
+        } as IssuerObject,
+        issuanceDate: new Date().toISOString(),
+        credentialSubject: {
+          id: userDid,
+          age: userData.age,
+          type: 'VerifiableCredential',
+        } as CredentialSubject,
+        proof: {
+          type: "CLSignature2019", 
+          issuerData: issuerDid, 
+          attributes: masterSecret,
+          signature: signature,
+          signatureCorrectnessProof: proof.signatureCorrectnessProof,
+        },
+      };
+\end{lstlisting}
+L'utilizzo di questo tipo di firma digitale è usata in soluzioni blockchain di secondo livello, come \textit{Hyperledger Indy}, 
+secondo le specifiche dettagliate in \cite{site:clsignature}. \\
+
+Successivamente, viene utilizzata una funzione che prevede la creazione di una \textit{Verifiable Presentation} che contiene la \textit{Verifiable Credential} creata precedentemente,
+e avendo come parametri al firma e la prova di correttezza generata prima. L'implementazione adatta flessibilmente i campi di verifica presenti per il tipo di firma digitale, 
+,adattando al tipo di firma quanto previsto in \cite{site:vpw3c}, diventando come segue:
+\begin{lstlisting}[language=json]
+    const vp: VerifiablePresentation = {
+        '@context': [
+          "https://www.w3.org/2018/credentials/v1",
+          "https://www.w3.org/2018/credentials/examples/v1"
+        ],
+        type: "VerifiablePresentation",
+        verifiableCredential: [vc],
+        proof: {
+          type: "CLSignature2019",
+          proofValue: {
+            signatureValue: {
+              r: signature.r.toString(16),
+              s: signature.s.toString(16),
+            },
+            signatureCorrectnessProof: signatureCorrectnessProof,
+          },
+        }
+      };
+\end{lstlisting}
+
+Nella successiva fase, viene verificata la firma digitale immessa, utilizzando la chiave pubblica dell'\textit{issuer}, e la prova di correttezza generata precedentemente.
+Tale passaggio prevede l'utilizzo di una funzione che utilizza il calcolo della curva ellittica \textit{secp256k1}, usato all'interno della piattaforma Bitcoin, per verificare all'interno di blockchain
+la validità delle transazioni trasmesse. Questa si compone di vari passaggi:
+\begin{itemize}
+    \item generazione della coppia di chiavi, pubblica e privata, generando un valore casuale intero definito come \textit{nonce};
+    \item generazione di un valore casuale, generando un valore \textit{hash} univoco ai dati trasmessi e una firma, composta da una coppia di valori \textit{r} e \textit{s}, 
+    dati dal valore del punto di firma e del valore \textit{nonce} generato precedentemente;
+    \item verifica della firma, utilizzando la chiave pubblica, la firma fornita e il valore hash per verificare se la coppia di chiavi iniziale è valida.
+\end{itemize}
+
+Come ultimo punto, viene verificata la catena di fiducia della \textit{Verifiable Presentation} creata, utilizzando la chiave pubblica dell'\textit{issuer} e risalendo
+la catena di fiducia fino alla radice, verificando la firma digitale di ogni \textit{issuer} creato nella pagina iniziale del sito attraverso le funzioni del contratto libreria
+\textit{resolve()} e \textit{resolveChain()}.
+
+Graficamente, ciascuno di questi passaggi simula una fase di caricamento, mostrando all'utente un messaggio e un'icona di caricamento, per indicare che il sistema sta eseguendo
+le operazioni fin qui descritte, come visibile in figura \ref{fig:verifica-eta-corso}.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth, alt={Finestra visualizzata di caricamento durante la verifica dell'età}]{immagini/frontend/verification-doing.png}
+    \caption{Esempio di caricamento durante la verifica dell'età}\label{fig:verifica-eta-corso}
+\end{figure}
+
+\newpage 
+
+In ultimo, come descritto inizialmente in questo paragrafo, per l'utente è possibile lasciare recensioni e condividere il film in oggetto.
+La recensione prevede, a fini dimostrativi, l'inserimento di un testo, salvato convenzionalmente all'interno del portale in locale.
+L'inserimento è visibile in figura \ref{fig:recensione-film}.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.3\textwidth, alt={Schermata di inserimento di una recensione per un film}]{immagini/frontend/review.png}
+    \caption{Recensione per un film}\label{fig:recensione-film}
+\end{figure}
+
+Infine, la condivisione di un film genera un link con i metadati dello stesso e comprendente il titolo del film come parametro di riconoscimento.
+Questa azione è visibile in figura \ref{fig:condivisione-film}.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.3\textwidth, alt={Schermata di condivisione di un film}]{immagini/frontend/share.png}
+    \caption{Condivisione di un film}\label{fig:condivisione-film}
+\end{figure}
+
 \paragraph{Prenotazione del film}
+Per questa pagina, accessibile una volta effettuata la verifica dell'età, viene mostrata una finestra per confermare la prenotazione del film selezionato, 
+inserendo il numero di posti desiderati, la data di prenotazione, l'orario e il numero di biglietti tra una serie di opzioni disponibili, come visibile in figura \ref{fig:prenotazione-film}.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth, alt={Schermata della pagina di prenotazione del film selezionato}]{immagini/frontend/movie-booking.png}
+    \caption{Pagina di prenotazione del film selezionato}\label{fig:prenotazione-film}
+\end{figure}
+
+\newpage
+
+Una volta effettuata la prenotazione, viene mostrata una finestra di conferma, come visibile in figura \ref{fig:conferma-prenotazione}.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.3\textwidth, alt={Schermata della pagina di conferma della prenotazione del film selezionato}]{immagini/frontend/movie-booking-done.png}
+    \caption{Finestra di conferma della prenotazione del film selezionato}\label{fig:conferma-prenotazione}
+\end{figure}
 
 \paragraph{Lista delle prenotazioni}
+Per questa pagina, accessibile una volta effettuata la verifica dell'età e la prenotazione del film, viene mostrata una lista delle prenotazioni effettuate dall'utente.
+I dati del film sono salvati e mostrati in seguito uno all'altro, recuperati dal salvataggio in locale all'interno di \textit{localStorage}, come visibile in figura \ref{fig:lista-prenotazioni}.
 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth, alt={Schermata della pagina di lista delle prenotazioni effettuate}]{immagini/frontend/movie-booking-list.png}
+    \caption{Pagina di lista delle prenotazioni effettuate}\label{fig:lista-prenotazioni}
+\end{figure}
+
+\newpage
 \paragraph{Profilo}
 
-\paragraph{Accesso negato}
+All'interno di questa pagina, viene mostrato un riepilogo dei dati dell'utente, come visibile in figura \ref{fig:profilo}.
+Questi dati, salvati sempre in locale all'interno di \textit{localStorage}, sono recuperati e mostrati all'utente, visibili nella pagina.
+Per evitare che i dati dell'utente siano modificati da terzi in modo malevolo, sono state implementate due funzioni di cifratura e decifratura 
+dei dati secondo una funzione \textit{TypeScript} adattando l'algoritmo di cifratura \textit{AES}, utilizzando come chiave di cifratura il \textit{DID} dell'utente.
+In questa funzione, i dati vengono suddivisi in blocchi di dimensioni fisse, effettuando poi un'operazione di \textit{XOR} con un valore casuale e crittografando i dati in successione.
+Questi dati sono crittografati in formato numerico, successivamente decrittati utilizzando la stessa chiave utilizzata in precedenza.
+La pagina offre la possibilità di modificare i propri dati oppure cancellare il proprio profilo, chiamando il metodo dello smart contract \textit{deactivate()}
+che permette di disattivare il \textit{DID} associato all'utente, cancellando poi i suoi dati in modo corretto.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth, alt={Schermata della pagina di riepilogo dei dati dell'utente}]{immagini/frontend/account.png}
+    \caption{Pagina di riepilogo dei dati dell'utente}\label{fig:profilo}
+\end{figure}
 
 \paragraph{Errore 404}
 
+Se l'utente inserisse un URL non valido, verrà mostrata una pagina di errore 404, come visibile in figura \ref{fig:errore-404}.
+Questa contiene un link che reindirizza l'utente alla pagina principale del portale.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth, alt={Schermata della pagina di errore 404}]{immagini/frontend/404.png}
+    \caption{Pagina di errore 404}\label{fig:errore-404}
+\end{figure}
+
 \subsubsection{Componenti realizzati}
 
+\paragraph{AuthContext}
+Il componente è stato realizzato per gestire l'autenticazione in tutta l'applicazione; infatti, viene utilizzato per salvare lo stato dell'utente,
+permettendo di incapsulare la logica di autenticazione e di renderla disponibile in tutti i componenti dell'applicazione.
+In questo modo, è possibile discriminare quali voci di menù visualizzare in base all'utente e se un determinato utente può accedere ad una determinata pagina.
+La navigazione è permessa tramite l'utilizzo della libreria \textit{react-router-dom}, che permette di definire delle rotte e di reindirizzare l'utente in base alla rotta richiesta.
+
 \paragraph{Footer}
+Il componente è stato realizzato per gestire il footer dell'applicazione, che viene visualizzato in tutte le pagine dell'applicazione.
+Il footer contiene un link alla pagina principale del portale e un link alla pagina di aiuto per gli screen reader, permettendo di navigare all'interno del portale in modo più semplice.
 
 \paragraph{NavBar}
+Il componente è stato realizzato per gestire la barra di navigazione dell'applicazione, che viene visualizzata in tutte le pagine dell'applicazione; in questo caso, se l'utente è autenticato vengono
+mostrati i collegamenti relativi alla pagina principale, al login e alla registrazione, altrimenti vengono visualizzate le voci di menù relative alla pagina principale, alla pagina dei film, al profilo e alla lista di prenotazioni effettuate.
 
 \paragraph{PrivateRoute}
 
+Questo componente è stato realizzato per gestire le rotte protette dell'applicazione, che vengono utilizzate per accedere alle pagine di prenotazione e di lista delle prenotazioni.
+Nel caso in cui l'utente non sia autenticato e voglia accedere ad uno dei link protetti, per semplicità a fini applicativi,
+l'utente viene reindirizzato automaticamente alla pagina di login. Di fatto, gestisce con la funzione di autenticazione gli elementi presenti e rileva,
+in base al contesto, se l'utente sia autenticato o meno, reindirizzandolo alla pagina di login o alla pagina richiesta.
+
 \paragraph{ScreenReaderHelp}
 
+Il componente è stato realizzato per gestire la pagina di aiuto per gli screen reader, che viene visualizzata in tutte le pagine dell'applicazione.
+La pagina contiene una descrizione del portale e una lista di scorciatoie da tastiera per navigare all'interno del portale.
+
 \paragraph{SearchBox}
+
+Il componente è stato realizzato per gestire la barra di ricerca dei film, che viene visualizzata nella pagina dei film.
+La ricerca viene effettuata in base al titolo dello stesso e, a fini di estensibilità, è possibile aggiungere altri parametri di ricerca, previsti per il tipo interno \textit{Movie}
+con le caratteristiche descritte nella pagina di visualizzazione dei film presenti.
