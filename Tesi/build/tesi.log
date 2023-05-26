@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.17)  25 MAY 2023 20:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.17)  26 MAY 2023 11:01
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1788,7 +1788,7 @@ line 346.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [51 <./immagini/frontend/login.png> <./immagini/frontend/movies.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 391--393
+Underfull \hbox (badness 10000) in paragraph at lines 401--403
 
  []
 
@@ -1797,54 +1797,62 @@ Underfull \hbox (badness 10000) in paragraph at lines 391--393
 File: immagini/frontend/verification-doing.png Graphic file (type png)
 <use immagini/frontend/verification-doing.png>
 Package pdftex.def Info: immagini/frontend/verification-doing.png  used on inpu
-t line 437.
+t line 447.
 (pdftex.def)             Requested size: 290.22107pt x 114.81743pt.
- [53 <./immagini/frontend/verification-doing.png>]
-<immagini/frontend/review.png, id=959, 355.3275pt x 227.6505pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[53]
+<immagini/frontend/review.png, id=963, 355.3275pt x 227.6505pt>
 File: immagini/frontend/review.png Graphic file (type png)
 <use immagini/frontend/review.png>
-Package pdftex.def Info: immagini/frontend/review.png  used on input line 449.
+Package pdftex.def Info: immagini/frontend/review.png  used on input line 459.
 (pdftex.def)             Requested size: 145.11053pt x 92.97256pt.
-<immagini/frontend/share.png, id=961, 431.211pt x 327.02174pt>
+<immagini/frontend/share.png, id=965, 431.211pt x 327.02174pt>
 File: immagini/frontend/share.png Graphic file (type png)
 <use immagini/frontend/share.png>
-Package pdftex.def Info: immagini/frontend/share.png  used on input line 458.
+Package pdftex.def Info: immagini/frontend/share.png  used on input line 468.
 (pdftex.def)             Requested size: 145.11053pt x 110.0482pt.
-<immagini/frontend/movie-booking.png, id=963, 1139.457pt x 504.6855pt>
+<immagini/frontend/movie-booking.png, id=967, 1139.457pt x 504.6855pt>
 File: immagini/frontend/movie-booking.png Graphic file (type png)
 <use immagini/frontend/movie-booking.png>
 Package pdftex.def Info: immagini/frontend/movie-booking.png  used on input lin
-e 468.
+e 478.
 (pdftex.def)             Requested size: 290.22107pt x 128.54292pt.
- [54 <./immagini/frontend/review.png> <./immagini/frontend/share.png> <./immagi
-ni/frontend/movie-booking.png>]
-<immagini/frontend/movie-booking-done.png, id=972, 280.04625pt x 287.27325pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[54 <./immagini/frontend/verification-doing.png> <./immagini/frontend/review.pn
+g> <./immagini/frontend/share.png>]
+<immagini/frontend/movie-booking-done.png, id=976, 280.04625pt x 287.27325pt>
 File: immagini/frontend/movie-booking-done.png Graphic file (type png)
 <use immagini/frontend/movie-booking-done.png>
 Package pdftex.def Info: immagini/frontend/movie-booking-done.png  used on inpu
-t line 477.
+t line 487.
 (pdftex.def)             Requested size: 145.11053pt x 148.86131pt.
-<immagini/frontend/movie-booking-list.png, id=974, 1141.26375pt x 534.798pt>
+<immagini/frontend/movie-booking-list.png, id=978, 1141.26375pt x 534.798pt>
 File: immagini/frontend/movie-booking-list.png Graphic file (type png)
 <use immagini/frontend/movie-booking-list.png>
 Package pdftex.def Info: immagini/frontend/movie-booking-list.png  used on inpu
-t line 487.
+t line 497.
 (pdftex.def)             Requested size: 290.22107pt x 135.99222pt.
- [55 <./immagini/frontend/movie-booking-done.png> <./immagini/frontend/movie-bo
-oking-list.png>]
-<immagini/frontend/account.png, id=982, 1133.4345pt x 523.9575pt>
+ [55 <./immagini/frontend/movie-booking.png> <./immagini/frontend/movie-booking
+-done.png> <./immagini/frontend/movie-booking-list.png>]
+<immagini/frontend/account.png, id=987, 1133.4345pt x 523.9575pt>
 File: immagini/frontend/account.png Graphic file (type png)
 <use immagini/frontend/account.png>
-Package pdftex.def Info: immagini/frontend/account.png  used on input line 504.
+Package pdftex.def Info: immagini/frontend/account.png  used on input line 514.
 
 (pdftex.def)             Requested size: 290.22107pt x 134.16304pt.
-<immagini/frontend/404.png, id=984, 1128.01425pt x 492.03825pt>
+<immagini/frontend/404.png, id=989, 1128.01425pt x 492.03825pt>
 File: immagini/frontend/404.png Graphic file (type png)
 <use immagini/frontend/404.png>
-Package pdftex.def Info: immagini/frontend/404.png  used on input line 515.
+Package pdftex.def Info: immagini/frontend/404.png  used on input line 525.
 (pdftex.def)             Requested size: 290.22107pt x 126.59052pt.
- [56 <./immagini/frontend/account.png> <./immagini/frontend/404.png>])
-(./capitoli/product-design.tex [57] [58
+ [56 <./immagini/frontend/account.png> <./immagini/frontend/404.png>]) (./capit
+oli/product-design.tex [57] [58
 
 ]
 Capitolo 6.
@@ -1856,7 +1864,17 @@ Capitolo 6.
 ] [62]) (./appendice/bibliografia.tex [63]
 [64
 
-]) [65
+]
+
+Package biblatex Warning: Split bibliography detected.
+(biblatex)                Many simple split bibliography setups with
+(biblatex)                non-overlapping bibliographies benefit from
+(biblatex)                setting 'defernumbers=true'.
+(biblatex)                See the documentation for details.
+(biblatex)                This warning can be suppressed with
+(biblatex)                '\BiblatexSplitbibDefernumbersWarningOff'.
+
+) [65
 
 ] (build/tesi.aux)
 Package logreq Info: Writing requests to 'tesi.run.xml'.
@@ -1864,13 +1882,13 @@ Package logreq Info: Writing requests to 'tesi.run.xml'.
 
  ) ) 
 Here is how much of TeX's memory you used:
- 40482 strings out of 476029
- 711756 string characters out of 5794164
+ 40453 strings out of 476029
+ 710623 string characters out of 5794164
  2044340 words of memory out of 5000000
- 59447 multiletter control sequences out of 15000+600000
+ 59417 multiletter control sequences out of 15000+600000
  545532 words of font info for 220 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 99i,8n,125p,2257b,3611s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,8n,125p,2257b,3166s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/te
 xlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/202
 2/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb><c:/texlive/2022
@@ -1895,10 +1913,10 @@ m-super/sfst0900.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sf
 ti1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb
 ><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb><c:/texli
 ve/2022/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on build/tesi.pdf (75 pages, 13867664 bytes).
+Output written on build/tesi.pdf (75 pages, 13869859 bytes).
 PDF statistics:
- 1617 PDF objects out of 1728 (max. 8388607)
- 1413 compressed objects within 15 object streams
- 477 named destinations out of 1000 (max. 500000)
+ 1626 PDF objects out of 1728 (max. 8388607)
+ 1422 compressed objects within 15 object streams
+ 478 named destinations out of 1000 (max. 500000)
  59767 words of extra memory for PDF output out of 61914 (max. 10000000)
 

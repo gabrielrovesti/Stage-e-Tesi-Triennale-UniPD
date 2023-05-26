@@ -67,9 +67,9 @@
 \contentsline {paragraph}{\numberline {5.5.2.1.6}Lista delle prenotazioni}{55}{paragraph.5.5.2.1.6}%
 \contentsline {paragraph}{\numberline {5.5.2.1.7}Profilo}{56}{paragraph.5.5.2.1.7}%
 \contentsline {paragraph}{\numberline {5.5.2.1.8}Errore 404}{56}{paragraph.5.5.2.1.8}%
-\contentsline {subsubsection}{\numberline {5.5.2.2}Componenti realizzati}{56}{subsubsection.5.5.2.2}%
-\contentsline {paragraph}{\numberline {5.5.2.2.1}AuthContext}{56}{paragraph.5.5.2.2.1}%
-\contentsline {paragraph}{\numberline {5.5.2.2.2}Footer}{56}{paragraph.5.5.2.2.2}%
+\contentsline {subsubsection}{\numberline {5.5.2.2}Componenti realizzati}{57}{subsubsection.5.5.2.2}%
+\contentsline {paragraph}{\numberline {5.5.2.2.1}AuthContext}{57}{paragraph.5.5.2.2.1}%
+\contentsline {paragraph}{\numberline {5.5.2.2.2}Footer}{57}{paragraph.5.5.2.2.2}%
 \contentsline {paragraph}{\numberline {5.5.2.2.3}NavBar}{57}{paragraph.5.5.2.2.3}%
 \contentsline {paragraph}{\numberline {5.5.2.2.4}PrivateRoute}{57}{paragraph.5.5.2.2.4}%
 \contentsline {paragraph}{\numberline {5.5.2.2.5}ScreenReaderHelp}{57}{paragraph.5.5.2.2.5}%

@@ -215,6 +215,18 @@
       \verb https://web3js.readthedocs.io/en/1.0/
       \endverb
     \endentry
+    \entry{site:zkpstandard}{online}{}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labeltitlesource}{title}
+      \field{title}{ZKP Standard}
+      \verb{urlraw}
+      \verb https://docs.zkproof.org/reference.pdf
+      \endverb
+      \verb{url}
+      \verb https://docs.zkproof.org/reference.pdf
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

@@ -259,8 +259,8 @@ La pagina definita in codice come \textit{HomePage} è la prima schermata visibi
 In particolare, è possibile accedere alla pagina di registrazione e alla pagina di login attraverso l'utilizzo degli appositi componenti.
 Essa utilizza i componenti principali di navigazione (nello specifico \textit{Footer} e \textit{NavBar} per gestire le opzioni 
 previste per gli utenti a seconda che siano o meno autenticati). L'intera applicazione è infatti racchiusa nel componente \textit{AuthContext}, che permette di gestire lo stato di autenticazione dell'utente.
-Per questa, come le altre pagine, ove non diversamente specificato, è prevista l'esportazione di default come funzione TypeScript, includendo i componenti utili ove previsto e 
-separando la struttura impostata in HTML e la presentazione impostata in CSS da file omonimo.
+Per questa, come le altre pagine, ove non diversamente specificato, è prevista l'esportazione di default come funzione \textit{TypeScript}, includendo i componenti utili ove previsto e 
+separando la struttura impostata in \textit{HTML} e la presentazione impostata in \textit{CSS} da file omonimo, presente nella stessa cartella della pagina.
 
 \begin{figure}[h]
     \centering
@@ -279,7 +279,7 @@ di 768 pixel.
 \end{figure}
 
 In questa pagina, viene creato il \textit{DID} associato all'utente e la catena di \textit{issuer} di test che permette di verificare la validità del meccanismo di catena di fiducia,
-poi spiegato in dettaglio nella pagina dei film dove viene attivato tale meccanismo. 
+poi spiegato in dettaglio nella pagina dei film dove viene attivato tale meccanismo.
 
 \paragraph{Registrazione}
 
@@ -357,6 +357,16 @@ L'implementazione realizzata prevede come primo passaggio una funzione di creazi
     \item la generazione di un valore di firma, usato per creare la prova di correttezza della firma;
     \item la generazione di una prova di correttezza della firma, usato per verificare la validità della firma.
 \end{itemize}
+Questo tipo di firma viene utilizzato in quanto permette di realizzare il meccanismo \glsfirstoccur{\gls{zkpg}} (basandomi sulla standardizzazione in \cite{site:zkpstandard}); infatti, i dati dell'utente vengono creati ed incapsulati
+all'interno di uno schema di appartenenza comune. La verifica della firma permette di certificare che l'utente sia in possesso di una credenziale valida, senza rivelare
+i dati contenuti al suo interno. 
+Inoltre, secondo il meccanismo di \glsfirstoccur{\gls{ssig}}, occorre fare riferimento a tre soggetti in questo sistema:
+\begin{itemize}
+    \item l'\textit{issuer}, che crea la credenziale e la firma. Questo viene generato in fase di accesso al sito;
+    \item l'\textit{holder}, che possiede la credenziale ed è l'utente in possesso del suo \textit{DID};
+    \item il \textit{verifier}, che verifica la validità della credenziale e ne estrae i dati. In questo caso è il sito stesso del cinema che verifica la validità della credenziale.
+\end{itemize}
+
 Le specifiche del flusso logico seguito fanno riferimento a in \cite{site:clsignature2}.
 
 La credenziale creata internamente ha il seguente aspetto:
@@ -485,7 +495,7 @@ I dati del film sono salvati e mostrati in seguito uno all'altro, recuperati dal
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.6\textwidth, alt={Schermata della pagina di lista delle prenotazioni effettuate}]{immagini/frontend/movie-booking-list.png}
-    \caption{Pagina di lista delle prenotazioni effettuate}\label{fig:lista-prenotazioni}
+    \caption{Pagina della lista delle prenotazioni effettuate}\label{fig:lista-prenotazioni}
 \end{figure}
 
 \newpage
@@ -501,8 +511,8 @@ La pagina offre la possibilità di modificare i propri dati oppure cancellare il
 che permette di disattivare il \textit{DID} associato all'utente, cancellando poi i suoi dati in modo corretto.
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.6\textwidth, alt={Schermata della pagina di riepilogo dei dati dell'utente}]{immagini/frontend/account.png}
-    \caption{Pagina di riepilogo dei dati dell'utente}\label{fig:profilo}
+    \includegraphics[width=0.6\textwidth, alt={Schermata della pagina di gestione del profilo dell'utente}]{immagini/frontend/account.png}
+    \caption{Pagina di gestione dei dati dell'utente}\label{fig:profilo}
 \end{figure}
 
 \paragraph{Errore 404}
@@ -516,6 +526,8 @@ Questa contiene un link che reindirizza l'utente alla pagina principale del port
     \caption{Pagina di errore 404}\label{fig:errore-404}
 \end{figure}
 
+\newpage
+
 \subsubsection{Componenti realizzati}
 
 \paragraph{AuthContext}
@@ -523,14 +535,18 @@ Il componente è stato realizzato per gestire l'autenticazione in tutta l'applic
 permettendo di incapsulare la logica di autenticazione e di renderla disponibile in tutti i componenti dell'applicazione.
 In questo modo, è possibile discriminare quali voci di menù visualizzare in base all'utente e se un determinato utente può accedere ad una determinata pagina.
 La navigazione è permessa tramite l'utilizzo della libreria \textit{react-router-dom}, che permette di definire delle rotte e di reindirizzare l'utente in base alla rotta richiesta.
+Ciascun componente, da qui in avanti, prevede, come descritto per le pagine, l'esportazione di default come funzione \textit{TypeScript}, includendo la sua struttura impostata in \textit{HTML} e la presentazione impostata in \textit{CSS} da file omonimo
+e presente nella stessa cartella del componente.
 
 \paragraph{Footer}
 Il componente è stato realizzato per gestire il footer dell'applicazione, che viene visualizzato in tutte le pagine dell'applicazione.
-Il footer contiene un link alla pagina principale del portale e un link alla pagina di aiuto per gli screen reader, permettendo di navigare all'interno del portale in modo più semplice.
+Il footer contiene i principali dati di navigazione del sito e contiene un link che permette di ritornare su nella pagina corrente, nascosto a livello visivo, ma accessibile tramite \textit{screen reader}.
 
 \paragraph{NavBar}
 Il componente è stato realizzato per gestire la barra di navigazione dell'applicazione, che viene visualizzata in tutte le pagine dell'applicazione; in questo caso, se l'utente è autenticato vengono
 mostrati i collegamenti relativi alla pagina principale, al login e alla registrazione, altrimenti vengono visualizzate le voci di menù relative alla pagina principale, alla pagina dei film, al profilo e alla lista di prenotazioni effettuate.
+Per poter effettuare correttamente il logout e riconoscere l'utente, è stato necessario utilizzare la funzione \textit{useContext} di \textit{React}, utilizzando degli \textit{hooks} personalizzati per
+gestire la presentazione e i propri link di navigazione.
 
 \paragraph{PrivateRoute}
 
@@ -541,11 +557,13 @@ in base al contesto, se l'utente sia autenticato o meno, reindirizzandolo alla p
 
 \paragraph{ScreenReaderHelp}
 
-Il componente è stato realizzato per gestire la pagina di aiuto per gli screen reader, che viene visualizzata in tutte le pagine dell'applicazione.
-La pagina contiene una descrizione del portale e una lista di scorciatoie da tastiera per navigare all'interno del portale.
+Il componente è stato progettato e sviluppato con l'obiettivo di fornire un supporto agli screen reader all'interno dell'applicazione. 
+Esso è stato creato per garantire che i contenuti presenti sulla pagina siano accessibili agli utenti che utilizzano screen reader per navigare e comprendere il contenuto.
+Tramite il suo stile, è possibile nasconderne il contenuto visivamente, assicurandosi che sia accessibile solo agli screen reader.
 
 \paragraph{SearchBox}
 
 Il componente è stato realizzato per gestire la barra di ricerca dei film, che viene visualizzata nella pagina dei film.
 La ricerca viene effettuata in base al titolo dello stesso e, a fini di estensibilità, è possibile aggiungere altri parametri di ricerca, previsti per il tipo interno \textit{Movie}
 con le caratteristiche descritte nella pagina di visualizzazione dei film presenti.
+La funzionalità di ricerca è resa possibile grazie all'uso di un semplice \textit{hook}, che permette di gestire lo stato della ricerca e di aggiornarlo in base al testo inserito dall'utente.
