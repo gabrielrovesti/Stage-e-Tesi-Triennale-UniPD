@@ -533,7 +533,7 @@ Questa contiene un link che reindirizza l'utente alla pagina principale del port
 \paragraph{AuthContext}
 Il componente è stato realizzato per gestire l'autenticazione in tutta l'applicazione; infatti, viene utilizzato per salvare lo stato dell'utente,
 permettendo di incapsulare la logica di autenticazione e di renderla disponibile in tutti i componenti dell'applicazione.
-In questo modo, è possibile discriminare quali voci di menù visualizzare in base all'utente e se un determinato utente può accedere ad una determinata pagina.
+In questo modo, è possibile discriminare quali voci di menu visualizzare in base all'utente e se un determinato utente può accedere ad una determinata pagina.
 La navigazione è permessa tramite l'utilizzo della libreria \textit{react-router-dom}, che permette di definire delle rotte e di reindirizzare l'utente in base alla rotta richiesta.
 Ciascun componente, da qui in avanti, prevede, come descritto per le pagine, l'esportazione di default come funzione \textit{TypeScript}, includendo la sua struttura impostata in \textit{HTML} e la presentazione impostata in \textit{CSS} da file omonimo
 e presente nella stessa cartella del componente.
@@ -544,7 +544,7 @@ Il footer contiene i principali dati di navigazione del sito e contiene un link 
 
 \paragraph{NavBar}
 Il componente è stato realizzato per gestire la barra di navigazione dell'applicazione, che viene visualizzata in tutte le pagine dell'applicazione; in questo caso, se l'utente è autenticato vengono
-mostrati i collegamenti relativi alla pagina principale, al login e alla registrazione, altrimenti vengono visualizzate le voci di menù relative alla pagina principale, alla pagina dei film, al profilo e alla lista di prenotazioni effettuate.
+mostrati i collegamenti relativi alla pagina principale, al login e alla registrazione, altrimenti vengono visualizzate le voci di menu relative alla pagina principale, alla pagina dei film, al profilo e alla lista di prenotazioni effettuate.
 Per poter effettuare correttamente il logout e riconoscere l'utente, è stato necessario utilizzare la funzione \textit{useContext} di \textit{React}, utilizzando degli \textit{hooks} personalizzati per
 gestire la presentazione e i propri link di navigazione.
 
