@@ -35,7 +35,7 @@
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{labeltitlesource}{title}
-      \field{title}{Cl Signature 2019 - Riferimenti (pagina 23-30)}
+      \field{title}{Cl Signature 2019 - Riferimenti (documento e schema di pag. 23)}
       \verb{urlraw}
       \verb https://arxiv.org/pdf/2208.04692.pdf
       \endverb
@@ -115,6 +115,18 @@
       \endverb
       \verb{url}
       \verb https://hardhat.org/
+      \endverb
+    \endentry
+    \entry{site:jest}{online}{}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labeltitlesource}{title}
+      \field{title}{Jest}
+      \verb{urlraw}
+      \verb https://jestjs.io/
+      \endverb
+      \verb{url}
+      \verb https://jestjs.io/
       \endverb
     \endentry
     \entry{site:node}{online}{}
@@ -201,6 +213,42 @@
       \endverb
       \verb{url}
       \verb https://www.w3.org/TR/vc-data-model/#example-a-verifiable-presentation-that-supports-cl-signatures
+      \endverb
+    \endentry
+    \entry{site:wave}{online}{}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labeltitlesource}{title}
+      \field{title}{WAVE Web Accessibility Evaluation Tool}
+      \verb{urlraw}
+      \verb https://wave.webaim.org/
+      \endverb
+      \verb{url}
+      \verb https://wave.webaim.org/
+      \endverb
+    \endentry
+    \entry{site:wcagcontrastchecker}{online}{}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labeltitlesource}{title}
+      \field{title}{WCAG Contrast Checker}
+      \verb{urlraw}
+      \verb https://webaim.org/resources/contrastchecker/
+      \endverb
+      \verb{url}
+      \verb https://webaim.org/resources/contrastchecker/
+      \endverb
+    \endentry
+    \entry{site:wcag}{online}{}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labeltitlesource}{title}
+      \field{title}{Web Content Accessibility Guidelines (WCAG) 2.1}
+      \verb{urlraw}
+      \verb https://www.w3.org/TR/WCAG21/
+      \endverb
+      \verb{url}
+      \verb https://www.w3.org/TR/WCAG21/
       \endverb
     \endentry
     \entry{site:web3}{online}{}

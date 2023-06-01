@@ -249,7 +249,7 @@ Ogni metodo descritto è stato utilizzato all'interno di una pagina o componente
 \end{itemize}
 
 \newpage
-\subsection{Codifica front-end}
+\subsection{Codifica front-end} \label{sec:codifica-front-end}
 
 \subsubsection{Pagine realizzate}
 
@@ -567,3 +567,9 @@ Il componente è stato realizzato per gestire la barra di ricerca dei film, che 
 La ricerca viene effettuata in base al titolo dello stesso e, a fini di estensibilità, è possibile aggiungere altri parametri di ricerca, previsti per il tipo interno \textit{Movie}
 con le caratteristiche descritte nella pagina di visualizzazione dei film presenti.
 La funzionalità di ricerca è resa possibile grazie all'uso di un semplice \textit{hook}, che permette di gestire lo stato della ricerca e di aggiornarlo in base al testo inserito dall'utente.
+
+\paragraph{Notification}
+
+Tale componente è stato realizzato per gestire la visualizzazione degli errori e dei relativi messaggi nelle varie situazioni, come ad esempio la registrazione di un utente già esistente
+oppure la mancata compilazione di campi all'interno dei moduli del sito. In questo caso, viene utilizzato un \textit{hook} per gestire lo stato della notifica e per aggiornarlo in base al messaggio
+di errore ricevuto, mostrando poi il messaggio all'utente.

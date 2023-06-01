@@ -74,5 +74,12 @@
 \contentsline {paragraph}{\numberline {5.5.2.2.4}PrivateRoute}{57}{paragraph.5.5.2.2.4}%
 \contentsline {paragraph}{\numberline {5.5.2.2.5}ScreenReaderHelp}{57}{paragraph.5.5.2.2.5}%
 \contentsline {paragraph}{\numberline {5.5.2.2.6}SearchBox}{57}{paragraph.5.5.2.2.6}%
-\contentsline {chapter}{Glossario}{59}{section*.45}%
-\contentsline {chapter}{Bibliografia}{63}{chapter*.47}%
+\contentsline {paragraph}{\numberline {5.5.2.2.7}Notification}{57}{paragraph.5.5.2.2.7}%
+\contentsline {chapter}{\numberline {6}Verifica e validazione}{59}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Accessibilità}{59}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Test di unità}{60}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Test di integrazione}{60}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Test di regressione}{60}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Test di accettazione}{61}{section.6.5}%
+\contentsline {chapter}{Glossario}{63}{section*.45}%
+\contentsline {chapter}{Bibliografia}{67}{chapter*.47}%
