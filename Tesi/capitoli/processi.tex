@@ -26,7 +26,7 @@ definite nodi, possono accedere e modificare i dati, stabilendo se questi sono v
 I dati delle blockchain sono strutturati in singoli blocchi, ciascuno contenente uno specifico set di informazioni.
 Ogni blocco è collegato al precedente tramite un hash, che ne garantisce l'immutabilità.
 I blocchi sono collegati in una catena, che viene aggiornata ogni volta che viene aggiunto un nuovo blocco.
-Nello specifico, possiamo dettagliare una struttura formata dai seguenti (come descritto in figura \ref{fig:blocco}):
+Nello specifico, possiamo dettagliare una struttura formata dai seguenti (come descritto in figura~\ref{fig:blocco}):
 \begin{itemize}
     \item blocchi di dati;
     \item nonce, un numero generato casualmente alla creazione del blocco;
@@ -38,7 +38,7 @@ Nello specifico, possiamo dettagliare una struttura formata dai seguenti (come d
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.6\textwidth, alt={Blocco all'interno di una blockchain}]{immagini/blocco.png}
-    \caption{Blockchain vista come blocchi a catena} \label{fig:blocco}
+    \caption{Blockchain vista come blocchi a catena}\label{fig:blocco}
 \end{figure}
 
 Per verificare l'integrità dei dati memorizzati, vengono usate delle strutture dati chiamati \textit{Merkle trees}, in cui ogni foglia rappresenta l'hash della transazione.
@@ -112,7 +112,7 @@ Possiamo principalmente distinguere:
 \begin{enumerate}
     \item\textit{{Proof of Work (PoW)}}, basato nella ricerca di un hash (una stringa di numeri e lettere) che soddisfa una determinata condizione, detta target. La condizione target richiede 
     che l'hash del nuovo blocco sia inferiore a un determinato valore. Questo valore viene stabilito in base alla difficoltà della blockchain, che viene regolata automaticamente per mantenere 
-    il tempo medio di creazione di un nuovo blocco costante. Questo processo è descritto visivamente dalla figura \ref{fig:pow}.
+    il tempo medio di creazione di un nuovo blocco costante. Questo processo è descritto visivamente dalla figura~\ref{fig:pow}.
 
     Il primo miner che trova correttamente l'hash del blocco viene ricompensato in criptovaluta per il lavoro svolto.
     Questo meccanismo garantisce sicurezza nella rete, perché rende difficile ad un attaccante malintenzionato
@@ -202,7 +202,7 @@ I token, principalmente, sono caratterizzati dal fatto di essere spendibili e sc
 In questo senso, è possibile citare:
 \begin{itemize}
     \item \textit{token fungibili (fungible tokens)}, che hanno la caratteristica di essere non uniche, divisibili e avere un chiaro valore di mercato, quindi scambiabili sempre con altri beni dello stesso valore;
-    \item \textit{token non fungibili (non fungible tokens - NFT)}, beni fisici o digitali unici e irripetibili. Questi vengono definiti come tali in quanto non possono essere scambiati con altri beni dello stesso valore,
+    \item \textit{token non fungibili (non fungible token/NFT)}, beni fisici o digitali unici e irripetibili. Questi vengono definiti come tali in quanto non possono essere scambiati con altri beni dello stesso valore,
     e per natura delle stesse blockchain, sono considerati immutabili. Infatti, l'utente, disponendo di un wallet, può creare in qualsiasi momento un bene considerabile come unico, pagando una commissione al momento dell'acquisto del bene.
     Questo particolare tipo di token è molto utilizzato per la vendita di beni come opere d'arte, musica, videogiochi, per loro natura non contraffabile dato lo scambio tramite blockchain.
 \end{itemize}
@@ -231,7 +231,7 @@ Esistono diversi tipi di asset da considerare, i quali saranno poi successivamen
     in cui i beni vengono spostati su blockchain a seconda della loro natura. Infatti, come per i token i beni acquistano una fungibilità e possono essere scambiati tra utenti;
     \item{\textit{Asset immobiliari}}, che rappresentano un bene fisico, come un immobile, che può essere tokenizzato e quindi diventare un bene digitale. 
     Questi beni sono fungibili e come tali hanno un valore tendenzialmente fisso, che può essere soggetto a variazioni nel tempo;
-    \item{\textit{beni intangibili(intangibles)}}, come diritti di proprietà intellettuale o i citati beni collezionabili,
+    \item{\textit{beni intangibili (intangibles)}}, come diritti di proprietà intellettuale o i citati beni collezionabili,
     e quindi acquisire grazie alla natura di blockchain un valore unico e verificato.
 \end{itemize} 
 
@@ -253,7 +253,7 @@ Il loro funzionamento segue generalmente questo schema:
     \item la transazione, che può essere un trasferimento di fondi e comprende il codice che definisce il tipo di transazione da eseguire, viene approvata;
     \item questa viene eseguita come blocco all'interno della blockchain.
 \end{enumerate}
-Nella figura \ref{fig:smart-contract} è possibile vedere un esempio di funzionamento. \\
+Nella figura~\ref{fig:smart-contract} è possibile vedere un esempio di funzionamento. \\
 
 Principalmente, questi vengono utilizzati nella piattaforma \glsfirstoccur{\gls{ethereumg}}, dove i contratti vengono scritti in linguaggio di programmazione \textit{Solidity}, 
 che è un linguaggio di programmazione orientato agli oggetti basato su C++,
@@ -264,7 +264,7 @@ e pone un limite al numero di transazioni che possono essere eseguite in un dato
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.6\textwidth, alt={Come funziona uno Smart Contract}]{immagini/smart-contract.png}
-    \caption{Funzionamento di uno Smart Contract} \label{fig:smart-contract}
+    \caption{Funzionamento di uno Smart Contract}\label{fig:smart-contract}
 \end{figure}
 
 \newpage
@@ -272,8 +272,8 @@ e pone un limite al numero di transazioni che possono essere eseguite in un dato
 Possiamo citare alcuni esempi di applicazione di smart contract:
 \begin{itemize}
     \item \textit{smart legal contracts}, legalmente applicabili e richiedono alle parti di soddisfare i loro obblighi contrattuali.
-    Per creare alcuni contratti legali intelligenti, le parti coinvolte lavorano sul codice del contratto intelligente - o lo fanno i loro sviluppatori di software - finché non si accordano sui termini e sulle condizioni dell'accordo;
-    \item \textit{decentralized autonomous organizations (DAO)}, che sono organizzazioni che funzionano in modo decentralizzato e autonomo, senza un leader centrale e open-source, ma regolate da un contratto intelligente.
+    Per creare alcuni contratti legali intelligenti, le parti coinvolte lavorano sul codice del contratto intelligente (o lo fanno i loro sviluppatori di software) finché non si accordano sui termini e sulle condizioni dell'accordo;
+    \item \textit{decentralized autonomous organizations (DAO)}, che sono organizzazioni che funzionano in modo decentralizzato e autonomo, senza un leader centrale e \textit{open-source}, ma regolate da un contratto intelligente.
     All'interno delle blockchain vengono organizzate delle votazioni, che possono essere eseguite da tutti i partecipanti, che possono votare per o contro una proposta,
     oppure garantire il corretto scambio dei beni digitali all'interno della piattaforma, prevenendo possibili vulnerabilità;
     \item \textit{crowdfunding}, che è un metodo di finanziamento di progetti e aziende, in cui le persone possono contribuire con denaro o beni, in cambio di un premio o di un prodotto finale;
@@ -332,12 +332,12 @@ Le parti coinvolte in questo processo sono principalmente tre:
     \item {\textit{verificatore}, detto anche \textit{verifier}}, cioè l'entità che controlla la validità e l'autenticità della credenziale presentata dal titolare.
 \end{enumerate}  
 
-Il processo di riconoscimento è descritto dalla figura \ref{fig:ssi}.
+Il processo di riconoscimento è descritto dalla figura~\ref{fig:ssi}.
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.6\textwidth, alt={Come funziona il riconoscimento nella SSI}]{immagini/ssi.png}
-    \caption{Processo di riconoscimento di una credenziale SSI} \label{fig:ssi}.
+    \caption{Processo di riconoscimento di una credenziale SSI}\label{fig:ssi}.
 \end{figure}
 
 
@@ -351,12 +351,12 @@ In particolare:
 \begin{itemize}
     \item il titolare della credenziale possiede il suo DID firmato dalla propria coppia di chiavi che certifica la sua identità;
     \item l'emittente fornisce delle \glsfirstoccur{\gls{vcg}}, che certificano in modo digitale e crittograficamente protetto la validità del proprio ruolo;
-    \item il verificatore controlla che, tramite ciascun blocco, sia stata rilasciata una VC valida e che il titolare sia il legittimo possessore di quella VC.
+    \item il verificatore controlla che, tramite ciascun blocco, sia stata rilasciata una VC valida e che il titolare sia il legittimo possessore di quella VC.\@
 \end{itemize}  
 
 L'obiettivo principale è quello di fornire un utilizzo delle tecnologie blockchain tali da permettere agli utenti 
 di selezionare quali credenziali mostrare (\textit{selective disclosure o divulgazione selettiva}),
-secondo opportuni standard definiti gradualmente dall'organizzazione internazionale \textit{W3C}, tra cui il citato VC.
+secondo opportuni standard definiti gradualmente dall'organizzazione internazionale \textit{W3C}, tra cui il citato VC.\@
 
 \subsection{Tipi e applicazioni}\label{sec:self-sovereign-identity-tipi-applicazioni}
 
@@ -396,7 +396,7 @@ Occorre definire le parti coinvolte:
     \item \textit{Prover}, ossia l'entità che prova la conoscenza di alcune informazioni riservate. 
     L'informazione segreta è il `testimone' (\textit{witness}) della prova e la presunta conoscenza del testimone da parte del prover stabilisce un insieme di domande a cui può rispondere solo chi conosce l'informazione. 
     \item \textit{Verifier}, ossia l'entità che verifica la correttezza della prova. Lui si occupa di scegliere a caso la sfida (\textit{challenge}) e di verificare la risposta del prover.
-    La risposta del prover permette al verificatore di controllare se il primo ha davvero accesso al testimone. La verifica segue visivamente dalla figura \ref{fig:zkp}. 
+    La risposta del prover permette al verificatore di controllare se il primo ha davvero accesso al testimone. La verifica segue visivamente dalla figura~\ref{fig:zkp}. 
     Per assicurarsi che il prover non stia indovinando alla cieca e non ottenga le risposte corrette per caso, il verificatore sceglie altre domande da porre.
 \end{itemize}
 

@@ -1,5 +1,4 @@
-\cleardoublepage
-\pdfbookmark{\contentsname}{tableofcontents}
+\cleardoublepage\pdfbookmark{\contentsname}{tableofcontents}
 \setcounter{tocdepth}{4}
 \tableofcontents
 %\markboth{\contentsname}{\contentsname}
@@ -11,15 +10,13 @@
     \let\cleardoublepage\relax
 
     % Figures list
-    \phantomsection
-    \pdfbookmark{\listfigurename}{lof}
+    \phantomsection\pdfbookmark{\listfigurename}{lof}
     \listoffigures
 
     \vspace*{8ex}
 
     % Tables list
-    \phantomsection
-    \pdfbookmark{\listtablename}{lot}
+    \phantomsection\pdfbookmark{\listtablename}{lot}
     \listoftables
 
     \vspace*{8ex}

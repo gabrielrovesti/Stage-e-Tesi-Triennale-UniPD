@@ -1,9 +1,11 @@
-\chapter{Verifica e validazione}
-\label{cap:verifica-validazione}
+\chapter{Verifica e validazione}\label{cap:verifica-validazione}
+
+\intro{In questo capitolo verranno riportate le attività di verifica e validazione svolte durante lo sviluppo del progetto,
+dettagliando i test svolti a tutti i livelli, dai test di unità fino alla fase di collaudo ed accettazione del prodotto}
 
 \section{Accessibilità}\label{sec:verifica-validazione-accessibilita}
 
-Al fine di rendere il sito più accessibile possibile, si è deciso di seguire le linee guida fornite da W3C, in particolare quelle riguardanti l'accessibilità dei contenuti web (WCAG) (\cite{site:wcag}), mantenendo il livello AA.
+Al fine di rendere il sito più accessibile possibile, si è deciso di seguire le linee guida fornite da W3C, in particolare quelle riguardanti l'accessibilità dei contenuti web (WCAG) (\cite{site:wcag}), mantenendo il livello AA.\@
 Questo ha comportato l'utilizzo di attributi \textit{alt} per le immagini di contenuto (lasciandolo vuoto per le immagini di presentazione) e l'utilizzo di attributi HTML semantici per la struttura del sito, come 
 ad esempio \textit{<header>}, \textit{<main>}, \textit{<footer>} e \textit{<nav>} per gli elementi di navigazione, \textit{label} negli elementi dei form, \textit{<article>} per i contenuti principali della pagina.
 Si riporta inoltre l'utilizzo degli attributi \textit{lang} per specificare la lingua del contenuto qualora fosse diversa dall'italiano. \\
@@ -21,8 +23,8 @@ Con l'aiuto del sito \textit{WCAG Contrast Checker} (\cite{site:wcagcontrastchec
 In dettaglio, possiamo precisare:
 \begin{itemize}
     \item per i contrasti nella pagina principale e per il testo nelle varie pagine, un colore con sfumatura \textit{\#ffffff80}, correttamente visibile rispetto all'immagine di sfondo;
-    \item per i link di navigazione, un colore con sfumatura \textit{\#ffffff} e per lo stato di hover pari a \textit{\#ff8a8a} con il colore di visitato con sfumatura \textit{\#ffec80}, pienamente contrastanti con la barra di navigazione di colore \textit{141414}, usato qui e nel \textit{footer};
-    \item per tutti i bottoni, il colore \textit{4c78a8}, per lo stato di hover il colore \textit{\#303f9f} e per lo stato di focus il colore \textit{\#3f51b580}, contrastanti con lo sfondo \textit{\#ffffff} delle finestre in cui sono usati.
+    \item per i link di navigazione, un colore con sfumatura \textit{\#ffffff}, per lo stato di hover pari a \textit{\#ff8a8a}, lo stato di visitato con sfumatura \textit{\#ffec80}, tutti pienamente contrastanti con la barra di navigazione di colore \textit{\#141414}, usato qui e nel \textit{footer};
+    \item per tutti i bottoni, il colore \textit{\#4c78a8}, per lo stato di hover il colore \textit{\#303f9f} e per lo stato di focus il colore \textit{\#3f51b580}, contrastanti con lo sfondo \textit{\#ffffff} delle finestre in cui sono usati.
 \end{itemize}
 
 Le convenzioni interne del sito, a livello grafico e di navigazione, sono state mantenute coerenti in tutte le pagine, cercando di rendere l'esperienza di navigazione più fluida possibile.
@@ -32,13 +34,14 @@ A questo proposito, è stato utilizzato un componente apposito per la gestione d
 
 Le immagini utilizzate sono state ottimizzate in dimensione e peso, cercando di mantenere un livello di qualità adeguato, senza appesantire troppo il sito e il suo caricamento.
 Le stesse ancore di navigazione hanno nomi esplicativi e sono state posizionate in modo da essere facilmente raggiungibili e cliccabili dall'apposita barra di navigazione.
-Inoltre, si è deciso di evitare l'uso di tabelle, che possono risultare poco accessibili, e di utilizzare un layout a griglia per la disposizione dei contenuti grafici, offrendo come descritto in sezione \ref{sec:codifica-front-end} dei punti di rottura per ogni pagina per garantire la fruizione del sito anche su dispositivi mobili.
+Inoltre, si è deciso di evitare l'uso di tabelle, che possono risultare poco accessibili, e di utilizzare un layout a griglia per la disposizione dei contenuti grafici, offrendo come descritto in sezione~\ref{subsec:codifica-front-end} dei punti di rottura per ogni pagina per garantire la fruizione del sito anche su dispositivi mobili.
 Un controllo generale di quanto descritto è stato effettuato con l'aiuto dell'estensione \textit{WAVE} (\cite{site:wave}), che ha permesso di individuare alcuni errori e avvisi, corretti e poi modificando di conseguenza,
 portando il sito ad essere conforme alle linee guida definite. 
 
 \section{Test di unità}\label{sec:verifica-validazione-test}
 
-Qui vengono descritti i test di unità effettuati sul codice, utilizzando il framework \textit{Jest} (\cite{site:jest}), che permette di effettuare test di unità su codice JavaScript e TypeScript.
+Qui vengono descritti i test di unità effettuati sul codice, utilizzando il framework \textit{Jest} (\cite{site:jest}), che permette di effettuare test di unità su codice \textit{JavaScript} e \textit{TypeScript}
+e la libreria di test \textit{React Testing Library} (\cite{site:reacttestinglibrary}), che permette di effettuare test di unità su codice React.
 Il codice identificativo dei test è strutturato da:
 \begin{center}
     \textbf{TU[Numero]}
@@ -50,9 +53,61 @@ avendo come legenda:
 \item \textbf{Numero}, come numero identificativo univoco e progressivo del test in questione.
 \end{itemize}
 
+Ciascun test riporta le seguenti sigle:
+\begin{itemize}
+\item \textbf{I}: indica che il test è stato implementato e superato;
+\item \textbf{NI}: indica che il test non è stato implementato.
+\end{itemize}
+
+Per una migliore comprensione del riferimento alle pagine e alle relativi componenti, con denominazione di riferimento in codifica, si rimanda 
+alla sezione~\ref{subsec:codice-front-end}.
+
+\renewcommand{\arraystretch}{1.1} % Adjust the spacing inside the cells
+
+% Redefine column type to center the content
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+\begin{center}
+\captionof{table}{Tabella di tracciamento dei test di unità}\label{tab:test-unita}
+\begin{longtable}{|C{2.0cm}|C{3.0cm}|C{8.0cm}|C{2.0cm}|}
+\hline
+\textbf{ID} & \textbf{Elemento} & \textbf{Descrizione} & \textbf{Stato} \\
+\hline
+TU1 & AuthContext & Verificare se il componente AuthContext gestisce correttamente l'autenticazione, salvando lo stato dell'utente e fornendo la logica di autenticazione. & I \\
+\hline
+TU2 & Footer & Verificare se il componente Footer viene visualizzato e caricato correttamente in tutte le pagine dell'applicazione e se il link di ritorno funziona con screen reader. & I \\
+\hline
+\end{longtable}
+\end{center}
+
+\begin{center}
+\begin{longtable}{|C{2.0cm}|C{3.0cm}|C{8.0cm}|C{2.0cm}|}
+\hline
+\multicolumn{4}{|c|}{\textbf{Continuazione della tabella~\ref{tab:test-unita}}} \\
+\hline
+\textbf{ID} & \textbf{Elemento} & \textbf{Descrizione} & \textbf{Stato} \\
+\hline
+\endhead
+TU3 & NavBar & Verificare se il componente NavBar viene visualizzato e caricato correttamente in tutte le pagine dell'applicazione & I \\
+\hline
+TU4 & NavBar & Verificare se il componente NavBar permette la visualizzazione dei collegamenti corretti in base allo stato di autenticazione dell'utente & I \\
+\hline
+TU5 & PrivateRoute & Verificare se il componente PrivateRoute gestisce correttamente le rotte protette dell'applicazione, reindirizzando l'utente alla pagina di login se non è autenticato & I \\
+\hline
+TU6 & ScreenReaderHelp & Verificare se il componente ScreenReaderHelp è progettato correttamente per fornire supporto agli screen reader, rendendo il contenuto accessibile solo agli screen reader & I \\
+\hline
+TU7 & SearchBox & Verificare se il componente SearchBox gestisce correttamente la barra di ricerca dei film, effettuando la ricerca in base al titolo e aggiornando correttamente lo stato della ricerca & I \\
+\hline
+TU8 & Notification & Verificare se il componente Notification gestisce correttamente la visualizzazione degli errori e dei messaggi di notifica nelle diverse situazioni & I \\
+\hline
+% Aggiungi altre righe come necessario
+\end{longtable}
+\end{center}
+
 \section{Test di integrazione}\label{sec:verifica-validazione-integrazione}
 
 In questa sezione sono introdotti i test di integrazione, cioè la verifica del corretto funzionamento di più componenti del sistema, in grado di interagire tra loro.
+Questo, in particolare, implica l'analisi del comportamento delle pagine e dei componenti grafici da cui sono composte.
 
 Il codice identificativo dei test è strutturato da:
 \begin{center}
@@ -64,6 +119,97 @@ avendo come legenda:
 \item \textbf{TI}, cioè il singolo test di integrazione;
 \item \textbf{Numero}, come numero identificativo univoco e progressivo del test in questione.
 \end{itemize}
+
+\begin{center}
+\captionof{table}{Tabella del tracciamento dei test di integrazione}\label{tab:test-integrazione}
+\begin{longtable}{|C{2.0cm}|C{3.0cm}|C{8.0cm}|C{2.0cm}|}
+\hline
+\textbf{ID} & \textbf{Elemento} & \textbf{Descrizione} & \textbf{Stato} \\
+\hline
+TI1 & HomePage & La pagina viene testata per verificarne il caricamento grafico e delle sue componenti & I \\
+\hline
+TI1 & HomePage & La pagina viene testata per verificare se le funzioni di creazione del DID e della catena degli issuer sono chiamate correttamente all'avvio dell'applicazione & I \\
+\hline
+\end{longtable}
+\end{center}
+
+\clearpage
+
+\begin{center}
+\begin{longtable}{|C{2.0cm}|C{3.0cm}|C{8.0cm}|C{2.0cm}|}
+\hline
+\multicolumn{4}{|c|}{\textbf{Continuazione della tabella~\ref{tab:test-integrazione}}} \\
+\hline
+\textbf{ID} & \textbf{Elemento} & \textbf{Descrizione} & \textbf{Stato} \\
+\hline
+\endhead
+TI3 & RegisterView & La vista di registrazione viene testata per verificare che venga visualizzata correttamente & I \\
+\hline
+TI4 & RegisterView & La vista di registrazione viene testata per verificare che venga gestito correttamente il processo di registrazione tramite il meccanismo challenge-response & I \\
+\hline
+TI5 & RegisterView & La vista di registrazione viene testata per verificare che vengano gestiti correttamente i controlli di validazione dei campi e le notifiche di successo o di errore in caso di email o DID già registrati & I \\
+\hline
+TI6 & LoginView & La vista di login viene testata per verificare che venga visualizzata correttamente & I \\
+\hline
+TI7 & LoginView & La vista di login viene testata per verificare che venga gestito correttamente il processo di accesso tramite DID & I \\
+\hline
+TI8 & LoginView & La vista di login viene testata per verificare che vengano gestiti correttamente i controlli di validazione dei campi e le notifiche di errore in caso di DID non esistente & I \\
+\hline
+TI9 & LoginView & La vista di login viene testata per verificare che venga aperta correttamente la finestra modale di verifica dell'identità in caso di DID esistente & I \\
+\hline
+TI10 & LoginView & La vista di login viene testata per verificare che venga gestito correttamente il processo di verifica dell'identità & I \\
+\hline
+TI11 & MoviesView & La vista dei film viene testata per verificarne il caricamento grafico e delle sue componenti & I \\
+\hline
+TI12 & MoviesView & La vista dei film viene testata per verificare l'apertura di un film e la visualizzazione dei dettagli corretti & I \\
+\hline
+TI13 & MoviesView & La vista dei film viene testata per verificare l'apertura della finestra di verifica dell'età e il corretto funzionamento del processo di verifica & I \\
+\hline
+TI14 & MoviesView & La vista dei film viene testata per verificare la possibilità di condividere un film e l'apertura della finestra di condivisione & I \\
+\hline
+TI15 & MoviesView & La vista dei film viene testata per verificare la visualizzazione di un messaggio quando non ci sono film disponibili & I \\
+\hline
+\end{longtable}
+\end{center}
+
+\clearpage
+
+\begin{center}
+\begin{longtable}{|C{2.0cm}|C{3.0cm}|C{8.0cm}|C{2.0cm}|}
+\hline
+\multicolumn{4}{|c|}{\textbf{Continuazione della tabella~\ref{tab:test-integrazione}}} \\
+\hline
+\textbf{ID} & \textbf{Elemento} & \textbf{Descrizione} & \textbf{Stato} \\
+\hline
+\endhead
+TI16 & MoviesView & La vista dei film viene testata per verificare la visualizzazione del profilo utente se autenticato & I \\
+\hline
+TI17 & MovieBookingView & La vista di prenotazione dei film viene testata per verificare che venga visualizzata correttamente & I \\
+\hline
+TI18 & MovieBookingView & La vista di prenotazione dei film viene testata per verificare che vengano inizializzati correttamente gli stati di prenotazione & I \\
+\hline
+TI19 & MovieBookingView & La vista di prenotazione dei film viene testata per verificare che venga gestito correttamente il processo di prenotazione & I \\
+\hline
+TI20 & MovieBookingView & La vista di prenotazione dei film viene testata per verificare che venga gestito il processo di visualizzazione del riepilogo della prenotazione in modo corretto & I \\
+\hline
+TI21 & MovieBookingView & La vista viene testata per verificare che venga gestito correttamente il processo di chiusura del modale di conferma prenotazione & I \\
+\hline
+TI22 & MovieBookingView & La vista viene testata per verificare che venga gestito correttamente il reindirizzamento alla pagina delle prenotazioni & I \\
+\hline
+TI23 & MovieBookingView & La vista viene testata per verificare che venga gestito il processo di validazione della prenotazione & I \\
+\hline
+TI24 & BookingListView & La vista di visualizzazione delle prenotazioni viene testata per verificare che venga renderizzata correttamente & I \\
+\hline
+TI25 & BookingListView & La vista di visualizzazione delle prenotazioni viene testata per verificare che venga mostrato il messaggio corretto quando non ci sono prenotazioni & I \\
+\hline
+TI26 & BookingListView & La vista di visualizzazione delle prenotazioni viene testata per verificare che vengano mostrate correttamente le prenotazioni presenti & I \\
+\hline
+TI27 & ErrorView & La vista di errore viene testata per verificare che venga renderizzata correttamente, riportando l'utente alla pagina principale & I \\
+\hline
+\end{longtable}
+\end{center}
+
+\clearpage
 
 \section{Test di regressione}\label{sec:verifica-validazione-regressione}
 
@@ -81,18 +227,42 @@ avendo come legenda:
 \item \textbf{Numero}, come numero identificativo univoco e progressivo del test in questione.
 \end{itemize}
 
-\section{Test di accettazione}\label{sec:verifica-validazione-accettazione}
-
-Nella sezione sono introdotti i test di accettazione, cioè la verifica del corretto funzionamento del sistema, in grado di soddisfare i requisiti definiti nel capitolo \ref{cap:analisi-requisiti}.
-
-Il codice identificativo dei test è strutturato da:
 \begin{center}
-    \textbf{TA[Numero]}
-  \end{center}
-\textbf{}
-avendo come legenda:
-\begin{itemize}
-\item \textbf{TI}, cioè il singolo test di accettazione;
-\item \textbf{Numero}, come numero identificativo univoco e progressivo del test in questione.
-\end{itemize}
+\captionof{table}{Tabella del tracciamento dei test di regressione}\label{tab:test-regressione}
+\begin{longtable}{|C{2.0cm}|C{3.0cm}|C{8.0cm}|C{2.0cm}|}
+\hline
+\textbf{ID} & \textbf{Elemento} & \textbf{Descrizione} & \textbf{Stato} \\
+\hline
+TR1 & Applicazione & Si testa che l'applicazione venga correttamente caricata e visualizzata nelle sue funzionalità sul browser Google Chrome & I \\
+\hline
+TR2 & Applicazione & Si testa che l'applicazione venga correttamente caricata e visualizzata nelle sue funzionalità sul browser Microsoft Edge & I \\
+\hline
+TR3 & Applicazione & Si testa che l'applicazione venga correttamente caricata e visualizzata nelle sue funzionalità sul browser Safari & I \\
+\hline
+TR4 & Applicazione & Si testa che l'applicazione venga correttamente caricata e visualizzata nelle sue funzionalità sul browser Mozilla Firefox & I \\
+\hline
+TR5 & Applicazione & Si testa che l'applicazione venga correttamente caricata e visualizzata nelle sue funzionalità sul browser Opera & I \\
+\hline
+TR6 & MovieBookingView & Si verifica che le modifiche apportate alla vista di prenotazione non abbiano causato malfunzionamenti & I \\
+\hline
+TR7 & MoviesView & Si verifica che eventuali modifiche apportate al meccanismo di verifica della pagina non causino errori o malfunzionamenti compromettendo l'intera logica applicativa & I \\
+\hline
+TR8 & Applicazione & Si verifica che se vengono implementate modifiche al sistema di gestione di dati, l'applicazione sia comunque in grado di recuperarli correttamente & I \\
+\hline
+\end{longtable}
+\end{center}
 
+\clearpage
+
+\section{Accettazione e collaudo}\label{sec:verifica-validazione-accettazione}
+
+Settimanalmente, al fine di conoscere lo stato di avanzamento del prodotto, veniva organizzato un incontro interno con
+il proponente e gli altri stagisti per discutere i progressi raggiunti e discutere eventuali dubbi o problemi riscontrati ad alto livello.
+Ciò ha permesso di monitorare il lavoro e di conoscere lo stato dell'implementazione realizzata, garantendo così una maggiore
+trasparenza e una migliore comunicazione tra le parti, permettendo di avere un feedback indicativo sulle attività da svolgere.
+Alcuni chiarimenti si sono avuti con incontri autonomi con lo stagista magistrale Alessio De Biasi, di cui utilizzo il contratto come codice libreria 
+per il funzionamento dell'applicazione. \\
+
+Durante l'ultima settimana di stage, il proponente ha richiesto di effettuare un incontro per discutere del prodotto realizzato e per
+mostrare l'applicazione completa e funzionante, dimostrando il raggiungimento degli obiettivi prefissati e delle funzionalità richieste, 
+partendo dalle pagine ad alto livello e discutendo dei test e dei tipi di firma digitale e gli standard da me implementati. 

@@ -5,7 +5,7 @@
 \contentsline {section}{\numberline {1.2}Way of Working e strumenti}{2}{section.1.2}%
 \contentsline {section}{\numberline {1.3}Organizzazione del testo}{3}{section.1.3}%
 \contentsline {subsection}{\numberline {1.3.1}Struttura del documento}{3}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}Convenzioni tipografiche}{3}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.2}Convenzioni tipografiche}{4}{subsection.1.3.2}%
 \contentsline {chapter}{\numberline {2}Tecnologie di interesse}{5}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Blockchain: concetti base}{5}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Introduzione}{5}{subsection.2.1.1}%
@@ -42,7 +42,7 @@
 \contentsline {subsubsection}{\numberline {5.2.2.1}Solidity}{42}{subsubsection.5.2.2.1}%
 \contentsline {subsection}{\numberline {5.2.3}Librerie di terze parti}{42}{subsection.5.2.3}%
 \contentsline {subsubsection}{\numberline {5.2.3.1}Node.js}{42}{subsubsection.5.2.3.1}%
-\contentsline {subsubsection}{\numberline {5.2.3.2}web3.js}{42}{subsubsection.5.2.3.2}%
+\contentsline {subsubsection}{\numberline {5.2.3.2}Web3.js}{42}{subsubsection.5.2.3.2}%
 \contentsline {subsubsection}{\numberline {5.2.3.3}Hardhat}{42}{subsubsection.5.2.3.3}%
 \contentsline {subsection}{\numberline {5.2.4}Versionamento}{42}{subsection.5.2.4}%
 \contentsline {subsubsection}{\numberline {5.2.4.1}GitHub}{42}{subsubsection.5.2.4.1}%
@@ -51,7 +51,7 @@
 \contentsline {subsubsection}{\numberline {5.2.5.2}Jest}{43}{subsubsection.5.2.5.2}%
 \contentsline {section}{\numberline {5.3}Configurazione ambiente di sviluppo}{43}{section.5.3}%
 \contentsline {subsection}{\numberline {5.3.1}Smart Contract}{43}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Frontend}{43}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.2}Front-end}{43}{subsection.5.3.2}%
 \contentsline {section}{\numberline {5.4}Progettazione}{44}{section.5.4}%
 \contentsline {subsection}{\numberline {5.4.1}Architettura e pattern front-end}{44}{subsection.5.4.1}%
 \contentsline {subsection}{\numberline {5.4.2}Architettura e pattern back-end}{45}{subsection.5.4.2}%
@@ -78,8 +78,12 @@
 \contentsline {chapter}{\numberline {6}Verifica e validazione}{59}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Accessibilità}{59}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Test di unità}{60}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Test di integrazione}{60}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Test di regressione}{60}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Test di accettazione}{61}{section.6.5}%
-\contentsline {chapter}{Glossario}{63}{section*.45}%
-\contentsline {chapter}{Bibliografia}{67}{chapter*.47}%
+\contentsline {section}{\numberline {6.3}Test di integrazione}{61}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Test di regressione}{64}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Accettazione e collaudo}{65}{section.6.5}%
+\contentsline {chapter}{\numberline {7}Conclusioni}{67}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Obiettivi raggiunti e consuntivo finale}{67}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Conoscenze acquisite e analisi del lavoro svolto}{67}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Valutazione personale}{67}{section.7.3}%
+\contentsline {chapter}{Glossario}{69}{section*.45}%
+\contentsline {chapter}{Bibliografia}{73}{chapter*.47}%

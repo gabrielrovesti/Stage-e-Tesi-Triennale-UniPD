@@ -1,10 +1,9 @@
-\chapter{Analisi dei requisiti}
-\label{cap:analisi-requisiti}
+\chapter{Analisi dei requisiti}\label{cap:analisi-requisiti}
 
 \intro{In questa sezione vengono analizzati i requisiti del progetto e ne viene data un'analisi ad alto livello, combinando una visione concettuale con una visione pratica ed implementativa. 
 Vengono inoltre descritti i casi d'uso e i requisiti individuati, con l'obiettivo di fornire una visione generale del sistema e delle sue funzionalità, in modo semplice e comprensibile.}
 
-\section{Descrizione ed analisi del sistema} \label{sec:analisi-sistema}
+\section{Descrizione ed analisi del sistema}\label{sec:analisi-sistema}
 L'obiettivo del progetto è la creazione di una piattaforma per la visualizzazione di contenuti multimediali, in questo caso dei film,
 tramite l'utilizzo degli standard \glsfirstoccur{\gls{w3cg}} \glsfirstoccur{\gls{didg}} e \glsfirstoccur{\gls{ssig}} per la verifica sicura dell'identità dell'utente e per la 
 visualizzazione di tutti i contenuti della piattaforma, certificando in modo sicuro la propria identità senza diffondere dati personali tramite 
@@ -16,7 +15,7 @@ Questo contratto permette la gestione dell'identità digitale tramite la creazio
 chiamato \glsfirstoccur{\gls{didg}}, composto da una stringa alfanumerica che identifica l'utente, e un \textit{DID Document}, che contiene le informazioni dell'utente a lui associato.
 Normalmente, la sua creazione avviene tramite un file \textit{json}, composto dallo standard di riferimento, l'identificativo ed un campo \textit{controller},
 che ha la capacità di fare dei cambiamenti al documento stesso e certifica la firma digitale del documento, sulla base del metodo usato per la sua creazione.
-Il formato del \textit{DID Document} è come il seguente (codice proveniente da \cite{site:didw3c}):
+Il formato del \textit{DID Document} è come il seguente (codice proveniente da~\cite{site:didw3c}):
 
 \begin{lstlisting}[language=json]
     {
@@ -89,7 +88,7 @@ Invece, una \textit{Verifiable Credential} è composta da:
     \item una \textit{proof}, che è la prova di autenticità delle credenziali.
 \end{itemize}
 
-Il seguente è un esempio di una \textit{Verifiable Presentation} con al suo interno un insieme di \textit{Verifiable Credentials} (codice proveniente da \cite{site:vpw3c}):
+Il seguente è un esempio di una \textit{Verifiable Presentation} con al suo interno un insieme di \textit{Verifiable Credentials} (codice proveniente da~\cite{site:vpw3c}):
 \begin{lstlisting}[language=json]
     {
         "@context": [
@@ -136,18 +135,18 @@ Il meccanismo è in grado di integrarsi con \glsfirstoccur{\gls{zkpg}}, in cui l
 senza rivelare informazioni sensibili di alcun tipo, combinando un insieme di \textit{Verifiable Credentials}, verificate tramite 
 un insieme di \textit{issuer} riconosciuti dal sistema della catena di fiducia grazie all'uso della proprietà \textit{proof} descritta sopra
 e la definizione di uno schema comune a cui fare riferimento, che certifica il riconoscimento in quanto firmato a catena da un insieme di \textit{issuer}
-(secondo le specifiche dettagliate in \cite{site:zkpw3c}). \\
+(secondo le specifiche dettagliate in~\cite{site:zkpw3c}). \\
 Questo permette all'utente di definire precisamente quali informazioni vuole rivelare e, attraverso l'utilizzo del contratto libreria, 
 dimostrare la propria identità, verificato con questo meccanismo e accedendo al proprio contenuto di interesse, concludendo la prenotazione 
 presso il sito cinema senza rivelare informazioni sensibili. 
 
-\section{Casi d'uso} \label{sec:usecase}
+\section{Casi d'uso}\label{sec:usecase}
 
 In questa sezione, sono presentati i diagrammi dei casi d'uso, definiti secondo il linguaggio standard \glsfirstoccur{\gls{umlg}},
 che descrivono le interazioni tra gli attori, definiti convenzionalmente come utenti del sistema e il sistema stesso. 
 Segue una tabella di tracciamento dei requisiti, che dettaglia come i requisiti individuati nella sezione precedente siano soddisfatti
 dai casi d'uso definiti in questa sezione, in base all'analisi prevista. 
-Di seguito, un diagramma complessivo (in figura \ref{fig:usecase-scenario-principale}) dei casi d'uso individuati, descritti nel dettaglio successivamente: \\
+Di seguito, un diagramma complessivo (in figura~\ref{fig:usecase-scenario-principale}) dei casi d'uso individuati, descritti nel dettaglio successivamente: \\
 
 \begin{figure}[!ht] 
     \centering 
@@ -175,7 +174,7 @@ Di seguito, un diagramma complessivo (in figura \ref{fig:usecase-scenario-princi
   \item Visualizzazione errore DID già esistente (UC3).
 \end{enumerate}
 
-\usecasegen{Come da figura \ref{fig:uc:registrazione}:}
+\usecasegen{Come da figura~\ref{fig:uc:registrazione}:}
 \begin{enumerate}
   \item Inserimento username (UC1.1);
   \item Inserimento email (UC1.2);
@@ -274,7 +273,7 @@ Di seguito, un diagramma complessivo (in figura \ref{fig:usecase-scenario-princi
   \usecasemain{}
   
   \begin{enumerate}
-    \item L'utente inserisce il proprio DID.
+    \item L'utente inserisce il proprio DID.\@
   \end{enumerate}
 
   \usecaseext{}
@@ -332,7 +331,7 @@ Di seguito, un diagramma complessivo (in figura \ref{fig:usecase-scenario-princi
     \item L'utente visualizza la lista dei film presenti nel sistema.
   \end{enumerate}
 
-  \usecasegen{Come da figura \ref{fig:uc:visualizzazione-lista-film}:}
+  \usecasegen{Come da figura~\ref{fig:uc:visualizzazione-lista-film}:}
   \begin{enumerate}
     \item Visualizzazione singolo film in lista (UC6.1);
   \end{enumerate}
@@ -387,7 +386,7 @@ Di seguito, un diagramma complessivo (in figura \ref{fig:usecase-scenario-princi
     \item Il sistema verifica la disponibilità del film per la data e l'orario selezionati e registra l'avvenuta prenotazione, fornendo un riepilogo all'utente.
   \end{enumerate}
 
-  \usecasegen{Come da figura \ref{fig:uc:prenotazione-film}:}
+  \usecasegen{Come da figura~\ref{fig:uc:prenotazione-film}:}
   \begin{enumerate}
     \item Inserimento data prenotazione (UC8.1);
     \item Inserimento orario prenotazione (UC8.2);
@@ -464,7 +463,7 @@ Di seguito, un diagramma complessivo (in figura \ref{fig:usecase-scenario-princi
     \item Il sistema restituisce la lista delle prenotazioni effettuate dall'utente.
   \end{enumerate}
 
-  \usecasegen{Come da figura \ref{fig:uc:lista-prenotazioni}:}
+  \usecasegen{Come da figura~\ref{fig:uc:lista-prenotazioni}:}
   \begin{enumerate}
     \item Visualizzazione singola prenotazione in lista (UC9.1).
   \end{enumerate}
@@ -490,7 +489,7 @@ Di seguito, un diagramma complessivo (in figura \ref{fig:usecase-scenario-princi
       \item Il sistema restituisce i dettagli della prenotazione selezionata dall'utente.
     \end{enumerate}
 
-    \usecasegen{Come da figura \ref{fig:uc:lista-prenotazioni-singola}:}
+    \usecasegen{Come da figura~\ref{fig:uc:lista-prenotazioni-singola}:}
     \begin{enumerate}
       \item Visualizzazione dettagli film prenotato (UC9.1.1);
       \item Visualizzazione data prenotazione (UC9.1.2);
@@ -618,7 +617,7 @@ Di seguito, un diagramma complessivo (in figura \ref{fig:usecase-scenario-princi
     \item Visualizzazione errore DID già esistente (UC3).
   \end{enumerate}
 
-  \usecasegen{Come da figura \ref{fig:uc:modifica-informazioni-profilo}:}
+  \usecasegen{Come da figura~\ref{fig:uc:modifica-informazioni-profilo}:}
   \begin{enumerate}
     \item Inserimento nuovo username (UC12.1);
     \item Inserimento nuova email (UC12.2);
@@ -701,10 +700,10 @@ Di seguito, un diagramma complessivo (in figura \ref{fig:usecase-scenario-princi
   \end{enumerate}
 \end{usecase}
 
-\section{Tracciamento dei requisiti}
+\section{Tracciamento dei requisiti}\label{sec:tracciamento-requisiti}
 
 In questa sezione sono individuate le corrispondenze tra i requisiti individuati e i casi d'uso, stilando una serie di tabelle di tracciamento 
-(requisiti funzionali a \ref{tab:requisiti-funzionali}, di vincolo a \ref{tab:requisiti-vincolo} e qualitativi a \ref{tab:requisiti-qualitativi}) tra i casi d'uso e le loro fonti, e viceversa.
+(requisiti funzionali a~\ref{tab:requisiti-funzionali}, di vincolo a~\ref{tab:requisiti-vincolo} e qualitativi a~\ref{tab:requisiti-qualitativi}) tra i casi d'uso e le loro fonti, e viceversa.
 Ciascun requisito ha come struttura la seguente:
 \begin{center}
   \textbf{R[Importanza][Tipo][Codice]}
@@ -726,8 +725,7 @@ Le fonti dei requisiti sono:
 \renewcommand{\arraystretch}{1.1} % Adjust the spacing inside the cells
 
 \begin{center}
-\captionof{table}{Tabella del tracciamento dei requisiti funzionali}
-\label{tab:requisiti-funzionali}
+\captionof{table}{Tabella del tracciamento dei requisiti funzionali}\label{tab:requisiti-funzionali}
 \begin{tabularx}{\textwidth}{|>{\hsize=0.4\hsize\centering\arraybackslash}X|>{\hsize=2.2\hsize\centering}X|>{\hsize=0.4\hsize\centering\arraybackslash}X|}
 \hline
 \textbf{Requisito} & \textbf{Descrizione} & \textbf{Fonte}\\
@@ -804,8 +802,7 @@ RFO-14 & Il sistema deve poter permettere all'utente di uscire dalla propria ses
 % Remove space between tables
 
 \begin{center}
-\captionof{table}{Tabella del tracciamento dei requisiti di vincolo}
-\label{tab:requisiti-vincolo}
+\captionof{table}{Tabella del tracciamento dei requisiti di vincolo}\label{tab:requisiti-vincolo}
 \begin{tabularx}{\textwidth}{|>{\hsize=0.4\hsize\centering\arraybackslash}X|>{\hsize=2.2\hsize\centering}X|>{\hsize=0.4\hsize\centering\arraybackslash}X|}
 \hline
 \textbf{Requisito} & \textbf{Descrizione} & \textbf{Fonte}\\
@@ -824,8 +821,7 @@ RVD-5 & Il sistema deve poter integrare un meccanismo interno di challenge-respo
 \end{center}
   
 \begin{center}
-\captionof{table}{Tabella del tracciamento dei requisiti qualitativi}
-\label{tab:requisiti-qualitativi}
+\captionof{table}{Tabella del tracciamento dei requisiti qualitativi}\label{tab:requisiti-qualitativi}
 \begin{tabularx}{\textwidth}{|>{\hsize=0.4\hsize\centering\arraybackslash}X|>{\hsize=2.2\hsize\centering}X|>{\hsize=0.4\hsize\centering\arraybackslash}X|}
 \hline
 \textbf{Requisito} & \textbf{Descrizione} & \textbf{Fonte} \\

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.17)  1 JUN 2023 22:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.17)  2 JUN 2023 13:13
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1085,17 +1085,31 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enit@count@id=\count484
 \enitdp@description=\count485
 ))
-(./config/tesi-config.tex
-(c:/texlive/2022/texmf-dist/tex/latex/filecontents/filecontents.sty
-Package: filecontents 2019/09/20 v1.5 Create an external file from within a LaT
-eX document
-
-
-Package filecontents Warning: This package is obsolete. Disabling it and
-(filecontents)                passing control to the filecontents environment
-(filecontents)                defined by the LaTeX kernel.
-
+(c:/texlive/2022/texmf-dist/tex/latex/silence/silence.sty
+Package: silence 2012/07/02 v1.5b Selective filtering of warnings and error mes
+sages
+\sl@Save=\count486
+\sl@StateNumber=\count487
+\sl@MessageCount=\count488
+\sl@Casualties=\count489
+\sl@Filter=\toks45
+\sl@Message=\toks46
+\sl@UnexpandedMessage=\toks47
+\sl@Mess@ge=\toks48
+\sl@WarningCount=\count490
+\sl@WarningNumber=\count491
+\sl@WarningCasualties=\count492
+\sl@TempBOW=\toks49
+\sl@BankOfWarnings=\toks50
+LaTeX Info: Redefining \GenericWarning on input line 433.
+\sl@ErrorCount=\count493
+\sl@ErrorNumber=\count494
+\sl@ErrorCasualties=\count495
+\sl@TempBOE=\toks51
+\sl@BankOfErrors=\toks52
+LaTeX Info: Redefining \GenericError on input line 601.
 )
+(./config/tesi-config.tex
 
 LaTeX Info: File `tesi.xmpdata' already exists on the system.
             Not generating it from this source.
@@ -1113,20 +1127,20 @@ Package geometry Warning: Over-specification in `v'-direction.
 \glo@main@file=\write6
 \openout6 = `tesi.glo'.
 
-Package glossaries Info: Writing glossary file tesi.glo on input line 43.
+Package glossaries Info: Writing glossary file tesi.glo on input line 42.
 \glo@acronym@file=\write7
 \openout7 = `tesi.acn'.
 
-Package glossaries Info: Writing glossary file tesi.acn on input line 43.
-Package hyperref Info: Option `colorlinks' set `true' on input line 109.
-Package hyperref Info: Option `linktocpage' set `true' on input line 109.
-Package hyperref Info: Option `breaklinks' set `true' on input line 109.
-Package hyperref Info: Option `pageanchor' set `true' on input line 109.
-Package hyperref Info: Option `plainpages' set `false' on input line 109.
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 109.
+Package glossaries Info: Writing glossary file tesi.acn on input line 42.
+Package hyperref Info: Option `colorlinks' set `true' on input line 103.
+Package hyperref Info: Option `linktocpage' set `true' on input line 103.
+Package hyperref Info: Option `breaklinks' set `true' on input line 103.
+Package hyperref Info: Option `pageanchor' set `true' on input line 103.
+Package hyperref Info: Option `plainpages' set `false' on input line 103.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 103.
 
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 109.
-Package hyperref Info: Option `hypertexnames' set `true' on input line 109.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 103.
+Package hyperref Info: Option `hypertexnames' set `true' on input line 103.
 
 (c:/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
@@ -1158,8 +1172,8 @@ File: lstlang3.sty 2020/03/24 1.8d listings language file
 (c:/texlive/2022/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 )
-\c@riskcounter=\count486
-\c@usecasecounter=\count487
+\c@riskcounter=\count496
+\c@usecasecounter=\count497
 ) (./struttura.tex
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -1169,38 +1183,38 @@ Package csquotes Info: Redefining alias 'default' -> 'italian'.
 (build/tesi.aux)
 \openout1 = `tesi.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 1.
-LaTeX Font Info:    ... okay on input line 1.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 1.
-LaTeX Font Info:    ... okay on input line 1.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 1.
-LaTeX Font Info:    ... okay on input line 1.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 1.
-LaTeX Font Info:    ... okay on input line 1.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 1.
-LaTeX Font Info:    ... okay on input line 1.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 1.
-LaTeX Font Info:    ... okay on input line 1.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 1.
-LaTeX Font Info:    ... okay on input line 1.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 1.
-LaTeX Font Info:    ... okay on input line 1.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 1.
-LaTeX Font Info:    ... okay on input line 1.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
 
 (c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count488
+\scratchcounter=\count498
 \scratchdimen=\dimen274
 \scratchbox=\box68
-\nofMPsegments=\count489
-\nofMParguments=\count490
-\everyMPshowfont=\toks45
-\MPscratchCnt=\count491
+\nofMPsegments=\count499
+\nofMParguments=\count500
+\everyMPshowfont=\toks53
+\MPscratchCnt=\count501
 \MPscratchDim=\dimen275
-\MPnumerator=\count492
-\makeMPintoPDFobject=\count493
-\everyMPtoPDFconversion=\toks46
+\MPnumerator=\count502
+\makeMPintoPDFobject=\count503
+\everyMPtoPDFconversion=\toks54
 ) (c:/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1210,9 +1224,9 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring ON on input line 1.
-LaTeX Info: Redefining \it@ocap on input line 1.
-LaTeX Info: Redefining \it@ccap on input line 1.
+Package hyperref Info: Link coloring ON on input line 3.
+LaTeX Info: Redefining \it@ocap on input line 3.
+LaTeX Info: Redefining \it@ccap on input line 3.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: listings package is loaded.
@@ -1223,14 +1237,14 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: supertabular package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count494
-LaTeX Info: Redefining \microtypecontext on input line 1.
-Package microtype Info: Applying patch `item' on input line 1.
-Package microtype Info: Applying patch `toc' on input line 1.
-Package microtype Info: Applying patch `eqnum' on input line 1.
+\c@lstlisting=\count504
+LaTeX Info: Redefining \microtypecontext on input line 3.
+Package microtype Info: Applying patch `item' on input line 3.
+Package microtype Info: Applying patch `toc' on input line 3.
+Package microtype Info: Applying patch `eqnum' on input line 3.
 
 
-Package microtype Warning: Unable to apply patch `footnote' on input line 1.
+Package microtype Warning: Unable to apply patch `footnote' on input line 3.
 
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
@@ -1238,7 +1252,7 @@ Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 1.
+LaTeX Info: Redefining \showhyphens on input line 3.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1266,8 +1280,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'tesi.bbl' found.
  (build/tesi.bbl)
-Package biblatex Info: Reference section=0 on input line 1.
-Package biblatex Info: Reference segment=0 on input line 1.
+Package biblatex Info: Reference section=0 on input line 3.
+Package biblatex Info: Reference segment=0 on input line 3.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1328,61 +1342,29 @@ Package pdftex.def Info: immagini//unipd-logo.png  used on input line 22.
 
 ] (build/tesi.toc [7
 
-])
+] [8])
 \tf@toc=\write8
 \openout8 = `tesi.toc'.
 
- [8] (build/tesi.lof)
+ [9] (build/tesi.lof)
 \tf@lof=\write9
 \openout9 = `tesi.lof'.
 
  (build/tesi.lot
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9
+ [10
 
 ])
 \tf@lot=\write10
 \openout10 = `tesi.lot'.
 
 
-[10]) (./capitoli/introduzione.tex
+[11] [12
+
+]) (./capitoli/introduzione.tex
 Capitolo 1.
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--16
-
- []
-
-<immagini/synclab.png, id=319, 154.77824pt x 59.0205pt>
-File: immagini/synclab.png Graphic file (type png)
-<use immagini/synclab.png>
-Package pdftex.def Info: immagini/synclab.png  used on input line 19.
-(pdftex.def)             Requested size: 193.47578pt x 73.78171pt.
-[1
-
-
-
-
- <./immagini/synclab.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 26--30
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 31--34
-
- []
-
-<immagini/trello.png, id=334, 937.70325pt x 483.60675pt>
-File: immagini/trello.png Graphic file (type png)
-<use immagini/trello.png>
-Package pdftex.def Info: immagini/trello.png  used on input line 48.
-(pdftex.def)             Requested size: 483.69687pt x 249.46242pt.
-[2 <./immagini/trello.png>]) (./capitoli/processi.tex [3] [4
-
-]
-Capitolo 2.
-LaTeX Font Info:    Trying to load font information for T1+cmss on input line 5
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 3
 .
 (c:/texlive/2022/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2022/07/10 v2.5l Standard LaTeX font definitions
@@ -1391,12 +1373,26 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+<immagini/synclab.png, id=341, 154.77824pt x 59.0205pt>
+File: immagini/synclab.png Graphic file (type png)
+<use immagini/synclab.png>
+Package pdftex.def Info: immagini/synclab.png  used on input line 22.
+(pdftex.def)             Requested size: 193.47578pt x 73.78171pt.
+ [1
 
-Underfull \hbox (badness 10000) in paragraph at lines 11--15
 
- []
 
-<immagini/blocco.png, id=368, 740.7675pt x 290.2845pt>
+ <./immagini/synclab.png>]
+<immagini/trello.png, id=358, 937.70325pt x 483.60675pt>
+File: immagini/trello.png Graphic file (type png)
+<use immagini/trello.png>
+Package pdftex.def Info: immagini/trello.png  used on input line 51.
+(pdftex.def)             Requested size: 483.69687pt x 249.46242pt.
+ [2 <./immagini/trello.png>] [3]) (./capitoli/processi.tex [4
+
+]
+Capitolo 2.
+<immagini/blocco.png, id=394, 740.7675pt x 290.2845pt>
 File: immagini/blocco.png Graphic file (type png)
 <use immagini/blocco.png>
 Package pdftex.def Info: immagini/blocco.png  used on input line 40.
@@ -1404,136 +1400,48 @@ Package pdftex.def Info: immagini/blocco.png  used on input line 40.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[5] [6 <./immagini/blocco.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 91--94
+[5
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 101--104
-
- []
-
-[7]
-<immagini/proof-of-work.png, id=393, 464.33475pt x 347.49825pt>
+] [6 <./immagini/blocco.png>] [7]
+<immagini/proof-of-work.png, id=418, 464.33475pt x 347.49825pt>
 File: immagini/proof-of-work.png Graphic file (type png)
 <use immagini/proof-of-work.png>
 Package pdftex.def Info: immagini/proof-of-work.png  used on input line 128.
 (pdftex.def)             Requested size: 290.22107pt x 217.20175pt.
- [8 <./immagini/proof-of-work.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 176--179
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 180--184
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 185--193
-
- []
-
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 222--227
-
- []
-
+ [8 <./immagini/proof-of-work.png>] [9]
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 243--247
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 256--257
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 258--263
-
- []
-
-<immagini/smart-contract.png, id=411, 301.125pt x 286.06876pt>
+<immagini/smart-contract.png, id=435, 301.125pt x 286.06876pt>
 File: immagini/smart-contract.png Graphic file (type png)
 <use immagini/smart-contract.png>
 Package pdftex.def Info: immagini/smart-contract.png  used on input line 266.
 (pdftex.def)             Requested size: 290.22107pt x 275.73596pt.
 
+
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 291--295
-
- []
-
-[12 <./immagini/smart-contract.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 317--321
-
- []
-
-<immagini/ssi.png, id=429, 410.7345pt x 205.36725pt>
+[11] [12 <./immagini/smart-contract.png>]
+<immagini/ssi.png, id=453, 410.7345pt x 205.36725pt>
 File: immagini/ssi.png Graphic file (type png)
 <use immagini/ssi.png>
 Package pdftex.def Info: immagini/ssi.png  used on input line 339.
 (pdftex.def)             Requested size: 290.22107pt x 145.11296pt.
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 344--348
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 363--368
-
- []
-
-[14 <./immagini/ssi.png>]
-<immagini/zkp.png, id=448, 519.1395pt x 211.992pt>
+ [13] [14 <./immagini/ssi.png>]
+<immagini/zkp.png, id=473, 519.1395pt x 211.992pt>
 File: immagini/zkp.png Graphic file (type png)
 <use immagini/zkp.png>
 Package pdftex.def Info: immagini/zkp.png  used on input line 405.
 (pdftex.def)             Requested size: 290.22107pt x 118.51414pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 409--412
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 413--417
-
- []
-
 [15 <./immagini/zkp.png>]) (./capitoli/kick-off.tex [16]
 Capitolo 3.
-
-Underfull \hbox (badness 10000) in paragraph at lines 9--14
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 15--21
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 22--29
-
- []
-
 [17
 
 ] [18]) (./capitoli/concept.tex [19] [20
 
 ]
 Capitolo 4.
-
-Underfull \hbox (badness 10000) in paragraph at lines 8--12
-
- []
-
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
-1.
+0.
 (c:/texlive/2022/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
@@ -1542,60 +1450,22 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
  [21]
-Underfull \hbox (badness 10000) in paragraph at lines 39--43
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 44--49
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 50--53
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 54--60
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 61--65
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 66--73
-
- []
-
-
 Underfull \vbox (badness 1789) has occurred while \output is active []
 
  [22]
-Underfull \hbox (badness 10000) in paragraph at lines 129--134
-
- []
-
 [23]
-Underfull \hbox (badness 10000) in paragraph at lines 146--151
-
- []
-
-<immagini/usecase/scenario-principale.jpg, id=579, 1005.7575pt x 933.4875pt>
+<immagini/usecase/scenario-principale.jpg, id=618, 1005.7575pt x 933.4875pt>
 File: immagini/usecase/scenario-principale.jpg Graphic file (type jpg)
 <use immagini/usecase/scenario-principale.jpg>
 Package pdftex.def Info: immagini/usecase/scenario-principale.jpg  used on inpu
-t line 154.
+t line 153.
 (pdftex.def)             Requested size: 435.32422pt x 404.04117pt.
-<immagini/usecase/UC1.jpg, id=581, 892.33376pt x 474.77374pt>
+<immagini/usecase/UC1.jpg, id=620, 892.33376pt x 474.77374pt>
 File: immagini/usecase/UC1.jpg Graphic file (type jpg)
 <use immagini/usecase/UC1.jpg>
-Package pdftex.def Info: immagini/usecase/UC1.jpg  used on input line 189.
+Package pdftex.def Info: immagini/usecase/UC1.jpg  used on input line 188.
 (pdftex.def)             Requested size: 435.32422pt x 231.6197pt.
-[24]
+ [24]
 
 LaTeX Warning: Text page 25 contains only floats.
 
@@ -1604,60 +1474,60 @@ Underfull \vbox (badness 2418) has occurred while \output is active []
 
  [25 <./immagini/usecase/scenario-principale.jpg> <./immagini/usecase/UC1.jpg>]
  [26]
-<immagini/usecase/UC4.jpg, id=617, 852.18375pt x 241.90375pt>
+<immagini/usecase/UC4.jpg, id=656, 852.18375pt x 241.90375pt>
 File: immagini/usecase/UC4.jpg Graphic file (type jpg)
 <use immagini/usecase/UC4.jpg>
-Package pdftex.def Info: immagini/usecase/UC4.jpg  used on input line 293.
+Package pdftex.def Info: immagini/usecase/UC4.jpg  used on input line 292.
 (pdftex.def)             Requested size: 435.32422pt x 123.57597pt.
 
 [27 <./immagini/usecase/UC4.jpg>]
-<immagini/usecase/UC6.jpg, id=631, 853.1875pt x 242.9075pt>
+<immagini/usecase/UC6.jpg, id=669, 853.1875pt x 242.9075pt>
 File: immagini/usecase/UC6.jpg Graphic file (type jpg)
 <use immagini/usecase/UC6.jpg>
-Package pdftex.def Info: immagini/usecase/UC6.jpg  used on input line 343.
+Package pdftex.def Info: immagini/usecase/UC6.jpg  used on input line 342.
 (pdftex.def)             Requested size: 435.32422pt x 123.94048pt.
  [28 <./immagini/usecase/UC6.jpg>] [29]
-<immagini/usecase/UC8.jpg, id=661, 869.2475pt x 395.4775pt>
+<immagini/usecase/UC8.jpg, id=699, 869.2475pt x 395.4775pt>
 File: immagini/usecase/UC8.jpg Graphic file (type jpg)
 <use immagini/usecase/UC8.jpg>
-Package pdftex.def Info: immagini/usecase/UC8.jpg  used on input line 401.
+Package pdftex.def Info: immagini/usecase/UC8.jpg  used on input line 400.
 (pdftex.def)             Requested size: 435.32422pt x 198.05809pt.
 
 [30 <./immagini/usecase/UC8.jpg>]
-<immagini/usecase/UC9.jpg, id=675, 820.06375pt x 307.1475pt>
+<immagini/usecase/UC9.jpg, id=714, 820.06375pt x 307.1475pt>
 File: immagini/usecase/UC9.jpg Graphic file (type jpg)
 <use immagini/usecase/UC9.jpg>
-Package pdftex.def Info: immagini/usecase/UC9.jpg  used on input line 475.
+Package pdftex.def Info: immagini/usecase/UC9.jpg  used on input line 474.
 (pdftex.def)             Requested size: 435.32422pt x 163.04985pt.
  [31]
-<immagini/usecase/UC9.1.jpg, id=692, 933.4875pt x 572.1375pt>
+<immagini/usecase/UC9.1.jpg, id=732, 933.4875pt x 572.1375pt>
 File: immagini/usecase/UC9.1.jpg Graphic file (type jpg)
 <use immagini/usecase/UC9.1.jpg>
-Package pdftex.def Info: immagini/usecase/UC9.1.jpg  used on input line 505.
+Package pdftex.def Info: immagini/usecase/UC9.1.jpg  used on input line 504.
 (pdftex.def)             Requested size: 435.32422pt x 266.80943pt.
  [32 <./immagini/usecase/UC9.jpg>]
 [33 <./immagini/usecase/UC9.1.jpg>] [34]
-<immagini/usecase/UC12.jpg, id=733, 829.0975pt x 491.8375pt>
+<immagini/usecase/UC12.jpg, id=771, 829.0975pt x 491.8375pt>
 File: immagini/usecase/UC12.jpg Graphic file (type jpg)
 <use immagini/usecase/UC12.jpg>
-Package pdftex.def Info: immagini/usecase/UC12.jpg  used on input line 631.
+Package pdftex.def Info: immagini/usecase/UC12.jpg  used on input line 630.
 (pdftex.def)             Requested size: 435.32422pt x 258.24106pt.
  [35] [36 <./immagini/usecase/UC12.jpg>]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 729.
+(caption)                particular \caption on input line 728.
 See the caption package documentation for explanation.
 
 [37]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 807.
+(caption)                particular \caption on input line 805.
 See the caption package documentation for explanation.
 
 [38]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 827.
+(caption)                particular \caption on input line 824.
 See the caption package documentation for explanation.
 
 ) (./capitoli/product-prototype.tex [39] [40
@@ -1668,157 +1538,105 @@ Capitolo 5.
 Underfull \vbox (badness 4518) has occurred while \output is active []
 
  [41]
-[42]
-Underfull \hbox (badness 10000) in paragraph at lines 79--85
-
- []
-
-[43]
-Underfull \hbox (badness 10000) in paragraph at lines 112--117
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 118--123
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 124--127
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 128--136
-
- []
-
-<immagini/react.jpeg, id=821, 626.34pt x 613.29124pt>
+[42] [43]
+<immagini/react.jpeg, id=863, 626.34pt x 613.29124pt>
 File: immagini/react.jpeg Graphic file (type jpg)
 <use immagini/react.jpeg>
 Package pdftex.def Info: immagini/react.jpeg  used on input line 139.
 (pdftex.def)             Requested size: 290.22107pt x 284.18552pt.
 
+
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 144--152
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 144--152
-
- []
-
-[44]
-Underfull \hbox (badness 10000) in paragraph at lines 165--171
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 172--178
-
- []
-
-[45 <./immagini/react.jpeg>]
-Underfull \hbox (badness 10000) in paragraph at lines 179--183
-
- []
-
-<immagini/ethereum-architecture.png, id=833, 773.89125pt x 472.76625pt>
+[44] [45 <./immagini/react.jpeg>]
+<immagini/ethereum-architecture.png, id=874, 773.89125pt x 472.76625pt>
 File: immagini/ethereum-architecture.png Graphic file (type png)
 <use immagini/ethereum-architecture.png>
 Package pdftex.def Info: immagini/ethereum-architecture.png  used on input line
- 198.
+ 197.
 (pdftex.def)             Requested size: 290.22107pt x 177.29411pt.
-[46 <./immagini/ethereum-architecture.png>]
-<immagini/architettura.png, id=842, 555.07375pt x 472.76625pt>
+ [46 <./immagini/ethereum-architecture.png>]
+<immagini/architettura.png, id=883, 555.07375pt x 472.76625pt>
 File: immagini/architettura.png Graphic file (type png)
 <use immagini/architettura.png>
-Package pdftex.def Info: immagini/architettura.png  used on input line 207.
+Package pdftex.def Info: immagini/architettura.png  used on input line 206.
 (pdftex.def)             Requested size: 290.22107pt x 247.18884pt.
- [47 <./immagini/architettura.png>]
-[48]
-<immagini/frontend/home.png, id=857, 1136.44576pt x 531.1845pt>
+
+[47 <./immagini/architettura.png>] [48]
+<immagini/frontend/home.png, id=898, 1136.44576pt x 531.1845pt>
 File: immagini/frontend/home.png Graphic file (type png)
 <use immagini/frontend/home.png>
-Package pdftex.def Info: immagini/frontend/home.png  used on input line 267.
+Package pdftex.def Info: immagini/frontend/home.png  used on input line 266.
 (pdftex.def)             Requested size: 290.22107pt x 135.64882pt.
-<immagini/frontend/home-mobile.png, id=859, 386.6445pt x 513.117pt>
+<immagini/frontend/home-mobile.png, id=900, 386.6445pt x 513.117pt>
 File: immagini/frontend/home-mobile.png Graphic file (type png)
 <use immagini/frontend/home-mobile.png>
 Package pdftex.def Info: immagini/frontend/home-mobile.png  used on input line 
-277.
+276.
 (pdftex.def)             Requested size: 145.11053pt x 192.575pt.
  [49 <./immagini/frontend/home.png> <./immagini/frontend/home-mobile.png>]
-<immagini/frontend/register.png, id=867, 1130.42325pt x 531.78674pt>
+<immagini/frontend/register.png, id=909, 1130.42325pt x 531.78674pt>
 File: immagini/frontend/register.png Graphic file (type png)
 <use immagini/frontend/register.png>
-Package pdftex.def Info: immagini/frontend/register.png  used on input line 295
+Package pdftex.def Info: immagini/frontend/register.png  used on input line 294
 .
 (pdftex.def)             Requested size: 290.22107pt x 136.52481pt.
-<immagini/frontend/challenge-response.png, id=869, 198.7425pt x 204.765pt>
+<immagini/frontend/challenge-response.png, id=911, 198.7425pt x 204.765pt>
 File: immagini/frontend/challenge-response.png Graphic file (type png)
 <use immagini/frontend/challenge-response.png>
 Package pdftex.def Info: immagini/frontend/challenge-response.png  used on inpu
-t line 307.
+t line 306.
 (pdftex.def)             Requested size: 145.11053pt x 149.51155pt.
-
-[50 <./immagini/frontend/register.png> <./immagini/frontend/challenge-response.
-png>]
-<immagini/frontend/login.png, id=878, 1139.457pt x 513.117pt>
+ [50 <./immagini/frontend/register.png> <./immagini/frontend/challenge-response
+.png>]
+<immagini/frontend/login.png, id=921, 1139.457pt x 513.117pt>
 File: immagini/frontend/login.png Graphic file (type png)
 <use immagini/frontend/login.png>
-Package pdftex.def Info: immagini/frontend/login.png  used on input line 322.
+Package pdftex.def Info: immagini/frontend/login.png  used on input line 321.
 (pdftex.def)             Requested size: 290.22107pt x 130.69043pt.
-<immagini/frontend/movies.png, id=880, 1136.44576pt x 528.7755pt>
+<immagini/frontend/movies.png, id=923, 1136.44576pt x 528.7755pt>
 File: immagini/frontend/movies.png Graphic file (type png)
 <use immagini/frontend/movies.png>
-Package pdftex.def Info: immagini/frontend/movies.png  used on input line 335.
+Package pdftex.def Info: immagini/frontend/movies.png  used on input line 334.
 (pdftex.def)             Requested size: 290.22107pt x 135.03365pt.
-<immagini/frontend/age-verification.png, id=882, 656.4525pt x 183.68625pt>
+<immagini/frontend/age-verification.png, id=925, 656.4525pt x 183.68625pt>
 File: immagini/frontend/age-verification.png Graphic file (type png)
 <use immagini/frontend/age-verification.png>
 Package pdftex.def Info: immagini/frontend/age-verification.png  used on input 
-line 346.
+line 345.
 (pdftex.def)             Requested size: 290.22107pt x 81.20897pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[51 <./immagini/frontend/login.png> <./immagini/frontend/movies.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 401--403
-
- []
-
-[52 <./immagini/frontend/age-verification.png>]
-<immagini/frontend/verification-doing.png, id=935, 657.657pt x 260.172pt>
+[51 <./immagini/frontend/login.png> <./immagini/frontend/movies.png>] [52 <./im
+magini/frontend/age-verification.png>]
+<immagini/frontend/verification-doing.png, id=976, 657.657pt x 260.172pt>
 File: immagini/frontend/verification-doing.png Graphic file (type png)
 <use immagini/frontend/verification-doing.png>
 Package pdftex.def Info: immagini/frontend/verification-doing.png  used on inpu
-t line 447.
+t line 446.
 (pdftex.def)             Requested size: 290.22107pt x 114.81743pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [53]
-<immagini/frontend/review.png, id=961, 355.3275pt x 227.6505pt>
+<immagini/frontend/review.png, id=1002, 355.3275pt x 227.6505pt>
 File: immagini/frontend/review.png Graphic file (type png)
 <use immagini/frontend/review.png>
-Package pdftex.def Info: immagini/frontend/review.png  used on input line 459.
+Package pdftex.def Info: immagini/frontend/review.png  used on input line 458.
 (pdftex.def)             Requested size: 145.11053pt x 92.97256pt.
-<immagini/frontend/share.png, id=963, 431.211pt x 327.02174pt>
+<immagini/frontend/share.png, id=1004, 431.211pt x 327.02174pt>
 File: immagini/frontend/share.png Graphic file (type png)
 <use immagini/frontend/share.png>
-Package pdftex.def Info: immagini/frontend/share.png  used on input line 468.
+Package pdftex.def Info: immagini/frontend/share.png  used on input line 467.
 (pdftex.def)             Requested size: 145.11053pt x 110.0482pt.
-<immagini/frontend/movie-booking.png, id=965, 1139.457pt x 504.6855pt>
+<immagini/frontend/movie-booking.png, id=1006, 1139.457pt x 504.6855pt>
 File: immagini/frontend/movie-booking.png Graphic file (type png)
 <use immagini/frontend/movie-booking.png>
 Package pdftex.def Info: immagini/frontend/movie-booking.png  used on input lin
-e 478.
+e 477.
 (pdftex.def)             Requested size: 290.22107pt x 128.54292pt.
 
 
@@ -1826,27 +1644,27 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [54 <./immagini/frontend/verification-doing.png> <./immagini/frontend/review.pn
 g> <./immagini/frontend/share.png>]
-<immagini/frontend/movie-booking-done.png, id=974, 280.04625pt x 287.27325pt>
+<immagini/frontend/movie-booking-done.png, id=1015, 280.04625pt x 287.27325pt>
 File: immagini/frontend/movie-booking-done.png Graphic file (type png)
 <use immagini/frontend/movie-booking-done.png>
 Package pdftex.def Info: immagini/frontend/movie-booking-done.png  used on inpu
-t line 487.
+t line 486.
 (pdftex.def)             Requested size: 145.11053pt x 148.86131pt.
-<immagini/frontend/movie-booking-list.png, id=976, 1141.26375pt x 534.798pt>
+<immagini/frontend/movie-booking-list.png, id=1017, 1141.26375pt x 534.798pt>
 File: immagini/frontend/movie-booking-list.png Graphic file (type png)
 <use immagini/frontend/movie-booking-list.png>
 Package pdftex.def Info: immagini/frontend/movie-booking-list.png  used on inpu
-t line 497.
+t line 496.
 (pdftex.def)             Requested size: 290.22107pt x 135.99222pt.
  [55 <./immagini/frontend/movie-booking.png> <./immagini/frontend/movie-booking
 -done.png> <./immagini/frontend/movie-booking-list.png>]
-<immagini/frontend/account.png, id=985, 1133.4345pt x 523.9575pt>
+<immagini/frontend/account.png, id=1027, 1133.4345pt x 523.9575pt>
 File: immagini/frontend/account.png Graphic file (type png)
 <use immagini/frontend/account.png>
-Package pdftex.def Info: immagini/frontend/account.png  used on input line 514.
+Package pdftex.def Info: immagini/frontend/account.png  used on input line 513.
 
 (pdftex.def)             Requested size: 290.22107pt x 134.16304pt.
-<immagini/frontend/404.png, id=987, 1128.01425pt x 492.03825pt>
+<immagini/frontend/404.png, id=1029, 1128.01425pt x 492.03825pt>
 File: immagini/frontend/404.png Graphic file (type png)
 <use immagini/frontend/404.png>
 Package pdftex.def Info: immagini/frontend/404.png  used on input line 525.
@@ -1856,52 +1674,65 @@ oli/product-design.tex [57] [58
 
 ]
 Capitolo 6.
+[59]
 
-Underfull \hbox (badness 10000) in paragraph at lines 6--10
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 71.
+See the caption package documentation for explanation.
 
- []
+[60]
 
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 124.
+See the caption package documentation for explanation.
 
-Underfull \hbox (badness 10000) in paragraph at lines 11--17
+[61] [62
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 28--32
-
- []
-
-[59] [60]) [61] [62
-
-] (build/tesi.gls [63
-
-
-] [64]) (./appendice/bibliografia.tex
-[65] [66
+] [63
 
 ]
 
-Package biblatex Warning: Split bibliography detected.
-(biblatex)                Many simple split bibliography setups with
-(biblatex)                non-overlapping bibliographies benefit from
-(biblatex)                setting 'defernumbers=true'.
-(biblatex)                See the documentation for details.
-(biblatex)                This warning can be suppressed with
-(biblatex)                '\BiblatexSplitbibDefernumbersWarningOff'.
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 231.
+See the caption package documentation for explanation.
 
-) [67
+[64
 
-] (build/tesi.aux)
+]) (./capitoli/conclusioni.tex [65
+
+] [66
+
+]
+Capitolo 7.
+) [67] [68
+
+] (build/tesi.gls [69
+
+
+] [70]) (./appendice/bibliografia.tex [71]
+[72
+
+] [73
+
+]) [74] (build/tesi.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                tesi
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'tesi.run.xml'.
 \openout1 = `tesi.run.xml'.
 
  ) ) 
 Here is how much of TeX's memory you used:
- 40479 strings out of 476029
- 711388 string characters out of 5794164
+ 40813 strings out of 476029
+ 717576 string characters out of 5794164
  2044340 words of memory out of 5000000
- 59435 multiletter control sequences out of 15000+600000
- 545680 words of font info for 222 fonts, out of 8000000 for 9000
+ 59733 multiletter control sequences out of 15000+600000
+ 545992 words of font info for 224 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  99i,8n,125p,2257b,3166s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/te
@@ -1928,10 +1759,10 @@ m-super/sfst0900.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sf
 ti1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb
 ><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb><c:/texli
 ve/2022/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on build/tesi.pdf (77 pages, 13878501 bytes).
+Output written on build/tesi.pdf (86 pages, 13900411 bytes).
 PDF statistics:
- 1646 PDF objects out of 1728 (max. 8388607)
- 1440 compressed objects within 15 object streams
- 482 named destinations out of 1000 (max. 500000)
- 59767 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 1775 PDF objects out of 2073 (max. 8388607)
+ 1559 compressed objects within 16 object streams
+ 510 named destinations out of 1000 (max. 500000)
+ 59799 words of extra memory for PDF output out of 61914 (max. 10000000)
 

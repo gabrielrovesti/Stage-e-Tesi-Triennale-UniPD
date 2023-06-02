@@ -153,6 +153,18 @@
       \verb https://reactjs.org/
       \endverb
     \endentry
+    \entry{site:reacttestinglibrary}{online}{}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labeltitlesource}{title}
+      \field{title}{React Testing Library}
+      \verb{urlraw}
+      \verb https://testing-library.com/docs/react-testing-library/intro/
+      \endverb
+      \verb{url}
+      \verb https://testing-library.com/docs/react-testing-library/intro/
+      \endverb
+    \endentry
     \entry{site:solidity}{online}{}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}

@@ -8,11 +8,10 @@
 \newcommand{\profTitle}{Prof.ssa}
 \newcommand{\myProf}{Ombretta Gaggi}
 \newcommand{\myLocation}{Padova}
-\newcommand{\myAA}{2022-2023}
+\newcommand{\myAA}{2022--2023}
 \newcommand{\myTime}{Giugno 2023} 
 
 % PDF/A filecontents
-\RequirePackage{filecontents}
 \begin{filecontents*}{\jobname.xmpdata}
   \Title{VerifiedMovies: il cinema in piena sicurezza con l'uso della blockchain}
   \Author{Gabriel Rovesti}
@@ -40,14 +39,10 @@
 \setlist[itemize]{itemsep=1.5pt,parsep=0pt}
 
 \input{appendice/definizioni-glossario} % Glossary definitions
-\makeglossaries
-
-\bibliography{appendice/bibliografia}
+\makeglossaries\bibliography{appendice/bibliografia}
 
 \defbibheading{bibliography} {
-    \cleardoublepage
-    \phantomsection
-    \addcontentsline{toc}{chapter}{\bibname}
+    \cleardoublepage\phantomsection\addcontentsline{toc}{chapter}{\bibname}
     \chapter*{\bibname\markboth{\bibname}{\bibname}}
 }
 
@@ -80,7 +75,6 @@
 \graphicspath{{immagini/}}
 
 \hypersetup{
-    %hyperfootnotes=false,
     %pdfpagelabels,
     %draft,	% = elimina tutti i link (utile per stampe in bianco e nero)
     colorlinks=true,

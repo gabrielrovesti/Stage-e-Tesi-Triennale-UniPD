@@ -4,7 +4,7 @@
 individuando possibili rischi e problematiche che potrebbero presentarsi durante lo svolgimento dello stesso.
 Inoltre, viene fornita una panoramica degli obiettivi da raggiungere e della pianificazione delle ore di lavoro.}
 
-\section{Introduzione al progetto e idea dello stage}
+\section{Introduzione al progetto e idea dello stage}\label{sec:introduzione-progetto}
 
 Oggi più che mai è importante garantire la sicurezza dei propri dati e delle proprie informazioni, permettendo uno scambio sicuro
 e protetto di dati sensibili tra due o più entità. Inoltre, è necessario garantire che le informazioni siano autentiche e non modificate,
@@ -34,7 +34,7 @@ con un percorso simile al mio a livello di argomenti, basato sempre sulle tecnol
 Il loro supporto è stato puramente di confronto, in quanto l'implementazione dei rispettivi progetti è stata fatta in modo indipendente e senza collaborazione diretta. \\
 Sulla base di queste premesse nasce il progetto \textbf{VerifiedMovies}.
 
-\section{Analisi preventiva dei rischi}
+\section{Analisi preventiva dei rischi}\label{sec:analisi-rischi}
 
 Durante la fase di analisi iniziale sono stati individuati alcuni possibili rischi 
 a cui si potrà andare incontro. Si è quindi proceduto a elaborare delle possibili soluzioni per far fronte a tali rischi.
@@ -43,42 +43,37 @@ a cui si potrà andare incontro. Si è quindi proceduto a elaborare delle possib
     \riskdescription{il progetto prevede l'utilizzo di tecnologie e metodologie di cui non si ha piena esperienza e conoscenza, 
     rendendo più difficoltosa la comprensione e l'applicazione delle stesse in fase di implementazione}
     \risksolution{ è stato previsto un periodo di formazione iniziale per studiare le tecnologie e le metodologie da utilizzare
-    e l'aiuto/supporto del tutor aziendale e di altri stagisti nella risoluzione di problemi e nella discussione di possibili soluzioni}
-\label{risk:inesperienza-tecnologica} 
+    e l'aiuto/supporto del tutor aziendale e di altri stagisti nella risoluzione di problemi e nella discussione di possibili soluzioni}\label{risk:inesperienza-tecnologica} 
 \end{risk}
 
 \begin{risk}{Difficoltà di integrazione con lo smart contract da usare come libreria}
     \riskdescription{il sistema potrebbe incontrare difficoltà nell'integrazione con lo smart contract da richiamare per la gestione delle identità digitali,
     a causa di errori di programmazione o di problemi di comunicazione tra le parti coinvolte}
     \risksolution{è stato previsto un periodo di test e debug per verificare il corretto funzionamento del sistema e per risolvere eventuali problemi riscontrati,
-    approfondendo il dialogo con il tutor aziendale e con lo stagista che ha sviluppato lo smart contract che dovrà essere richiamato in fase di implementazione}
-    \label{risk:integrazione-smart-contract}
+    approfondendo il dialogo con il tutor aziendale e con lo stagista che ha sviluppato lo smart contract che dovrà essere richiamato in fase di implementazione}\label{risk:integrazione-smart-contract}
 \end{risk}
 
 \begin{risk}{Ritardi nello sviluppo}
     \riskdescription{potrebbero verificarsi ritardi nello sviluppo del sistema a causa di problemi tecnici o imprevisti, come la mancanza di risorse necessarie o la complessità del progetto,
-    rimodulando adeguatamente attività e tempistiche}
-    \label{risk:ritardi-sviluppo}
+    rimodulando adeguatamente attività e tempistiche}\label{risk:ritardi-sviluppo}
 \end{risk}
 
 \begin{risk}{Problemi di sicurezza}
     \riskdescription{il sistema potrebbe riscontrare problemi di sicurezza e vulnerabilità a attacchi informatici o la mancanza di protezione dei dati sensibili}
     \risksolution{fin dall'inizio dell'attività di sviluppo, si cerca di garantire un'implementazione al passo con le \textit{best practices} previste dai linguaggi di programmazione utilizzate e lato web, 
     come l'utilizzo di librerie e framework aggiornati e sicuri, la validazione dei dati in input e la protezione da attacchi di tipo \textit{SQL injection} e \textit{XSS}. Inoltre, è possibile prevedere un'attività di testing approfondito,
-    ad esempio utilizzando strumenti di analisi statica del codice e di penetration testing, per verificare la corretta implementazione delle misure di sicurezza e la presenza di eventuali vulnerabilità}
-    \label{risk:problemi-sicurezza}
+    ad esempio utilizzando strumenti di analisi statica del codice e di penetration testing, per verificare la corretta implementazione delle misure di sicurezza e la presenza di eventuali vulnerabilità}\label{risk:problemi-sicurezza}
 \end{risk}
 
 \begin{risk}{Cambiamenti dei requisiti durante lo sviluppo}
     \riskdescription{i requisiti del sistema potrebbero cambiare durante l'attività di implementazione, ad esempio a causa di una modifica delle esigenze del progetto o di un errore di analisi iniziale}
     \risksolution{è possibile prevedere un'attività di pianificazione flessibile, ad esempio utilizzando metodologie agili, come \glsfirstoccur{\gls{scrumg}}, che prevedono una pianificazione adattiva ai cambiamenti dei requisiti. 
-    Inoltre, potrebbe essere utile prevedere una comunicazione costante con il tutor aziendale e gli altri stagisti in fase di validazione dei requisiti aggiornati, procedendo con lo sviluppo in modo coerente ed organizzato}
-    \label{risk:cambiamenti-requisiti}
+    Inoltre, potrebbe essere utile prevedere una comunicazione costante con il tutor aziendale e gli altri stagisti in fase di validazione dei requisiti aggiornati, procedendo con lo sviluppo in modo coerente ed organizzato}\label{risk:cambiamenti-requisiti}
 \end{risk}
 
 \newpage
 
-\section{Obiettivi e requisiti}
+\section{Obiettivi e requisiti}\label{sec:obiettivi-requisiti}
 
 Il tirocinio prevede lo svolgimento dei seguenti obiettivi, riportando questa notazione, come dal documento \textit{Piano di Lavoro}:
 \begin{itemize}
@@ -92,29 +87,29 @@ Le sigle precedentemente indicate saranno seguite da una coppia sequenziale di n
 
     \item Obbligatori:
         \begin{itemize}
-            \item \underline{\textit{O01}}: Descrivere i concetti di base della blockchain, tra cui la sua architettura, i nodi della rete, la criptografia e il consenso distribuito;
-            \item \underline{\textit{O02}}: Analizzare il concetto di Smart contract e il linguaggio Solidity, con particolare attenzione alle vulnerabilità principali e alle tecniche per evitare errori di programmazione;
-            \item \underline{\textit{O03}}: Approfondire il funzionamento della firma asimmetrica delle transazioni su catena e la validazione dei blocchi, studiando le tipologie di consenso e le catene più conosciute;
-            \item \underline{\textit{O04}}: Studiare le tecniche di crittografia utilizzate per garantire la sicurezza e la privacy delle informazioni personali nell'ambito della Self-Sovereign Identity (SSI) e dei protocolli per la gestione delle identità digitali;
-            \item \underline{\textit{O05}}: Individuare casi d'uso reali per la SSI, analizzando i consorzi internazionali coinvolti in ambito di ricerca e i finanziamenti europei;
-            \item \underline{\textit{O06}}: Discutere le sfide e i problemi legati alla SSI, studiando un possibile scenario futuro di applicabilità e basato su Zero Knowledge Proof (ZKP).
+            \item \underline{\textit{O01}}: descrivere i concetti di base della \glsfirstoccur{\gls{blockchaing}}, tra cui la sua architettura, i nodi della rete, la crittografia e il consenso distribuito;
+            \item \underline{\textit{O02}}: analizzare il concetto di \glsfirstoccur{\gls{smartcontractg}} e il linguaggio \glsfirstoccur{\gls{solidityg}}, con particolare attenzione alle vulnerabilità principali e alle tecniche per evitare errori di programmazione;
+            \item \underline{\textit{O03}}: approfondire il funzionamento della firma asimmetrica delle transazioni su catena e la validazione dei blocchi, studiando le tipologie di consenso e le catene più conosciute;
+            \item \underline{\textit{O04}}: studiare le tecniche di crittografia utilizzate per garantire la sicurezza e la \textit{privacy} delle informazioni personali nell'ambito della \glsfirstoccur{\gls{ssig}} e dei protocolli per la gestione delle identità digitali;
+            \item \underline{\textit{O05}}: individuare casi d'uso reali per la \textit{Self Sovereign Identity}, analizzando i consorzi internazionali coinvolti in ambito di ricerca e i finanziamenti europei;
+            \item \underline{\textit{O06}}: discutere le sfide e i problemi legati alla \textit{Self Sovereign Identity}, studiando un possibile scenario futuro di applicabilità e basato su \glsfirstoccur{\gls{zkpg}}.
         \end{itemize}
 
     \item Desiderabili:
         \begin{itemize}
-            \item \underline{\textit{D01}}: Implementare una dApp tramite le librerie EthersJS/Web3JS, utilizzando uno smart contract di esempio;
-            \item \underline{\textit{D02}}: Realizzare una UI (interfaccia utente) per la dApp utilizzando HTML, CSS e JavaScript;
-            \item \underline{\textit{D03}}: Utilizzare la SSI e i protocolli studiati per implementare funzionalità di autenticazione utente nella dApp;
-            \item \underline{\textit{D04}}: Testare e debuggare la dApp implementata;
-            \item \underline{\textit{D05}}: Discutere problemi e sfide relativi all'implementazione di applicazioni decentralizzate su blockchain Ethereum, con particolare attenzione alla scalabilità e alla sicurezza.
+            \item \underline{\textit{D01}}: implementare una \glsfirstoccur{\gls{dappg}} (o dApp) tramite le librerie \glsfirstoccur{\gls{ethersjsg}} oppure \glsfirstoccur{\gls{web3jsg}}, utilizzando uno smart contract di esempio;
+            \item \underline{\textit{D02}}: realizzare una UI (interfaccia utente) per la dApp utilizzando \textit{HTML}, \textit{CSS} e \textit{JavaScript};
+            \item \underline{\textit{D03}}: utilizzare la \textit{Self Sovereign Identity} e i protocolli studiati per implementare funzionalità di autenticazione utente nella dApp;
+            \item \underline{\textit{D04}}: testare e debuggare l'applicazione implementata;
+            \item \underline{\textit{D05}}: discutere problemi e sfide relativi all'implementazione di applicazioni decentralizzate su \textit{blockchain} \glsfirstoccur{\gls{ethereumg}}, con particolare attenzione alla scalabilità e alla sicurezza.
         \end{itemize}
 
     \item Facoltativi:
         \begin{itemize}
-            \item \underline{\textit{F01}}: Approfondire l'utilizzo di altri linguaggi di programmazione per gli smart contract, come Vyper;
-            \item \underline{\textit{F02}}: Analizzare l'utilizzo di altre tecnologie blockchain, come Polkadot o Cardano, per implementare la SSI;
-            \item \underline{\textit{F03}}: Esplorare altre funzionalità delle librerie EthersJS/Web3JS, come l'invio di transazioni;
-            \item \underline{\textit{F04}}: Investigare i limiti e le sfide legate all'utilizzo della tecnologia blockchain.
+            \item \underline{\textit{F01}}: approfondire l'utilizzo di altri linguaggi di programmazione per gli \textit{smart contract}, come \textit{Vyper};
+            \item \underline{\textit{F02}}: analizzare l'utilizzo di altre tecnologie \textit{blockchain}, come \textit{Polkadot} o \textit{Cardano}, per implementare la \textit{Self Sovereign Identity};
+            \item \underline{\textit{F03}}: esplorare altre funzionalità delle librerie \textit{Ethers.js} e/o \textit{Web3.js}, come l'invio di transazioni;
+            \item \underline{\textit{F04}}: investigare i limiti e le sfide legate all'utilizzo della tecnologia \textit{blockchain}.
         \end{itemize}
     
 \end{itemize}
