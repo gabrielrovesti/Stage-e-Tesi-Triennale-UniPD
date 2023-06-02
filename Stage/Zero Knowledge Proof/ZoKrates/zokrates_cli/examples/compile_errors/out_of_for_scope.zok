@@ -1,4 +1,0 @@
-def main() -> field {
-    for u32 i in 0..5 {}
-    return i;
-}

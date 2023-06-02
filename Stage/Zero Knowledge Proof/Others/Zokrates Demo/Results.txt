@@ -1,3 +1,0 @@
-Dopo aver provato più volte, non becca il file "512hashed" pur essendo nel percorso corretto.
-
-Mi arrendo quindi, lo tengo come esempio.
