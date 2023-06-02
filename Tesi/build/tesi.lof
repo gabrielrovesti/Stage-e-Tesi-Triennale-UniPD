@@ -1,43 +1,43 @@
 \babel@toc {italian}{}\relax 
 \babel@toc {italian}{}\relax 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Logo azienda Sync Lab\relax }}{1}{figure.caption.12}%
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Esempio di utilizzo di Trello\relax }}{2}{figure.caption.13}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Logo azienda Sync Lab\relax }}{1}{figure.1.1}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Esempio di utilizzo di Trello\relax }}{2}{figure.1.2}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Blockchain vista come blocchi a catena\relax }}{6}{figure.caption.14}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Processo di conferma in Proof of Work\relax }}{8}{figure.caption.15}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Funzionamento di uno Smart Contract\relax }}{12}{figure.caption.16}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Processo di riconoscimento di una credenziale SSI\relax }}{14}{figure.caption.17}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Processo di verifica di una ZKP\relax }}{15}{figure.caption.18}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Blockchain vista come blocchi a catena\relax }}{6}{figure.2.1}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Processo di conferma in Proof of Work\relax }}{8}{figure.2.2}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Funzionamento di uno Smart Contract\relax }}{12}{figure.2.3}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Processo di riconoscimento di una credenziale SSI\relax }}{14}{figure.2.4}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Processo di verifica di una ZKP\relax }}{16}{figure.2.5}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Scenario principale\relax }}{25}{figure.caption.19}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces UC1: Registrazione\relax }}{25}{figure.caption.20}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces UC4: Login\relax }}{27}{figure.caption.21}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces UC6: Visualizzazione lista film\relax }}{28}{figure.caption.22}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces UC8: Prenotazione film\relax }}{30}{figure.caption.23}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces UC9: Visualizzazione lista prenotazioni\relax }}{32}{figure.caption.24}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces UC9.1: Visualizzazione singola prenotazione in lista\relax }}{33}{figure.caption.25}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces UC12: Modifica informazioni profilo\relax }}{36}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Scenario principale\relax }}{27}{figure.4.1}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces UC1: Registrazione\relax }}{27}{figure.4.2}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces UC4: Login\relax }}{29}{figure.4.3}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces UC6: Visualizzazione lista film\relax }}{30}{figure.4.4}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces UC8: Prenotazione film\relax }}{32}{figure.4.5}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces UC9: Visualizzazione lista prenotazioni\relax }}{34}{figure.4.6}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces UC9.1: Visualizzazione singola prenotazione in lista\relax }}{35}{figure.4.7}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces UC12: Modifica informazioni profilo\relax }}{38}{figure.4.8}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Schema logico applicazione React\relax }}{45}{figure.caption.27}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Architettura Ethereum\relax }}{46}{figure.caption.28}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Architettura applicazione\relax }}{47}{figure.caption.29}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Pagina principale\relax }}{49}{figure.caption.30}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Pagina principale vista da cellulare\relax }}{49}{figure.caption.31}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Pagina principale\relax }}{50}{figure.caption.32}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Meccanismo di conferma identità dell'utente\relax }}{50}{figure.caption.33}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Pagina di login\relax }}{51}{figure.caption.34}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Pagina dei film dell'applicazione\relax }}{51}{figure.caption.35}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Finestra di verifica dell'età\relax }}{52}{figure.caption.36}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Esempio di caricamento durante la verifica dell'età\relax }}{54}{figure.caption.37}%
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Recensione per un film\relax }}{54}{figure.caption.38}%
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Condivisione di un film\relax }}{54}{figure.caption.39}%
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Pagina di prenotazione del film selezionato\relax }}{55}{figure.caption.40}%
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Finestra di conferma della prenotazione del film selezionato\relax }}{55}{figure.caption.41}%
-\contentsline {figure}{\numberline {5.16}{\ignorespaces Pagina della lista delle prenotazioni effettuate\relax }}{55}{figure.caption.42}%
-\contentsline {figure}{\numberline {5.17}{\ignorespaces Pagina di gestione dei dati dell'utente\relax }}{56}{figure.caption.43}%
-\contentsline {figure}{\numberline {5.18}{\ignorespaces Pagina di errore 404\relax }}{56}{figure.caption.44}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Schema logico applicazione React\relax }}{47}{figure.5.1}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Architettura Ethereum\relax }}{48}{figure.5.2}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Architettura applicazione\relax }}{49}{figure.5.3}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Pagina principale\relax }}{51}{figure.5.4}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Pagina principale vista da cellulare\relax }}{51}{figure.5.5}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Pagina principale\relax }}{52}{figure.5.6}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Meccanismo di conferma identità dell'utente\relax }}{52}{figure.5.7}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Pagina di login\relax }}{53}{figure.5.8}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Pagina dei film dell'applicazione\relax }}{53}{figure.5.9}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Finestra di verifica dell'età\relax }}{54}{figure.5.10}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Esempio di caricamento durante la verifica dell'età\relax }}{56}{figure.5.11}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Recensione per un film\relax }}{56}{figure.5.12}%
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Condivisione di un film\relax }}{56}{figure.5.13}%
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Pagina di prenotazione del film selezionato\relax }}{57}{figure.5.14}%
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Finestra di conferma della prenotazione del film selezionato\relax }}{57}{figure.5.15}%
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Pagina della lista delle prenotazioni effettuate\relax }}{57}{figure.5.16}%
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Pagina di gestione dei dati dell'utente\relax }}{58}{figure.5.17}%
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Pagina di errore 404\relax }}{58}{figure.5.18}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

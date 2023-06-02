@@ -35,7 +35,7 @@ Nello specifico, possiamo dettagliare una struttura formata dai seguenti (come d
     \item \textit{timestamp} di generazione del blocco (data e ora).
 \end{itemize} 
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=0.6\textwidth, alt={Blocco all'interno di una blockchain}]{immagini/blocco.png}
     \caption{Blockchain vista come blocchi a catena}\label{fig:blocco}
@@ -123,7 +123,7 @@ Possiamo principalmente distinguere:
     i nodi abbiano calcolato correttamente dopo un certo tempo (\textit{Delayed}).
     Il principale svantaggio del PoW è che richiede un elevato consumo energetico, che può essere risolto con l'utilizzo di algoritmi di consenso alternativi.
 
-    \begin{figure}[h]
+    \begin{figure}[ht]
         \centering
         \includegraphics[width=0.6\textwidth, alt={Come avviene il processo di conferma in Proof of Work}]{immagini/proof-of-work.png}
         \caption{Processo di conferma in Proof of Work}\label{fig:pow}
@@ -146,6 +146,8 @@ Possiamo principalmente distinguere:
     oppure di scegliere i validatori in base alla quantità di moneta che hanno investito (\textit{Proof of Burn}).
 
 \end{enumerate}
+
+\clearpage
 
 \subsection{Tipi}\label{sec:tecnologie-blockchain-tipi}
 Una prima categorizzazione delle blockchain avviene distinguendole in base ai permessi. Nello specifico:
@@ -261,7 +263,7 @@ eseguiti sulla piattaforma \textit{Ethereum Virtual Machine (EVM)}, che ne conse
 Ogniqualvolta venga eseguita una transazione, si ha un costo pagato in \textit{gas}, costo in termini di energia necessaria per eseguire la transazione, che viene calcolato in base al numero di operazioni eseguite
 e pone un limite al numero di transazioni che possono essere eseguite in un dato periodo di tempo. \\
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=0.6\textwidth, alt={Come funziona uno Smart Contract}]{immagini/smart-contract.png}
     \caption{Funzionamento di uno Smart Contract}\label{fig:smart-contract}
@@ -286,6 +288,8 @@ attraverso l'uso di API o di altri sistemi di comunicazione. In questo modo, il 
 combinando un'infrastruttura \textit{on-chain} con un'infrastruttura \textit{off-chain}.
 Il loro utilizzo, per quanto utile, deve essere attentamente bilanciato, sia in termini di veridicità dei dati che di sicurezza, in quanto possono essere soggetti a compromissione o di scalabilità, per cui è necessario
 un'attenta valutazione dei rischi.
+
+\clearpage
 
 \subsection{Scalabilità}\label{sec:tecnologie-blockchain-avanzate-scalabilita}
 Le blockchain sono preziose per il fatto di essere un sistema deterministico e con un grado di affidabilità molto elevato, generalmente neutro e verificabile da parte dell'utente finale.
@@ -325,6 +329,8 @@ Esistono molti modi per implementare l'SSI utilizzando le chiavi crittografiche 
     \item \glsfirstoccur{\gls{didg}}, che è un identificatore univoco alfanumerico per un soggetto, che può essere utilizzato per identificare una persona, un'organizzazione, un dispositivo, un servizio, un documento, ecc.
 \end{itemize}  
 
+\clearpage
+
 Le parti coinvolte in questo processo sono principalmente tre:
 \begin{enumerate}
     \item {\textit{emittente}, detto anche \textit{holder}}, ossia l'entità che emette una credenziale, ad esempio un documento d'identità governativo;
@@ -334,7 +340,7 @@ Le parti coinvolte in questo processo sono principalmente tre:
 
 Il processo di riconoscimento è descritto dalla figura~\ref{fig:ssi}.
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=0.6\textwidth, alt={Come funziona il riconoscimento nella SSI}]{immagini/ssi.png}
     \caption{Processo di riconoscimento di una credenziale SSI}\label{fig:ssi}.
@@ -400,7 +406,7 @@ Occorre definire le parti coinvolte:
     Per assicurarsi che il prover non stia indovinando alla cieca e non ottenga le risposte corrette per caso, il verificatore sceglie altre domande da porre.
 \end{itemize}
 
-\begin{figure}[h] 
+\begin{figure}[ht] 
     \centering
     \includegraphics[width=0.6\textwidth, alt={Come funziona la verifica nella ZKP}]{immagini/zkp.png}
     \caption{Processo di verifica di una ZKP}\label{fig:zkp}
@@ -409,6 +415,8 @@ Occorre definire le parti coinvolte:
 A livello di transazioni, la ZKP è utilizzata per garantire la sicurezza con certezza che le transazioni siano valide (\textit{validity proofs}), tramite la presenza del testimone tipicamente basato su calcoli polinomiali o
 prossimità ad un insieme di valori, come ad esempio la distanza di Hamming. Le transazioni possono essere invalidate in ogni momento tramite le \textit{fraud proofs}, che dimostrano che la transazione è stata effettuata in modo illegittimo.
 Queste ultime confrontano i Merkle trees delle transazioni e verificano che l'hash corrisponda a quella originale. \\
+
+\newpage 
 
 Di fatto, ogni prova deve dimostrare di essere completa, pertanto è necessario che il verificatore sia in grado di verificare che la risposta del prover sia corretta,
 dimostrando questa affermazione con solidità, in modo da non lasciare spazio a dubbi e a falsi positivi, senza trasmettere alcun dato (a conoscenza zero).
@@ -428,6 +436,8 @@ I principali tipi sono:
 All'interno delle blockchain, vengono utilizzati all'interno delle sidechain secondo il sistema delle \textit{zk-Rollup}, che permettono di eseguire transazioni su una blockchain laterale (sidechain) senza doverle scrivere su questa.
 In altre parole, con uno zk-rollup, le transazioni vengono `confezionate' in un'unica transazione che viene elaborata sulla blockchain, riducendo il carico di lavoro richiesto alla rete. 
 Inoltre, grazie all'utilizzo delle Zero Knowledge Proof, le transazioni vengono verificate in modo sicuro, senza rivelare alcuna informazione sulle transazioni stesse.
+
+\clearpage 
 
 Principalmente, queste vengono utilizzate in sistemi di scalabilità layer-2, al fine di memorizzare solo il minimo numero previsto di transazioni (\textit{rollup}),
 oppure memorizzando solamente un hash sulla catena per proteggere i dati del libro mastro (validium), oppure scegliere come salvarli per ogni transazine (\textit{volition}).

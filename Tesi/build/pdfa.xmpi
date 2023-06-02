@@ -62,13 +62,15 @@
   </rdf:Description> 
   <rdf:Description rdf:about="" xmlns:dc="http://purl.org/dc/elements/1.1/"> 
    <dc:format>application/pdf</dc:format> 
-   <dc:title><rdf:Alt><rdf:li xml:lang="x-default">Document’s title</rdf:li></rdf:Alt></dc:title>
-   <dc:creator><rdf:Seq><rdf:li>Author’s name</rdf:li></rdf:Seq></dc:creator>
+   <dc:title><rdf:Alt><rdf:li xml:lang="x-default">VerifiedMovies: il cinema in piena sicurezza con l'uso della blockchain</rdf:li></rdf:Alt></dc:title>
+   <dc:creator><rdf:Seq><rdf:li>Gabriel Rovesti</rdf:li></rdf:Seq></dc:creator>
    <dc:language><rdf:Bag><rdf:li>it-IT</rdf:li></rdf:Bag></dc:language>
-   <dc:description><rdf:Alt><rdf:li xml:lang="x-default">The abstract, or short description.</rdf:li></rdf:Alt></dc:description>
-   <dc:subject><rdf:Bag><rdf:li>keyword1</rdf:li>
-     <rdf:li>keyword2</rdf:li>
-     <rdf:li>keyword3</rdf:li></rdf:Bag></dc:subject>
+   <dc:description><rdf:Alt><rdf:li xml:lang="x-default">Un'implementazione adattata ad un caso d'uso reale di verifica sicura dell'identità senza divulgare informazioni personali con l'uso di blockchain e di alcuni standard W3C collegati ad essa, nello specifico: Decentralized Identifier come identificativo unico, Verifiable Credential e Verifiable Presentation per generare una prova di identità e Zero Knowledge Proof per non divulgare informazioni personali.</rdf:li></rdf:Alt></dc:description>
+   <dc:subject><rdf:Bag><rdf:li>Blockchain </rdf:li>
+     <rdf:li>Self Sovereign Identity (SSI) </rdf:li>
+     <rdf:li>Zero Knowledge Proof (ZKP) </rdf:li>
+     <rdf:li>Decentralized Identifiers (DID) </rdf:li>
+     <rdf:li>Verifiable Credentials (VC) e Verifiable Presentation (VP)</rdf:li></rdf:Bag></dc:subject>
   </rdf:Description> 
   <rdf:Description rdf:about="" xmlns:prism="http://prismstandard.org/namespaces/basic/2.2/"> 
   </rdf:Description> 
@@ -80,15 +82,15 @@
   </rdf:Description> 
   <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/"> 
    <xmp:CreatorTool>LaTeX with hyperref</xmp:CreatorTool> 
-   <xmp:ModifyDate>2023-06-02T13:13:31+02:00</xmp:ModifyDate> 
-   <xmp:CreateDate>2023-06-02T13:13:31+02:00</xmp:CreateDate> 
-   <xmp:MetadataDate>2023-06-02T13:13:31+02:00</xmp:MetadataDate> 
+   <xmp:ModifyDate>2023-06-02T14:47:02+02:00</xmp:ModifyDate> 
+   <xmp:CreateDate>2023-06-02T14:47:02+02:00</xmp:CreateDate> 
+   <xmp:MetadataDate>2023-06-02T14:47:02+02:00</xmp:MetadataDate> 
   </rdf:Description> 
   <rdf:Description rdf:about="" xmlns:xmpRights = "http://ns.adobe.com/xap/1.0/rights/"> 
   </rdf:Description> 
   <rdf:Description rdf:about="" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"> 
    <xmpMM:DocumentID>uuid:03D28DDE-F9EC-3F33-FD10-51B5A3A279A6</xmpMM:DocumentID> 
-   <xmpMM:InstanceID>uuid:A90B3BF0-D48F-14C4-3F97-066F102A627C</xmpMM:InstanceID> 
+   <xmpMM:InstanceID>uuid:027008BF-B9C4-D3E9-3E11-8BCE4124ACBF</xmpMM:InstanceID> 
   </rdf:Description> 
  </rdf:RDF> 
 </x:xmpmeta> 

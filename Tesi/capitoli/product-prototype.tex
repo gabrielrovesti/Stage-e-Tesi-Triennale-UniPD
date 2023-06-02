@@ -134,7 +134,7 @@ a sua volta costituita eventualmente da uno o più componenti, innestati a vari 
 includendo anche eventuali componenti di terze parti per permettere la gestione e l'interazione all'esterno, esportando la funzionalità realizzata dal componente
 o dalla pagina modularmente. \\
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=0.6\textwidth, alt={Descrizione dello schema logico di un'applicazione React}]{immagini/react.jpeg}
     \caption{Schema logico applicazione React}\label{fig:react}
@@ -192,7 +192,7 @@ e così poterlo eseguire sulla blockchain. Ogni operazione effettuata presso il 
 Questo viene reso possibile grazie alla \textit{Ethereum Virtual Machine (EVM)}, che fornisce un codice univoco ed immutabile, poi usato dai nodi della rete.
 \end{itemize}
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=0.6\textwidth, alt={Descrizione dell'architettura di Ethereum}]{immagini/ethereum-architecture.png}
     \caption{Architettura Ethereum} Fonte dell'immagine:~\cite{site:etharchitecture}\label{fig:eth-architecture}
@@ -201,7 +201,7 @@ Questo viene reso possibile grazie alla \textit{Ethereum Virtual Machine (EVM)},
 \newpage
 Complessivamente, l'applicazione avrà graficamente l'architettura visibile in figura~\ref{fig:architettura}, dove viene descritta la composizione del contratto 
 e la sua interazione con la parte front-end dell'applicazione, interagendo con la blockchain di test tramite Hardhat.
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=0.6\textwidth, alt={Descrizione dell'architettura dell'applicazione}]{immagini/architettura.png}
     \caption{Architettura applicazione}\label{fig:architettura}
@@ -261,7 +261,7 @@ previste per gli utenti a seconda che siano o meno autenticati). L'intera applic
 Per questa, come le altre pagine, ove non diversamente specificato, è prevista l'esportazione di default come funzione \textit{TypeScript}, includendo i componenti utili ove previsto e 
 separando la struttura impostata in \textit{HTML} e la presentazione impostata in \textit{CSS} da file omonimo, presente nella stessa cartella della pagina.
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=0.6\textwidth, alt={Pagina principale dell'applicazione}]{immagini/frontend/home.png}
     \caption{Pagina principale}\label{fig:pagina-principale}
@@ -271,7 +271,7 @@ Si noti l'utilizzo di un'immagine di sfondo senza diritti d'autore, proveniente 
 Tutto il sito è stato anche sviluppato per consentire una piena navigazione da mobile, come visibile in figura~\ref{fig:pagina-principale-mobile}.
 Presenta infatti un \textit{layout} responsive, che si adatta alle dimensioni dello schermo del dispositivo utilizzato, avendo come punto di rottura una dimensione 
 di 768 pixel.
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=0.3\textwidth, alt={Pagina principale dell'applicazione vista da cellulare}]{immagini/frontend/home-mobile.png}
     \caption{Pagina principale vista da cellulare}\label{fig:pagina-principale-mobile}
@@ -289,7 +289,7 @@ per verificare che l'utente sia in possesso del \textit{DID} inserito. Tale mecc
 come la nota estensione \textit{MetaMask}, al fine di realizzare un sistema interno che permetta di confermare la validità dei dati dell'utente, sempre usando blockchain,
 sia per il meccanismo di login che registrazione, come richiesto dal proponente. 
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=0.6\textwidth, alt={Pagina principale dell'applicazione}]{immagini/frontend/register.png}
     \caption{Pagina principale}\label{fig:pagina-registrazione}
@@ -301,7 +301,7 @@ e chiamando il metodo \textit{getAuthentication} dello smart contract.
 Se la firma digitale corrisponde e il \textit{DID} corrisponde a quello creato inizialmente, allora la verifica passa e la registrazione è confermata con successo, 
 avvisando l'utente con un messaggio apposito. 
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=0.3\textwidth, alt={Meccanismo di sfida per conferma dell'identità dell'utente}]{immagini/frontend/challenge-response.png}
     \caption{Meccanismo di conferma identità dell'utente}\label{fig:sfida}
@@ -316,7 +316,7 @@ Anche in questo caso, come per la registrazione, è previsto un controllo sulla 
 In base alle specifiche dette, è previsto lo stesso meccanismo di \textit{challenge-response} dettagliato nel paragrafo precedente da figura~\ref{fig:sfida}
 per verificare la validità dei dati inseriti.
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=0.6\textwidth, alt={Pagina di accesso all'applicazione}]{immagini/frontend/login.png}
     \caption{Pagina di login}\label{fig:pagina-login}
@@ -329,7 +329,8 @@ Come visibile, in questo caso, le opzioni di navigazione previste per l'utente c
 e le successive pagine di questa sezione, comprendente la pagina di gestione del profilo, di visualizzazione delle prenotazioni presenti e il link per effettuare il logout.
 Per ogni film è presente un'immagine, il titolo, la descrizione, una categoria e una valutazione in termini di età.
 É inoltre presente il componente \textit{SearchBox} che permette di filtrare i film in base al titolo.
-\begin{figure}[h]
+
+\begin{figure}[ht]
     \centering
     \includegraphics[width=0.6\textwidth, alt={Pagina contenente i film dell'applicazione}]{immagini/frontend/movies.png}
     \caption{Pagina dei film dell'applicazione}\label{fig:pagina-film}
@@ -340,7 +341,7 @@ calcolata dalla data di nascita dell'utente, innesca il meccanismo di verifica d
 in figura~\ref{fig:verifica-eta}.
 Come per la pagina home, le immagini presenti sono state prese dal noto portale di film \textit{IMDB}, utilizzate per fini puramente dimostrativi e non commerciali.
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=0.6\textwidth, alt={Finestra visualizzata di verifica dell'età}]{immagini/frontend/age-verification.png}
     \caption{Finestra di verifica dell'età}\label{fig:verifica-eta}
@@ -441,7 +442,7 @@ la catena di fiducia fino alla radice, verificando la firma digitale di ogni \te
 Graficamente, ciascuno di questi passaggi simula una fase di caricamento, mostrando all'utente un messaggio e un'icona di caricamento, per indicare che il sistema sta eseguendo
 le operazioni fin qui descritte, come visibile in figura~\ref{fig:verifica-eta-corso}.
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=0.6\textwidth, alt={Finestra visualizzata di caricamento durante la verifica dell'età}]{immagini/frontend/verification-doing.png}
     \caption{Esempio di caricamento durante la verifica dell'età}\label{fig:verifica-eta-corso}
@@ -453,7 +454,7 @@ In ultimo, come descritto inizialmente in questo paragrafo, per l'utente è poss
 La recensione prevede, a fini dimostrativi, l'inserimento di un testo, salvato convenzionalmente all'interno del portale in locale.
 L'inserimento è visibile in figura~\ref{fig:recensione-film}.
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=0.3\textwidth, alt={Schermata di inserimento di una recensione per un film}]{immagini/frontend/review.png}
     \caption{Recensione per un film}\label{fig:recensione-film}
@@ -462,7 +463,7 @@ L'inserimento è visibile in figura~\ref{fig:recensione-film}.
 Infine, la condivisione di un film genera un link con i metadati dello stesso e comprendente il titolo del film come parametro di riconoscimento.
 Questa azione è visibile in figura~\ref{fig:condivisione-film}.
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=0.3\textwidth, alt={Schermata di condivisione di un film}]{immagini/frontend/share.png}
     \caption{Condivisione di un film}\label{fig:condivisione-film}
@@ -472,7 +473,7 @@ Questa azione è visibile in figura~\ref{fig:condivisione-film}.
 Per questa pagina, definita in codice come \textit{MovieBookingView}, accessibile una volta effettuata la verifica dell'età, viene mostrata una finestra per confermare la prenotazione del film selezionato, 
 inserendo il numero di posti desiderati, la data di prenotazione, l'orario e il numero di biglietti tra una serie di opzioni disponibili, come visibile in figura~\ref{fig:prenotazione-film}.
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=0.6\textwidth, alt={Schermata della pagina di prenotazione del film selezionato}]{immagini/frontend/movie-booking.png}
     \caption{Pagina di prenotazione del film selezionato}\label{fig:prenotazione-film}
@@ -481,7 +482,7 @@ inserendo il numero di posti desiderati, la data di prenotazione, l'orario e il 
 \newpage
 
 Una volta effettuata la prenotazione, viene mostrata una finestra di conferma, come visibile in figura~\ref{fig:conferma-prenotazione}.
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=0.3\textwidth, alt={Schermata della pagina di conferma della prenotazione del film selezionato}]{immagini/frontend/movie-booking-done.png}
     \caption{Finestra di conferma della prenotazione del film selezionato}\label{fig:conferma-prenotazione}
@@ -491,7 +492,7 @@ Una volta effettuata la prenotazione, viene mostrata una finestra di conferma, c
 Per questa pagina, definita in codice come \textit{BookingListView} ed accessibile una volta effettuata la verifica dell'età e la prenotazione del film, viene mostrata una lista delle prenotazioni effettuate dall'utente.
 I dati del film sono salvati e mostrati in seguito uno all'altro, recuperati dal salvataggio in locale all'interno di \textit{localStorage}, come visibile in figura~\ref{fig:lista-prenotazioni}.
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=0.6\textwidth, alt={Schermata della pagina di lista delle prenotazioni effettuate}]{immagini/frontend/movie-booking-list.png}
     \caption{Pagina della lista delle prenotazioni effettuate}\label{fig:lista-prenotazioni}
@@ -508,7 +509,8 @@ In questa funzione, i dati vengono suddivisi in blocchi di dimensioni fisse, eff
 Questi dati sono crittografati in formato numerico, successivamente decrittati utilizzando la stessa chiave utilizzata in precedenza.
 La pagina offre la possibilità di modificare i propri dati oppure cancellare il proprio profilo, chiamando il metodo dello smart contract \textit{deactivate}
 che permette di disattivare il \textit{DID} associato all'utente, cancellando poi i suoi dati in modo corretto.
-\begin{figure}[h]
+
+\begin{figure}[ht]
     \centering
     \includegraphics[width=0.6\textwidth, alt={Schermata della pagina di gestione del profilo dell'utente}]{immagini/frontend/account.png}
     \caption{Pagina di gestione dei dati dell'utente}\label{fig:profilo}
@@ -520,7 +522,7 @@ La pagina viene definita in codice come \textit{ErrorView}.
 Se l'utente inserisse un URL non valido, verrà mostrata una pagina di errore 404, come visibile in figura~\ref{fig:errore-404}.
 Questa contiene un link che reindirizza l'utente alla pagina principale del portale.
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=0.6\textwidth, alt={Schermata della pagina di errore 404}]{immagini/frontend/404.png}
     \caption{Pagina di errore 404}\label{fig:errore-404}

@@ -14,76 +14,76 @@
 \contentsline {subsection}{\numberline {2.1.4}Wallet}{6}{subsection.2.1.4}%
 \contentsline {subsection}{\numberline {2.1.5}Mining}{7}{subsection.2.1.5}%
 \contentsline {subsection}{\numberline {2.1.6}Algoritmi di consenso}{7}{subsection.2.1.6}%
-\contentsline {subsection}{\numberline {2.1.7}Tipi}{8}{subsection.2.1.7}%
+\contentsline {subsection}{\numberline {2.1.7}Tipi}{9}{subsection.2.1.7}%
 \contentsline {section}{\numberline {2.2}Blockchain: concetti avanzati}{9}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}Token}{9}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}Tokenizzazione}{10}{subsection.2.2.2}%
 \contentsline {subsection}{\numberline {2.2.3}Smart contract}{11}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}Scalabilità}{12}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.4}Scalabilità}{13}{subsection.2.2.4}%
 \contentsline {section}{\numberline {2.3}Self-Sovereign Identity}{13}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Tipi e applicazioni}{14}{subsection.2.3.1}%
 \contentsline {section}{\numberline {2.4}Zero Knowledge Proof}{15}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Tipi e applicazioni}{16}{subsection.2.4.1}%
-\contentsline {chapter}{\numberline {3}Descrizione dello stage}{17}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Introduzione al progetto e idea dello stage}{17}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Analisi preventiva dei rischi}{18}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Obiettivi e requisiti}{19}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Analisi dei requisiti}{21}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Descrizione ed analisi del sistema}{21}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Casi d'uso}{24}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Tracciamento dei requisiti}{37}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Progettazione e codifica del progetto}{41}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Componenti principali del sistema}{41}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Tecnologie utilizzate}{41}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Codifica front-end}{41}{subsection.5.2.1}%
-\contentsline {subsubsection}{\numberline {5.2.1.1}React}{41}{subsubsection.5.2.1.1}%
-\contentsline {subsubsection}{\numberline {5.2.1.2}TypeScript}{41}{subsubsection.5.2.1.2}%
-\contentsline {subsection}{\numberline {5.2.2}Codifica back-end}{42}{subsection.5.2.2}%
-\contentsline {subsubsection}{\numberline {5.2.2.1}Solidity}{42}{subsubsection.5.2.2.1}%
-\contentsline {subsection}{\numberline {5.2.3}Librerie di terze parti}{42}{subsection.5.2.3}%
-\contentsline {subsubsection}{\numberline {5.2.3.1}Node.js}{42}{subsubsection.5.2.3.1}%
-\contentsline {subsubsection}{\numberline {5.2.3.2}Web3.js}{42}{subsubsection.5.2.3.2}%
-\contentsline {subsubsection}{\numberline {5.2.3.3}Hardhat}{42}{subsubsection.5.2.3.3}%
-\contentsline {subsection}{\numberline {5.2.4}Versionamento}{42}{subsection.5.2.4}%
-\contentsline {subsubsection}{\numberline {5.2.4.1}GitHub}{42}{subsubsection.5.2.4.1}%
-\contentsline {subsection}{\numberline {5.2.5}Verifica}{42}{subsection.5.2.5}%
-\contentsline {subsubsection}{\numberline {5.2.5.1}ESLint}{42}{subsubsection.5.2.5.1}%
-\contentsline {subsubsection}{\numberline {5.2.5.2}Jest}{43}{subsubsection.5.2.5.2}%
-\contentsline {section}{\numberline {5.3}Configurazione ambiente di sviluppo}{43}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Smart Contract}{43}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Front-end}{43}{subsection.5.3.2}%
-\contentsline {section}{\numberline {5.4}Progettazione}{44}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}Architettura e pattern front-end}{44}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}Architettura e pattern back-end}{45}{subsection.5.4.2}%
-\contentsline {section}{\numberline {5.5}Codifica}{47}{section.5.5}%
-\contentsline {subsection}{\numberline {5.5.1}Codifica back-end}{47}{subsection.5.5.1}%
-\contentsline {subsection}{\numberline {5.5.2}Codifica front-end}{49}{subsection.5.5.2}%
-\contentsline {subsubsection}{\numberline {5.5.2.1}Pagine realizzate}{49}{subsubsection.5.5.2.1}%
-\contentsline {paragraph}{\numberline {5.5.2.1.1}Home Page}{49}{paragraph.5.5.2.1.1}%
-\contentsline {paragraph}{\numberline {5.5.2.1.2}Registrazione}{50}{paragraph.5.5.2.1.2}%
-\contentsline {paragraph}{\numberline {5.5.2.1.3}Login}{51}{paragraph.5.5.2.1.3}%
-\contentsline {paragraph}{\numberline {5.5.2.1.4}Film}{51}{paragraph.5.5.2.1.4}%
-\contentsline {paragraph}{\numberline {5.5.2.1.5}Prenotazione del film}{54}{paragraph.5.5.2.1.5}%
-\contentsline {paragraph}{\numberline {5.5.2.1.6}Lista delle prenotazioni}{55}{paragraph.5.5.2.1.6}%
-\contentsline {paragraph}{\numberline {5.5.2.1.7}Profilo}{56}{paragraph.5.5.2.1.7}%
-\contentsline {paragraph}{\numberline {5.5.2.1.8}Errore 404}{56}{paragraph.5.5.2.1.8}%
-\contentsline {subsubsection}{\numberline {5.5.2.2}Componenti realizzati}{57}{subsubsection.5.5.2.2}%
-\contentsline {paragraph}{\numberline {5.5.2.2.1}AuthContext}{57}{paragraph.5.5.2.2.1}%
-\contentsline {paragraph}{\numberline {5.5.2.2.2}Footer}{57}{paragraph.5.5.2.2.2}%
-\contentsline {paragraph}{\numberline {5.5.2.2.3}NavBar}{57}{paragraph.5.5.2.2.3}%
-\contentsline {paragraph}{\numberline {5.5.2.2.4}PrivateRoute}{57}{paragraph.5.5.2.2.4}%
-\contentsline {paragraph}{\numberline {5.5.2.2.5}ScreenReaderHelp}{57}{paragraph.5.5.2.2.5}%
-\contentsline {paragraph}{\numberline {5.5.2.2.6}SearchBox}{57}{paragraph.5.5.2.2.6}%
-\contentsline {paragraph}{\numberline {5.5.2.2.7}Notification}{57}{paragraph.5.5.2.2.7}%
-\contentsline {chapter}{\numberline {6}Verifica e validazione}{59}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Accessibilità}{59}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Test di unità}{60}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Test di integrazione}{61}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Test di regressione}{64}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Accettazione e collaudo}{65}{section.6.5}%
-\contentsline {chapter}{\numberline {7}Conclusioni}{67}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Obiettivi raggiunti e consuntivo finale}{67}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Conoscenze acquisite e analisi del lavoro svolto}{67}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Valutazione personale}{67}{section.7.3}%
-\contentsline {chapter}{Glossario}{69}{section*.45}%
-\contentsline {chapter}{Bibliografia}{73}{chapter*.47}%
+\contentsline {chapter}{\numberline {3}Descrizione dello stage}{19}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introduzione al progetto e idea dello stage}{19}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Analisi preventiva dei rischi}{20}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Obiettivi e requisiti}{21}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Analisi dei requisiti}{23}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Descrizione ed analisi del sistema}{23}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Casi d'uso}{26}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Tracciamento dei requisiti}{39}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Progettazione e codifica del progetto}{43}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Componenti principali del sistema}{43}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Tecnologie utilizzate}{43}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Codifica front-end}{43}{subsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.1.1}React}{43}{subsubsection.5.2.1.1}%
+\contentsline {subsubsection}{\numberline {5.2.1.2}TypeScript}{43}{subsubsection.5.2.1.2}%
+\contentsline {subsection}{\numberline {5.2.2}Codifica back-end}{44}{subsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.2.1}Solidity}{44}{subsubsection.5.2.2.1}%
+\contentsline {subsection}{\numberline {5.2.3}Librerie di terze parti}{44}{subsection.5.2.3}%
+\contentsline {subsubsection}{\numberline {5.2.3.1}Node.js}{44}{subsubsection.5.2.3.1}%
+\contentsline {subsubsection}{\numberline {5.2.3.2}Web3.js}{44}{subsubsection.5.2.3.2}%
+\contentsline {subsubsection}{\numberline {5.2.3.3}Hardhat}{44}{subsubsection.5.2.3.3}%
+\contentsline {subsection}{\numberline {5.2.4}Versionamento}{44}{subsection.5.2.4}%
+\contentsline {subsubsection}{\numberline {5.2.4.1}GitHub}{44}{subsubsection.5.2.4.1}%
+\contentsline {subsection}{\numberline {5.2.5}Verifica}{44}{subsection.5.2.5}%
+\contentsline {subsubsection}{\numberline {5.2.5.1}ESLint}{44}{subsubsection.5.2.5.1}%
+\contentsline {subsubsection}{\numberline {5.2.5.2}Jest}{45}{subsubsection.5.2.5.2}%
+\contentsline {section}{\numberline {5.3}Configurazione ambiente di sviluppo}{45}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Smart Contract}{45}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Front-end}{45}{subsection.5.3.2}%
+\contentsline {section}{\numberline {5.4}Progettazione}{46}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Architettura e pattern front-end}{46}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Architettura e pattern back-end}{47}{subsection.5.4.2}%
+\contentsline {section}{\numberline {5.5}Codifica}{49}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Codifica back-end}{49}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}Codifica front-end}{51}{subsection.5.5.2}%
+\contentsline {subsubsection}{\numberline {5.5.2.1}Pagine realizzate}{51}{subsubsection.5.5.2.1}%
+\contentsline {paragraph}{\numberline {5.5.2.1.1}Home Page}{51}{paragraph.5.5.2.1.1}%
+\contentsline {paragraph}{\numberline {5.5.2.1.2}Registrazione}{52}{paragraph.5.5.2.1.2}%
+\contentsline {paragraph}{\numberline {5.5.2.1.3}Login}{53}{paragraph.5.5.2.1.3}%
+\contentsline {paragraph}{\numberline {5.5.2.1.4}Film}{53}{paragraph.5.5.2.1.4}%
+\contentsline {paragraph}{\numberline {5.5.2.1.5}Prenotazione del film}{56}{paragraph.5.5.2.1.5}%
+\contentsline {paragraph}{\numberline {5.5.2.1.6}Lista delle prenotazioni}{57}{paragraph.5.5.2.1.6}%
+\contentsline {paragraph}{\numberline {5.5.2.1.7}Profilo}{58}{paragraph.5.5.2.1.7}%
+\contentsline {paragraph}{\numberline {5.5.2.1.8}Errore 404}{58}{paragraph.5.5.2.1.8}%
+\contentsline {subsubsection}{\numberline {5.5.2.2}Componenti realizzati}{59}{subsubsection.5.5.2.2}%
+\contentsline {paragraph}{\numberline {5.5.2.2.1}AuthContext}{59}{paragraph.5.5.2.2.1}%
+\contentsline {paragraph}{\numberline {5.5.2.2.2}Footer}{59}{paragraph.5.5.2.2.2}%
+\contentsline {paragraph}{\numberline {5.5.2.2.3}NavBar}{59}{paragraph.5.5.2.2.3}%
+\contentsline {paragraph}{\numberline {5.5.2.2.4}PrivateRoute}{59}{paragraph.5.5.2.2.4}%
+\contentsline {paragraph}{\numberline {5.5.2.2.5}ScreenReaderHelp}{59}{paragraph.5.5.2.2.5}%
+\contentsline {paragraph}{\numberline {5.5.2.2.6}SearchBox}{59}{paragraph.5.5.2.2.6}%
+\contentsline {paragraph}{\numberline {5.5.2.2.7}Notification}{59}{paragraph.5.5.2.2.7}%
+\contentsline {chapter}{\numberline {6}Verifica e validazione}{61}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Accessibilità}{61}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Test di unità}{62}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Test di integrazione}{63}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Test di regressione}{66}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Accettazione e collaudo}{67}{section.6.5}%
+\contentsline {chapter}{\numberline {7}Conclusioni}{69}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Obiettivi raggiunti e consuntivo finale}{69}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Conoscenze acquisite e analisi del lavoro svolto}{69}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Valutazione personale}{69}{section.7.3}%
+\contentsline {chapter}{Glossario}{71}{section*.11}%
+\contentsline {chapter}{Bibliografia}{75}{chapter*.13}%
