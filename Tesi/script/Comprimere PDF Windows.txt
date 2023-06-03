@@ -1,0 +1,12 @@
+- Installare GhostScript online oppure con un package manager come Chocolatey
+- Usare il prompt dei comandi (cmd) perché con PowerShell non funziona (attenzione a non usare "gs" ma "gswin64c")
+
+gswin64c -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH -sOutputFile="Tesi Gabriel Rovesti".pdf tesi.pdf
+
+- Genererà il PDF nella stessa cartella
+
+Fonti usate per capire come fare:
+https://stackoverflow.com/questions/51988432/ghostscript-ps2pdf-exec-gs-not-found
+https://tex.stackexchange.com/questions/18987/how-to-make-the-pdfs-produced-by-pdflatex-smaller
+https://stackoverflow.com/questions/32355414/failed-attempt-to-compress-pdf-with-ghostscript-device-pdfwrite-requires-out
+
