@@ -84,6 +84,7 @@
 \contentsline {chapter}{\numberline {7}Conclusioni}{69}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Obiettivi raggiunti e consuntivo finale}{69}{section.7.1}%
 \contentsline {section}{\numberline {7.2}Conoscenze acquisite e analisi del lavoro svolto}{69}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Valutazione personale}{69}{section.7.3}%
-\contentsline {chapter}{Glossario}{71}{section*.11}%
-\contentsline {chapter}{Bibliografia}{75}{chapter*.13}%
+\contentsline {section}{\numberline {7.3}Possibili sviluppi futuri e scenari di applicabilità}{71}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Valutazione personale}{71}{section.7.4}%
+\contentsline {chapter}{Glossario}{73}{section*.11}%
+\contentsline {chapter}{Bibliografia}{77}{chapter*.13}%

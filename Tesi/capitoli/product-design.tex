@@ -7,12 +7,12 @@ dettagliando i test svolti a tutti i livelli, dai test di unità fino alla fase 
 
 \section{Accessibilità}\label{sec:verifica-validazione-accessibilita}
 
-Al fine di rendere il sito più accessibile possibile, si è deciso di seguire le linee guida fornite da W3C, in particolare quelle riguardanti l'accessibilità dei contenuti web (WCAG) (\cite{site:wcag}), mantenendo il livello AA.\@
+Al fine di rendere il sito più accessibile possibile, si è deciso di seguire le linee guida fornite da \glsfirstoccur{\gls{w3cg}}, in particolare quelle riguardanti l'accessibilità dei contenuti web (WCAG) (\cite{site:wcag}), mantenendo il livello AA.\@
 Questo ha comportato l'utilizzo di attributi \textit{alt} per le immagini di contenuto (lasciandolo vuoto per le immagini di presentazione) e l'utilizzo di attributi HTML semantici per la struttura del sito, come 
 ad esempio \textit{<header>}, \textit{<main>}, \textit{<footer>} e \textit{<nav>} per gli elementi di navigazione, \textit{label} negli elementi dei form, \textit{<article>} per i contenuti principali della pagina.
 Si riporta inoltre l'utilizzo degli attributi \textit{lang} per specificare la lingua del contenuto qualora fosse diversa dall'italiano. \\
 
-Come descritto per la parte dei componenti, è stato creato un componente apposito per aiuto agli \textit{screen reader}, in grado di fornire un link per saltare la navigazione e accedere direttamente al contenuto principale della pagina
+Come descritto per la parte dei componenti, è stato creato un componente apposito per aiuto agli \glsfirstoccur{\gls{screenreaderg}}, in grado di fornire un \textit{link} per saltare la navigazione e accedere direttamente al contenuto principale della pagina
 oppure l'opzione per tornare su in pagine grandi.
 Il sito utilizza un layout a tre pannelli, cercando di rendere fluida l'esperienza di navigazione, evitando lo scorrimento laterale nelle condizioni di visualizzazione più comuni.
 La struttura cerca di seguire un livello di intestazioni logiche, utilizzando \textit{<h1>} per il titolo principale della pagina, \textit{<h2>} per i titoli di sezione e \textit{<h3>} per i titoli di sottosezione,
@@ -42,7 +42,7 @@ portando il sito ad essere conforme alle linee guida definite.
 
 \section{Test di unità}\label{sec:verifica-validazione-test}
 
-Qui vengono descritti i test di unità effettuati sul codice, utilizzando il framework \textit{Jest} (\cite{site:jest}), che permette di effettuare test di unità su codice \textit{JavaScript} e \textit{TypeScript}
+Qui vengono descritti i test di unità effettuati sul codice, utilizzando il \glsfirstoccur{\gls{frameworkg}} \textit{Jest} (\cite{site:jest}), che permette di effettuare test di unità su codice \textit{JavaScript} e \textit{TypeScript}
 e la libreria di test \textit{React Testing Library} (\cite{site:reacttestinglibrary}), che permette di effettuare test di unità su codice React.
 Il codice identificativo dei test è strutturato da:
 \begin{center}
@@ -77,7 +77,7 @@ alla sezione~\ref{subsec:codice-front-end}.
 \hline
 TU1 & AuthContext & Verificare se il componente AuthContext gestisce correttamente l'autenticazione, salvando lo stato dell'utente e fornendo la logica di autenticazione. & I \\
 \hline
-TU2 & Footer & Verificare se il componente Footer viene visualizzato e caricato correttamente in tutte le pagine dell'applicazione e se il link di ritorno funziona con screen reader. & I \\
+TU2 & Footer & Verificare se il componente Footer viene visualizzato e caricato correttamente in tutte le pagine dell'applicazione e se il link di ritorno funziona con \textit{screen reader}. & I \\
 \hline
 \end{longtable}
 \end{center}
@@ -96,7 +96,7 @@ TU4 & NavBar & Verificare se il componente NavBar permette la visualizzazione de
 \hline
 TU5 & PrivateRoute & Verificare se il componente PrivateRoute gestisce correttamente le rotte protette dell'applicazione, reindirizzando l'utente alla pagina di login se non è autenticato & I \\
 \hline
-TU6 & ScreenReaderHelp & Verificare se il componente ScreenReaderHelp è progettato correttamente per fornire supporto agli screen reader, rendendo il contenuto accessibile solo agli screen reader & I \\
+TU6 & ScreenReaderHelp & Verificare se il componente ScreenReaderHelp è progettato correttamente per fornire supporto agli \textit{screen reader}, rendendo il contenuto accessibile solo agli \textit{screen reader} & I \\
 \hline
 TU7 & SearchBox & Verificare se il componente SearchBox gestisce correttamente la barra di ricerca dei film, effettuando la ricerca in base al titolo e aggiornando correttamente lo stato della ricerca & I \\
 \hline

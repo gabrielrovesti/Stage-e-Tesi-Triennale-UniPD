@@ -43,6 +43,18 @@
       \verb https://arxiv.org/pdf/2208.04692.pdf
       \endverb
     \endentry
+    \entry{site:cicd}{online}{}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labeltitlesource}{title}
+      \field{title}{Continuous Integration and Continuous Delivery}
+      \verb{urlraw}
+      \verb https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment
+      \endverb
+      \verb{url}
+      \verb https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment
+      \endverb
+    \endentry
     \entry{site:didw3c}{online}{}
       \field{sortinit}{D}
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
@@ -163,6 +175,18 @@
       \endverb
       \verb{url}
       \verb https://testing-library.com/docs/react-testing-library/intro/
+      \endverb
+    \endentry
+    \entry{site:scrum}{online}{}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labeltitlesource}{title}
+      \field{title}{Scrum}
+      \verb{urlraw}
+      \verb https://www.scrum.org/resources/what-is-scrum
+      \endverb
+      \verb{url}
+      \verb https://www.scrum.org/resources/what-is-scrum
       \endverb
     \endentry
     \entry{site:solidity}{online}{}

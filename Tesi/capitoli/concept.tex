@@ -13,11 +13,11 @@ tramite l'utilizzo degli standard \glsfirstoccur{\gls{w3cg}} \glsfirstoccur{\gls
 visualizzazione di tutti i contenuti della piattaforma, certificando in modo sicuro la propria identità senza diffondere dati personali tramite 
 l'utilizzo di un \glsfirstoccur{\gls{zkpg}}.\\
 
-Più precisamente, l'implementazione avviene usando lo \textit{smart contract} che implementa ad alto livello lo standard \glsfirstoccur{\gls{ssig}}, 
-scritto nel linguaggio di programmazione \textit{Solidity} da parte dello studente magistrale Alessio De Biasi.
+Più precisamente, l'implementazione avviene usando lo \glsfirstoccur{\gls{smartcontractg}} che implementa ad alto livello lo standard \glsfirstoccur{\gls{ssig}}, 
+scritto nel linguaggio di programmazione \glsfirstoccur{\gls{solidityg}} da parte dello studente magistrale Alessio De Biasi.
 Questo contratto permette la gestione dell'identità digitale tramite la creazione di un documento di identità digitale, che contiene un identificatore univoco
 chiamato \glsfirstoccur{\gls{didg}}, composto da una stringa alfanumerica che identifica l'utente, e un \textit{DID Document}, che contiene le informazioni dell'utente a lui associato.
-Normalmente, la sua creazione avviene tramite un file \textit{json}, composto dallo standard di riferimento, l'identificativo ed un campo \textit{controller},
+Normalmente, la sua creazione avviene tramite un file \glsfirstoccur{\gls{jsong}}, composto dallo standard di riferimento, l'identificativo ed un campo \textit{controller},
 che ha la capacità di fare dei cambiamenti al documento stesso e certifica la firma digitale del documento, sulla base del metodo usato per la sua creazione.
 Il formato del \textit{DID Document} è come il seguente (codice proveniente da~\cite{site:didw3c}):
 
@@ -44,19 +44,19 @@ ogni documento è caratterizzato da una \textit{capability delegation}, che perm
 un metodo di autenticazione, in cui viene stabilito il modo in cui implementare il meccanismo di riconoscimento da parte dell'utente (dimostrando di fatto che sia chi dice di essere) e un 
 genitore, composto da un identificativo ed una firma digitale. \\
 
-L'idea del codice è di creare una cosiddetta `catena di fiducia', la cui idea è associare ad un utente un \glsfirstoccur{\gls{didg}} e dimostrare,
+L'idea del codice è di creare una cosiddetta `catena di fiducia', la cui idea è associare ad un utente un \textit{Decentralized Identifier (DID)} e dimostrare,
 attraverso un meccanismo di autenticazione definito a priori nel documento tramite firme digitali, la risoluzione dei dati trasmessi, il riconoscimento univoco della sua identità
 e l'accesso ad un determinato contenuto. Infatti, l'utente viene riconosciuto perché i suoi dati sono stati certificati da un ente 
 con capacità di firma digitale che, a sua volta, si fida di altri enti anch'essi riconosciuti, fino ad arrivare ad un soggetto radice.
 Se questa catena di fiducia viene risolta correttamente, l'utente viene riconosciuto univocamente e può accedere ai contenuti della piattaforma. \\
 
-La struttura dati blockchain, attraverso l'utilizzo di un account associato ad un \glsfirstoccur{\gls{didg}}, permette di certificare l'identità dell'utente
+La struttura dati blockchain, attraverso l'utilizzo di un account associato ad un \textit{Decentralized Identifier}, permette di certificare l'identità dell'utente
 tramite la firma digitale dei dati trasmessi con la propria coppia di chiavi pubblica/privata, certificando in modo immutabile la propria identità e
 permette di realizzare un sistema di autenticazione sicuro e decentralizzato, che non richiede l'utilizzo di un ente terzo per la verifica delle informazioni. \\
 
 L'utilizzo della piattaforma e delle sue parti prescinde dalla dimostrazione, attraverso una chiamata al contratto libreria fornito, della risoluzione attraverso firma digitale
-del \glsfirstoccur{\gls{didg}} associato all'utente, che dimostra l'utilizzo di un account associato alla rete blockchain,
-la sua identità. Se l'indirizzo che ha firmato digitalmente il documento è associato ad un profilo creatore di quel \glsfirstoccur{\gls{didg}} così firmato,
+del \textit{Decentralized Identifier (DID)} associato all'utente, che dimostra l'utilizzo di un account associato alla rete blockchain,
+la sua identità. Se l'indirizzo che ha firmato digitalmente il documento è associato ad un profilo creatore di quel \textit{Decentralized Identifier (DID)} così firmato,
 allora l'utente può accedere ai contenuti della piattaforma. L'implementazione di questo passaggio prevede che l'utente dimostri precisamente
 la propria identità secondo un meccanismo \textit{challenge-response}: viene generato un numero casuale e viene chiesto all'utente di firmarlo digitalmente, in modo da dimostrare
 che è in possesso della chiave privata associata all'indirizzo che ha firmato il documento. \\
@@ -83,7 +83,7 @@ Normalmente, una \textit{Verifiable Presentation} è infatti composta da:
 
 Invece, una \textit{Verifiable Credential} è composta da:
 \begin{itemize}
-    \item un contesto di riferimento, che è un \textit{URI} che definisce il contesto di riferimento delle credenziali;
+    \item un contesto di riferimento, che è un \glsfirstoccur{\gls{urig}} che definisce il contesto di riferimento delle credenziali;
     \item un identificativo, che specifica il sito di riferimento;
     \item un tipo, che specifica se la credenziale è appropriata per la presentazione;
     \item un soggetto, che è l'identificativo dell'utente a cui sono associate le credenziali;
@@ -724,9 +724,8 @@ Le fonti dei requisiti sono:
   \item \textbf{Interno} = requisito individuato dall'insieme di stagisti e tutor aziendali.
 \end{itemize}
 
-% Eliminate space between this text and the following table
 
-\renewcommand{\arraystretch}{1.1} % Adjust the spacing inside the cells
+\renewcommand{\arraystretch}{1.1}
 
 \begin{center}
 \captionof{table}{Tabella del tracciamento dei requisiti funzionali}\label{tab:requisiti-funzionali}

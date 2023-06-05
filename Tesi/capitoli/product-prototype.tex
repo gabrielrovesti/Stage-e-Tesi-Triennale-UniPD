@@ -7,9 +7,9 @@ a livello di sistema e design pattern.}
 \section{Componenti principali del sistema}\label{sec:componenti-principali}
 Il sistema risulta essere composto da due parti principali: 
 \begin{itemize}
-    \item{\textbf{Front-end}}: è la parte visibile all'utente, che permette di interagire con il sistema. È stata sviluppata utilizzando il framework \textit{React} e il linguaggio \textit{TypeScript}. 
+    \item {\textbf{\glsfirstoccur{\gls{frontendg}}}}: è la parte visibile all'utente, che permette di interagire con il sistema. È stata sviluppata utilizzando il \glsfirstoccur{\gls{frameworkg}} \textit{React} e il linguaggio \textit{TypeScript}. 
     Questa comprende la parte grafica da me realizzata e la relativa interazione con il contratto fornito come libreria dallo studente Alessio De Biasi.
-    \item {\textbf{Back-end}}: è la parte che gestisce la logica dell'applicazione, che permette di interagire con la blockchain e di gestire le funzionalità del sistema. È stata sviluppata utilizzando il linguaggio \textit{Solidity}.
+    \item {\textbf{\glsfirstoccur{\gls{backendg}}}}: è la parte che gestisce la logica dell'applicazione, che permette di interagire con la \textit{blockchain} e di gestire le funzionalità del sistema. È stata sviluppata utilizzando il linguaggio \textit{Solidity}.
     Quest'ultima comprende il contratto sviluppato dallo studente magistrale Alessio De Biasi basato sugli standard \glsfirstoccur{\gls{w3cg}} \glsfirstoccur{\gls{ssig}} e \glsfirstoccur{\gls{didg}}.
 \end{itemize}
 
@@ -45,8 +45,8 @@ Tramite semplici comandi, è possibile installare e rimuovere le dipendenze, agg
 Lo strumento ha permesso una facile configurazione delle dipendenze e la gestione delle versioni (riferimenti in~\cite{site:node}).
 
 \subsubsection{Web3.js}\label{subsubsec:web3js}
-Web3.js è una collezione di librerie JavaScript per poter interagire facilmente con le blockchain, in particolare con Ethereum.
-Essa permette di connettersi ad un nodo della blockchain, inviare transazioni e interagire con gli \textit{smart contract}, gestendo facilmente il collegamento
+Web3.js è una collezione di librerie \textit{JavaScript} per poter interagire facilmente con le blockchain, in particolare con Ethereum.
+Essa permette di connettersi ad un nodo della \textit{blockchain}, inviare transazioni e interagire con gli \textit{smart contract}, gestendo facilmente il collegamento
 e l'interazione tra la parte grafica e gli \textit{smart contract}, definendo modularmente le funzionalità presenti (\cite{site:web3}).
 Grazie a questo, è stato possibile gestire facilmente l'interazione con la \textit{blockchain} e gli \textit{smart contract}, permettendo la chiamata al contratto
 e alle sue funzioni.
@@ -59,8 +59,8 @@ Ethereum (in base alle definizioni e guide in~\cite{site:hardhat}).
 \subsection{Versionamento}\label{subsec:versionamento}
 
 \subsubsection{GitHub}\label{subsubsec:github}
-GitHub è una piattaforma di hosting per progetti software. Essa permette di gestire il versionamento del codice tramite il sistema di controllo di versione \textit{Git}.
-In particolare, consente lo sviluppo di codice attraverso un \textit{repository} remoto, che permette di gestire le modifiche e le versioni del codice, tenendo traccia attraverso un registro
+GitHub è una piattaforma di \textit{hosting} per progetti software. Essa permette di gestire il versionamento del codice tramite il sistema di controllo di versione \textit{Git}.
+In particolare, consente lo sviluppo di codice attraverso un \glsfirstoccur{\gls{repositoryg}} remoto, che permette di gestire le modifiche e le versioni del codice, tenendo traccia attraverso un registro
 delle modifiche effettuate e permettendo di tornare ad una versione precedente del codice (\cite{site:github}). 
 
 \subsection{Verifica}\label{subsec:verifica}
@@ -70,7 +70,7 @@ ESLint è uno strumento di analisi statica del codice per identificare i modelli
 È stato utilizzato per garantire la qualità del codice prodotto, tramite la definizione di regole e la segnalazione di eventuali errori.
 
 \subsubsection{Jest}\label{subsubsec:jest}
-Jest è un framework di test per \textit{JavaScript} e \textit{TypeScript}. È stato utilizzato per la definizione di test unitari e di integrazione, per verificare il corretto funzionamento
+Jest è un \textit{framework} di test per \textit{JavaScript} e \textit{TypeScript}. È stato utilizzato per la definizione di test unitari e di integrazione, per verificare il corretto funzionamento
 delle funzionalità implementate tra le pagine ed i componenti.
 
 \section{Configurazione ambiente di sviluppo}\label{sec:configurazione-ambiente}
@@ -80,13 +80,13 @@ All'interno del mio progetto di stage, per realizzare l'implementazione degli sm
 basato su \textit{Hardhat}, un ambiente di sviluppo per \glsfirstoccur{\gls{ethereumg}} che permette di testare e distribuire \textit{smart contract}.
 Lo strumento permette la creazione di un ambiente di test locale, sulla base dell'impostazione fornita da specifici \textit{script}, in
 grado di gestire la compilazione e la successiva esecuzione (\textit{deploy}) del contratto fornito sulla rete locale.
-Per poter effettuare le singole chiamate, lo strumento fornisce un insieme di \textit{account} di test con un saldo iniziale di 10000 \textit{ETH} (valute della rete \glsfirstoccur{\gls{ethereumg}}, rete \glsfirstoccur{\gls{blockchaing}} utilizzata dallo strumento), 
+Per poter effettuare le singole chiamate, lo strumento fornisce un insieme di \textit{account} di test con un saldo iniziale di 10000 \textit{ETH} (valute della rete \textit{Ethereum}, rete \glsfirstoccur{\gls{blockchaing}} utilizzata dallo strumento), 
 che possono essere utilizzati per effettuare le chiamate desiderate qualora siano presenti transazioni (normalmente in esecuzione sulla porta \textit{8545} all'interno della rete locale). \\
 
 Nello specifico, la strutturazione prevede:
 \begin{itemize}
     \item uno script di \textit{deploy}, scritto in \textit{TypeScript}, che definisce il contratto che viene chiamato, il suo indirizzo sulla rete locale
-    e la generazione di un file \textit{json} chiamato \textit{ABI}, che contiene le informazioni in formato binario del contratto. Esso viene utilizzato nella parte frontend;
+    e la generazione di un file \glsfirstoccur{\gls{jsong}} chiamato \textit{ABI}, che contiene le informazioni in formato binario del contratto. Esso viene utilizzato nella parte frontend;
     \item uno script di test, scritto in \textit{TypeScript}, che permette di testare le funzionalità del contratto, tramite l'ausilio di \textit{web3.js};
     \item uno script di configurazione, che definisce l'\textit{account} utilizzato sulla rete locale e le librerie presenti.
 \end{itemize}
@@ -225,7 +225,7 @@ Globalmente, il contratto definisce le seguenti strutture dati:
     un metodo di verifica di firma digitale, un controllore, un identificativo della blockchain associata e un indirizzo dell'account associato a blockchain da verificare;
     \item \textbf{Service}, che rappresenta il servizio associato al documento di identità, comprensivo di un identificativo, un tipo di servizio e il suo indirizzo \textit{URL};
     \item \textbf{DidDocumentData}, che rappresenta i metadati associati ad uno specifico documento di identità, con un suo identificativo, la sua prova di validità, tre mappe per i tipi di autenticazione, deleghe di capacità
-    e servizi dei documenti ad essi associati e un e un \textit{Parent}e. Ciò risulta utile nella verifica della catena di fiducia implementata successivamente;
+    e servizi dei documenti ad essi associati e un e un \textit{Parent}. Ciò risulta utile nella verifica della catena di fiducia implementata successivamente;
     \item \textbf{DidDocument}, che rappresenta il documento di identità associato all'utente e comprende un identificativo, un metodo di verifica, una delegazione di capacità, un servizio e un \textit{Parent};
     \item \textbf{ResolutionResult}, che rappresenta il risultato della risoluzione del documento di identità, comprendente un identificativo il documento di tipo \textit{DidDocument} associato;
     \item \textbf{ChainResolutionResult}, un vettore di stringhe che racchiude i risultati della risoluzione dei vari documenti di identità associati.
@@ -543,7 +543,7 @@ e presente nella stessa cartella del componente.
 \paragraph{Footer}\label{par:footer}
 
 Il componente è stato realizzato per gestire il footer dell'applicazione, che viene visualizzato in tutte le pagine dell'applicazione.
-Il footer contiene i principali dati di navigazione del sito e contiene un link che permette di ritornare su nella pagina corrente, nascosto a livello visivo, ma accessibile tramite \textit{screen reader}.
+Il footer contiene i principali dati di navigazione del sito e contiene un link che permette di ritornare su nella pagina corrente, nascosto a livello visivo, ma accessibile tramite \glsfirstoccur{\gls{screenreaderg}}.
 
 \paragraph{NavBar}\label{par:navbar}
 
@@ -561,7 +561,7 @@ in base al contesto, se l'utente sia autenticato o meno, reindirizzandolo alla p
 
 \paragraph{ScreenReaderHelp}\label{par:screenreaderhelp}
 
-Il componente è stato progettato e sviluppato con l'obiettivo di fornire un supporto agli screen reader all'interno dell'applicazione. 
+Il componente è stato progettato e sviluppato con l'obiettivo di fornire un supporto agli \textit{screen reader} all'interno dell'applicazione. 
 Esso è stato creato per garantire che i contenuti presenti sulla pagina siano accessibili agli utenti che utilizzano screen reader per navigare e comprendere il contenuto.
 Tramite il suo stile, è possibile nasconderne il contenuto visivamente, assicurandosi che sia accessibile solo agli screen reader.
 

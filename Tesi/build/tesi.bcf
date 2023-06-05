@@ -2349,27 +2349,29 @@
     <bcf:datasource type="file" datatype="bibtex">appendice/bibliografia.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1" intorder="1">site:didw3c</bcf:citekey>
-    <bcf:citekey order="2" intorder="1">site:vpw3c</bcf:citekey>
-    <bcf:citekey order="3" intorder="1">site:zkpw3c</bcf:citekey>
-    <bcf:citekey order="4" intorder="1">site:react</bcf:citekey>
+    <bcf:citekey order="1" intorder="1">site:scrum</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">site:didw3c</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">site:vpw3c</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">site:zkpw3c</bcf:citekey>
     <bcf:citekey order="5" intorder="1">site:react</bcf:citekey>
-    <bcf:citekey order="6" intorder="1">site:solidity</bcf:citekey>
-    <bcf:citekey order="7" intorder="1">site:node</bcf:citekey>
-    <bcf:citekey order="8" intorder="1">site:web3</bcf:citekey>
-    <bcf:citekey order="9" intorder="1">site:hardhat</bcf:citekey>
-    <bcf:citekey order="10" intorder="1">site:github</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">site:etharchitecture</bcf:citekey>
-    <bcf:citekey order="12" intorder="1">site:zkpstandard</bcf:citekey>
-    <bcf:citekey order="13" intorder="1">site:clsignature2</bcf:citekey>
-    <bcf:citekey order="14" intorder="1">site:clsignature</bcf:citekey>
-    <bcf:citekey order="15" intorder="1">site:vpw3c</bcf:citekey>
-    <bcf:citekey order="16" intorder="1">site:wcag</bcf:citekey>
-    <bcf:citekey order="17" intorder="1">site:wcagcontrastchecker</bcf:citekey>
-    <bcf:citekey order="18" intorder="1">site:wave</bcf:citekey>
-    <bcf:citekey order="19" intorder="1">site:jest</bcf:citekey>
-    <bcf:citekey order="20" intorder="1">site:reacttestinglibrary</bcf:citekey>
-    <bcf:citekey order="21" intorder="1" nocite="1">*</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">site:react</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">site:solidity</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">site:node</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">site:web3</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">site:hardhat</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">site:github</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">site:etharchitecture</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">site:zkpstandard</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">site:clsignature2</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">site:clsignature</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">site:vpw3c</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">site:wcag</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">site:wcagcontrastchecker</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">site:wave</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">site:jest</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">site:reacttestinglibrary</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">site:cicd</bcf:citekey>
+    <bcf:citekey order="23" intorder="1" nocite="1">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
