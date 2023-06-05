@@ -1,6 +1,7 @@
 - Installare GhostScript online oppure con un package manager come Chocolatey
 - Usare il prompt dei comandi (cmd) perché con PowerShell non funziona (attenzione a non usare "gs" ma "gswin64c")
 
+Dalla stessa cartella dove si trova "tesi.pdf" lanciare il comando su "cmd":
 gswin64c -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH -sOutputFile="Tesi Gabriel Rovesti".pdf tesi.pdf
 
 - Genererà il PDF nella stessa cartella
