@@ -31,7 +31,7 @@ All'interno delle pagine realizzate, sono stati creati dei tipi appositi per pot
 \subsection{Codifica back-end}\label{subsec:codice-back-end}
 
 \subsubsection{Solidity}\label{subsubsec:solidity}
-Solidity è un linguaggio di programmazione orientato agli oggetti per la scrittura di \glsfirstoccur{\gls{smartcontractg}}. È stato sviluppato da \textit{Ethereum} e permette di gestire
+\textit{Solidity} è un linguaggio di programmazione orientato agli oggetti per la scrittura di \glsfirstoccur{\gls{smartcontractg}}. È stato sviluppato da \textit{Ethereum} e permette di gestire
 lo stato di un contratto, definire funzioni e interagire con altri contratti all'interno delle \textit{blockchain},
 grazie alla gestione del sistema di transazioni basato sugli eventi e alla possibilità di definire interfacce (in base a quanto presente in~\cite{site:solidity}).
 L'interazione con la \textit{blockchain} e il contratto da richiamare come libreria è stato scritto in questo linguaggio.
@@ -39,38 +39,38 @@ L'interazione con la \textit{blockchain} e il contratto da richiamare come libre
 \subsection{Librerie di terze parti}\label{subsec:librerie-terze-parti}
 
 \subsubsection{Node.js}\label{subsubsec:nodejs}
-Node.js è un ambiente di esecuzione \textit{open source} per l'esecuzione di codice \textit{JavaScript} lato \textit{server}. È basato sul motore \textit{JavaScript} V8 di \textit{Google Chrome} e permette di gestire
+\textit{Node.js} è un ambiente di esecuzione \textit{open source} per l'esecuzione di codice \textit{JavaScript} lato \textit{server}. È basato sul motore \textit{JavaScript} V8 di \textit{Google Chrome} e permette di gestire
 le dipendenze dell'applicazione, grazie al suo gestore di pacchetti \textit{npm}, differenziando le librerie dell'applicazione e quelle di terze parti.
 Tramite semplici comandi, è possibile installare e rimuovere le dipendenze, aggiornarle e gestire le versioni. 
 Lo strumento ha permesso una facile configurazione delle dipendenze e la gestione delle versioni (riferimenti in~\cite{site:node}).
 
 \subsubsection{Web3.js}\label{subsubsec:web3js}
-Web3.js è una collezione di librerie \textit{JavaScript} per poter interagire facilmente con le \textit{blockchain}, in particolare con \textit{Ethereum}.
+\textit{Web3.js} è una collezione di librerie \textit{JavaScript} per poter interagire facilmente con le \textit{blockchain}, in particolare con \textit{Ethereum}.
 Essa permette di connettersi ad un nodo della \textit{blockchain}, inviare transazioni e interagire con gli \textit{smart contract}, gestendo facilmente il collegamento
 e l'interazione tra la parte grafica e gli \textit{smart contract}, definendo modularmente le funzionalità presenti (\cite{site:web3}).
 Grazie a questo, è stato possibile gestire facilmente l'interazione con la \textit{blockchain} e gli \textit{smart contract}, permettendo la chiamata al contratto
 e alle sue funzioni.
 
 \subsubsection{Hardhat}\label{subsubsec:hardhat}
-Hardhat è un ambiente di sviluppo per le \textit{blockchain} che permette di testare e distribuire \textit{smart contract}. Esso permette di distribuire facilmente
+\textit{Hardhat} è un ambiente di sviluppo per le \textit{blockchain} che permette di testare e distribuire \textit{smart contract}. Esso permette di distribuire facilmente
 in locale per poter testare le funzionalità degli \textit{smart contract}, e di distribuirli su una \textit{blockchain} pubblica, come ad esempio
 \textit{Ethereum} (in base alle definizioni e guide in~\cite{site:hardhat}).
 
 \subsection{Versionamento}\label{subsec:versionamento}
 
 \subsubsection{GitHub}\label{subsubsec:github}
-GitHub è una piattaforma di \textit{hosting} per progetti software. Essa permette di gestire il versionamento del codice tramite il sistema di controllo di versione \textit{Git}.
+\textit{GitHub} è una piattaforma di \textit{hosting} per progetti software. Essa permette di gestire il versionamento del codice tramite il sistema di controllo di versione \textit{Git}.
 In particolare, consente lo sviluppo di codice attraverso un \glsfirstoccur{\gls{repositoryg}} remoto, che permette di gestire le modifiche e le versioni del codice, tenendo traccia attraverso un registro
 delle modifiche effettuate e permettendo di tornare ad una versione precedente del codice (\cite{site:github}). 
 
 \subsection{Verifica}\label{subsec:verifica}
 
 \subsubsection{ESLint}\label{subsubsec:eslint}
-ESLint è uno strumento di analisi statica del codice per identificare i modelli problematici trovati nel codice \textit{JavaScript} e \textit{TypeScript}.
+\textit{ESLint} è uno strumento di analisi statica del codice per identificare i modelli problematici trovati nel codice \textit{JavaScript} e \textit{TypeScript}.
 È stato utilizzato per garantire la qualità del codice prodotto, tramite la definizione di regole e la segnalazione di eventuali errori.
 
 \subsubsection{Jest}\label{subsubsec:jest}
-Jest è un \textit{framework} di test per \textit{JavaScript} e \textit{TypeScript}. È stato utilizzato per la definizione di test unitari e di integrazione, per verificare il corretto funzionamento
+\textit{Jest} è un \textit{framework} di test per \textit{JavaScript} e \textit{TypeScript}. È stato utilizzato per la definizione di test unitari e di integrazione, per verificare il corretto funzionamento
 delle funzionalità implementate tra le pagine ed i componenti.
 
 \section{Configurazione ambiente di sviluppo}\label{sec:configurazione-ambiente}
@@ -200,7 +200,7 @@ Questo viene reso possibile grazie alla \textit{Ethereum Virtual Machine (EVM)},
 
 \newpage
 Complessivamente, l'applicazione avrà graficamente l'architettura visibile in figura~\ref{fig:architettura}, dove viene descritta la composizione del contratto 
-e la sua interazione con la parte front-end dell'applicazione, interagendo con la \textit{blockchain} di test tramite Hardhat.
+e la sua interazione con la parte front-end dell'applicazione, interagendo con la \textit{blockchain} di test tramite \textit{Hardhat}.
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.6\textwidth, alt={Descrizione dell'architettura dell'applicazione}]{immagini/architettura.png}
@@ -269,7 +269,7 @@ separando la struttura impostata in \textit{HTML} e la presentazione impostata i
 
 Si noti l'utilizzo di un'immagine di sfondo senza diritti d'autore, proveniente dal sito \textit{Unsplash}, che permette di rendere la pagina più accattivante e di presentare l'idea di un'identità digitale.
 Tutto il sito è stato anche sviluppato per consentire una piena navigazione da mobile, come visibile in figura~\ref{fig:pagina-principale-mobile}.
-Presenta infatti un \textit{layout} responsive, che si adatta alle dimensioni dello schermo del dispositivo utilizzato, avendo come punto di rottura una dimensione 
+Presenta infatti un \textit{layout} \textit{responsive}, che si adatta alle dimensioni dello schermo del dispositivo utilizzato, avendo come punto di rottura una dimensione 
 di 768 pixel.
 \begin{figure}[ht]
     \centering
