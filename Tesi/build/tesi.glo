@@ -5,6 +5,7 @@
 \glossaryentry{uml?\glossentry{umlg}|setentrycounter[]{page}"\glsnumberformat}{3}
 \glossaryentry{git?\glossentry{gitg}|setentrycounter[]{page}"\glsnumberformat}{3}
 \glossaryentry{blockchain?\glossentry{blockchaing}|setentrycounter[]{page}"\glsnumberformat}{5}
+\glossaryentry{open source?\glossentry{opensourceg}|setentrycounter[]{page}"\glsnumberformat}{5}
 \glossaryentry{ethereum?\glossentry{ethereumg}|setentrycounter[]{page}"\glsnumberformat}{11}
 \glossaryentry{api?\glossentry{apig}|setentrycounter[]{page}"\glsnumberformat}{12}
 \glossaryentry{ssi?\glossentry{ssig}|setentrycounter[]{page}"\glsnumberformat}{13}
@@ -54,6 +55,7 @@
 \glossaryentry{w3c?\glossentry{w3cg}|setentrycounter[]{page}"\glsnumberformat}{43}
 \glossaryentry{ssi?\glossentry{ssig}|setentrycounter[]{page}"\glsnumberformat}{43}
 \glossaryentry{decentralized identifier?\glossentry{didg}|setentrycounter[]{page}"\glsnumberformat}{43}
+\glossaryentry{open source?\glossentry{opensourceg}|setentrycounter[]{page}"\glsnumberformat}{43}
 \glossaryentry{smart contract?\glossentry{smartcontractg}|setentrycounter[]{page}"\glsnumberformat}{44}
 \glossaryentry{repository?\glossentry{repositoryg}|setentrycounter[]{page}"\glsnumberformat}{44}
 \glossaryentry{ethereum?\glossentry{ethereumg}|setentrycounter[]{page}"\glsnumberformat}{45}
@@ -68,6 +70,8 @@
 \glossaryentry{w3c?\glossentry{w3cg}|setentrycounter[]{page}"\glsnumberformat}{61}
 \glossaryentry{screen reader?\glossentry{screenreaderg}|setentrycounter[]{page}"\glsnumberformat}{61}
 \glossaryentry{framework?\glossentry{frameworkg}|setentrycounter[]{page}"\glsnumberformat}{62}
+\glossaryentry{blockchain?\glossentry{blockchaing}|setentrycounter[]{page}"\glsnumberformat}{69}
+\glossaryentry{smart contract?\glossentry{smartcontractg}|setentrycounter[]{page}"\glsnumberformat}{69}
 \glossaryentry{ssi?\glossentry{ssig}|setentrycounter[]{page}"\glsnumberformat}{69}
 \glossaryentry{web3.js?\glossentry{web3jsg}|setentrycounter[]{page}"\glsnumberformat}{69}
 \glossaryentry{w3c?\glossentry{w3cg}|setentrycounter[]{page}"\glsnumberformat}{69}
@@ -90,6 +94,7 @@
 \glossaryentry{git?\glossentry{gitg}|setentrycounter[]{page}"\glsnumberformat}{74}
 \glossaryentry{ide?\glossentry{ideg}|setentrycounter[]{page}"\glsnumberformat}{74}
 \glossaryentry{json?\glossentry{jsong}|setentrycounter[]{page}"\glsnumberformat}{74}
+\glossaryentry{open source?\glossentry{opensourceg}|setentrycounter[]{page}"\glsnumberformat}{74}
 \glossaryentry{repository?\glossentry{repositoryg}|setentrycounter[]{page}"\glsnumberformat}{74}
 \glossaryentry{screen reader?\glossentry{screenreaderg}|setentrycounter[]{page}"\glsnumberformat}{74}
 \glossaryentry{scrum?\glossentry{scrumg}|setentrycounter[]{page}"\glsnumberformat}{74}

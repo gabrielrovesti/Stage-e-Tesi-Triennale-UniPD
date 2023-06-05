@@ -50,28 +50,28 @@ e l'accesso ad un determinato contenuto. Infatti, l'utente viene riconosciuto pe
 con capacità di firma digitale che, a sua volta, si fida di altri enti anch'essi riconosciuti, fino ad arrivare ad un soggetto radice.
 Se questa catena di fiducia viene risolta correttamente, l'utente viene riconosciuto univocamente e può accedere ai contenuti della piattaforma. \\
 
-La struttura dati blockchain, attraverso l'utilizzo di un account associato ad un \textit{Decentralized Identifier}, permette di certificare l'identità dell'utente
+La struttura dati \textit{blockchain}, attraverso l'utilizzo di un \textit{account} associato ad un \textit{Decentralized Identifier}, permette di certificare l'identità dell'utente
 tramite la firma digitale dei dati trasmessi con la propria coppia di chiavi pubblica/privata, certificando in modo immutabile la propria identità e
 permette di realizzare un sistema di autenticazione sicuro e decentralizzato, che non richiede l'utilizzo di un ente terzo per la verifica delle informazioni. \\
 
 L'utilizzo della piattaforma e delle sue parti prescinde dalla dimostrazione, attraverso una chiamata al contratto libreria fornito, della risoluzione attraverso firma digitale
-del \textit{Decentralized Identifier (DID)} associato all'utente, che dimostra l'utilizzo di un account associato alla rete blockchain,
+del \textit{Decentralized Identifier (DID)} associato all'utente, che dimostra l'utilizzo di un \textit{account} associato alla rete \textit{blockchain},
 la sua identità. Se l'indirizzo che ha firmato digitalmente il documento è associato ad un profilo creatore di quel \textit{Decentralized Identifier (DID)} così firmato,
 allora l'utente può accedere ai contenuti della piattaforma. L'implementazione di questo passaggio prevede che l'utente dimostri precisamente
 la propria identità secondo un meccanismo \textit{challenge-response}: viene generato un numero casuale e viene chiesto all'utente di firmarlo digitalmente, in modo da dimostrare
 che è in possesso della chiave privata associata all'indirizzo che ha firmato il documento. \\
 
 Se il metodo di autenticazione conteneva la sua firma e come dato il numero casuale trasmesso, grazie alla generazione dell'identificatore
-e la chiamata al contratto in grado di risalire precisamente all'account blockchain che l'ha emessa, si certifica l'utente in modo univoco.
+e la chiamata al contratto in grado di risalire precisamente all'\textit{account} \textit{blockchain} che l'ha emessa, si certifica l'utente in modo univoco.
 Tale meccanismo viene implementato in fase di registrazione, in cui l'utente possiede un proprio \glsfirstoccur{\gls{didg}} e registra i propri dati anagrafici
-e in fase di accesso, quando l'utente inserita esclusivamente come unico dato per effettuare il login il proprio identificatore, firmato digitalmente nella fase precedente e appartenente in modo univoco a lui. \\
+e in fase di accesso, quando l'utente inserita esclusivamente come unico dato per effettuare il \textit{login} il proprio identificatore, firmato digitalmente nella fase precedente e appartenente in modo univoco a lui. \\
 
 In questa sezione, l'utente viene presentato ad un insieme di film e può scegliere di prenotarne uno. Ciascun film possiede una sua valutazione;
 per potervi accedere e prenotarlo, l'utente dovrà ogni volta certificare la propria età;
 questo passaggio avviene attraverso la creazione di una \glsfirstoccur{\gls{vpg}}, contenente molteplici \glsfirstoccur{\gls{vcg}}, 
 con una associata all'utente (definito \textit{holder} delle credenziali) e le altre associate agli enti verificatori (definiti \textit{issuer}, che sono gli enti che hanno rilasciato le credenziali).
 Questo viene realizzato tramite l'utilizzo del \glsfirstoccur{\gls{didg}} utilizzato in fase di registrazione assieme ad altri dati personali 
-di massima (username, email, data di nascita) e successivo login (utilizzando il solo \glsfirstoccur{\gls{didg}}), verificando che 
+di massima (\textit{username}, \textit{email}, data di nascita) e successivo \textit{login} (utilizzando il solo \glsfirstoccur{\gls{didg}}), verificando che 
 i suoi dati siano corretti ed innescando il meccanismo di verifica correttamente. \\
 
 Normalmente, una \textit{Verifiable Presentation} è infatti composta da:
@@ -162,27 +162,27 @@ Di seguito, un diagramma complessivo (in figura~\ref{fig:usecase-scenario-princi
 \usecaseactors{Utente non autenticato}
 \usecasepre{L'utente ha avviato l'applicazione web e ha aperto la pagina di registrazione}
 \usecasedesc{L'utente vuole registrarsi presso l'applicazione web}
-\usecasepost{L'utente ha completato la registrazione e può effettuare il login}
+\usecasepost{L'utente ha completato la registrazione e può effettuare il \textit{login}}
 \usecasemain{L'utente: }
 
 \begin{enumerate}
-  \item inserisce il proprio username (UC1.1);
-  \item inserisce la propria email (UC1.2);
-  \item inserisce il proprio DID (UC1.3);
+  \item inserisce il proprio \textit{username} (UC1.1);
+  \item inserisce la propria \textit{email} (UC1.2);
+  \item inserisce il proprio \textit{DID} (UC1.3);
   \item inserisce la propria data di nascita (UC1.4).
 \end{enumerate}
 
 \usecaseext{}
 \begin{enumerate}
-  \item Visualizzazione errore email già esistente (UC2);
-  \item Visualizzazione errore DID già esistente (UC3).
+  \item Visualizzazione errore \textit{email} già esistente (UC2);
+  \item Visualizzazione errore \textit{DID} già esistente (UC3).
 \end{enumerate}
 
 \usecasegen{Come da figura~\ref{fig:uc:registrazione}:}
 \begin{enumerate}
-  \item Inserimento username (UC1.1);
+  \item Inserimento \textit{username} (UC1.1);
   \item Inserimento email (UC1.2);
-  \item Inserimento DID (UC1.3);
+  \item Inserimento \textit{DID} (UC1.3);
   \item Inserimento data di nascita (UC1.4);
 \end{enumerate}
 \end{usecase}
@@ -193,41 +193,41 @@ Di seguito, un diagramma complessivo (in figura~\ref{fig:usecase-scenario-princi
   \caption{UC1: Registrazione}\label{fig:uc:registrazione}
 \end{figure}
 
-\begin{usecase}{1.1}{Inserimento username}\label{uc:registrazione-username}
+\begin{usecase}{1.1}{Inserimento \textit{username}}\label{uc:registrazione-}
   \usecaseactors{Utente non autenticato}
   \usecasepre{L'utente ha avviato l'applicazione web e ha aperto la pagina di registrazione}
-  \usecasedesc{L'utente deve inserire uno username per registrarsi presso l'applicazione web}
-  \usecasepost{L'utente ha inserito lo username e può procedere con la registrazione}
+  \usecasedesc{L'utente deve inserire uno \textit{username} per registrarsi presso l'applicazione web}
+  \usecasepost{L'utente ha inserito lo \textit{username} e può procedere con la registrazione}
   \usecasemain{}
   
   \begin{enumerate}
-    \item L'utente inserisce il proprio username.
+    \item L'utente inserisce il proprio \textit{username}.
   \end{enumerate}
   
 \end{usecase}
 
-\begin{usecase}{1.2}{Inserimento email}\label{uc:registrazione-email}
+\begin{usecase}{1.2}{Inserimento \textit{email}}\label{uc:registrazione-email}
   \usecaseactors{Utente non autenticato}
   \usecasepre{L'utente ha avviato l'applicazione web e ha aperto la pagina di registrazione}
-  \usecasedesc{L'utente deve inserire una email per registrarsi presso l'applicazione web}
+  \usecasedesc{L'utente deve inserire una \textit{email} per registrarsi presso l'applicazione web}
   \usecasepost{L'utente ha inserito la propria mail e può procedere con la registrazione}
   \usecasemain{}
   
   \begin{enumerate}
-    \item L'utente inserisce la propria email.
+    \item L'utente inserisce la propria \textit{email}.
   \end{enumerate}
   
 \end{usecase}
 
-\begin{usecase}{1.3}{Inserimento DID}\label{uc:registrazione-did}
+\begin{usecase}{1.3}{Inserimento \textit{DID}}\label{uc:registrazione-did}
   \usecaseactors{Utente non autenticato}
   \usecasepre{L'utente ha avviato l'applicazione web e ha aperto la pagina di registrazione}
-  \usecasedesc{L'utente deve inserire il proprio DID per registrarsi presso l'applicazione web}
-  \usecasepost{L'utente ha inserito il proprio DID e può procedere con la registrazione}
+  \usecasedesc{L'utente deve inserire il proprio \textit{DID} per registrarsi presso l'applicazione web}
+  \usecasepost{L'utente ha inserito il proprio \textit{DID} e può procedere con la registrazione}
   \usecasemain{}
   
   \begin{enumerate}
-    \item L'utente inserisce il proprio DID\@.
+    \item L'utente inserisce il proprio \textit{DID}\@.
   \end{enumerate}
   
 \end{usecase}
@@ -245,27 +245,27 @@ Di seguito, un diagramma complessivo (in figura~\ref{fig:usecase-scenario-princi
   
 \end{usecase}
 
-\begin{usecase}{2}{Visualizzazione errore email già esistente}\label{uc:registrazione-email-esistente}
+\begin{usecase}{2}{Visualizzazione errore \textit{email} già esistente}\label{uc:registrazione-email-esistente}
   \usecaseactors{Utente non autenticato}
-  \usecasepre{L'utente ha inserito una email già esistente}
-  \usecasedesc{L'utente deve inserire una email diversa per registrarsi presso l'applicazione web}
-  \usecasepost{L'utente ha inserito una email diversa e può procedere con la registrazione}
+  \usecasepre{L'utente ha inserito una \textit{email} già esistente}
+  \usecasedesc{L'utente deve inserire una \textit{email} diversa per registrarsi presso l'applicazione web}
+  \usecasepost{L'utente ha inserito una \textit{email} diversa e può procedere con la registrazione}
   \usecasemain{}
   
   \begin{enumerate}
-    \item L'utente visualizza un messaggio di errore che lo informa che la email inserita è già presente nel sistema.
+    \item L'utente visualizza un messaggio di errore che lo informa che la \textit{email} inserita è già presente nel sistema.
   \end{enumerate}
 \end{usecase}
 
-\begin{usecase}{3}{Visualizzazione errore DID già esistente}\label{uc:registrazione-did-esistente}
+\begin{usecase}{3}{Visualizzazione errore \textit{DID} già esistente}\label{uc:registrazione-did-esistente}
   \usecaseactors{Utente non autenticato}
-  \usecasepre{L'utente ha inserito un DID già esistente}
-  \usecasedesc{L'utente deve inserire un DID diverso per registrarsi presso l'applicazione web}
-  \usecasepost{L'utente ha inserito un DID diverso e può procedere con la registrazione}
+  \usecasepre{L'utente ha inserito un \textit{DID} già esistente}
+  \usecasedesc{L'utente deve inserire un \textit{DID} diverso per registrarsi presso l'applicazione web}
+  \usecasepost{L'utente ha inserito un \textit{DID} diverso e può procedere con la registrazione}
   \usecasemain{}
   
   \begin{enumerate}
-    \item L'utente visualizza un messaggio di errore che lo informa che il DID inserito è già presente nel sistema.
+    \item L'utente visualizza un messaggio di errore che lo informa che il \textit{DID} inserito è già presente nel sistema.
   \end{enumerate}
 \end{usecase}
 
@@ -277,17 +277,17 @@ Di seguito, un diagramma complessivo (in figura~\ref{fig:usecase-scenario-princi
   \usecasemain{}
   
   \begin{enumerate}
-    \item L'utente inserisce il proprio DID.\@
+    \item L'utente inserisce il proprio \textit{DID}.\@
   \end{enumerate}
 
   \usecaseext{}
   \begin{enumerate}
-    \item Visualizzazione errore DID errato (UC5).
+    \item Visualizzazione errore \textit{DID} errato (UC5).
   \end{enumerate}
 
   \usecasegen{Come da figura~\ref{fig:uc:autenticazione}:}
   \begin{enumerate}
-    \item Inserimento DID (UC4.1);
+    \item Inserimento \textit{DID} (UC4.1);
   \end{enumerate}
 \end{usecase}
 
@@ -299,28 +299,28 @@ Di seguito, un diagramma complessivo (in figura~\ref{fig:usecase-scenario-princi
 
 \newpage
 
-\begin{usecase}{4.1}{Inserimento DID}\label{uc:autenticazione-did}
+\begin{usecase}{4.1}{Inserimento \textit{DID}}\label{uc:autenticazione-did}
   \usecaseactors{Utente non autenticato}
   \usecasepre{L'utente ha avviato l'applicazione web, non è già autenticato e ha aperto la pagina di autenticazione}
-  \usecasedesc{L'utente deve inserire il proprio DID associato alle proprie credenziali per autenticarsi presso l'applicazione web}
-  \usecasepost{L'utente ha inserito il proprio DID e può procedere con l'autenticazione}
+  \usecasedesc{L'utente deve inserire il proprio \textit{DID} associato alle proprie credenziali per autenticarsi presso l'applicazione web}
+  \usecasepost{L'utente ha inserito il proprio \textit{DID} e può procedere con l'autenticazione}
   \usecasemain{}
   
   \begin{enumerate}
-    \item L'utente inserisce il proprio DID.\@
+    \item L'utente inserisce il proprio \textit{DID}.\@
   \end{enumerate}
 
 \end{usecase}
 
-\begin{usecase}{5}{Visualizzazione errore DID errato}\label{uc:autenticazione-did-errato}
+\begin{usecase}{5}{Visualizzazione errore \textit{DID} errato}\label{uc:autenticazione-did-errato}
   \usecaseactors{Utente non autenticato}
-  \usecasepre{L'utente ha inserito un DID errato}
-  \usecasedesc{L'utente deve inserire un DID corretto per autenticarsi presso l'applicazione web}
-  \usecasepost{L'utente ha inserito un DID non esistente e può procedere con l'autenticazione}
+  \usecasepre{L'utente ha inserito un \textit{DID} errato}
+  \usecasedesc{L'utente deve inserire un \textit{DID} corretto per autenticarsi presso l'applicazione web}
+  \usecasepost{L'utente ha inserito un \textit{DID} non esistente e può procedere con l'autenticazione}
   \usecasemain{}
   
   \begin{enumerate}
-    \item L'utente visualizza un messaggio di errore che lo informa che il DID inserito non è corretto.
+    \item L'utente visualizza un messaggio di errore che lo informa che il \textit{DID} inserito non è corretto.
   \end{enumerate}
 \end{usecase}
 
@@ -369,9 +369,9 @@ Di seguito, un diagramma complessivo (in figura~\ref{fig:usecase-scenario-princi
   \begin{enumerate}
     \item L'utente seleziona un film dalla lista dei film presenti nel sistema;
     \item Il sistema prende la categoria di età del film selezionato e la confronta con l'età dell'utente.
-    \item L'utente presenta la propria Verifiable Credential che attesta la sua età.
-    \item Il sistema verifica la correttezza della Verifiable Credential utilizzando il DID del soggetto che l'ha rilasciata e genera una Verifiable Presentation contenente una Zero Knowledge Proof.
-    \item Il sistema verifica la validità della Zero Knowledge Proof e verifica che l'età dell'utente sia maggiore o uguale a quella del film.
+    \item L'utente presenta la propria \textit{Verifiable Credential} che attesta la sua età.
+    \item Il sistema verifica la correttezza della \textit{Verifiable Credential} utilizzando il \textit{DID} del soggetto che l'ha rilasciata e genera una \textit{Verifiable Presentation} contenente una \textit{Zero Knowledge Proof}.
+    \item Il sistema verifica la validità della \textit{Zero Knowledge Proof} e verifica che l'età dell'utente sia maggiore o uguale a quella del film.
     \item Se la verifica ha successo, l'utente può procedere con la prenotazione del film.
   \end{enumerate}
 \end{usecase}
@@ -609,22 +609,22 @@ Di seguito, un diagramma complessivo (in figura~\ref{fig:usecase-scenario-princi
   
   \begin{enumerate}
     \item L'utente accede alla pagina principale contenente le proprie informazioni personali;
-    \item L'utente modifica il proprio username (UC12.1);
-    \item L'utente modifica la propria email (UC12.2);
-    \item L'utente modifica il proprio DID (UC12.3);
+    \item L'utente modifica il proprio \textit{username} (UC12.1);
+    \item L'utente modifica la propria \textit{email} (UC12.2);
+    \item L'utente modifica il proprio \textit{DID} (UC12.3);
     \item L'utente modifica la propria data di nascita (UC12.4);
   \end{enumerate}
 
   \usecaseext{}
   \begin{enumerate}
-    \item Visualizzazione errore email già esistente (UC2);
-    \item Visualizzazione errore DID già esistente (UC3).
+    \item Visualizzazione errore \textit{email} già esistente (UC2);
+    \item Visualizzazione errore \textit{DID} già esistente (UC3).
   \end{enumerate}
 
   \usecasegen{Come da figura~\ref{fig:uc:modifica-informazioni-profilo}:}
   \begin{enumerate}
-    \item Inserimento nuovo username (UC12.1);
-    \item Inserimento nuova email (UC12.2);
+    \item Inserimento nuovo \textit{username} (UC12.1);
+    \item Inserimento nuova \textit{email} (UC12.2);
     \item Inserimento nuova data di nascita (UC12.3).
   \end{enumerate}
 \end{usecase}
@@ -637,28 +637,28 @@ Di seguito, un diagramma complessivo (in figura~\ref{fig:usecase-scenario-princi
 
 \newpage
 
-\begin{usecase}{12.1}{Inserimento nuovo username}\label{uc:modifica-username}
+\begin{usecase}{12.1}{Inserimento nuovo \textit{username}}\label{uc:modifica-username}
   \usecaseactors{Utente autenticato}
-  \usecasepre{L'utente è autenticato e intende modificare il proprio username}
-  \usecasedesc{L'utente vuole modificare lo username associato al proprio account}
-  \usecasepost{L'utente ha inserito il proprio username correttamente}
+  \usecasepre{L'utente è autenticato e intende modificare il proprio \textit{username}}
+  \usecasedesc{L'utente vuole modificare lo \textit{username} associato al proprio \textit{account}}
+  \usecasepost{L'utente ha inserito il proprio \textit{username} correttamente}
   \usecasemain{}
   
   \begin{enumerate}
-    \item L'utente modifica il proprio username e conferma l'operazione.
+    \item L'utente modifica il proprio \textit{username} e conferma l'operazione.
   \end{enumerate}
   
 \end{usecase}
 
-\begin{usecase}{12.2}{Inserimento nuova email}\label{uc:modifica-email}
+\begin{usecase}{12.2}{Inserimento nuova \textit{email}}\label{uc:modifica-email}
   \usecaseactors{Utente autenticato}
-  \usecasepre{L'utente è autenticato e intende modificare la propria email}
-  \usecasedesc{L'utente vuole modificare la mail associata al proprio account}
-  \usecasepost{L'utente ha modificato la propria email correttamente}
+  \usecasepre{L'utente è autenticato e intende modificare la propria \textit{email}}
+  \usecasedesc{L'utente vuole modificare la mail associata al proprio \textit{account}}
+  \usecasepost{L'utente ha modificato la propria \textit{email} correttamente}
   \usecasemain{}
   
   \begin{enumerate}
-    \item L'utente modifica la propria email e conferma l'operazione.
+    \item L'utente modifica la propria \textit{email} e conferma l'operazione.
   \end{enumerate}
   
 \end{usecase}
@@ -666,7 +666,7 @@ Di seguito, un diagramma complessivo (in figura~\ref{fig:usecase-scenario-princi
 \begin{usecase}{12.3}{Inserimento nuova data di nascita}\label{uc:modifica-data-nascita}
   \usecaseactors{Utente autenticato}
   \usecasepre{L'utente è autenticato e intende modificare la propria data di nascita}
-  \usecasedesc{L'utente vuole modificare la data di nascita associata al proprio account}
+  \usecasedesc{L'utente vuole modificare la data di nascita associata al proprio \textit{account}}
   \usecasepost{L'utente ha modificato la data di nascita correttamente}
   \usecasemain{}
   
@@ -676,31 +676,31 @@ Di seguito, un diagramma complessivo (in figura~\ref{fig:usecase-scenario-princi
   
 \end{usecase}
 
-\begin{usecase}{13}{Eliminazione account}\label{uc:eliminazione-account}
+\begin{usecase}{13}{Eliminazione \textit{account}}\label{uc:eliminazione-account}
   \usecaseactors{Utente autenticato}
-  \usecasepre{L'utente è autenticato e intende eliminare il proprio account}
-  \usecasedesc{L'utente vuole eliminare il proprio account dal sistema}
-  \usecasepost{L'utente ha eliminato il proprio account e il sistema ha eliminato tutti i dati ad esso associati}
+  \usecasepre{L'utente è autenticato e intende eliminare il proprio \textit{account}}
+  \usecasedesc{L'utente vuole eliminare il proprio \textit{account} dal sistema}
+  \usecasepost{L'utente ha eliminato il proprio \textit{account} e il sistema ha eliminato tutti i dati ad esso associati}
   \usecasemain{}
   
   \begin{enumerate}
-    \item L'utente accede alla pagina principale contenente di modifica del profilo contenente le proprie informazioni personali;
-    \item L'utente elimina il proprio account;
-    \item Il sistema elimina l'account dell'utente, cancellando il DID e le informazioni ad esso associate.
+    \item L'utente accede alla pagina principale contenente di modifica del profilo contenente le proprie informazioni;
+    \item L'utente elimina il proprio \textit{account};
+    \item Il sistema elimina l'\textit{account} dell'utente, cancellando il \textit{DID} e le informazioni ad esso associate.
   \end{enumerate}
 \end{usecase}
 
 \begin{usecase}{14}{Logout}\label{uc:logout}
   \usecaseactors{Utente autenticato}
   \usecasepre{L'utente è autenticato e intende uscire dalla propria sessione}
-  \usecasedesc{L'utente vuole effettuare il logout dal sistema}
-  \usecasepost{L'utente ha effettuato il logout e il sistema ha terminato la sessione dell'utente, non permettendo più l'accesso alle funzionalità riservate}
+  \usecasedesc{L'utente vuole effettuare il \textit{logout} dal sistema}
+  \usecasepost{L'utente ha effettuato il \textit{logout} e il sistema ha terminato la sessione dell'utente, non permettendo più l'accesso alle funzionalità riservate}
   \usecasemain{}
   
   \begin{enumerate}
     \item L'utente accede alla pagina principale contenente le proprie informazioni personali;
-    \item L'utente effettua il logout;
-    \item Il sistema effettua il logout dell'utente e l'utente è uscito dalla propria sessione.
+    \item L'utente effettua il \textit{logout};
+    \item Il sistema effettua il \textit{logout} dell'utente e l'utente è uscito dalla propria sessione.
   \end{enumerate}
 \end{usecase}
 
@@ -720,10 +720,8 @@ avendo come legenda:
 \end{itemize}
 Le fonti dei requisiti sono:
 \begin{itemize}
-  \item \textbf{UC} = use case;
-  \item \textbf{Interno} = requisito individuato dall'insieme di stagisti e tutor aziendali.
+  \item \textbf{UC} = use case ed \textbf{Interno} = requisito individuato dall'insieme di stagisti e tutor aziendali.
 \end{itemize}
-
 
 \renewcommand{\arraystretch}{1.1}
 
@@ -735,23 +733,23 @@ Le fonti dei requisiti sono:
 \hline
 RFO-1     & Il sistema permette la registrazione di un nuovo utente & UC1 \\
 \hline
-RFO-1.1   & L'utente deve inserire il proprio username & UC1.1 \\
+RFO-1.1   & L'utente deve inserire il proprio \textit{username} & UC1.1 \\
 \hline
-RFO-1.2   & L'utente deve inserire la propria email & UC1.2 \\
+RFO-1.2   & L'utente deve inserire la propria \textit{email} & UC1.2 \\
 \hline
-RFO-1.3   & L'utente deve inserire il proprio DID & UC1.3 \\
+RFO-1.3   & L'utente deve inserire il proprio \textit{DID} & UC1.3 \\
 \hline
 RFO-1.4   & L'utente deve inserire la propria data di nascita & UC1.4 \\
 \hline
-RFO-2   & Il sistema deve visualizzare un errore se l'email inserita è già esistente & UC2 \\
+RFO-2   & Il sistema deve visualizzare un errore se l'\textit{email} inserita è già esistente & UC2 \\
 \hline
-RFO-3   & Il sistema deve visualizzare un errore se il DID inserito è già esistente & UC3 \\
+RFO-3   & Il sistema deve visualizzare un errore se il \textit{DID} inserito è già esistente & UC3 \\
 \hline
 RFO-4   & Il sistema deve permettere l'autenticazione ad un utente che abbia già effettuato la registrazione & UC4 \\
 \hline
-RFO-4.1   & L'utente deve inserire il proprio DID in fase di autenticazione & UC4.1 \\
+RFO-4.1   & L'utente deve inserire il proprio \textit{DID} in fase di autenticazione & UC4.1 \\
 \hline
-RFO-5   & Il sistema deve visualizzare un errore se il DID inserito non è associato ad alcun utente & UC5 \\
+RFO-5   & Il sistema deve visualizzare un errore se il \textit{DID} inserito non è esistente & UC5 \\
 \hline
 RFO-6 & Il sistema deve poter visualizzare la lista dei film presenti nel sistema & UC6 \\
 \hline
@@ -759,7 +757,7 @@ RFO-6.1 & Il sistema deve poter permettere la visualizzazione delle informazioni
 \hline
 RFO-7 & Il sistema deve poter verificare l'età dell'utente, permettendo allo stesso di essere identificato senza rivelare proprie informazioni non necessarie & UC7 \\
 \hline
-RFO-8 & Il sistema deve poter permettere la prenotazione di un film selezionato dall'utente & UC8 \\
+RFO-8 & Il sistema deve poter permettere la prenotazione di un film selezionato & UC8 \\
 \hline
 RFO-8.1 & Il sistema deve poter permettere la selezione di una data per la prenotazione & UC8.1 \\
 \hline
@@ -773,13 +771,13 @@ RFO-9 & L'utente deve poter visualizzare la lista delle prenotazioni effettuate 
 \hline
 RFO-9.1 & L'utente deve poter visualizzare i dettagli di una singola prenotazione & UC9.1 \\
 \hline
-RFO-9.1.1 & L'utente deve poter visualizzare i dettagli del film della singola prenotazione & UC9.1.1 \\
+RFO-9.1.1 & L'utente deve poter visualizzare i dettagli del film della prenotazione & UC9.1.1 \\
 \hline
 RFO-9.1.2 & L'utente deve poter visualizzare la data della singola prenotazione & UC9.1.2 \\
 \hline
 RFO-9.1.3 & L'utente deve poter visualizzare l'orario della singola prenotazione & UC9.1.3 \\
 \hline
-RFO-9.1.4 & L'utente deve poter visualizzare la quantità di biglietti della singola prenotazione & UC9.1.4 \\
+RFO-9.1.4 & L'utente deve poter visualizzare la quantità di biglietti della prenotazione & UC9.1.4 \\
 \hline
 RFO-9.1.5 & L'utente deve poter visualizzare il numero di posti compresi nella singola prenotazione & UC9.1.5 \\
 \hline
@@ -789,13 +787,13 @@ RFO-11 & Il sistema deve poter permettere la recensione dei film presenti & UC11
 \hline
 RFD-12 & Il sistema deve poter permettere la modifica del profilo utente & UC12 \\
 \hline
-RFD-12.1 & L'utente deve poter modificare il proprio username & UC12.1 \\
+RFD-12.1 & L'utente deve poter modificare il proprio \textit{username} & UC12.1 \\
 \hline
-RFD-12.2 & L'utente deve poter modificare la propria email & UC12.2 \\
+RFD-12.2 & L'utente deve poter modificare la propria \textit{email} & UC12.2 \\
 \hline
 RFD-12.3 & L'utente deve poter modificare la propria data di nascita & UC12.3 \\
 \hline
-RFO-13 & Il sistema deve poter permettere l'eliminazione dell'account utente & UC13 \\
+RFO-13 & Il sistema deve poter permettere l'eliminazione dell'\textit{account} utente & UC13 \\
 \hline
 RFO-14 & Il sistema deve poter permettere all'utente di uscire dalla propria sessione & UC14 \\
 \hline
@@ -810,15 +808,15 @@ RFO-14 & Il sistema deve poter permettere all'utente di uscire dalla propria ses
 \hline
 \textbf{Requisito} & \textbf{Descrizione} & \textbf{Fonte}\\
 \hline
-RVO-1 & Il frontend deve essere sviluppato utilizzando il linguaggio di programmazione TypeScript e con la libreria React & Interno \\
+RVO-1 & Il front-end deve essere sviluppato utilizzando il linguaggio di programmazione \textit{TypeScript} e con la libreria \textit{React} & Interno \\
 \hline
-RVO-2 & Il sistema deve comunicare con lo smart contract di Alessio De Biasi usandolo come libreria per la verifica dell'identità & Interno \\
+RVO-2 & Il sistema deve comunicare con lo \textit{smart contract} di Alessio De Biasi usandolo come libreria per la verifica dell'identità & Interno \\
 \hline
-RVO-3 & Il sistema deve utilizzare un'implementazione di Self Sovereign Identity, utilizzando Decentralized Identifiers, Verifiable Credentials, Verifiable Presentation e Zero Knowledge Proof & Interno \\
+RVO-3 & Il sistema deve utilizzare un'implementazione di \textit{Self Sovereign Identity}, utilizzando \textit{Decentralized Identifiers, Verifiable Credentials, Verifiable Presentation e Zero Knowledge Proof} & Interno \\
 \hline
-RVO-4 & Il sistema deve rispettare le leggi sulla privacy e la protezione dei dati personali, permettendo all'utente di non divulgare alcun dato personale nel riconoscimento della propria identità ed età & Interno \\
+RVO-4 & Il sistema deve rispettare le leggi sulla \textit{privacy} e la protezione dei dati personali, permettendo all'utente di non divulgare alcun dato personale nel riconoscimento della propria identità ed età & Interno \\
 \hline
-RVD-5 & Il sistema deve poter integrare un meccanismo interno di challenge-response in fase di registrazione ed autenticazione, senza dipendere da applicazioni esterne quali Metamask & Interno \\
+RVD-5 & Il sistema deve poter integrare un meccanismo interno di \textit{challenge-response} in fase di registrazione ed autenticazione, senza dipendere da applicazioni esterne quali Metamask & Interno \\
 \hline
 \end{tabularx}
 \end{center}
@@ -833,11 +831,11 @@ RQO-1    & Deve essere redatto un documento che descriva il percorso di studio e
 \hline
 RQO-2    & Il codice frontend deve essere coperto da test di unità & Interno \\
 \hline
-RQO-3    & Il codice dello smart contract deve essere coperto da test di unità & Interno \\
+RQO-3    & Il codice dello \textit{smart contract} deve essere coperto da test di unità & Interno \\
 \hline
 RQD-4    & L'applicazione web deve essere responsive e visibile da dispositivi mobili & Interno \\
 \hline
-RQD-5    & L'applicazione web deve essere accessibile da tutti i principali browser & Interno \\
+RQD-5    & L'applicazione web deve essere accessibile da tutti i principali \textit{browser} & Interno \\
 \hline
 \end{tabularx}
 \end{center}

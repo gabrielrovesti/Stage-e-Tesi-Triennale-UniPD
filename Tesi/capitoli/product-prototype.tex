@@ -18,13 +18,13 @@ Il sistema risulta essere composto da due parti principali:
 \subsection{Codifica front-end}\label{subsec:codifica-front-end}
 
 \subsubsection{React}\label{subsubsec:react}
-React è una libreria \textit{JavaScript} utilizzata per la creazione di interfacce utente. È stata sviluppata da \textit{Facebook} e rilasciata nel 2013. 
+\textit{React} è una libreria \textit{JavaScript} utilizzata per la creazione di interfacce utente. È stata sviluppata da \textit{Facebook} e rilasciata nel 2013. 
 Essa consente di creare dei componenti riutilizzabili che rappresentano parti dell'interfaccia e gestire lo stato dell'applicazione in modo efficiente e scalabile.
 Questo lo rende adatto allo sviluppo di applicazioni complesse e dinamiche (specifiche e riferimenti a~\cite{site:react}).
 Nel mio caso, è utilizzato per la progettazione delle componenti e delle pagine.
 
 \subsubsection{TypeScript}\label{subsubsec:typescript}
-TypeScript è un linguaggio di programmazione open source sviluppato da \textit{Microsoft}. È un super-set di \textit{JavaScript} che aggiunge tipi statici opzionali al linguaggio,
+\textit{TypeScript} è un linguaggio di programmazione \glsfirstoccur{\gls{opensourceg}} sviluppato da \textit{Microsoft}. È un super-set di \textit{JavaScript} che aggiunge tipi statici opzionali al linguaggio,
 permettendo di scrivere codice più robusto e manutenibile, grazie alla possibilità di definire interfacce e classi (secondo~\cite{site:react}).
 All'interno delle pagine realizzate, sono stati creati dei tipi appositi per poter gestire più facilmente le informazioni e le funzionalità del sistema.
 
@@ -34,27 +34,27 @@ All'interno delle pagine realizzate, sono stati creati dei tipi appositi per pot
 Solidity è un linguaggio di programmazione orientato agli oggetti per la scrittura di \glsfirstoccur{\gls{smartcontractg}}. È stato sviluppato da \textit{Ethereum} e permette di gestire
 lo stato di un contratto, definire funzioni e interagire con altri contratti all'interno delle \textit{blockchain},
 grazie alla gestione del sistema di transazioni basato sugli eventi e alla possibilità di definire interfacce (in base a quanto presente in~\cite{site:solidity}).
-L'interazione con la blockchain e il contratto da richiamare come libreria è stato scritto in questo linguaggio.
+L'interazione con la \textit{blockchain} e il contratto da richiamare come libreria è stato scritto in questo linguaggio.
 
 \subsection{Librerie di terze parti}\label{subsec:librerie-terze-parti}
 
 \subsubsection{Node.js}\label{subsubsec:nodejs}
-Node.js è un ambiente di runtime open source per l'esecuzione di codice \textit{JavaScript} lato server. È basato sul motore \textit{JavaScript} V8 di \textit{Google Chrome} e permette di gestire
-le dipendenze dell'applicazione, grazie al suo package manager \textit{npm}, differenziando le librerie dell'applicazione e quelle di terze parti.
+Node.js è un ambiente di esecuzione \textit{open source} per l'esecuzione di codice \textit{JavaScript} lato \textit{server}. È basato sul motore \textit{JavaScript} V8 di \textit{Google Chrome} e permette di gestire
+le dipendenze dell'applicazione, grazie al suo gestore di pacchetti \textit{npm}, differenziando le librerie dell'applicazione e quelle di terze parti.
 Tramite semplici comandi, è possibile installare e rimuovere le dipendenze, aggiornarle e gestire le versioni. 
 Lo strumento ha permesso una facile configurazione delle dipendenze e la gestione delle versioni (riferimenti in~\cite{site:node}).
 
 \subsubsection{Web3.js}\label{subsubsec:web3js}
-Web3.js è una collezione di librerie \textit{JavaScript} per poter interagire facilmente con le blockchain, in particolare con Ethereum.
+Web3.js è una collezione di librerie \textit{JavaScript} per poter interagire facilmente con le \textit{blockchain}, in particolare con \textit{Ethereum}.
 Essa permette di connettersi ad un nodo della \textit{blockchain}, inviare transazioni e interagire con gli \textit{smart contract}, gestendo facilmente il collegamento
 e l'interazione tra la parte grafica e gli \textit{smart contract}, definendo modularmente le funzionalità presenti (\cite{site:web3}).
 Grazie a questo, è stato possibile gestire facilmente l'interazione con la \textit{blockchain} e gli \textit{smart contract}, permettendo la chiamata al contratto
 e alle sue funzioni.
 
 \subsubsection{Hardhat}\label{subsubsec:hardhat}
-Hardhat è un ambiente di sviluppo per le blockchain che permette di testare e distribuire smart contract. Esso permette di distribuire facilmente
-in locale per poter testare le funzionalità degli smart contract, e di distribuirli su una blockchain pubblica, come ad esempio
-Ethereum (in base alle definizioni e guide in~\cite{site:hardhat}).
+Hardhat è un ambiente di sviluppo per le \textit{blockchain} che permette di testare e distribuire \textit{smart contract}. Esso permette di distribuire facilmente
+in locale per poter testare le funzionalità degli \textit{smart contract}, e di distribuirli su una \textit{blockchain} pubblica, come ad esempio
+\textit{Ethereum} (in base alle definizioni e guide in~\cite{site:hardhat}).
 
 \subsection{Versionamento}\label{subsec:versionamento}
 
@@ -76,7 +76,7 @@ delle funzionalità implementate tra le pagine ed i componenti.
 \section{Configurazione ambiente di sviluppo}\label{sec:configurazione-ambiente}
 
 \subsection{Smart Contract}\label{subsec:smart-contract}
-All'interno del mio progetto di stage, per realizzare l'implementazione degli smart contract, ho utilizzato un ambiente di sviluppo locale,
+All'interno del mio progetto di stage, per realizzare l'implementazione degli \textit{smart contract}, ho utilizzato un ambiente di sviluppo locale,
 basato su \textit{Hardhat}, un ambiente di sviluppo per \glsfirstoccur{\gls{ethereumg}} che permette di testare e distribuire \textit{smart contract}.
 Lo strumento permette la creazione di un ambiente di test locale, sulla base dell'impostazione fornita da specifici \textit{script}, in
 grado di gestire la compilazione e la successiva esecuzione (\textit{deploy}) del contratto fornito sulla rete locale.
@@ -92,9 +92,9 @@ Nello specifico, la strutturazione prevede:
 \end{itemize}
 
 \subsection{Front-end}\label{subsec:frontend}
-Per lo sviluppo del front-end, ho utilizzato un ambiente di sviluppo locale, basato su \textit{Node.js}, un ambiente di runtime per \textit{JavaScript}.
-Tramite questo, è stato possibile gestire le dipendenze del progetto, tramite il package manager \textit{npm}, e avviare un server locale per poter testare
-e scrivere le pagine presenti. In particolare, il server è stato avviato sulla porta 3000, per poter permettere l'interazione con il contratto tramite
+Per lo sviluppo del front-end, ho utilizzato un ambiente di sviluppo locale, basato su \textit{Node.js}, un ambiente di esecuzione per \textit{JavaScript}.
+Tramite questo, è stato possibile gestire le dipendenze del progetto, tramite il package manager \textit{npm}, e avviare un \textit{server} locale per poter testare
+e scrivere le pagine presenti. In particolare, il \textit{server} è stato avviato sulla porta 3000, per poter permettere l'interazione con il contratto tramite
 le funzionalità del front-end e le chiamate al contratto.
 Nello specifico, la strutturazione prevede:
 \begin{itemize}
@@ -109,7 +109,7 @@ Nello specifico, la strutturazione prevede:
 
 \subsection{Architettura e pattern front-end}\label{subsec:architettura-pattern}
 
-L'utilizzo di React ha permesso di definire una struttura modulare per il front-end, in modo da poter definire facilmente le pagine e le funzionalità.
+L'utilizzo di \textit{React} ha permesso di definire una struttura modulare per il front-end, in modo da poter definire facilmente le pagine e le funzionalità.
 Esso è formato da un insieme di componenti, che definiscono un insieme di funzioni riutilizzabili, ognuna delle quali definisce un suo comportamento. 
 La logica dell'applicazione permette di gestire singolarmente le funzionalità del codice, definendo le pagine come funzioni che vengono
 esportate e utilizzate come entità indipendenti. In questo modo, si incrementa la modularità del codice e la sua manutenibilità, in quanto ogni componente
@@ -122,10 +122,10 @@ pagina in base all'attivazione di specifici eventi in modo dinamico, grazie all'
 In questo modo, i singoli componenti e le pagine, definite come \textit{views}, riescono ad avere singola responsabilità e ne permette un miglior riutilizzo. \\
 
 La logica viene mantenuta separata dalla presentazione, utilizzando la strutturazione a componenti in grado di comunicare nativamente con il 
-\textit{DOM (Document Object Model)} della pagina ma aggiungendo la gestione degli eventi in modo nativo tramite React, permettendo così di poter gestire le interazioni con l'utente
+\textit{DOM (Document Object Model)} della pagina ma aggiungendo la gestione degli eventi in modo nativo tramite \textit{React}, permettendo così di poter gestire le interazioni con l'utente
 solo tramite le componenti e le pagine stesse, separando il codice della pagina dalla sua presentazione realizzata con \textit{CSS}. \\
 
-Dato che React è una libreria grafica, non viene forzato alcun preciso pattern architetturale, ma viene lasciata libertà di scelta allo sviluppatore.
+Dato che \textit{React} è una libreria grafica, non viene forzato alcun preciso pattern architetturale, ma viene lasciata libertà di scelta allo sviluppatore.
 In questo caso, il pattern utilizzato è il \textit{Flux Pattern}, che permette di definire un flusso unidirezionale dei dati, in modo da poter gestire
 le interazioni dell'utente con la pagina e le chiamate al contratto in modo semplice e senza dover gestire la sincronizzazione dei dati tra le varie componenti.
 Ciò permette all'applicazione di essere gestita da funzionalità precise a cascata, andando ad interagire con l'esterno con semplici aggiunte di moduli o dipendenze.
@@ -140,13 +140,13 @@ o dalla pagina modularmente. \\
     \caption{Schema logico applicazione React}\label{fig:react}
 \end{figure}
 
-Secondo le \textit{best practices} di React, sono stati utilizzati un insieme di \textit{design pattern} per normare la codifica tipici della libreria grafica:
+Secondo le \textit{best practices} di \textit{React}, sono stati utilizzati un insieme di \textit{design pattern} per normare la codifica tipici della libreria grafica:
 è stato utilizzato il pattern \textit{Functional Component}, che permette di definire proprietà specifiche (definite come \textit{props})
 ed uno stato interno in grado interagire ad eventi asincroni generati da azioni compiute dall'utente nelle varie condizioni definite. La strutturazione si compone di un insieme di funzioni e stati definiti
 al caricamento della pagina (utilizzando l'\textit{Hook Pattern}, attraverso gli \textit{hooks} \textit{useEffect} e \textit{useState}), in grado di caricare e gestire dinamicamente le informazioni
 al suo interno, esportando poi il componente funzionale o la stessa pagina, secondo un insieme di funzionalità definite dallo specifico contesto. 
 Le componenti stesse supportano nativamente il cambiamento dei propri stati tramite la definizione di funzioni di \textit{callback}, eseguendo le funzioni definite al cambiamento di stato,
-osservando le azioni dell'utente (definito come \textit{Controlled Components} nel contesto React) secondo il noto pattern \textit{Observer} alle chiamate definite dagli eventi stessi. \\
+osservando le azioni dell'utente (definito come \textit{Controlled Components} nel contesto \textit{React}) secondo il noto pattern \textit{Observer} alle chiamate definite dagli eventi stessi. \\
 \\
 
 \newpage
@@ -154,8 +154,8 @@ Nello specifico, l'applicazione definisce per ogni pagina una cartella comprensi
 esportato e del suo stile, e un file di test per verificare le principali funzionalità previste.
 La suddivisione delle cartelle individuata riflette la divisione delle responsabilità; di massima, è presente una cartella \textit{components}, contenente i componenti utilizzati da tutte le pagine 
 comprensive della barra di navigazione, del \textit{footer} e di eventuali componenti di terze parti, una cartella \textit{views} con le pagine realizzate per l'applicazione ed
-una cartella \textit{utils}, con l'insieme delle funzionalità definite all'avvio dell'applicazione e centrali per la comunicazione con blockchain. \\
-L'autenticazione viene gestita tramite un contesto, definito dal \textit{Provider Pattern} di React, che permette di definire un contesto globale
+una cartella \textit{utils}, con l'insieme delle funzionalità definite all'avvio dell'applicazione e centrali per la comunicazione con \textit{blockchain}. \\
+L'autenticazione viene gestita tramite un contesto, definito dal \textit{Provider Pattern} di \textit{React}, che permette di definire un contesto globale
 in cui tutta l'applicazione e le sue componenti vengono racchiuse per poter accedere alle informazioni definite al suo interno in ogni momento.
 Le singole opzioni visibili tra utente autenticato e non autenticato sono invece gestite secondo il pattern \textit{Conditional Rendering}, in grado di differenziare le opzioni
 visibili in base al suo stato.
@@ -175,20 +175,20 @@ In questo modo, secondo l'architettura a componenti definita come flusso, è pos
 utilizzando le funzionalità definite con la creazione di una sola riga di codice ed effettuando le chiamate alle funzionalità previste nella parte di codifica 
 solamente quando necessario, permettendo la relativa sincronizzazione dei componenti che, ascoltando, aggiornano i propri stati secondo le chiamate effettuate. \\
 
-\textit{Hardhat}, in grado di creare una locale di test, agisce quindi da \textit{middleware} tra la parte front-end e la blockchain, permettendo di simulare le chiamate al contratto
+\textit{Hardhat}, in grado di creare una locale di test, agisce quindi da \textit{middleware} tra la parte front-end e la \textit{blockchain}, permettendo di simulare le chiamate al contratto
 ed ugualmente all'utente di interagire con l'applicazione, senza dover effettivamente effettuare le transazioni sulla rete principale.
 Per semplicità di implementazione, le chiamate sono effettuate sulla rete locale con l'utilizzo di profili di test già esistenti, in grado di effettuare le transazioni (ad ogni chiamata
 corrisponde una spesa in termini di valuta, coperta completamente dai profili di test). \\
 
-Si consideri che l'applicazione simula il funzionamento della blockchain \textit{Ethereum}, per la quale la descrizione di un'architettura viene
-descritta secondo il modello \textit{client-server}, in cui il client è rappresentato dal nodo che effettua la richiesta e il server dal nodo che la riceve e la processa.
+Si consideri che l'applicazione simula il funzionamento della \textit{blockchain} \textit{Ethereum}, per la quale la descrizione di un'architettura viene
+descritta secondo il modello \textit{client-server}, in cui il \textit{client} è rappresentato dal nodo che effettua la richiesta e il \textit{server} dal nodo che la riceve e la processa.
 Il modello definito come \textit{Dapp architecture}, descrive complessivamente l'interazione adottata nel progetto, come visibile da figura~\ref{fig:eth-architecture}.
 \begin{itemize}
 \item l'utilizzo di una base di dati locale nel quale vengono salvati i dati relativi all'utente, in grado di essere utilizzati per l'autenticazione e per la creazione dei documenti di identità.
 Nel caso del progetto, ogni dato viene salvato in locale all'interno di \textit{localStorage}, successivamente cifrata localmente secondo quanto sarà descritto in sezioni di codifica e 
-poi effettuando le chiamate al contratto per la creazione dei documenti di identità tramite le chiamate del server presente;
-\item l'utilizzo del codice per memorizzare le transazioni, che permette di considerare uno smart contract, compilarlo e inserire il suo \textit{bytecode} in formato binario
-e così poterlo eseguire sulla blockchain. Ogni operazione effettuata presso il contratto comporta l'operazione di \textit{mining} di un blocco e conseguente spesa di valuta.
+poi effettuando le chiamate al contratto per la creazione dei documenti di identità tramite le chiamate del \textit{server} presente;
+\item l'utilizzo del codice per memorizzare le transazioni, che permette di considerare uno \textit{smart contract}, compilarlo e inserire il suo \textit{bytecode} in formato binario
+e così poterlo eseguire sulla \textit{blockchain}. Ogni operazione effettuata presso il contratto comporta l'operazione di \textit{mining} di un blocco e conseguente spesa di valuta.
 Questo viene reso possibile grazie alla \textit{Ethereum Virtual Machine (EVM)}, che fornisce un codice univoco ed immutabile, poi usato dai nodi della rete.
 \end{itemize}
 
@@ -200,7 +200,7 @@ Questo viene reso possibile grazie alla \textit{Ethereum Virtual Machine (EVM)},
 
 \newpage
 Complessivamente, l'applicazione avrà graficamente l'architettura visibile in figura~\ref{fig:architettura}, dove viene descritta la composizione del contratto 
-e la sua interazione con la parte front-end dell'applicazione, interagendo con la blockchain di test tramite Hardhat.
+e la sua interazione con la parte front-end dell'applicazione, interagendo con la \textit{blockchain} di test tramite Hardhat.
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.6\textwidth, alt={Descrizione dell'architettura dell'applicazione}]{immagini/architettura.png}
@@ -222,7 +222,7 @@ Globalmente, il contratto definisce le seguenti strutture dati:
     \item \textbf{Parent}, che rappresenta il collegamento gerarchico tra i documenti di identità rilasciato, associando un identificativo al genitore,
     un campo di conferma validità ed una firma;
     \item \textbf{VerificationMethod}, che rappresenta il metodo di verifica associato al documento di identità, comprensivo di un indice, un identificativo,
-    un metodo di verifica di firma digitale, un controllore, un identificativo della blockchain associata e un indirizzo dell'account associato a blockchain da verificare;
+    un metodo di verifica di firma digitale, un controllore, un identificativo della \textit{blockchain} associata e un indirizzo dell'\textit{account} associato a \textit{blockchain} da verificare;
     \item \textbf{Service}, che rappresenta il servizio associato al documento di identità, comprensivo di un identificativo, un tipo di servizio e il suo indirizzo \textit{URL};
     \item \textbf{DidDocumentData}, che rappresenta i metadati associati ad uno specifico documento di identità, con un suo identificativo, la sua prova di validità, tre mappe per i tipi di autenticazione, deleghe di capacità
     e servizi dei documenti ad essi associati e un e un \textit{Parent}. Ciò risulta utile nella verifica della catena di fiducia implementata successivamente;
@@ -255,7 +255,7 @@ Ogni metodo descritto è stato utilizzato all'interno di una pagina o componente
 \paragraph{Home Page}\label{par:home-page}
 
 La pagina definita in codice come \textit{HomePage} è la prima schermata visibile collegandosi al sito, come visibile in figura~\ref{fig:pagina-principale}. Essa permette di accedere alle funzionalità principali dell'applicazione.
-In particolare, è possibile accedere alla pagina di registrazione e alla pagina di login attraverso l'utilizzo degli appositi componenti.
+In particolare, è possibile accedere alla pagina di registrazione e alla pagina di \textit{login} attraverso l'utilizzo degli appositi componenti.
 Essa utilizza i componenti principali di navigazione (nello specifico \textit{Footer} e \textit{NavBar} per gestire le opzioni 
 previste per gli utenti a seconda che siano o meno autenticati). L'intera applicazione è infatti racchiusa nel componente \textit{AuthContext}, che permette di gestire lo stato di autenticazione dell'utente.
 Per questa, come le altre pagine, ove non diversamente specificato, è prevista l'esportazione di default come funzione \textit{TypeScript}, includendo i componenti utili ove previsto e 
@@ -284,10 +284,10 @@ poi spiegato in dettaglio nella pagina dei film dove viene attivato tale meccani
 
 Nella pagina in oggetto, definita in codice come \textit{RegisterView}, l'utente è portato a registrarsi all'applicazione, inserendo i dati richiesti, come visibile in figura~\ref{fig:pagina-registrazione}.
 Come descritto dai casi d'uso, vi è un controllo sulla validità dei dati inseriti, verificando se \textit{DID} o la email inserita siano già esistenti.
-Questa è la prima che utilizza lo smart contract libreria direttamente; viene infatti implementato un meccanismo di \textit{challenge-response}
-per verificare che l'utente sia in possesso del \textit{DID} inserito. Tale meccanismo è stato implementato per non dipendere da piattaforme esterne legate a blockchain
-come la nota estensione \textit{MetaMask}, al fine di realizzare un sistema interno che permetta di confermare la validità dei dati dell'utente, sempre usando blockchain,
-sia per il meccanismo di login che registrazione, come richiesto dal proponente. 
+Questa è la prima che utilizza lo \textit{smart contract} libreria direttamente; viene infatti implementato un meccanismo di \textit{challenge-response}
+per verificare che l'utente sia in possesso del \textit{DID} inserito. Tale meccanismo è stato implementato per non dipendere da piattaforme esterne legate a \textit{blockchain}
+come la nota estensione \textit{MetaMask}, al fine di realizzare un sistema interno che permetta di confermare la validità dei dati dell'utente, sempre usando \textit{blockchain},
+sia per il meccanismo di \textit{login} che registrazione, come richiesto dal proponente. 
 
 \begin{figure}[ht]
     \centering
@@ -297,7 +297,7 @@ sia per il meccanismo di login che registrazione, come richiesto dal proponente.
 
 Si prevede, come visibile in figura~\ref{fig:sfida}, che l'utente cifri con la propria chiave privata un numero presentato a schermo;
 in questa fase viene generata una prova di autenticazione in formato \textit{JSON}, che dimostra che l'utente vuole autenticarsi con il suo \textit{DID} avendo firmato il numero
-e chiamando il metodo \textit{getAuthentication} dello smart contract.
+e chiamando il metodo \textit{getAuthentication} dello \textit{smart contract}.
 Se la firma digitale corrisponde e il \textit{DID} corrisponde a quello creato inizialmente, allora la verifica passa e la registrazione è confermata con successo, 
 avvisando l'utente con un messaggio apposito. 
 
@@ -326,7 +326,7 @@ per verificare la validità dei dati inseriti.
 
 In questa pagina, definita in codice come \textit{MoviesView}, sono presenti i film disponibili all'interno del sistema, come visibile in figura~\ref{fig:pagina-film}.
 Come visibile, in questo caso, le opzioni di navigazione previste per l'utente cambiano, mostrando la pagina in oggetto, al link \textit{/Film},
-e le successive pagine di questa sezione, comprendente la pagina di gestione del profilo, di visualizzazione delle prenotazioni presenti e il link per effettuare il logout.
+e le successive pagine di questa sezione, comprendente la pagina di gestione del profilo, di visualizzazione delle prenotazioni presenti e il link per effettuare il \textit{logout}.
 Per ogni film è presente un'immagine, il titolo, la descrizione, una categoria e una valutazione in termini di età.
 É inoltre presente il componente \textit{SearchBox} che permette di filtrare i film in base al titolo.
 
@@ -398,7 +398,7 @@ La credenziale creata internamente ha il seguente aspetto:
         },
       };
 \end{lstlisting}
-L'utilizzo di questo tipo di firma digitale è usata in soluzioni blockchain di secondo livello, come \textit{Hyperledger Indy}, 
+L'utilizzo di questo tipo di firma digitale è usata in soluzioni \textit{blockchain} di secondo livello, come \textit{Hyperledger Indy}, 
 secondo le specifiche dettagliate in~\cite{site:clsignature}. \\
 
 Successivamente, viene utilizzata una funzione che prevede la creazione di una \textit{Verifiable Presentation} che contiene la \textit{Verifiable Credential} creata precedentemente,
@@ -426,7 +426,7 @@ e avendo come parametri al firma e la prova di correttezza generata prima. L'imp
 \end{lstlisting}
 
 Nella successiva fase, viene verificata la firma digitale immessa, utilizzando la chiave pubblica dell'\textit{issuer}, e la prova di correttezza generata precedentemente.
-Tale passaggio prevede l'utilizzo di una funzione che utilizza il calcolo della curva ellittica \textit{secp256k1}, usato all'interno della piattaforma Bitcoin, per verificare all'interno di blockchain
+Tale passaggio prevede l'utilizzo di una funzione che utilizza il calcolo della curva ellittica \textit{secp256k1}, usato all'interno della piattaforma Bitcoin, per verificare all'interno di \textit{blockchain}
 la validità delle transazioni trasmesse. Questa si compone di vari passaggi:
 \begin{itemize}
     \item generazione della coppia di chiavi, pubblica e privata, generando un valore casuale intero definito come \textit{nonce};
@@ -502,12 +502,9 @@ I dati del film sono salvati e mostrati in seguito uno all'altro, recuperati dal
 \paragraph{Profilo}\label{par:profilo}
 
 All'interno di questa pagina, definita in codice come \textit{AccountView}, viene mostrato un riepilogo dei dati dell'utente, come visibile in figura~\ref{fig:profilo}.
-Questi dati, salvati sempre in locale all'interno di \textit{localStorage}, sono recuperati e mostrati all'utente, visibili nella pagina.
-Per evitare che i dati dell'utente siano modificati da terzi in modo malevolo, sono state implementate due funzioni di cifratura e decifratura 
-dei dati secondo una funzione \textit{TypeScript} adattando l'algoritmo di cifratura \textit{AES}, utilizzando come chiave di cifratura il \textit{DID} dell'utente.
-In questa funzione, i dati vengono suddivisi in blocchi di dimensioni fisse, effettuando poi un'operazione di \textit{XOR} con un valore casuale e crittografando i dati in successione.
-Questi dati sono crittografati in formato numerico, successivamente decrittati utilizzando la stessa chiave utilizzata in precedenza.
-La pagina offre la possibilità di modificare i propri dati oppure cancellare il proprio profilo, chiamando il metodo dello smart contract \textit{deactivate}
+Questi dati, salvati sempre in locale all'interno di \textit{sessionStorage}, sono recuperati e mostrati all'utente, visibili nella pagina. Questa implementazione è stata realizzata per motivi di semplicità 
+e per evitare di dover creare un database esterno per la memorizzazione dei dati, che sarebbe stato comunque necessario per un'applicazione reale.
+La pagina offre la possibilità di modificare i propri dati oppure cancellare il proprio profilo, chiamando il metodo dello \textit{smart contract} \textit{deactivate}
 che permette di disattivare il \textit{DID} associato all'utente, cancellando poi i suoi dati in modo corretto.
 
 \begin{figure}[ht]
@@ -548,16 +545,16 @@ Il footer contiene i principali dati di navigazione del sito e contiene un link 
 \paragraph{NavBar}\label{par:navbar}
 
 Il componente è stato realizzato per gestire la barra di navigazione dell'applicazione, che viene visualizzata in tutte le pagine dell'applicazione; in questo caso, se l'utente è autenticato vengono
-mostrati i collegamenti relativi alla pagina principale, al login e alla registrazione, altrimenti vengono visualizzate le voci di menu relative alla pagina principale, alla pagina dei film, al profilo e alla lista di prenotazioni effettuate.
-Per poter effettuare correttamente il logout e riconoscere l'utente, è stato necessario utilizzare la funzione \textit{useContext} di \textit{React}, utilizzando degli \textit{hooks} personalizzati per
+mostrati i collegamenti relativi alla pagina principale, al \textit{login} e alla registrazione, altrimenti vengono visualizzate le voci di menu relative alla pagina principale, alla pagina dei film, al profilo e alla lista di prenotazioni effettuate.
+Per poter effettuare correttamente il \textit{logout} e riconoscere l'utente, è stato necessario utilizzare la funzione \textit{useContext} di \textit{React}, utilizzando degli \textit{hooks} personalizzati per
 gestire la presentazione e i propri link di navigazione.
 
 \paragraph{PrivateRoute}\label{par:privateroute}
 
 Questo componente è stato realizzato per gestire le rotte protette dell'applicazione, che vengono utilizzate per accedere alle pagine di prenotazione e di lista delle prenotazioni.
 Nel caso in cui l'utente non sia autenticato e voglia accedere ad uno dei link protetti, per semplicità a fini applicativi,
-l'utente viene reindirizzato automaticamente alla pagina di login. Di fatto, gestisce con la funzione di autenticazione gli elementi presenti e rileva,
-in base al contesto, se l'utente sia autenticato o meno, reindirizzandolo alla pagina di login o alla pagina richiesta.
+l'utente viene reindirizzato automaticamente alla pagina di \textit{login}. Di fatto, gestisce con la funzione di autenticazione gli elementi presenti e rileva,
+in base al contesto, se l'utente sia autenticato o meno, reindirizzandolo alla pagina di \textit{login} o alla pagina richiesta.
 
 \paragraph{ScreenReaderHelp}\label{par:screenreaderhelp}
 

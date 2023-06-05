@@ -43,7 +43,7 @@ portando il sito ad essere conforme alle linee guida definite.
 \section{Test di unità}\label{sec:verifica-validazione-test}
 
 Qui vengono descritti i test di unità effettuati sul codice, utilizzando il \glsfirstoccur{\gls{frameworkg}} \textit{Jest} (\cite{site:jest}), che permette di effettuare test di unità su codice \textit{JavaScript} e \textit{TypeScript}
-e la libreria di test \textit{React Testing Library} (\cite{site:reacttestinglibrary}), che permette di effettuare test di unità su codice React.
+e la libreria di test \textit{React Testing Library} (\cite{site:reacttestinglibrary}), che permette di effettuare test di unità su codice \textit{React}.
 Il codice identificativo dei test è strutturato da:
 \begin{center}
     \textbf{TU[Numero]}
@@ -130,7 +130,7 @@ avendo come legenda:
 \hline
 TI1 & HomePage & La pagina viene testata per verificarne il caricamento grafico e delle sue componenti & I \\
 \hline
-TI1 & HomePage & La pagina viene testata per verificare se le funzioni di creazione del DID e della catena degli issuer sono chiamate correttamente all'avvio dell'applicazione & I \\
+TI1 & HomePage & La pagina viene testata per verificare se le funzioni di creazione del \textit{DID} e della catena degli \textit{issuer} sono chiamate correttamente all'avvio dell'applicazione & I \\
 \hline
 \end{longtable}
 \end{center}
@@ -147,19 +147,19 @@ TI1 & HomePage & La pagina viene testata per verificare se le funzioni di creazi
 \endhead
 TI3 & RegisterView & La vista di registrazione viene testata per verificare che venga visualizzata correttamente & I \\
 \hline
-TI4 & RegisterView & La vista di registrazione viene testata per verificare che venga gestito correttamente il processo di registrazione tramite il meccanismo challenge-response & I \\
+TI4 & RegisterView & La vista di registrazione viene testata per verificare che venga gestito correttamente il processo di registrazione tramite il meccanismo \textit{challenge-response} & I \\
 \hline
-TI5 & RegisterView & La vista di registrazione viene testata per verificare che vengano gestiti correttamente i controlli di validazione dei campi e le notifiche di successo o di errore in caso di email o DID già registrati & I \\
+TI5 & RegisterView & La vista di registrazione viene testata per verificare che vengano gestiti correttamente i controlli di validazione dei campi e le notifiche di successo o di errore in caso di \textit{email} o \textit{DID} già registrati & I \\
 \hline
-TI6 & LoginView & La vista di login viene testata per verificare che venga visualizzata correttamente & I \\
+TI6 & LoginView & La vista di \textit{login} viene testata per verificare che venga visualizzata correttamente & I \\
 \hline
-TI7 & LoginView & La vista di login viene testata per verificare che venga gestito correttamente il processo di accesso tramite DID & I \\
+TI7 & LoginView & La vista di \textit{login} viene testata per verificare che venga gestito correttamente il processo di accesso tramite \textit{DID} & I \\
 \hline
-TI8 & LoginView & La vista di login viene testata per verificare che vengano gestiti correttamente i controlli di validazione dei campi e le notifiche di errore in caso di DID non esistente & I \\
+TI8 & LoginView & La vista di \textit{login} viene testata per verificare che vengano gestiti correttamente i controlli di validazione dei campi e le notifiche di errore in caso di \textit{DID} non esistente & I \\
 \hline
-TI9 & LoginView & La vista di login viene testata per verificare che venga aperta correttamente la finestra modale di verifica dell'identità in caso di DID esistente & I \\
+TI9 & LoginView & La vista di \textit{login} viene testata per verificare che venga aperta correttamente la finestra modale di verifica dell'identità in caso di \textit{DID} esistente & I \\
 \hline
-TI10 & LoginView & La vista di login viene testata per verificare che venga gestito correttamente il processo di verifica dell'identità & I \\
+TI10 & LoginView & La vista di \textit{login} viene testata per verificare che venga gestito correttamente il processo di verifica dell'identità & I \\
 \hline
 TI11 & MoviesView & La vista dei film viene testata per verificarne il caricamento grafico e delle sue componenti & I \\
 \hline
@@ -235,15 +235,15 @@ avendo come legenda:
 \hline
 \textbf{ID} & \textbf{Elemento} & \textbf{Descrizione} & \textbf{Stato} \\
 \hline
-TR1 & Applicazione & Si testa che l'applicazione venga correttamente caricata e visualizzata nelle sue funzionalità sul browser Google Chrome & I \\
+TR1 & Applicazione & Si testa che l'applicazione venga correttamente caricata e visualizzata nelle sue funzionalità sul \textit{browser Google Chrome} & I \\
 \hline
-TR2 & Applicazione & Si testa che l'applicazione venga correttamente caricata e visualizzata nelle sue funzionalità sul browser Microsoft Edge & I \\
+TR2 & Applicazione & Si testa che l'applicazione venga correttamente caricata e visualizzata nelle sue funzionalità sul \textit{browser Microsoft Edge} & I \\
 \hline
-TR3 & Applicazione & Si testa che l'applicazione venga correttamente caricata e visualizzata nelle sue funzionalità sul browser Safari & I \\
+TR3 & Applicazione & Si testa che l'applicazione venga correttamente caricata e visualizzata nelle sue funzionalità sul \textit{browser Safari} & I \\
 \hline
-TR4 & Applicazione & Si testa che l'applicazione venga correttamente caricata e visualizzata nelle sue funzionalità sul browser Mozilla Firefox & I \\
+TR4 & Applicazione & Si testa che l'applicazione venga correttamente caricata e visualizzata nelle sue funzionalità sul \textit{browser Mozilla Firefox} & I \\
 \hline
-TR5 & Applicazione & Si testa che l'applicazione venga correttamente caricata e visualizzata nelle sue funzionalità sul browser Opera & I \\
+TR5 & Applicazione & Si testa che l'applicazione venga correttamente caricata e visualizzata nelle sue funzionalità sul \textit{browser Opera} & I \\
 \hline
 TR6 & MovieBookingView & Si verifica che le modifiche apportate alla vista di prenotazione non abbiano causato malfunzionamenti & I \\
 \hline
@@ -261,7 +261,7 @@ TR8 & Applicazione & Si verifica che se vengono implementate modifiche al sistem
 Settimanalmente, al fine di conoscere lo stato di avanzamento del prodotto, veniva organizzato un incontro interno con
 il proponente e gli altri stagisti per discutere i progressi raggiunti e discutere eventuali dubbi o problemi riscontrati ad alto livello.
 Ciò ha permesso di monitorare il lavoro e di conoscere lo stato dell'implementazione realizzata, garantendo così una maggiore
-trasparenza e una migliore comunicazione tra le parti, permettendo di avere un feedback indicativo sulle attività da svolgere.
+trasparenza e una migliore comunicazione tra le parti, permettendo di avere un \textit{feedback} indicativo sulle attività da svolgere.
 Alcuni chiarimenti si sono avuti con incontri autonomi con lo stagista magistrale Alessio De Biasi, di cui utilizzo il contratto come codice libreria 
 per il funzionamento dell'applicazione. \\
 
