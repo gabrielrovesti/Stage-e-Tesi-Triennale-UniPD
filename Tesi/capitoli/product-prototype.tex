@@ -247,7 +247,18 @@ Ogni metodo descritto è stato utilizzato all'interno di una pagina o componente
     \item \textbf{getAuthentication}, per ottenere il metodo di autenticazione associato al documento di identità e provare per certo l'utente abbia acceduto secondo il metodo corretto.
 \end{itemize}
 
-\newpage
+Al fine di evitare le vulnerabilità descritte in sezione~\ref{sec:tecnologie-blockchain-avanzate-vulnerabilita-sicurezza} e garantire la sicurezza del contratto, sono state implementate le seguenti misure:
+\begin{itemize}
+    \item \textbf{accesso controllato ai metodi}: i metodi del contratto sono stati resi accessibili solo all'utente che ha effettuato la transazione, in modo da evitare che altri utenti possano accedere ai dati di altri utenti;
+    \item \textbf{cifratura dei dati e dei profili presenti}: i dati sensibili sono stati cifrati prima di essere salvati sulla \textit{blockchain}, in modo da evitare che altri utenti possano accedervi. In particolare, sono stati usati dei metodi di controllo
+    forniti dalla libreria \textit{web3.js} che permette la creazione di \textit{wallet} sicuri partendo dalla coppia di chiavi per ogni account sulla rete locale di test presente;
+    \item \textbf{utilizzo di \textit{nonce} e \textit{gas limit}}: per ogni transazione effettuata, è stato specificato un \textit{nonce} e un \textit{gas limit} per evitare che altri utenti possano effettuare transazioni al posto dell'utente che ha effettuato la transazione oppure
+    per eseguire transazioni ad un prezzo ben più alto di quello previsto;
+    \item \textbf{utilizzo di \textit{modifier}}: per ogni metodo del contratto è stato definito un \textit{modifier} apposito che permette di controllare che l'utente che ha effettuato la transazione sia effettivamente quello che ha creato il documento di identità
+    e che il documento di identità sia attivo;
+    \item \textbf{utilizzo di \textit{eventi}}: per ogni metodo del contratto è stato definito un \textit{evento} apposito che permette di notificare l'utente che ha effettuato la transazione dell'esito della stessa, verificando la corretta esecuzione del metodo chiamato.
+\end{itemize}
+
 \subsection{Codifica front-end}\label{subsec:codice-front-end}
 
 \subsubsection{Pagine realizzate}\label{subsubsec:pagine-realizzate}
@@ -359,7 +370,10 @@ L'implementazione realizzata prevede come primo passaggio una funzione di creazi
 \end{itemize}
 Questo tipo di firma viene utilizzato in quanto permette di realizzare il meccanismo \glsfirstoccur{\gls{zkpg}} (basandomi sulla standardizzazione in~\cite{site:zkpstandard}); infatti, i dati dell'utente vengono creati ed incapsulati
 all'interno di uno schema di appartenenza comune. La verifica della firma permette di certificare che l'utente sia in possesso di una credenziale valida, senza rivelare
-i dati contenuti al suo interno. 
+i dati contenuti al suo interno. Questa realizza un'implementazione che, a livello logico, riflette quanto utilizzato nella piattaforma 
+\textit{Hyperledger Indy}, descritto in sezione~\ref{sec:self-sovereign-identity-tipi-applicazioni} (schema logico e logica applicativa seguita adattando a questo tipo di firma
+quanto presente in~\cite{site:anoncreds}).
+
 Inoltre, secondo il meccanismo di \glsfirstoccur{\gls{ssig}}, occorre fare riferimento a tre soggetti in questo sistema:
 \begin{itemize}
     \item l'\textit{issuer}, che crea la credenziale e la firma. Questo viene generato in fase di accesso al sito;

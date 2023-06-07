@@ -2362,16 +2362,17 @@
     <bcf:citekey order="11" intorder="1">site:github</bcf:citekey>
     <bcf:citekey order="12" intorder="1">site:etharchitecture</bcf:citekey>
     <bcf:citekey order="13" intorder="1">site:zkpstandard</bcf:citekey>
-    <bcf:citekey order="14" intorder="1">site:clsignature2</bcf:citekey>
-    <bcf:citekey order="15" intorder="1">site:clsignature</bcf:citekey>
-    <bcf:citekey order="16" intorder="1">site:vpw3c</bcf:citekey>
-    <bcf:citekey order="17" intorder="1">site:wcag</bcf:citekey>
-    <bcf:citekey order="18" intorder="1">site:wcagcontrastchecker</bcf:citekey>
-    <bcf:citekey order="19" intorder="1">site:wave</bcf:citekey>
-    <bcf:citekey order="20" intorder="1">site:jest</bcf:citekey>
-    <bcf:citekey order="21" intorder="1">site:reacttestinglibrary</bcf:citekey>
-    <bcf:citekey order="22" intorder="1">site:cicd</bcf:citekey>
-    <bcf:citekey order="23" intorder="1" nocite="1">*</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">site:anoncreds</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">site:clsignature2</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">site:clsignature</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">site:vpw3c</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">site:wcag</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">site:wcagcontrastchecker</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">site:wave</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">site:jest</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">site:reacttestinglibrary</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">site:cicd</bcf:citekey>
+    <bcf:citekey order="24" intorder="1" nocite="1">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

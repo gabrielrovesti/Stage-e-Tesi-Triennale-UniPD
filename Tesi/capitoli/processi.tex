@@ -291,6 +291,46 @@ un'attenta valutazione dei rischi.
 
 \clearpage
 
+\subsection{Vulnerabilità e sicurezza}\label{sec:tecnologie-blockchain-avanzate-vulnerabilita-sicurezza}
+
+Le \textit{blockchain} sono soggette a vulnerabilità, che possono essere sfruttate per ottenere informazioni o per compromettere il sistema.
+Il linguaggio \textit{Solidity}, infatti, è un linguaggio che richiede particolare attenzione nella scrittura del codice, in quanto è possibile sfruttare alcune vulnerabilità date dal mancato controllo delle operazioni fatte, ciascuna
+delle quali comporta una transazione e scambio di criptovaluta, pubblicamente visibile e come tale tracciabile ed attaccabile in ogni momento. 
+Ogni dato deve essere opportunamente criptato e protetto, in quanto è possibile ottenere informazioni sensibili come \textit{password} oppure \textit{chiavi private} di un portafoglio, che permettono di accedere ai fondi
+e di eseguire transazioni. \\
+Di seguito verrà esaminato un insieme di problemi comuni che si possono verificare all'interno di un contratto intelligente, dovuti principalmente al mancato controllo e convalida 
+dei dati in ingresso e in uscita, portando allo sfruttamento di vulnerabilità nell'ordine in cui vengono eseguite le operazioni.
+
+\begin{itemize}
+    \item \textbf{re-entrancy}: è un problema importante che può verificarsi ogni volta si chiami una funzione di un contratto esterno; se il contratto esterno è malevolo, può essere sfruttato per eseguire
+    delle chiamate ricorsive. Ogni volta che il contratto esterno `rientrerà' nella funzione, riceverà la stessa quantità di fondi. Al termine dell'esecuzione, l'importo inviato sarà probabilmente più volte superiore a quello previsto.
+    Questo problema può essere risolto utilizzando la funzione \textit{transfer} o \textit{send} per inviare fondi, in quanto queste funzioni eseguono un'operazione \textit{throw} in caso di errore, interrompendo l'esecuzione del contratto
+    e lanciando immediatamente un'eccezione che interrompe l'esecuzione del contratto. Un altro modo è di controllare l'ordine delle chiamate delle funzioni, 
+    introducendo l'uso dei cosiddetti \textit{modifier}, che permettono di controllare l'ordine di esecuzione delle funzioni oppure attraverso l'uso delle istruzioni \textit{assert} e \textit{require}, che fermano l'esecuzione del codice 
+    qualora determinate condizioni non vengano rispettate (ad esempio, se il valore di un dato è negativo oppure per controllare gli indirizzi che eseguono le stesse transazioni);
+    \item \textbf{integer overflow/underflow}: è un problema che si verifica quando si tenta di eseguire un'operazione aritmetica che produce un risultato troppo grande o troppo piccolo per essere rappresentato.
+    Questo problema può essere sfruttato per ottenere un risultato diverso da quello atteso, ad esempio, se si tenta di sottrarre un numero più grande da uno più piccolo, il risultato sarà un numero molto grande, che potrebbe essere
+    utilizzato per realizzare una transazione malevola ed ottenere un guadagno. Il problema può essere risolto sfruttando le ultime versioni del linguaggio \textit{Solidity};
+    \item \textbf{Denial of Service (DoS)}: è un attacco che mira a rendere un servizio non disponibile per gli utenti legittimi, attraverso l'invio di un numero elevato di richieste, che possono essere eseguite in maniera
+    automatica. Il problema si verifica qualora esistano delle chiamate a contratti esterni non controllati oppure se si utilizzano cicli \textit{for} o \textit{while} con un numero di iterazioni elevato. 
+    Questo problema può essere risolto attraverso l'uso di \textit{gas limit} e \textit{gas price}, che permettono di limitare il numero di operazioni eseguibili e di fissare un prezzo limite per ogni operazione;
+    \item \textbf{timestamp dependency}: è un problema che si verifica quando si utilizza il \textit{timestamp} per eseguire operazioni, ad esempio, per controllare se un contratto è scaduto oppure per controllare se un utente ha eseguito
+    un'operazione in un determinato intervallo di tempo. Questo problema può essere sfruttato per eseguire un'operazione in un momento diverso da quello previsto, ad esempio, se si utilizza il timestamp per controllare se un contratto
+    è scaduto, un utente potrebbe eseguire un'operazione prima del tempo previsto. Questo problema può essere risolto utilizzando il \textit{block number}, che permette di controllare il numero di blocchi eseguiti, oppure utilizzando
+    il \textit{block hash}, che permette di controllare l'hash del blocco corrente e verificare se è stato modificato;
+    \item \textbf{transaction-ordering dependency (front running)}: è un problema che si verifica quando un utente esegue un'operazione prima di un altro utente, ad esempio, se un utente esegue un'operazione di acquisto di un bene
+    ad un prezzo più basso rispetto ad un altro utente, l'utente che esegue l'operazione per primo otterrà il bene ad un prezzo più basso. Questo problema può essere risolto utilizzando il \textit{block number} oppure il \textit{block hash}
+    come visto in precedenza;
+\end{itemize}
+
+Altri accorgimenti che si possono adottare sono il controllo della visibilità fornita alle funzioni, che possono essere \textit{public}, \textit{private}, \textit{internal} o \textit{external},
+intendendo rispettivamente che la funzione può essere chiamata da chiunque, solo all'interno del contratto, solo all'interno del contratto e dai contratti che ereditano il contratto oppure solo dai contratti che ereditano il contratto.
+Anche i valori di ritorno delle funzioni, se non controllati, possono scatenare dei problemi importanti di sicurezza, ad esempio, se una funzione restituisce un valore booleano, è possibile che un utente malevolo possa
+sfruttare questo valore per eseguire un'operazione non prevista, iniettando del codice indesiderato oppure eseguendo transazioni nulle, volte a consumare risorse della rete ed ottenere un guadagno esterno.
+I contratti sono, per loro natura, deterministici e le operazioni devono essere eseguite precisamente nello stesso ordine da tutti i nodi della rete, in modo da ottenere lo stesso risultato.
+Risulta quindi fondamentale considerare e controllare ciascuna di queste importanti problematiche, evitando che si generino situazioni in cui un nodo della rete può prendere il controllo di numerose operazioni,
+idealmente prendendo il controllo della maggioranza della rete (problema noto come \textit{51\% attack}) oppure prendendo il controllo di numerosi nodi creando molteplici identità fasulle (problema noto come \textit{Sybil attack}).
+
 \subsection{Scalabilità}\label{sec:tecnologie-blockchain-avanzate-scalabilita}
 Le blockchain sono preziose per il fatto di essere un sistema deterministico e con un grado di affidabilità molto elevato, generalmente neutro e verificabile da parte dell'utente finale.
 In questo contesto, è fondamentale parlare del cosiddetto \textit{blockchain trilemma}, che è un problema di scelta tra tre caratteristiche fondamentali di una blockchain: decentralizzazione, sicurezza e scalabilità.
@@ -310,7 +350,7 @@ Per questo, il nucleo scalabilità permette di introdurre numerose soluzioni al 
 Comunemente, le soluzioni di scalabilità cercano di intervenire in vari modi:
 \begin{itemize}
     \item{\textit{Sharding}}, che è una tecnica di scalabilità che consente di dividere la \textit{blockchain} in più parti, chiamate \textit{shards}, che possono essere gestite da nodi diversi e aumentando
-    la dimensione dei singoli blocchi e la loro frequenza di creazione. Questa si effettua comunemente per il Layer 1.
+    la dimensione dei singoli blocchi e la loro frequenza di creazione. Questa si effettua comunemente per il \textit{Layer 1}.
     \item{\textit{Sidechains}}, che sono \textit{blockchain} secondarie che vengono utilizzate per eseguire transazioni parallele, che vengono poi sincronizzate con la \textit{blockchain} principale.
     In questo ambito, soluzioni comuni includono i \textit{canali di stato (state channels)}, che sono dei contratti intelligenti che permettono di eseguire transazioni tra due parti, senza che queste siano visibili sulla blockchain principale,
     e i \textit{canali di pagamento (payment channels)}, che migliorano la comunicazione bidirezionale delle transazioni eseguendole sulla \textit{blockchain} secondaria e dandone traccia sulla principale.
@@ -320,16 +360,14 @@ Comunemente, le soluzioni di scalabilità cercano di intervenire in vari modi:
 
 La \glsfirstoccur{\gls{ssig}} è un approccio all'identità digitale che dà agli individui 
 il controllo sulle informazioni che usano per dimostrare chi sono a siti web, servizi e applicazioni in tutto il web. 
-Senza l'SSI, gli individui con \textit{account} (identità) persistenti su Internet devono affidarsi a una serie di fornitori terzi, come Facebook, Google e altri,
+Senza l'\textit{SSI}, gli individui con \textit{account} (identità) persistenti su Internet devono affidarsi a una serie di fornitori terzi, come Facebook, Google e altri,
 che hanno il controllo delle informazioni associate alla loro identità. \\
 
-Esistono molti modi per implementare l'SSI utilizzando le chiavi crittografiche e ne analizzeremo due.
+Esistono molti modi per implementare l'\textit{SSI}  utilizzando le chiavi crittografiche e ne analizzeremo due.
 \begin{itemize}
     \item l'utilizzo di firme digitali, attraverso un processo di \textit{firma digitale}, che permette di firmare un documento con una chiave privata, e di verificare la firma con la chiave pubblica;
     \item \glsfirstoccur{\gls{didg}}, che è un identificatore univoco alfanumerico per un soggetto, che può essere utilizzato per identificare una persona, un'organizzazione, un dispositivo, un servizio, un documento, ecc.
 \end{itemize}  
-
-\clearpage
 
 Le parti coinvolte in questo processo sono principalmente tre:
 \begin{enumerate}
@@ -345,7 +383,6 @@ Il processo di riconoscimento è descritto dalla figura~\ref{fig:ssi}.
     \includegraphics[width=0.6\textwidth, alt={Come funziona il riconoscimento nella SSI}]{immagini/ssi.png}
     \caption{Processo di riconoscimento di una credenziale SSI}\label{fig:ssi}.
 \end{figure}
-
 
 Lo scopo principale di questa tecnologia è consentire agli utenti un'esistenza indipendente da provider terzi, 
 permettendo loro di controllare la propria identità in modo sicuro e accedendovi senza dover affidarsi a terzi. \\
@@ -366,9 +403,9 @@ secondo opportuni standard definiti gradualmente dall'organizzazione internazion
 
 \subsection{Tipi e applicazioni}\label{sec:self-sovereign-identity-tipi-applicazioni}
 
-Il concetto di SSI è stato introdotto nel 2015 da \textit{Sovrin Foundation}, che ha sviluppato il protocollo \textit{Sovrin},
+Il concetto di \textit{SSI}  è stato introdotto nel 2015 da \textit{Sovrin Foundation}, che ha sviluppato il protocollo \textit{Sovrin},
 organizzazione privata senza scopo di lucro che ha creato la prima rete di identità auto-sovrana, diventato poi standard \textit{W3C}. 
-Esso si basa sul protocollo è \textit{Hyperledger Indy}, che è un \glsfirstoccur{\gls{frameworkg}} \textit{open source }per la creazione di SSI basato su \textit{blockchain}
+Esso si basa sul protocollo è \textit{Hyperledger Indy}, che è un \glsfirstoccur{\gls{frameworkg}} \textit{open source} per la creazione di SSI basato su \textit{blockchain}
 che fornisce strumenti, librerie e componenti riutilizzabili per fornire identità digitali legate al mondo \textit{blockchain}, 
 come ad esempio la firma digitale e la crittografia. \\
 
@@ -386,7 +423,7 @@ condivise le proprie informazioni. La particolarità di questi protocolli è di 
     la certezza che solo chi conosce l'informazione può correttamente rispondere alle domande poste senza rivelare i propri dati.
 \end{itemize}
 
-Attualmente, la tecnologia SSI prevede una graduale implementazione in sistemi di autenticazione e
+Attualmente, la tecnologia \textit{SSI} prevede una graduale implementazione in sistemi di autenticazione e
 in generale di accesso ai servizi pubblici, permettendo all'utente un ulteriore controllo
 sui dati trasmessi rivelandoli solo a parti autorizzate.
 Questo risulta particolarmente utile nel settore sanitario, legislativo (garantendo certezza di identità e di voto) e finanziario,
@@ -412,19 +449,17 @@ Occorre definire le parti coinvolte:
     \caption{Processo di verifica di una ZKP}\label{fig:zkp}
 \end{figure}
 
-A livello di transazioni, la ZKP è utilizzata per garantire la sicurezza con certezza che le transazioni siano valide (\textit{validity proofs}), tramite la presenza del testimone tipicamente basato su calcoli polinomiali o
+A livello di transazioni, la \textit{ZKP} è utilizzata per garantire la sicurezza con certezza che le transazioni siano valide (\textit{validity proofs}), tramite la presenza del testimone tipicamente basato su calcoli polinomiali o
 prossimità ad un insieme di valori, come ad esempio la distanza di Hamming. Le transazioni possono essere invalidate in ogni momento tramite le \textit{fraud proofs}, che dimostrano che la transazione è stata effettuata in modo illegittimo.
-Queste ultime confrontano i \textit{Merkle trees} delle transazioni e verificano che l'hash corrisponda a quella originale. \\
+Queste ultime confrontano i \textit{Merkle trees} delle transazioni e verificano che l'\textit{hash} corrisponda a quella originale. \\
 
-\newpage 
-
-Di fatto, ogni prova deve dimostrare di essere completa, pertanto è necessario che il verificatore sia in grado di verificare che la risposta del prover sia corretta,
+Di fatto, ogni prova deve dimostrare di essere completa, pertanto è necessario che il verificatore sia in grado di verificare che la risposta del \textit{prover} sia corretta,
 dimostrando questa affermazione con solidità, in modo da non lasciare spazio a dubbi e a falsi positivi, senza trasmettere alcun dato (a conoscenza zero).
-L'idea principale della ZKP è presupporre di non fidarsi di nessuno (\textit{zero trust}), al fine di garantire la sicurezza delle informazioni. 
+L'idea principale della \textit{ZKP} è presupporre di non fidarsi di nessuno (\textit{zero trust}), al fine di garantire la sicurezza delle informazioni. 
 In questo modo, ciascun utente viene monitorato a livello di privilegi, accessi e dati, senza che nessuno possa accedere senza dimostrare di averne il permesso. \\
 
 \subsection{Tipi e applicazioni}\label{sec:zero-knowledge-proof-tipi-applicazioni}
-Esistono diverse implementazioni di ZKP, ognuna delle quali presenta un proprio compromesso in termini di dimensione della prova, tempo del prover, tempo di verifica e altro ancora. 
+Esistono diverse implementazioni di \textit{ZKP}, ognuna delle quali presenta un proprio compromesso in termini di dimensione della prova, tempo del \textit{prover}, tempo di verifica e altro ancora. 
 I principali tipi sono: 
 \begin{itemize}
     \item{\textit{zk-SNARK}}, acronimo di \textit{Zero Knowledge Succinct Non-interactive Argument of Knowledge}, prova di dimensioni ridotte e facile da verificare. Essa è stata sviluppata dalle piattaforme \textit{Zcash} e \textit{Ethereum} 
@@ -436,8 +471,6 @@ I principali tipi sono:
 All'interno delle blockchain, vengono utilizzati all'interno delle \textit{sidechain} secondo il sistema delle \textit{zk-Rollup}, che permettono di eseguire transazioni su una \textit{blockchain} laterale (\textit{sidechain}) senza doverle scrivere su questa.
 In altre parole, con uno \textit{zk-rollup}, le transazioni vengono `confezionate' in un'unica transazione che viene elaborata sulla \textit{blockchain}, riducendo il carico di lavoro richiesto alla rete. 
 Inoltre, grazie all'utilizzo delle \textit{Zero Knowledge Proof}, le transazioni vengono verificate in modo sicuro, senza rivelare alcuna informazione sulle transazioni stesse.
-
-\clearpage 
  
 Principalmente, queste vengono utilizzate in sistemi di scalabilità \textit{layer-2}, al fine di memorizzare solo il minimo numero previsto di transazioni (\textit{rollup}),
 oppure memorizzando solamente un hash sulla catena per proteggere i dati del libro mastro (validium), oppure scegliere come salvarli per ogni transazione (\textit{volition}).
@@ -449,7 +482,7 @@ Alcuni casi d'uso possibili di applicazione di questa tecnologia possono essere:
     \item{archiviazione di dati sensibili}
 \end{itemize}
 
-L'utilizzo combinato con la Self-Sovereign Identity è particolarmente interessante perché consente di garantire la \textit{privacy} e la sicurezza delle informazioni personali degli utenti.
+L'utilizzo combinato con la \textit{Self-Sovereign Identity} è particolarmente interessante perché consente di garantire la \textit{privacy} e la sicurezza delle informazioni personali degli utenti.
 In particolare, è possibile garantire di conoscere le parti in gioco nella rete poiché verificate
 in modo sicuro e privato tramite credenziali certificate, scegliendo anzi quali informazioni rivelare e senza
 dover rivelare alcuno dei propri dati per dimostrare di possederli. 

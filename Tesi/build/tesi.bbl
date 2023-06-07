@@ -19,6 +19,18 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{site:anoncreds}{online}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labeltitlesource}{title}
+      \field{title}{Anoncreds}
+      \verb{urlraw}
+      \verb https://hyperledger.github.io/anoncreds-spec/#anoncreds-setup-data-flow
+      \endverb
+      \verb{url}
+      \verb https://hyperledger.github.io/anoncreds-spec/#anoncreds-setup-data-flow
+      \endverb
+    \endentry
     \entry{site:clsignature2}{online}{}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}

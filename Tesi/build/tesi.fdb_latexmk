@@ -1,26 +1,26 @@
 # Fdb version 4
-["biber build/tesi"] 1685961237 "build/tesi.bcf" "build/tesi.bbl" "build/tesi" 1685969039 0
-  "build/tesi.bcf" 1685969038 108758 4f4a6584f910a616b68b77154c1b44ec "pdflatex"
+["biber build/tesi"] 1686131074 "build/tesi.bcf" "build/tesi.bbl" "build/tesi" 1686131101 0
+  "build/tesi.bcf" 1686131101 108828 1e055703572f9d034be832b8bb55519e "pdflatex"
   (generated)
   "build/tesi.bbl"
   "build/tesi.blg"
   (rewritten before read)
-["cusdep glo gls build/tesi"] 1685966747 "build/tesi.glo" "build/tesi.gls" "build/tesi" 1685969039 0
-  "build/tesi.glo" 1685969038 10143 85b056a0356b30c694eb614716b3a9c3 "pdflatex"
+["cusdep glo gls build/tesi"] 1686130434 "build/tesi.glo" "build/tesi.gls" "build/tesi" 1686131101 0
+  "build/tesi.glo" 1686131101 10143 b9a04d74f26766851be2d957223955d8 "pdflatex"
   (generated)
   "build/tesi.gls"
   (rewritten before read)
-["pdflatex"] 1685969032 "tesi.tex" "tesi.pdf" "tesi" 1685969039 0
+["pdflatex"] 1686131095 "tesi.tex" "tesi.pdf" "tesi" 1686131101 0
   "appendice/bibliografia.tex" 1685779696 170 55e9fec5cc2780b773eaf4b13bb2e716 ""
-  "appendice/definizioni-glossario.tex" 1685969031 18537 637b9320b2b6f4fc28954bec501f7371 ""
-  "build/pdfa.xmpi" 1685969033 6165 ce17cd93254d8fcd79352f96233196bc "pdflatex"
-  "build/tesi.aux" 1685969038 52062 a264a418b881574d9734d33a568c0a9a "pdflatex"
-  "build/tesi.bbl" 1685961239 10552 d7de1d3d014bdc733247a694850460a4 "biber build/tesi"
-  "build/tesi.gls" 1685966749 8076 36c51641e99ec4f8ac3a9badca24e1fe "cusdep glo gls build/tesi"
-  "build/tesi.lof" 1685969038 3983 f136c6f8872c68e35d41052b7dd540dc "pdflatex"
-  "build/tesi.lot" 1685969038 987 1b928d064752606fcec74b38d8f536ca "pdflatex"
-  "build/tesi.run.xml" 1685969038 2348 42848e5d610413aeada870c37ab810b0 "pdflatex"
-  "build/tesi.toc" 1685969038 7578 95f4e8ddb698bb53437acba77496a2ab "pdflatex"
+  "appendice/definizioni-glossario.tex" 1686130644 18565 c694652c08ea8fce651302d17d3b0c0a ""
+  "build/pdfa.xmpi" 1686131096 6165 d1ea7772512b165d92f6e732540ef4bb "pdflatex"
+  "build/tesi.aux" 1686131101 52751 16902416ad9ae30c28dc253aef4cc214 "pdflatex"
+  "build/tesi.bbl" 1686131080 11006 54dd7f5d3283d167d6d2f98e59a6e7e4 "biber build/tesi"
+  "build/tesi.gls" 1686130435 8076 a5486ffbae1c67beb0e4f08febaf4ba2 "cusdep glo gls build/tesi"
+  "build/tesi.lof" 1686131101 3983 8eeaad9dc82c18e155622dde74ac28b5 "pdflatex"
+  "build/tesi.lot" 1686131101 987 1b928d064752606fcec74b38d8f536ca "pdflatex"
+  "build/tesi.run.xml" 1686131101 2348 42848e5d610413aeada870c37ab810b0 "pdflatex"
+  "build/tesi.toc" 1686131101 7675 7b7c50e35adc338848cccf4a673d273d "pdflatex"
   "build/tesi.xmpdata" 1685707724 742 1c2e5606d137a43a361569319dbd3893 ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1676627787 2971 def0b6c1f0b107b3b936def894055589 ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1676627787 2900 1537cc8184ad1792082cd229ecc269f4 ""
@@ -264,9 +264,9 @@
   "capitoli/conclusioni.tex" 1685966064 11205 380bba44aae19f0fc5ed996f987c76bf ""
   "capitoli/introduzione.tex" 1685967177 9411 8cf63a6b56b18acf39cabef906eb6a8c ""
   "capitoli/kick-off.tex" 1685966347 12146 980c2263a7cf878baaac591f0f85e61c ""
-  "capitoli/processi.tex" 1685969031 44747 c65897f13131be46cd4d8bfe14512a86 ""
+  "capitoli/processi.tex" 1686130855 51457 a8be7785dcad5d1bfdc3ed45851b72a9 ""
   "capitoli/product-design.tex" 1685967860 18828 131bbd6a5e1551ad72a77b760beb9ff2 ""
-  "capitoli/product-prototype.tex" 1685968777 49231 1aec0bd12f0d15a5fe3ba9141b2f8f1f ""
+  "capitoli/product-prototype.tex" 1686131092 51420 fb98d12c5932d3aef69cedb9a4fe2136 ""
   "config/packages.tex" 1685777252 2881 23dc3beeb1f82f378900e8aebe7df676 ""
   "config/tesi-config.tex" 1685960440 8189 95b0c861b993b64cb3fee69e08dadcac ""
   "immagini//unipd-logo.png" 1681310589 67664 76ff6f1d0669338b4fe4b628fa33ae46 ""
