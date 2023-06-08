@@ -43,7 +43,7 @@ a cui si potrà andare incontro. Si è quindi proceduto a elaborare delle possib
     \newline
     \riskdescription{il progetto prevede l'utilizzo di tecnologie e metodologie di cui non si ha piena esperienza e conoscenza, 
     rendendo più difficoltosa la comprensione e l'applicazione delle stesse in fase di implementazione}
-    \risksolution{ è stato previsto un periodo di formazione iniziale per studiare le tecnologie e le metodologie da utilizzare
+    \risksolution{è stato previsto un periodo di formazione iniziale per studiare le tecnologie e le metodologie da utilizzare
     e l'aiuto/supporto del tutor aziendale e di altri stagisti nella risoluzione di problemi e nella discussione di possibili soluzioni}\label{risk:inesperienza-tecnologica} 
 \end{risk}
 
@@ -53,7 +53,7 @@ a cui si potrà andare incontro. Si è quindi proceduto a elaborare delle possib
     \newline
     \riskdescription{il sistema potrebbe incontrare difficoltà nell'integrazione con lo \textit{smart contract} da richiamare per la gestione delle identità digitali,
     a causa di errori di programmazione o di problemi di comunicazione tra le parti coinvolte}
-    \risksolution{è stato previsto un periodo di test e debug per verificare il corretto funzionamento del sistema e per risolvere eventuali problemi riscontrati,
+    \risksolution{è stato previsto un periodo di test e \textit{debug} per verificare il corretto funzionamento del sistema e per risolvere eventuali problemi riscontrati,
     approfondendo il dialogo con il tutor aziendale e con lo stagista che ha sviluppato lo \textit{smart contract} che dovrà essere richiamato in fase di implementazione}\label{risk:integrazione-smart-contract}
 \end{risk}
 
@@ -63,7 +63,7 @@ a cui si potrà andare incontro. Si è quindi proceduto a elaborare delle possib
     \newline
     \riskdescription{potrebbero verificarsi ritardi nello sviluppo del sistema a causa di problemi tecnici o imprevisti, come la mancanza di risorse necessarie o la complessità del progetto,
     rimodulando adeguatamente attività e tempistiche}\label{risk:ritardi-sviluppo}
-    \risksolution{è stato previsto un periodo di test e debug per verificare il corretto funzionamento del sistema e per risolvere eventuali problemi riscontrati,
+    \risksolution{è stato previsto un periodo di test e \textit{debug} per verificare il corretto funzionamento del sistema e per risolvere eventuali problemi riscontrati,
     intensificando il dialogo interno con il proponente e gli stagisti per discutere di possibili soluzioni e rimodulando le attività e le tempistiche in base alle necessità}
 \end{risk}
 
@@ -74,7 +74,7 @@ a cui si potrà andare incontro. Si è quindi proceduto a elaborare delle possib
     \riskdescription{il sistema potrebbe riscontrare problemi di sicurezza e vulnerabilità a attacchi informatici o la mancanza di protezione dei dati sensibili}
     \risksolution{fin dall'inizio dell'attività di sviluppo, si cerca di garantire un'implementazione al passo con le \textit{best practices} previste dai linguaggi di programmazione utilizzate e lato web, 
     come l'utilizzo di librerie e \glsfirstoccur{\gls{frameworkg}} aggiornati e sicuri, la validazione dei dati in input e la protezione da attacchi di tipo \textit{SQL injection} e \textit{XSS}. Inoltre, è possibile prevedere un'attività di testing approfondito,
-    ad esempio utilizzando strumenti di analisi statica del codice e di penetration testing, per verificare la corretta implementazione delle misure di sicurezza e la presenza di eventuali vulnerabilità}\label{risk:problemi-sicurezza}
+    ad esempio utilizzando strumenti di analisi statica del codice e di test di penetrazione, per verificare la corretta implementazione delle misure di sicurezza e la presenza di eventuali vulnerabilità}\label{risk:problemi-sicurezza}
 \end{risk}
 
 \clearpage
@@ -110,10 +110,10 @@ Le sigle precedentemente indicate saranno seguite da una coppia sequenziale di n
 
     \item Desiderabili:
         \begin{itemize}
-            \item \underline{\textit{D01}}: implementare una \glsfirstoccur{\gls{dappg}} (o dApp) tramite le librerie \glsfirstoccur{\gls{ethersjsg}} oppure \glsfirstoccur{\gls{web3jsg}}, utilizzando uno \textit{smart contract} di esempio;
-            \item \underline{\textit{D02}}: realizzare una UI (interfaccia utente) per la dApp utilizzando \textit{HTML}, \textit{CSS} e \textit{JavaScript};
-            \item \underline{\textit{D03}}: utilizzare la \textit{Self Sovereign Identity} e i protocolli studiati per implementare funzionalità di autenticazione utente nella \textit{dApp};
-            \item \underline{\textit{D04}}: testare e debuggare l'applicazione implementata;
+            \item \underline{\textit{D01}}: implementare una \glsfirstoccur{\gls{dappg}} (o DApp) tramite le librerie \glsfirstoccur{\gls{ethersjsg}} oppure \glsfirstoccur{\gls{web3jsg}}, utilizzando uno \textit{smart contract} di esempio;
+            \item \underline{\textit{D02}}: realizzare una UI (interfaccia utente) per la DApp utilizzando \textit{HTML}, \textit{CSS} e \textit{JavaScript};
+            \item \underline{\textit{D03}}: utilizzare la \textit{Self Sovereign Identity} e i protocolli studiati per implementare funzionalità di autenticazione utente nella \textit{DApp};
+            \item \underline{\textit{D04}}: testare l'applicazione implementata;
             \item \underline{\textit{D05}}: discutere problemi e sfide relativi all'implementazione di applicazioni decentralizzate su \textit{blockchain} \glsfirstoccur{\gls{ethereumg}}, con particolare attenzione alla scalabilità e alla sicurezza.
         \end{itemize}
 

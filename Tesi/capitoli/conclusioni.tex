@@ -1,7 +1,7 @@
 \chapter{Conclusioni}\label{cap:conclusioni}
 
 \intro{In questo capitolo verranno riportate le conclusioni del lavoro svolto, analizzando i risultati ottenuti e le conoscenze acquisite, 
-dando una valutazione personale del lavoro svolto.}
+analizzando i possibili sviluppi futuri degli amvbiti applicativi toccati dal progetto e dando una valutazione personale del lavoro svolto.}
 
 \section{Obiettivi raggiunti e consuntivo finale}\label{sec:conclusioni-obiettivi-consuntivo}
 
@@ -14,11 +14,32 @@ Questo ha permesso, tramite lo studio e l'implementazione autonoma descritta di 
 acquisire conoscenze e competenze in ambiti di sicurezza informatica e di crittografia, che sono stati approfonditi e studiati
 in modo mirato nel progetto realizzato, garantendo la copertura dei requisiti obbligatori. \\
 
+Più nello specifico, sono stati raggiunti correttamente i seguenti obiettivi obbligatori presenti da Piano di Lavoro di tirocinio:
+\begin{itemize}
+    \item \underline{\textit{O01}}: descrivere i concetti di base della \textit{blockchain} tra cui la sua architettura, i nodi della rete, la crittografia e il consenso distribuito;
+    \item \underline{\textit{O02}}: analizzare il concetto di \textit{smart contract} e il linguaggio \glsfirstoccur{\gls{solidityg}}, con particolare attenzione alle vulnerabilità principali e alle tecniche per evitare errori di programmazione;
+    \item \underline{\textit{O03}}: approfondire il funzionamento della firma asimmetrica delle transazioni su catena e la validazione dei blocchi, studiando le tipologie di consenso e le catene più conosciute;
+    \item \underline{\textit{O04}}: studiare le tecniche di crittografia utilizzate per garantire la sicurezza e la \textit{privacy} delle informazioni personali nell'ambito della \textit{Self Sovereign Identity} e dei protocolli per la gestione delle identità digitali;
+    \item \underline{\textit{O05}}: individuare casi d'uso reali per la \textit{Self Sovereign Identity}, analizzando i consorzi internazionali coinvolti in ambito di ricerca e i finanziamenti europei;
+    \item \underline{\textit{O06}}: discutere le sfide e i problemi legati alla \textit{Self Sovereign Identity}, studiando un possibile scenario futuro di applicabilità e basato su \glsfirstoccur{\gls{zkpg}}.
+\end{itemize}
+
 Come richiesto dalla sezione degli obiettivi desiderabili presenti nella sezione citata, l'applicazione implementa la libreria 
 \glsfirstoccur{\gls{web3jsg}} per l'interazione con la \textit{blockchain}, permettendo di interagire con lo \textit{smart contract} in modo corretto.
 Inoltre, l'applicazione è stata completamente testata, come riportato dal capitolo~\ref{cap:verifica-validazione}. 
 La stessa creazione dell'applicazione permette di esplorare uno scenario di applicazione dell'ambito della \textit{blockchain} e dell'identità connessa
 senza trasmettere informazioni personali, risultando così in un'applicazione che rispetta la \textit{privacy} degli utenti.
+
+\clearpage 
+
+Più nello specifico, sono stati raggiunti i seguenti obiettivi desiderabili presenti nel Piano di Lavoro:
+\begin{itemize}
+    \item \underline{\textit{D01}}: implementare una \glsfirstoccur{\gls{dappg}} (o DApp) tramite le librerie \glsfirstoccur{\gls{ethersjsg}} oppure \glsfirstoccur{\gls{web3jsg}}, utilizzando uno \textit{smart contract} di esempio;
+    \item \underline{\textit{D02}}: realizzare una UI (interfaccia utente) per la DApp utilizzando \textit{HTML}, \textit{CSS} e \textit{JavaScript};
+    \item \underline{\textit{D03}}: utilizzare la \textit{Self Sovereign Identity} e i protocolli studiati per implementare funzionalità di autenticazione utente nella \textit{DApp};
+    \item \underline{\textit{D04}}: testare l'applicazione implementata;
+    \item \underline{\textit{D05}}: discutere problemi e sfide relativi all'implementazione di applicazioni decentralizzate su \textit{blockchain} \glsfirstoccur{\gls{ethereumg}}, con particolare attenzione alla scalabilità e alla sicurezza.
+\end{itemize}
 
 \section{Conoscenze acquisite e analisi del lavoro svolto}\label{sec:conclusioni-conoscenze-lavoro}
 
@@ -27,19 +48,17 @@ se ben applicato, un passo importante da un punto di vista di sicurezza.
 Il punto più rilevante di questo tirocinio è stata certamente l'implementazione di questo progetto sfruttando un codice di un laureando magistrale, ampliando questa applicazione a degli standard \glsfirstoccur{\gls{w3cg}}
 di non poca importanza, come \glsfirstoccur{\gls{didg}} e \glsfirstoccur{\gls{vcg}}, sviluppando una parte non completamente normata come \glsfirstoccur{\gls{zkpg}}. \\
 
-\clearpage
-
 L'attività è stata molto impegnativa e, nonostante il supporto di massima presente, la parte analitica e di effettivo sviluppo del progetto, specie della parte effettivamente più difficile come 
 \textit{Zero Knowledge Proof} sono risultate estremamente teoriche e senza un vero supporto, se non da un punto di vista di puro ragionamento logico, da parte del laureando magistrale Alessio De Biasi, 
-di cui ho dovuto adattare il codice per il mio progetto. Le scelte implementative e la loro realizzazione sono state complesse da gestire e da capire in autonomia, 
-ma sono state comunque affrontate con successo, permettendo di acquisire conoscenze e competenze in ambiti di sicurezza informatica e di crittografia decisamente importanti per un percorso di Laurea Triennale come il mio. \\
+il progetto è risultato di difficile implementazione e comprensione autonoma, sia da un punto di vista di requisiti che di codifica vera e propria. Le scelte implementative e la loro realizzazione sono risultate attività pesanti e tediose, 
+ma sono state comunque affrontate con successo e con determinazione, permettendomi di acquisire conoscenze e competenze in ambiti di sicurezza informatica e di crittografia decisamente importanti per un percorso di Laurea Triennale come il mio. \\
 
 Di massima, è possibile descrivere le principali conoscenze maturate nell'ambito progettuale:
 \begin{itemize}
     \item \textbf{comprensione dell'ambito \textit{blockchain} e sviluppo di \textit{smart contract}}: l'interazione di uno \textit{smart contract} e la sua interazione con un'applicazione web e mobile,
     permettono di comprendere come implementare una struttura dati pubblica ed immutabile, cambiando l'idea stessa di programmazione classica e facendo ben comprendere
     come ogni azione fatta in codice possa avere potenziali implicazioni di sicurezza. Ogni transazione è infatti pubblica e richiede una vera comprensione della struttura sottostante 
-    e di come scrivere il codice in modo sicuro e corretto, per evitare perdite di dati o di denaro. In questo ambito, utile certamente l'apprendimento autonomo del linguaggio \glsfirstoccur{\gls{solidityg}} e della libreria \textit{web3.js},
+    e di come scrivere il codice in modo sicuro e corretto, per evitare perdite di dati o di denaro. In questo ambito, utile certamente l'apprendimento autonomo del linguaggio \textit{Solidity} e della libreria \textit{web3.js},
     che permettono di interagire con la \textit{blockchain} in modo semplice e adattando tale logica a quella di un'applicazione realmente utilizzabile;
     \item \textbf{analisi di standard di identità digitale e di protocolli di firma digitale}: l'implementazione di \textit{Decentralized Identifiers (DID)} e \textit{Verifiable Credentials (VC)} ha permesso di comprendere come sia possibile implementare un sistema di identità digitale
     partendo da implementazioni definite e preesistenti, tuttora sporadicamente applicate, ma con un ambito di applicazione molto ampio. Di fatto, in un mondo come quello odierno dove la \textit{privacy} rappresenta una giusta preoccupazione per gli utenti medi e per la stessa informatica,
@@ -49,7 +68,7 @@ Di massima, è possibile descrivere le principali conoscenze maturate nell'ambit
     \item \textbf{studio e analisi di \textit{Zero Knowledge Proof}}: la realizzazione e l'applicazione di \textit{Zero Knowledge Proof} è stata una delle parti più complesse da implementare, data la natura estremamente teorica della stessa e della 
     sua successiva applicazione, che richiede necessariamente, dati gli standard precedentemente descritti, la comprensione di standard di firma digitale spesso non accuratamente documentati e che richiedono di studiare a fondo gli standard di riferimento e una ricerca
     in gran parte teorica, ben maggiore di quella prevista da alcuni ambiti di studio, dato il tempo relativamente limitato di effettiva implementazione conforme agli standard.
-    \item \textbf{nuove competenze di programmazione e progettuali}: l'analisi e la progettazione dei dettaglio di un'applicazione web e mobile, con l'implementazione di un {\textbf{\glsfirstoccur{\gls{backendg}}}} e di un {\textbf{\glsfirstoccur{\gls{frontendg}}}} hanno permesso di sviluppare ulteriormente le mie conoscenze apprese durante il corso di Ingegneria
+    \item \textbf{nuove competenze di programmazione e progettuali}: l'analisi e la progettazione dei dettaglio di un'applicazione web e mobile, con l'implementazione di un \glsfirstoccur{\gls{backendg}} e di un \glsfirstoccur{\gls{frontendg}}hanno permesso di sviluppare ulteriormente le mie conoscenze apprese durante il corso di Ingegneria
     del Software, normando in modo più efficace le attività di codifica e di realizzazione della documentazione, risolvendo sul campo problemi progettuali ma anche concettuali presenti e sviluppando modifiche in modo agile, separando le responsabilità delle componenti e delle pagine, 
     migliorando così la manutenibilità e la comprensione del codice. 
     L'applicazione del linguaggio di programmazione \textit{TypeScript} unito alla comprensione di vulnerabilità legate al linguaggio \textit{Solidity} risulta utile nell'ulteriore comprensione e applicazione da un punto di vista di sviluppo di applicativi web e mobile, 
@@ -57,9 +76,46 @@ Di massima, è possibile descrivere le principali conoscenze maturate nell'ambit
     e strutturato, a calendario e nel corso dell'intero progetto. 
 \end{itemize}
 
-\section{Possibili sviluppi futuri e scenari di applicabilità}\label{sec:conclusioni-conoscenze-sviluppi}
+\section{Scenari di applicabilità e sviluppi futuri}\label{sec:conclusioni-conoscenze-sviluppi}
 
+L'applicazione sviluppata rappresenta un importante punto di partenza per lo sviluppo di un sistema di identità digitale decentralizzato, che può essere utilizzato in molti contesti reali, come ad esempio:
+\begin{itemize}
+    \item \textbf{pagamenti anonimi e sicuri}: l'implementazione di \textit{Zero Knowledge Proof} consente di rendere anonime le transazioni effettuate sulla \textit{blockchain}, permettendo di creare un sistema di pagamento decentralizzato, non divulgando informazioni personali ma anche 
+    permettendo, data la sua natura pubblica ed immutabile, di riconoscere l'autenticità del pagamento effettuato, invalidando in ogni momento la possibilità di effettuare un doppio pagamento, che può essere verificato da chiunque sul meccanismo di catena di fiducia creato e descritto.
+    In questo senso, molte banche cercano di interessarsi al mondo \textit{blockchain} per creare dei sistemi di pagamento \textit{KYC~- Know Your Customer}, che permette di sapere con certezza se l'utente è chi dice di essere, senza trasmettere informazioni personali, ma solo una firma digitale
+    pubblicamente verificabile, prevenendo possibili problemi legati al riciclaggio di denaro in modo conforme agli standard;
+    \item \textbf{protezione dell'identità ed autenticazione sicura}: il progetto realizzato permette all'utente di costruirsi un'identità digitale `sovrana', permettendo facilmente di compiere un autenticazione senza rivelare alcun dato personale, non dipendendo da piattaforme terze 
+    e permettendo di autenticarsi in modo sicuro e conforme agli standard, verificato in modo dettagliato e privo di manipolazioni, partendo da un meccanismo di base come quello previsto;
+    \item \textbf{protezione dei dati di archiviazione}: l'utilizzo di \textit{Zero Knowledge Proof} consente di rendere anonime le informazioni archiviate sulla \textit{blockchain}, permettendo di creare un sistema di archiviazione decentralizzato, proibendo a qualsiasi utente 
+    non autorizzato di vedere i dati e potervi accedere, permettendo l'accesso alle informazioni solo chi è in grado di dimostrare la conoscenza dello `schema' di accesso comune tramite la presentazione di una credenziale sicura generata sul momento che attesta l'autenticità dell'utente
+    e viene verificata secondo sistemi di firma digitale come quelli in oggetto. Nel caso in cui l'utente cerchi di manipolare questi dati, i meccanismi di firma digitale implementati sono in grado di riconoscere qualora 
+    l'utente abbia tentato di modificare i dati, invalidando la firma e rendendo impossibile l'accesso ai dati.
+\end{itemize}
 
+In questo senso, esistono vari progetti europei che mirano a studiare e scoprire nuove tecnologie per la creazione di sistemi di identità digitale basati su \textit{blockchain}, partendo dal programma comune \textit{Horizon 2020} (\cite{site:horizon2020}),
+che ha stanziato un \textit{budget} di 80 miliardi di euro per la ricerca e lo sviluppo delle tecnologie qui in oggetto nel periodo dal 2014 al 2020.
+Possiamo citare ad esempio \textit{DECODE~- Decentralized Citizen Owned Data Ecosystem} (\cite{site:decode}), che mira a creare un'infrastruttura di dati decentralizzata e sicura per i cittadini europei
+utilizzando tecnologie \textit{blockchain} e \textit{Self Sovereign Identity}, permettendo ad ogni utente di firmare digitalmente le informazioni di identità e condividerle solo con le parti autorizzate.
+Un esempio ulteriore è \textit{IRMA~- I Reveal My Attributes} (\cite{site:irma}), sistema di identità digitale basato su \textit{blockchain} che utilizza una combinazione di tecnologie crittografiche mirate a garantire la sicurezza e la \textit{privacy} dei dati personali attraverso l'uso di un'applicazione mobile 
+che funge da portafoglio digitale per l'identità dell'utente, generando una prova crittografica verificabile senza dover rivelare alcuna informazione personale. \\
+
+In questo contesto, il meccanismo descritto si inserisce in modo naturale in progetti di questo tipo, inserendosi in parallelo e rappresentando su piccola scala un possibile punto di partenza per lo sviluppo di un sistema di identità digitale decentralizzato vero e proprio.
+L'utilizzo parallelo di \textit{Zero Knowledge Proof} e \textit{Self Sovereign Identity} realizza un meccanismo di autenticazione e riconoscimento garantendo il completo controllo delle informazioni trasmesse e senza divulgare dati personali.
+Data infatti una prova di autenticazione, l'utente prova la propria identità attraverso la presentazioni di credenziali pubbliche e firmate digitalmente; il meccanismo \textit{blockchain} consente di verificare la firma e quindi l'autenticità dell'utente
+mentre i meccanismi di firma sottostanti permettono di riconoscere se l'utente è in grado di dimostrare la conoscenza di un segreto, senza rivelarlo, e quindi di accedere ai dati. \\
+
+Lo scoglio più grande è dato dalla difficoltà di utilizzo di queste tecnologie, che richiedono un'infrastruttura di base che permetta di comprendere a fondo le implicazioni e i vantaggi che portano, ad oggi ancora largamente inesplorati e poco conosciuti, se non da un punto di vista teorico e di ricerca.
+Le premesse sulla carta sono ottime: garantire agli utenti il livello di accesso minimo necessario, esponendo l'utente solo a ciò che è strettamente necessario, segmentando l'accesso e controllando l'autenticità delle sue operazioni.
+In questo contesto, è fondamentale introdurre un sistema di crittografia sicuro, che garantisca l'implementazione di un sistema a conoscenza zero, in cui è possibile sapere con certezza che ci si può fidare di ciascun nodo presente sulla rete senza conoscere 
+alcun dato dei singoli nodi, ma verificando tramite meccanismi riconosciuti e progressivamente standardizzati la loro identità. 
+In un mondo in cui la protezione dei dati è diventata una preoccupazione rilevante anche per l'utente medio, occorre necessariamente cercare di stare al passo sfruttando dei meccanismi sicuri che non dipendono da terzi; la \textit{blockchain} riesce a garantire questo livello di sicurezza,
+permettendo di creare un sistema di identità digitale decentralizzato e sicuro, in cui l'utente è l'unico detentore delle proprie informazioni e può decidere in autonomia a chi e quando concedere l'accesso. \\
+
+A livello infrastrutturale, è necessario creare dei sistemi che siano in grado di sostenere un sistema di questo tipo, che richiede un'infrastruttura di base basata su \textit{blockchain}, di per sé dispendiosa da un punto di vista energetico e computazionale in modo consistente rispetto a sistemi più tradizionali.
+Inoltre, andrebbe certamente standardizzata in maniera rilevante: ad oggi esistono alcune norme ISO che descrivono i termini e le definizioni di base, ma non esistono ancora standard che definiscano in modo chiaro e preciso i meccanismi di autenticazione e di firma digitale,
+in larga parte molto teorici in ambito crittografico e non ancora applicati in modo pratico. Legalmente infatti si sta cercando di equiparare questi sistemi a quelli tradizionali, ma data la stessa natura decentralizzata di questo mondo, è difficile trovare un punto di riferimento
+univoco ed eticamente accettabile per tutti, come per il mondo dell'intelligenza artificiale. Come per quest'ultimo, rimane principalmente uno strumento in grado potenzialmente di garantire una sicurezza ben maggiore di quella di altri sistemi esistenti ed in grado 
+di garantire il vero anonimato nel mondo della rete e di venire incontro egualmente agli utenti finali e alle aziende. 
 
 \section{Valutazione personale}\label{sec:conclusioni-valutazione}
 

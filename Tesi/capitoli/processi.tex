@@ -344,7 +344,7 @@ Per questo, il nucleo scalabilità permette di introdurre numerose soluzioni al 
     \item{\textit{Layer 0}}, che è la \textit{blockchain} principale, che contiene i dati e le transazioni;
     \item{\textit{Layer 1}}, che è il livello responsabile della sicurezza e della scalabilità, che contiene i nodi che eseguono le transazioni e che sono responsabili della validazione;
     \item{\textit{Layer 2}}, noto anche come livello di esecuzione, in cui si hanno i contratti intelligenti e le applicazioni che vengono eseguite sulla \textit{blockchain};
-    \item{\textit{Layer 3}}, noto anche come livello applicativo, che contiene le applicazioni decentralizzate (dApps), eseguite sulle \textit{blockchain} e che interagiscono con gli utenti.
+    \item{\textit{Layer 3}}, noto anche come livello applicativo, che contiene le applicazioni decentralizzate (\glsfirstoccur{\gls{dappg}}), eseguite sulle \textit{blockchain} e che interagiscono con gli utenti.
 \end{itemize}
 
 Comunemente, le soluzioni di scalabilità cercano di intervenire in vari modi:
@@ -356,7 +356,7 @@ Comunemente, le soluzioni di scalabilità cercano di intervenire in vari modi:
     e i \textit{canali di pagamento (payment channels)}, che migliorano la comunicazione bidirezionale delle transazioni eseguendole sulla \textit{blockchain} secondaria e dandone traccia sulla principale.
 \end{itemize}
 
-\section{Self-Sovereign Identity}\label{sec:self-sovereign-identity}
+\section{Self Sovereign Identity}\label{sec:self-sovereign-identity}
 
 La \glsfirstoccur{\gls{ssig}} è un approccio all'identità digitale che dà agli individui 
 il controllo sulle informazioni che usano per dimostrare chi sono a siti web, servizi e applicazioni in tutto il web. 
@@ -394,7 +394,7 @@ In particolare:
 \begin{itemize}
     \item il titolare della credenziale possiede il suo \textit{Decentralized Identifier} firmato dalla propria coppia di chiavi che certifica la sua identità;
     \item l'emittente fornisce delle \glsfirstoccur{\gls{vcg}}, che certificano in modo digitale e crittograficamente protetto la validità del proprio ruolo;
-    \item il verificatore controlla che, tramite ciascun blocco, sia stata rilasciata una VC valida e che il titolare sia il legittimo possessore di quella VC.\@
+    \item il verificatore controlla che, tramite ciascun blocco, sia stata rilasciata una \textit{VC} valida e che il titolare sia il legittimo possessore di quella VC.\@
 \end{itemize}  
 
 L'obiettivo principale è quello di fornire un utilizzo delle tecnologie \textit{blockchain} tali da permettere agli utenti 
@@ -403,9 +403,9 @@ secondo opportuni standard definiti gradualmente dall'organizzazione internazion
 
 \subsection{Tipi e applicazioni}\label{sec:self-sovereign-identity-tipi-applicazioni}
 
-Il concetto di \textit{SSI}  è stato introdotto nel 2015 da \textit{Sovrin Foundation}, che ha sviluppato il protocollo \textit{Sovrin},
+Il concetto di \textit{SSI} è stato introdotto nel 2015 da \textit{Sovrin Foundation}, che ha sviluppato il protocollo \textit{Sovrin},
 organizzazione privata senza scopo di lucro che ha creato la prima rete di identità auto-sovrana, diventato poi standard \textit{W3C}. 
-Esso si basa sul protocollo è \textit{Hyperledger Indy}, che è un \glsfirstoccur{\gls{frameworkg}} \textit{open source} per la creazione di SSI basato su \textit{blockchain}
+Esso si basa sul protocollo è \textit{Hyperledger Indy}, che è un \glsfirstoccur{\gls{frameworkg}} \textit{open source} per la creazione di \textit{SSI} basato su \textit{blockchain}
 che fornisce strumenti, librerie e componenti riutilizzabili per fornire identità digitali legate al mondo \textit{blockchain}, 
 come ad esempio la firma digitale e la crittografia. \\
 
@@ -482,7 +482,7 @@ Alcuni casi d'uso possibili di applicazione di questa tecnologia possono essere:
     \item{archiviazione di dati sensibili}
 \end{itemize}
 
-L'utilizzo combinato con la \textit{Self-Sovereign Identity} è particolarmente interessante perché consente di garantire la \textit{privacy} e la sicurezza delle informazioni personali degli utenti.
+L'utilizzo combinato con la \textit{Self Sovereign Identity} è particolarmente interessante perché consente di garantire la \textit{privacy} e la sicurezza delle informazioni personali degli utenti.
 In particolare, è possibile garantire di conoscere le parti in gioco nella rete poiché verificate
 in modo sicuro e privato tramite credenziali certificate, scegliendo anzi quali informazioni rivelare e senza
 dover rivelare alcuno dei propri dati per dimostrare di possederli. 

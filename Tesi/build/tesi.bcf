@@ -2372,7 +2372,10 @@
     <bcf:citekey order="21" intorder="1">site:jest</bcf:citekey>
     <bcf:citekey order="22" intorder="1">site:reacttestinglibrary</bcf:citekey>
     <bcf:citekey order="23" intorder="1">site:cicd</bcf:citekey>
-    <bcf:citekey order="24" intorder="1" nocite="1">*</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">site:horizon2020</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">site:decode</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">site:irma</bcf:citekey>
+    <bcf:citekey order="27" intorder="1" nocite="1">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

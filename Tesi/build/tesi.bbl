@@ -79,6 +79,18 @@
       \verb https://www.w3.org/TR/did-core/
       \endverb
     \endentry
+    \entry{site:decode}{online}{}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labeltitlesource}{title}
+      \field{title}{DECODE}
+      \verb{urlraw}
+      \verb https://decodeproject.eu/
+      \endverb
+      \verb{url}
+      \verb https://decodeproject.eu/
+      \endverb
+    \endentry
     \entry{site:ethereum}{online}{}
       \field{sortinit}{E}
       \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
@@ -139,6 +151,30 @@
       \endverb
       \verb{url}
       \verb https://hardhat.org/
+      \endverb
+    \endentry
+    \entry{site:horizon2020}{online}{}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labeltitlesource}{title}
+      \field{title}{Horizon 2020}
+      \verb{urlraw}
+      \verb https://ec.europa.eu/programmes/horizon2020/en/what-horizon-2020
+      \endverb
+      \verb{url}
+      \verb https://ec.europa.eu/programmes/horizon2020/en/what-horizon-2020
+      \endverb
+    \endentry
+    \entry{site:irma}{online}{}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labeltitlesource}{title}
+      \field{title}{IRMA}
+      \verb{urlraw}
+      \verb https://privacybydesign.foundation/irma-explanation/
+      \endverb
+      \verb{url}
+      \verb https://privacybydesign.foundation/irma-explanation/
       \endverb
     \endentry
     \entry{site:jest}{online}{}

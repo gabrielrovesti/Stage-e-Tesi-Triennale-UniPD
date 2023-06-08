@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.17)  7 JUN 2023 11:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.17)  8 JUN 2023 11:14
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1363,14 +1363,14 @@ Package pdftex.def Info: immagini/smart-contract.png  used on input line 268.
 Underfull \vbox (badness 4024) has occurred while \output is active []
 
  [14]
-<immagini/ssi.png, id=473, 410.7345pt x 205.36725pt>
+<immagini/ssi.png, id=476, 410.7345pt x 205.36725pt>
 File: immagini/ssi.png Graphic file (type png)
 <use immagini/ssi.png>
 Package pdftex.def Info: immagini/ssi.png  used on input line 383.
 (pdftex.def)             Requested size: 290.22107pt x 145.11296pt.
 
 [15 <./immagini/ssi.png>] [16]
-<immagini/zkp.png, id=498, 519.1395pt x 211.992pt>
+<immagini/zkp.png, id=501, 519.1395pt x 211.992pt>
 File: immagini/zkp.png Graphic file (type png)
 <use immagini/zkp.png>
 Package pdftex.def Info: immagini/zkp.png  used on input line 448.
@@ -1391,13 +1391,13 @@ File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 ) [23
 
 ] [24] [25]
-<immagini/usecase/scenario-principale.jpg, id=646, 1005.7575pt x 933.4875pt>
+<immagini/usecase/scenario-principale.jpg, id=648, 1005.7575pt x 933.4875pt>
 File: immagini/usecase/scenario-principale.jpg Graphic file (type jpg)
 <use immagini/usecase/scenario-principale.jpg>
 Package pdftex.def Info: immagini/usecase/scenario-principale.jpg  used on inpu
 t line 157.
 (pdftex.def)             Requested size: 435.32422pt x 404.04117pt.
-<immagini/usecase/UC1.jpg, id=648, 892.33376pt x 474.77374pt>
+<immagini/usecase/UC1.jpg, id=650, 892.33376pt x 474.77374pt>
 File: immagini/usecase/UC1.jpg Graphic file (type jpg)
 <use immagini/usecase/UC1.jpg>
 Package pdftex.def Info: immagini/usecase/UC1.jpg  used on input line 192.
@@ -1408,39 +1408,39 @@ LaTeX Warning: Text page 27 contains only floats.
 
 [27 <./immagini/usecase/scenario-principale.jpg> <./immagini/usecase/UC1.jpg>]
 [28]
-<immagini/usecase/UC4.jpg, id=684, 852.18375pt x 241.90375pt>
+<immagini/usecase/UC4.jpg, id=686, 852.18375pt x 241.90375pt>
 File: immagini/usecase/UC4.jpg Graphic file (type jpg)
 <use immagini/usecase/UC4.jpg>
 Package pdftex.def Info: immagini/usecase/UC4.jpg  used on input line 296.
 (pdftex.def)             Requested size: 435.32422pt x 123.57597pt.
  [29 <./immagini/usecase/UC4.jpg>]
-<immagini/usecase/UC6.jpg, id=697, 853.1875pt x 242.9075pt>
+<immagini/usecase/UC6.jpg, id=699, 853.1875pt x 242.9075pt>
 File: immagini/usecase/UC6.jpg Graphic file (type jpg)
 <use immagini/usecase/UC6.jpg>
 Package pdftex.def Info: immagini/usecase/UC6.jpg  used on input line 346.
 (pdftex.def)             Requested size: 435.32422pt x 123.94048pt.
  [30 <./immagini/usecase/UC6.jpg>]
 [31]
-<immagini/usecase/UC8.jpg, id=729, 869.2475pt x 395.4775pt>
+<immagini/usecase/UC8.jpg, id=731, 869.2475pt x 395.4775pt>
 File: immagini/usecase/UC8.jpg Graphic file (type jpg)
 <use immagini/usecase/UC8.jpg>
 Package pdftex.def Info: immagini/usecase/UC8.jpg  used on input line 404.
 (pdftex.def)             Requested size: 435.32422pt x 198.05809pt.
  [32 <./immagini/usecase/UC8.jpg>]
-<immagini/usecase/UC9.jpg, id=743, 820.06375pt x 307.1475pt>
+<immagini/usecase/UC9.jpg, id=745, 820.06375pt x 307.1475pt>
 File: immagini/usecase/UC9.jpg Graphic file (type jpg)
 <use immagini/usecase/UC9.jpg>
 Package pdftex.def Info: immagini/usecase/UC9.jpg  used on input line 478.
 (pdftex.def)             Requested size: 435.32422pt x 163.04985pt.
  [33]
-<immagini/usecase/UC9.1.jpg, id=760, 933.4875pt x 572.1375pt>
+<immagini/usecase/UC9.1.jpg, id=762, 933.4875pt x 572.1375pt>
 File: immagini/usecase/UC9.1.jpg Graphic file (type jpg)
 <use immagini/usecase/UC9.1.jpg>
 Package pdftex.def Info: immagini/usecase/UC9.1.jpg  used on input line 508.
 (pdftex.def)             Requested size: 435.32422pt x 266.80943pt.
  [34 <./immagini/usecase/UC9.jpg>]
 [35 <./immagini/usecase/UC9.1.jpg>] [36]
-<immagini/usecase/UC12.jpg, id=799, 829.0975pt x 491.8375pt>
+<immagini/usecase/UC12.jpg, id=801, 829.0975pt x 491.8375pt>
 File: immagini/usecase/UC12.jpg Graphic file (type jpg)
 <use immagini/usecase/UC12.jpg>
 Package pdftex.def Info: immagini/usecase/UC12.jpg  used on input line 634.
@@ -1451,44 +1451,44 @@ pe.tex [41] [42
 ]
 Capitolo 5.
 [43] [44] [45]
-<immagini/react.jpeg, id=900, 626.34pt x 613.29124pt>
+<immagini/react.jpeg, id=902, 626.34pt x 613.29124pt>
 File: immagini/react.jpeg Graphic file (type jpg)
 <use immagini/react.jpeg>
 Package pdftex.def Info: immagini/react.jpeg  used on input line 139.
 (pdftex.def)             Requested size: 290.22107pt x 284.18552pt.
  [46] [47 <./immagini/react.jpeg>]
-<immagini/ethereum-architecture.png, id=911, 773.89125pt x 472.76625pt>
+<immagini/ethereum-architecture.png, id=913, 773.89125pt x 472.76625pt>
 File: immagini/ethereum-architecture.png Graphic file (type png)
 <use immagini/ethereum-architecture.png>
 Package pdftex.def Info: immagini/ethereum-architecture.png  used on input line
  197.
 (pdftex.def)             Requested size: 290.22107pt x 177.29411pt.
  [48 <./immagini/ethereum-architecture.png>]
-<immagini/architettura.png, id=920, 555.07375pt x 472.76625pt>
+<immagini/architettura.png, id=922, 555.07375pt x 472.76625pt>
 File: immagini/architettura.png Graphic file (type png)
 <use immagini/architettura.png>
 Package pdftex.def Info: immagini/architettura.png  used on input line 206.
 (pdftex.def)             Requested size: 290.22107pt x 247.18884pt.
  [49 <./immagini/architettura.png>] [50]
-<immagini/frontend/home.png, id=938, 1136.44576pt x 531.1845pt>
+<immagini/frontend/home.png, id=940, 1136.44576pt x 531.1845pt>
 File: immagini/frontend/home.png Graphic file (type png)
 <use immagini/frontend/home.png>
 Package pdftex.def Info: immagini/frontend/home.png  used on input line 277.
 (pdftex.def)             Requested size: 290.22107pt x 135.64882pt.
-<immagini/frontend/home-mobile.png, id=940, 386.6445pt x 513.117pt>
+<immagini/frontend/home-mobile.png, id=942, 386.6445pt x 513.117pt>
 File: immagini/frontend/home-mobile.png Graphic file (type png)
 <use immagini/frontend/home-mobile.png>
 Package pdftex.def Info: immagini/frontend/home-mobile.png  used on input line 
 287.
 (pdftex.def)             Requested size: 145.11053pt x 192.575pt.
  [51 <./immagini/frontend/home.png> <./immagini/frontend/home-mobile.png>]
-<immagini/frontend/register.png, id=948, 1130.42325pt x 531.78674pt>
+<immagini/frontend/register.png, id=950, 1130.42325pt x 531.78674pt>
 File: immagini/frontend/register.png Graphic file (type png)
 <use immagini/frontend/register.png>
 Package pdftex.def Info: immagini/frontend/register.png  used on input line 305
 .
 (pdftex.def)             Requested size: 290.22107pt x 136.52481pt.
-<immagini/frontend/challenge-response.png, id=950, 198.7425pt x 204.765pt>
+<immagini/frontend/challenge-response.png, id=952, 198.7425pt x 204.765pt>
 File: immagini/frontend/challenge-response.png Graphic file (type png)
 <use immagini/frontend/challenge-response.png>
 Package pdftex.def Info: immagini/frontend/challenge-response.png  used on inpu
@@ -1496,17 +1496,17 @@ t line 317.
 (pdftex.def)             Requested size: 145.11053pt x 149.51155pt.
  [52 <./immagini/frontend/register.png> <./immagini/frontend/challenge-response
 .png>]
-<immagini/frontend/login.png, id=959, 1139.457pt x 513.117pt>
+<immagini/frontend/login.png, id=961, 1139.457pt x 513.117pt>
 File: immagini/frontend/login.png Graphic file (type png)
 <use immagini/frontend/login.png>
 Package pdftex.def Info: immagini/frontend/login.png  used on input line 332.
 (pdftex.def)             Requested size: 290.22107pt x 130.69043pt.
-<immagini/frontend/movies.png, id=961, 1136.44576pt x 528.7755pt>
+<immagini/frontend/movies.png, id=963, 1136.44576pt x 528.7755pt>
 File: immagini/frontend/movies.png Graphic file (type png)
 <use immagini/frontend/movies.png>
 Package pdftex.def Info: immagini/frontend/movies.png  used on input line 346.
 (pdftex.def)             Requested size: 290.22107pt x 135.03365pt.
-<immagini/frontend/age-verification.png, id=963, 656.4525pt x 183.68625pt>
+<immagini/frontend/age-verification.png, id=965, 656.4525pt x 183.68625pt>
 File: immagini/frontend/age-verification.png Graphic file (type png)
 <use immagini/frontend/age-verification.png>
 Package pdftex.def Info: immagini/frontend/age-verification.png  used on input 
@@ -1514,24 +1514,24 @@ line 357.
 (pdftex.def)             Requested size: 290.22107pt x 81.20897pt.
  [53 <./immagini/frontend/login.png> <./immagini/frontend/movies.png>] [54 <./i
 mmagini/frontend/age-verification.png>]
-<immagini/frontend/verification-doing.png, id=1013, 657.657pt x 260.172pt>
+<immagini/frontend/verification-doing.png, id=1015, 657.657pt x 260.172pt>
 File: immagini/frontend/verification-doing.png Graphic file (type png)
 <use immagini/frontend/verification-doing.png>
 Package pdftex.def Info: immagini/frontend/verification-doing.png  used on inpu
 t line 461.
 (pdftex.def)             Requested size: 290.22107pt x 114.81743pt.
  [55]
-<immagini/frontend/review.png, id=1043, 355.3275pt x 227.6505pt>
+<immagini/frontend/review.png, id=1045, 355.3275pt x 227.6505pt>
 File: immagini/frontend/review.png Graphic file (type png)
 <use immagini/frontend/review.png>
 Package pdftex.def Info: immagini/frontend/review.png  used on input line 473.
 (pdftex.def)             Requested size: 145.11053pt x 92.97256pt.
-<immagini/frontend/share.png, id=1045, 431.211pt x 327.02174pt>
+<immagini/frontend/share.png, id=1047, 431.211pt x 327.02174pt>
 File: immagini/frontend/share.png Graphic file (type png)
 <use immagini/frontend/share.png>
 Package pdftex.def Info: immagini/frontend/share.png  used on input line 482.
 (pdftex.def)             Requested size: 145.11053pt x 110.0482pt.
-<immagini/frontend/movie-booking.png, id=1047, 1139.457pt x 504.6855pt>
+<immagini/frontend/movie-booking.png, id=1049, 1139.457pt x 504.6855pt>
 File: immagini/frontend/movie-booking.png Graphic file (type png)
 <use immagini/frontend/movie-booking.png>
 Package pdftex.def Info: immagini/frontend/movie-booking.png  used on input lin
@@ -1539,13 +1539,13 @@ e 492.
 (pdftex.def)             Requested size: 290.22107pt x 128.54292pt.
  [56 <./immagini/frontend/verification-doing.png> <./immagini/frontend/review.p
 ng> <./immagini/frontend/share.png>]
-<immagini/frontend/movie-booking-done.png, id=1056, 280.04625pt x 287.27325pt>
+<immagini/frontend/movie-booking-done.png, id=1058, 280.04625pt x 287.27325pt>
 File: immagini/frontend/movie-booking-done.png Graphic file (type png)
 <use immagini/frontend/movie-booking-done.png>
 Package pdftex.def Info: immagini/frontend/movie-booking-done.png  used on inpu
 t line 501.
 (pdftex.def)             Requested size: 145.11053pt x 148.86131pt.
-<immagini/frontend/movie-booking-list.png, id=1058, 1141.26375pt x 534.798pt>
+<immagini/frontend/movie-booking-list.png, id=1060, 1141.26375pt x 534.798pt>
 File: immagini/frontend/movie-booking-list.png Graphic file (type png)
 <use immagini/frontend/movie-booking-list.png>
 Package pdftex.def Info: immagini/frontend/movie-booking-list.png  used on inpu
@@ -1553,13 +1553,13 @@ t line 511.
 (pdftex.def)             Requested size: 290.22107pt x 135.99222pt.
  [57 <./immagini/frontend/movie-booking.png> <./immagini/frontend/movie-booking
 -done.png> <./immagini/frontend/movie-booking-list.png>]
-<immagini/frontend/account.png, id=1067, 1133.4345pt x 523.9575pt>
+<immagini/frontend/account.png, id=1069, 1133.4345pt x 523.9575pt>
 File: immagini/frontend/account.png Graphic file (type png)
 <use immagini/frontend/account.png>
 Package pdftex.def Info: immagini/frontend/account.png  used on input line 526.
 
 (pdftex.def)             Requested size: 290.22107pt x 134.16304pt.
-<immagini/frontend/404.png, id=1069, 1128.01425pt x 492.03825pt>
+<immagini/frontend/404.png, id=1071, 1128.01425pt x 492.03825pt>
 File: immagini/frontend/404.png Graphic file (type png)
 <use immagini/frontend/404.png>
 Package pdftex.def Info: immagini/frontend/404.png  used on input line 538.
@@ -1583,25 +1583,25 @@ Capitolo 6.
 Capitolo 7.
 [69] [70
 
-]) [71] [72
+] [71] [72]) [73] [74
 
-] (build/tesi.gls [73
-
-
-] [74] [75])
-(./appendice/bibliografia.tex [76] [77
+] (build/tesi.gls [75
 
 
-]) [78] (build/tesi.aux)
+] [76] [77])
+(./appendice/bibliografia.tex [78] [79
+
+
+]) [80] (build/tesi.aux)
 Package logreq Info: Writing requests to 'tesi.run.xml'.
 \openout1 = `tesi.run.xml'.
 
  ) ) 
 Here is how much of TeX's memory you used:
- 38888 strings out of 476029
- 685468 string characters out of 5794164
+ 38911 strings out of 476029
+ 686247 string characters out of 5794164
  2046340 words of memory out of 5000000
- 58138 multiletter control sequences out of 15000+600000
+ 58156 multiletter control sequences out of 15000+600000
  534393 words of font info for 65 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  99i,8n,125p,2257b,3589s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1631,10 +1631,10 @@ sl1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfst0900.pfb
 ve/2022/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb><c:/texlive/2022/te
 xmf-dist/fonts/type1/public/cm-super/sftt0900.pfb><c:/texlive/2022/texmf-dist/f
 onts/type1/public/cm-super/sftt1000.pfb>
-Output written on build/tesi.pdf (90 pages, 13954855 bytes).
+Output written on build/tesi.pdf (92 pages, 13965656 bytes).
 PDF statistics:
- 1911 PDF objects out of 2073 (max. 8388607)
- 1686 compressed objects within 17 object streams
- 527 named destinations out of 1000 (max. 500000)
+ 1947 PDF objects out of 2073 (max. 8388607)
+ 1719 compressed objects within 18 object streams
+ 532 named destinations out of 1000 (max. 500000)
  935 words of extra memory for PDF output out of 10000 (max. 10000000)
 
