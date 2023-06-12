@@ -5,16 +5,23 @@ analizzando i possibili sviluppi futuri degli amvbiti applicativi toccati dal pr
 
 \section{Obiettivi raggiunti e consuntivo finale}\label{sec:conclusioni-obiettivi-consuntivo}
 
-In merito al raggiungimento degli obiettivi prefissati per il tirocinio (in sezione~\ref{sec:obiettivi-requisiti}),
-si può confermare la soddisfazione di ciascuno. In particolare prima con lo studio e poi con la realizzazione dell'intero progetto,
-i concetti di \glsfirstoccur{\gls{blockchaing}} e di \glsfirstoccur{\gls{smartcontractg}} sono stati acquisiti e compresi, dimostrando con la pratica la comprensione del
-L'identità sovrana di \glsfirstoccur{\gls{ssig}} è stato applicato ed implementato in un contesto reale, con la possibilità di
-interagire con un'applicazione web e con un'applicazione mobile, dimostrando la sua applicabilità in diversi ambiti.
-Questo ha permesso, tramite lo studio e l'implementazione autonoma descritta di standard di identità e di firma digitale, di 
+L'oggetto di questo tirocinio è stato lo studio e l'implementazione di un'applicazione decentralizzata basata su \glsfirstoccur{\gls{blockchaing}} \glsfirstoccur{\gls{ethereumg}}, dimostrando che è possibile implementare un'applicazione che rispetti la \textit{privacy} degli utenti, senza trasmettere informazioni personali. 
+Per realizzare questo obiettivo, il progetto realizzato si è basato sullo standard di identità \glsfirstoccur{\gls{ssig}} usando come identificatori i \glsfirstoccur{\gls{didg}}, implementati a basso livello dal codice del laureando magistrale Alessio De Biasi. \\
+
+Il caso d'uso individuato è stata la creazione di un'applicazione che simulasse un sito di un cinema; al momento della prenotazione di uno specifico film, si attiva un meccanismo di verifica dell'età in grado di riconoscere l'utente senza che questo debba fornire informazioni personali,
+sfruttando gli standard esistenti e creando in modo univoco un identificativo per l'utente, a sua volta costituito di credenziali presentate al sito stesso, quindi verificate e validate da un'entità terza, in questo caso un'entità fidata chiamata \textit{issuer} parte di una rete di fiducia interna,
+simulata e descritta nel capitolo~\ref{cap:analisi-requisiti}.
+Per realizzare il progetto, il tirocinio ha seguito una suddivisione definita, basata sullo studio teorico approfondito delle tecnologie presenti, spiegate nel capitolo~\ref{cap:tecnologie}, e sulla realizzazione pratica dell'applicazione, descritta nel capitolo~\ref{cap:progettazione-codifica}. \\
+
+In merito al raggiungimento degli obiettivi prefissati per il tirocinio (in sezione~\ref{sec:analisi-obiettivi}),
+si può confermare la soddisfazione di ciascuno. La creazione dell'applicazione descritta dimostra l'applicabilità di un caso d'uso reale per la \textit{Self Sovereign Identity},
+mostrando come sia possibile creare un'applicazione che rispetti la \textit{privacy} degli utenti senza trasmettere informazioni personali, basandosi su standard esistenti e su una rete di fiducia interna costruita sulle tecnologie \textit{blockchain}.
+Questo ha permesso, tramite lo studio e l'implementazione autonoma di standard di identità e di firma digitale, di 
 acquisire conoscenze e competenze in ambiti di sicurezza informatica e di crittografia, che sono stati approfonditi e studiati
 in modo mirato nel progetto realizzato, garantendo la copertura dei requisiti obbligatori. \\
 
-Più nello specifico, sono stati raggiunti correttamente i seguenti obiettivi obbligatori presenti da Piano di Lavoro di tirocinio:
+\clearpage
+Più nello specifico, sono stati raggiunti correttamente i seguenti obiettivi obbligatori presenti nel Piano di Lavoro di tirocinio:
 \begin{itemize}
     \item \underline{\textit{O01}}: descrivere i concetti di base della \textit{blockchain} tra cui la sua architettura, i nodi della rete, la crittografia e il consenso distribuito;
     \item \underline{\textit{O02}}: analizzare il concetto di \textit{smart contract} e il linguaggio \glsfirstoccur{\gls{solidityg}}, con particolare attenzione alle vulnerabilità principali e alle tecniche per evitare errori di programmazione;
@@ -30,12 +37,10 @@ Inoltre, l'applicazione è stata completamente testata, come riportato dal capit
 La stessa creazione dell'applicazione permette di esplorare uno scenario di applicazione dell'ambito della \textit{blockchain} e dell'identità connessa
 senza trasmettere informazioni personali, risultando così in un'applicazione che rispetta la \textit{privacy} degli utenti.
 
-\clearpage 
-
 Più nello specifico, sono stati raggiunti i seguenti obiettivi desiderabili presenti nel Piano di Lavoro:
 \begin{itemize}
-    \item \underline{\textit{D01}}: implementare una \glsfirstoccur{\gls{dappg}} (o DApp) tramite le librerie \glsfirstoccur{\gls{ethersjsg}} oppure \glsfirstoccur{\gls{web3jsg}}, utilizzando uno \textit{smart contract} di esempio;
-    \item \underline{\textit{D02}}: realizzare una UI (interfaccia utente) per la DApp utilizzando \textit{HTML}, \textit{CSS} e \textit{JavaScript};
+    \item \underline{\textit{D01}}: implementare una \glsfirstoccur{\gls{dappg}} (o \textit{DApp}) tramite le librerie \glsfirstoccur{\gls{ethersjsg}} oppure \glsfirstoccur{\gls{web3jsg}}, utilizzando uno \textit{smart contract} di esempio;
+    \item \underline{\textit{D02}}: realizzare una UI (interfaccia utente) per la \textit{DApp} utilizzando \textit{HTML}, \textit{CSS} e \textit{JavaScript};
     \item \underline{\textit{D03}}: utilizzare la \textit{Self Sovereign Identity} e i protocolli studiati per implementare funzionalità di autenticazione utente nella \textit{DApp};
     \item \underline{\textit{D04}}: testare l'applicazione implementata;
     \item \underline{\textit{D05}}: discutere problemi e sfide relativi all'implementazione di applicazioni decentralizzate su \textit{blockchain} \glsfirstoccur{\gls{ethereumg}}, con particolare attenzione alla scalabilità e alla sicurezza.
@@ -50,11 +55,16 @@ di non poca importanza, come \glsfirstoccur{\gls{didg}} e \glsfirstoccur{\gls{vc
 
 L'attività è stata molto impegnativa e, nonostante il supporto di massima presente, la parte analitica e di effettivo sviluppo del progetto, specie della parte effettivamente più difficile come 
 \textit{Zero Knowledge Proof} sono risultate estremamente teoriche e senza un vero supporto, se non da un punto di vista di puro ragionamento logico, da parte del laureando magistrale Alessio De Biasi, 
-il progetto è risultato di difficile implementazione e comprensione autonoma, sia da un punto di vista di requisiti che di codifica vera e propria. Le scelte implementative e la loro realizzazione sono risultate attività pesanti e tediose, 
-ma sono state comunque affrontate con successo e con determinazione, permettendomi di acquisire conoscenze e competenze in ambiti di sicurezza informatica e di crittografia decisamente importanti per un percorso di Laurea Triennale come il mio. \\
+il progetto è risultato di difficile implementazione e comprensione autonoma, sia da un punto di vista di requisiti che di codifica vera e propria.
+
+\clearpage
+
+Le scelte implementative e la loro realizzazione sono risultate attività pesanti e tediose, 
+ma sono state comunque affrontate con successo e con determinazione, permettendomi di acquisire conoscenze e competenze in ambiti di sicurezza informatica e di crittografia decisamente importanti per un percorso di Laurea Triennale come il mio.
+\\
 
 Di massima, è possibile descrivere le principali conoscenze maturate nell'ambito progettuale:
-\begin{itemize}
+\begin{itemize}[noitemsep,topsep=2pt]
     \item \textbf{comprensione dell'ambito \textit{blockchain} e sviluppo di \textit{smart contract}}: l'interazione di uno \textit{smart contract} e la sua interazione con un'applicazione web e mobile,
     permettono di comprendere come implementare una struttura dati pubblica ed immutabile, cambiando l'idea stessa di programmazione classica e facendo ben comprendere
     come ogni azione fatta in codice possa avere potenziali implicazioni di sicurezza. Ogni transazione è infatti pubblica e richiede una vera comprensione della struttura sottostante 
@@ -68,7 +78,7 @@ Di massima, è possibile descrivere le principali conoscenze maturate nell'ambit
     \item \textbf{studio e analisi di \textit{Zero Knowledge Proof}}: la realizzazione e l'applicazione di \textit{Zero Knowledge Proof} è stata una delle parti più complesse da implementare, data la natura estremamente teorica della stessa e della 
     sua successiva applicazione, che richiede necessariamente, dati gli standard precedentemente descritti, la comprensione di standard di firma digitale spesso non accuratamente documentati e che richiedono di studiare a fondo gli standard di riferimento e una ricerca
     in gran parte teorica, ben maggiore di quella prevista da alcuni ambiti di studio, dato il tempo relativamente limitato di effettiva implementazione conforme agli standard.
-    \item \textbf{nuove competenze di programmazione e progettuali}: l'analisi e la progettazione dei dettaglio di un'applicazione web e mobile, con l'implementazione di un \glsfirstoccur{\gls{backendg}} e di un \glsfirstoccur{\gls{frontendg}}hanno permesso di sviluppare ulteriormente le mie conoscenze apprese durante il corso di Ingegneria
+    \item \textbf{nuove competenze di programmazione e progettuali}: l'analisi e la progettazione dei dettaglio di un'applicazione web e mobile, con l'implementazione di un \glsfirstoccur{\gls{backendg}} e di un \glsfirstoccur{\gls{frontendg}} hanno permesso di sviluppare ulteriormente le mie conoscenze apprese durante il corso di Ingegneria
     del Software, normando in modo più efficace le attività di codifica e di realizzazione della documentazione, risolvendo sul campo problemi progettuali ma anche concettuali presenti e sviluppando modifiche in modo agile, separando le responsabilità delle componenti e delle pagine, 
     migliorando così la manutenibilità e la comprensione del codice. 
     L'applicazione del linguaggio di programmazione \textit{TypeScript} unito alla comprensione di vulnerabilità legate al linguaggio \textit{Solidity} risulta utile nell'ulteriore comprensione e applicazione da un punto di vista di sviluppo di applicativi web e mobile, 
@@ -82,19 +92,17 @@ L'applicazione sviluppata rappresenta un importante punto di partenza per lo svi
 \begin{itemize}
     \item \textbf{pagamenti anonimi e sicuri}: l'implementazione di \textit{Zero Knowledge Proof} consente di rendere anonime le transazioni effettuate sulla \textit{blockchain}, permettendo di creare un sistema di pagamento decentralizzato, non divulgando informazioni personali ma anche 
     permettendo, data la sua natura pubblica ed immutabile, di riconoscere l'autenticità del pagamento effettuato, invalidando in ogni momento la possibilità di effettuare un doppio pagamento, che può essere verificato da chiunque sul meccanismo di catena di fiducia creato e descritto.
-    In questo senso, molte banche cercano di interessarsi al mondo \textit{blockchain} per creare dei sistemi di pagamento \textit{KYC~- Know Your Customer}, che permette di sapere con certezza se l'utente è chi dice di essere, senza trasmettere informazioni personali, ma solo una firma digitale
-    pubblicamente verificabile, prevenendo possibili problemi legati al riciclaggio di denaro in modo conforme agli standard;
+    In questo senso, molte banche cercano di interessarsi al mondo \textit{blockchain} per creare dei sistemi di pagamento \textit{KYC~- Know Your Customer}, prevenendo possibili problemi legati al riciclaggio di denaro in modo conforme agli standard;
     \item \textbf{protezione dell'identità ed autenticazione sicura}: il progetto realizzato permette all'utente di costruirsi un'identità digitale `sovrana', permettendo facilmente di compiere un autenticazione senza rivelare alcun dato personale, non dipendendo da piattaforme terze 
     e permettendo di autenticarsi in modo sicuro e conforme agli standard, verificato in modo dettagliato e privo di manipolazioni, partendo da un meccanismo di base come quello previsto;
     \item \textbf{protezione dei dati di archiviazione}: l'utilizzo di \textit{Zero Knowledge Proof} consente di rendere anonime le informazioni archiviate sulla \textit{blockchain}, permettendo di creare un sistema di archiviazione decentralizzato, proibendo a qualsiasi utente 
     non autorizzato di vedere i dati e potervi accedere, permettendo l'accesso alle informazioni solo chi è in grado di dimostrare la conoscenza dello `schema' di accesso comune tramite la presentazione di una credenziale sicura generata sul momento che attesta l'autenticità dell'utente
-    e viene verificata secondo sistemi di firma digitale come quelli in oggetto. Nel caso in cui l'utente cerchi di manipolare questi dati, i meccanismi di firma digitale implementati sono in grado di riconoscere qualora 
-    l'utente abbia tentato di modificare i dati, invalidando la firma e rendendo impossibile l'accesso ai dati.
+    e viene verificata secondo sistemi di firma digitale come quelli in oggetto. Nel caso in cui l'utente cerchi di manipolare questi dati, i meccanismi di firma digitale implementati sono in grado di riconoscere la firma e rendendo impossibile l'accesso ai dati.
 \end{itemize}
 
 In questo senso, esistono vari progetti europei che mirano a studiare e scoprire nuove tecnologie per la creazione di sistemi di identità digitale basati su \textit{blockchain}, partendo dal programma comune \textit{Horizon 2020} (\cite{site:horizon2020}),
 che ha stanziato un \textit{budget} di 80 miliardi di euro per la ricerca e lo sviluppo delle tecnologie qui in oggetto nel periodo dal 2014 al 2020.
-Possiamo citare ad esempio \textit{DECODE~- Decentralized Citizen Owned Data Ecosystem} (\cite{site:decode}), che mira a creare un'infrastruttura di dati decentralizzata e sicura per i cittadini europei
+Possiamo citare ad esempio \textit{DECODE~- Decentralized Citizen Owned Data Ecosystem} (\cite{site:decode}), che mira a creare un'infrastruttura  dati decentralizzata e sicura per i cittadini europei
 utilizzando tecnologie \textit{blockchain} e \textit{Self Sovereign Identity}, permettendo ad ogni utente di firmare digitalmente le informazioni di identità e condividerle solo con le parti autorizzate.
 Un esempio ulteriore è \textit{IRMA~- I Reveal My Attributes} (\cite{site:irma}), sistema di identità digitale basato su \textit{blockchain} che utilizza una combinazione di tecnologie crittografiche mirate a garantire la sicurezza e la \textit{privacy} dei dati personali attraverso l'uso di un'applicazione mobile 
 che funge da portafoglio digitale per l'identità dell'utente, generando una prova crittografica verificabile senza dover rivelare alcuna informazione personale. \\
@@ -122,21 +130,22 @@ di garantire il vero anonimato nel mondo della rete e di venire incontro egualme
 L'attività di stage si è rivelata molto utile per la crescita personale e professionale, permettendo di acquisire nuove conoscenze
 e competenze in ambiti di sicurezza informatica e di crittografia, che sono stati approfonditi e studiati in modo mirato nel progetto realizzato.
 Inoltre, l'ambito \textit{blockchain} è stato studiato in modo approfondito, permettendo di esplorare in autonomia un campo con ripercussioni
-decisamente interessanti nel mondo dell'informatica, decisamente non visti né praticati in corsi universitari ed è stata un'esperienza assolutamente rilevante. 
-Ho potuto in questo ambito confrontarmi su aspetti interessanti che offrono nuove prospettive in ambito di sicurezza e che danno una visione delle tecnologie informatiche più consapevole. \\
+decisamente interessanti nel mondo dell'informatica, non visti né praticati in corsi universitari ed è stata un'esperienza assolutamente rilevante. 
+Ho potuto in questo ambito studiare ed esplorare aspetti interessanti tecnologie che offrono nuove prospettive in ambito di sicurezza e che danno una visione delle tecnologie informatiche più consapevole. \\
 
 Spesso ambiti sconosciuti possono essere rilevanti da un punto di vista professionale, e questo è stato un esempio di come
-andare oltre i preconcetti dati da un ambito ampiamente teorico e non ormato, si riveli in realtà un'occasione di crescita
+andare oltre i preconcetti dati da un ambito ampiamente teorico, si riveli in realtà un'occasione di crescita
 e di apprendimento, richiedendo necessariamente di praticare a fondo uno studio mirato delle attività svolte. 
 In questi casi, la passione per il conoscere guida e anticipa la necessità di apprendere, dando un'importante possibilità di conoscere e maturare,
 altrimenti non offerta in modo così vicino alle realtà aziendali e future rimanendo in ambito puramente accademico.
 L'attività di supporto è comunque stata presente di massima, dando ampia possibilità di sviluppo e organizzazione in modo autonomo, 
 rimanendo vicino a me come studente e alle mie necessità. \\
 
+\clearpage
 Il progetto per me rappresenta una crescita che matura quanto compreso e visto in questi ultimi anni, permettendo di applicare in modo nuovo 
 concetti per la maggior parte sconosciuti e con tecnologie nuove, calandomi in un contesto attuale e futuro, usando delle librerie specifiche e sviluppando un
-pensiero critico nell'analisi, affinando ulteriormente una visione d'insieme dei corsi fin qui frequentati nel mio percorso di Laurea Triennale, perfezionando il mio metodo di studio 
+pensiero critico nell'analisi, affinando ulteriormente una visione d'insieme dei corsi fin qui frequentati nel mio percorso di laurea triennale, perfezionando il mio metodo di studio 
 ed il mio modo di affrontare un progetto di codifica con ripercussioni attuali e future in modo così intenso, completando quanto realizzato nel corso di Ingegneria del Software
 e usando tali metodologie per affrontare e suddividere il lavoro in modo autonomo, partendo da quanto appreso in questi mesi.
-Quanto studiato rappresenta un importante partenza per il mio futuro percorso di Laurea Magistrale, adattando già ora un codice oggetto di tesi da parte di un laureando magistrale,
+Quanto studiato rappresenta un importante partenza per il mio futuro percorso di laurea magistrale, adattando già ora un codice oggetto di tesi da parte di un laureando magistrale,
 ampliando delle competenze trasversali certamente utili per il mio futuro, accademico e non, ed aggiornandomi su un ambito decisamente attuale e di sicuro interesse per possibili sviluppi futuri.

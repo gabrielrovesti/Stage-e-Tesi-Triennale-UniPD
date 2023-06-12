@@ -59,7 +59,7 @@ in locale per poter testare le funzionalità degli \textit{smart contract}, e di
 \subsection{Versionamento}\label{subsec:versionamento}
 
 \subsubsection{GitHub}\label{subsubsec:github}
-\textit{GitHub} è una piattaforma di \textit{hosting} per progetti software. Essa permette di gestire il versionamento del codice tramite il sistema di controllo di versione \textit{Git}.
+\textit{GitHub} è una piattaforma di \textit{hosting} per progetti \textit{software}. Essa permette di gestire il versionamento del codice tramite il sistema di controllo di versione \textit{Git}.
 In particolare, consente lo sviluppo di codice attraverso un \glsfirstoccur{\gls{repositoryg}} remoto, che permette di gestire le modifiche e le versioni del codice, tenendo traccia attraverso un registro
 delle modifiche effettuate e permettendo di tornare ad una versione precedente del codice (\cite{site:github}). 
 
@@ -119,7 +119,7 @@ La struttura della pagine è stata definita tramite \textit{.tsx}, un'estensione
 sfruttando elementi strutturali \textit{HTML}, la presentazione con \textit{CSS} e il linguaggio di programmazione \textit{TypeScript} per la gestione della logica, dei tipi e delle variabili.
 Tramite l'utilizzo dei cosiddetti \textit{hook}, è stato possibile definire le funzionalità del front-end, in modo da poter gestire le chiamate tra le componenti della 
 pagina in base all'attivazione di specifici eventi in modo dinamico, grazie all'uso degli \textit{state}.
-In questo modo, i singoli componenti e le pagine, definite come \textit{views}, riescono ad avere singola responsabilità e ne permette un miglior riutilizzo. \\
+In questo modo, i singoli componenti e le pagine, definite come \textit{views}, riescono ad avere singola responsabilità e un miglior riutilizzo. \\
 
 La logica viene mantenuta separata dalla presentazione, utilizzando la strutturazione a componenti in grado di comunicare nativamente con il 
 \textit{DOM (Document Object Model)} della pagina ma aggiungendo la gestione degli eventi in modo nativo tramite \textit{React}, permettendo così di poter gestire le interazioni con l'utente
@@ -129,10 +129,10 @@ Dato che \textit{React} è una libreria grafica, non viene forzato alcun preciso
 In questo caso, il pattern utilizzato è il \textit{Flux Pattern}, che permette di definire un flusso unidirezionale dei dati, in modo da poter gestire
 le interazioni dell'utente con la pagina e le chiamate al contratto in modo semplice e senza dover gestire la sincronizzazione dei dati tra le varie componenti.
 Ciò permette all'applicazione di essere gestita da funzionalità precise a cascata, andando ad interagire con l'esterno con semplici aggiunte di moduli o dipendenze.
-Come visibile dalla figura~\ref{fig:react}, la logica si compone di un componente radice che descrive l'applicazione,
-a sua volta costituita eventualmente da uno o più componenti, innestati a vari livelli secondo la relazione di composizione,
-includendo anche eventuali componenti di terze parti per permettere la gestione e l'interazione all'esterno, esportando la funzionalità realizzata dal componente
-o dalla pagina modularmente. \\
+Come mostrato nella figura~\ref{fig:react}, la logica dell'applicazione è basata su un componente radice che descrive l'intera applicazione.
+Questo componente può essere composto da uno o più componenti, che a loro volta possono essere innestati a diversi livelli mediante composizione. 
+È possibile anche integrare componenti di terze parti per consentire l'interazione con l'esterno e l'utilizzo di funzionalità specifiche. 
+In definitiva, il sistema viene strutturato modularmente, consentendo l'esportazione delle funzionalità implementate dai singoli componenti o pagine. \\
 
 \begin{figure}[ht]
     \centering
@@ -147,14 +147,13 @@ al caricamento della pagina (utilizzando l'\textit{Hook Pattern}, attraverso gli
 al suo interno, esportando poi il componente funzionale o la stessa pagina, secondo un insieme di funzionalità definite dallo specifico contesto. 
 Le componenti stesse supportano nativamente il cambiamento dei propri stati tramite la definizione di funzioni di \textit{callback}, eseguendo le funzioni definite al cambiamento di stato,
 osservando le azioni dell'utente (definito come \textit{Controlled Components} nel contesto \textit{React}) secondo il noto pattern \textit{Observer} alle chiamate definite dagli eventi stessi. \\
-\\
 
-\newpage
 Nello specifico, l'applicazione definisce per ogni pagina una cartella comprensiva del componente funzionale
 esportato e del suo stile, e un file di test per verificare le principali funzionalità previste.
 La suddivisione delle cartelle individuata riflette la divisione delle responsabilità; di massima, è presente una cartella \textit{components}, contenente i componenti utilizzati da tutte le pagine 
 comprensive della barra di navigazione, del \textit{footer} e di eventuali componenti di terze parti, una cartella \textit{views} con le pagine realizzate per l'applicazione ed
 una cartella \textit{utils}, con l'insieme delle funzionalità definite all'avvio dell'applicazione e centrali per la comunicazione con \textit{blockchain}. \\
+
 L'autenticazione viene gestita tramite un contesto, definito dal \textit{Provider Pattern} di \textit{React}, che permette di definire un contesto globale
 in cui tutta l'applicazione e le sue componenti vengono racchiuse per poter accedere alle informazioni definite al suo interno in ogni momento.
 Le singole opzioni visibili tra utente autenticato e non autenticato sono invece gestite secondo il pattern \textit{Conditional Rendering}, in grado di differenziare le opzioni
@@ -168,14 +167,16 @@ ciascuno responsabile della creazione di un'istanza dei documenti di identità c
 Inoltre, per permettere ai singoli componenti di interagire con il contratto, è stato utilizzato il pattern \textit{Singleton}, che assicura la creazione dell'unica istanza
 del contratto, in grado di essere utilizzata da tutte le componenti dell'applicazione. \\
 
-L'interazione tra il contratto e la parte frontend si basa sull'interazione nativa e la gestione delle chiamate generate dallo \textit{smart contract} tramite l'utilizzo
+\clearpage
+
+L'interazione tra il contratto e la parte front-end si basa sull'interazione nativa e la gestione delle chiamate generate dallo \textit{smart contract} tramite l'utilizzo
 della libreria \textit{Node.js}, in grado di gestire le chiamate asincrone e la comunicazione con il contratto stesso tramite ascolto da parte dei componenti e delle pagine
 presenti nel front-end dell'applicazione, secondo il pattern \textit{Observer}. 
-In questo modo, secondo l'architettura a componenti definita come flusso, è possibile separare completamente la logica di interazione con il contratto dalla logica di visualizzazione,
+In questo modo, in base all'architettura a componenti definita come flusso, è possibile separare completamente la logica di interazione con il contratto dalla logica di visualizzazione,
 utilizzando le funzionalità definite con la creazione di una sola riga di codice ed effettuando le chiamate alle funzionalità previste nella parte di codifica 
 solamente quando necessario, permettendo la relativa sincronizzazione dei componenti che, ascoltando, aggiornano i propri stati secondo le chiamate effettuate. \\
 
-\textit{Hardhat}, in grado di creare una locale di test, agisce quindi da \textit{middleware} tra la parte front-end e la \textit{blockchain}, permettendo di simulare le chiamate al contratto
+\textit{Hardhat}, in grado di creare una rete locale di test, agisce quindi da \textit{middleware} tra la parte front-end e la \textit{blockchain}, permettendo di simulare le chiamate al contratto
 ed ugualmente all'utente di interagire con l'applicazione, senza dover effettivamente effettuare le transazioni sulla rete principale.
 Per semplicità di implementazione, le chiamate sono effettuate sulla rete locale con l'utilizzo di profili di test già esistenti, in grado di effettuare le transazioni (ad ogni chiamata
 corrisponde una spesa in termini di valuta, coperta completamente dai profili di test). \\
@@ -225,7 +226,7 @@ Globalmente, il contratto definisce le seguenti strutture dati:
     un metodo di verifica di firma digitale, un controllore, un identificativo della \textit{blockchain} associata e un indirizzo dell'\textit{account} associato a \textit{blockchain} da verificare;
     \item \textbf{Service}, che rappresenta il servizio associato al documento di identità, comprensivo di un identificativo, un tipo di servizio e il suo indirizzo \textit{URL};
     \item \textbf{DidDocumentData}, che rappresenta i metadati associati ad uno specifico documento di identità, con un suo identificativo, la sua prova di validità, tre mappe per i tipi di autenticazione, deleghe di capacità
-    e servizi dei documenti ad essi associati e un e un \textit{Parent}. Ciò risulta utile nella verifica della catena di fiducia implementata successivamente;
+    e servizi dei documenti ad essi associati e un \textit{Parent}. Ciò risulta utile nella verifica della catena di fiducia implementata successivamente;
     \item \textbf{DidDocument}, che rappresenta il documento di identità associato all'utente e comprende un identificativo, un metodo di verifica, una delegazione di capacità, un servizio e un \textit{Parent};
     \item \textbf{ResolutionResult}, che rappresenta il risultato della risoluzione del documento di identità, comprendente un identificativo il documento di tipo \textit{DidDocument} associato;
     \item \textbf{ChainResolutionResult}, un vettore di stringhe che racchiude i risultati della risoluzione dei vari documenti di identità associati.
@@ -238,13 +239,13 @@ Ogni metodo descritto è stato utilizzato all'interno di una pagina o componente
     \item \textbf{createChildTrustedDid}, in grado di creare un nuovo \textit{DID Document} che afferma la delegazione di fiducia dall'utente certificatore (cosiddetto \textit{certification autority}) all'utente con il \textit{DID} specificato.
     Questo permette di creare la catena degli \textit{issuer} fidati, partendo dalla detta \textit{certification autority} e arrivando fino all'utente che ha effettuato la transazione, verificando i suoi dati in modo sicuro.
     Esso prende come parametri l'indirizzo dell'utente a cui delegare la fiducia e la firma della \textit{certification autority};
-    \item \textbf{initializeDidDocument}, richiamato dal metodo \textit{createDid}, che inizializza il documento di identità associato all'utente, prendendo come parametri il \textit{DID} dell'utente e il suo indirizzo;
+    \item \textbf{initializeDidDocument}, richiamato dal metodo \textit{createDid}, inizializza il documento di identità associato all'utente, prendendo come parametri il \textit{DID} dell'utente e il suo indirizzo;
     \item \textbf{addCapabilityDelegation}, che permette di aggiungere una delega di capacità al documento di identità, prendendo come parametro l'indirizzo dell'utente che autenticherà la transazione;
     \item \textbf{addService}, che permette di aggiungere un servizio al documento di identità, prendendo come parametri, l'identificativo, il tipo di servizio e il suo indirizzo \textit{URL};
     \item \textbf{deactivate}, il quale disattiva il \textit{DID Document} associato all'utente che ha effettuato la transazione;
     \item \textbf{resolve}, che ritorna il \textit{DID Document} associato all'utente secondo un determinato \textit{DID} passato come parametro;
     \item \textbf{resolveChain}, che ritorna la catena di fiducia percorsa avendo come ultimo nodo l'utente con il \textit{DID} specificato e ritorna la lista di utenti certificatori a cui si è passati per arrivare all'utente finale;
-    \item \textbf{getAuthentication}, per ottenere il metodo di autenticazione associato al documento di identità e provare per certo l'utente abbia acceduto secondo il metodo corretto.
+    \item \textbf{getAuthentication}, per ottenere il metodo di autenticazione associato al documento di identità e provare per certo che l'utente abbia eseguito l'accesso secondo il metodo corretto.
 \end{itemize}
 
 Al fine di evitare le vulnerabilità descritte in sezione~\ref{sec:tecnologie-blockchain-avanzate-vulnerabilita-sicurezza} e garantire la sicurezza del contratto, sono state implementate le seguenti misure:
@@ -336,7 +337,7 @@ per verificare la validità dei dati inseriti.
 \paragraph{Film}\label{par:film}
 
 In questa pagina, definita in codice come \textit{MoviesView}, sono presenti i film disponibili all'interno del sistema, come visibile in figura~\ref{fig:pagina-film}.
-Come visibile, in questo caso, le opzioni di navigazione previste per l'utente cambiano, mostrando la pagina in oggetto, al link \textit{/Film},
+Come si può notare, in questo caso, le opzioni di navigazione previste per l'utente cambiano, mostrando la pagina in oggetto, al link \textit{/Film},
 e le successive pagine di questa sezione, comprendente la pagina di gestione del profilo, di visualizzazione delle prenotazioni presenti e il link per effettuare il \textit{logout}.
 Per ogni film è presente un'immagine, il titolo, la descrizione, una categoria e una valutazione in termini di età.
 É inoltre presente il componente \textit{SearchBox} che permette di filtrare i film in base al titolo.
@@ -400,7 +401,7 @@ La credenziale creata internamente ha il seguente aspetto:
         issuanceDate: new Date().toISOString(),
         credentialSubject: {
           id: userDid,
-          age: userData.age,
+          age: 25,
           type: 'VerifiableCredential',
         } as CredentialSubject,
         proof: {
@@ -416,8 +417,7 @@ L'utilizzo di questo tipo di firma digitale è usata in soluzioni \textit{blockc
 secondo le specifiche dettagliate in~\cite{site:clsignature}. \\
 
 Successivamente, viene utilizzata una funzione che prevede la creazione di una \textit{Verifiable Presentation} che contiene la \textit{Verifiable Credential} creata precedentemente,
-e avendo come parametri al firma e la prova di correttezza generata prima. L'implementazione adatta flessibilmente i campi di verifica presenti per il tipo di firma digitale, 
-,adattando al tipo di firma quanto previsto in~\cite{site:vpw3c}, diventando come segue:
+e avendo come parametri la firma e la prova di correttezza generata prima. L'implementazione adatta flessibilmente i campi di verifica presenti per il tipo di firma digitale, adattando al tipo di firma quanto previsto in~\cite{site:vpw3c}, diventando come segue:
 \begin{lstlisting}[language=json]
     const vp: VerifiablePresentation = {
         '@context': [

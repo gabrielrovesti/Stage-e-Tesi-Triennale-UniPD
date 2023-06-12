@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.17)  8 JUN 2023 11:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.17)  12 JUN 2023 12:21
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -291,7 +291,98 @@ Using XMP template file: pdfa.xmp
 \xmpinclRead=\read2
 \openout3 = `pdfa.xmpi'.
 
-<<pdfa.xmpi>>) (c:/texlive/2022/texmf-dist/tex/latex/base/fontenc.sty
+<<pdfa.xmpi>>) (c:/texlive/2022/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2022/04/08 v2.17n AMS math features
+\@mathmargin=\skip51
+
+For additional information on amsmath, use the `?' option.
+(c:/texlive/2022/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(c:/texlive/2022/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks21
+\ex@=\dimen145
+))
+(c:/texlive/2022/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen146
+)
+(c:/texlive/2022/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count272
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count273
+\leftroot@=\count274
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count275
+\DOTSCASE@=\count276
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box51
+\strutbox@=\box52
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen147
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count277
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count278
+\dotsspace@=\muskip17
+\c@parentequation=\count279
+\dspbrk@lvl=\count280
+\tag@help=\toks22
+\row@=\count281
+\column@=\count282
+\maxfields@=\count283
+\andhelp@=\toks23
+\eqnshift@=\dimen148
+\alignsep@=\dimen149
+\tagshift@=\dimen150
+\tagwidth@=\dimen151
+\totwidth@=\dimen152
+\lineht@=\dimen153
+\@envbody=\toks24
+\multlinegap=\skip52
+\multlinetaggap=\skip53
+\mathdisplay@stack=\toks25
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(c:/texlive/2022/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(c:/texlive/2022/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(c:/texlive/2022/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks26
+\thm@bodyfont=\toks27
+\thm@headfont=\toks28
+\thm@notefont=\toks29
+\thm@headpunct=\toks30
+\thm@preskip=\skip54
+\thm@postskip=\skip55
+\thm@headsep=\skip56
+\dth@everypar=\toks31
+)
+(c:/texlive/2022/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 )
 (c:/texlive/2022/texmf-dist/tex/latex/base/inputenc.sty
@@ -299,13 +390,13 @@ Package: inputenc 2021/02/14 v1.3d Input encoding file
 )
 (c:/texlive/2022/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2023/02/13 3.86 The Babel package
-\babel@savecnt=\count272
-\U@D=\dimen145
+\babel@savecnt=\count284
+\U@D=\dimen154
 \l@unhyphenated=\language87
 
 (c:/texlive/2022/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read3
-\bbl@dirlevel=\count273
+\bbl@dirlevel=\count285
 
 (c:/texlive/2022/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
@@ -318,9 +409,9 @@ Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
 )
 (c:/texlive/2022/texmf-dist/tex/generic/babel-italian/italian.ldf
 Language: italian 2022/03/27 v.1.4.07 Italian support for the babel system
-\it@lettering=\count274
-\it@doublequoteactive=\count275
-\it@ISOcompliance=\count276
+\it@lettering=\count286
+\it@doublequoteactive=\count287
+\it@ISOcompliance=\count288
 ))
 (c:/texlive/2022/texmf-dist/tex/generic/babel/locale/it/babel-italian.tex
 Package babel Info: Importing font and identification data for italian
@@ -332,61 +423,61 @@ Package babel Info: Importing font and identification data for english
 )
 (c:/texlive/2022/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count277
+\etb@tempcnta=\count289
 )
 (c:/texlive/2022/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
 
 (c:/texlive/2022/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
 File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
-\BKM@id=\count278
+\BKM@id=\count290
 ))
 (c:/texlive/2022/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2022/03/01 v3.6b Customizing captions (AR)
 
 (c:/texlive/2022/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
-\caption@tempdima=\dimen146
-\captionmargin=\dimen147
-\caption@leftmargin=\dimen148
-\caption@rightmargin=\dimen149
-\caption@width=\dimen150
-\caption@indent=\dimen151
-\caption@parindent=\dimen152
-\caption@hangindent=\dimen153
+\caption@tempdima=\dimen155
+\captionmargin=\dimen156
+\caption@leftmargin=\dimen157
+\caption@rightmargin=\dimen158
+\caption@width=\dimen159
+\caption@indent=\dimen160
+\caption@parindent=\dimen161
+\caption@hangindent=\dimen162
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count279
-\c@continuedfloat=\count280
+\c@caption@flags=\count291
+\c@continuedfloat=\count292
 Package caption Info: hyperref package is loaded.
 )
 (c:/texlive/2022/texmf-dist/tex/latex/changepage/chngpage.sty
 Package: chngpage 2009/10/20 v1.2b change page layout
-\c@cp@cnt=\count281
-\c@cp@tempcnt=\count282
+\c@cp@cnt=\count293
+\c@cp@tempcnt=\count294
 )
 (c:/texlive/2022/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count283
-\calc@Bcount=\count284
-\calc@Adimen=\dimen154
-\calc@Bdimen=\dimen155
-\calc@Askip=\skip51
-\calc@Bskip=\skip52
+\calc@Acount=\count295
+\calc@Bcount=\count296
+\calc@Adimen=\dimen163
+\calc@Bdimen=\dimen164
+\calc@Askip=\skip57
+\calc@Bskip=\skip58
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count285
-\calc@Cskip=\skip53
+\calc@Ccount=\count297
+\calc@Cskip=\skip59
 )
 (c:/texlive/2022/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2022-09-14 v5.2n context-sensitive quotations (JAW)
-\csq@reset=\count286
-\csq@gtype=\count287
-\csq@glevel=\count288
-\csq@qlevel=\count289
-\csq@maxlvl=\count290
-\csq@tshold=\count291
-\csq@ltx@everypar=\toks21
+\csq@reset=\count298
+\csq@gtype=\count299
+\csq@glevel=\count300
+\csq@qlevel=\count301
+\csq@maxlvl=\count302
+\csq@tshold=\count303
+\csq@ltx@everypar=\toks32
 
 (c:/texlive/2022/texmf-dist/tex/latex/csquotes/csquotes.def
 File: csquotes.def 2022-09-14 v5.2n csquotes generic definitions (JAW)
@@ -407,14 +498,14 @@ Package: epigraph 2020/01/02 v1.5e typesetting epigraphs
 (c:/texlive/2022/texmf-dist/tex/latex/nextpage/nextpage.sty
 Package: nextpage 2009/09/03 v1.1a additional page commands
 )
-\beforeepigraphskip=\skip54
-\afterepigraphskip=\skip55
-\epigraphwidth=\skip56
-\epigraphrule=\skip57
+\beforeepigraphskip=\skip60
+\afterepigraphskip=\skip61
+\epigraphwidth=\skip62
+\epigraphrule=\skip63
 )
 (c:/texlive/2022/texmf-dist/tex/latex/eurosym/eurosym.sty
 Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
-\@eurobox=\box51
+\@eurobox=\box53
 )
 (c:/texlive/2022/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
@@ -430,28 +521,28 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
 )
-\Gin@req@height=\dimen156
-\Gin@req@width=\dimen157
+\Gin@req@height=\dimen165
+\Gin@req@width=\dimen166
 )
 (c:/texlive/2022/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count292
-\lst@gtempboxa=\box52
-\lst@token=\toks22
-\lst@length=\count293
-\lst@currlwidth=\dimen158
-\lst@column=\count294
-\lst@pos=\count295
-\lst@lostspace=\dimen159
-\lst@width=\dimen160
-\lst@newlines=\count296
-\lst@lineno=\count297
-\lst@maxwidth=\dimen161
+\lst@mode=\count304
+\lst@gtempboxa=\box54
+\lst@token=\toks33
+\lst@length=\count305
+\lst@currlwidth=\dimen167
+\lst@column=\count306
+\lst@pos=\count307
+\lst@lostspace=\dimen168
+\lst@width=\dimen169
+\lst@newlines=\count308
+\lst@lineno=\count309
+\lst@maxwidth=\dimen170
 
 (c:/texlive/2022/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count298
-\lst@skipnumbers=\count299
-\lst@framebox=\box53
+\c@lstnumber=\count310
+\lst@skipnumbers=\count311
+\lst@framebox=\box55
 )
 (c:/texlive/2022/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
@@ -460,87 +551,87 @@ Package: listings 2020/03/24 1.8d (Carsten Heinz)
 
 (c:/texlive/2022/texmf-dist/tex/latex/quoting/quoting.sty
 Package: quoting 2014/01/28 v0.1c Consolidated environment for displayed text
-\quo@toppartop=\skip58
+\quo@toppartop=\skip64
 )
 (c:/texlive/2022/texmf-dist/tex/latex/subfig/subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
-\c@KVtest=\count300
-\sf@farskip=\skip59
-\sf@captopadj=\dimen162
-\sf@capskip=\skip60
-\sf@nearskip=\skip61
-\c@subfigure=\count301
-\c@subfigure@save=\count302
-\c@lofdepth=\count303
-\c@subtable=\count304
-\c@subtable@save=\count305
-\c@lotdepth=\count306
-\sf@top=\skip62
-\sf@bottom=\skip63
+\c@KVtest=\count312
+\sf@farskip=\skip65
+\sf@captopadj=\dimen171
+\sf@capskip=\skip66
+\sf@nearskip=\skip67
+\c@subfigure=\count313
+\c@subfigure@save=\count314
+\c@lofdepth=\count315
+\c@subtable=\count316
+\c@subtable@save=\count317
+\c@lotdepth=\count318
+\sf@top=\skip68
+\sf@bottom=\skip69
 )
 (c:/texlive/2022/texmf-dist/tex/latex/tools/varioref.sty
 Package: varioref 2022/01/09 v1.6f package for extended references (FMi)
-\c@vrcnt=\count307
+\c@vrcnt=\count319
 )
 (c:/texlive/2022/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen163
-\lightrulewidth=\dimen164
-\cmidrulewidth=\dimen165
-\belowrulesep=\dimen166
-\belowbottomsep=\dimen167
-\aboverulesep=\dimen168
-\abovetopsep=\dimen169
-\cmidrulesep=\dimen170
-\cmidrulekern=\dimen171
-\defaultaddspace=\dimen172
-\@cmidla=\count308
-\@cmidlb=\count309
-\@aboverulesep=\dimen173
-\@belowrulesep=\dimen174
-\@thisruleclass=\count310
-\@lastruleclass=\count311
-\@thisrulewidth=\dimen175
+\heavyrulewidth=\dimen172
+\lightrulewidth=\dimen173
+\cmidrulewidth=\dimen174
+\belowrulesep=\dimen175
+\belowbottomsep=\dimen176
+\aboverulesep=\dimen177
+\abovetopsep=\dimen178
+\cmidrulesep=\dimen179
+\cmidrulekern=\dimen180
+\defaultaddspace=\dimen181
+\@cmidla=\count320
+\@cmidlb=\count321
+\@aboverulesep=\dimen182
+\@belowrulesep=\dimen183
+\@thisruleclass=\count322
+\@lastruleclass=\count323
+\@thisrulewidth=\dimen184
 )
 (c:/texlive/2022/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
 
 (c:/texlive/2022/texmf-dist/tex/latex/tools/array.sty
 Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
-\col@sep=\dimen176
-\ar@mcellbox=\box54
-\extrarowheight=\dimen177
-\NC@list=\toks23
-\extratabsurround=\skip64
-\backup@length=\skip65
-\ar@cellbox=\box55
+\col@sep=\dimen185
+\ar@mcellbox=\box56
+\extrarowheight=\dimen186
+\NC@list=\toks34
+\extratabsurround=\skip70
+\backup@length=\skip71
+\ar@cellbox=\box57
 )
-\TX@col@width=\dimen178
-\TX@old@table=\dimen179
-\TX@old@col=\dimen180
-\TX@target=\dimen181
-\TX@delta=\dimen182
-\TX@cols=\count312
-\TX@ftn=\toks24
+\TX@col@width=\dimen187
+\TX@old@table=\dimen188
+\TX@old@col=\dimen189
+\TX@target=\dimen190
+\TX@delta=\dimen191
+\TX@cols=\count324
+\TX@ftn=\toks35
 )
 (c:/texlive/2022/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
-\LTleft=\skip66
-\LTright=\skip67
-\LTpre=\skip68
-\LTpost=\skip69
-\LTchunksize=\count313
-\LTcapwidth=\dimen183
-\LT@head=\box56
-\LT@firsthead=\box57
-\LT@foot=\box58
-\LT@lastfoot=\box59
-\LT@gbox=\box60
-\LT@cols=\count314
-\LT@rows=\count315
-\c@LT@tables=\count316
-\c@LT@chunks=\count317
-\LT@p@ftn=\toks25
+\LTleft=\skip72
+\LTright=\skip73
+\LTpre=\skip74
+\LTpost=\skip75
+\LTchunksize=\count325
+\LTcapwidth=\dimen192
+\LT@head=\box58
+\LT@firsthead=\box59
+\LT@foot=\box60
+\LT@lastfoot=\box61
+\LT@gbox=\box62
+\LT@cols=\count326
+\LT@rows=\count327
+\c@LT@tables=\count328
+\c@LT@chunks=\count329
+\LT@p@ftn=\toks36
 )
 (c:/texlive/2022/texmf-dist/tex/latex/carlisle/ltxtable.sty
 Package: ltxtable 2021/06/13 v0.4 longtable/tabularx merge (DPC)
@@ -553,16 +644,16 @@ Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 
 (c:/texlive/2022/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (c:/texlive/2022/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks26
-\XKV@tempa@toks=\toks27
+\XKV@toks=\toks37
+\XKV@tempa@toks=\toks38
 )
-\XKV@depth=\count318
+\XKV@depth=\count330
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (c:/texlive/2022/texmf-dist/tex/latex/mfirstuc/mfirstuc.sty
 Package: mfirstuc 2022/10/14 v2.08 (NLCT)
-\@glsmfirst=\toks28
-\@glsmrest=\toks29
+\@glsmfirst=\toks39
+\@glsmrest=\toks40
 )
 (c:/texlive/2022/texmf-dist/tex/latex/xfor/xfor.sty
 Package: xfor 2009/02/05 v1.05 (NLCT)
@@ -570,74 +661,6 @@ Package: xfor 2009/02/05 v1.05 (NLCT)
 (c:/texlive/2022/texmf-dist/tex/latex/datatool/datatool-base.sty
 Package: datatool-base 2019/09/27 v2.32 (NLCT)
 
-(c:/texlive/2022/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2022/04/08 v2.17n AMS math features
-\@mathmargin=\skip70
-
-For additional information on amsmath, use the `?' option.
-(c:/texlive/2022/texmf-dist/tex/latex/amsmath/amstext.sty
-Package: amstext 2021/08/26 v2.01 AMS text
-
-(c:/texlive/2022/texmf-dist/tex/latex/amsmath/amsgen.sty
-File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks30
-\ex@=\dimen184
-))
-(c:/texlive/2022/texmf-dist/tex/latex/amsmath/amsbsy.sty
-Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen185
-)
-(c:/texlive/2022/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 2022/04/08 v2.04 operator names
-)
-\inf@bad=\count319
-LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count320
-\leftroot@=\count321
-LaTeX Info: Redefining \overline on input line 399.
-LaTeX Info: Redefining \colon on input line 410.
-\classnum@=\count322
-\DOTSCASE@=\count323
-LaTeX Info: Redefining \ldots on input line 496.
-LaTeX Info: Redefining \dots on input line 499.
-LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box61
-\strutbox@=\box62
-LaTeX Info: Redefining \big on input line 722.
-LaTeX Info: Redefining \Big on input line 723.
-LaTeX Info: Redefining \bigg on input line 724.
-LaTeX Info: Redefining \Bigg on input line 725.
-\big@size=\dimen186
-LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count324
-LaTeX Info: Redefining \bmod on input line 905.
-LaTeX Info: Redefining \pmod on input line 910.
-LaTeX Info: Redefining \smash on input line 940.
-LaTeX Info: Redefining \relbar on input line 970.
-LaTeX Info: Redefining \Relbar on input line 971.
-\c@MaxMatrixCols=\count325
-\dotsspace@=\muskip17
-\c@parentequation=\count326
-\dspbrk@lvl=\count327
-\tag@help=\toks31
-\row@=\count328
-\column@=\count329
-\maxfields@=\count330
-\andhelp@=\toks32
-\eqnshift@=\dimen187
-\alignsep@=\dimen188
-\tagshift@=\dimen189
-\tagwidth@=\dimen190
-\totwidth@=\dimen191
-\lineht@=\dimen192
-\@envbody=\toks33
-\multlinegap=\skip71
-\multlinetaggap=\skip72
-\mathdisplay@stack=\toks34
-LaTeX Info: Redefining \[ on input line 2953.
-LaTeX Info: Redefining \] on input line 2954.
-)
 (c:/texlive/2022/texmf-dist/tex/latex/substr/substr.sty
 Package: substr 2009/10/20 v1.2 Handle substrings
 \c@su@anzahl=\count331
@@ -693,9 +716,9 @@ Package: fp-upn 1996/10/21
 (c:/texlive/2022/texmf-dist/tex/latex/fp/fp-eval.sty
 Package: fp-eval 1995/04/03
 )))
-\@dtl@toks=\toks35
+\@dtl@toks=\toks41
 \@dtl@tmpcount=\count343
-\dtl@tmplength=\skip73
+\dtl@tmplength=\skip76
 \dtl@sortresult=\count344
 \@dtl@numgrpsepcount=\count345
 \@dtl@datatype=\count346
@@ -717,22 +740,22 @@ File: glossaries-english.ldf 2014/11/23 v1.0
 File: glossaries-italian.ldf 2014/11/23 v1.0
 )
 \gls@level=\count350
-\@gls@tmpb=\toks36
-\gls@tmplen=\skip74
-\glskeylisttok=\toks37
-\glslabeltok=\toks38
-\glsshorttok=\toks39
-\glslongtok=\toks40
+\@gls@tmpb=\toks42
+\gls@tmplen=\skip77
+\glskeylisttok=\toks43
+\glslabeltok=\toks44
+\glsshorttok=\toks45
+\glslongtok=\toks46
  (c:/texlive/2022/texmf-dist/tex/latex/glossaries/styles/glossary-hypernav.sty
 Package: glossary-hypernav 2022/11/03 v4.52 (NLCT)
 ) (c:/texlive/2022/texmf-dist/tex/latex/glossaries/styles/glossary-list.sty
 Package: glossary-list 2022/11/03 v4.52 (NLCT)
-\glslistdottedwidth=\skip75
+\glslistdottedwidth=\skip78
 )
 (c:/texlive/2022/texmf-dist/tex/latex/glossaries/styles/glossary-long.sty
 Package: glossary-long 2022/11/03 v4.52 (NLCT)
-\glsdescwidth=\skip76
-\glspagelistwidth=\skip77
+\glsdescwidth=\skip79
+\glspagelistwidth=\skip80
 )
 (c:/texlive/2022/texmf-dist/tex/latex/glossaries/styles/glossary-super.sty
 Package: glossary-super 2022/11/03 v4.52 (NLCT)
@@ -741,9 +764,9 @@ Package: glossary-super 2022/11/03 v4.52 (NLCT)
 Package: supertabular 2020/02/02 v4.1g the supertabular environment
 \c@tracingst=\count351
 \ST@wd=\dimen193
-\ST@rightskip=\skip78
-\ST@leftskip=\skip79
-\ST@parfillskip=\skip80
+\ST@rightskip=\skip81
+\ST@leftskip=\skip82
+\ST@parfillskip=\skip83
 \ST@pageleft=\dimen194
 \ST@headht=\dimen195
 \ST@tailht=\dimen196
@@ -757,7 +780,7 @@ Package: supertabular 2020/02/02 v4.1g the supertabular environment
 ))
 (c:/texlive/2022/texmf-dist/tex/latex/glossaries/styles/glossary-tree.sty
 Package: glossary-tree 2022/11/03 v4.52 (NLCT)
-\glstreeindent=\skip81
+\glstreeindent=\skip84
 ))
 (c:/texlive/2022/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2022/07/12 v3.18b programmable bibliographies (PK/MW)
@@ -812,14 +835,14 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \blx@sectionciteorderinternal@0=\count393
 \blx@entrysetcounter=\count394
 \blx@biblioinstance=\count395
-\labelnumberwidth=\skip82
-\labelalphawidth=\skip83
-\biblabelsep=\skip84
-\bibitemsep=\skip85
-\bibnamesep=\skip86
-\bibinitsep=\skip87
-\bibparsep=\skip88
-\bibhang=\skip89
+\labelnumberwidth=\skip85
+\labelalphawidth=\skip86
+\biblabelsep=\skip87
+\bibitemsep=\skip88
+\bibnamesep=\skip89
+\bibinitsep=\skip90
+\bibparsep=\skip91
+\bibhang=\skip92
 \blx@bcfin=\read4
 \blx@bcfout=\write4
 \blx@langwohyphens=\language88
@@ -904,20 +927,20 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@savedoriglanguage=\count464
 \c@pageref=\count465
 \c@savedpageref=\count466
-\shorthandwidth=\skip90
-\shortjournalwidth=\skip91
-\shortserieswidth=\skip92
-\shorttitlewidth=\skip93
-\shortauthorwidth=\skip94
-\shorteditorwidth=\skip95
-\locallabelnumberwidth=\skip96
-\locallabelalphawidth=\skip97
-\localshorthandwidth=\skip98
-\localshortjournalwidth=\skip99
-\localshortserieswidth=\skip100
-\localshorttitlewidth=\skip101
-\localshortauthorwidth=\skip102
-\localshorteditorwidth=\skip103
+\shorthandwidth=\skip93
+\shortjournalwidth=\skip94
+\shortserieswidth=\skip95
+\shorttitlewidth=\skip96
+\shortauthorwidth=\skip97
+\shorteditorwidth=\skip98
+\locallabelnumberwidth=\skip99
+\locallabelalphawidth=\skip100
+\localshorthandwidth=\skip101
+\localshortjournalwidth=\skip102
+\localshortserieswidth=\skip103
+\localshorttitlewidth=\skip104
+\localshortauthorwidth=\skip105
+\localshorteditorwidth=\skip106
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
@@ -1022,13 +1045,13 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutheight=\dimen264
 \Gm@layouthoffset=\dimen265
 \Gm@layoutvoffset=\dimen266
-\Gm@dimlist=\toks41
+\Gm@dimlist=\toks47
 )
-\LA@MargineRilegatura=\skip104
-\LA@LarghezzaTesto=\skip105
-\LA@AltezzaTesto=\skip106
-\LA@MargineSinistro=\skip107
-\LA@MargineSuperiore=\skip108
+\LA@MargineRilegatura=\skip107
+\LA@LarghezzaTesto=\skip108
+\LA@AltezzaTesto=\skip109
+\LA@MargineSinistro=\skip110
+\LA@MargineSuperiore=\skip111
 )
 (c:/texlive/2022/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
@@ -1036,20 +1059,20 @@ Package: setspace 2022/12/04 v6.7b set line spacing
 (c:/texlive/2022/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2021/07/05 v2.14 Sectioning titles
 \ttl@box=\box65
-\beforetitleunit=\skip109
-\aftertitleunit=\skip110
+\beforetitleunit=\skip112
+\aftertitleunit=\skip113
 \ttl@plus=\dimen267
 \ttl@minus=\dimen268
-\ttl@toksa=\toks42
+\ttl@toksa=\toks48
 \titlewidth=\dimen269
 \titlewidthlast=\dimen270
 \titlewidthfirst=\dimen271
 )
 (c:/texlive/2022/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip111
+\labelindent=\skip114
 \enit@outerparindent=\dimen272
-\enit@toks=\toks43
+\enit@toks=\toks49
 \enit@inbox=\box66
 \enit@count@id=\count482
 \enitdp@description=\count483
@@ -1061,21 +1084,21 @@ sages
 \sl@StateNumber=\count485
 \sl@MessageCount=\count486
 \sl@Casualties=\count487
-\sl@Filter=\toks44
-\sl@Message=\toks45
-\sl@UnexpandedMessage=\toks46
-\sl@Mess@ge=\toks47
+\sl@Filter=\toks50
+\sl@Message=\toks51
+\sl@UnexpandedMessage=\toks52
+\sl@Mess@ge=\toks53
 \sl@WarningCount=\count488
 \sl@WarningNumber=\count489
 \sl@WarningCasualties=\count490
-\sl@TempBOW=\toks48
-\sl@BankOfWarnings=\toks49
+\sl@TempBOW=\toks54
+\sl@BankOfWarnings=\toks55
 LaTeX Info: Redefining \GenericWarning on input line 433.
 \sl@ErrorCount=\count491
 \sl@ErrorNumber=\count492
 \sl@ErrorCasualties=\count493
-\sl@TempBOE=\toks50
-\sl@BankOfErrors=\toks51
+\sl@TempBOE=\toks56
+\sl@BankOfErrors=\toks57
 LaTeX Info: Redefining \GenericError on input line 601.
 )
 (./config/tesi-config.tex
@@ -1101,15 +1124,15 @@ Package glossaries Info: Writing glossary file tesi.glo on input line 45.
 \openout7 = `tesi.acn'.
 
 Package glossaries Info: Writing glossary file tesi.acn on input line 45.
-Package hyperref Info: Option `colorlinks' set `true' on input line 106.
-Package hyperref Info: Option `linktocpage' set `true' on input line 106.
-Package hyperref Info: Option `breaklinks' set `true' on input line 106.
-Package hyperref Info: Option `pageanchor' set `true' on input line 106.
-Package hyperref Info: Option `plainpages' set `false' on input line 106.
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 106.
+Package hyperref Info: Option `colorlinks' set `true' on input line 101.
+Package hyperref Info: Option `linktocpage' set `true' on input line 101.
+Package hyperref Info: Option `breaklinks' set `true' on input line 101.
+Package hyperref Info: Option `pageanchor' set `true' on input line 101.
+Package hyperref Info: Option `plainpages' set `false' on input line 101.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 101.
 
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 106.
-Package hyperref Info: Option `hypertexnames' set `true' on input line 106.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 101.
+Package hyperref Info: Option `hypertexnames' set `true' on input line 101.
 
 (c:/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
@@ -1178,12 +1201,12 @@ LaTeX Font Info:    ... okay on input line 4.
 \scratchbox=\box67
 \nofMPsegments=\count497
 \nofMParguments=\count498
-\everyMPshowfont=\toks52
+\everyMPshowfont=\toks58
 \MPscratchCnt=\count499
 \MPscratchDim=\dimen274
 \MPnumerator=\count500
 \makeMPintoPDFobject=\count501
-\everyMPtoPDFconversion=\toks53
+\everyMPtoPDFconversion=\toks59
 ) (c:/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1287,13 +1310,23 @@ Package pdftex.def Info: immagini//unipd-logo.png  used on input line 22.
 ]) (./introduzione/indice.tex [5]
 [6
 
-] (build/tesi.toc [7
+] (build/tesi.toc
+LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
+ (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
+
+(c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [7
 
 ] [8])
 \tf@toc=\write8
 \openout8 = `tesi.toc'.
 
- [9] (build/tesi.lof)
+ [9]
+(build/tesi.lof)
 \tf@lof=\write9
 \openout9 = `tesi.lof'.
 
@@ -1380,158 +1413,186 @@ Package pdftex.def Info: immagini/zkp.png  used on input line 448.
 Capitolo 3.
 [19
 
-] [20] [21
+] [20]) (./capitoli/concept.tex [21
 
-]) (./capitoli/concept.tex [22]
+] [22
+
+]
 Capitolo 4.
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
-4.
-(c:/texlive/2022/texmf-dist/tex/latex/base/t1cmtt.fd
+[23]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 6
+5.
+ (c:/texlive/2022/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
-) [23
-
-] [24] [25]
-<immagini/usecase/scenario-principale.jpg, id=648, 1005.7575pt x 933.4875pt>
+) [24] [25] [26]
+<immagini/usecase/scenario-principale.jpg, id=652, 422.7795pt x 392.06474pt>
 File: immagini/usecase/scenario-principale.jpg Graphic file (type jpg)
 <use immagini/usecase/scenario-principale.jpg>
 Package pdftex.def Info: immagini/usecase/scenario-principale.jpg  used on inpu
-t line 157.
-(pdftex.def)             Requested size: 435.32422pt x 404.04117pt.
-<immagini/usecase/UC1.jpg, id=650, 892.33376pt x 474.77374pt>
+t line 205.
+(pdftex.def)             Requested size: 435.32422pt x 403.72351pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[27
+
+] [28 <./immagini/usecase/scenario-principale.jpg>]
+<immagini/usecase/UC1.jpg, id=663, 740.7675pt x 411.5375pt>
 File: immagini/usecase/UC1.jpg Graphic file (type jpg)
 <use immagini/usecase/UC1.jpg>
-Package pdftex.def Info: immagini/usecase/UC1.jpg  used on input line 192.
-(pdftex.def)             Requested size: 435.32422pt x 231.6197pt.
- [26]
+Package pdftex.def Info: immagini/usecase/UC1.jpg  used on input line 240.
+(pdftex.def)             Requested size: 435.32422pt x 241.85052pt.
+ [29
 
-LaTeX Warning: Text page 27 contains only floats.
-
-[27 <./immagini/usecase/scenario-principale.jpg> <./immagini/usecase/UC1.jpg>]
-[28]
-<immagini/usecase/UC4.jpg, id=686, 852.18375pt x 241.90375pt>
+ <./immagini/usecase/UC1.jpg>] [30]
+<immagini/usecase/UC4.jpg, id=693, 852.18375pt x 241.90375pt>
 File: immagini/usecase/UC4.jpg Graphic file (type jpg)
 <use immagini/usecase/UC4.jpg>
-Package pdftex.def Info: immagini/usecase/UC4.jpg  used on input line 296.
+Package pdftex.def Info: immagini/usecase/UC4.jpg  used on input line 331.
 (pdftex.def)             Requested size: 435.32422pt x 123.57597pt.
- [29 <./immagini/usecase/UC4.jpg>]
-<immagini/usecase/UC6.jpg, id=699, 853.1875pt x 242.9075pt>
+ [31 <./immagini/usecase/UC4.jpg>]
+<immagini/usecase/UC6.jpg, id=704, 853.1875pt x 242.9075pt>
 File: immagini/usecase/UC6.jpg Graphic file (type jpg)
 <use immagini/usecase/UC6.jpg>
-Package pdftex.def Info: immagini/usecase/UC6.jpg  used on input line 346.
+Package pdftex.def Info: immagini/usecase/UC6.jpg  used on input line 381.
 (pdftex.def)             Requested size: 435.32422pt x 123.94048pt.
- [30 <./immagini/usecase/UC6.jpg>]
-[31]
-<immagini/usecase/UC8.jpg, id=731, 869.2475pt x 395.4775pt>
+ [32 <./immagini/usecase/UC6.jpg>] [33]
+<immagini/usecase/UC8.jpg, id=735, 869.2475pt x 395.4775pt>
 File: immagini/usecase/UC8.jpg Graphic file (type jpg)
 <use immagini/usecase/UC8.jpg>
-Package pdftex.def Info: immagini/usecase/UC8.jpg  used on input line 404.
+Package pdftex.def Info: immagini/usecase/UC8.jpg  used on input line 439.
 (pdftex.def)             Requested size: 435.32422pt x 198.05809pt.
- [32 <./immagini/usecase/UC8.jpg>]
-<immagini/usecase/UC9.jpg, id=745, 820.06375pt x 307.1475pt>
+ [34 <./immagini/usecase/UC8.jpg>] [35]
+<immagini/usecase/UC9.jpg, id=762, 820.06375pt x 307.1475pt>
 File: immagini/usecase/UC9.jpg Graphic file (type jpg)
 <use immagini/usecase/UC9.jpg>
-Package pdftex.def Info: immagini/usecase/UC9.jpg  used on input line 478.
+Package pdftex.def Info: immagini/usecase/UC9.jpg  used on input line 511.
 (pdftex.def)             Requested size: 435.32422pt x 163.04985pt.
- [33]
-<immagini/usecase/UC9.1.jpg, id=762, 933.4875pt x 572.1375pt>
+<immagini/usecase/UC9.1.jpg, id=764, 933.4875pt x 572.1375pt>
 File: immagini/usecase/UC9.1.jpg Graphic file (type jpg)
 <use immagini/usecase/UC9.1.jpg>
-Package pdftex.def Info: immagini/usecase/UC9.1.jpg  used on input line 508.
+Package pdftex.def Info: immagini/usecase/UC9.1.jpg  used on input line 541.
 (pdftex.def)             Requested size: 435.32422pt x 266.80943pt.
- [34 <./immagini/usecase/UC9.jpg>]
-[35 <./immagini/usecase/UC9.1.jpg>] [36]
-<immagini/usecase/UC12.jpg, id=801, 829.0975pt x 491.8375pt>
-File: immagini/usecase/UC12.jpg Graphic file (type jpg)
-<use immagini/usecase/UC12.jpg>
-Package pdftex.def Info: immagini/usecase/UC12.jpg  used on input line 634.
-(pdftex.def)             Requested size: 435.32422pt x 258.24106pt.
- [37] [38 <./immagini/usecase/UC12.jpg>] [39] [40]) (./capitoli/product-prototy
-pe.tex [41] [42
+ [36
+
+ <./immagini/usecase/UC9.jpg>] [37 <./immagini/usecase/UC9.1.jpg>] [38
 
 ]
+<immagini/usecase/UC12.jpg, id=808, 829.0975pt x 331.2375pt>
+File: immagini/usecase/UC12.jpg Graphic file (type jpg)
+<use immagini/usecase/UC12.jpg>
+Package pdftex.def Info: immagini/usecase/UC12.jpg  used on input line 667.
+(pdftex.def)             Requested size: 435.32422pt x 173.91745pt.
+ [39 <./immagini/usecase/UC12.jpg>]
+[40]
+Overfull \hbox (9.14717pt too wide) in alignment at lines 753--801
+ [] [] [] 
+ []
+
+
+Overfull \hbox (9.14717pt too wide) in alignment at lines 805--827
+ [] [] [] 
+ []
+
+[41]
+Overfull \hbox (9.14717pt too wide) in alignment at lines 832--846
+ [] [] [] 
+ []
+
+
+Overfull \hbox (9.14717pt too wide) in alignment at lines 851--865
+ [] [] [] 
+ []
+
+) (./capitoli/product-prototype.tex [42]
 Capitolo 5.
-[43] [44] [45]
-<immagini/react.jpeg, id=902, 626.34pt x 613.29124pt>
+[43
+
+] [44] [45]
+<immagini/react.jpeg, id=901, 626.34pt x 613.29124pt>
 File: immagini/react.jpeg Graphic file (type jpg)
 <use immagini/react.jpeg>
 Package pdftex.def Info: immagini/react.jpeg  used on input line 139.
 (pdftex.def)             Requested size: 290.22107pt x 284.18552pt.
  [46] [47 <./immagini/react.jpeg>]
-<immagini/ethereum-architecture.png, id=913, 773.89125pt x 472.76625pt>
+<immagini/ethereum-architecture.png, id=912, 773.89125pt x 472.76625pt>
 File: immagini/ethereum-architecture.png Graphic file (type png)
 <use immagini/ethereum-architecture.png>
 Package pdftex.def Info: immagini/ethereum-architecture.png  used on input line
- 197.
+ 198.
 (pdftex.def)             Requested size: 290.22107pt x 177.29411pt.
- [48 <./immagini/ethereum-architecture.png>]
-<immagini/architettura.png, id=922, 555.07375pt x 472.76625pt>
+ [48
+
+ <./immagini/ethereum-architecture.png>]
+<immagini/architettura.png, id=921, 555.07375pt x 472.76625pt>
 File: immagini/architettura.png Graphic file (type png)
 <use immagini/architettura.png>
-Package pdftex.def Info: immagini/architettura.png  used on input line 206.
+Package pdftex.def Info: immagini/architettura.png  used on input line 207.
 (pdftex.def)             Requested size: 290.22107pt x 247.18884pt.
  [49 <./immagini/architettura.png>] [50]
-<immagini/frontend/home.png, id=940, 1136.44576pt x 531.1845pt>
+<immagini/frontend/home.png, id=939, 1136.44576pt x 531.1845pt>
 File: immagini/frontend/home.png Graphic file (type png)
 <use immagini/frontend/home.png>
-Package pdftex.def Info: immagini/frontend/home.png  used on input line 277.
+Package pdftex.def Info: immagini/frontend/home.png  used on input line 278.
 (pdftex.def)             Requested size: 290.22107pt x 135.64882pt.
-<immagini/frontend/home-mobile.png, id=942, 386.6445pt x 513.117pt>
+<immagini/frontend/home-mobile.png, id=941, 386.6445pt x 513.117pt>
 File: immagini/frontend/home-mobile.png Graphic file (type png)
 <use immagini/frontend/home-mobile.png>
 Package pdftex.def Info: immagini/frontend/home-mobile.png  used on input line 
-287.
+288.
 (pdftex.def)             Requested size: 145.11053pt x 192.575pt.
  [51 <./immagini/frontend/home.png> <./immagini/frontend/home-mobile.png>]
-<immagini/frontend/register.png, id=950, 1130.42325pt x 531.78674pt>
+<immagini/frontend/register.png, id=949, 1130.42325pt x 531.78674pt>
 File: immagini/frontend/register.png Graphic file (type png)
 <use immagini/frontend/register.png>
-Package pdftex.def Info: immagini/frontend/register.png  used on input line 305
+Package pdftex.def Info: immagini/frontend/register.png  used on input line 306
 .
 (pdftex.def)             Requested size: 290.22107pt x 136.52481pt.
-<immagini/frontend/challenge-response.png, id=952, 198.7425pt x 204.765pt>
+<immagini/frontend/challenge-response.png, id=951, 198.7425pt x 204.765pt>
 File: immagini/frontend/challenge-response.png Graphic file (type png)
 <use immagini/frontend/challenge-response.png>
 Package pdftex.def Info: immagini/frontend/challenge-response.png  used on inpu
-t line 317.
+t line 318.
 (pdftex.def)             Requested size: 145.11053pt x 149.51155pt.
  [52 <./immagini/frontend/register.png> <./immagini/frontend/challenge-response
 .png>]
-<immagini/frontend/login.png, id=961, 1139.457pt x 513.117pt>
+<immagini/frontend/login.png, id=960, 1139.457pt x 513.117pt>
 File: immagini/frontend/login.png Graphic file (type png)
 <use immagini/frontend/login.png>
-Package pdftex.def Info: immagini/frontend/login.png  used on input line 332.
+Package pdftex.def Info: immagini/frontend/login.png  used on input line 333.
 (pdftex.def)             Requested size: 290.22107pt x 130.69043pt.
-<immagini/frontend/movies.png, id=963, 1136.44576pt x 528.7755pt>
+<immagini/frontend/movies.png, id=962, 1136.44576pt x 528.7755pt>
 File: immagini/frontend/movies.png Graphic file (type png)
 <use immagini/frontend/movies.png>
-Package pdftex.def Info: immagini/frontend/movies.png  used on input line 346.
+Package pdftex.def Info: immagini/frontend/movies.png  used on input line 347.
 (pdftex.def)             Requested size: 290.22107pt x 135.03365pt.
-<immagini/frontend/age-verification.png, id=965, 656.4525pt x 183.68625pt>
+<immagini/frontend/age-verification.png, id=964, 656.4525pt x 183.68625pt>
 File: immagini/frontend/age-verification.png Graphic file (type png)
 <use immagini/frontend/age-verification.png>
 Package pdftex.def Info: immagini/frontend/age-verification.png  used on input 
-line 357.
+line 358.
 (pdftex.def)             Requested size: 290.22107pt x 81.20897pt.
  [53 <./immagini/frontend/login.png> <./immagini/frontend/movies.png>] [54 <./i
 mmagini/frontend/age-verification.png>]
-<immagini/frontend/verification-doing.png, id=1015, 657.657pt x 260.172pt>
+<immagini/frontend/verification-doing.png, id=1012, 657.657pt x 260.172pt>
 File: immagini/frontend/verification-doing.png Graphic file (type png)
 <use immagini/frontend/verification-doing.png>
 Package pdftex.def Info: immagini/frontend/verification-doing.png  used on inpu
 t line 461.
 (pdftex.def)             Requested size: 290.22107pt x 114.81743pt.
  [55]
-<immagini/frontend/review.png, id=1045, 355.3275pt x 227.6505pt>
+<immagini/frontend/review.png, id=1044, 355.3275pt x 227.6505pt>
 File: immagini/frontend/review.png Graphic file (type png)
 <use immagini/frontend/review.png>
 Package pdftex.def Info: immagini/frontend/review.png  used on input line 473.
 (pdftex.def)             Requested size: 145.11053pt x 92.97256pt.
-<immagini/frontend/share.png, id=1047, 431.211pt x 327.02174pt>
+<immagini/frontend/share.png, id=1046, 431.211pt x 327.02174pt>
 File: immagini/frontend/share.png Graphic file (type png)
 <use immagini/frontend/share.png>
 Package pdftex.def Info: immagini/frontend/share.png  used on input line 482.
 (pdftex.def)             Requested size: 145.11053pt x 110.0482pt.
-<immagini/frontend/movie-booking.png, id=1049, 1139.457pt x 504.6855pt>
+<immagini/frontend/movie-booking.png, id=1048, 1139.457pt x 504.6855pt>
 File: immagini/frontend/movie-booking.png Graphic file (type png)
 <use immagini/frontend/movie-booking.png>
 Package pdftex.def Info: immagini/frontend/movie-booking.png  used on input lin
@@ -1539,13 +1600,13 @@ e 492.
 (pdftex.def)             Requested size: 290.22107pt x 128.54292pt.
  [56 <./immagini/frontend/verification-doing.png> <./immagini/frontend/review.p
 ng> <./immagini/frontend/share.png>]
-<immagini/frontend/movie-booking-done.png, id=1058, 280.04625pt x 287.27325pt>
+<immagini/frontend/movie-booking-done.png, id=1057, 280.04625pt x 287.27325pt>
 File: immagini/frontend/movie-booking-done.png Graphic file (type png)
 <use immagini/frontend/movie-booking-done.png>
 Package pdftex.def Info: immagini/frontend/movie-booking-done.png  used on inpu
 t line 501.
 (pdftex.def)             Requested size: 145.11053pt x 148.86131pt.
-<immagini/frontend/movie-booking-list.png, id=1060, 1141.26375pt x 534.798pt>
+<immagini/frontend/movie-booking-list.png, id=1059, 1141.26375pt x 534.798pt>
 File: immagini/frontend/movie-booking-list.png Graphic file (type png)
 <use immagini/frontend/movie-booking-list.png>
 Package pdftex.def Info: immagini/frontend/movie-booking-list.png  used on inpu
@@ -1553,13 +1614,13 @@ t line 511.
 (pdftex.def)             Requested size: 290.22107pt x 135.99222pt.
  [57 <./immagini/frontend/movie-booking.png> <./immagini/frontend/movie-booking
 -done.png> <./immagini/frontend/movie-booking-list.png>]
-<immagini/frontend/account.png, id=1069, 1133.4345pt x 523.9575pt>
+<immagini/frontend/account.png, id=1068, 1133.4345pt x 523.9575pt>
 File: immagini/frontend/account.png Graphic file (type png)
 <use immagini/frontend/account.png>
 Package pdftex.def Info: immagini/frontend/account.png  used on input line 526.
 
 (pdftex.def)             Requested size: 290.22107pt x 134.16304pt.
-<immagini/frontend/404.png, id=1071, 1128.01425pt x 492.03825pt>
+<immagini/frontend/404.png, id=1070, 1128.01425pt x 492.03825pt>
 File: immagini/frontend/404.png Graphic file (type png)
 <use immagini/frontend/404.png>
 Package pdftex.def Info: immagini/frontend/404.png  used on input line 538.
@@ -1569,11 +1630,9 @@ oli/product-design.tex [59] [60
 
 ]
 Capitolo 6.
-[61] [62] [63] [64
+[61] [62] [63
 
-] [65
-
-] [66
+] [64] [65] [66
 
 ]) (./capitoli/conclusioni.tex [67
 
@@ -1583,9 +1642,12 @@ Capitolo 6.
 Capitolo 7.
 [69] [70
 
-] [71] [72]) [73] [74
+] [71
+
+] [72] [73]) [74
 
 ] (build/tesi.gls [75
+
 
 
 ] [76] [77])
@@ -1598,13 +1660,13 @@ Package logreq Info: Writing requests to 'tesi.run.xml'.
 
  ) ) 
 Here is how much of TeX's memory you used:
- 38911 strings out of 476029
- 686247 string characters out of 5794164
- 2046340 words of memory out of 5000000
- 58156 multiletter control sequences out of 15000+600000
- 534393 words of font info for 65 fonts, out of 8000000 for 9000
+ 39334 strings out of 476029
+ 692029 string characters out of 5794164
+ 2044340 words of memory out of 5000000
+ 58560 multiletter control sequences out of 15000+600000
+ 535638 words of font info for 71 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 99i,8n,125p,2257b,3589s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,7n,125p,2257b,3759s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/te
 xlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/202
 2/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb><c:/texlive/2022
@@ -1631,10 +1693,10 @@ sl1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfst0900.pfb
 ve/2022/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb><c:/texlive/2022/te
 xmf-dist/fonts/type1/public/cm-super/sftt0900.pfb><c:/texlive/2022/texmf-dist/f
 onts/type1/public/cm-super/sftt1000.pfb>
-Output written on build/tesi.pdf (92 pages, 13965656 bytes).
+Output written on build/tesi.pdf (92 pages, 13935956 bytes).
 PDF statistics:
- 1947 PDF objects out of 2073 (max. 8388607)
- 1719 compressed objects within 18 object streams
- 532 named destinations out of 1000 (max. 500000)
+ 1944 PDF objects out of 2073 (max. 8388607)
+ 1716 compressed objects within 18 object streams
+ 528 named destinations out of 1000 (max. 500000)
  935 words of extra memory for PDF output out of 10000 (max. 10000000)
 

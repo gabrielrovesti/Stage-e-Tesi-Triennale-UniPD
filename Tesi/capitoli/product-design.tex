@@ -14,7 +14,7 @@ Si riporta inoltre l'utilizzo degli attributi \textit{lang} per specificare la l
 
 Come descritto per la parte dei componenti, è stato creato un componente apposito per aiuto agli \glsfirstoccur{\gls{screenreaderg}}, in grado di fornire un \textit{link} per saltare la navigazione e accedere direttamente al contenuto principale della pagina
 oppure l'opzione per tornare su in pagine grandi.
-Il sito utilizza un layout a tre pannelli, cercando di rendere fluida l'esperienza di navigazione, evitando lo scorrimento laterale nelle condizioni di visualizzazione più comuni.
+Il sito utilizza un \textit{layout} a tre pannelli, cercando di rendere fluida l'esperienza di navigazione, evitando lo scorrimento laterale nelle condizioni di visualizzazione più comuni.
 La struttura cerca di seguire un livello di intestazioni logiche, utilizzando \textit{<h1>} per il titolo principale della pagina, \textit{<h2>} per i titoli di sezione e \textit{<h3>} per i titoli di sottosezione,
 tale da non saltare livelli di intestazione e consentire una navigazione più fluida nelle varie condizioni.
 Il carattere utilizzato è \textit{Calibri}, un font \textit{sans-serif} che risulta essere mediamente ben leggibile, adottando convenzionalmente un'interlinea di 1.5 \textit{em} per migliorare la leggibilità del testo. \\
@@ -24,9 +24,9 @@ Con l'aiuto del sito \textit{WCAG Contrast Checker} (\cite{site:wcagcontrastchec
 
 In dettaglio, possiamo precisare:
 \begin{itemize}
-    \item per i contrasti nella pagina principale e per il testo nelle varie pagine, un colore con sfumatura \textit{\#ffffff80}, correttamente visibile rispetto all'immagine di sfondo;
-    \item per i link di navigazione, un colore con sfumatura \textit{\#ffffff}, per lo stato di hover pari a \textit{\#ff8a8a}, lo stato di visitato con sfumatura \textit{\#ffec80}, tutti pienamente contrastanti con la barra di navigazione di colore \textit{\#141414}, usato qui e nel \textit{footer};
-    \item per tutti i bottoni, il colore \textit{\#4c78a8}, per lo stato di hover il colore \textit{\#303f9f} e per lo stato di focus il colore \textit{\#3f51b580}, contrastanti con lo sfondo \textit{\#ffffff} delle finestre in cui sono usati.
+    \item per i contrasti nella pagina principale e per il testo nelle varie pagine, un colore con sfumatura \textit{\#ffffff80}, correttamente visibile rispetto all'immagine di sfondo, con un rapporto rilevato pari a 13.5:1;
+    \item per i link di navigazione, un colore con sfumatura \textit{\#ffffff} con rapporto 18.42:1, per lo stato di hover pari a \textit{\#ff8a8a} con rapporto 8.11:1, lo stato di visitato con sfumatura \textit{\#ffec80} con rapporto 15.4:1, tutti pienamente contrastanti con la barra di navigazione di colore \textit{\#141414}, quest'ultimo usato qui e nel \textit{footer};
+    \item per tutti i bottoni, il colore \textit{\#334c71} con rapporto 8.7:1, per lo stato di hover il colore \textit{\#303f9f} con raporto 8.98:1 e per lo stato di focus il colore \textit{\#3C4CA1} con rapporto 7.66:1, contrastanti con lo sfondo \textit{\#ffffff} delle finestre in cui sono usati.
 \end{itemize}
 
 Le convenzioni interne del sito, a livello grafico e di navigazione, sono state mantenute coerenti in tutte le pagine, cercando di rendere l'esperienza di navigazione più fluida possibile.
@@ -36,7 +36,7 @@ A questo proposito, è stato utilizzato un componente apposito per la gestione d
 
 Le immagini utilizzate sono state ottimizzate in dimensione e peso, cercando di mantenere un livello di qualità adeguato, senza appesantire troppo il sito e il suo caricamento.
 Le stesse ancore di navigazione hanno nomi esplicativi e sono state posizionate in modo da essere facilmente raggiungibili e cliccabili dall'apposita barra di navigazione.
-Inoltre, si è deciso di evitare l'uso di tabelle, che possono risultare poco accessibili, e di utilizzare un layout a griglia per la disposizione dei contenuti grafici, offrendo come descritto in sezione~\ref{subsec:codifica-front-end} dei punti di rottura per ogni pagina per garantire la fruizione del sito anche su dispositivi mobili.
+Inoltre, si è deciso di evitare l'uso di tabelle, che possono risultare poco accessibili, e di utilizzare un \textit{layout} a griglia per la disposizione dei contenuti grafici offrendo, come descritto in sezione~\ref{subsec:codifica-front-end}, dei punti di rottura per ogni pagina per garantire la fruizione del sito anche su dispositivi mobili.
 Un controllo generale di quanto descritto è stato effettuato con l'aiuto dell'estensione \textit{WAVE} (\cite{site:wave}), che ha permesso di individuare alcuni errori e avvisi, corretti e poi modificando di conseguenza,
 portando il sito ad essere conforme alle linee guida definite. 
 
@@ -64,30 +64,21 @@ Ciascun test riporta le seguenti sigle:
 Per una migliore comprensione del riferimento alle pagine e alle relativi componenti, con denominazione di riferimento in codifica, si rimanda 
 alla sezione~\ref{subsec:codice-front-end}.
 
-\renewcommand{\arraystretch}{1.1} % Adjust the spacing inside the cells
+\clearpage
 
-% Redefine column type to center the content
-\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\renewcommand{\arraystretch}{1.1}
+
+\newcolumntype{D}[1]{>{\arraybackslash}p{#1}}
 
 \begin{center}
 \captionof{table}{Tabella di tracciamento dei test di unità}\label{tab:test-unita}
-\begin{longtable}{|C{2.0cm}|C{3.0cm}|C{8.0cm}|C{2.0cm}|}
+\begin{longtable}{|D{1.5cm}|D{3.0cm}|D{8.5cm}|D{1.5cm}|}
 \hline
 \textbf{ID} & \textbf{Elemento} & \textbf{Descrizione} & \textbf{Stato} \\
 \hline
 TU1 & AuthContext & Verificare se il componente AuthContext gestisce correttamente l'autenticazione, salvando lo stato dell'utente e fornendo la logica di autenticazione. & I \\
 \hline
 TU2 & Footer & Verificare se il componente Footer viene visualizzato e caricato correttamente in tutte le pagine dell'applicazione e se il link di ritorno funziona con \textit{screen reader}. & I \\
-\hline
-\end{longtable}
-\end{center}
-
-\begin{center}
-\begin{longtable}{|C{2.0cm}|C{3.0cm}|C{8.0cm}|C{2.0cm}|}
-\hline
-\multicolumn{4}{|c|}{\textbf{Continuazione della tabella~\ref{tab:test-unita}}} \\
-\hline
-\textbf{ID} & \textbf{Elemento} & \textbf{Descrizione} & \textbf{Stato} \\
 \hline
 \endhead
 TU3 & NavBar & Verificare se il componente NavBar viene visualizzato e caricato correttamente in tutte le pagine dell'applicazione & I \\
@@ -102,7 +93,6 @@ TU7 & SearchBox & Verificare se il componente SearchBox gestisce correttamente l
 \hline
 TU8 & Notification & Verificare se il componente Notification gestisce correttamente la visualizzazione degli errori e dei messaggi di notifica nelle diverse situazioni & I \\
 \hline
-% Aggiungi altre righe come necessario
 \end{longtable}
 \end{center}
 
@@ -124,25 +114,13 @@ avendo come legenda:
 
 \begin{center}
 \captionof{table}{Tabella del tracciamento dei test di integrazione}\label{tab:test-integrazione}
-\begin{longtable}{|C{2.0cm}|C{3.0cm}|C{8.0cm}|C{2.0cm}|}
+\begin{longtable}{|D{1.5cm}|D{3.0cm}|D{8.5cm}|D{1.5cm}|}
 \hline
 \textbf{ID} & \textbf{Elemento} & \textbf{Descrizione} & \textbf{Stato} \\
 \hline
 TI1 & HomePage & La pagina viene testata per verificarne il caricamento grafico e delle sue componenti & I \\
 \hline
 TI1 & HomePage & La pagina viene testata per verificare se le funzioni di creazione del \textit{DID} e della catena degli \textit{issuer} sono chiamate correttamente all'avvio dell'applicazione & I \\
-\hline
-\end{longtable}
-\end{center}
-
-\clearpage
-
-\begin{center}
-\begin{longtable}{|C{2.0cm}|C{3.0cm}|C{8.0cm}|C{2.0cm}|}
-\hline
-\multicolumn{4}{|c|}{\textbf{Continuazione della tabella~\ref{tab:test-integrazione}}} \\
-\hline
-\textbf{ID} & \textbf{Elemento} & \textbf{Descrizione} & \textbf{Stato} \\
 \hline
 \endhead
 TI3 & RegisterView & La vista di registrazione viene testata per verificare che venga visualizzata correttamente & I \\
@@ -174,10 +152,8 @@ TI15 & MoviesView & La vista dei film viene testata per verificare la visualizza
 \end{longtable}
 \end{center}
 
-\clearpage
-
 \begin{center}
-\begin{longtable}{|C{2.0cm}|C{3.0cm}|C{8.0cm}|C{2.0cm}|}
+\begin{longtable}{|D{1.5cm}|D{3.0cm}|D{8.5cm}|D{1.5cm}|}
 \hline
 \multicolumn{4}{|c|}{\textbf{Continuazione della tabella~\ref{tab:test-integrazione}}} \\
 \hline
@@ -231,7 +207,7 @@ avendo come legenda:
 
 \begin{center}
 \captionof{table}{Tabella del tracciamento dei test di regressione}\label{tab:test-regressione}
-\begin{longtable}{|C{2.0cm}|C{3.0cm}|C{8.0cm}|C{2.0cm}|}
+\begin{longtable}{|D{1.5cm}|D{3.0cm}|D{8.5cm}|D{1.5cm}|}
 \hline
 \textbf{ID} & \textbf{Elemento} & \textbf{Descrizione} & \textbf{Stato} \\
 \hline

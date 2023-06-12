@@ -7,6 +7,47 @@
 \intro{In questa sezione vengono analizzati i requisiti del progetto e ne viene data un'analisi ad alto livello, combinando una visione concettuale con una visione pratica ed implementativa. 
 Vengono inoltre descritti i casi d'uso e i requisiti individuati, con l'obiettivo di fornire una visione generale del sistema e delle sue funzionalità, in modo semplice e comprensibile.}
 
+\section{Obiettivi e requisiti}\label{sec:analisi-obiettivi}
+
+Il tirocinio prevede lo svolgimento dei seguenti obiettivi, riportando questa notazione, come dal documento \textit{Piano di Lavoro}:
+\begin{itemize}
+    \item O per i requisiti obbligatori, vincolanti in quanto obiettivo primario richiesto dal committente;
+    \item D per i requisiti desiderabili, non vincolanti o strettamente necessari, ma dal riconoscibile valore aggiunto;
+    \item F per i requisiti facoltativi, rappresentanti valore aggiunto non strettamente competitivo.
+\end{itemize}
+Le sigle precedentemente indicate saranno seguite da una coppia sequenziale di numeri, identificativo del requisito.
+
+\begin{itemize}
+
+    \item Obbligatori:
+        \begin{itemize}
+            \item \underline{\textit{O01}}: descrivere i concetti di base della \glsfirstoccur{\gls{blockchaing}}, tra cui la sua architettura, i nodi della rete, la crittografia e il consenso distribuito;
+            \item \underline{\textit{O02}}: analizzare il concetto di \glsfirstoccur{\gls{smartcontractg}} e il linguaggio \glsfirstoccur{\gls{solidityg}}, con particolare attenzione alle vulnerabilità principali e alle tecniche per evitare errori di programmazione;
+            \item \underline{\textit{O03}}: approfondire il funzionamento della firma asimmetrica delle transazioni su catena e la validazione dei blocchi, studiando le tipologie di consenso e le catene più conosciute;
+            \item \underline{\textit{O04}}: studiare le tecniche di crittografia utilizzate per garantire la sicurezza e la \textit{privacy} delle informazioni personali nell'ambito della \glsfirstoccur{\gls{ssig}} e dei protocolli per la gestione delle identità digitali;
+            \item \underline{\textit{O05}}: individuare casi d'uso reali per la \textit{Self Sovereign Identity}, analizzando i consorzi internazionali coinvolti in ambito di ricerca e i finanziamenti europei;
+            \item \underline{\textit{O06}}: discutere le sfide e i problemi legati alla \textit{Self Sovereign Identity}, studiando un possibile scenario futuro di applicabilità e basato su \glsfirstoccur{\gls{zkpg}}.
+        \end{itemize}
+
+    \item Desiderabili:
+        \begin{itemize}
+            \item \underline{\textit{D01}}: implementare una \glsfirstoccur{\gls{dappg}} (o \textit{DApp}) tramite le librerie \glsfirstoccur{\gls{ethersjsg}} oppure \glsfirstoccur{\gls{web3jsg}}, utilizzando uno \textit{smart contract} di esempio;
+            \item \underline{\textit{D02}}: realizzare una UI (interfaccia utente) per la \textit{DApp} utilizzando \textit{HTML}, \textit{CSS} e \textit{JavaScript};
+            \item \underline{\textit{D03}}: utilizzare la \textit{Self Sovereign Identity} e i protocolli studiati per implementare funzionalità di autenticazione utente nella \textit{DApp};
+            \item \underline{\textit{D04}}: testare l'applicazione implementata;
+            \item \underline{\textit{D05}}: discutere problemi e sfide relativi all'implementazione di applicazioni decentralizzate su \textit{blockchain} \glsfirstoccur{\gls{ethereumg}}, con particolare attenzione alla scalabilità e alla sicurezza.
+        \end{itemize}
+
+    \item Facoltativi:
+        \begin{itemize}
+            \item \underline{\textit{F01}}: approfondire l'utilizzo di altri linguaggi di programmazione per gli \textit{smart contract}, come \textit{Vyper};
+            \item \underline{\textit{F02}}: analizzare l'utilizzo di altre tecnologie \textit{blockchain}, come \textit{Polkadot} o \textit{Cardano}, per implementare la \textit{Self Sovereign Identity};
+            \item \underline{\textit{F03}}: esplorare altre funzionalità delle librerie \textit{Ethers.js} e/o \textit{Web3.js}, come l'invio di transazioni;
+            \item \underline{\textit{F04}}: investigare i limiti e le sfide legate all'utilizzo della tecnologia \textit{blockchain}.
+        \end{itemize}
+    
+\end{itemize}
+
 \section{Descrizione ed analisi del sistema}\label{sec:analisi-sistema}
 L'obiettivo del progetto è la creazione di una piattaforma per la visualizzazione di contenuti multimediali, in questo caso dei film,
 tramite l'utilizzo degli standard \glsfirstoccur{\gls{w3cg}} \glsfirstoccur{\gls{didg}} e \glsfirstoccur{\gls{ssig}} per la verifica sicura dell'identità dell'utente e per la 
@@ -39,7 +80,7 @@ Il formato del \textit{DID Document} è come il seguente (codice proveniente da~
 
 \newpage
 
-Nel codice che dovrà essere utilizzato come libreria,
+Nel codice che viene utilizzato come libreria,
 ogni documento è caratterizzato da una \textit{capability delegation}, che permette di stabilire un'entità autorizzata come \textit{issuer} del dato trasmesso ed 
 un metodo di autenticazione, in cui viene stabilito il modo in cui implementare il meccanismo di riconoscimento da parte dell'utente (dimostrando di fatto che sia chi dice di essere) e un 
 genitore, composto da un identificativo ed una firma digitale. \\
@@ -66,7 +107,7 @@ e la chiamata al contratto in grado di risalire precisamente all'\textit{account
 Tale meccanismo viene implementato in fase di registrazione, in cui l'utente possiede un proprio \glsfirstoccur{\gls{didg}} e registra i propri dati anagrafici
 e in fase di accesso, quando l'utente inserita esclusivamente come unico dato per effettuare il \textit{login} il proprio identificatore, firmato digitalmente nella fase precedente e appartenente in modo univoco a lui. \\
 
-In questa sezione, l'utente viene presentato ad un insieme di film e può scegliere di prenotarne uno. Ciascun film possiede una sua valutazione;
+In questa sezione, all'utente viene presentata una lista di film e può scegliere di prenotare uno di questi. Ciascun film possiede una sua valutazione;
 per potervi accedere e prenotarlo, l'utente dovrà ogni volta certificare la propria età;
 questo passaggio avviene attraverso la creazione di una \glsfirstoccur{\gls{vpg}}, contenente molteplici \glsfirstoccur{\gls{vcg}}, 
 con una associata all'utente (definito \textit{holder} delle credenziali) e le altre associate agli enti verificatori (definiti \textit{issuer}, che sono gli enti che hanno rilasciato le credenziali).
@@ -129,6 +170,8 @@ Il seguente è un esempio di una \textit{Verifiable Presentation} con al suo int
       }
 \end{lstlisting}
 
+\clearpage
+
 Al suo interno, come si vede, sono presenti un insieme di credenziali, contenente un campo di dimostrazione di appartenenza ad uno schema comune,
 a cui sarà associata la catena di fiducia, e degli insiemi di metodi di firma digitale, che dimostrano la validità delle credenziali presenti,
 avendo ciascuna un insieme di \textit{issuer} riconosciuti. Ciò dipende dall'utilizzo del campo \textit{proof}, che permette di stabilire precisamente
@@ -150,13 +193,20 @@ In questa sezione, sono presentati i diagrammi dei casi d'uso, definiti secondo 
 che descrivono le interazioni tra gli attori, definiti convenzionalmente come utenti del sistema e il sistema stesso. 
 Segue una tabella di tracciamento dei requisiti, che dettaglia come i requisiti individuati nella sezione precedente siano soddisfatti
 dai casi d'uso definiti in questa sezione, in base all'analisi prevista. 
+In particolare, possiamo dettagliare in qualità di attori:
+\begin{itemize}
+\item \textbf{utente non autenticato}: attore che indica un utente che non ha ancora effettuato l'accesso o la registrazione all'interno del sistema;
+\item \textbf{utente autenticato}: attore che indica un utente che ha effettuato l'accesso all'interno del sistema e ha la possibilità di effettuare operazioni di prenotazione, verificando la propria età in base al tipo di film.
+\end{itemize}
 Di seguito, un diagramma complessivo (in figura~\ref{fig:usecase-scenario-principale}) dei casi d'uso individuati, descritti nel dettaglio successivamente: \\
 
-\begin{figure}[!ht] 
+\begin{figure}[h] 
     \centering 
     \includegraphics[width=0.9\columnwidth, alt={Scenario principale dei vari casi d'uso individuati}]{immagini/usecase/scenario-principale.jpg}
     \caption{Scenario principale}\label{fig:usecase-scenario-principale}
 \end{figure}
+
+\clearpage
 
 \begin{usecase}{1}{Registrazione}\label{uc:registrazione}
 \usecaseactors{Utente non autenticato}
@@ -169,7 +219,6 @@ Di seguito, un diagramma complessivo (in figura~\ref{fig:usecase-scenario-princi
   \item inserisce il proprio \textit{username} (UC1.1);
   \item inserisce la propria \textit{email} (UC1.2);
   \item inserisce il proprio \textit{DID} (UC1.3);
-  \item inserisce la propria data di nascita (UC1.4).
 \end{enumerate}
 
 \usecaseext{}
@@ -183,7 +232,6 @@ Di seguito, un diagramma complessivo (in figura~\ref{fig:usecase-scenario-princi
   \item Inserimento \textit{username} (UC1.1);
   \item Inserimento email (UC1.2);
   \item Inserimento \textit{DID} (UC1.3);
-  \item Inserimento data di nascita (UC1.4);
 \end{enumerate}
 \end{usecase}
 
@@ -193,7 +241,7 @@ Di seguito, un diagramma complessivo (in figura~\ref{fig:usecase-scenario-princi
   \caption{UC1: Registrazione}\label{fig:uc:registrazione}
 \end{figure}
 
-\begin{usecase}{1.1}{Inserimento \textit{username}}\label{uc:registrazione-}
+\begin{usecase}{1.1}{Inserimento \textit{username}}\label{uc:registrazione-username}
   \usecaseactors{Utente non autenticato}
   \usecasepre{L'utente ha avviato l'applicazione web e ha aperto la pagina di registrazione}
   \usecasedesc{L'utente deve inserire uno \textit{username} per registrarsi presso l'applicazione web}
@@ -228,19 +276,6 @@ Di seguito, un diagramma complessivo (in figura~\ref{fig:usecase-scenario-princi
   
   \begin{enumerate}
     \item L'utente inserisce il proprio \textit{DID}\@.
-  \end{enumerate}
-  
-\end{usecase}
-
-\begin{usecase}{1.4}{Inserimento data di nascita}\label{uc:registrazione-data}
-  \usecaseactors{Utente non autenticato}
-  \usecasepre{L'utente ha avviato l'applicazione web, non è autenticato e ha aperto la pagina di registrazione}
-  \usecasedesc{L'utente deve inserire la propria data di nascita per registrarsi presso l'applicazione web}
-  \usecasepost{L'utente ha inserito la propria data di nascita e può procedere con la registrazione}
-  \usecasemain{}
-  
-  \begin{enumerate}
-    \item L'utente inserisce la propria data di nascita.
   \end{enumerate}
   
 \end{usecase}
@@ -423,7 +458,6 @@ Di seguito, un diagramma complessivo (in figura~\ref{fig:usecase-scenario-princi
   \usecasedesc{L'utente vuole inserire l'orario di prenotazione del film che ha selezionato dalla lista dei film presenti nel sistema}
   \usecasepost{L'utente ha inserito l'orario di prenotazione}
   \usecasemain{}
-  
   \begin{enumerate}
     \item L'utente inserisce l'orario di prenotazione per il film che intende prenotare.
   \end{enumerate}
@@ -435,7 +469,6 @@ Di seguito, un diagramma complessivo (in figura~\ref{fig:usecase-scenario-princi
   \usecasedesc{L'utente vuole inserire il numero di biglietti da prenotare per il film che ha selezionato dalla lista dei film presenti nel sistema}
   \usecasepost{L'utente ha inserito il numero di biglietti che intende prenotare}
   \usecasemain{}
-  
   \begin{enumerate}
     \item L'utente inserisce il numero di biglietti da prenotare per il film che intende prenotare.
 \end{enumerate}
@@ -447,14 +480,12 @@ Di seguito, un diagramma complessivo (in figura~\ref{fig:usecase-scenario-princi
   \usecasedesc{L'utente vuole inserire il numero posti che intende prenotare per il film che ha selezionato dalla lista dei film presenti nel sistema}
   \usecasepost{L'utente ha inserito il numero di posti che intende prenotare}
   \usecasemain{}
-  
   \begin{enumerate}
     \item L'utente inserisce il posto o il numero di posti che intende prenotare per il film che ha selezionato.
   \end{enumerate}
 \end{usecase}
 
 \begin{usecase}{9}{Visualizzazione lista prenotazioni}\label{uc:lista-prenotazioni}
-
   \usecaseactors{Utente autenticato}
   \usecasepre{L'utente è autenticato e ha effettuato almeno una prenotazione}
   \usecasedesc{L'utente vuole visualizzare la lista delle prenotazioni effettuate}
@@ -466,6 +497,8 @@ Di seguito, un diagramma complessivo (in figura~\ref{fig:usecase-scenario-princi
     \item L'utente visualizza una finestra contenente la lista delle prenotazioni effettuate;
     \item Il sistema restituisce la lista delle prenotazioni effettuate dall'utente.
   \end{enumerate}
+
+  \clearpage
 
   \usecasegen{Come da figura~\ref{fig:uc:lista-prenotazioni}:}
   \begin{enumerate}
@@ -509,8 +542,6 @@ Di seguito, un diagramma complessivo (in figura~\ref{fig:usecase-scenario-princi
   \caption{UC9.1: Visualizzazione singola prenotazione in lista}\label{fig:uc:lista-prenotazioni-singola}
 \end{figure}
 
-\newpage
-
 \begin{usecase}{9.1.1}{Visualizzazione dettagli film prenotato}\label{uc:lista-prenotazioni-singola-dettagli-film}
   \usecaseactors{Utente autenticato}
   \usecasepre{L'utente è autenticato e ha effettuato almeno una prenotazione}
@@ -546,6 +577,8 @@ Di seguito, un diagramma complessivo (in figura~\ref{fig:usecase-scenario-princi
     \item L'utente accede alla propria lista delle prenotazioni e visualizza l'orario della prenotazione.
   \end{enumerate}
 \end{usecase}
+
+\clearpage
 
 \begin{usecase}{9.1.4}{Visualizzazione quantità biglietti prenotazione}\label{uc:lista-prenotazioni-singola-quantita}
   \usecaseactors{Utente autenticato}
@@ -663,19 +696,6 @@ Di seguito, un diagramma complessivo (in figura~\ref{fig:usecase-scenario-princi
   
 \end{usecase}
 
-\begin{usecase}{12.3}{Inserimento nuova data di nascita}\label{uc:modifica-data-nascita}
-  \usecaseactors{Utente autenticato}
-  \usecasepre{L'utente è autenticato e intende modificare la propria data di nascita}
-  \usecasedesc{L'utente vuole modificare la data di nascita associata al proprio \textit{account}}
-  \usecasepost{L'utente ha modificato la data di nascita correttamente}
-  \usecasemain{}
-  
-  \begin{enumerate}
-    \item L'utente modifica la propria data di nascita e conferma l'operazione.
-  \end{enumerate}
-  
-\end{usecase}
-
 \begin{usecase}{13}{Eliminazione \textit{account}}\label{uc:eliminazione-account}
   \usecaseactors{Utente autenticato}
   \usecasepre{L'utente è autenticato e intende eliminare il proprio \textit{account}}
@@ -723,11 +743,14 @@ Le fonti dei requisiti sono:
   \item \textbf{UC} = use case ed \textbf{Interno} = requisito individuato dall'insieme di stagisti e tutor aziendali.
 \end{itemize}
 
-\renewcommand{\arraystretch}{1.1}
+\renewcommand{\arraystretch}{1.1} % Adjust the spacing inside the cells
+
+% Redefine column type to center the content
+\newcolumntype{C}[1]{>{\arraybackslash}p{#1}}
 
 \begin{center}
 \captionof{table}{Tabella del tracciamento dei requisiti funzionali}\label{tab:requisiti-funzionali}
-\begin{tabularx}{\textwidth}{|>{\hsize=0.4\hsize\centering\arraybackslash}X|>{\hsize=2.2\hsize\centering}X|>{\hsize=0.4\hsize\centering\arraybackslash}X|}
+\begin{longtable}{|C{2.0cm}|C{12.0cm}|C{2.0cm}|}
 \hline
 \textbf{Requisito} & \textbf{Descrizione} & \textbf{Fonte}\\
 \hline
@@ -738,8 +761,6 @@ RFO-1.1   & L'utente deve inserire il proprio \textit{username} & UC1.1 \\
 RFO-1.2   & L'utente deve inserire la propria \textit{email} & UC1.2 \\
 \hline
 RFO-1.3   & L'utente deve inserire il proprio \textit{DID} & UC1.3 \\
-\hline
-RFO-1.4   & L'utente deve inserire la propria data di nascita & UC1.4 \\
 \hline
 RFO-2   & Il sistema deve visualizzare un errore se l'\textit{email} inserita è già esistente & UC2 \\
 \hline
@@ -777,6 +798,14 @@ RFO-9.1.2 & L'utente deve poter visualizzare la data della singola prenotazione 
 \hline
 RFO-9.1.3 & L'utente deve poter visualizzare l'orario della singola prenotazione & UC9.1.3 \\
 \hline
+\end{longtable}
+\end{center}
+
+\begin{center}
+\begin{longtable}{|C{2.0cm}|C{12.0cm}|C{2.0cm}|}
+\hline
+\multicolumn{3}{|c|}{\textbf{Continuazione della tabella~\ref{tab:requisiti-funzionali}}} \\
+\hline
 RFO-9.1.4 & L'utente deve poter visualizzare la quantità di biglietti della prenotazione & UC9.1.4 \\
 \hline
 RFO-9.1.5 & L'utente deve poter visualizzare il numero di posti compresi nella singola prenotazione & UC9.1.5 \\
@@ -791,20 +820,16 @@ RFD-12.1 & L'utente deve poter modificare il proprio \textit{username} & UC12.1 
 \hline
 RFD-12.2 & L'utente deve poter modificare la propria \textit{email} & UC12.2 \\
 \hline
-RFD-12.3 & L'utente deve poter modificare la propria data di nascita & UC12.3 \\
-\hline
 RFO-13 & Il sistema deve poter permettere l'eliminazione dell'\textit{account} utente & UC13 \\
 \hline
 RFO-14 & Il sistema deve poter permettere all'utente di uscire dalla propria sessione & UC14 \\
 \hline
-\end{tabularx}
+\end{longtable}
 \end{center}
-
-% Remove space between tables
 
 \begin{center}
 \captionof{table}{Tabella del tracciamento dei requisiti di vincolo}\label{tab:requisiti-vincolo}
-\begin{tabularx}{\textwidth}{|>{\hsize=0.4\hsize\centering\arraybackslash}X|>{\hsize=2.2\hsize\centering}X|>{\hsize=0.4\hsize\centering\arraybackslash}X|}
+\begin{longtable}{|C{2.0cm}|C{12.0cm}|C{2.0cm}|}
 \hline
 \textbf{Requisito} & \textbf{Descrizione} & \textbf{Fonte}\\
 \hline
@@ -818,12 +843,12 @@ RVO-4 & Il sistema deve rispettare le leggi sulla \textit{privacy} e la protezio
 \hline
 RVD-5 & Il sistema deve poter integrare un meccanismo interno di \textit{challenge-response} in fase di registrazione ed autenticazione, senza dipendere da applicazioni esterne quali Metamask & Interno \\
 \hline
-\end{tabularx}
+\end{longtable}
 \end{center}
   
 \begin{center}
 \captionof{table}{Tabella del tracciamento dei requisiti qualitativi}\label{tab:requisiti-qualitativi}
-\begin{tabularx}{\textwidth}{|>{\hsize=0.4\hsize\centering\arraybackslash}X|>{\hsize=2.2\hsize\centering}X|>{\hsize=0.4\hsize\centering\arraybackslash}X|}
+\begin{longtable}{|C{2.0cm}|C{12.0cm}|C{2.0cm}|}
 \hline
 \textbf{Requisito} & \textbf{Descrizione} & \textbf{Fonte} \\
 \hline
@@ -837,5 +862,5 @@ RQD-4    & L'applicazione web deve essere responsive e visibile da dispositivi m
 \hline
 RQD-5    & L'applicazione web deve essere accessibile da tutti i principali \textit{browser} & Interno \\
 \hline
-\end{tabularx}
+\end{longtable}
 \end{center}

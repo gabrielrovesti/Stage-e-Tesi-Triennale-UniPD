@@ -2,11 +2,9 @@
 
 \usepackage{colorprofiles}
 
-% PDF/A
-% validate in https://www.pdf-online.com/osa/validate.aspx
 \usepackage[a-2b,mathxmp]{pdfx}[2018/12/22]
 
-%\usepackage{amsmath,amssymb,amsthm}    % matematica
+\usepackage{amsmath,amssymb,amsthm}    % matematica
 
 \usepackage[T1]{fontenc}                % codifica dei font:
                                         % NOTA BENE! richiede una distribuzione *completa* di LaTeX
@@ -23,15 +21,13 @@
 
 \usepackage{chngpage,calc}              % centra il frontespizio
 
-\usepackage{csquotes}                   % gestisce automaticamente i caratteri (")
+\usepackage{csquotes}                   % gestisce automaticamente i caratteri (") - contando che le citazioni sono fatte con backtick ed apostrofo
 
 \usepackage{emptypage}                  % pagine vuote senza testatina e piede di pagina
 
 \usepackage{epigraph}			        % per epigrafi
 
 \usepackage{eurosym}                    % simbolo dell'euro
-
-%\usepackage{indentfirst}               % rientra il primo paragrafo di ogni sezione
 
 \usepackage{graphicx}                   % immagini
 
@@ -53,7 +49,7 @@
 
 \usepackage[toc, acronym]{glossaries}   % glossario
 
-\usepackage[backend=biber,style=verbose-ibid,hyperref,backref, style=numeric, defernumbers=true]{biblatex}
+\usepackage[backend=biber,style=verbose-ibid,hyperref,backref, style=numeric, defernumbers=true]{biblatex} % aggiunto defernumbers per numerare correttamente le bibliografie multiple ed evitare warning di biblatex
 
 \usepackage{layaureo}                   % margini ottimizzati per l'A4
 \usepackage{geometry}                   % margini per sx e dx fatti

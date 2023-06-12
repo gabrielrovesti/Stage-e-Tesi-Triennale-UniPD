@@ -24,32 +24,32 @@
 \glossaryentry{zkp?\glossentry{zkpg}|setentrycounter[]{page}"\glsnumberformat}{19}
 \glossaryentry{framework?\glossentry{frameworkg}|setentrycounter[]{page}"\glsnumberformat}{20}
 \glossaryentry{scrum?\glossentry{scrumg}|setentrycounter[]{page}"\glsnumberformat}{21}
-\glossaryentry{blockchain?\glossentry{blockchaing}|setentrycounter[]{page}"\glsnumberformat}{21}
-\glossaryentry{smart contract?\glossentry{smartcontractg}|setentrycounter[]{page}"\glsnumberformat}{21}
-\glossaryentry{solidity?\glossentry{solidityg}|setentrycounter[]{page}"\glsnumberformat}{21}
-\glossaryentry{ssi?\glossentry{ssig}|setentrycounter[]{page}"\glsnumberformat}{21}
-\glossaryentry{zkp?\glossentry{zkpg}|setentrycounter[]{page}"\glsnumberformat}{21}
-\glossaryentry{decentralized application?\glossentry{dappg}|setentrycounter[]{page}"\glsnumberformat}{21}
-\glossaryentry{ethers.js?\glossentry{ethersjsg}|setentrycounter[]{page}"\glsnumberformat}{21}
-\glossaryentry{web3.js?\glossentry{web3jsg}|setentrycounter[]{page}"\glsnumberformat}{21}
-\glossaryentry{ethereum?\glossentry{ethereumg}|setentrycounter[]{page}"\glsnumberformat}{21}
-\glossaryentry{w3c?\glossentry{w3cg}|setentrycounter[]{page}"\glsnumberformat}{23}
-\glossaryentry{decentralized identifier?\glossentry{didg}|setentrycounter[]{page}"\glsnumberformat}{23}
+\glossaryentry{blockchain?\glossentry{blockchaing}|setentrycounter[]{page}"\glsnumberformat}{23}
+\glossaryentry{smart contract?\glossentry{smartcontractg}|setentrycounter[]{page}"\glsnumberformat}{23}
+\glossaryentry{solidity?\glossentry{solidityg}|setentrycounter[]{page}"\glsnumberformat}{23}
 \glossaryentry{ssi?\glossentry{ssig}|setentrycounter[]{page}"\glsnumberformat}{23}
 \glossaryentry{zkp?\glossentry{zkpg}|setentrycounter[]{page}"\glsnumberformat}{23}
-\glossaryentry{smart contract?\glossentry{smartcontractg}|setentrycounter[]{page}"\glsnumberformat}{23}
-\glossaryentry{ssi?\glossentry{ssig}|setentrycounter[]{page}"\glsnumberformat}{23}
-\glossaryentry{solidity?\glossentry{solidityg}|setentrycounter[]{page}"\glsnumberformat}{23}
-\glossaryentry{decentralized identifier?\glossentry{didg}|setentrycounter[]{page}"\glsnumberformat}{23}
-\glossaryentry{json?\glossentry{jsong}|setentrycounter[]{page}"\glsnumberformat}{23}
+\glossaryentry{decentralized application?\glossentry{dappg}|setentrycounter[]{page}"\glsnumberformat}{23}
+\glossaryentry{ethers.js?\glossentry{ethersjsg}|setentrycounter[]{page}"\glsnumberformat}{23}
+\glossaryentry{web3.js?\glossentry{web3jsg}|setentrycounter[]{page}"\glsnumberformat}{23}
+\glossaryentry{ethereum?\glossentry{ethereumg}|setentrycounter[]{page}"\glsnumberformat}{24}
+\glossaryentry{w3c?\glossentry{w3cg}|setentrycounter[]{page}"\glsnumberformat}{24}
 \glossaryentry{decentralized identifier?\glossentry{didg}|setentrycounter[]{page}"\glsnumberformat}{24}
-\glossaryentry{verifiable presentation?\glossentry{vpg}|setentrycounter[]{page}"\glsnumberformat}{24}
-\glossaryentry{vc?\glossentry{vcg}|setentrycounter[]{page}"\glsnumberformat}{24}
+\glossaryentry{ssi?\glossentry{ssig}|setentrycounter[]{page}"\glsnumberformat}{24}
+\glossaryentry{zkp?\glossentry{zkpg}|setentrycounter[]{page}"\glsnumberformat}{24}
+\glossaryentry{smart contract?\glossentry{smartcontractg}|setentrycounter[]{page}"\glsnumberformat}{24}
+\glossaryentry{ssi?\glossentry{ssig}|setentrycounter[]{page}"\glsnumberformat}{24}
+\glossaryentry{solidity?\glossentry{solidityg}|setentrycounter[]{page}"\glsnumberformat}{24}
 \glossaryentry{decentralized identifier?\glossentry{didg}|setentrycounter[]{page}"\glsnumberformat}{24}
-\glossaryentry{decentralized identifier?\glossentry{didg}|setentrycounter[]{page}"\glsnumberformat}{24}
-\glossaryentry{uri?\glossentry{urig}|setentrycounter[]{page}"\glsnumberformat}{25}
-\glossaryentry{zkp?\glossentry{zkpg}|setentrycounter[]{page}"\glsnumberformat}{26}
-\glossaryentry{uml?\glossentry{umlg}|setentrycounter[]{page}"\glsnumberformat}{26}
+\glossaryentry{json?\glossentry{jsong}|setentrycounter[]{page}"\glsnumberformat}{24}
+\glossaryentry{decentralized identifier?\glossentry{didg}|setentrycounter[]{page}"\glsnumberformat}{25}
+\glossaryentry{verifiable presentation?\glossentry{vpg}|setentrycounter[]{page}"\glsnumberformat}{25}
+\glossaryentry{vc?\glossentry{vcg}|setentrycounter[]{page}"\glsnumberformat}{25}
+\glossaryentry{decentralized identifier?\glossentry{didg}|setentrycounter[]{page}"\glsnumberformat}{25}
+\glossaryentry{decentralized identifier?\glossentry{didg}|setentrycounter[]{page}"\glsnumberformat}{25}
+\glossaryentry{uri?\glossentry{urig}|setentrycounter[]{page}"\glsnumberformat}{26}
+\glossaryentry{zkp?\glossentry{zkpg}|setentrycounter[]{page}"\glsnumberformat}{27}
+\glossaryentry{uml?\glossentry{umlg}|setentrycounter[]{page}"\glsnumberformat}{27}
 \glossaryentry{frontend?\glossentry{frontendg}|setentrycounter[]{page}"\glsnumberformat}{43}
 \glossaryentry{framework?\glossentry{frameworkg}|setentrycounter[]{page}"\glsnumberformat}{43}
 \glossaryentry{backend?\glossentry{backendg}|setentrycounter[]{page}"\glsnumberformat}{43}
@@ -72,11 +72,12 @@
 \glossaryentry{screen reader?\glossentry{screenreaderg}|setentrycounter[]{page}"\glsnumberformat}{61}
 \glossaryentry{framework?\glossentry{frameworkg}|setentrycounter[]{page}"\glsnumberformat}{62}
 \glossaryentry{blockchain?\glossentry{blockchaing}|setentrycounter[]{page}"\glsnumberformat}{69}
-\glossaryentry{smart contract?\glossentry{smartcontractg}|setentrycounter[]{page}"\glsnumberformat}{69}
+\glossaryentry{ethereum?\glossentry{ethereumg}|setentrycounter[]{page}"\glsnumberformat}{69}
 \glossaryentry{ssi?\glossentry{ssig}|setentrycounter[]{page}"\glsnumberformat}{69}
-\glossaryentry{solidity?\glossentry{solidityg}|setentrycounter[]{page}"\glsnumberformat}{69}
-\glossaryentry{zkp?\glossentry{zkpg}|setentrycounter[]{page}"\glsnumberformat}{69}
-\glossaryentry{web3.js?\glossentry{web3jsg}|setentrycounter[]{page}"\glsnumberformat}{69}
+\glossaryentry{decentralized identifier?\glossentry{didg}|setentrycounter[]{page}"\glsnumberformat}{69}
+\glossaryentry{solidity?\glossentry{solidityg}|setentrycounter[]{page}"\glsnumberformat}{70}
+\glossaryentry{zkp?\glossentry{zkpg}|setentrycounter[]{page}"\glsnumberformat}{70}
+\glossaryentry{web3.js?\glossentry{web3jsg}|setentrycounter[]{page}"\glsnumberformat}{70}
 \glossaryentry{decentralized application?\glossentry{dappg}|setentrycounter[]{page}"\glsnumberformat}{70}
 \glossaryentry{ethers.js?\glossentry{ethersjsg}|setentrycounter[]{page}"\glsnumberformat}{70}
 \glossaryentry{web3.js?\glossentry{web3jsg}|setentrycounter[]{page}"\glsnumberformat}{70}
