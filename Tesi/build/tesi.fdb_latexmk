@@ -1,26 +1,26 @@
 # Fdb version 4
-["biber build/tesi"] 1686211999 "build/tesi.bcf" "build/tesi.bbl" "build/tesi" 1686565302 0
-  "build/tesi.bcf" 1686565301 109032 faf6619b73175d713e949f260529cf59 "pdflatex"
+["biber build/tesi"] 1686211999 "build/tesi.bcf" "build/tesi.bbl" "build/tesi" 1687428982 0
+  "build/tesi.bcf" 1687428981 109032 faf6619b73175d713e949f260529cf59 "pdflatex"
   (generated)
   "build/tesi.bbl"
   "build/tesi.blg"
   (rewritten before read)
-["cusdep glo gls build/tesi"] 1686563589 "build/tesi.glo" "build/tesi.gls" "build/tesi" 1686565302 0
-  "build/tesi.glo" 1686565301 10808 614b3b1b6c40335562cde67a27452566 "pdflatex"
+["cusdep glo gls build/tesi"] 1686563589 "build/tesi.glo" "build/tesi.gls" "build/tesi" 1687428982 0
+  "build/tesi.glo" 1687428981 10808 614b3b1b6c40335562cde67a27452566 "pdflatex"
   (generated)
   "build/tesi.gls"
   (rewritten before read)
-["pdflatex"] 1686565294 "tesi.tex" "tesi.pdf" "tesi" 1686565302 0
+["pdflatex"] 1687428971 "tesi.tex" "tesi.pdf" "tesi" 1687428982 0
   "appendice/bibliografia.tex" 1685779696 170 55e9fec5cc2780b773eaf4b13bb2e716 ""
   "appendice/definizioni-glossario.tex" 1686563955 18608 5822c7598a4408764c50095e16225660 ""
-  "build/pdfa.xmpi" 1686565295 6165 307479b4c9a4bd34b5a420495a51f04c "pdflatex"
-  "build/tesi.aux" 1686565301 53464 1d397041bc3ca2e13fd70d8247d519ef "pdflatex"
+  "build/pdfa.xmpi" 1687428973 6165 f81f7d0eeea0fd953dd9ef33e36b20d2 "pdflatex"
+  "build/tesi.aux" 1687428981 53464 1d397041bc3ca2e13fd70d8247d519ef "pdflatex"
   "build/tesi.bbl" 1686212002 12213 f9c02fd04b4ebcf78ffa654ee65ac5ea "biber build/tesi"
   "build/tesi.gls" 1686563590 8081 e78ef390c567c9008b318c49b55fae79 "cusdep glo gls build/tesi"
-  "build/tesi.lof" 1686565301 3983 0f8d0db726891a3e77b7a35e590da9a6 "pdflatex"
-  "build/tesi.lot" 1686565301 987 8ff7db5b08ed0553b551b82c34180372 "pdflatex"
-  "build/tesi.run.xml" 1686565301 2348 42848e5d610413aeada870c37ab810b0 "pdflatex"
-  "build/tesi.toc" 1686565301 7665 1ca74f9bef59e1c2d6e125c5e478d026 "pdflatex"
+  "build/tesi.lof" 1687428981 3983 0f8d0db726891a3e77b7a35e590da9a6 "pdflatex"
+  "build/tesi.lot" 1687428981 987 8ff7db5b08ed0553b551b82c34180372 "pdflatex"
+  "build/tesi.run.xml" 1687428981 2348 42848e5d610413aeada870c37ab810b0 "pdflatex"
+  "build/tesi.toc" 1687428981 7665 1ca74f9bef59e1c2d6e125c5e478d026 "pdflatex"
   "build/tesi.xmpdata" 1685707724 742 1c2e5606d137a43a361569319dbd3893 ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1676627787 2971 def0b6c1f0b107b3b936def894055589 ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1676627787 2900 1537cc8184ad1792082cd229ecc269f4 ""
@@ -274,7 +274,7 @@
   "capitoli/concept.tex" 1686565040 49261 211b62b7d502faa57820ae2ef0c657a3 ""
   "capitoli/conclusioni.tex" 1686564867 22755 c30491c7ebaa70455f48e7a126d09177 ""
   "capitoli/introduzione.tex" 1686564073 9407 bbac3bd62b9e7d9bcab2ae0ec30d5194 ""
-  "capitoli/kick-off.tex" 1686552460 8212 18bfdc0669bf86227134c1bd117921ff ""
+  "capitoli/kick-off.tex" 1687428969 8213 94323433c0e55adee6443c56c4cd611b ""
   "capitoli/processi.tex" 1686564061 51541 b7c09a7c8b8d1726cbad643f1802314d ""
   "capitoli/product-design.tex" 1686561323 18316 6e411ac94659c06ff33b479f4ff9d3f7 ""
   "capitoli/product-prototype.tex" 1686565293 51572 fd5599b3032da0e090194c69998162d9 ""
