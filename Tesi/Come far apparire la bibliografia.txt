@@ -1,0 +1,10 @@
+Come far apparire la bibliografia
+
+- Inserire almeno un termine citato(e.g. \cite{site:scrum})
+
+Se il termine appare ed è stato cancellato:
+- la bibliografia viene compilata dai file .bbl e .bcf all'interno di "\build" (cartella build creata in automatico)
+- sarà sufficiente cancellare i suddetti file (.bbl e .bcf all'interno di build) per vedere effettivamente la modifica compiersi
+
+Nota di margine:
+- Non sono indispensabili gli 'addtocategory' in thesis-config.tex/tesi-config.tex
