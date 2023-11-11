@@ -1,4 +1,4 @@
-# Stage-Tesi-e-Moduli-UniPD
+# Stage-e-Tesi-UniPD
 
 ## Struttura della repo
 - FAQ Piano di Studi: alcune info sul Piano di Studi della laurea triennale in Informatica
