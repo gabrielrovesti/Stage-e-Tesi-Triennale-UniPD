@@ -1,0 +1,1 @@
+\usepackage[backend=biber,style=verbose-ibid,hyperref,backref, style=numeric, defernumbers=true]{biblatex} 
