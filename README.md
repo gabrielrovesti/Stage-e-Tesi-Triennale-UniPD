@@ -8,7 +8,7 @@ e come sempre chi aiuta sono io
 - Moduli stage: moduli da compilare per l'inizio dello stage, la fine e il corso sulla sicurezza
 - Piano di Lavoro: il piano di lavoro che ho consegnato all'inizio dello stage seguendo il template FIUP
 - Tesi: la tesi in LaTeX e il PDF compilato con tutto quello che serve
-  - la tesi è basata sull'implenentazione del lavoro di Alessio de Biasi, presenta [qui](http://dspace.unive.it/bitstream/handle/10579/24326/870288-1284805.pdf?sequence=2)
+  - la tesi è basata sull'implenentazione del lavoro di Alessio de Biasi, presente [qui](http://dspace.unive.it/bitstream/handle/10579/24326/870288-1284805.pdf?sequence=2)
   - come si vede anche dal link della repo, la mia tesi, oltre ad essere presente nella cartella, è presente[qui](https://thesis.unipd.it/handle/20.500.12608/50229)   
 - Presentazione: Appunti sulla discussione, slide di riferimento da me usate per l'esame di laurea triennale
 - Sicurezza: materiale dei corsi a bassco rischio e generale sostenuti per attività di tutorato e tirocinio
