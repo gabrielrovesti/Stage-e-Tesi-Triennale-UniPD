@@ -19,4 +19,4 @@ Si fa presente, onde evitare appropriazioni indebite non volute che:
 - il Piano di Lavoro e la Tesi fanno parte di template LaTeX provvisto da repo separate da parte del FIUP (sia mai che poi mi senta dire che prendo lavoro di altri)
 - il resto è roba personale archiviata a fini di libera cultura e conoscenza (ci sta anche chi crede in queste cose, non dovrebbe essere un male,
 dati i molti contributi dietro le quinte nel corso degli anni)
-- le FAQ e altro materiale sono stati da me scritti e riveduti nel corso del tempo e degli anni
+- le FAQ e altro materiale sono stati da me scritti e riveduti nel corso del tempo e degli anni (e vedendo quanta roba è, già uno "penso" dovrebbe ringraziare)
