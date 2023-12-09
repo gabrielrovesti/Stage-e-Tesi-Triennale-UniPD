@@ -11,7 +11,7 @@ e come sempre chi aiuta sono io
   - si precisa che personalmente e sentendo altri NON consiglio l'azienda in questione; si viene ignorati totalmente, si va su al massimo una volta a settimana e
   o capita una roba superfacile oppure roba come questa; fate vobis, io vi avviso. Sono andato qui per cercare di laurearmi entro luglio, non per altri motivi, lanciandomi a fare qualcosa di nuovo
   - la tesi è basata sull'implementazione del lavoro di Alessio de Biasi (totalmente da solo e senza supporto morale/pratico da parte sua né dall'azienda: non è stato capito da nessuno dei due, dato l'atteggiamento di quest'ultimo purtroppo; questo va precisato - la mia tesi e la discussione parlano da sole, però), presente [qui](http://dspace.unive.it/bitstream/handle/10579/24326/870288-1284805.pdf?sequence=2)
-  - come si vede anche dal link della repo, la mia tesi, oltre ad essere presente nella cartella, è presente[qui](https://thesis.unipd.it/handle/20.500.12608/50229)   
+  - come si vede anche dal link della repo, la mia tesi, oltre ad essere presente nella cartella, è presente [qui](https://thesis.unipd.it/handle/20.500.12608/50229)   
 - Presentazione: Appunti sulla discussione, slide di riferimento da me usate per l'esame di laurea triennale
 - Sicurezza: materiale dei corsi a basso rischio e generale sostenuti per attività di tutorato e tirocinio
 
